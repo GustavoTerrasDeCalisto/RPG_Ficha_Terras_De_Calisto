@@ -1,7 +1,7 @@
 // Dados de atributos das raças (Exemplo: Raça Alfo, Passado Aldeão)
 const raceData = {
   "Elfo": {
-    "vidaBase": 51,
+    "vidaBase": 80,
     "sanidadeBase": 25,
     "especialBase": 0,
     "armaduraBase": 1,

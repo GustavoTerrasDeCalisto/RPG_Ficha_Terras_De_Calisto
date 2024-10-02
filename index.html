@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terras de Calisto RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+          <header>
+          <nav class="nav-bar">
+            <div class="logo">
+              <a href="https://terrasdecalistoficha.wordpress.com/" target="_blank">
+                  <img src="imagens/logo.png" alt="Logo Terras de Calisto">
+              </a>
+          </div>
+              <div class="nav-list">
+                  <ul>
+                      <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                      <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/racas/" class="nav-link" target="_blank">Raças</a></li>
+                      <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/passados/" class="nav-link" target="_blank">Passados</a></li>
+ <!-- target="_blank" .....sempre colocar antes do >NOME_DO_LINK é para abrir em outra aba, uma nova aba, não esquecer-->
+ <button onclick="menuShow()" class="button-menu">
+  <img class="icon" src="imagens/menu.svg" alt="Menu">                      
+</button>
+
+
+              </div> 
+              
+                      
+                  </ul>
+                 
+              </div>
+
+    </nav>
+          </div>
+          <div class="mobile-menu">
+
+              <ul>
+                  
+                  <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                  <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/racas/" class="nav-link" target="_blank">Raças</a></li>
+                  <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/passados/" class="nav-link" target="_blank">Passados</a></li>
+  <!-- target="_blank" .....sempre colocar antes do >NOME_DO_LINK é para abrir em outra aba, uma nova aba, não esquecer-->
+                  </div>
+                  <!-- talvez adicionar
+              
+              <div class="login-button">
+                <button><a href="#">Entrar</a></button> -->
+
+                
+            </ul>
+        </div>
+
+    </nav>
+
+ 
+</header>
+
+
+
+  <div id="app">
+      <!-- Seção da esquerda -->
+      <div id="left-section">
+        <div id="character-stats">
+          <div class="stat-container">
+           <!-- <h3 class="barras-text">Life: </h3> -->
+            <div class="stat-bar">
+              <div id="life-fill" class="fill" style="width: 0%;"></div>
+              <span>Life:<span id="life-view">0</span></span>
+            </div>
+          </div>
+          <div class="stat-container">
+           <!-- <h3 class="barras-text">Sanity: </h3> -->
+            <div class="stat-bar">
+              <div id="sanity-fill" class="fill" style="width: 0%;"></div>
+              <span>Sanity:<span id="sanity-view">0</span></span>
+            </div>
+          </div>
+          <div class="stat-container">
+            <!--<h3 class="barras-text">Special: </h3> -->
+            <div class="stat-bar">
+              <div id="special-fill" class="fill" style="width: 0%;"></div>
+              <span>Special:<span id="special-view">0</span></span>
+            </div>
+          </div>
+          <div class="stats-wrapper">
+            <div class="stat-container">
+              <span>Armor: <span id="armor-view">0</span></span>
+            </div>
+            <div class="stat-container">
+              <span>Movement: <span id="movement-view">0</span></span>
+            </div>
+            <div class="stat-container">
+              <span>Level: <span id="level-view">0</span></span>
+            </div>
+          </div>
+          
+          <div class="stat-container">
+            <img id="race-image" src="" alt="Raça"> 
+            <img id="past-image" src="" alt="Passado"> 
+          </div>
+          <div class="content">
+            <!-- outros conteúdos -->
+            <div class="bonus-container">
+              <h2 class="resistencia-index">Resistência: N/A</h2>
+              <h4 class="Bonus-race-tex">Bônus de Raça: N/A</h4>
+              <h4 class="Bonus-passiva-tex">Passiva: N/A</h4>
+              <h4 class="Bonus-magia-tex">Magia: N/A</h4>
+              <h4 class="Bonus-talento-tex">Talento: N/A</h4>
+              <h4 class="Bonus-pass-tex">Bônus de Passado: N/A</h4>
+              
+          </div>
+
+    
+            
+            
+            
+
+     
+     
+        
+            <!-- outros conteúdos -->
+          </div>
+        </div>
+      </div>
+
+    <!-- Seção da direita -->
+    <div id="right-section">
+      <div id="character-creation-section">
+
+        <form id="character-form">
+          <div class="form-group">
+            <label for="char-name">Nome:</label>
+            <input type="text" id="char-name" name="char-name" required>
+          </div>
+          <div class="form-group">
+            <label for="race">Raça:</label>
+            <select id="race" name="race" required>
+              <option value="">Selecione a Raça</option>
+              <option value="Elfo">Elfo</option>
+              <option value="Humano">Humano</option>  
+              <option value="Krahzhik">Krahzhik</option>
+              <option value="Anão">Anão</option>
+            
+              
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="past">Passado:</label>
+            <select id="past" name="past" required>
+              <option value="">Selecione o Passado</option>
+              <option value="Aldeão">Aldeão</option>
+              <option value="Arauto">Arauto</option> 
+              <option value="Arqueiro">Arqueiro</option> 
+              <option value="Assassino">Assassino</option> 
+              <option value="Assombração">Assombração</option> 
+            </select>
+          </div>
+  
+          <div class="form-row">
+            <div class="form-group">
+              <label for="for">Força:</label>
+              <input type="number" id="for" name="for" min="8" max="99" value="10" required>
+              <div class="bonus-group">
+                <span>Bônus de Teste: <span id="for-bonus-test">0</span></span>
+                <span>Bônus de Dano: <span id="for-bonus-damage">0</span></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="des">Destreza:</label>
+              <input type="number" id="des" name="des" min="8" max="99" value="10" required>
+              <div class="bonus-group">
+                <span>Bônus de Teste: <span id="des-bonus-test">0</span></span>
+                <span>Bônus de Dano: <span id="des-bonus-damage">0</span></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="con">Constituição:</label>
+              <input type="number" id="con" name="con" min="8" max="99" value="10" required>
+              <div class="bonus-group">
+                <span>Bônus de Teste: <span id="con-bonus-test">0</span></span>
+                <span>Bônus de Dano: <span id="con-bonus-damage">0</span></span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="form-row">
+            <div class="form-group">
+              <label for="int">Inteligência:</label>
+              <input type="number" id="int" name="int" min="8" max="99" value="10" required>
+              <div class="bonus-group">
+                <span>Bônus de Teste: <span id="int-bonus-test">0</span></span>
+                <span>Bônus de Dano: <span id="int-bonus-damage">0</span></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sab">Sabedoria:</label>
+              <input type="number" id="sab" name="sab" min="8" max="99" value="10" required>
+              <div class="bonus-group">
+                <span>Bônus de Teste: <span id="sab-bonus-test">0</span></span>
+                <span>Bônus de Dano: <span id="sab-bonus-damage">0</span></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="car">Carisma:</label>
+              <input type="number" id="car" name="car" min="8" max="99" value="10" required>
+              <div class="bonus-group">
+                <span>Bônus de Teste: <span id="car-bonus-test">0</span></span>
+                <span>Bônus de Dano: <span id="car-bonus-damage">0</span></span>
+              </div>
+            </div>
+          </div>
+  
+          <button type="submit">Criar Personagem</button>
+          <button type="button" id="load-character">Carregar Personagem</button>
+        </form>
+      </div>
+  
+      <div id="character-select-section" style="display: none;">
+        <span id="close-select-section" class="close-button">X</span>
+        <h2>Escolha seu Personagem</h2>
+        <select id="character-select">
+        </select>
+        <button type="button" id="confirm-load">Carregar</button>
+      </div>
+  
+      <div id="character-view-section" style="display: none;">
+        <h2>Seu Personagem</h2>
+        <div id="character-details">
+          <p>Nome: <span id="char-name-view"></span></p>
+          <p>Raça: <span id="char-race-view"></span></p>
+          <p>Passado: <span id="char-past-view"></span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="save-message" style="display: none; position: fixed; top: 10px; left: 10px; background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

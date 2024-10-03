@@ -92,40 +92,40 @@ const raceData = {
 
 const pastData = {
   "Aldeão": {
-    "vidaPorNivel": 14,
-    "sanidadePorNivel": 6,
+    "vidaPorNivel": 12,
+    "sanidadePorNivel": 4,
     "armaduraPorNivel": 1,
     "resistencia": "Sagrado",
     "bonusPass": "+2 em testes de carisma, +5 em testes de Sobrevivência",
     "movimento_pass": 2
   },
   "Arauto": { // Cavaleiro adicionado como exemplo
-    "vidaPorNivel": 12,
-    "sanidadePorNivel": 8,
+    "vidaPorNivel": 10,
+    "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Mental",
     "bonusPass": "Passiva Medo oculto sem custo uma vez por dia, + 6 especial",
     "movimento_pass": 2
   },
   "Arqueiro": { // Mago adicionado como exemplo
-    "vidaPorNivel": 13,
-    "sanidadePorNivel": 7,
+    "vidaPorNivel": 11,
+    "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Maldição",
     "bonusPass": "+5 em dados de dano com fundas, arcos e bestas",
     "movimento_pass": 2
   },
   "Assassino": { // Mago adicionado como exemplo
-    "vidaPorNivel": 15,
-    "sanidadePorNivel": 5,
+    "vidaPorNivel": 13,
+    "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
     "bonusPass": "Passiva Furtividade sombria 1 vez no dia sem custo,+5 com Adagas",
     "movimento_pass": 3
   },
   "Assombração": { // Assombração adicionado como exemplo
-    "vidaPorNivel": 13,
-    "sanidadePorNivel": 7,
+    "vidaPorNivel": 11,
+    "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Alma",
     "bonusPass": "+1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez",
@@ -237,7 +237,7 @@ function calculateLevel() {
   const carLevel = parseInt(document.getElementById('car').value, 10);
 
   // Desconta os 8 pontos base de cada atributo 
-  return forLevel + desLevel + conLevel + intLevel + sabLevel + carLevel - (10 * 6);
+  return forLevel + desLevel + conLevel + intLevel + sabLevel + carLevel - (12 * 7);
 }
 
 // Function to update bonus values based on attribute level

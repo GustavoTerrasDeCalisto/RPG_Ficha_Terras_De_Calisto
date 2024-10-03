@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+header {
+  background-color: #24252a;
+  box-shadow: 0px 3px 10px #464646;
+  position: fixed; /* Fixa o header no topo da página */
+  width: 100%; /* Faz o header ocupar a largura total */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+.icon {
+  display: none;
+}
+.button-menu{
+  display: none;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 4rem;
+  max-width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  object-fit: cover; /* Garante que a imagem se encaixe sem distorção */
+}
+.logo :hover{
+  opacity: 0.8;
+
+
+}
+.logo h1 {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+ 
+    
+
+
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.9rem; /* Diminuído para 0.9rem */
+  color: #fff;
+  font-weight: 300;
+}
+
+.nav-item:hover .nav-link { /* Altera a cor do link ao passar o mouse sobre o item */
+  color: #ca0808; /* Cor ao passar o mouse */
+}
+
+.mobile-menu {
+  display: none;
+}
+.menu-button-icon {
+  display: flex; /* Use flex para centralizar itens */
+  justify-content: center;
+  align-items: center; /* Corrigido para "center" */
+  padding: 1.5rem 4rem; /* Ajusta o padding do botão */
+}
+
+
+.button-menu {
+  color: #660000; /* Define a cor do texto dentro do botão */
+  background-color: transparent; /* Adiciona fundo transparente se necessário */
+  border: none; /* Remove borda padrão do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+.button-menu hover {
+
+  background-color: #c00606;
+}
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  .nav-item {
+    display: none;
+  }
+
+  .button-menu {
+    display: block;
+  }
+
+  .icon{
+    display: block;
+  }
+  .icon .button-menu{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+
+  }
+  .mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+    .mobile-menu .nav-item{
+      display: block;
+      padding-top: 1.2rem;
+
+    }
+  }
+  .open{
+    display: block;
+  }
+  ul {
+    padding: 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'inter', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#app {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 1000px; /* Ajuste a largura conforme necessário */
+  text-align: center;
+  margin-top: 60px; /* Adiciona espaço abaixo do header para o conteúdo */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+#left-section {
+  width: 50%;
+  padding-right: 20px;
+}
+#right-section {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#character-stats {
+  flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  body {
+      flex-direction: column;
+      height: auto;
+  }
+
+  #app {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: auto;
+  }
+
+  #left-section, #right-section {
+      width: 100%;
+      padding: 0;
+  }
+
+  #character-stats, #character-creation-section {
+      width: 100%;
+  }
+
+  #right-section {
+      padding-top: 20px;
+  }
+}
+@media screen and (max-width: 735px) {
+  #app, .character-creation-section {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 110px;
+  }
+}
+body {
+  overflow-x: hidden; /* Evita que a página seja rolada horizontalmente */
+}
+
+
+  /* Ajuste do texto, botões e outros elementos internos */
+  h2, p, button {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+  }
+
+  input {
+    width: 100%; /* Faz os campos de entrada ocuparem a largura total */
+  }
+
+  button {
+    padding: 8px 12px; /* Ajusta o padding dos botões */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte dos botões */
+  }
+  
+  
+
+/* Bônus de Raça, Magia, Talento e Passiva */
+.Bonus-race-tex, .Bonus-magia-tex, .Bonus-talento-tex, .Bonus-passiva-tex {
+  font-family: 'Inter', sans-serif; /* Fonte limpa */
+  font-size: 0.60rem; /* Tamanho da fonte reduzido */
+  color: #444; /* Cor do texto um pouco mais escura */
+  padding: 3px 6px; /* Espaço interno menor */
+  margin: 3px 0; /* Espaço externo reduzido */
+  border-radius: 3px; /* Bordas arredondadas simples */
+  background-color: #fff; /* Fundo branco para simplicidade */
+  border-left: 4px solid #ffcc66; /* Borda à esquerda para destaque */
+  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Transições suaves */
+  text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Hover para Bônus de Raça, Magia, Talento e Passiva */
+.Bonus-race-tex:hover, .Bonus-magia-tex:hover, .Bonus-talento-tex:hover, .Bonus-passiva-tex:hover {
+  background-color: #fffae3; /* Cor de fundo levemente amarelada ao passar o mouse */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Bônus de Passado */
+.Bonus-pass-tex {
+  font-family: 'Inter', sans-serif; /* Fonte limpa */
+  font-size: 0.60rem; /* Tamanho da fonte reduzido */
+  color: #444; /* Cor do texto um pouco mais escura */
+  padding: 3px 6px; /* Espaço interno menor */
+  margin: 3px 0; /* Espaço externo reduzido */
+  border-radius: 3px; /* Bordas arredondadas simples */
+  background-color: #f0f8ff; /* Fundo muito claro para Bônus de Passado */
+  border-left: 4px solid #66ccff; /* Borda à esquerda para destaque */
+  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Transições suaves */
+  text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Hover para Bônus de Passado */
+.Bonus-pass-tex:hover {
+  background-color: #e6f7ff; /* Cor de fundo levemente azulada ao passar o mouse */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra mais intensa ao passar o mouse */
+}
+
+
+.resistencia-index {
+  font-family: 'Inter', sans-serif; /* Fonte limpa */
+  font-size: 0.75rem; /* Tamanho da fonte um pouco maior */
+  color: #ffffff; /* Cor do texto em branco para mais contraste */
+  padding: 1px 5px; /* Um pouco mais de espaço interno */
+  margin: 5px 0; /* Espaço externo ajustado */
+  border-radius: 8px; /* Bordas mais arredondadas */
+  border: 2px solid transparent; /* Borda padrão transparente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  display: inline-block; /* Ajusta o elemento ao tamanho do texto */
+  max-width: fit-content; /* O elemento não se estenderá além do conteúdo */
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease; /* Transição suave */
+  position: relative; /* Necessário para o efeito de sombra */
+  background-color: #007bff; /* Cor de fundo padrão (azul vibrante) */
+}
+
+.resistencia-index::before {
+  content: ''; /* Pseudo-elemento para efeito de brilho */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px; /* Mesmas bordas arredondadas */
+  background: rgba(255, 255, 255, 0.2); /* Brilho suave */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Transição suave */
+  z-index: 0; /* Abaixo do texto */
+}
+
+.resistencia-index:hover::before {
+  opacity: 1; /* Mostra o brilho ao passar o mouse */
+}
+
+.resistencia-index:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse (azul escuro) */
+  transform: scale(1.05); /* Aumento ao passar o mouse */
+  border-color: #ffffff; /* Borda branca ao passar o mouse */
+}
+
+
+
+
+  
+  
+
+
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+  padding: 5px;
+
+}
+a {
+  justify-content: flex-start;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #680000;
+}
+
+#character-details,
+#character-attributes {
+  text-align: left;
+}
+
+#character-stats {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Align items to the center vertically */
+}
+
+#character-stats > div { /* Only apply to direct children of #character-stats */
+  margin-right: 15px; /* Add space between stats and images */
+}
+.stats-wrapper span {
+  display: flex; /* Usar flexbox para alinhar os itens lado a lado */
+  justify-content: space-around; /* Espaço igual entre os itens */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  margin: 0px 5px 0px 5px;
+  padding: 1px; /* Adiciona padding ao redor do contêiner */
+  background-color: #e0e0e0; /* Cor de fundo do contêiner */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.stats-wrapper:hover {
+  transform: scale(1.000001); /* Leve aumento no hover */
+}
+.stat-container {
+  display: flex;
+  flex-direction: row; /* Mantenha os itens em linha */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.stat-container span {
+  font-size: 0.8rem; /* Tamanho da fonte */
+  margin-right: 2px; /* Espaço entre os textos */
+}
+
+
+.stat-bar {
+  background-color: #ddd;
+  height: 15px;
+  border-radius: 6px;
+  margin-bottom: 2px; /* Space between stat bars */
+  display: flex;
+  align-items: center;
+  width: 320px; /* Fixed width for stat bars */
+}
+
+
+.fill {
+  background: linear-gradient(135deg, #ff4d4d, #990000); /* Gradiente para Life */
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+  transition: width 0.5s ease-in-out; /* Transição suave ao alterar a largura */
+}
+
+#sanity-fill {
+  background: linear-gradient(135deg, #993399, #660066); /* Gradiente para Sanity */
+}
+
+#special-fill {
+  background: linear-gradient(135deg, #ffd700, #b8860b); /* Gradiente para Special */
+}
+
+/* Estilos opcionais para o contêiner das barras */
+.bar-container {
+  background-color: #333;
+  border-radius: 2px;
+  padding: 0px;
+  width: 100%;
+  height: 0px; /* Altura das barras */
+  margin-bottom: 10px; /* Espaço entre as barras */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra interna para dar profundidade */
+}
+
+/* Opcional: um efeito visual quando a barra está carregando */
+.fill::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.character-creation-section {
+  padding: 10px 15px; /* Ajuste conforme necessário */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  width: calc(100% - 30px); /* Garante que o conteúdo ocupe toda a largura */
+}
+@media screen and (max-width: 735px) {
+  .character-creation-section {
+    padding: 10px; /* Reduz o padding */
+    margin: 0 auto; /* Centraliza */
+  }
+}
+
+
+.trash-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.trash-icon:hover {
+  opacity: 0.7;
+}
+
+#save-message {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust spacing between rows as needed */
+}
+
+.form-row .form-group {
+  width: 32%; /* Adjust width for each group */
+  margin-bottom: 0; /* Remove bottom margin for groups within a row */
+}
+
+.bonus-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.bonus-group span {
+  margin-bottom: 5px; /* Adjust spacing between bonus values */
+}
+
+#race-image,
+#past-image {
+  width: 200px; /* Adjust image width as needed */
+  height: 300px; /* Adjust image height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+#character-stats > div:nth-child(4),
+#character-stats > div:nth-child(5) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between armor/movement and level */
+}
+.observacao {
+  background-color: #f9f9f9; /* Fundo claro */
+  border: 1px solid #ddd; /* Borda suave */
+  border-radius: 2px; /* Bordas arredondadas */
+  padding: 2px 1px; /* Espaçamento interno */
+  margin: 2px 0; /* Margem superior e inferior */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.observacao p{
+  font-size: 0.6rem; /* Tamanho da fonte */
+  color: black; /* Cor do texto */
+  line-height: 1.1; /* Espaçamento entre linhas */
+  text-align: center; /* Centraliza o texto */
+
+  
+  
+}
+
+
+
+
+
+@media screen and (max-width: 735px) {
+  .nav-bar {
+    padding: 0.25rem 0.5rem; /* Reduz ainda mais o padding da barra */
+    font-size: 0.85rem; /* Ajusta o tamanho da fonte da nav-bar */
+  }
+
+  .mobile-menu ul {
+    padding: 0.25rem 0; /* Reduz o espaçamento interno */
+  }
+
+  .mobile-menu ul li {
+    margin: 0.25rem 0; /* Ajusta o espaçamento entre os itens */
+  }
+
+  button {
+    padding: 2px 5px; /* Reduz o padding dos botões */
+    font-size: 0.75rem; /* Ajusta o tamanho da fonte dos botões */
+  }
+
+  .nav-bar a {
+    padding: 0.5rem 0.75rem; /* Reduz o padding dos links */
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte dos links */
+  }
+
+  .nav-bar img {
+    width: 100%; /* A imagem agora será 25% da largura da nav-bar */
+    max-width: 120px; /* O tamanho máximo da imagem será 150px */
+    height: auto; /* Mantém a proporção da imagem */
+    box-sizing: border-box; /* Garante que a borda seja incluída no tamanho total da imagem */
+  }
+
+  /* Ajuste para ícones na nav-bar, se houver */
+  .nav-bar i {
+    font-size: 1rem; /* Tamanho apropriado para ícones */
+  }
+}
+
+
+
+
+@media screen and (max-width: 735px) {
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave */
+  }
+  .button-menu:hover {
+    background-color: #b20000; /* Torna o hover mais perceptível */
+    transition: background-color 0.3s; /* Transição suave de hover */
+  }
+}
+.nav-link {
+  color: #f0f0f0; /* Aumenta o contraste */
+  font-size: 1.6rem; /* Ajusta o tamanho da fonte */
+  font-weight: 500; /* Torna o texto mais legível */
+}
+
+.barras-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 2px; /* Espaço entre o texto e a barra */
+  width: 100px; /* Define uma largura fixa para alinhar os textos */
+  text-align: right; /* Garante que o texto esteja alinhado à esquerda */
+}

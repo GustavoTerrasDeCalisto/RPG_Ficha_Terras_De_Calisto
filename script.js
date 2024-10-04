@@ -526,27 +526,27 @@ function updateRaceImage() {
   const raceImage = document.getElementById('race-image');
 
   if (race === "Elfo") {
-    raceImage.src = "imagens/elfo.png";
+    raceImage.src = "imagens/raças/elfo.png";
   } else if (race === "Humano") {
-    raceImage.src = "imagens/humano.png";
+    raceImage.src = "imagens/raças/humano.png";
   } else if (race === "Krahzhik") {
-    raceImage.src = "imagens/Krahzhik.png";
+    raceImage.src = "imagens/raças/Krahzhik.png";
   } else if (race === "Anão") {
-    raceImage.src = "imagens/Anão.png";
+    raceImage.src = "imagens/raças/Anão.png";
   } else if (race === "Gigante") {
-    raceImage.src = "imagens/Gigante.png";
+    raceImage.src = "imagens/raças/Gigante.png";
   } else if (race === "Skywalker") {
-    raceImage.src = "imagens/Skywalkers.png";
+    raceImage.src = "imagens/raças/Skywalkers.png";
   } else if (race === "Elfo da profundeza") {
-    raceImage.src = "imagens/Elfo da profundeza.png";
+    raceImage.src = "imagens/raças/Elfo da profundeza.png";
   } else if (race === "Tritão") {
-    raceImage.src = "imagens/Tritão.png";
+    raceImage.src = "imagens/raças/Tritão.png";
   } else if (race === "Shrivvel – Pele Palida") {
-    raceImage.src = "imagens/Shrivvel – Pele Palida.png";
+    raceImage.src = "imagens/raças/Shrivvel – Pele Palida.png";
   } else if (race === "Gronklech – Durock") {
-    raceImage.src = "imagens/Gronklech – Durock.png";
+    raceImage.src = "imagens/raças/Gronklech – Durock.png";
   } else if (race === "Umbrowalker – Shlurp") {
-    raceImage.src = "imagens/Umbrowalker – Shlurp.png";
+    raceImage.src = "imagens/raças/Umbrowalker – Shlurp.png";
   } else {
     raceImage.src = ""; // Clear the image if no race is selected
   }
@@ -557,28 +557,28 @@ function updatePastImage() {
   const pastImage = document.getElementById('past-image');
 
   if (past === "Aldeão") {
-    pastImage.src = "imagens/aldeao.png";
+    pastImage.src = "imagens/pass/aldeao.png";
   } else if (past === "Arauto") {
-    pastImage.src = "imagens/arauto.png";
+    pastImage.src = "imagens/pass/arauto.png";
   } else if (past === "Assassino") {
-    pastImage.src = "imagens/assassino.png";
+    pastImage.src = "imagens/pass/assassino.png";
   } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/arqueiro.png";
+    pastImage.src = "imagens/pass/arqueiro.png";
   
   } else if (past === "Assombração") {
-    pastImage.src = "imagens/assombração.png";
+    pastImage.src = "imagens/pass/assombração.png";
   
   } else if (past === "Krahzhik") {
-    pastImage.src = "imagens/Krahzhik.png";
+    pastImage.src = "imagens/pass/Krahzhik.png";
   
   } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/arqueiro.png";
+    pastImage.src = "imagens/pass/arqueiro.png";
   
   } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/arqueiro.png";
+    pastImage.src = "imagens/pass/arqueiro.png";
   
   } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/arqueiro.png";
+    pastImage.src = "imagens/pass/arqueiro.png";
   } else {
     pastImage.src = ""; // Limpa a imagem se nenhum passado for selecionado
   }

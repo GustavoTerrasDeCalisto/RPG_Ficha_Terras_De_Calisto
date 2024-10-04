@@ -363,7 +363,7 @@ select {
 
 button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #a10b38;
   color: white;
   border: none;
   border-radius: 3px;
@@ -481,6 +481,8 @@ button:hover {
   right: 10px;
   cursor: pointer;
 }
+
+
 
 .character-creation-section {
   padding: 10px 15px; /* Ajuste conforme necessário */
@@ -642,4 +644,305 @@ button:hover {
   margin-right: 2px; /* Espaço entre o texto e a barra */
   width: 100px; /* Define uma largura fixa para alinhar os textos */
   text-align: right; /* Garante que o texto esteja alinhado à esquerda */
+}
+
+.Aviso {
+  background-color: #f9f9f9; /* Fundo claro */
+  border: 1px solid #ddd; /* Borda suave */
+  border-radius: 2px; /* Bordas arredondadas */
+  padding: 2px 1px; /* Espaçamento interno */
+  margin: 2px 0; /* Margem superior e inferior */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-size: 0.7rem;
+}
+
+/* Estilo geral do formulário */
+#character-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilo dos rótulos (labels) */
+#character-form .form-group label {
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Estilo dos inputs */
+#character-form input[type="text"],
+#character-form select,
+#character-form input[type="number"] {
+  width: 97%;
+  padding: 2px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#character-form input[type="text"]:focus,
+#character-form select:focus,
+#character-form input[type="number"]:focus {
+  border-color: #b20000;
+  outline: none;
+}
+
+/* Estilo para a seção de bônus */
+.bonus-group {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bonus-group span {
+  display: block;
+}
+
+/* Estilo específico dos bônus */
+.bonus-group span span {
+  font-weight: bold;
+  color: #9b0000;
+}
+
+/* Estilo das linhas (rows) para melhor espaçamento */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+
+/* Estilo do botão de submit */
+
+
+/* Estilo do formulário dentro da div ButonsSave */
+.ButonsSave #character-form {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões se ajustem em várias linhas */
+  gap: 6px; /* Espaço entre os botões */
+  margin-bottom: 15px; /* Margem inferior */
+  margin-top: 0; /* Remover a margem superior */
+}
+
+/* Estilo dos botões dentro da div ButonsSave */
+.ButonsSave button {
+  padding: 4px 3px; /* Espaçamento interno menor */
+  background-color: #A00000; /* Cor de fundo vermelho escuro */
+  color: white; /* Cor do texto */
+  border: 2px solid transparent; /* Borda transparente */
+  border-radius: 3px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre */
+  transition: background-color 0.2s, border-color 0.2s; /* Transições suaves para cor de fundo e borda */
+  flex: 1 0 calc(50% - 4px); /* Tamanho dos botões em duas colunas */
+  min-width: 60px; /* Largura mínima para o botão */
+  font-size: 0.7em; /* Tamanho da fonte menor */
+}
+
+/* Efeito de hover nos botões dentro da div ButonsSave */
+.ButonsSave button:hover {
+  background-color: #8b0000; /* Cor de fundo ao passar o mouse */
+  border-color: #fff; /* Borda branca ao passar o mouse */
+}
+
+/* Estilo da seção de seleção de personagens dentro da div ButonsSave */
+.ButonsSave #character-select-section {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+  gap: 8px; /* Espaço entre os elementos */
+}
+
+/* Estilo do botão de fechar dentro da div ButonsSave */
+.ButonsSave .close-button {
+  cursor: pointer; /* Cursor de ponteiro */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo do campo de seleção dentro da div ButonsSave */
+.ButonsSave #character-select {
+  padding: 4px; /* Espaçamento interno menor */
+  border-radius: 3px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  background-color: white; /* Cor de fundo */
+}
+
+
+
+
+.form-row {
+  display: flex;
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  margin-bottom: 2px; /* Espaço abaixo da linha */
+}
+
+.form-group2 {
+  flex: 1; /* Permite que cada grupo de formulário se expanda igualmente */
+  margin-right: 5px; /* Espaço entre os grupos */
+  background-color: #ffffff; /* Cor de fundo branco */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 5px; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: box-shadow 0.2s; /* Suaviza a transição da sombra */
+}
+
+/* Remove a margem do último grupo */
+.form-group2:last-child {
+  margin-right: 0; /* Remove o espaço à direita do último item */
+}
+
+/* Efeito de foco nos grupos */
+.form-group2:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+label {
+  display: block; /* Faz com que o label ocupe toda a largura */
+  margin-bottom: 4px; /* Espaço abaixo do label */
+  font-weight: 600; /* Aumenta a espessura do texto */
+  color: #333; /* Cor do texto */
+}
+
+input[type="number"] {
+  width: 100%; /* Faz o input ocupar toda a largura disponível */
+  padding: 4px; /* Espaçamento interno do input */
+  border: 1px solid #ddd; /* Borda suave do input */
+  border-radius: 4px; /* Bordas arredondadas do input */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  transition: border-color 0.2s; /* Suaviza a transição da borda */
+}
+
+/* Efeito de foco no input */
+input[type="number"]:focus {
+  border-color: #A00000; /* Cor da borda ao focar */
+  outline: none; /* Remove o contorno padrão */
+}
+
+.bonus-group {
+  margin-top: 4px; /* Espaço acima do grupo de bônus */
+  font-size: 0.85em; /* Tamanho de fonte levemente menor */
+  color: #777; /* Cor do texto dos bônus */
+  display: flex; /* Exibe os bônus em linha */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+}
+
+
+
+
+/* Estilo de aviso */
+.Aviso {
+  background-color: #fffcda;
+  border-left: 5px solid #f1e578;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Ajustes para o select */
+#character-form select {
+  background-color: #fff;
+  appearance: none;
+  padding-right: 30px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjEyIiB2aWV3Qm94PSIwIDAgMTIgMTIiIHdpZHRoPSIxMiIgZGF0YS1uYW1lPSJMYXllciIgY2xhc3M9IiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPHBhdGggZD0iTTEwLjIxOSAzLjgyM0ExIDEgMCAwIDEgMTEuNTYzIDVMNi4wMDEgMTAuNTY0TDEuNDM2IDUgMi43ODEgMy44MjNMYzIuNTM5IDIuNTQxIDQuODcgNC44NzEgNC44NzIgNC44NzEgLjAxLjAxIDIuMzMzLTIuMzMxIDQuODc0LTQuODg1WiIgZGF0YS1uYW1lPSJSaWdodCIgY2xhc3M9IiIvPjwvc3ZnPg==');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Distribui o espaço */
+  gap: 10px; /* Espaçamento entre o label e o input */
+}
+
+.form-group label {
+  width: 25%; /* Define um tamanho fixo ou proporcional para o label */
+  text-align: right; /* Alinha o texto à direita */
+}
+
+.form-group input[type="text"] {
+  width: 70%; /* Define a largura do input */
+}
+/* Estilo geral dos botões */
+button {
+  background-color: #007BFF; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Aumentar levemente o botão */
+}
+
+/* Estilo específico para o botão de carregar personagem */
+#load-character {
+  background-color: #C62828; /* Verde para carregar */
+}
+
+#load-character:hover {
+  background-color: #aa0e16; /* Verde escuro ao passar o mouse */
+}
+#load-file-character {
+  background-color: #FF5722; /* Cor de fundo */
+  margin-top: 10px; /* Espaçamento superior */
+}
+#load-file-character:hover {
+  background-color: #af3c18; /* Cor de fundo */
+
+}
+
+/* Estilo específico para o botão de salvar personagem */
+#download-character {
+  background-color: #FF3D00; /* Amarelo para salvar */
+  color: #fdfdfd; /* Texto escuro */
+}
+
+#download-character:hover {
+  background-color: #aa0e16; /* Amarelo escuro ao passar o mouse */
+}
+
+/* Seção de seleção de personagem */
+#character-select-section {
+  background-color: #f8f9fa; /* Fundo claro */
+  border: 1px solid #dee2e6; /* Borda leve */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para o título da seção */
+#character-select-section h2 {
+  margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilo do seletor de personagens */
+#character-select {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 1px solid #ced4da; /* Borda leve */
+}
+
+/* Estilo do botão de confirmação */
+#confirm-load {
+  background-color: #f11141; /* Cor de fundo */
+  margin-top: 10px; /* Espaçamento superior */
 }

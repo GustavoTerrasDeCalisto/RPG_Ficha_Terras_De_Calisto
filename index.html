@@ -129,6 +129,8 @@
     <!-- Seção da direita -->
     <div id="right-section">
       <div id="character-creation-section">
+        <h1 class="Aviso">A aparência do seu personagem será uma mistura entre o seu passado e a sua raça, imagine-o como quiser!
+        </h1> 
 
         <form id="character-form">
           <div class="form-group">
@@ -136,13 +138,22 @@
             <input type="text" id="char-name" name="char-name" required>
           </div>
           <div class="form-group">
+
             <label for="race">Raça:</label>
             <select id="race" name="race" required>
               <option value="">Selecione a Raça</option>
-              <option value="Elfo">Elfo</option>
-              <option value="Humano">Humano</option>  
-              <option value="Krahzhik">Krahzhik</option>
-              <option value="Anão">Anão</option>
+              <option value="Elfo">Lyrithil – Elfo</option>
+              <option value="Humano">Zhilak – Humano</option>  
+              <option value="Anão">Grunthrok – Anão</option>
+              <option value="Gigante">Thudrok – Gigante</option>
+              <option value="Krahzhik">Krahzhik – IgnisAlatus</option>
+              <option value="Skywalker">Skywalkers – Flumplux</option>
+              <option value="Umbrowalker – Shlurp">Umbrowalker – Shlurp</option>
+              <option value="Elfo da profundeza">Glublorp – Elfo da profundeza</option>
+              <option value="Tritão">Glubrust – Tritão</option>
+              <option value="Shrivvel – Pele Palida">Shrivvel – Pele Palida</option>
+              <option value="Gronklech – Durock">Gronklech – Durock</option>
+            
             
               
             </select>
@@ -160,7 +171,7 @@
           </div>
   
           <div class="form-row">
-            <div class="form-group">
+            <div class="form-group2">
               <label for="for">Força:</label>
               <input type="number" id="for" name="for" min="8" max="99" value="10" required>
               <div class="bonus-group">
@@ -168,7 +179,7 @@
                 <span>Bônus de Dano: <span id="for-bonus-damage">0</span></span>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group2">
               <label for="des">Destreza:</label>
               <input type="number" id="des" name="des" min="8" max="99" value="10" required>
               <div class="bonus-group">
@@ -176,7 +187,7 @@
                 <span>Bônus de Dano: <span id="des-bonus-damage">0</span></span>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group2">
               <label for="con">Constituição:</label>
               <input type="number" id="con" name="con" min="8" max="99" value="10" required>
               <div class="bonus-group">
@@ -187,7 +198,7 @@
           </div>
   
           <div class="form-row">
-            <div class="form-group">
+            <div class="form-group2">
               <label for="int">Inteligência:</label>
               <input type="number" id="int" name="int" min="8" max="99" value="10" required>
               <div class="bonus-group">
@@ -195,7 +206,7 @@
                 <span>Bônus de Dano: <span id="int-bonus-damage">0</span></span>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group2">
               <label for="sab">Sabedoria:</label>
               <input type="number" id="sab" name="sab" min="8" max="99" value="10" required>
               <div class="bonus-group">
@@ -203,7 +214,7 @@
                 <span>Bônus de Dano: <span id="sab-bonus-damage">0</span></span>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group2">
               <label for="car">Carisma:</label>
               <input type="number" id="car" name="car" min="8" max="99" value="10" required>
               <div class="bonus-group">
@@ -213,18 +224,29 @@
             </div>
           </div>
   
-          <button type="submit">Criar Personagem</button>
-          <button type="button" id="load-character">Carregar Personagem</button>
-        </form>
-      </div>
-  
-      <div id="character-select-section" style="display: none;">
-        <span id="close-select-section" class="close-button">X</span>
-        <h2>Escolha seu Personagem</h2>
-        <select id="character-select">
-        </select>
-        <button type="button" id="confirm-load">Carregar</button>
-      </div>
+          <div class="ButonsSave">
+            <form id="character-form">
+                <div class="button-group">
+                    <button type="submit">Criar Personagem</button>
+                    <button type="button" id="load-character">Carregar Personagem</button>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="download-character">Salvar Personagem</button>
+                    <input type="file" id="upload-character" accept=".json" style="display: none;">
+                    <button type="button" id="load-file-character">Carregar Personagem de Arquivo</button>
+                </div>
+            </form>
+        
+            <div id="character-select-section" style="display: none;">
+                <span id="close-select-section" class="close-button">X</span>
+                <h2>Escolha seu Personagem</h2>
+                <select id="character-select"></select>
+                <button type="button" id="confirm-load">Carregar</button>
+            </div>
+        </div>
+        
+          
+        
   
       <div id="character-view-section" style="display: none;">
         <h2>Seu Personagem</h2>

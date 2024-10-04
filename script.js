@@ -87,6 +87,165 @@ const raceData = {
       "car": 2
     },
     "especialPorNivel": 3
+  },
+  "Gigante": { // Elfo adicionado como exemplo
+    "vidaBase": 66,
+    "sanidadeBase": 15,
+    "especialBase": 7,
+    "armaduraBase": 1,
+    "movimentoBase": 3,
+    "bonusRace": "Tem o critico corpo a corpo maior, ao inves de ser 2x fica 3x.",
+    "PassivaDisponivel": "Bêbado ou Alegria duas vezes por dia sem custo com vantagem.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Machados e martelos.",  
+    "vidaPorNivel": {
+      "for": 4,
+      "des": 4,
+      "con": 9
+    },
+    "sanidadePorNivel": {
+      "int": 1,
+      "sab": 1,
+      "car": 3
+    },
+    "especialPorNivel": 3
+  }
+,
+  "Skywalker": { // Elfo adicionado como exemplo
+    "vidaBase": 55,
+    "sanidadeBase": 17,
+    "especialBase": 6,
+    "armaduraBase": 0,
+    "movimentoBase": 6,
+    "bonusRace": "Eles podem Voar, manter o voo requer concentração. Sofre -8 em danos de Luz.",
+    "PassivaDisponivel": "Sorriso Contemplativo uma vez no dia sem custo por combate.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Lanças e Armas com Haste.",  
+    "vidaPorNivel": {
+      "for": 3,
+      "des": 4,
+      "con": 6
+    },
+    "sanidadePorNivel": {
+      "int": 1,
+      "sab": 4,
+      "car": 4
+    },
+    "especialPorNivel": 3
+  }
+,
+  "Elfo da profundeza": { // Elfo adicionado como exemplo
+    "vidaBase": 50,
+    "sanidadeBase": 27,
+    "especialBase": 5,
+    "armaduraBase": 0,
+    "movimentoBase": 5,
+    "bonusRace": "Conseguem respirar embaixo de água e nadar o dobro do seu movimento.",
+    "PassivaDisponivel": "Salvaguarda uma vez ao dia sem custo e com vantagem.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Armas Exóticas.",  
+    "vidaPorNivel": {
+      "for": 3,
+      "des": 4,
+      "con": 6
+    },
+    "sanidadePorNivel": {
+      "int": 2,
+      "sab": 5,
+      "car": 2
+    },
+    "especialPorNivel": 3
+  },
+  "Tritão": { // Elfo adicionado como exemplo
+    "vidaBase": 60,
+    "sanidadeBase": 21,
+    "especialBase": 4,
+    "armaduraBase": 0,
+    "movimentoBase": 4.5,
+    "bonusRace": "Conseguem respirar embaixo de água e nadar o dobro do seu movimento.",
+    "PassivaDisponivel": "Afogar uma vez por combate sem custo e tem vantagem.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Lanças e Armas com Haste.",  
+    "vidaPorNivel": {
+      "for": 4,
+      "des": 3,
+      "con": 6
+    },
+    "sanidadePorNivel": {
+      "int": 2,
+      "sab": 2,
+      "car": 5
+    },
+    "especialPorNivel": 3
+  }
+,
+  "Shrivvel – Pele Palida": { // Elfo adicionado como exemplo
+    "vidaBase": 48,
+    "sanidadeBase": 30,
+    "especialBase": 0,
+    "armaduraBase": 2,
+    "movimentoBase": 6.5,
+    "bonusRace": "-",
+    "PassivaDisponivel": "Medo oculto uma vez no dia sem custo por combate.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Armas Exóticas e Intimidação.",  
+    "vidaPorNivel": {
+      "for": 5,
+      "des": 4,
+      "con": 5
+    },
+    "sanidadePorNivel": {
+      "int": 2,
+      "sab": 4,
+      "car": 2
+    },
+    "especialPorNivel": 3
+  }
+,
+  "Gronklech – Durock": { // Elfo adicionado como exemplo
+    "vidaBase": 53,
+    "sanidadeBase": 15,
+    "especialBase": 0,
+    "armaduraBase": 3,
+    "movimentoBase": 4,
+    "bonusRace": "-",
+    "PassivaDisponivel": "Selvageria duas vezes ao dia sem custo e tem vantagem.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Sobrevivência.",  
+    "vidaPorNivel": {
+      "for": 5,
+      "des": 4,
+      "con": 8
+    },
+    "sanidadePorNivel": {
+      "int": 1,
+      "sab": 1,
+      "car": 3
+    },
+    "especialPorNivel": 3
+  }
+,
+  "Umbrowalker – Shlurp": { // Elfo adicionado como exemplo
+    "vidaBase": 57,
+    "sanidadeBase": 14,
+    "especialBase": 0,
+    "armaduraBase": 1,
+    "movimentoBase": 6,
+    "bonusRace": "-",
+    "PassivaDisponivel": "Furtividade sombria uma vez no dia sem custo.",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "Fundas e Estilingues.",  
+    "vidaPorNivel": {
+      "for": 5,
+      "des": 6,
+      "con": 5
+    },
+    "sanidadePorNivel": {
+      "int": 2,
+      "sab": 2,
+      "car": 2
+    },
+    "especialPorNivel": 3
   }
 };
 
@@ -374,6 +533,20 @@ function updateRaceImage() {
     raceImage.src = "imagens/Krahzhik.png";
   } else if (race === "Anão") {
     raceImage.src = "imagens/Anão.png";
+  } else if (race === "Gigante") {
+    raceImage.src = "imagens/Gigante.png";
+  } else if (race === "Skywalker") {
+    raceImage.src = "imagens/Skywalkers.png";
+  } else if (race === "Elfo da profundeza") {
+    raceImage.src = "imagens/Elfo da profundeza.png";
+  } else if (race === "Tritão") {
+    raceImage.src = "imagens/Tritão.png";
+  } else if (race === "Shrivvel – Pele Palida") {
+    raceImage.src = "imagens/Shrivvel – Pele Palida.png";
+  } else if (race === "Gronklech – Durock") {
+    raceImage.src = "imagens/Gronklech – Durock.png";
+  } else if (race === "Umbrowalker – Shlurp") {
+    raceImage.src = "imagens/Umbrowalker – Shlurp.png";
   } else {
     raceImage.src = ""; // Clear the image if no race is selected
   }
@@ -412,6 +585,11 @@ function updatePastImage() {
 }
 
 // Event listener for form submission (Create Character)
+// Event listener for form submission (Create Character)
+// Event listener for form submission (Create Character)
+// Event listener for form submission (Create Character)
+// Event listener for form submission (Create Character)
+// Event listener for form submission (Create Character)
 document.getElementById('character-form').addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -425,30 +603,28 @@ document.getElementById('character-form').addEventListener('submit', (event) => 
   const sabLevel = parseInt(document.getElementById('sab').value, 10);
   const carLevel = parseInt(document.getElementById('car').value, 10);
 
-  // Check if the user has created 3 characters already
-  if (localStorage.getItem('characterCount') && parseInt(localStorage.getItem('characterCount'), 10) >= 3) {
-    alert("Você só pode criar no máximo 3 personagens.");
-    return;
-  }
-
   // Store character data in local storage 
-  let characterCount = 0;
-  if (localStorage.getItem('characterCount')) {
-    characterCount = parseInt(localStorage.getItem('characterCount'), 10);
-  }
+  let characterCount = localStorage.getItem('characterCount') ? parseInt(localStorage.getItem('characterCount'), 10) : 0;
   characterCount++;
   localStorage.setItem('characterCount', characterCount);
 
+  // Save character data, including all fields
   localStorage.setItem(`characterData${characterCount}`, JSON.stringify({
-    name: name,
-    race: race,
-    past: past,
-    for: forLevel,
-    des: desLevel,
-    con: conLevel,
-    int: intLevel,
-    sab: sabLevel,
-    car: carLevel
+      name: name,
+      race: race,
+      past: past,
+      for: forLevel,
+      des: desLevel,
+      con: conLevel,
+      int: intLevel,
+      sab: sabLevel,
+      car: carLevel,
+      life: 100,   // Defina o valor inicial da vida
+      sanity: 100, // Defina o valor inicial da sanidade
+      special: 0,  // Defina o valor inicial da especial
+      armor: 0,    // Defina o valor inicial da armadura
+      movement: 0, // Defina o valor inicial do movimento
+      level: 1     // Defina o nível inicial
   }));
 
   // Update character view section with data
@@ -456,7 +632,7 @@ document.getElementById('character-form').addEventListener('submit', (event) => 
   document.getElementById('char-race-view').textContent = race;
   document.getElementById('char-past-view').textContent = past;
 
-  // Call updateAttributes to display initial values
+  // Call updateStats to display initial values
   updateStats();
 
   // Show success message
@@ -464,17 +640,147 @@ document.getElementById('character-form').addEventListener('submit', (event) => 
   saveMessage.textContent = 'Personagem salvo!';
   saveMessage.style.display = 'block';
   setTimeout(() => {
-    saveMessage.style.display = 'none';
+      saveMessage.style.display = 'none';
   }, 5000);
 });
-function menuShow() {
-  let menuMobile = document.querySelector('.mobile-menu');
-  if (menuMobile.classList.contains('open')) {
-    menuMobile.classList.remove('open');
-  } else {
-    menuMobile.classList.add('open');
+
+// Function to load characters from local storage
+document.getElementById('load-character').addEventListener('click', () => {
+  const characterSelect = document.getElementById('character-select');
+  characterSelect.innerHTML = ''; // Clear existing options
+
+  let characterCount = parseInt(localStorage.getItem('characterCount'), 10);
+  for (let i = 1; i <= characterCount; i++) {
+      const characterData = JSON.parse(localStorage.getItem(`characterData${i}`));
+      if (characterData) {
+          const option = document.createElement('option');
+          option.value = i;
+          option.textContent = characterData.name;
+          characterSelect.appendChild(option);
+      }
   }
-}
+
+  document.getElementById('character-select-section').style.display = 'block';
+});
+
+// Event listener for character selection
+document.getElementById('confirm-load').addEventListener('click', () => {
+  const characterSelect = document.getElementById('character-select');
+  const selectedIndex = characterSelect.value;
+
+  if (selectedIndex) {
+      const characterData = JSON.parse(localStorage.getItem(`characterData${selectedIndex}`));
+      if (characterData) {
+          // Update character view section with loaded data
+          document.getElementById('char-name-view').textContent = characterData.name;
+          document.getElementById('char-race-view').textContent = characterData.race;
+          document.getElementById('char-past-view').textContent = characterData.past;
+
+          // Update input fields with loaded stats
+          document.getElementById('char-name').value = characterData.name;
+          document.getElementById('race').value = characterData.race;
+          document.getElementById('past').value = characterData.past;
+          document.getElementById('for').value = characterData.for;
+          document.getElementById('des').value = characterData.des;
+          document.getElementById('con').value = characterData.con;
+          document.getElementById('int').value = characterData.int;
+          document.getElementById('sab').value = characterData.sab;
+          document.getElementById('car').value = characterData.car;
+
+          // Load additional stats
+          document.getElementById('life-view').textContent = characterData.life;
+          document.getElementById('sanity-view').textContent = characterData.sanity;
+          document.getElementById('special-view').textContent = characterData.special;
+          document.getElementById('armor-view').textContent = characterData.armor;
+          document.getElementById('movement-view').textContent = characterData.movement;
+          document.getElementById('level-view').textContent = characterData.level;
+
+          // Call updateStats to display loaded values
+          updateStats();
+      }
+
+      document.getElementById('character-select-section').style.display = 'none';
+  }
+});
+
+// Download character data as JSON file
+document.getElementById('download-character').addEventListener('click', () => {
+  const characterData = {
+      name: document.getElementById('char-name-view').textContent,
+      race: document.getElementById('char-race-view').textContent,
+      past: document.getElementById('char-past-view').textContent,
+      for: parseInt(document.getElementById('for').value, 10),
+      des: parseInt(document.getElementById('des').value, 10),
+      con: parseInt(document.getElementById('con').value, 10),
+      int: parseInt(document.getElementById('int').value, 10),
+      sab: parseInt(document.getElementById('sab').value, 10),
+      car: parseInt(document.getElementById('car').value, 10),
+      life: parseInt(document.getElementById('life-view').textContent, 10),
+      sanity: parseInt(document.getElementById('sanity-view').textContent, 10),
+      special: parseInt(document.getElementById('special-view').textContent, 10),
+      armor: parseInt(document.getElementById('armor-view').textContent, 10),
+      movement: parseInt(document.getElementById('movement-view').textContent, 10),
+      level: parseInt(document.getElementById('level-view').textContent, 10)
+  };
+
+  const blob = new Blob([JSON.stringify(characterData, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${characterData.name}_character.json`; // Nome do arquivo
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+// Event listener for uploading character file
+document.getElementById('load-file-character').addEventListener('click', () => {
+  document.getElementById('upload-character').click();
+});
+
+// Handle file upload and load character data
+document.getElementById('upload-character').addEventListener('change', (event) => {
+  const file = event.target.files[0];
+  if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+          const characterData = JSON.parse(e.target.result);
+
+          // Preenche os campos do personagem com os dados carregados
+          document.getElementById('char-name-view').textContent = characterData.name;
+          document.getElementById('char-race-view').textContent = characterData.race;
+          document.getElementById('char-past-view').textContent = characterData.past;
+
+          // Atualiza os campos de input e select com os dados do arquivo
+          document.getElementById('char-name').value = characterData.name;
+          document.getElementById('race').value = characterData.race;
+          document.getElementById('past').value = characterData.past;
+          document.getElementById('for').value = characterData.for;
+          document.getElementById('des').value = characterData.des;
+          document.getElementById('con').value = characterData.con;
+          document.getElementById('int').value = characterData.int;
+          document.getElementById('sab').value = characterData.sab;
+          document.getElementById('car').value = characterData.car;
+
+          // Carrega estatísticas adicionais
+          document.getElementById('life-view').textContent = characterData.life;
+          document.getElementById('sanity-view').textContent = characterData.sanity;
+          document.getElementById('special-view').textContent = characterData.special;
+          document.getElementById('armor-view').textContent = characterData.armor;
+          document.getElementById('movement-view').textContent = characterData.movement;
+          document.getElementById('level-view').textContent = characterData.level;
+
+          // Atualiza as estatísticas
+          updateStats();
+      };
+
+      reader.readAsText(file);
+  }
+});
+
+
 
 
 
@@ -509,3 +815,4 @@ darkModeToggle.addEventListener('click', () => {
     element.classList.toggle('dark-mode');
   });
 });
+

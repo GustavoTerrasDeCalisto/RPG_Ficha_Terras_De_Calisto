@@ -8,7 +8,7 @@ Este repositório contém o código-fonte do sistema de criação de fichas para
 
 ### [Visite a Página Oficial do Terras de Calisto](https://terrasdecalistoficha.wordpress.com/)
 
-### [Acesse o Sistema de Fichas - Página no Netlify](https://super-semifreddo-7298a0.netlify.app/)
+## [Acesse o Sistema de Fichas - Página no Netlify](https://super-semifreddo-7298a0.netlify.app/)
 
 ### Nova Forma de Jogar RPG
 
@@ -31,8 +31,3 @@ O **Terras de Calisto** é um sistema de RPG de mesa que busca proporcionar uma 
 - Sistema de atributos, magias e passivas, alinhado com o universo das Terras de Calisto.
 - Totalmente desenvolvido em **HTML**, **CSS** e **JavaScript**.
 
-### Como Executar o Projeto Localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/terras-de-calisto-fichas.git

@@ -31,6 +31,8 @@ O **Terras de Calisto** é um sistema de RPG de mesa que busca proporcionar uma 
 - Sistema de atributos, magias e passivas, alinhado com o universo das Terras de Calisto.
 - Totalmente desenvolvido em **HTML**, **CSS** e **JavaScript**.
 
-![image](https://github.com/user-attachments/assets/1ebe072f-2f6b-44a0-aaa5-4c7e0580f5b5)
+![image](https://github.com/user-attachments/assets/41dd3cfb-9668-4283-ad8e-bf8d77c2351c)
+
+
 
 

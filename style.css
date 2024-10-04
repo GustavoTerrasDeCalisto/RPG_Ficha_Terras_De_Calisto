@@ -160,7 +160,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 1000px; /* Ajuste a largura conforme necessário */
   text-align: center;
-  margin-top: 66px; /* Adiciona espaço abaixo do header para o conteúdo */
+  margin-top: 60px; /* Adiciona espaço abaixo do header para o conteúdo */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -211,7 +211,7 @@ body {
     padding: 10px;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-top: 110px;
+    margin-top: 120px;
   }
 }
 body {

@@ -815,4 +815,12 @@ darkModeToggle.addEventListener('click', () => {
     element.classList.toggle('dark-mode');
   });
 });
+function menuShow() {
+  let menuMobile = document.querySelector('.mobile-menu'); // Corrigido o nome da variável
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+  } else {
+    menuMobile.classList.add('open');
+  }
+}
 

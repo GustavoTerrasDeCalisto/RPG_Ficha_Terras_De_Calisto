@@ -103,6 +103,34 @@ header {
   .button-menu {
     display: block;
   }
+  
+ /* Oculta o menu por padrão */
+.mobile-menu {
+  display: none;
+}
+
+/* Exibe o menu quando a classe 'open' é adicionada */
+.mobile-menu.open {
+  display: block;
+}
+
+/* Estilos adicionais para o layout */
+.nav-item {
+  list-style: none; /* Remove marcadores de lista */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove sublinhado dos links */
+  display: block; /* Permite que toda a área do item seja clicável */
+  padding: 10px; /* Adiciona espaço interno */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .mobile-menu {
+      display: flex; /* Muda para flex em telas maiores */
+  }
+}
 
   .icon{
     display: block;
@@ -211,7 +239,7 @@ body {
     padding: 10px;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-top: 120px;
+    margin-top: 110px;
   }
 }
 body {

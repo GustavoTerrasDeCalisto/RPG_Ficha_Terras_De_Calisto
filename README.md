@@ -8,7 +8,8 @@ Este repositório contém o código-fonte do sistema de criação de fichas para
 
 ### [Visite a Página Oficial do Terras de Calisto](https://terrasdecalistoficha.wordpress.com/)
 
-## [Acesse o Sistema de Fichas - Página no Netlify]([https://super-semifreddo-7298a0.netlify.app](https://terras-de-calisto-ficha-rpg.netlify.app/)/)
+## [Acesse o Sistema de Fichas - Página no Netlify](https://terras-de-calisto-ficha-rpg.netlify.app/)
+
 
 ### Nova Forma de Jogar RPG
 

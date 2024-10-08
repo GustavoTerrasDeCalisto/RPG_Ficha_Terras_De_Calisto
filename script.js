@@ -246,6 +246,50 @@ const raceData = {
       "car": 2
     },
     "especialPorNivel": 3
+  },
+  "Gornis - Temp": { // Elfo adicionado como exemplo
+    "vidaBase": 5,
+    "sanidadeBase": 0,
+    "especialBase": 0,
+    "armaduraBase": 0,
+    "movimentoBase": 1,
+    "bonusRace": "-",
+    "PassivaDisponivel": "------------",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "----------",  
+    "vidaPorNivel": {
+      "for": 1,
+      "des": 1,
+      "con": 1
+    },
+    "sanidadePorNivel": {
+      "int": 2,
+      "sab": 2,
+      "car": 2
+    },
+    "especialPorNivel": 3
+  },
+  "sua raça": { // Elfo adicionado como exemplo
+    "vidaBase": 0,
+    "sanidadeBase": 0,
+    "especialBase": 0,
+    "armaduraBase": 0,
+    "movimentoBase": 0,
+    "bonusRace": "-",
+    "PassivaDisponivel": "------------",
+    "MagiaDisponivel": "-",
+    "TalentoDisponivel": "----------",  
+    "vidaPorNivel": {
+      "for": 0,
+      "des": 0,
+      "con": 0
+    },
+    "sanidadePorNivel": {
+      "int": 0,
+      "sab": 0,
+      "car": 0
+    },
+    "especialPorNivel": 3
   }
 };
 
@@ -289,7 +333,417 @@ const pastData = {
     "resistencia": "Alma",
     "bonusPass": "+1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez",
     "movimento_pass": 3
+  },
+    "Atirador": { 
+      "vidaPorNivel": 13,
+      "sanidadePorNivel": 3,
+      "armaduraPorNivel": 1,
+      "resistencia": "Laser",
+      "bonusPass": "+2 em dados de acerto com armas a distância, pode Mirar sem lado negativo uma vez por combate.",
+      "movimento_pass": 4
+    },
+    "Barão": { 
+      "vidaPorNivel": 14,
+      "sanidadePorNivel": 2,
+      "armaduraPorNivel": 1,
+      "resistencia": "Ácido",
+      "bonusPass": "+10 de vida, +1 em acerto geral, Cuspe ácido sem custo uma vez por dia.",
+      "movimento_pass": 4.5
+    },
+    "Bárbaro": { 
+      "vidaPorNivel": 15,
+      "sanidadePorNivel": 1,
+      "armaduraPorNivel": 3,
+      "resistencia": "Fogo",
+      "bonusPass": "+20 de vida + 2 em curas recebidas + 2 de armadura.",
+      "movimento_pass": 4
+    },
+    "Bardo": { 
+      "vidaPorNivel": 9,
+      "sanidadePorNivel": 7,
+      "armaduraPorNivel": 1,
+      "resistencia": "Luz",
+      "bonusPass": "+2 em testes de Carisma e + 2 em diplomacia.",
+      "movimento_pass": 3.5
+    },
+    "Bruxo": { 
+      "vidaPorNivel": 9,
+      "sanidadePorNivel": 7,
+      "armaduraPorNivel": 1,
+      "resistencia": "Escuridão",
+      "bonusPass": "+10 especial e + 10 sanidade, magias de atributo Sabedoria custam metade.",
+      "movimento_pass": 3.5
+    },
+    "Carpinteiro": { 
+      "vidaPorNivel": 13,
+      "sanidadePorNivel": 3,
+      "armaduraPorNivel": 1,
+      "resistencia": "Tempestade",
+      "bonusPass": "+6 de sanidade e uma ação livre extra por turno.",
+      "movimento_pass": 3.5
+    },
+    "Catador": { 
+      "vidaPorNivel": 8,
+      "sanidadePorNivel": 8,
+      "armaduraPorNivel": 1,
+      "resistencia": "Alma",
+      "bonusPass": "Coleciona partes de corpos para aumentar suas invocações (cada parte aumenta para 1 invocação extra), Magia LEVANTA sem custo uma vez por dia.",
+      "movimento_pass": 3.5
+    },
+    "Colosso": { 
+      "vidaPorNivel": 16,
+      "sanidadePorNivel": 0,
+      "armaduraPorNivel": 4,
+      "resistencia": "Esmagante",
+      "bonusPass": "+10 de vida, 3 de armadura, armadura sobrenatural sem custo uma vez por dia.",
+      "movimento_pass": 3.5
+    },
+    "Conjurador": { 
+      "vidaPorNivel": 10,
+      "sanidadePorNivel": 6,
+      "armaduraPorNivel": 1,
+      "resistencia": "Distorção",
+      "bonusPass": "Passivas e Magias tem custo reduzido baseado em 1d4.",
+      "movimento_pass": 4.5
+    },
+    "Costeiro": { 
+      "vidaPorNivel": 12,
+      "sanidadePorNivel": 4,
+      "armaduraPorNivel": 3,
+      "resistencia": "Água",
+      "bonusPass": "+1d6 com porretes ou katanas, não sofre terrenos difíceis, +2 armadura e armas não pode ser Desarmado.",
+      "movimento_pass": 4.5
+    },
+    "Criatura": { 
+      "vidaPorNivel": 15,
+      "sanidadePorNivel": 1,
+      "armaduraPorNivel": 4,
+      "resistencia": "Gelo",
+      "bonusPass": "+18 de vida,+3 armadura, -1 em acerto geral com magias, pavor custo uma vez por dia ou sem lado negativo.",
+      "movimento_pass": 4.5
+    },
+    "Duelista": { 
+      "vidaPorNivel": 14,
+      "sanidadePorNivel": 2,
+      "armaduraPorNivel": 1,
+      "resistencia": "Perfurante",
+      "bonusPass": "+5 de sanidade e 1d10 de dano contra alvos isolados (sem ninguém próximo de 10m).",
+      "movimento_pass": 4
+    },
+    "Escudeiro": { 
+      "vidaPorNivel": 15,
+      "sanidadePorNivel": 1,
+      "armaduraPorNivel": 3,
+      "resistencia": "Esmagante",
+      "bonusPass": "+4 dano com escudo +15 de vida, +2 armadura, Passiva Emanar energia sem Negativo e sem custo uma vez por dia.",
+      "movimento_pass": 3.5
+    },
+    "Especialista": { 
+      "vidaPorNivel": 16,
+      "sanidadePorNivel": 0,
+      "armaduraPorNivel": 1,
+      "resistencia": "Fogo",
+      "bonusPass": "-10 de Sanidade,+15 de especial, menos sanidade por nível e tem -Vantagem- com Passivas.",
+      "movimento_pass": 4.5
+    },
+    "Espectro": { 
+      "vidaPorNivel": 10,
+      "sanidadePorNivel": 6,
+      "armaduraPorNivel": 1,
+      "resistencia": "Laser",
+      "bonusPass": "+1d12 danos de Laser e Orbe negro pode acertar mais de um alvo.",
+      "movimento_pass": 4.5
+    },
+    "Espiritualista": { 
+      "vidaPorNivel": 11,
+      "sanidadePorNivel": 5,
+      "armaduraPorNivel": 1,
+      "resistencia": "Aura",
+      "bonusPass": "Magia Possessão de Luz Sem custo uma vez por dia, +12 de sanidade.",
+      "movimento_pass": 4
+    },
+    "Fera": { 
+      "vidaPorNivel": 16,
+      "sanidadePorNivel": 0,
+      "armaduraPorNivel": 3,
+      "resistencia": "Água",
+      "bonusPass": "+20 de vida + 2 de armadura +5 em Atletismo e Adestrar animais.",
+      "movimento_pass": 4.5
+    },
+    "Ferreiro": { 
+      "vidaPorNivel": 13,
+      "sanidadePorNivel": 3,
+      "armaduraPorNivel": 2,
+      "resistencia": "Perfurante",
+      "bonusPass": "Resistência a dano de fogo (+5 em testes contra danos de fogo) + 1 de armadura.",
+      "movimento_pass": 3.5
+    },
+    "Forasteiro": { 
+      "vidaPorNivel": 12,
+      "sanidadePorNivel": 4,
+      "armaduraPorNivel": 1,
+      "resistencia": "Maldição",
+      "bonusPass": "+1d10 com dano de Maldição e +1d10 com espadas curtas.",
+      "movimento_pass": 4
+    },
+    "Glacinata": { 
+      "vidaPorNivel": 14,
+      "sanidadePorNivel": 2,
+      "armaduraPorNivel": 1,
+      "resistencia": "Gelo",
+      "bonusPass": "+1d12 em magias de Gelo e Força Gélida com modificador de atributo de Força.",
+      "movimento_pass": 3.5
+    },
+    "Guerreiro": { 
+      "vidaPorNivel": 13,
+      "sanidadePorNivel": 3,
+      "armaduraPorNivel": 3,
+      "resistencia": "Balístico",
+      "bonusPass": "+5 de dano em armas corpo a corpo + 2 de armadura.",
+      "movimento_pass": 4
+    },
+    "Hemomantico": { 
+      "vidaPorNivel": 10,
+      "sanidadePorNivel": 6,
+      "armaduraPorNivel": 1,
+      "resistencia": "Sangue",
+      "bonusPass": "Magias de sangue causam Hemorragia no inimigo por 2 turnos + 20 de vida.",
+      "movimento_pass": 4.5
+    },
+    "Imitador": { 
+      "vidaPorNivel": 9,
+      "sanidadePorNivel": 7,
+      "armaduraPorNivel": 1,
+      "resistencia": "Alma",
+      "bonusPass": "Mutação sem custo uma vez por dia, +10 especial.",
+      "movimento_pass": 4.5
+    },
+    "Juíz": { 
+      "vidaPorNivel": 11,
+      "sanidadePorNivel": 5,
+      "armaduraPorNivel": 1,
+      "resistencia": "Cortante",
+      "bonusPass": "+2 em armas cortantes e balística, queima sem custo uma vez por dia.",
+      "movimento_pass": 3.5
+    },
+      "Lacaio": {
+        "vidaPorNivel": 14,
+        "sanidadePorNivel": 2,
+        "armaduraPorNivel": 2,
+        "resistencia": "Eletricidade",
+        "bonusPass": "Vingança sem custo uma vez por dia e +5 de vida, +3 especial, +1 defesa.",
+        "movimento_pass": 4
+      },
+      "Ladrão": {
+        "vidaPorNivel": 13,
+        "sanidadePorNivel": 3,
+        "armaduraPorNivel": 1,
+        "resistencia": "Laser",
+        "bonusPass": "+4 em furtividade, +2 roubar.",
+        "movimento_pass": 4.5
+      },
+      "Louco": {
+        "vidaPorNivel": 16,
+        "sanidadePorNivel": 0,
+        "armaduraPorNivel": 1,
+        "resistencia": "Sono",
+        "bonusPass": "-5 de Sanidade, menos sanidade por nível, e dobra os danos com magias.",
+        "movimento_pass": 4.5
+      },
+      "Mago": {
+        "vidaPorNivel": 10,
+        "sanidadePorNivel": 6,
+        "armaduraPorNivel": 1,
+        "resistencia": "Eletricidade",
+        "bonusPass": "+15 sanidade e +2 especial, magias de atributo Inteligência custam metade.",
+        "movimento_pass": 3.5
+      },
+      "Malabarista": {
+        "vidaPorNivel": 12,
+        "sanidadePorNivel": 4,
+        "armaduraPorNivel": 1,
+        "resistencia": "Tremor",
+        "bonusPass": "+5 em testes de arremesso e +2 em testes com acrobacia.",
+        "movimento_pass": 4.5
+      },
+      "Marinheiro": {
+        "vidaPorNivel": 15,
+        "sanidadePorNivel": 1,
+        "armaduraPorNivel": 1,
+        "resistencia": "Tremor",
+        "bonusPass": "+6 em testes de agarrar, +4 em testes para se livrar de status negativos, +10 de vida.",
+        "movimento_pass": 3.5
+      },
+      "Masoquista": {
+        "vidaPorNivel": 13,
+        "sanidadePorNivel": 3,
+        "armaduraPorNivel": 1,
+        "resistencia": "Sangue",
+        "bonusPass": "Armas com correntes causam +1d6 extra. Pode autoinfligir dano a si mesmo (1d4) como ação livre para causar 1d12 extra no inimigo.",
+        "movimento_pass": 4.5
+      },
+      "Médico": {
+        "vidaPorNivel": 12,
+        "sanidadePorNivel": 4,
+        "armaduraPorNivel": 1,
+        "resistencia": "Sagrado",
+        "bonusPass": "+5 em testes de medicina, -1h para tratar feridas.",
+        "movimento_pass": 3.5
+      },
+      "Mendigo": {
+        "vidaPorNivel": 12,
+        "sanidadePorNivel": 4,
+        "armaduraPorNivel": 3,
+        "resistencia": "Névoa",
+        "bonusPass": "Selvageria sem custo, +2 de armadura.",
+        "movimento_pass": 4.5
+      },
+      "Monge": {
+        "vidaPorNivel": 10,
+        "sanidadePorNivel": 6,
+        "armaduraPorNivel": 1,
+        "resistencia": "Luz",
+        "bonusPass": "+1d10 com bastões e a magia Sombra animal sem custo uma vez por dia.",
+        "movimento_pass": 4.5
+      },
+      "Naturalista": {
+        "vidaPorNivel": 9,
+        "sanidadePorNivel": 7,
+        "armaduraPorNivel": 1,
+        "resistencia": "Água",
+        "bonusPass": "+1d6 de dano com Magia Vinhas Mágicas e +2 em testes de inteligência.",
+        "movimento_pass": 4.5
+      },
+      "Nobre": {
+        "vidaPorNivel": 11,
+        "sanidadePorNivel": 5,
+        "armaduraPorNivel": 2,
+        "resistencia": "Luz",
+        "bonusPass": "+6 em curas descansando, +1 de armadura.",
+        "movimento_pass": 3.5
+      },
+      "Perseguidor": {
+        "vidaPorNivel": 12,
+        "sanidadePorNivel": 4,
+        "armaduraPorNivel": 1,
+        "resistencia": "Ácido",
+        "bonusPass": "+5 em furtividade, +10 de vida e Pressão sem custo uma vez por dia.",
+        "movimento_pass": 5.5
+      },
+      "Pervertido": {
+        "vidaPorNivel": 16,
+        "sanidadePorNivel": 0,
+        "armaduraPorNivel": 1,
+        "resistencia": "Sagrado",
+        "bonusPass": "+5 em testes de agarrar. Caso esteja sem roupa, esse valor fica +10.",
+        "movimento_pass": 4
+      },
+      "Pescador": {
+        "vidaPorNivel": 14,
+        "sanidadePorNivel": 2,
+        "armaduraPorNivel": 1,
+        "resistencia": "Água",
+        "bonusPass": "+18 de vida e magias de água causam 2d8 extras.",
+        "movimento_pass": 3.5
+      },
+      "Pirata": {
+        "vidaPorNivel": 11,
+        "sanidadePorNivel": 5,
+        "armaduraPorNivel": 1,
+        "resistencia": "Água",
+        "bonusPass": "+5 em dados de investigação, +1d8 em danos com pistolas e rapieiras.",
+        "movimento_pass": 4
+      },
+      "Prefeito": {
+        "vidaPorNivel": 10,
+        "sanidadePorNivel": 6,
+        "armaduraPorNivel": 1,
+        "resistencia": "Psicológico",
+        "bonusPass": "+10 em testes de diplomacia.",
+        "movimento_pass": 3.5
+      },
+      "Prisioneiro": {
+        "vidaPorNivel": 14,
+        "sanidadePorNivel": 2,
+        "armaduraPorNivel": 1,
+        "resistencia": "Cortante",
+        "bonusPass": "+2d6 quando agarrando, +2 em testes de Constituição, +2d8 com ataque usando algemas, +15 de vida.",
+        "movimento_pass": 3.5
+      },
+      "Profanado": {
+        "vidaPorNivel": 15,
+        "sanidadePorNivel": 1,
+        "armaduraPorNivel": 2,
+        "resistencia": "Escuridão",
+        "bonusPass": "Consumir sem custo uma vez por dia, +30 de vida, +1 de armadura.",
+        "movimento_pass": 3.5
+      },
+      "Protetor": {
+        "vidaPorNivel": 10,
+        "sanidadePorNivel": 6,
+        "armaduraPorNivel": 2,
+        "resistencia": "Alma",
+        "bonusPass": "+5 de vida, +1 de armadura, +5 sanidade e magia Mestre das passivas sem custo uma vez por dia.",
+        "movimento_pass": 4.5
+      },
+      "Pugilista": {
+        "vidaPorNivel": 14,
+        "sanidadePorNivel": 2,
+        "armaduraPorNivel": 2,
+        "resistencia": "Esmagante",
+        "bonusPass": "+1d12 desarmado, +1 de armadura.",
+        "movimento_pass": 4
+      },
+      "Revivido": {
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 10,
+        "armaduraPorNivel": 1,
+        "resistencia": "Maldição",
+        "bonusPass": "A magia Órgãos Sombrios sem custo uma vez por combate, +2 em curas, menos vida no começo.",
+        "movimento_pass": 3.5
+      },
+      "Samurai": {
+        "vidaPorNivel": 14,
+        "sanidadePorNivel": 2,
+        "armaduraPorNivel": 1,
+        "resistencia": "Cortante",
+        "bonusPass": "+1d8 de dano com katanas. Desembainhar no contra-ataque gasta ação livre e ganha +1d8 de dano (armas corpo a corpo).",
+        "movimento_pass": 4.5
+      
+      },
+      "Sacerdote": {
+        "vidaPorNivel": 14,
+        "sanidadePorNivel": 2,
+        "armaduraPorNivel": 1,
+        "resistencia": "Fogo",
+        "bonusPass": "+1d12 no atributo de Fé, podendo curar mais. Defesa mágica.",
+        "movimento_pass": 3.5
+      },"Soberano": {
+    "vidaPorNivel": 8,
+    "sanidadePorNivel": 8,
+    "armaduraPorNivel": 1,
+    "resistencia": "Psicológico",
+    "bonusPass": "Magia Diplopia Binocular sem custo uma vez por dia e cria 2 cópias, +20 de sanidade.",
+    "movimento_pass": 4
+  },
+  "Taverneiro": {
+    "vidaPorNivel": 13,
+    "sanidadePorNivel": 3,
+    "armaduraPorNivel": 1,
+    "resistencia": "Balístico",
+    "bonusPass": "+5 de especial e +2 em testes de Sabedoria.",
+    "movimento_pass": 3.5
+  },
+  "Tormentalista": {
+    "vidaPorNivel": 10,
+    "sanidadePorNivel": 6,
+    "armaduraPorNivel": 1,
+    "resistencia": "Tempestade",
+    "bonusPass": "+1d12 em magias de Tempestade e Tempestade da Natureza com modificador de atributo de Força.",
+    "movimento_pass": 4
   }
+  
+  
 };
 
 
@@ -520,12 +974,13 @@ function updateStats() {
   updateRaceImage();
   updatePastImage();
 }
-
 function updateRaceImage() {
   const race = document.getElementById('race').value;
   const raceImage = document.getElementById('race-image');
 
-  if (race === "Elfo") {
+  if (race === "sua raça") {
+    raceImage.src = "imagens/raças/sua raça.png";
+  }else if (race === "Elfo") {
     raceImage.src = "imagens/raças/elfo.png";
   } else if (race === "Humano") {
     raceImage.src = "imagens/raças/humano.png";
@@ -547,8 +1002,10 @@ function updateRaceImage() {
     raceImage.src = "imagens/raças/Gronklech – Durock.png";
   } else if (race === "Umbrowalker – Shlurp") {
     raceImage.src = "imagens/raças/Umbrowalker – Shlurp.png";
+  } else if (race === "Gornis - Temp") {
+    raceImage.src = "imagens/raças/Gornis - Temp.png";
   } else {
-    raceImage.src = ""; // Clear the image if no race is selected
+    raceImage.src = "sua raça"; // Clear the image if no race is selected
   }
 }
 
@@ -579,7 +1036,111 @@ function updatePastImage() {
   
   } else if (past === "Arqueiro") {
     pastImage.src = "imagens/pass/arqueiro.png";
-  } else {
+  } else if (past === "Atirador") { pastImage.src = "imagens/pass/Atirador.png"; 
+  }
+  else if (past === "Barão") { pastImage.src = "imagens/pass/Barão.png"; 
+  }
+  else if (past === "Bárbaro") { pastImage.src = "imagens/pass/Bárbaro.png"; 
+  }
+  else if (past === "Bardo") { pastImage.src = "imagens/pass/Bardo.png"; 
+  }
+  else if (past === "Bruxo") { pastImage.src = "imagens/pass/Bruxo.png"; 
+  }
+  else if (past === "Carpinteiro") { pastImage.src = "imagens/pass/Carpinteiro.png"; 
+  }
+  else if (past === "Catador") { pastImage.src = "imagens/pass/Catador.png"; 
+  }
+  else if (past === "Colosso") { pastImage.src = "imagens/pass/Colosso.png"; 
+  }
+  else if (past === "Conjurador") { pastImage.src = "imagens/pass/Conjurador.png"; 
+  }
+  else if (past === "Costeiro") { pastImage.src = "imagens/pass/Costeiro.png"; 
+  }
+  else if (past === "Criatura") { pastImage.src = "imagens/pass/Criatura.png"; 
+  }
+  else if (past === "Duelista") { pastImage.src = "imagens/pass/Duelista.png"; 
+  }
+  else if (past === "Escudeiro") { pastImage.src = "imagens/pass/Escudeiro.png"; 
+  }
+  else if (past === "Especialista") { pastImage.src = "imagens/pass/Especialista.png"; 
+  }
+  else if (past === "Espectro") { pastImage.src = "imagens/pass/Espectro.png"; 
+  }
+  else if (past === "Espiritualista") { pastImage.src = "imagens/pass/Espiritualista.png"; 
+  }
+  else if (past === "Fera") { pastImage.src = "imagens/pass/Fera.png"; 
+  }
+  else if (past === "Ferreiro") { pastImage.src = "imagens/pass/Ferreiro.png"; 
+  }
+  else if (past === "Forasteiro") { pastImage.src = "imagens/pass/Forasteiro.png"; 
+  }
+  else if (past === "Glacinata") { pastImage.src = "imagens/pass/Glacinata.png"; 
+  }
+  else if (past === "Guerreiro") { pastImage.src = "imagens/pass/Guerreiro.png"; 
+  }
+  else if (past === "Hemomantico") { pastImage.src = "imagens/pass/Hemomantico.png"; 
+  }
+  else if (past === "Imitador") { pastImage.src = "imagens/pass/Imitador.png"; 
+  }
+  else if (past === "Juíz") { pastImage.src = "imagens/pass/Juiz.png"; 
+  }
+  else if (past === "Lacaio") { pastImage.src = "imagens/pass/Lacaio.png"; 
+  }
+  else if (past === "Ladrão") { pastImage.src = "imagens/pass/Ladrão.png"; 
+  }
+  else if (past === "Louco") { pastImage.src = "imagens/pass/Louco.png"; 
+  }
+  else if (past === "Mago") { pastImage.src = "imagens/pass/Mago.png"; 
+  }
+  else if (past === "Malabarista") { pastImage.src = "imagens/pass/Malabarista.png"; 
+  }
+  else if (past === "Marinheiro") { pastImage.src = "imagens/pass/Marinheiro.png"; 
+  }
+  else if (past === "Masoquista") { pastImage.src = "imagens/pass/Masoquista.png"; 
+  }
+  else if (past === "Médico") { pastImage.src = "imagens/pass/Medico.png"; 
+  }
+  else if (past === "Mendigo") { pastImage.src = "imagens/pass/Mendigo.png"; 
+  }
+  else if (past === "Monge") { pastImage.src = "imagens/pass/Monge.png"; 
+  }
+  else if (past === "Naturalista") { pastImage.src = "imagens/pass/Naturalista.png"; 
+  }
+  else if (past === "Nobre") { pastImage.src = "imagens/pass/Nobre.png"; 
+  }
+  else if (past === "Perseguidor") { pastImage.src = "imagens/pass/Perseguidor.png"; 
+  }
+  else if (past === "Pervertido") { pastImage.src = "imagens/pass/Pervertido.png"; 
+  }
+  else if (past === "Pescador") { pastImage.src = "imagens/pass/Pescador.png"; 
+  }
+  else if (past === "Pirata") { pastImage.src = "imagens/pass/Pirata.png"; 
+  }
+  else if (past === "Prefeito") { pastImage.src = "imagens/pass/Prefeito.png"; 
+  }
+  else if (past === "Prisioneiro") { pastImage.src = "imagens/pass/Prisioneiro.png"; 
+  }
+  else if (past === "Profanado") { pastImage.src = "imagens/pass/Profanado.png"; 
+  }
+  else if (past === "Protetor") { pastImage.src = "imagens/pass/Protetor.png"; 
+  }
+  else if (past === "Pugilista") { pastImage.src = "imagens/pass/Pugilista.png"; 
+  }
+  else if (past === "Revivido") { pastImage.src = "imagens/pass/Revivido.png"; 
+  }
+  else if (past === "Samurai") { pastImage.src = "imagens/pass/Samurai.png"; 
+  }
+  else if (past === "Sacerdote") { pastImage.src = "imagens/pass/Sacerdote.png"; 
+  }
+  else if (past === "Soberano") { pastImage.src = "imagens/pass/Soberano.png"; 
+  }
+  else if (past === "Taverneiro") { pastImage.src = "imagens/pass/Taverneiro.png"; 
+  }
+  else if (past === "Tormentalista") { pastImage.src = "imagens/pass/Tormentalista.png"; 
+  }
+  else if (past === "seu passado") { pastImage.src = "imagens/pass/seu passado.png"; 
+  }
+  else {
     pastImage.src = ""; // Limpa a imagem se nenhum passado for selecionado
   }
 }
@@ -823,4 +1384,6 @@ function menuShow() {
     menuMobile.classList.add('open');
   }
 }
+
+
 

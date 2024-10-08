@@ -974,3 +974,26 @@ button:hover {
   background-color: #f11141; /* Cor de fundo */
   margin-top: 10px; /* Espaçamento superior */
 }
+
+
+
+#textToImageForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+#resultImage img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#imageContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#generatedImage {
+  max-width: 100%; /* Adapte a imagem à largura do contêiner */
+  height: auto;
+}

@@ -299,7 +299,7 @@ const pastData = {
     "sanidadePorNivel": 4,
     "armaduraPorNivel": 1,
     "resistencia": "Sagrado",
-    "bonusPass": "+2 em testes de carisma, +5 em testes de Sobrevivência",
+    "bonusPass": "+2 em testes de Conexão, +5 em testes de Sobrevivência",
     "movimento_pass": 2
   },
   "Arauto": { // Cavaleiro adicionado como exemplo
@@ -363,7 +363,7 @@ const pastData = {
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Luz",
-      "bonusPass": "+2 em testes de Carisma e + 2 em diplomacia.",
+      "bonusPass": "+2 em testes de Conexão e + 2 em diplomacia.",
       "movimento_pass": 3.5
     },
     "Bruxo": { 
@@ -371,7 +371,7 @@ const pastData = {
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Escuridão",
-      "bonusPass": "+10 especial e + 10 sanidade, magias de atributo Sabedoria custam metade.",
+      "bonusPass": "+10 especial e + 10 sanidade, magias de atributo Libertação custam metade.",
       "movimento_pass": 3.5
     },
     "Carpinteiro": { 
@@ -491,7 +491,7 @@ const pastData = {
       "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Gelo",
-      "bonusPass": "+1d12 em magias de Gelo e Força Gélida com modificador de atributo de Força.",
+      "bonusPass": "+1d12 em magias de Gelo e Força Gélida com modificador de atributo de Brutalidade.",
       "movimento_pass": 3.5
     },
     "Guerreiro": { 
@@ -555,7 +555,7 @@ const pastData = {
         "sanidadePorNivel": 6,
         "armaduraPorNivel": 1,
         "resistencia": "Eletricidade",
-        "bonusPass": "+15 sanidade e +2 especial, magias de atributo Inteligência custam metade.",
+        "bonusPass": "+15 sanidade e +2 especial, magias de atributo Preservação custam metade.",
         "movimento_pass": 3.5
       },
       "Malabarista": {
@@ -611,7 +611,7 @@ const pastData = {
         "sanidadePorNivel": 7,
         "armaduraPorNivel": 1,
         "resistencia": "Água",
-        "bonusPass": "+1d6 de dano com Magia Vinhas Mágicas e +2 em testes de inteligência.",
+        "bonusPass": "+1d6 de dano com Magia Vinhas Mágicas e +2 em testes de Preservação.",
         "movimento_pass": 4.5
       },
       "Nobre": {
@@ -667,7 +667,7 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
-        "bonusPass": "+2d6 quando agarrando, +2 em testes de Constituição, +2d8 com ataque usando algemas, +15 de vida.",
+        "bonusPass": "+2d6 quando agarrando, +2 em testes de Determinação, +2d8 com ataque usando algemas, +15 de vida.",
         "movimento_pass": 3.5
       },
       "Profanado": {
@@ -731,7 +731,7 @@ const pastData = {
     "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Balístico",
-    "bonusPass": "+5 de especial e +2 em testes de Sabedoria.",
+    "bonusPass": "+5 de especial e +2 em testes de Libertação.",
     "movimento_pass": 3.5
   },
   "Tormentalista": {
@@ -739,7 +739,7 @@ const pastData = {
     "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Tempestade",
-    "bonusPass": "+1d12 em magias de Tempestade e Tempestade da Natureza com modificador de atributo de Força.",
+    "bonusPass": "+1d12 em magias de Tempestade e Tempestade da Natureza com modificador de atributo de Brutalidade.",
     "movimento_pass": 4
   }
   
@@ -833,8 +833,8 @@ function calculateCurrentAttributes() {
   
   }
 
-  attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con);
-  attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car);
+  attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) -97;
+  attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car)-30;
   attributes.especial += level * raceData[race].especialPorNivel; 
 
   return attributes;

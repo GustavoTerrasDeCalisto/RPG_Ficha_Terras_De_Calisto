@@ -646,43 +646,33 @@ button:hover {
 
 
 @media screen and (max-width: 735px) {
-  @media screen and (max-width: 735px) {
-    .side-menu {
-        position: fixed;
-        top: 0;
-        left: -350px; /* Começa fora da tela */
-        width: 250px; /* Aumentando a largura do menu */
-        height: 100%; /* 100% da altura da tela */
-        background-color: #333;
-        color: white;
-        transition: left 0.3s ease; /* Transição suave */
-        z-index: 1000; /* Para que fique sobre outros elementos */
-    }
+  .side-menu {
+      position: fixed;
+      top: 0;
+      left: -350px; /* Começa fora da tela */
+      width: 250px; /* Aumentando a largura do menu */
+      height: 100%; /* 100% da altura da tela */
+      background-color: #333;
+      color: white;
+      transition: left 0.3s ease; /* Transição suave */
+      z-index: 1000; /* Para que fique sobre outros elementos */
+  }
 
-    .side-menu.open {
-        left: 0; /* Move o menu para a tela quando aberto */
-    }
+  .side-menu.open {
+      left: 0; /* Move o menu para a tela quando aberto */
+  }
 
-    .menu-toggle {
-        position: fixed; /* Para que o botão esteja sempre visível */
-        top: 10px; /* Distância do topo */
-        left: 10px; /* Distância da esquerda */
-        background-color: #444; /* Cor do botão */
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 1001; /* Um pouco acima do menu */
-    }
+  .menu-toggle {
+      position: fixed; /* Para que o botão esteja sempre visível */
+      top: 10px; /* Distância do topo */
+      left: 10px; /* Distância da esquerda */
+      background-color: #444; /* Cor do botão */
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1001; /* Um pouco acima do menu */
+  }
 }
-
-.container-centralizado {
-    display: flex;               /* Habilita o flexbox */
-    justify-content: center;     /* Alinha horizontalmente ao centro */
-    align-items: center;         /* Alinha verticalmente ao centro */
-    height: 25vh;               /* Define a altura do contêiner como 25% da altura da janela */
-    text-align: center;          /* Alinha o texto no centro do contêiner */
-}
-
   .mobile-menu ul {
     display: flex;
     flex-direction: column;

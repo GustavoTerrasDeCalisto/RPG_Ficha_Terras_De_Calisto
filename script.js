@@ -836,6 +836,11 @@ function calculateCurrentAttributes() {
   attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) -97;
   attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car)-30;
   attributes.especial += level * raceData[race].especialPorNivel; 
+  let valorSubtrair = 0; // Inicializa o valor de subtração
+  function atualizarValorSubtrair() {
+    valorSubtrair = parseInt(document.getElementById('valor-subtrair').value) || 0;
+}
+
 
   return attributes;
 }
@@ -1384,6 +1389,30 @@ function menuShow() {
     menuMobile.classList.add('open');
   }
 }
+
+// Captura os elementos do DOM
+// Captura os elementos do DOM
+// Captura os elementos do DOM// Captura os elementos do DOM// Captura os elementos do DOM
+// Captura os elementos do DOM
+// Captura os elementos do DOM
+function toggleMenu() {
+  const menu = document.getElementById('side-menu');
+  menu.classList.toggle('open');
+}
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('side-menu');
+  const button = document.querySelector('.toggle-button');
+
+  // Verifica se o clique foi fora do menu e do botão
+  if (!menu.contains(event.target) && !button.contains(event.target)) {
+      menu.classList.remove('open');
+  }
+});
+
+// Função genérica para aplicar dano/ajuste
+// Valores de status base (cópia do status original)
+// Função para pegar o valor atual dos status da barra original
+
 
 
 

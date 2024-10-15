@@ -997,3 +997,112 @@ button:hover {
   max-width: 100%; /* Adapte a imagem à largura do contêiner */
   height: auto;
 }
+
+/* menuuuuuu barrrr de danooooooo dano  */
+/* Estilos para o menu lateral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -730px; /* Começa fora da tela */
+  width: 730px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease; /* Transição suave */
+  z-index: 1000; /* Para que fique sobre outros elementos */
+}
+
+.side-menu.open {
+  left: 0; /* Mover para a esquerda quando aberto */
+}
+
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-content {
+  padding: 20px;
+}
+
+.menu-content h2 {
+  margin-top: 0;
+}
+
+.menu-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-content li {
+  margin: 10px 0;
+}
+
+.menu-content a {
+  color: white;
+  text-decoration: none;
+}
+
+
+h3 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+input[type="number"] {
+  margin-right: 10px;
+  padding: 5px;
+  width: 80px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+input[type="number"] {
+    margin-right: 10px;
+    padding: 5px;
+    width: 80px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+.container-centralizado {
+  display: flex;               /* Habilita o flexbox */
+  justify-content: center;     /* Alinha horizontalmente ao centro */
+  align-items: center;         /* Alinha verticalmente ao centro */
+  height: 25vh;               /* Define a altura do contêiner como 100% da altura da janela */
+  text-align: center;          /* Alinha o texto no centro do contêiner */
+}

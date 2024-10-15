@@ -506,7 +506,7 @@ button:hover {
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   cursor: pointer;
 }
 
@@ -646,6 +646,43 @@ button:hover {
 
 
 @media screen and (max-width: 735px) {
+  @media screen and (max-width: 735px) {
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: -350px; /* Começa fora da tela */
+        width: 250px; /* Aumentando a largura do menu */
+        height: 100%; /* 100% da altura da tela */
+        background-color: #333;
+        color: white;
+        transition: left 0.3s ease; /* Transição suave */
+        z-index: 1000; /* Para que fique sobre outros elementos */
+    }
+
+    .side-menu.open {
+        left: 0; /* Move o menu para a tela quando aberto */
+    }
+
+    .menu-toggle {
+        position: fixed; /* Para que o botão esteja sempre visível */
+        top: 10px; /* Distância do topo */
+        left: 10px; /* Distância da esquerda */
+        background-color: #444; /* Cor do botão */
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1001; /* Um pouco acima do menu */
+    }
+}
+
+.container-centralizado {
+    display: flex;               /* Habilita o flexbox */
+    justify-content: center;     /* Alinha horizontalmente ao centro */
+    align-items: center;         /* Alinha verticalmente ao centro */
+    height: 25vh;               /* Define a altura do contêiner como 25% da altura da janela */
+    text-align: center;          /* Alinha o texto no centro do contêiner */
+}
+
   .mobile-menu ul {
     display: flex;
     flex-direction: column;
@@ -656,7 +693,7 @@ button:hover {
     background-color: #b20000; /* Torna o hover mais perceptível */
     transition: background-color 0.3s; /* Transição suave de hover */
   }
-}
+
 .nav-link {
   color: #f0f0f0; /* Aumenta o contraste */
   font-size: 1.6rem; /* Ajusta o tamanho da fonte */
@@ -1000,6 +1037,7 @@ button:hover {
 
 /* menuuuuuu barrrr de danooooooo dano  */
 /* Estilos para o menu lateral */
+
 .side-menu {
   position: fixed;
   top: 0;

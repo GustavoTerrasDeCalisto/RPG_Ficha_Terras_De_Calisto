@@ -748,32 +748,32 @@ const pastData = {
 
 
 const resistenciaColors = {
-  "Gelo": { background: "#CDE1B7", color: "#3D340C" },
-  "Ácido": { background: "#4FA86A", color: "#471B74" },
-  "Fogo": { background: "#0099FF", color: "#000000" },
-  "Água": { background: "#C6BD46", color: "#000000" },
-  "Eletricidade": { background: "#00FFFF", color: "#043F78" },
-  "Tempestade": { background: "#CFF4A4", color: "#5C4F13" },
-  "Sangue": { background: "#000098", color: "#FFFFFF" },
-  "Luz": { background: "#76EFFF", color: "#666666" }, // Corrigido para "Luz" (antes estava como "luz")
-  "Maldição": { background: "#30114C", color: "#A74E67" },
-  "Sagrado": { background: "#7F6000", color: "#FFFF00" },
-  "Laser": { background: "#00FF00", color: "#134E27" },
-  "Alma": { background: "#BDA6D5", color: "#FF00FF" },
-  "Escuridão": { background: "#190D00", color: "#D9D9D9" },
-  "Plasma": { background: "#FFFFFF", color: "#000000" },
-  "Tremor": { background: "#5B1E31", color: "#FFB88E" },
-  "Aura": { background: "#D6A7B4", color: "#30114C" },
-  "Psicológico": { background: "#F564C1", color: "#000000" },
-  "Mental": { background: "#A77783", color: "#FF00FF" },
-  "Distorção": { background: "#A07BC2", color: "#DCD1EA" },
-  "Névoa": { background: "#E8C59F", color: "#FFFFFF" },
-  "Sono": { background: "#E9D2D9", color: "#666666" },
-  "Balístico": { background: "#434343", color: "#000000" },
-  "Perfurante": { background: "#D9D9D9", color: "#000000" },
-  "Cortante": { background: "#000000", color: "#FFFFFF" },
-  "Esmagante": { background: "#EFEFEF", color: "#999999" },
-  "N/A": { background: "#f0f0f0", color: "#333333" } // Caso não haja resistência
+  "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
+  "Ácido": { background: "#A5D6A7", color: "#1B5E20" }, // Verde ácido
+  "Fogo": { background: "#FF7043", color: "#BF360C" }, // Laranja vibrante para fogo
+  "Água": { background: "#81D4FA", color: "#01579B" }, // Azul aquático
+  "Eletricidade": { background: "#FFD600", color: "#F57F17" }, // Amarelo eletrizante
+  "Tempestade": { background: "#7E57C2", color: "#311B92" }, // Roxo tempestuoso
+  "Sangue": { background: "#D50000", color: "#FFFFFF" }, // Vermelho sangue
+  "Luz": { background: "#FFF59D", color: "#37474F" }, // Amarelo claro, tom suave
+  "Maldição": { background: "#512DA8", color: "#CE93D8" }, // Roxo sombrio
+  "Sagrado": { background: "#FFEB3B", color: "#5D4037" }, // Amarelo dourado
+  "Laser": { background: "#00E5FF", color: "#004D40" }, // Azul neon para laser
+  "Alma": { background: "#CE93D8", color: "#4A148C" }, // Roxo etéreo
+  "Escuridão": { background: "#263238", color: "#B0BEC5" }, // Preto acinzentado
+  "Plasma": { background: "#E1F5FE", color: "#0277BD" }, // Azul claro e intenso
+  "Tremor": { background: "#8D6E63", color: "#3E2723" }, // Marrom rochoso
+  "Aura": { background: "#FFF8E1", color: "#4E342E" }, // Amarelo suave e radiante
+  "Psicológico": { background: "#F48FB1", color: "#880E4F" }, // Rosa profundo
+  "Mental": { background: "#B0BEC5", color: "#263238" }, // Cinza azulado, neutro
+  "Distorção": { background: "#A1887F", color: "#D7CCC8" }, // Cinza com tom distorcido
+  "Névoa": { background: "#CFD8DC", color: "#455A64" }, // Cinza nebuloso
+  "Sono": { background: "#D1C4E9", color: "#4A148C" }, // Lilás suave
+  "Balístico": { background: "#BDBDBD", color: "#424242" }, // Cinza chumbo
+  "Perfurante": { background: "#90A4AE", color: "#263238" }, // Cinza azulado e sólido
+  "Cortante": { background: "#37474F", color: "#FFFFFF" }, // Cinza aço
+  "Esmagante": { background: "#ECEFF1", color: "#78909C" }, // Cinza claro e concreto
+  "N/A": { background: "#f0f0f0", color: "#333333" } // Padrão para sem resistência
 };
 
 // Função para calcular os atributos base

@@ -466,7 +466,7 @@ const pastData = {
       "vidaPorNivel": 16,
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 3,
-      "resistencia": "Água",
+      "resistencia": "Eclipse",
       "bonusPass": "+20 de vida + 2 de armadura +5 em Atletismo e Adestrar animais.",
       "movimento_pass": 4.5
     },

@@ -748,7 +748,7 @@ const pastData = {
 
 
 const resistenciaColors = {
-  "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
+    "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
   "Ácido": { background: "#A5D6A7", color: "#1B5E20" }, // Verde ácido
   "Fogo": { background: "#FF7043", color: "#BF360C" }, // Laranja vibrante para fogo
   "Água": { background: "#81D4FA", color: "#01579B" }, // Azul aquático
@@ -773,6 +773,9 @@ const resistenciaColors = {
   "Perfurante": { background: "#90A4AE", color: "#263238" }, // Cinza azulado e sólido
   "Cortante": { background: "#37474F", color: "#FFFFFF" }, // Cinza aço
   "Esmagante": { background: "#ECEFF1", color: "#78909C" }, // Cinza claro e concreto
+  "Cinzas": { background: "#B0BEC5", color: "#455A64" }, // Cinza suave, quase esfumaçado
+  "Morte": { background: "#424242", color: "#D32F2F" }, // Cinza escuro com vermelho
+  "Eclipse": { background: "#212121", color: "#FFA000" }, // Cinza profundo com toque de dourado
   "N/A": { background: "#f0f0f0", color: "#333333" } // Padrão para sem resistência
 };
 

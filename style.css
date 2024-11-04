@@ -1060,7 +1060,7 @@ button:hover {
   background-color: #777; /* Cor mais clara ao passar o mouse */
 }
 
-@media screen and (max-width: 735px) { 
+@media screen and (max-width: 735px) {
   .toggle-button {
     font-size: 8px;
     position: fixed;
@@ -1074,7 +1074,7 @@ button:hover {
     transition: background-color 0.3s;
     content: "P-T-A";
   }
-
+}
 
 .menu-content {
   padding: 20px;
@@ -1177,6 +1177,24 @@ button:hover {
   border-radius: 5px;          /* Bordas arredondadas */
   text-align: left;          /* Alinha todo o texto à esquerda */
 }
+
+@media screen and (max-width: 735px) {
+  .pericias_arrumado {
+    font-size: 9px; /* Ajuste o tamanho da fonte conforme necessário */
+    display: flex;               /* Habilita o flexbox */
+    justify-content: center;     /* Alinha horizontalmente ao centro */
+    align-items: flex-start;     /* Alinha verticalmente ao topo */
+    height: 260px;               /* Altura fixa para a aba */
+    overflow-y: auto;            /* Adiciona o scroll vertical */
+    padding: 10px;               /* Reduz o padding para maximizar o espaço */
+    background-color: #363535;   /* Cor de fundo */
+    border: 1px solid #222121;   /* Borda */
+    border-radius: 5px;          /* Bordas arredondadas */
+    text-align: left;          /* Alinha todo o texto à esquerda */
+  }
+
+ }
+
 
 /* Estilos da barra de rolagem para Webkit (Chrome, Safari) */
 .pericias_arrumado::-webkit-scrollbar {

@@ -1136,6 +1136,22 @@ button:hover {
     background-color: #c82333;
 }
 .container-centralizado {
+  justify-content: center;        /* Alinha horizontalmente ao centro */
+  align-items: center;            /* Alinha verticalmente ao centro */
+  padding: 25px 0px 10px;
+  height: 100vh;                 /* Define a altura do container para ocupar toda a altura da tela */
+}
+.descrição_pericias {
+  font-size: 11px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid #000;       /* Borda sólida de 1px, cor preta */
+  padding: 5px;                 /* Espaçamento interno para que o texto não encoste na borda */
+  border-radius: 4px;           /* Bordas arredondadas (opcional) */
+  margin: 10px;                 /* Margem externa (opcional) */
+  background-color: #2e2e2e;    /* Cor de fundo (opcional) */
+}
+
+.pericias_arrumado {
   font-size: 9px; /* Ajuste o tamanho da fonte conforme necessário */
   display: flex;               /* Habilita o flexbox */
   justify-content: center;     /* Alinha horizontalmente ao centro */
@@ -1150,21 +1166,21 @@ button:hover {
 }
 
 /* Estilos da barra de rolagem para Webkit (Chrome, Safari) */
-.container-centralizado::-webkit-scrollbar {
+.pericias_arrumado::-webkit-scrollbar {
   width: 12px; /* Largura da barra de rolagem */
 }
 
-.container-centralizado::-webkit-scrollbar-thumb {
+.pericias_arrumado::-webkit-scrollbar-thumb {
   background-color: #888; /* Cor do "polegar" da barra de rolagem */
   border-radius: 6px; /* Bordas arredondadas */
 }
 
-.container-centralizado::-webkit-scrollbar-thumb:hover {
+.pericias_arrumado::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Cor do "polegar" quando passa o mouse */
 }
 
 /* Estilos da barra de rolagem para Firefox */
-.container-centralizado {
+.pericias_arrumado {
   scrollbar-width: thin; /* Define a largura da barra de rolagem */
   scrollbar-color: #888 #363535; /* Cor do polegar e do fundo da barra de rolagem */
 }

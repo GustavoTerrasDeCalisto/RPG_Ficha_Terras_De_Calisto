@@ -22,9 +22,81 @@
 <!-- mudança de menu de vida atual e status e os carai virouuuuuuuuuu periciasss-->
 
 <div class="container-centralizado">
-  <h1>Perícias</h1>
+  <!--<h1>Perícias</h1> -->
   <p class="descrição_pericias">"Você pode deixar em +2 três perícias e somar +2 nas que ganhar com o passado."</p>
- 
+  <div class="pericias_arrumado">
+    <div class="pericias">
+      <div class="pericia" data-name="Espadas" data-requirement="Brutalidade" data-description="Desbloqueia o uso de: Espada curta, Florete, Punhal, Adaga, Espada longa, Espada bastarda, Espadão, Claymore, Cimitarra e Sabre.">
+        <p>Espadas</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Brutalidade</span>
+        <span class="description">Desbloqueia o uso de: Espada curta, Florete, Punhal, Adaga, Espada longa, Espada bastarda, Espadão, Claymore, Cimitarra e Sabre.</span>
+      </div>
+      
+      <div class="pericia" data-name="Machados e Martelos" data-requirement="Brutalidade" data-description="Desbloqueia o uso de: Machado de batalha, Machado de guerra, Machado de arremesso, Martelo de guerra, Maça, Clava simples, Clava com espinhos e Mangual.">
+        <p>Machados e Martelos</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Brutalidade</span>
+        <span class="description">Desbloqueia o uso de: Machado de batalha, Machado de guerra, Machado de arremesso, Martelo de guerra, Maça, Clava simples, Clava com espinhos e Mangual.</span>
+      </div>
+      
+      <div class="pericia" data-name="Lanças e Armas com Haste" data-requirement="Agilidade" data-description="Desbloqueia o uso de: Lança curta, Lança longa, Pique, Alabarda, Dardo e Javelin.">
+        <p>Lanças e Armas com Haste</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Agilidade</span>
+        <span class="description">Desbloqueia o uso de: Lança curta, Lança longa, Pique, Alabarda, Dardo e Javelin.</span>
+      </div>
+      
+      <div class="pericia" data-name="Arcos e Bestas" data-requirement="Agilidade" data-description="Desbloqueia o uso de: Arco curto, Arco longo, Arco recurvo, Arco composto, Besta de mão, Besta leve e Besta pesada.">
+        <p>Arcos e Bestas</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Agilidade</span>
+        <span class="description">Desbloqueia o uso de: Arco curto, Arco longo, Arco recurvo, Arco composto, Besta de mão, Besta leve e Besta pesada.</span>
+      </div>
+      
+      <div class="pericia" data-name="Katanas" data-requirement="Agilidade" data-description="Desbloqueia o uso de: Katanas, Ninja-tos, Tantos, Nodachis e Nagamakis.">
+        <p>Katanas</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Agilidade</span>
+        <span class="description">Desbloqueia o uso de: Katanas, Ninja-tos, Tantos, Nodachis e Nagamakis.</span>
+      </div>
+      
+      <div class="pericia" data-name="Fundas e Estilingues" data-requirement="Agilidade" data-description="Desbloqueia o uso de: Funda e Estilingue.">
+        <p>Fundas e Estilingues</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Agilidade</span>
+        <span class="description">Desbloqueia o uso de: Funda e Estilingue.</span>
+      </div>
+      
+      <div class="pericia" data-name="Armas Exóticas e Diversas" data-requirement="Libertação" data-description="Desbloqueia o uso de: Nunchaku, Kusarigama, Kama, Tessen, Shuriken e Kunai.">
+        <p>Armas Exóticas e Diversas</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Libertação</span>
+        <span class="description">Desbloqueia o uso de: Nunchaku, Kusarigama, Kama, Tessen, Shuriken e Kunai.</span>
+      </div>
+      
+      <div class="pericia" data-name="Armas de Cerco" data-requirement="Libertação" data-description="Desbloqueia o uso de: Catapulta, Balista, Trebuchet e Ariete.">
+        <p>Armas de Cerco</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Libertação</span>
+        <span class="description">Desbloqueia o uso de: Catapulta, Balista, Trebuchet e Ariete.</span>
+      </div>
+      
+      <div class="pericia" data-name="Escudos" data-requirement="Determinação" data-description="Desbloqueia o uso de: Broquel, Escudo redondo, Escudo de torre e Pavês.">
+        <p>Escudos</p>
+        <button onclick="toggleSkill(this)">0</button>
+        <span class="requirement">Requisito: Determinação</span>
+        <span class="description">Desbloqueia o uso de: Broquel, Escudo redondo, Escudo de torre e Pavês.</span>
+      </div>
+      
+
+
+
+    </div>
+
+
+
+    </div>
  <div class="pericias_arrumado">
   <div class="pericias">
     <div class="pericia" data-name="Acrobacia" data-requirement="Agilidade" data-description="Usada para realizar manobras acrobáticas, como saltos, piruetas e manobras evasivas durante o combate.">
@@ -287,6 +359,8 @@
 </div>
 </div>
   
+
+
     <!-- Repita a estrutura acima para cada perícia -->
 </div>
 
@@ -305,7 +379,7 @@
         </div>
               <div class="nav-list">
                   <ul>
-                      <button class="toggle-button" onclick="toggleMenu()">Pericias</button>
+                    <button class="toggle-button" onclick="toggleMenu()">Pericias - Talentos - Armas</button>
                       <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
                       <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/racas/" class="nav-link" target="_blank">Raças</a></li>
                       <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/passados/" class="nav-link" target="_blank">Passados</a></li>

@@ -1156,7 +1156,7 @@ button:hover {
   display: flex;               /* Habilita o flexbox */
   justify-content: center;     /* Alinha horizontalmente ao centro */
   align-items: flex-start;     /* Alinha verticalmente ao topo */
-  height: 450px;               /* Altura fixa para a aba */
+  height: 230px;               /* Altura fixa para a aba */
   overflow-y: auto;            /* Adiciona o scroll vertical */
   padding: 10px;               /* Reduz o padding para maximizar o espaço */
   background-color: #363535;   /* Cor de fundo */

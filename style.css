@@ -1060,7 +1060,20 @@ button:hover {
   background-color: #777; /* Cor mais clara ao passar o mouse */
 }
 
-
+@media screen and (max-width: 735px) { 
+  .toggle-button {
+    font-size: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    content: "P-T-A";
+  }
 
 
 .menu-content {
@@ -1213,5 +1226,3 @@ button:hover {
   font-style: italic;     /* Texto em itálico */
   color: #fdfafa;            /* Cor do texto */
 }
-
-

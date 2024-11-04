@@ -1171,7 +1171,13 @@ document.getElementById('character-form').addEventListener('submit', (event) => 
   const intLevel = parseInt(document.getElementById('int').value, 10);
   const sabLevel = parseInt(document.getElementById('sab').value, 10);
   const carLevel = parseInt(document.getElementById('car').value, 10);
-
+  // Coleta as perícias e seus valores atuais
+  const skills = {};
+  document.querySelectorAll('.pericia').forEach((skillElement) => {
+    const skillName = skillElement.getAttribute('data-name');
+    const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
+    skills[skillName] = skillValue;
+  });
   // Store character data in local storage 
   let characterCount = localStorage.getItem('characterCount') ? parseInt(localStorage.getItem('characterCount'), 10) : 0;
   characterCount++;
@@ -1188,12 +1194,14 @@ document.getElementById('character-form').addEventListener('submit', (event) => 
       int: intLevel,
       sab: sabLevel,
       car: carLevel,
+      skills: skills, // Adicionando as perícias
+
       life: 100,   // Defina o valor inicial da vida
       sanity: 100, // Defina o valor inicial da sanidade
       special: 0,  // Defina o valor inicial da especial
       armor: 0,    // Defina o valor inicial da armadura
       movement: 0, // Defina o valor inicial do movimento
-      level: 1     // Defina o nível inicial
+      level: 1,     // Defina o nível inicial
   }));
 
   // Update character view section with data
@@ -1264,6 +1272,12 @@ document.getElementById('confirm-load').addEventListener('click', () => {
           document.getElementById('movement-view').textContent = characterData.movement;
           document.getElementById('level-view').textContent = characterData.level;
 
+          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
+            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
+            if (skillElement) {
+                skillElement.innerText = skillValue; // Assuming you're displaying the value in a button
+            }
+        });
           // Call updateStats to display loaded values
           updateStats();
       }
@@ -1289,8 +1303,16 @@ document.getElementById('download-character').addEventListener('click', () => {
       special: parseInt(document.getElementById('special-view').textContent, 10),
       armor: parseInt(document.getElementById('armor-view').textContent, 10),
       movement: parseInt(document.getElementById('movement-view').textContent, 10),
-      level: parseInt(document.getElementById('level-view').textContent, 10)
+      level: parseInt(document.getElementById('level-view').textContent, 10),
+      skills: {} // Inclua as perícias no download
+
   };
+    // Adiciona as perícias no objeto characterData
+    document.querySelectorAll('.pericia').forEach((skillElement) => {
+      const skillName = skillElement.getAttribute('data-name');
+      const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
+      characterData.skills[skillName] = skillValue;
+  });
 
   const blob = new Blob([JSON.stringify(characterData, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -1340,6 +1362,13 @@ document.getElementById('upload-character').addEventListener('change', (event) =
           document.getElementById('armor-view').textContent = characterData.armor;
           document.getElementById('movement-view').textContent = characterData.movement;
           document.getElementById('level-view').textContent = characterData.level;
+
+          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
+            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
+            if (skillElement) {
+                skillElement.innerText = skillValue; // Assuming you're displaying the value in a button
+            }
+        });
 
           // Atualiza as estatísticas
           updateStats();
@@ -1417,5 +1446,39 @@ document.addEventListener('click', function(event) {
 // Função para pegar o valor atual dos status da barra original
 
 
+
+
+
+function toggleSkill(button) {
+  // Pega o valor atual do botão e converte para número
+  let currentValue = parseInt(button.innerText, 10);
+  
+  // Define a sequência cíclica 0 -> 2 -> 4 -> 0
+  if (currentValue === 0) {
+      currentValue = 2;
+  } else if (currentValue === 2) {
+      currentValue = 4;
+  } else {
+      currentValue = 0;
+  }
+  
+  // Atualiza o texto do botão com o novo valor
+  button.innerText = currentValue;
+  
+  // Exibe a descrição e o requisito
+  const skillElement = button.closest(".pericia");
+  const requirement = skillElement.getAttribute("data-requirement");
+  const description = skillElement.getAttribute("data-description");
+  
+  const requirementEl = skillElement.querySelector(".requirement");
+  const descriptionEl = skillElement.querySelector(".description");
+
+  requirementEl.textContent = "Requisito: " + requirement;
+  descriptionEl.textContent = "Descrição: " + description;
+
+  // Alterna a visibilidade dos elementos de requisito e descrição
+  requirementEl.style.display = "inline";
+  descriptionEl.style.display = "inline";
+}
 
 

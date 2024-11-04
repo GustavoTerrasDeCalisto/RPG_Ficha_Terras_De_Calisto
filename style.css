@@ -1045,15 +1045,23 @@ button:hover {
 }
 
 .toggle-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #555;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+  position: fixed; /* Altera para fixed para que o botão fique fixo na tela */
+  bottom: 0; /* Fixa o botão na parte inferior da tela */
+  left: 0; /* Fixa o botão no lado esquerdo da tela */
+  background-color: #555; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  padding: 10px; /* Espaçamento interno */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
+
+.toggle-button:hover {
+  background-color: #777; /* Cor mais clara ao passar o mouse */
+}
+
+
+
 
 .menu-content {
   padding: 20px;
@@ -1128,9 +1136,66 @@ button:hover {
     background-color: #c82333;
 }
 .container-centralizado {
+  font-size: 9px; /* Ajuste o tamanho da fonte conforme necessário */
   display: flex;               /* Habilita o flexbox */
   justify-content: center;     /* Alinha horizontalmente ao centro */
-  align-items: center;         /* Alinha verticalmente ao centro */
-  height: 25vh;               /* Define a altura do contêiner como 100% da altura da janela */
-  text-align: center;          /* Alinha o texto no centro do contêiner */
+  align-items: flex-start;     /* Alinha verticalmente ao topo */
+  height: 450px;               /* Altura fixa para a aba */
+  overflow-y: auto;            /* Adiciona o scroll vertical */
+  padding: 10px;               /* Reduz o padding para maximizar o espaço */
+  background-color: #363535;   /* Cor de fundo */
+  border: 1px solid #222121;   /* Borda */
+  border-radius: 5px;          /* Bordas arredondadas */
+  text-align: left;          /* Alinha todo o texto à esquerda */
 }
+
+/* Estilos da barra de rolagem para Webkit (Chrome, Safari) */
+.container-centralizado::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+.container-centralizado::-webkit-scrollbar-thumb {
+  background-color: #888; /* Cor do "polegar" da barra de rolagem */
+  border-radius: 6px; /* Bordas arredondadas */
+}
+
+.container-centralizado::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor do "polegar" quando passa o mouse */
+}
+
+/* Estilos da barra de rolagem para Firefox */
+.container-centralizado {
+  scrollbar-width: thin; /* Define a largura da barra de rolagem */
+  scrollbar-color: #888 #363535; /* Cor do polegar e do fundo da barra de rolagem */
+}
+
+/* pericias */
+.pericias {
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 10px;             /* Espaçamento entre as perícias */
+}
+
+.pericia {
+  display: flex;
+  align-items: center;    /* Alinha verticalmente os itens */
+}
+
+.pericia p {
+  margin-right: 10px;     /* Margem entre o texto e o botão */
+  font-weight: bold;      /* Texto em negrito */
+}
+
+.pericia button {
+  padding: 5px 10px;      /* Espaçamento interno do botão */
+  cursor: pointer;        /* Cursor de ponteiro para indicar interatividade */
+}
+
+.requirement, .description {
+  margin-left: 10px;      /* Margem à esquerda */
+  display: none;          /* Inicialmente escondido */
+  font-style: italic;     /* Texto em itálico */
+  color: #fdfafa;            /* Cor do texto */
+}
+
+

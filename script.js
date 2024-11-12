@@ -1,4 +1,4 @@
-// Dados de atributos das raças (Exemplo: Raça Alfo, Passado Aldeão)
+// Dados de butos das raças (Exemplo: Raça Alfo, Passado Aldeão)
 const raceData = {
   "Elfo": {
     "vidaBase": 51,
@@ -873,7 +873,7 @@ function updateBonus(attributeId) {
   } else if (attributeLevel === 10) {
     bonusTeste = 0;
   } else {
-    bonusTeste = Math.floor((attributeLevel - 8) / 2); // Calcula o bônus de teste
+    bonusTeste = Math.floor((attributeLevel - 8) / 3); // Calcula o bônus de teste
   }
   const bonusDano = Math.floor((attributeLevel - 8) / 5); // Calcula o bônus de dano
 

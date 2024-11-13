@@ -20,7 +20,7 @@ const raceData = {
       "sab": 2,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "Humano": { // Humano adicionado como exemplo
     "vidaBase": 49,
@@ -42,7 +42,7 @@ const raceData = {
       "sab": 2,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "Krahzhik": { // Elfo adicionado como exemplo
     "vidaBase": 60,
@@ -64,7 +64,7 @@ const raceData = {
       "sab": 3,
       "car": 1
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "Anão": { // Elfo adicionado como exemplo
     "vidaBase": 57,
@@ -86,7 +86,7 @@ const raceData = {
       "sab": 2,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "Gigante": { // Elfo adicionado como exemplo
     "vidaBase": 66,
@@ -108,7 +108,7 @@ const raceData = {
       "sab": 1,
       "car": 3
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   }
 ,
   "Skywalker": { // Elfo adicionado como exemplo
@@ -131,7 +131,7 @@ const raceData = {
       "sab": 4,
       "car": 4
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   }
 ,
   "Elfo da profundeza": { // Elfo adicionado como exemplo
@@ -154,7 +154,7 @@ const raceData = {
       "sab": 5,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "Tritão": { // Elfo adicionado como exemplo
     "vidaBase": 60,
@@ -176,7 +176,7 @@ const raceData = {
       "sab": 2,
       "car": 5
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   }
 ,
   "Shrivvel – Pele Palida": { // Elfo adicionado como exemplo
@@ -199,7 +199,7 @@ const raceData = {
       "sab": 4,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   }
 ,
   "Gronklech – Durock": { // Elfo adicionado como exemplo
@@ -222,7 +222,7 @@ const raceData = {
       "sab": 1,
       "car": 3
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   }
 ,
   "Umbrowalker – Shlurp": { // Elfo adicionado como exemplo
@@ -245,7 +245,7 @@ const raceData = {
       "sab": 2,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "Gornis - Temp": { // Elfo adicionado como exemplo
     "vidaBase": 5,
@@ -267,7 +267,7 @@ const raceData = {
       "sab": 2,
       "car": 2
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   },
   "sua raça": { // Elfo adicionado como exemplo
     "vidaBase": 0,
@@ -289,7 +289,7 @@ const raceData = {
       "sab": 0,
       "car": 0
     },
-    "especialPorNivel": 3
+    "especialPorNivel": 5
   }
 };
 
@@ -307,7 +307,7 @@ const pastData = {
     "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Mental",
-    "bonusPass": "Passiva Medo oculto sem custo uma vez por dia, + 6 especial",
+    "bonusPass": "Passiva Medo oculto sem custo uma vez por dia",
     "movimento_pass": 2
   },
   "Arqueiro": { // Mago adicionado como exemplo
@@ -315,7 +315,7 @@ const pastData = {
     "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Maldição",
-    "bonusPass": "+5 em dados de dano com fundas, arcos e bestas",
+    "bonusPass": "+5 em dados de dano com fundas, arcos e bestas.",
     "movimento_pass": 2
   },
   "Assassino": { // Mago adicionado como exemplo
@@ -323,7 +323,7 @@ const pastData = {
     "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
-    "bonusPass": "Passiva Furtividade sombria 1 vez no dia sem custo,+5 com Adagas",
+    "bonusPass": "Passiva Furtividade sombria 1 vez no dia sem custo,+5 com Adagas.",
     "movimento_pass": 3
   },
   "Assombração": { // Assombração adicionado como exemplo
@@ -331,7 +331,7 @@ const pastData = {
     "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Alma",
-    "bonusPass": "+1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez",
+    "bonusPass": "+1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez.",
     "movimento_pass": 3
   },
     "Atirador": { 
@@ -347,7 +347,7 @@ const pastData = {
       "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Ácido",
-      "bonusPass": "+10 de vida, +1 em acerto geral, Cuspe ácido sem custo uma vez por dia.",
+      "bonusPass": "+1 para todas as rolagens de dados, Magia Cuspe ácido sem custo uma vez por dia.",
       "movimento_pass": 4.5
     },
     "Bárbaro": { 
@@ -355,7 +355,7 @@ const pastData = {
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Fogo",
-      "bonusPass": "+20 de vida + 2 em curas recebidas + 2 de armadura.",
+      "bonusPass": "+2 em curas recebidas, + 5 de dano com Machados e Martelos.",
       "movimento_pass": 4
     },
     "Bardo": { 
@@ -363,7 +363,7 @@ const pastData = {
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Luz",
-      "bonusPass": "+2 em testes de Conexão e + 2 em diplomacia.",
+      "bonusPass": "+2 em qualquer rolagem de dados em Conexão e + 2 em diplomacia.",
       "movimento_pass": 3.5
     },
     "Bruxo": { 
@@ -371,7 +371,7 @@ const pastData = {
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Escuridão",
-      "bonusPass": "+10 especial e + 10 sanidade, magias de atributo Libertação custam metade.",
+      "bonusPass": "Magias de atributo Libertação custam metade.",
       "movimento_pass": 3.5
     },
     "Carpinteiro": { 
@@ -379,7 +379,7 @@ const pastData = {
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Tempestade",
-      "bonusPass": "+6 de sanidade e uma ação livre extra por turno.",
+      "bonusPass": "Uma ação livre extra por turno.",
       "movimento_pass": 3.5
     },
     "Catador": { 
@@ -387,7 +387,7 @@ const pastData = {
       "sanidadePorNivel": 8,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
-      "bonusPass": "Coleciona partes de corpos para aumentar suas invocações (cada parte aumenta para 1 invocação extra), Magia LEVANTA sem custo uma vez por dia.",
+      "bonusPass": "Cada órgão adiciona +1 invocação extra, magia LEVANTA sem custo uma vez por dia.",
       "movimento_pass": 3.5
     },
     "Colosso": { 
@@ -395,7 +395,7 @@ const pastData = {
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 4,
       "resistencia": "Esmagante",
-      "bonusPass": "+10 de vida, 3 de armadura, armadura sobrenatural sem custo uma vez por dia.",
+      "bonusPass": "Passiva armadura sobrenatural sem custo uma vez por dia.",
       "movimento_pass": 3.5
     },
     "Conjurador": { 
@@ -403,7 +403,7 @@ const pastData = {
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Distorção",
-      "bonusPass": "Passivas e Magias tem custo reduzido baseado em 1d4.",
+      "bonusPass": "Passivas e Magias têm custo reduzido baseado em 1d6, valido por combate.",
       "movimento_pass": 4.5
     },
     "Costeiro": { 
@@ -411,7 +411,7 @@ const pastData = {
       "sanidadePorNivel": 4,
       "armaduraPorNivel": 3,
       "resistencia": "Água",
-      "bonusPass": "+1d6 com porretes ou katanas, não sofre terrenos difíceis, +2 armadura e armas não pode ser Desarmado.",
+      "bonusPass": "+1d6 com porretes ou katanas, +2 armadura e não pode ser Desarmado.",
       "movimento_pass": 4.5
     },
     "Criatura": { 
@@ -419,7 +419,7 @@ const pastData = {
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 4,
       "resistencia": "Gelo",
-      "bonusPass": "+18 de vida,+3 armadura, -1 em acerto geral com magias, pavor custo uma vez por dia ou sem lado negativo.",
+      "bonusPass": "Passiva Pavor custo uma vez por dia ou sem lado negativo.",
       "movimento_pass": 4.5
     },
     "Duelista": { 
@@ -427,7 +427,7 @@ const pastData = {
       "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Perfurante",
-      "bonusPass": "+5 de sanidade e 1d10 de dano contra alvos isolados (sem ninguém próximo de 10m).",
+      "bonusPass": "+1d10 de dano contra alvos isolados (sem ninguém próximo de 10m) e tem +4 em testes de Furtividade.",
       "movimento_pass": 4
     },
     "Escudeiro": { 
@@ -435,7 +435,7 @@ const pastData = {
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Esmagante",
-      "bonusPass": "+4 dano com escudo +15 de vida, +2 armadura, Passiva Emanar energia sem Negativo e sem custo uma vez por dia.",
+      "bonusPass": "+4 dano com escudo, passiva Emanar energia sem Negativo e sem custo uma vez por dia.",
       "movimento_pass": 3.5
     },
     "Especialista": { 
@@ -443,7 +443,7 @@ const pastData = {
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 1,
       "resistencia": "Fogo",
-      "bonusPass": "-10 de Sanidade,+15 de especial, menos sanidade por nível e tem -Vantagem- com Passivas.",
+      "bonusPass": "Tem Vantagem com Passivas.",
       "movimento_pass": 4.5
     },
     "Espectro": { 
@@ -451,7 +451,7 @@ const pastData = {
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": "+1d12 danos de Laser e Orbe negro pode acertar mais de um alvo.",
+      "bonusPass": "+1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal).",
       "movimento_pass": 4.5
     },
     "Espiritualista": { 
@@ -459,7 +459,7 @@ const pastData = {
       "sanidadePorNivel": 5,
       "armaduraPorNivel": 1,
       "resistencia": "Aura",
-      "bonusPass": "Magia Possessão de Luz Sem custo uma vez por dia, +12 de sanidade.",
+      "bonusPass": "Magia Possessão de Luz Sem custo uma vez por dia.",
       "movimento_pass": 4
     },
     "Fera": { 
@@ -467,22 +467,22 @@ const pastData = {
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 3,
       "resistencia": "Eclipse",
-      "bonusPass": "+20 de vida + 2 de armadura +5 em Atletismo e Adestrar animais.",
+      "bonusPass": "+5 em Atletismo e Adestrar animais.",
       "movimento_pass": 4.5
     },
     "Ferreiro": { 
       "vidaPorNivel": 13,
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 2,
-      "resistencia": "Perfurante",
-      "bonusPass": "Resistência a dano de fogo (+5 em testes contra danos de fogo) + 1 de armadura.",
+      "resistencia": "Fogo",
+      "bonusPass": "Vantagem em testes de Ofício",
       "movimento_pass": 3.5
     },
     "Forasteiro": { 
       "vidaPorNivel": 12,
       "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
-      "resistencia": "Maldição",
+      "resistencia": "Laser",
       "bonusPass": "+1d10 com dano de Maldição e +1d10 com espadas curtas.",
       "movimento_pass": 4
     },
@@ -499,7 +499,7 @@ const pastData = {
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 3,
       "resistencia": "Balístico",
-      "bonusPass": "+5 de dano em armas corpo a corpo + 2 de armadura.",
+      "bonusPass": "+5 de dano em armas corpo a corpo.",
       "movimento_pass": 4
     },
     "Hemomantico": { 
@@ -507,7 +507,7 @@ const pastData = {
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Sangue",
-      "bonusPass": "Magias de sangue causam Hemorragia no inimigo por 2 turnos + 20 de vida.",
+      "bonusPass": "Magias de sangue causam Hemorragia no inimigo por 2 turnos.",
       "movimento_pass": 4.5
     },
     "Imitador": { 
@@ -515,7 +515,7 @@ const pastData = {
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
-      "bonusPass": "Mutação sem custo uma vez por dia, +10 especial.",
+      "bonusPass": "Passiva Mutação sem custo uma vez por dia.",
       "movimento_pass": 4.5
     },
     "Juíz": { 
@@ -523,7 +523,7 @@ const pastData = {
       "sanidadePorNivel": 5,
       "armaduraPorNivel": 1,
       "resistencia": "Cortante",
-      "bonusPass": "+2 em armas cortantes e balística, queima sem custo uma vez por dia.",
+      "bonusPass": "Julga o desempenho de um ALVO, ele recebe 1d20 de dano caso tire menos que 10 em um teste, uma vez por luta.",
       "movimento_pass": 3.5
     },
       "Lacaio": {
@@ -531,7 +531,7 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 2,
         "resistencia": "Eletricidade",
-        "bonusPass": "Vingança sem custo uma vez por dia e +5 de vida, +3 especial, +1 defesa.",
+        "bonusPass": "Passiva Vingança sem custo uma vez por dia.",
         "movimento_pass": 4
       },
       "Ladrão": {
@@ -539,7 +539,7 @@ const pastData = {
         "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Laser",
-        "bonusPass": "+4 em furtividade, +2 roubar.",
+        "bonusPass": "+4 em furtividade, +2 roubar, tem vantagem em testes de ladinagem e agilidade.",
         "movimento_pass": 4.5
       },
       "Louco": {
@@ -547,7 +547,7 @@ const pastData = {
         "sanidadePorNivel": 0,
         "armaduraPorNivel": 1,
         "resistencia": "Sono",
-        "bonusPass": "-5 de Sanidade, menos sanidade por nível, e dobra os danos com magias.",
+        "bonusPass": "Menos sanidade por nível mas dobra os danos com magias.",
         "movimento_pass": 4.5
       },
       "Mago": {
@@ -555,7 +555,7 @@ const pastData = {
         "sanidadePorNivel": 6,
         "armaduraPorNivel": 1,
         "resistencia": "Eletricidade",
-        "bonusPass": "+15 sanidade e +2 especial, magias de atributo Preservação custam metade.",
+        "bonusPass": "Magias de atributo Preservação custam metade.",
         "movimento_pass": 3.5
       },
       "Malabarista": {
@@ -571,7 +571,7 @@ const pastData = {
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Tremor",
-        "bonusPass": "+6 em testes de agarrar, +4 em testes para se livrar de status negativos, +10 de vida.",
+        "bonusPass": "+6 em testes de agarrar, +4 em testes para se livrar de status negativos.",
         "movimento_pass": 3.5
       },
       "Masoquista": {
@@ -579,7 +579,7 @@ const pastData = {
         "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Sangue",
-        "bonusPass": "Armas com correntes causam +1d6 extra. Pode autoinfligir dano a si mesmo (1d4) como ação livre para causar 1d12 extra no inimigo.",
+        "bonusPass": "Correntes com +1d6, autoinfligir dano (1d6) como ação livre para ganhar 1d12 extra.",
         "movimento_pass": 4.5
       },
       "Médico": {
@@ -587,7 +587,7 @@ const pastData = {
         "sanidadePorNivel": 4,
         "armaduraPorNivel": 1,
         "resistencia": "Sagrado",
-        "bonusPass": "+5 em testes de medicina, -1h para tratar feridas.",
+        "bonusPass": "+5 em testes de medicina, -1h para tratar feridas, vantagem em Curas.",
         "movimento_pass": 3.5
       },
       "Mendigo": {
@@ -595,7 +595,7 @@ const pastData = {
         "sanidadePorNivel": 4,
         "armaduraPorNivel": 3,
         "resistencia": "Névoa",
-        "bonusPass": "Selvageria sem custo, +2 de armadura.",
+        "bonusPass": "Pode usar a passiva Selvageria sem custo.",
         "movimento_pass": 4.5
       },
       "Monge": {
@@ -611,7 +611,7 @@ const pastData = {
         "sanidadePorNivel": 7,
         "armaduraPorNivel": 1,
         "resistencia": "Água",
-        "bonusPass": "+1d6 de dano com Magia Vinhas Mágicas e +2 em testes de Preservação.",
+        "bonusPass": "+1d6 de dano com Magia Vinhas mágicas e +2 em testes de Preservação.",
         "movimento_pass": 4.5
       },
       "Nobre": {
@@ -619,7 +619,7 @@ const pastData = {
         "sanidadePorNivel": 5,
         "armaduraPorNivel": 2,
         "resistencia": "Luz",
-        "bonusPass": "+6 em curas descansando, +1 de armadura.",
+        "bonusPass": "+1d20 em curas descansando.",
         "movimento_pass": 3.5
       },
       "Perseguidor": {
@@ -627,7 +627,7 @@ const pastData = {
         "sanidadePorNivel": 4,
         "armaduraPorNivel": 1,
         "resistencia": "Ácido",
-        "bonusPass": "+5 em furtividade, +10 de vida e Pressão sem custo uma vez por dia.",
+        "bonusPass": "+5 em furtividade e Pressão sem custo uma vez por dia.",
         "movimento_pass": 5.5
       },
       "Pervertido": {
@@ -635,7 +635,7 @@ const pastData = {
         "sanidadePorNivel": 0,
         "armaduraPorNivel": 1,
         "resistencia": "Sagrado",
-        "bonusPass": "+5 em testes de agarrar. Caso esteja sem roupa, esse valor fica +10.",
+        "bonusPass": "+5 em testes de agarrar, caso esteja sem roupa o teste fica em +10 bônus.",
         "movimento_pass": 4
       },
       "Pescador": {
@@ -643,7 +643,7 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Água",
-        "bonusPass": "+18 de vida e magias de água causam 2d8 extras.",
+        "bonusPass": "Magias de água causa 2d8 extras.",
         "movimento_pass": 3.5
       },
       "Pirata": {
@@ -659,7 +659,7 @@ const pastData = {
         "sanidadePorNivel": 6,
         "armaduraPorNivel": 1,
         "resistencia": "Psicológico",
-        "bonusPass": "+10 em testes de diplomacia.",
+        "bonusPass": "+10 em testes de diplomacia e +5 em intimidação.",
         "movimento_pass": 3.5
       },
       "Prisioneiro": {
@@ -667,7 +667,7 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
-        "bonusPass": "+2d6 quando agarrando, +2 em testes de Determinação, +2d8 com ataque usando algemas, +15 de vida.",
+        "bonusPass": "+2d6 agarrando, +2 em testes de agarrar, +2d8 com ataque usando algemas.",
         "movimento_pass": 3.5
       },
       "Profanado": {
@@ -675,7 +675,7 @@ const pastData = {
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 2,
         "resistencia": "Escuridão",
-        "bonusPass": "Consumir sem custo uma vez por dia, +30 de vida, +1 de armadura.",
+        "bonusPass": "Passiva Consumir sem custo uma vez por dia.",
         "movimento_pass": 3.5
       },
       "Protetor": {
@@ -683,7 +683,7 @@ const pastData = {
         "sanidadePorNivel": 6,
         "armaduraPorNivel": 2,
         "resistencia": "Alma",
-        "bonusPass": "+5 de vida, +1 de armadura, +5 sanidade e magia Mestre das passivas sem custo uma vez por dia.",
+        "bonusPass": "Magia Mestre das passivas sem custo uma vez por dia.",
         "movimento_pass": 4.5
       },
       "Pugilista": {
@@ -691,7 +691,7 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 2,
         "resistencia": "Esmagante",
-        "bonusPass": "+1d12 desarmado, +1 de armadura.",
+        "bonusPass": "+1d12 desarmado, +1d8 com manoplas e tem a passiva Salvaguarda sem custo uma vez por dia.",
         "movimento_pass": 4
       },
       "Revivido": {
@@ -699,7 +699,7 @@ const pastData = {
         "sanidadePorNivel": 10,
         "armaduraPorNivel": 1,
         "resistencia": "Maldição",
-        "bonusPass": "A magia Órgãos Sombrios sem custo uma vez por combate, +2 em curas, menos vida no começo.",
+        "bonusPass": "A magia Órgãos sombrios sem custo uma vez por combate, +2 em curas.",
         "movimento_pass": 3.5
       },
       "Samurai": {
@@ -707,7 +707,7 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
-        "bonusPass": "+1d8 de dano com katanas. Desembainhar no contra-ataque gasta ação livre e ganha +1d8 de dano (armas corpo a corpo).",
+        "bonusPass": "+1d8 de dano com Katanas e desembainhar no contra-ataque gasta ação livre e ganha +1d8 de dano (armas corpo a corpo).",
         "movimento_pass": 4.5
       
       },
@@ -716,14 +716,14 @@ const pastData = {
         "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Fogo",
-        "bonusPass": "+1d12 no atributo de Fé, podendo curar mais. Defesa mágica.",
+        "bonusPass": "Magias Benção antiga e Conexão santa sem custo uma vez ao dia.",
         "movimento_pass": 3.5
       },"Soberano": {
     "vidaPorNivel": 8,
     "sanidadePorNivel": 8,
     "armaduraPorNivel": 1,
     "resistencia": "Psicológico",
-    "bonusPass": "Magia Diplopia Binocular sem custo uma vez por dia e cria 2 cópias, +20 de sanidade.",
+    "bonusPass": "Magia Diplopia binocular Sem custo uma vez por dia e cria 2 cópias.",
     "movimento_pass": 4
   },
   "Taverneiro": {
@@ -731,7 +731,7 @@ const pastData = {
     "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Balístico",
-    "bonusPass": "+5 de especial e +2 em testes de Libertação.",
+    "bonusPass": "+2 em testes de Libertação, +2 em testes de Conexão.",
     "movimento_pass": 3.5
   },
   "Tormentalista": {
@@ -739,7 +739,7 @@ const pastData = {
     "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Tempestade",
-    "bonusPass": "+1d12 em magias de Tempestade e Tempestade da Natureza com modificador de atributo de Brutalidade.",
+    "bonusPass": "+1d12 em magias de Tempestade e elas usam o atributo de Brutalidade.",
     "movimento_pass": 4
   }
   

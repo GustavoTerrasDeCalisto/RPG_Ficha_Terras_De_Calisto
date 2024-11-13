@@ -833,7 +833,8 @@ function calculateCurrentAttributes() {
     attributes.MagiaDisponivel = raceData[race].MagiaDisponivel;
     attributes.TalentoDisponivel = raceData[race].TalentoDisponivel;
 
-  
+    attributes.armadura += Math.floor(level / 3);
+
   }
 
   attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) -110;

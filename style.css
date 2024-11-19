@@ -1267,14 +1267,25 @@ button:hover {
 }
 
 .expand-btn {
-  cursor: pointer;
-  padding: 10px;
-  background-color: #e20303;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  font-family: 'Inter', sans-serif; /* Fonte limpa */
+  font-size: 0.60rem; /* Tamanho da fonte reduzido */
+  color: #444; /* Cor do texto um pouco mais escura */
+  padding: 3px 6px; /* Espaço interno menor */
+  margin: 3px 0; /* Espaço externo reduzido */
+  border-radius: 3px; /* Bordas arredondadas simples */
+  background-color: #f0f8ff; /* Fundo muito claro para Bônus de Passado */
+    text-align: left; /* Alinhamento à esquerda */
+
+  border-left: 4px solid #66ccff; /* Borda à esquerda para destaque */
+  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Transições suaves */
+  text-align: left; /* Alinhamento à esquerda */
+  line-height: 1.6;
+  font-size: 11px;
+  
+  color: #333;
+  white-space: pre-line;
 }
+
 
 .especializacao_titulo {
   font-size: 18px; /* Tamanho pequeno, mas destacado */
@@ -1293,4 +1304,5 @@ button:hover {
 /* Inicialmente todos os bônus estão escondidos */
 .section-content {
   display: none;
+  
 }

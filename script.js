@@ -302,7 +302,7 @@ const pastData = {
     "bonusPass":`
     Nível 0: +2 em testes de Conexão, +5 em testes de Sobrevivência.
 
-    **Combatente**
+    🗡️Combatente
     Nível 1: +1d4 de dano com ferramentas improvisadas.
     Nível 2: +1 em testes de Brutalidade.
     Nível 3: +1 em testes de Sobrevivência.
@@ -313,7 +313,7 @@ const pastData = {
     Nível 8: +1d8 de dano com armas pesadas.
     Nível 9: Frenesi Berserker - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)
 
-    Estrategista
+    ♟️Estrategista
     Nível 1: +1 em precisão à distância.
     Nível 2: +2 em testes de Agilidade.
     Nível 3: Observador - +1 em testes de percepção em situações de combate ou exploração.
@@ -324,7 +324,7 @@ const pastData = {
     Nível 8: Tático Experiente - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.
     Nível 9: Plano de Batalha - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.
 
-    Conjuração
+    🧙‍♂️Conjuração
     Nível 1: +1 em Conexão.
     Nível 2: +1d6 de cura/dano com feitiços simples.
     Nível 3: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.
@@ -350,7 +350,43 @@ const pastData = {
     "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Mental",
-    "bonusPass": "Passiva Medo oculto sem custo uma vez por dia",
+    "bonusPass": `
+    Nível 0: Passiva Medo oculto sem custo uma vez por dia.
+    
+    🧠Mentor Psíquico
+Nível 1: +1 em testes de a dano Mental.
+Nível 2: Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra Mental.
+Nível 3: +1d4 em ataques que envolvam manipulação mental ou ilusão.
+Nível 4: +2 em testes de persuasão e intimidar.
+Nível 5: Leitura de Mentes
+Pode ler brevemente a mente de um alvo, detectando seus medos ou intenções, uma vez por combate.
+Nível 6: +1d6 de dano em ataques psíquicos, como controle de pensamentos ou ataques mentais diretos.
+Nível 7: Reflexos Psíquicos - +2 em testes de resistência contra Confusão e Paralisado.
+Nível 8: Manipulação Mental Avançada - Aumenta em +1d8 o dano de feitiços que envolvem manipulação mental.
+Nível 9: Mestre da Psique - Uma vez por combate, pode forçar um inimigo a fazer um teste de resistência contra medo ou confusão, com penalidade de -1d6.
+    
+🎩Ilusionista
+Nível 1: +1 em testes de Enganação e Diplomacia.
+Nível 2: +2 em testes de Agilidade para manobras evasivas.
+Nível 3: Criação de Imagens - Pode criar ilusões simples que confundem inimigos, uma vez por combate.
+Nível 4: +2 em testes de iniciativa quando usando ilusões para enganar inimigos.
+Nível 5: Desorientação
+Em vez de causar dano direto, causa desorientação ao inimigo, aplicando a condição Confuso por 1d4 turnos.
+Nível 6: +1d8 de dano em ataques que utilizem ilusões ou manipulação mental.
+Nível 7: Engano Impecável - Quando atacado enquanto invisível ou disfarçado, o inimigo sofre -1d6 em ataques contra você.
+Nível 8: Reflexo Ilusório - Uma vez por combate, pode evitar um ataque totalmente usando uma ilusão de si mesmo.
+Nível 9: Ilusão Suprema - Pode criar uma ilusão gigantesca que afeta toda a área de combate, tornando inimigos Cegos por 1d6 turnos.
+
+🔮Vidente
+Nível 1: +1 em testes de Percepção e Intuição.
+Nível 2: Ganha uma visão futura de 1d4 turnos, podendo antecipar ação de um alvo e o que ocorrerá.
+Nível 3: Visão Psíquica - Consegue perceber os sentimentos e intenções de outros, podendo detectar mentiras facilmente.
+Nível 4: +2 em testes de resistência contra Cegueira e Paralisado.
+Nível 5: Clarividência -Pode perceber eventos distantes, sem o uso de visão física, uma vez por combate.
+Nível 6: +1d6 de dano em ataques que exploram fraquezas mentais ou espirituais.
+Nível 7: Perspectiva Expandida -Pode lançar um feitiço de Clarividência que revele uma área de 30 metros.
+Nível 8: Visão Total - Recebe uma visão geral de todos os inimigos em combate, podendo planejar com maior eficácia.
+Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antecipar um movimento de qualquer inimigo e bloquear ou desviar um ataque.`,
     "movimento_pass": 2
   },
   "Arqueiro": { // Mago adicionado como exemplo

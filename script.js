@@ -394,7 +394,43 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
     "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Maldição",
-    "bonusPass": "+5 em dados de dano com fundas, arcos e bestas.",
+    "bonusPass": `
+    Nível 0: +5 em dados de dano com fundas, arcos e bestas.
+    
+   🏹 Caçador Preciso
+Nível 1: +1 em testes de Percepção para rastreamento.
+Nível 2: Aumenta o alcance efetivo de ataques à distância em +10 metros.
+Nível 3: Flecha Envenenada • Pode envenenar a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.
+Nível 4: +2 em testes de furtividade para emboscadas.
+Nível 5: Disparo Cirúrgico • Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.
+Nível 6: +1d8 de dano em ataques que visam partes específicas do corpo.
+Nível 7: Resistência do Caçador • +2 em testes de resistência contra Veneno e Hemorragia.
+Nível 8: Mestre da Emboscada • Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.
+Nível 9: Flecha Mortal • Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.
+
+🎯Atirador de Elite
+Nível 1: +1 em precisão ao usar arcos e bestas.
+Nível 2: +2 em testes de Agilidade para esquivas rápidas.
+Nível 3: Disparo Perfurante • Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.
+Nível 4: +2 em iniciativas ao utilizar armas à distância.
+Nível 5: Tiro Rápido • Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.
+Nível 6: +1d8 de dano adicional em ataques consecutivos no mesmo alvo.
+Nível 7: Alvo Escorregadio • Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o Arqueiro.
+Nível 8: Instinto de Sobrevivência • Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.
+Nível 9: Disparo Destruidor • Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.
+
+🌌Explorador das Sombras
+Nível 1: +1 em Furtividade e Movimentação em terrenos variados.
+Nível 2: +2 em testes de Sobrevivência para explorar áreas desconhecidas.
+Nível 3: Caminho Oculto • Permite ao grupo avançar sem deixar rastros, uma vez por dia.
+Nível 4: +2 em testes de resistência contra Confusão e Cegueira.
+Nível 5: Flecha da Escuridão • Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.
+Nível 6: +1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.
+Nível 7: Emboscada Letal • Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.
+Nível 8: Vantagem na Escuridão • Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.
+Nível 9: Ataque Sombrio • Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.
+    
+    `,
     "movimento_pass": 2
   },
   "Assassino": { // Mago adicionado como exemplo
@@ -402,7 +438,46 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
     "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
-    "bonusPass": "Passiva Furtividade sombria 1 vez no dia sem custo,+5 com Adagas.",
+    "bonusPass": `
+    Nível 0: Passiva Furtividade sombria 1 vez no dia sem custo,+5 com Adagas.
+    
+    🗡️Assassinato Furtivo
+Nível 1: +1 em Furtividade para emboscadas.
+Nível 2: +1 em testes de Agilidade para aproximações silenciosas.
+Nível 3: Golpe Fatal – Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.
+Nível 4: +2 em ataques com adagas contra alvos desprevenidos.
+Nível 5: Execução Impecável – Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.
+Nível 6: +1d6 de dano ao atacar inimigos que ainda não agiram no combate.
+Nível 7: Resiliência das Sombras – +2 em testes de resistência contra envenenamento e paralisia.
+Nível 8: Mestre da Furtividade – Permite ficar completamente invisível por até um turno.
+Nível 9: Assassinato Silencioso – Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.
+
+🥷Shurikins Mortais
+Nível 1: +1 em precisão ao usar shurikins e armas arremessáveis.
+Nível 2: +2 em testes de Agilidade para esquivas e deslocamento rápido.
+Nível 3:Projétil Rápido – Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.
+Nível 4: +1d6 de dano em ataques arremessados com precisão aprimorada.
+Nível 5:Tiro Preciso – Realiza um disparo que ignora defesas naturais do alvo.
+Nível 6: +1d8 de dano extra em ataques sucessivos contra o mesmo alvo.
+Nível 7:Desvio Ágil – +2 em testes de esquiva contra projéteis inimigos.
+Nível 8:Projéteis Penetrantes – Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.
+Nível 9:Dança das Lâminas – Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.
+
+🌑Sombras do Infinito
+Nível 1: +1 em testes de Conexão para controlar magias do eclipse.
+Nível 2:Véu das Sombras – Envolve-se em sombras, ganhando +2 em Furtividade por um turno.
+Nível 3:Reflexão de Eclipse – Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.
+Nível 4: +1 em testes com feitiços de eclipse.
+Libera a magia Clone das Sombras (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.
+Nível 5:Espelho Sombrio – Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno.
+Libera a magia Fragmento do Tempo (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.
+Nível 6:Dano do Eclipse – Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras.
+Libera a magia Ilusão Lunar (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.
+Nível 7:Olhos nas Sombras – Permite ver através de sombras, evitando ataques furtivos.
+Libera a magia Mutação Sombria (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.
+Nível 8:Sombra da Noite – Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).
+Nível 9:Senhor do Eclipse – Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8.
+Libera a magia Cataclismo do Eclipse (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.`,
     "movimento_pass": 3
   },
   "Assombração": { // Assombração adicionado como exemplo
@@ -410,7 +485,42 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
     "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Alma",
-    "bonusPass": "+1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez.",
+    "bonusPass": `
+    Nível 0: +1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez.
+    
+    👤Perseguidor Sombrio
+Nível 1: Sombras Vorazes (custo: 2 especial) – Executa uma investida, esquivando de todos os ataques até o fim do turno.
+Nível 2: Golpe Oculto (custo: 3 especial) – Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano.
+Nível 3: Manto das Trevas (custo: 2 especial) – Torna-se invisível em locais escuros por um turno.
+Nível 4: Velocidade Espiritual (custo: 3 especial) – Movimenta-se duas vezes no mesmo turno, escapando de emboscadas.
+Nível 5: Reflexo Sombrio (custo: 4 especial) – Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano.
+Nível 6: Golpe do Abismo (custo: 5 especial) – Executa um ataque de sombra que ignora armadura e causa +2d8 de dano.
+Nível 7: Sombra Penetrante – Reduz o custo de sanidade para magias de Alma em 50%.
+Nível 8: Força Noturna – Aumenta o dano em +1d6 para ataques físicos e magias de Alma.
+Nível 9:Sombra Aniquiladora(custo: 6 especial) – Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos.
+
+🛠️Artesão espiritual
+Cada nível de aprimoramento infunde habilidades únicas nos equipamentos, permitindo maior poder ao custo de especial, duração máxima de aprimoramento uma cena ou 1h.
+Nível 1: Energia Espiritual – Armazena uma alma, conferindo +1 de dano ou +1 em resistência. (Sem custo de especial)
+Nível 2: Lâmina Viva – Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 de especial por uso)
+Nível 3: Alma Guardiã – Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)
+Nível 4: Vínculo Espiritual – Torna o equipamento mais resiliente, +2 em resistência a deterioração. (Sem custo de especial)
+Nível 5: Conexão Profunda – Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 de especial por uso)
+Nível 6: Escudo da Alma – Libera uma barreira espiritual que reduz o dano recebido em 50% por um turno. (4 de especial, 1 vez por combate)
+Nível 7: Chama da Vingança – Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 de espl por uso)
+Nível 8: Força Espiritual – Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)
+Nível 9: Guardião das Almas – Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 de especial por ativação, 1 vez por combate)
+
+🕊️Espiritualista da Ordem
+Nível 1: Iniciado Espiritual – Ganha uma magia de nível 1 e +1 em testes de resistência contra efeitos espirituais.
+Nível 2: Espírito Reforçado – Reduz o custo de sanidade ao usar magias de Alma em 1.
+Nível 3: Protetor da Essência – Ganha uma magia de nível 2 e +1 de dano em ataques com Magias de Alma.
+Nível 4: Escudo Espiritual – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.
+Nível 5: Tecelão da Alma – Ganha uma magia de nível 3 e aumenta a duração das magias em 1 turno.
+Nível 6: Voz do Além – Permite ao jogador identificar a presença de espíritos em até 20 metros.
+Nível 7: Profeta da Eternidade – Ganha uma magia de nível 4 e +2 em percepção para detectar entidades invisíveis.
+Nível 8: Eco Espiritual – Ganha uma magia de nível 5 e Metade do custo de sanidade para magias de Alma.
+Nível 9: Guardião Eterno – Ganha uma magia de nível 6 e uma ação completa extra por 7 de especial.`,
     "movimento_pass": 3
   },
     "Atirador": { 
@@ -418,7 +528,41 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": "+2 em dados de acerto com armas a distância, pode Mirar sem lado negativo uma vez por combate.",
+      "bonusPass": `
+      Nível 0:+2 em dados de acerto com armas a distância, pode Mirar sem lado negativo uma vez por combate.
+      
+      🔫Pistoleiro
+Nível 1: Mão Ágil – Permite sacar e guardar armas com rapidez, ganhando +1 em precisão ao atirar com duas armas. (1 de especial por uso)
+Nível 2: Tiro Duplo – Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 de especial por uso)
+Nível 3: Ponto Cego – Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 de especial por uso)
+Nível 4: Reflexos Rápidos – Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)
+Nível 5: Bala Certeira – Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 de especial por uso)
+Nível 6: Velocidade da Bala – Pode realizar um tiro extra sem penalidade. (3 de especial por uso)
+Nível 7: Destemido – Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)
+Nível 8: Impacto Devastador – Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 de especial por uso)
+Nível 9: Fúria do Pistoleiro – Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 de especial por ativação, 1 vez por combate)
+
+🚨Fora da Lei
+Nível 1: Infâmia – Ganha +1 em testes de intimidação contra NPCs e inimigos. (1 de especial por uso)
+Nível 2: Procurado – Quanto mais alta a reputação de foragido, maior a chance de esquivar ataques (+1 em esquiva para cada estrela no seu cartaz de procurado Max.5). (Passivo)
+Nível 3: Tiro Ameaçador – Efetua um disparo que assusta o alvo, causando -1d4 nos próximos ataques do inimigo. (2 de especial por uso)
+Nível 4: Sangue Frio – Ganha +2 em resistência contra efeitos de medo. (Passivo)
+Nível 5: Fama Implacável – Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 de especial por ativação, 1 vez por combate)
+Nível 6: Presença Intimidadora – Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem contra você. (Passivo)
+Nível 7: Desprezo Mortal – Disparo que ignora armadura, causando +2d6 de dano adicional ao inimigo. (4 de especial por uso)
+Nível 8: Terror do Oeste – Todos os inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)
+Nível 9: Lenda Viva – Seus ataques causam +2d10 de dano a qualquer alvo que falhe em resistir ao medo. (5 de especial por ativação, 1 vez por combate)
+
+💥Inimigo da Bala
+Nível 1: Pancada Letal – Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 de especial por uso)
+Nível 2: Defesa da Arma – Ganha +1 em resistência quando evita disparos por mais de um turno. (Passivo) e + Libera a magia Flecha de Luz
+Nível 3: Bônus de Especial – Regenera 1 ponto de especial para cada turno sem disparar. (Passivo) e Libera a passiva Teleporte Repentino
+Nível 4: Controle do Combate – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)
+Nível 5: Quebra-Defesa – Um golpe poderoso que ignora a defesa física do alvo, causando +1d6 de dano. (3 de especial por uso)
+Nível 6: Fúria Contida – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)
+Nível 7: Impacto Brutal – Causa +2d6 de dano extra em ataque corpo a corpo, derrubando o inimigo com sucesso. (4 de especial por uso)
+Nível 8: Dominância do Combate – Todos os ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)
+Nível 9: Força da Calma – Ganha +2d10 de dano em um ataque devastador, disponível apenas após três turnos sem disparar. (5 de especial por ativação, 1 vez por combate)`,
       "movimento_pass": 4
     },
     "Barão": { 
@@ -426,7 +570,41 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Ácido",
-      "bonusPass": "+1 para todas as rolagens de dados, Magia Cuspe ácido sem custo uma vez por dia.",
+      "bonusPass": `
+      Nível 0: +1 para todas as rolagens de dados, Magia Cuspe ácido sem custo uma vez por dia.
+
+      🧪Manipulação Ácida
+Nível 1: +1 em testes de Enganação ao influenciar outros.
+Nível 2: Insidioso – +1 em testes de Agilidade para ações furtivas ou subversivas.
+Nível 3: Mestre da Dissolução – Libera uma magia de nível 1 à escolha na Cúpula da Corrosão.
+Nível 4: Controle Ácido – +2 em intimidação ao demonstrar poder ácido em combate.
+Nível 5: Comando Persuasivo – Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)
+Nível 6: Senhor do Veneno – Libera uma magia de nível 2 à escolha na Cúpula da Corrosão.
+Nível 7: Olhar Corrosivo – Inimigos próximos sofrem -1 em resistência mental.
+Nível 8: Manipulador Implacável – +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.
+Nível 9: Barão do Subjugamento – Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)
+
+💀Corrupto
+Nível 1: +1 em testes de Intimidação ao causar medo através do poder corrosivo.
+Nível 2: Sopro Ácido – Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)
+Nível 3: Mestre da Dissolução – Libera uma magia de nível 1 à escolha na Cúpula da Corrosão.
+Nível 4: Aura da Corrosão – Inimigos próximos recebem -1 em resistência ao ácido.
+Nível 5: Maldição Ácida – Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa um dano adicional de +1d6 ácido. (Custo: 3 de especial)
+Nível 6: Senhor da Ruína Ácida – Libera uma magia de nível 2 à escolha na Cúpula da Corrosão.
+Nível 7: Decadência Profunda – Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)
+Nível 8: Desolador Corrosivo – +2 de dano ácido contra alvos debilitados.
+Nível 9: Propagador da Degradação – Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)
+
+🦠Adepto da Corrosão
+Nível 1: +1d4 em vida ao sofrer dano ácido, aproveitando o poder da corrosão para fortalecimento.
+Nível 2: Pele Resistente – +2 em resistência contra venenos e ácidos.
+Nível 3: Mestre da Dissolução – Libera uma magia de nível 1 à escolha na Cúpula da Corrosão.
+Nível 4: Fluxo Ácido – Ao receber cura mágica, regenera +1d6 adicional.
+Nível 5: Ciclo da Corrosão – +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)
+Nível 6: Senhor da Ruína Ácida – Libera uma magia de nível 2 à escolha na Cúpula da Corrosão.
+Nível 7: Conexão Corrosiva – Cura 1d4 ao infligir dano ácido.
+Nível 8: Poder da Dissolução – Magias de ácido causam +1d8 de dano adicional.
+Nível 9: Guardião da Corrosão Suprema – Libera uma magia de nível 3 da Cúpula sem custo de especial, uma vez por combate. (Custo: 6 de especial para reativar em outro combate)`,
       "movimento_pass": 4.5
     },
     "Bárbaro": { 
@@ -434,7 +612,41 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Fogo",
-      "bonusPass": "+2 em curas recebidas, + 5 de dano com Machados e Martelos.",
+      "bonusPass": `
+      Nível 0: +2 em curas recebidas, + 5 de dano com Machados e Martelos.
+      
+      😡Berserker
+      Nível 1: Instinto Selvagem – Aumenta em +1d4 o dano de ataques realizados com as próprias mãos ou armas improvisadas quando em combate corpo a corpo. (Passivo) e Libera a passiva Ódio.
+Nível 2: Força Primordial – Recebe +2 em testes de força física, especialmente em situações de quebra de objetos ou arrancamento. (Passivo)
+Nível 3: Resistência Implacável – Ganha +1 em testes de resistência contra venenos e efeitos de cansaço. (Passivo)
+Nível 4: Rugido de Guerra – Ao lançar um grito de batalha, impõe -1 nos testes dos inimigos próximos por um turno. (2 de especial por uso)
+Nível 5: Golpe Devastador – Aplica um bônus de +1d6 de dano ao atacar quando sua vida estiver abaixo de 50%. (3 de especial por uso)
+Nível 6: Fúria Cortante – +1d6 de dano adicional ao usar armas de corte quando está em fúria. (Passivo)
+Nível 7: Espírito da Batalha – Recebe +2 em resistência contra condições debilitantes como Lentidão e Paralisia enquanto luta com mais de um inimigo. (Passivo)
+Nível 8: Destruição Imparável – +1d8 de dano adicional ao acertar golpes críticos com armas pesadas. (Passivo)
+Nível 9: Frenesi Berserker – Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)
+
+🪓Mestre dos Machados
+Nível 1: Precisão Brutal – Recebe +1d4 de dano adicional ao usar machados para acertar alvos fixos ou de movimento lento. (Passivo)
+Nível 2: Braços de Ferro – +1 em testes ao usar armas pesadas como machados, mesmo em condições de combate prolongado. (Passivo)
+Nível 3: Agilidade com Peso – +1 em testes de Agilidade quando carrega armas pesadas em combate. (Passivo)
+Nível 4: Machado Veloz – Concede +2 em ataques consecutivos com machados contra o mesmo alvo. (Passivo)
+Nível 5: Corte Rachador – Executa um golpe com o machado que reduz a defesa do alvo em 1 por dois turnos. (2 de especial por uso)
+Nível 6: Lâmina Impiedosa – +1d8 de dano em ataques críticos realizados com machados ao mirar na cabeça ou em partes vulneráveis. (Passivo)
+Nível 7: Mestre de Impacto – Recebe +2 em resistência contra efeitos de recuo ao atacar com machados em combate corpo a corpo. (Passivo)
+Nível 8: Golpe Fatal – Ao acertar um golpe crítico, causa um sangramento extra de +1d10 de dano em turnos seguintes. (4 de especial por uso)
+Nível 9: Executador de Batalha – Pode realizar um ataque extra com machado uma vez por combate, com +2d8 de dano adicional. (5 de especial por ativação, uma vez por combate)
+
+✨Caminho Puritano
+Nível 1: Vitalidade Curativa – Recupera +1d4 de vida própria ao final de cada combate ao manter a integridade do grupo. (Passivo)
+Nível 2: Resiliência Sagrada – +1 em testes de primeiros socorros, aplicável a si e aliados próximos. (Passivo)
+Nível 3: Fonte de Cura – Ao receber cura, aumenta o efeito em +1d4 de vida extra. (Passivo)
+Nível 4: Proteção Natural – +2 em resistência contra ataques mágicos enquanto está curando aliados. (Passivo)
+Nível 5: Mão Restauradora – Cura a si ou um aliado em +1d6 instantaneamente. (3 de especial por uso)
+Nível 6: Energia Salvadora – Regenera +1d8 de vida ao final de cada turno enquanto estiver ao lado de aliados feridos. (Passivo)
+Nível 7: Guardião de Batalha – Recebe +2 em resistência contra efeitos de maldição e envenenamento enquanto cura ou protege um aliado. (Passivo)
+Nível 8: Reforço de Vida – Cura um aliado em +1d10 ao usar uma ação de suporte em combate. (4 de especial por uso)
+Nível 9: Guardião Puritano – Cura todos os aliados próximos em +2d8 uma vez por combate. (5 de especial por ativação, uma vez por combate)`,
       "movimento_pass": 4
     },
     "Bardo": { 
@@ -442,7 +654,47 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Luz",
-      "bonusPass": "+2 em qualquer rolagem de dados em Conexão e + 2 em diplomacia.",
+      "bonusPass": `
+      Nível 0: +2 em qualquer rolagem de dados em Conexão e + 2 em diplomacia.
+      
+      💃Mestre da Dança
+"O Mestre da Dança usa sua habilidade com a música para curar, purificar e confundir os inimigos enquanto mantém sua presença dinâmica em combate. A dança é acompanhada pelo som de seu instrumento que, magicamente, levita e toca por conta própria."
+
+Nível 1: Dança da Purificação – Aprende a passiva Dança da Purificação, permitindo remover condições negativas de aliados próximos. (Sem custo uma vez por dia)
+Nível 2: Movimentos Encantados – +1 em testes de esquiva e resistência a ataques à distância enquanto dança. (Passivo)
+Nível 3: Toque da Harmonia – Ao tocar o instrumento, restaura +1d4 pontos de vida ou sanidade para aliados próximos. (2 de especial por uso)
+Nível 4: Encanto das Melodias – +2 em testes de Conexão quando usa a dança para ganhar a confiança de aliados e NPCs. (Passivo)
+Nível 5: Ritmo Desorientador – Confunde inimigos ao dançar, reduzindo seus testes de precisão em -1 por três turnos. (3 de especial por uso)
+Nível 6: Harmonia Fluida – Restaura +1d6 de vida para aliados em combate ao fim de cada turno em que dançar por ao menos dois turnos. (Passivo)
+Nível 7: Explosão Melódica – Causa +1d8 de dano aos inimigos ao redor, que são atingidos por uma onda de som enquanto dança. (3 de especial por uso)
+Nível 8: Aura de Cura – Enquanto dança, aliados ganham +2 em resistência a condições. (Passivo)
+Nível 9: Apoteose da Dança – Invoca uma dança final que remove todas as condições negativas de aliados e reduz a armadura dos inimigos em 2 e faz as armas de todos caírem e ficar grudas no chão enquanto estiver dançando. (5 de especial, 1 vez por combate)
+
+🎶Guerreiro Musical
+"O Guerreiro Musical usa a música para inspirar a si mesmo e aos seus aliados, enquanto luta com armas e instrumentos. Ele se destaca ao utilizar sua música como arma e se aprimorar para o combate."
+
+Nível 1: Golpe Harmônico – Causa +1d4 de dano adicional com seu instrumento usado como arma improvisada. (Passivo)
+Nível 2: Ritmo de Batalha – +1 em testes de precisão enquanto luta usando arco ou besta. (Passivo)
+Nível 3: Melodia de Inspiração – Aumenta a precisão de aliados em +1 durante um turno. (2 de especial por uso)
+Nível 4: Som Impenetrável – Ao tocar música, ganha +1 em resistência a ataques mentais e mágicos. (Passivo)
+Nível 5: Crescendo Devastador – Ataque poderoso com o instrumento, causando +1d6 de dano e atordoando o inimigo por um turno. (3 de especial por uso)
+Nível 6: Canto da Armadura – Ganha +2 em resistência física ao tocar uma melodia protetora. (Passivo)
+Nível 7: Corda Rasgante – Ataque cortante que causa +2d6 de dano e reduz a defesa do alvo em -1. (4 de especial por uso)
+Nível 8: Hino de Guerra – Todos os aliados recebem +2 em resistência a condições por dois turnos ao ouvir a música de combate. (Passivo)
+Nível 9: Concerto de Vitória – Concede +3d8 de dano de Luz em um ataque final, atingindo todos os inimigos próximos. (5 de especial, 1 vez por combate)
+
+💤Apanhador de Sonhos
+"O Apanhador de Sonhos é iniciado nas Hierarquias dos Cultos dos Apanhadores, conectando-se ao mundo espiritual e manipulando sonhos e pesadelos para apoiar aliados e afetar inimigos."
+
+Nível 1: Aspirante dos Sonhos – Ganha uma magia de nível 1 a 2 de Aspirante dos Sonhos e +1d4 de bônus em combate usando bestas.
+Nível 2: Tecelão de Devaneios – Libera uma magia de nível 1 a 2 de Tecelão de Devaneios e reduz em 1 o custo de sanidade ao usar magias que afetam a mente.
+Nível 3: Guardião dos Subconscientes – Ganha uma magia de nível 1 a 3 de Guardião dos Subconscientes e concede aos aliados próximos +1 em resistência mental durante a batalha.
+Nível 4: Senhor do Sono Eterno – Adquire uma magia de nível 1 a 4 de Senhor do Sono Eterno e ganha uma vez por combate a habilidade de criar uma névoa que provoca sonolência ao redor, afetando inimigos em um raio de 5 metros.
+Nível 5: Profeta das Visões Oníricas – Ganha uma magia de nível 1 a 4 de Profeta das Visões Oníricas e +1 em esquiva, além de poder vislumbrar ataques iminentes de inimigos.
+Nível 6: Apanhador dos Pesadelos – Libera uma magia de nível 1 a 4 de Apanhador dos Pesadelos e drena 1d6 de sanidade dos inimigos em combate, convertendo em energia especial.
+Nível 7: Guardião do Mundo Onírico – Concede uma magia adicional de nível 1 a 5 e +2 de percepção para detectar seres invisíveis ou ilusionários.
+Nível 8: Mestre dos Devaneios – Ganha uma magia de nível 1 a 5 e reduz à metade o custo de sanidade para todas as magias de sonhos ou pesadelos.
+Nível 9: Guardião Eterno dos Sonhos – Ganha uma magia de nível 6 e pode realizar uma ação completa extra uma vez por combate ao custo de 7 de especial, conectando-se profundamente com o mundo espiritual e manipulando os sonhos de todos ao redor.`,
       "movimento_pass": 3.5
     },
     "Bruxo": { 
@@ -450,7 +702,47 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Escuridão",
-      "bonusPass": "Magias de atributo Libertação custam metade.",
+      "bonusPass": `
+      Nível 0:Magias de atributo Libertação custam metade.
+      
+      🔮Umbromante
+"Especializado em magia de Escuridão, com Hierarquias dos Filhos de Eldoria."
+
+Nível 1: Aprendiz das Sombras – Libera uma magia de nível 1 de Escuridão e +1 em testes de Identificar Magia.
+Nível 2: Mestre da Penumbra – Ganha uma magia de nível 2 de Escuridão e +1 em testes contra danos de Escuridão.
+Nível 3: Guardião da Noite – Libera uma magia de nível 2 de Escuridão e permite realizar um ataque extra de Escuridão ao custo de 3 de especial.
+Nível 4: Profeta do Eclipse – Ganha uma magia de nível 3 de Escuridão e a habilidade “Libertação das Sombras”, permitindo reduzir o custo de sanidade de uma magia de Escuridão pela metade uma vez por combate.
+Nível 5: Arauto das Trevas – Ganha uma magia de nível 4 e +2 de dano em magias de Escuridão.
+Nível 6: Sombra Absoluta – Libera uma magia de nível 4 de Escuridão e +2 em movimento quando em áreas escuras. Uma vez por combate, pode causar “Borborigmo” ao oponente por 1d4 turnos.
+Nível 7: Senhor das Sombras Eternas – Ganha +2 em testes de Identificar Magia e recebe um escudo sombrio que absorve até 1d8 de dano em combate uma vez por turno.
+Nível 8: Guardião das Trevas Profundas – Recebe uma magia de nível 5 e, ao usar uma ação completa de Escuridão, causa “Confusão” em inimigos ao redor.
+Nível 9: Profeta da Sombra Suprema – Ganha uma magia de nível 6 e pode realizar uma ação completa extra ao custo de 8 de Sanidade em combate.
+
+💀Maldizente
+"Especializado em maldições, com foco em fé e controle espiritual."
+
+Nível 1: Aprendiz da Maldição – Libera uma magia de nível 1 de Maldição e Libera a Passiva “Amaldiçoar,”.
+Nível 2: Portador dos Presságios – Ganha uma magia de nível 1 de Maldição e +1 em dano em ataques de Maldição.
+Nível 3: Mestre dos Anátemas – Libera uma magia de nível 2 de Maldição e concede +1 em testes de conexão.
+Nível 4: Profeta da Ruína – Ganha uma magia de nível 3 e a habilidade “Libertação da Maldição”, reduzindo o custo de sanidade ao lançar Maldições pela metade uma vez por combate.
+Nível 5: Arauto dos Destinos Sombrio – Libera uma magia de nível 3 e concede +2 de dano adicional em ataques de Maldição.
+Nível 6: Véu do Fim – Libera uma magia de nível 4 de Maldição e pode envolver-se em um véu sombrio, aumentando a resistência a ataques físicos em +2.
+Nível 7: Mestre da Profecia Desoladora – Ganha uma magia de nível 4 e pode reduzir o dano mágico de um inimigo em 1d12 ao custo de 3 de especial.
+Nível 8: Guardião dos Destinos Perdidos – Libera uma magia de nível 5 e ganha +2 em testes de conexão +1d8 de dano com magias de Maldição.
+Nível 9: Profeta dos Pesadelos Eterno – Ganha uma magia de nível 6 e pode aplicar “Amaldiçoar” a um inimigo extra em combate ao custo de 7 de especial e alvos amaldiçoados tem desvantagem para tirar maldição.
+
+🪄Duelista de Varinhas
+"Especializado em duelos de varinhas, escolhendo uma varinha no nível 1 que concede bônus únicos."
+
+Nível 1: Duelista das Varinhas – Escolhe uma varinha: Fé (Determinação +1), Poder (Libertação +1), Desconhecido (Conexão +1) ou Caos (Preservação +1). Recebe um bônus de +1 em combate de varinha, pode conjurar magias com a varinha.
+Nível 2: Mago Duelista – Ganha uma habilidade de ataque de varinha causa 2d10 de plasma ao custo de 2 de especial (alvo a sua vista) e um bônus de +1 de dano com plasma.
+Nível 3: Mestre da Varinha – Aumenta o dano de plasma em +2 e recebe um bônus de +1 em esquiva, Libera duas magias de plasma de nível 1 a 2
+Nível 4: Guerreiro das Bruxarias – Pode realizar um ataque extra com a varinha ao custo de 4 de especial e +1 em resistência contra magias do elemento desconhecido.
+Nível 5: Arauto das Bruxarias – Ganha +2 em ataques de plasma e reduz o custo de sanidade em magias de duelo, Libera duas magias de plasma de nível 3 a 4
+Nível 6: Guardião Arcano das Varinhas – Ganha uma habilidade de bloqueio arcano, reduzindo o dano recebido em 1d8 ao custo de 2 de especial.
+Nível 7: Profeta do Plasma Arcano – Recebe +1 de dano adicional em magias de plasma e um bônus de +2 em testes de conexão em combates com varinhas.
+Nível 8: Guardião do Poder Arcano – Libera duas magias de plasma de nível 1 a 6 e pode realizar uma ação completa extra ao custo de 6 de especial, aplicando dois ataques com a varinha consecutivos.
+Nível 9: Mestre Supremo das Varinhas – Ganha +3 em todos os ataques com plasma e uma habilidade de ataque de varinha definitiva ao custo de 8 de especial, os danos rebatem em todos inimigos próximos a 10m do alvo.`,
       "movimento_pass": 3.5
     },
     "Carpinteiro": { 
@@ -458,7 +750,47 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Tempestade",
-      "bonusPass": "Uma ação livre extra por turno.",
+      "bonusPass": `
+      Nível 0: Uma ação livre extra por turno.
+      
+      ⚒️Construtor Improvisado
+"O Carpinteiro usa troncos, cadeiras e outros objetos de madeira como armas improvisadas, utilizando habilidades de combate bruto e improvisação."
+
+Nível 1: Martelada Bruta – Usa um tronco ou objeto de madeira, causando +1d4 de dano corpo a corpo. (Custo: 1 de especial por uso)
+Nível 2: Bloco de Proteção – Ganha +1 em resistência ao utilizar objetos de madeira como escudo. (Passivo)
+Nível 3: Força Adaptável – Regenera 1 ponto de especial se usar objetos improvisados em combate por dois turnos seguidos. (Passivo)
+Nível 4: Perícia com Improviso – Recebe +1 em testes de ataque ao usar armas improvisadas. (Passivo)
+Nível 5: Golpe Demolidor – Causa +1d6 de dano extra em um golpe que ignora a defesa do alvo. (Custo: 3 de especial por uso)
+Nível 6: Resistência Férrea – Ganha +2 em resistência ao dano físico se usar um objeto improvisado desde o início do combate. (Passivo)
+Nível 7: Explosão de Impacto – Um ataque pesado que causa +2d6 de dano adicional e pode atordoar o inimigo. (Custo: 4 de especial por uso)
+Nível 8: Maestria em Improviso – Todos os ataques com objetos improvisados causam +1d6 adicional enquanto evita ataques à distância. (Passivo)
+Nível 9: Golpe Devastador – Um ataque massivo que causa +2d10 de dano, disponível após três turnos sem usar outras habilidades. (Custo: 5 de especial por ativação, 1 vez por combate)
+
+🪵Artesão de Barricadas
+"O Carpinteiro constrói barricadas e armadilhas de madeira para criar obstruções e distrações, dominando o campo de batalha com construções rápidas."
+
+Nível 1: Mini Barricada – Constrói uma pequena barreira que concede +1 em defesa a aliados atrás dela por um turno. (Sem custo de especial)
+Nível 2: Parede de Madeira – Cria uma barreira durável que bloqueia uma passagem por dois turnos. (Custo: 2 de especial por uso)
+Nível 3: Prendedor Ágil – Consegue travar objetos leves no chão para dificultar a passagem de inimigos, aumentando testes de esquiva de aliados próximos em +1. (Passivo)
+Nível 4: Barreira Resistente – Barricadas e paredes de madeira duram um turno extra. (Passivo)
+Nível 5: Armadilha Surpresa – Constrói uma pequena armadilha que causa +1d6 de dano em inimigos que tentarem atravessá-la. (Custo: 3 de especial por uso)
+Nível 6: Cobertura Completa – Constrói uma barreira que reduz o dano recebido em 50% para quem estiver atrás dela por um turno. (Custo: 4 de especial, 1 vez por combate)
+Nível 7: Estratégia de Distração – Coloca um objeto de madeira que atrai inimigos por um turno, facilitando ataques surpresas. (Custo: 2 de especial por uso)
+Nível 8: Mestre das Barricadas – Pode construir uma segunda barricada simultânea, concedendo bônus de defesa a aliados próximos. (Passivo)
+Nível 9: Catapulta Improvisada – Constrói uma pequena catapulta para lançar objetos, causando +2d10 de dano à distância. (Custo: 5 de especial, uma vez por combate)
+
+🪓Guerreiro de Machado
+"O Carpinteiro luta com machados, tornando-se quase tão habilidoso quanto o Mestre dos Machados, com seu próprio estilo de combate implacável."
+
+Nível 1: Corte Preciso – Causa +1d4 de dano adicional ao usar machados em combate. (Passivo)
+Nível 2: Fúria do Lenhador – Ganha +1 em resistência ao usar machados para golpes rápidos. (Passivo)
+Nível 3: Machado Veloz – Recebe +1 em Agilidade quando ataca com machados. (Passivo)
+Nível 4: Ataque Sequencial – Concede +2 em dano ao acertar o mesmo alvo com ataques consecutivos. (Passivo)
+Nível 5: Machado Partidor – Um golpe com o machado reduz a defesa do alvo em 1 por dois turnos. (Custo: 2 de especial por uso)
+Nível 6: Golpe Devastador – +1d8 de dano em ataques críticos com machados ao atingir áreas vitais. (Passivo)
+Nível 7: Equilíbrio de Aço – Ganha +2 em resistência contra ataques de recuo ao usar machados. (Passivo)
+Nível 8: Hemorragia Fatal – Um golpe crítico com o machado causa +1d10 de dano contínuo no alvo. (Custo: 4 de especial por uso)
+Nível 9: Mestre do Machado – Realiza um ataque extra com o machado, causando +2d8 de dano adicional. (Custo: 5 de especial por ativação, uma vez por combate)`,
       "movimento_pass": 3.5
     },
     "Catador": { 
@@ -466,7 +798,47 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 8,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
-      "bonusPass": "Cada órgão adiciona +1 invocação extra, magia LEVANTA sem custo uma vez por dia.",
+      "bonusPass": `
+      Nível 0: Cada órgão adiciona +1 invocação extra, magia LEVANTA sem custo uma vez por dia.
+      
+      ⚰️Necromante
+"Especialista em manipulação de mortos e absorção de poder de cadáveres."
+
+Nível 1: Eco dos Mortos – Cada órgão coletado concede +1 em resistência a efeitos de medo e intimidação. Pode lançar a magia “Levanta” duas vezes por dia sem custo e ganha +2 de movimento em terrenos onde corpos ou esqueletos estejam presentes.
+Nível 2: Alimento das Sombras – Ao absorver um cadáver, recupera 1d4 pontos de sanidade. Pode usar essa habilidade até três vezes por dia.
+Nível 3: Aura Cadavérica – Cria uma aura sombria ao redor, reduzindo o dano recebido em 2 para cada inimigo morto próximo. Esse efeito dura até o fim do combate (custa 4 especial).
+Nível 4: Colecionador de Almas Perdidas – Ao derrotar um inimigo, pode armazenar a essência do cadáver por 1d10 turnos, recebendo -2 de dano contra danos de sangue e luz.
+Nível 5: Devorador de Essências – Permite drenar 1d20 de sanidade de um cadáver uma vez por combate, aplicando esse valor a si mesmo ou a um aliado próximo.
+Nível 6: Aura de Terror – Ganha um bônus passivo de +3 em testes de intimidação ao se aproximar de inimigos com vida abaixo de 50%. Em combate, aplica desvantagem a oponentes que tentam atacar em curta distância (custo 2 de especial).
+Nível 7: Fortificação Cadavérica – Com a habilidade “Muralha de Ossos”, ao custo de 6 de sanidade, cria uma barreira de ossos que reduz o dano de ataques à distância por 2d8 por três turnos.
+Nível 8: Ceifeiro dos Defuntos – Ganha “Sangue Morto”, ao custo de 6 de sanidade, que permite drenar a força vital de um cadáver, recuperando 2d20 de vida.
+Nível 9: Guardião da Sombra Eterna – Com a habilidade “Escudo Profano”, ao custo de 12 de sanidade, pode absorver metade do dano recebido em um turno de combate, canalizando essa energia para aumentar o próprio ataque em 1d10 no próximo turno.
+
+🏺Colecionador
+"Especializado em colecionar e manipular itens sagrados, com habilidades de levitação e aura de proteção."
+
+Nível 1: Coleção Sagrada – Ganha a habilidade de marcar até dois itens como “sagrados”, os quais adquirem uma aura brilhante rosa. Esses itens ganham vantagem em testes de Agilidade e podem levitar até o Catador no seu turno. Causam +4 de dano de Aura se usados para golpear.
+Nível 2: Guardião dos Tesouros – Ganha +1 em Ofício e a passiva “Réplica Imperfeita“, permitindo copiar qualquer item que esteja em sua posse.
+Nível 3: Mestre dos Artefatos – Ganha um terceiro slot na coleção sagrada e pode adicionar +1d4 de dano a ataques com esses itens.
+Nível 4: Saqueador Experiente – Concede +2 em testes de Ofício e a habilidade “Roubo Sombrio“, permitindo pegar um item de um inimigo distraído sem custo de ação (custo 6 de especial) “O alvo não pode ter visão sua ou informação de onde está”.
+Nível 5: Guardião de Relíquias Antigas – Concede +1 de Defesa para cada item ativo em sua coleção sagrada.
+Nível 6: Santuário dos Artefatos Perdidos – Concede +3 de dano adicional com itens da coleção sagrada e +1 em testes de Agilidade ao manipular objetos.
+Nível 7: Levitação Perfeita – Com a habilidade “Chamada dos Artefatos“, ao custo de 5 de sanidade, pode atrair todos os itens em um raio de 15 metros para si, independentemente do peso.
+Nível 8: Guardião Supremo dos Tesouros – Ganha “Proteção Sagrada“: ao custo de 8 de sanidade, reduz o dano de todos os ataques recebidos em 2d8 enquanto um item sagrado estiver ativo.
+Nível 9: Senhor da Coleção Sagrada – A habilidade “Roubo Fantasmagórico“, ao custo de 10 de sanidade, permite que ele roube um item mágico do inimigo diretamente durante o combate e o adicione temporariamente à coleção.
+
+🩸Sanguinário
+"Especialista em combate corpo a corpo, utilizando partes do corpo como armas e habilidades de destruição visceral."
+
+Nível 1: Guerreiro de Ossos – Cada órgão coletado concede +1 em ataques corpo a corpo. Ganha a passiva “Dilacera e Atacar“.
+Nível 2: Punhos Macabros – Ganha +1 em Preservação e +1d4 de dano adicional ao usar partes do corpo como armas improvisadas.
+Nível 3: Mestre dos Ossos – Ganha a magia “Órgãos Sombrios“, e aumentar o próprio dano físico em +2 uma vez por combate, ao custo de 3 de sanidade.
+Nível 4: Destruidor de Corpos – Cada ataque com partes de corpos concede +2 de dano extra e um bônus de +1 teste de resistência.
+Nível 5: Arauto da Carne Profana – Recebe +2 em testes de Preservação e concede +1 em Defesa ao atacar com partes de corpos.
+Nível 6: Ceifador dos Mortos-Vivos – Aumenta o dano com órgãos e partes em +1d6 e ganha resistência a efeitos de paralisia.
+Nível 7: Impacto Demolidor – Ganha a habilidade “Esmagamento Cadavérico”, ao custo de 6 de sanidade, podendo aplicar 3d8 de dano adicional e quebrar a defesa de um oponente temporariamente “alvo sem armadura ou possibilidade de defender”.
+Nível 8: Guerreiro das Sombras Corpóreas – Ganha “Fúria dos Ossos”: aumenta o dano de todos os ataques corpo a corpo em +1d12 durante um turno.
+Nível 9: Avatar da Destruição Cadavérica – Com a habilidade “Desmembramento Fatal” pode realizar um ataque devastador que aplica um sangramento profundo, causando 2d10 de dano contínuo por 3 turnos, custo 2 de especial.`,
       "movimento_pass": 3.5
     },
     "Colosso": { 
@@ -474,7 +846,41 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 4,
       "resistencia": "Esmagante",
-      "bonusPass": "Passiva armadura sobrenatural sem custo uma vez por dia.",
+      "bonusPass": `
+      Nível 0: Passiva armadura sobrenatural sem custo uma vez por dia.
+      
+      🦾Guardião de Ferro
+Nível 1: Resiliência do Colosso – Resistência contra qualquer dano de cortante e + 1 de armadura.
+Nível 2: Pele de Pedra – Dano de esmagante recebido é reduzido em 2.
+Nível 3: Barreira Implacável – Ganha “Defesa Absoluta”, que pode ser ativada ao custo de 4 de especial. Por 1 turno, bloqueia completamente o próximo ataque.
+Nível 4: Fortificação Permanente – Recebe +1 de armadura enquanto permanecer no mesmo lugar por um turno completo.
+Nível 5: Muralha do Colosso – Com a habilidade “Defesa Profunda”, ao custo de 6 de especial, pode redirecionar 1d12 de dano recebido para uma barreira de energia, protegendo aliados próximos por um turno.
+Nível 6: Resiliência Sobrenatural – Ganha resistência a qualquer ataque de perfurante quando utilizando armadura pesada. Esse efeito é permanente.
+Nível 7: Aegis Sagrada – “Escudo Final”, ao custo de 8 de especial, permite que o Colosso absorva até 2d12 de dano de um ataque direcionado a ele.
+Nível 8: Muralha de Aço Vivo – Ao manter uma postura defensiva, ele pode bloquear um ataque de outro alvo a aliados por turno e ainda ganha +2 em armadura ao bloquear.
+Nível 9: Guardião Inquebrável – Com a habilidade “Proteção Ancestral”, ao custo de 12 de especial, pode negar totalmente o dano de um ataque e refletir 1d10 de dano de volta ao atacante, tornando-o uma barreira quase invulnerável.
+
+💪Dominador
+Nível 1: Força Inigualável – Recebe +2 em testes de Brutalidade e para testes de agarrão e empurrão, aumentando sua capacidade de controlar inimigos diretamente. Cada sucesso concede 1 ponto temporário de especial.
+Nível 2: Domínio de Impacto – Causa +2 de dano esmagante em ataques ao agarrar ou empurrar inimigos.
+Nível 3: Investida Destruidora – Ganha “Investida do Colosso”, ao custo de 4 de especial, que permite empurrar um inimigo a até 5 metros de distância, causando 1d4 de dano de esmagante.
+Nível 4: Agarrão Sobrenatural – Recebe +2 em Brutalidade ao manter um inimigo agarrado, o que o ajuda a manter o controle sobre o oponente.
+Nível 5: Golpe Desestabilizador – Com o ataque “Confusão Brutal”, ao custo de 2 de especial, pode causar confusão no oponente, aplicando por 1 turno.
+Nível 6: Presença Imponente – Ganha um bônus de +3 em dano quando empurrar ou arrastar oponentes, sendo quase impossível de ser desafiado.
+Nível 7: Força dos Antigos – Ganha “Força Ancestral”, ao custo de 8 de especial, que concede +4 em Brutalidade por um turno e permite arrastar um inimigo por até 5 metros, esmagando-o no chão.
+Nível 8: Poder de Controle Total – Ao empurrar um inimigo, pode realizar um ataque adicional no mesmo turno, concedendo controle máximo do campo.
+Nível 9: Sufocamento Final – Com a habilidade “Agarre Inescapável”, ao custo de 12 de especial, pode imobilizar completamente o alvo por 1 turno e causar 3d12 de dano, finalizando o oponente.
+
+👑Vingança ao Rei
+Nível 1: Postura de Vingança – Recebe +2 de armadura ao bloquear ataques corpo a corpo e Libera a passiva “Vingança“, sem custo uma vez por combate.
+Nível 2: Retaliação Agressiva – Causa +2 de dano em ataques de curto alcance em resposta a ataques recebidos.
+Nível 3: Escudo Defensivo – Ganha “Escudo Contra Golpes”, ao custo de 8 de especial, que permite bloquear o próximo ataque e, em seguida, contra-atacar o inimigo com um ataque completo.
+Nível 4: Firmeza Sobrenatural – Recebe +3 em Brutalidade ao resistir a tentativas de empurrão e agarrões, tornando-se uma presença difícil de derrubar.
+Nível 5: Contragolpe Devastador – “Destruição Reflexa”, ao custo de 12 de especial, permite realizar um ataque poderoso em resposta a qualquer ataque falho de um oponente, causando o dobro do dano normal.
+Nível 6: Reflexo de Ferro – Recebe +4 de dano em contra-ataques realizados em resposta a um ataque corpo a corpo.
+Nível 7: Braço da Retaliação – Ganha “Justiça Implacável”, ao custo de 13 de especial, que permite bloquear completamente o próximo ataque de um inimigo e devolvê-lo com um contra-ataque poderoso.
+Nível 8: Reflexo Sobrenatural – permite somar o bônus de agilidade em contra-ataques, permitindo realizar um ataque adicional a cada vez que for atacado.
+Nível 9: Golpe de Vingança Suprema – Com a habilidade “Juízo do Colosso”, ao custo de 18 de especial, realiza um contra-ataque massivo que causa 4d10 de dano de extra ao atacante, derrubando-o no chão.`,
       "movimento_pass": 3.5
     },
     "Conjurador": { 
@@ -482,7 +888,42 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Distorção",
-      "bonusPass": "Passivas e Magias têm custo reduzido baseado em 1d6, valido por combate.",
+      "bonusPass": `
+      Nível 0: Passivas e Magias têm custo reduzido baseado em 1d6, valido por combate.
+      
+      ⚔️Espadachim Arcano
+Nível 1: Lampejo Arcano – Pode conjurar magia com sua espada, +2 em ataques corpo a corpo quando canaliza magia através da espada.
+Nível 2: Corte Espectral – Libera a habilidade “Aura Manifestada” e permite uma investida rápida de 6m que causa 3d6 de dano e derruba o alvo. (3 especial)
+Nível 3: Discípulo do Raio Fendido – Aprenda duas magias de nível 1 a 2 do tipo Laser; ganhe +1 em Conexão ao conjurar com a espada.
+Nível 4: Plasma Pulsante – Corte corpo a corpo com dano de plasma, causando 2d8 adicional de dano de Plasma por dois turnos consecutivos (custo: 3 de especial).
+Nível 5: Golpe Espiritual – Um ataque imbuído de aura que, ao acertar, reduz em 3 a armadura de quem atinge (custo: 4 de especial).
+Nível 6: Manifesto dos Sentinelas Invisíveis – Aprenda duas magias de nível 2 a 3 do tipo Aura, e pode conjurar uma magia que tenha desbloqueado uma vez ao dia sem custo.
+Nível 7: Lâmina da Extinção – Aprenda duas magia de nível 3 a 4 do tipo Plasma e ganha +2 em testes de Conexão ao conjurar por uma espada.
+Nível 8: Corte da Condenação – Aprenda duas magias de nível 4 a 5 do tipo Morte, Golpe final com dano de aura ou plasma, causando 2d10 de dano ao alvo e impedindo-o de se curar por um turno.
+Nível 9: Assalto Arcano – Aprenda uma magia de nível 6 do tipo Plasma, Laser, Aura ou morte”. Uma vez por combate, realize três ataques com espada, cada um com dano adicional de 1d12 em Morte, laser, aura ou plasma.
+
+👻Invocador das Sombras
+Nível 1: Sombras Profundas – +2 em testes de Conexão e Libertação para conjurar magias de escuridão ou alma.
+Nível 2: Véu da Distopia – Passiva “Sombra da Distopia” é liberada, permitindo ocultação em áreas de baixa luz, dificultando a percepção inimiga.
+Nível 3: Golpe da Alma Perdida – Concede um ataque corpo a corpo que causa +4d6 de dano de alma (custo: 2 de especial).
+Nível 4: Chamado das Trevas – Ganha +2 em Conexão e Libertação para conjurar magias de escuridão em combate.
+Nível 5: Laço Obscuro – Encanta o alvo, reduzindo sua armadura em 2 por dois turnos (custo: 3 de especial).
+Nível 6: Passagem Oculta – Torna-se intangível por dois turno, evitando qualquer dano físico (custo: 6 de especial).
+Nível 7: Maestria Sombria – Ganha três magias de nível 1 a 4 da linha de escuridão ou alma que pode ser usada uma vez ao dia sem custo.
+Nível 8: Profundezas da Alma – Pode absorver +3d6 de sanidade ao causar dano com habilidades de alma ou escuridão. (passivo)
+Nível 9: Avanço da Penumbra – Uma vez por combate, invoca um véu sombrio em volta, recebendo +4d8 de armadura temporária por 10 turnos e causando Pavor nos inimigos em 30m.
+
+🌪️Conjuração Caótica
+Nível 1: Estudo Elemental – +2 em testes com magias de nível 1 a 2 dos elementos de fogo, gelo, água e eletricidade.
+Nível 2: Chama Persistente – Concede a habilidade de lançar uma rajada de fogo contínua, que aplica 2d8 de dano de fogo ao longo de dois turnos. (6 de especial, 2m, teste de agilidade)
+Nível 3: Toque Gélido – Libera uma aura de gelo ao seu redor que reduz a velocidade dos inimigos próximos por um turno, metade de movimento.
+Nível 4: Tempestade Condutora – Invoca uma tempestade que causa 1d12 de dano elétrico a inimigos em um raio de três metros (4 de especial).
+Nível 5: Escudo caótico – Conjura um escudo de água que reduz todos os danos de Caos, fica Resistente por dois turnos.
+Nível 6: Maestria Elemental – Libera três magias de nível 1 a 4 dos elementos fogo, gelo, água ou eletricidade para conjurar uma vez ao dia sem custo de sanidade, e fica liberado.
+Nível 7: Vórtice de Gelo – Invoca um vórtice que empurra os inimigos para trás 3m e causa 3d8 de dano de gelo (3 de especial).
+Nível 8: Caos Elemental – Quando lança uma magia de dano, rola +1d8 de dano adicional em fogo, gelo, água ou eletricidade.
+Nível 9: Mestre Elemental
+Libera quatro magias de nível 1 a 5 dos elementos fogo, gelo, água ou eletricidade e pode conjurar uma delas uma vez por dia sem custo.`,
       "movimento_pass": 4.5
     },
     "Costeiro": { 
@@ -490,7 +931,41 @@ Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antec
       "sanidadePorNivel": 4,
       "armaduraPorNivel": 3,
       "resistencia": "Água",
-      "bonusPass": "+1d6 com porretes ou katanas, +2 armadura e não pode ser Desarmado.",
+      "bonusPass": `
+      Nível 0: +1d6 com porretes ou katanas, +2 armadura e não pode ser Desarmado.
+      
+      🌊Marés Cortantes
+Nível 1: Toque das Ondas – +1 em teste de ataques com katana; adiciona 1d4 de dano água (1 de especial).
+Nível 2: Redemoinho Fluido – Ao acertar dois ataques consecutivos, ganha +1 em teste no próximo ataque.
+Nível 3: Fúria das Marés – Por 2 de especial, adiciona 1d8 de dano de água em uma arma a sua escolha por dois turnos.
+Nível 4: Correnteza Precisa – Recebe +1 em teste de esquiva e +2 em ataques com katana ao usar dano de água.
+Nível 5: Maré Inquebrável – Por 3 de especial, reduz o dano recebido em 50% por um turno.
+Nível 6: Pressão Submersa – Ataques com katana causa Debilitado em alvos sem resistência à água.
+Nível 7: Ritmo da Maré – Acertar três ataques consecutivos concede um ataque adicional (passivo).
+Nível 8: Corte Torrencial – Dano de água aumenta em +1d12 por três turnos (3 de especial).
+Nível 9: Último Suspiro da Correnteza – Uma vez por combate, realiza uma ação extra com +4d10 de dano de água.
+
+🌀Força das Marés
+Nível 1: Golpe Contundente – +3 em ataques com porrete; 1d4 de dano esmagante (1 de especial).
+Nível 2: Ataque de Oportunidade – Reação: Quando uma criatura sai do seu alcance (1m), você pode gastar sua ação livre para fazer um ataque corpo a corpo contra ela (+2 em teste de acerto, alvo teste de agilidade).
+Nível 3: Vingança das Ondas – Por 2 de especial, adiciona 1d12 de dano esmagante em ataques de reação.
+Nível 4: Rastro de Destroços – Acertar oponente em movimento concede +5 em dano esmagante por dois turnos.
+Nível 5: Defesa das Marés – Se um inimigo passar por você até (3m de distância) sem realizar um ataque, você pode reagir com um golpe, causando +3d8 de dano esmagador (custa 3 de Especial, alvo teste de agilidade).
+Nível 6: Investida da Correnteza – Ganha uma ação completa adicional para atacar com golpe esmagante que causa 4d8 e deixa o alvo Caído “derrubado” (5 de especial, alvo teste de agilidade).
+Nível 7: Muralha Intransponível – Ignorado “caso não atacado por um turno” por mais de um inimigo, recebe +2 em armadura e +2 em dano de água em reações.
+Nível 8: Impacto das Profundezas – Ataque livre extra ao derrubar um inimigo.
+Nível 9: Força Brutal da Maré – Uma vez por combate, realiza uma ação completa extra e um ataque reativo com +3d10 de dano.
+
+💧Correnteza Mística – Hidromante
+Nível 1: Iniciado da Maré – Ganha uma magia de água de nível 1.
+Nível 2: Tecelão das Correntes – Ganha uma magia de água de nível 2 e +1 em testes de preservação para magias de água.
+Nível 3: Senhor dos Rios – Ganha uma magia de água de nível 3; recupera 2 de sanidade ao acertar ataque aquático.
+Nível 4: Guardião dos Oceanos – Ganha uma magia de água de nível 4 e adiciona 1d8 de dano de água a qualquer magia (2 de sanidade).
+Nível 5: Profeta das Profundezas – Ganha uma magia de água de nível 5 e +2 em armadura por 5 turnos ao conjurar magia de água.
+Nível 6: Aura da Hidrocinese – Concede +3 em danos com magia e reduz o custo de sanidade das magias em 2 por três turnos (Custo 6 especial).
+Nível 7: Chamada do Abismo – Recupera 1d12 de sanidade ao final do combate se uma magia de água foi usada.
+Nível 8: Guardião das Marés – Recebe-2 de danos contra ataques elementais (apenas para fé, desconhecido e Poder) por 2 turnos ao conjurar magias de água.
+Nível 9: Mestre da Correnteza – Duas vezes por combate, lança qualquer magia de água de até nível 5 sem custo de sanidade.`,
       "movimento_pass": 4.5
     },
     "Criatura": { 
@@ -1167,6 +1642,10 @@ function updateRaceImage() {
   }
 }
 
+// Verificando se os valores são "Bônus de Raça: -" ou "Magia: -" e adicionando a classe "hidden"
+const bonusRace = document.querySelector("#bonus-race"); // Substitua pelo ID ou classe do elemento que exibe o "Bônus de Raça"
+const magia = document.querySelector("#magia"); // Substitua pelo ID ou classe do elemento que exibe "Magia"
+
 
 
 function updatePastImage() {
@@ -1656,3 +2135,7 @@ function toggleBonusSection(bonus) {
 
 
 // sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+
+// Verifique o conteúdo dos elementos e, se necessário, adicione a classe hidden
+// Verifica se o "Bônus de Raça" é igual a "N/A" e oculta o elemento se for

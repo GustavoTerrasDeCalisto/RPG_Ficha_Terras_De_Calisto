@@ -299,8 +299,51 @@ const pastData = {
     "sanidadePorNivel": 4,
     "armaduraPorNivel": 1,
     "resistencia": "Sagrado",
-    "bonusPass": "+2 em testes de Conexão, +5 em testes de Sobrevivência",
-    "movimento_pass": 2
+    "bonusPass":`
+    Nível 0: +2 em testes de Conexão, +5 em testes de Sobrevivência.
+
+    **Combatente**
+    Nível 1: +1d4 de dano com ferramentas improvisadas.
+    Nível 2: +1 em testes de Brutalidade.
+    Nível 3: +1 em testes de Sobrevivência.
+    Nível 4: +2 em ataques corpo a corpo com ferramentas ou armas simples.
+    Nível 5: Golpe Improvável - Dano extra de +1d6 ao atacar em condições desfavoráveis.
+    Nível 6: +1d6 de dano com armas cortantes ou perfurantes.
+    Nível 7: Combate Resiliente - +2 em testes de resistência contra Hemorragia e Paralisado.
+    Nível 8: +1d8 de dano com armas pesadas.
+    Nível 9: Frenesi Berserker - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)
+
+    Estrategista
+    Nível 1: +1 em precisão à distância.
+    Nível 2: +2 em testes de Agilidade.
+    Nível 3: Observador - +1 em testes de percepção em situações de combate ou exploração.
+    Nível 4: +1 em iniciativas e bônus de evasão contra ataques mágicos.
+    Nível 5: Estratégia Rápida - +1 em testes de comando e bônus em ações táticas.
+    Nível 6: +1d8 de dano em ataques com projéteis.
+    Nível 7: Alvo Improvável - Inimigos com mais de 50% de vida recebem -1d6 em ataques contra você.
+    Nível 8: Tático Experiente - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.
+    Nível 9: Plano de Batalha - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.
+
+    Conjuração
+    Nível 1: +1 em Conexão.
+    Nível 2: +1d6 de cura/dano com feitiços simples.
+    Nível 3: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.
+    Nível 4: Magias de nível 1, 2 e 3 - Consegue conjurar magias pequenas sem consumir recursos extras.
+    Nível 5: +1 em testes de Conjuração ao invocar elementos.
+    Nível 6: Ganha uma magia de nível 3 a 4 do grupo elemental escolhido.
+    Nível 7: Magia Avançada - Ganha uma magia de nível 5 a 6 do grupo elemental escolhido.
+    Nível 8: Custo Mínimo - Reduz o custo de uma magia por dia em 1 ponto de sanidade.
+    Nível 9: Mestre Elemental - Ganha uma magia de nível 7 a 9 do grupo elemental escolhido e pode conjurá-la uma vez por dia sem custo.
+`
+,
+    "movimento_pass": 2,
+    "bonustitulo_1": "Especialização de Força1111",
+    "bonusTexto_1": "Aumenta a força do personagem em 2 pontossdadasdasdasdadad.",
+    "bonustitulo_2": "Especialização de Força2222",
+    "bonusTexto_2": "Aumenta a força do personagem em 2 pontoscuuuuuuuuuuu.",
+    "bonustitulo_3": "Especialização de Força3333333",
+    "bonusTexto_3": "Aumenta a força do personagem em 2 pontsssssssssssssssssssssssssssssssos.",
+    
   },
   "Arauto": { // Cavaleiro adicionado como exemplo
     "vidaPorNivel": 10,
@@ -747,6 +790,7 @@ const pastData = {
 };
 
 
+
 const resistenciaColors = {
     "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
   "Ácido": { background: "#A5D6A7", color: "#1B5E20" }, // Verde ácido
@@ -958,13 +1002,76 @@ function updateStats() {
     TalentoDisponivelElement.textContent = 'Talento: N/A';
   }
   
-  // Elemento para Bônus de Passado
-  const bonusPassElement = document.querySelector('.Bonus-pass-tex');
-  if (currentAttributes.bonusPass) {
-    bonusPassElement.textContent = `Bônus de Passado: ${currentAttributes.bonusPass}`;
-  } else {
-    bonusPassElement.textContent = 'Bônus de Passado: N/A';
-  }
+
+ 
+
+  function toggleSection() {
+    const sectionContent = document.getElementById('expandableSection');
+    sectionContent.style.display = sectionContent.style.display === 'none' ? 'block' : 'none';
+}
+
+// Função para expandir e recolher as seções de bônus individuais
+function toggleBonusSection(bonusNumber) {
+    const bonusContent = document.getElementById(`bonus${bonusNumber}-desc`);
+    bonusContent.style.display = bonusContent.style.display === 'none' ? 'block' : 'none';
+}
+
+// Elemento para Bônus de Passado
+// Suponhamos que 'currentAttributes' seja um objeto onde as informações de "passado" são armazenadas
+
+// Atualizando o título do bônus de passado
+const bonusPassElement = document.querySelector('.Bonus-pass-tex');
+if (currentAttributes.bonusPass) {
+  bonusPassElement.textContent = `Bônus de Passado: ${currentAttributes.bonusPass}`;
+} else {
+  bonusPassElement.textContent = 'Bônus de Passado: N/A';
+}
+
+// Atualizando as especializações (Bônus 1, 2 e 3)
+const bonustitulo_1Element = document.querySelector('#bonustitulo_1');
+if (currentAttributes.bonustitulo_1) {
+  bonustitulo_1Element.textContent = currentAttributes.bonustitulo_1;
+} else {
+  bonustitulo_1Element.textContent = 'Título da Especialização 1';
+}
+
+const bonustexto_1Element = document.querySelector('#bonustexto_1');
+if (currentAttributes.bonusTexto_1) {
+  bonustexto_1Element.textContent = currentAttributes.bonusTexto_1;
+} else {
+  bonustexto_1Element.textContent = 'Descrição do Bônus 1';
+}
+
+const bonustitulo_2Element = document.querySelector('#bonustitulo_2');
+if (currentAttributes.bonustitulo_2) {
+  bonustitulo_2Element.textContent = currentAttributes.bonustitulo_2;
+} else {
+  bonustitulo_2Element.textContent = 'Título da Especialização 2';
+}
+
+const bonustexto_2Element = document.querySelector('#bonustexto_2');
+if (currentAttributes.bonusTexto_2) {
+  bonustexto_2Element.textContent = currentAttributes.bonusTexto_2;
+} else {
+  bonustexto_2Element.textContent = 'Descrição do Bônus 2';
+}
+
+const bonustitulo_3Element = document.querySelector('#bonustitulo_3');
+if (currentAttributes.bonustitulo_3) {
+  bonustitulo_3Element.textContent = currentAttributes.bonustitulo_3;
+} else {
+  bonustitulo_3Element.textContent = 'Título da Especialização 3';
+}
+
+const bonustexto_3Element = document.querySelector('#bonustexto_3');
+if (currentAttributes.bonusTexto_3) {
+  bonustexto_3Element.textContent = currentAttributes.bonusTexto_3;
+} else {
+  bonustexto_3Element.textContent = 'Descrição do Bônus 3';
+}
+
+
+
 
   // Atualizar as barras de progresso
   document.getElementById('life-fill').style.width = `${(vidaTotal / 100) * 100}%`;
@@ -983,6 +1090,12 @@ function updateStats() {
   updateRaceImage();
   updatePastImage();
 }
+
+
+
+// Chama a função de atualização passando o nome do personagem
+
+
 function updateRaceImage() {
   const race = document.getElementById('race').value;
   const raceImage = document.getElementById('race-image');
@@ -1017,6 +1130,8 @@ function updateRaceImage() {
     raceImage.src = "sua raça"; // Clear the image if no race is selected
   }
 }
+
+
 
 function updatePastImage() {
   const past = document.getElementById('past').value;
@@ -1483,3 +1598,25 @@ function toggleSkill(button) {
 }
 
 
+// sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+function toggleSection() {
+  const section = document.getElementById("expandableSection");
+  section.style.display = section.style.display === "block" ? "none" : "block";
+}
+
+// Função para alternar a visibilidade de cada bônus individualmente
+// Função para alternar a visibilidade de cada bônus individualmente
+function toggleBonusSection(bonus) {
+  // Construção do ID correto para o bônus
+  const bonusContent = document.getElementById(`bonus${bonus}-desc`);
+  
+  // Verificar se o bônus existe antes de alternar sua visibilidade
+  if (bonusContent) {
+    // Alternando a visibilidade do conteúdo
+    bonusContent.style.display = (bonusContent.style.display === "block") ? "none" : "block";
+  }
+}
+
+
+
+// sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn

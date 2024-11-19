@@ -180,19 +180,22 @@ body {
   height: 100vh;
   flex-direction: column;
 }
-
+.expand-btn2 {
+  position: absolute;
+  left: -9999px; /* Move o botão para a esquerda, fora da tela */
+}
 #app {
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 1000px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Permite que a altura se expanda conforme o conteúdo */
   text-align: center;
   margin-top: 60px; /* Adiciona espaço abaixo do header para o conteúdo */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100%;
 }
 #left-section {
   width: 50%;
@@ -217,6 +220,7 @@ body {
   #app {
       flex-direction: column;
       justify-content: flex-start;
+      
       height: auto;
   }
 
@@ -295,7 +299,13 @@ body {
   border-left: 4px solid #66ccff; /* Borda à esquerda para destaque */
   transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Transições suaves */
   text-align: left; /* Alinhamento à esquerda */
+  line-height: 1.6;
+  font-size: 11px;
+  color: #333;
+  white-space: pre-line;
+
 }
+
 
 /* Hover para Bônus de Passado */
 .Bonus-pass-tex:hover {
@@ -1243,4 +1253,44 @@ button:hover {
   display: none;          /* Inicialmente escondido */
   font-style: italic;     /* Texto em itálico */
   color: #fdfafa;            /* Cor do texto */
+}
+
+
+
+
+.section-content {
+  display: none;
+  padding: 3px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+.expand-btn {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e20303;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.especializacao_titulo {
+  font-size: 18px; /* Tamanho pequeno, mas destacado */
+  font-weight: bold; /* Torna o título em negrito */
+  color: #d10000; /* Cor vibrante (ajuste conforme desejado) */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas para dar mais destaque */
+  letter-spacing: 1px; /* Espaçamento entre as letras para dar mais "presença" */
+  padding: 5px 0; /* Espaçamento ao redor do título */
+  border-bottom: 2px solid #4CAF50; /* Linha na parte inferior para destaque */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+  margin: 15px 0; /* Margem para dar espaçamento */
+}
+
+
+
+/* Inicialmente todos os bônus estão escondidos */
+.section-content {
+  display: none;
 }

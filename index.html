@@ -478,7 +478,53 @@
               <h4 class="Bonus-passiva-tex">Passiva: N/A</h4>
               <h4 class="Bonus-magia-tex">Magia: N/A</h4>
               <h4 class="Bonus-talento-tex">Talento: N/A</h4>
-              <h4 class="Bonus-pass-tex">Bônus de Passado: N/A</h4>
+
+
+              <section>
+                <!-- Botão com texto "Bônus de Passado" -->
+                <button class="expand-btn" onclick="toggleSection()">Bônus de Passado</button>
+              
+                <!-- Conteúdo expansível -->
+                <div class="section-content" id="expandableSection" style="display:none;">
+                  <h4 class="especializacao_titulo">Especializações</h4>
+                  <h2>Escolha apenas uma especializado entre as 3</h2>
+
+                  <h4 class="Bonus-pass-tex" id="bonus-pass-titulo">Bônus de Passado: N/A</h4>
+                </div>
+              </section>
+              
+              <section>
+                <button class="expand-btn2" onclick="toggleSection()">
+                  Nuncaaaa AAApague isssso, jamaissssss poiss não resolver, aprendi a programar faz 1 mês ,não sei tirar essa pohaaa, pois toda vez que tiro, some as imagens, vai entender XDD
+                </button>
+                <div class="section-content" id="expandableSection">
+                  <h4 class="especializacao_titulo">Especializações</h4>
+              
+                  <!-- Bônus 1 -->
+                  <section id="bonus-sections">
+                    <div class="bonus-section" id="bonus1">
+                      <h4 id="bonustitulo_1">Título do Bônus 1</h4>
+                      <p id="bonustexto_1">Descrição do Bônus 1</p>
+                    </div>
+              
+                    <!-- Bônus 2 -->
+                    <div class="bonus-section" id="bonus2">
+                      <h4 id="bonustitulo_2">Título do Bônus 2</h4>
+                      <p id="bonustexto_2">Descrição do Bônus 2</p>
+                    </div>
+              
+                    <!-- Bônus 3 -->
+                    <div class="bonus-section" id="bonus3">
+                      <h4 id="bonustitulo_3">Título do Bônus 3</h4>
+                      <p id="bonustexto_3">Descrição do Bônus 3</p>
+                    </div>
+                  </section>
+                </div>
+              </section>
+              
+              
+              
+            
               
           </div>
 
@@ -530,7 +576,9 @@
             </select>
           </div>
           <div class="form-group">
+            
             <label for="past">Passado:</label>
+            
             <select id="past" name="past" required>
               <option value="seu passado">Selecione o Passado</option>
               <option value="Aldeão">Aldeão</option>

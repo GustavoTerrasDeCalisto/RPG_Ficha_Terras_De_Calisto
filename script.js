@@ -324,7 +324,7 @@ const pastData = {
     Nível 8: Tático Experiente - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.
     Nível 9: Plano de Batalha - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.
 
-    🧙‍♂️Conjuração
+    🧙‍♂️Conjurador
     Nível 1: +1 em Conexão.
     Nível 2: +1d6 de cura/dano com feitiços simples.
     Nível 3: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.

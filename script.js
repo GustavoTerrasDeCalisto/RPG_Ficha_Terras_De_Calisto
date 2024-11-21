@@ -973,7 +973,41 @@ Nível 9: Mestre da Correnteza – Duas vezes por combate, lança qualquer magia
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 4,
       "resistencia": "Gelo",
-      "bonusPass": "Passiva Pavor custo uma vez por dia ou sem lado negativo.",
+      "bonusPass": `
+Nível 0: Passiva Pavor custo uma vez por dia ou sem lado negativo.
+
+🦍Fúria Primordial
+Nível 1:Golpe Selvagem – Ganha +1 em testes de brutalidade e ataques corpo a corpo causam +2 de dano adicional (custo: 1 especial).
+Nível 2:Investida Brutal – Após um ataque bem-sucedido, pode realizar um teste de brutalidade. Se for bem-sucedido, realiza um ataque adicional (custo: 2 especial).
+Nível 3:Fúria Incontrolável – Adiciona 1d6 de dano bruto em ataques corpo a corpo enquanto estiver com menos de metade da vida.
+Nível 4:Resiliência Selvagem – Reduz em metade o dano de um ataque recebido ao custo de 3 especial (uma vez por combate).
+Nível 5:Ira Devastadora – Ganha a passiva Raiva e pode ativá-la sem custo duas vezes ao dia.
+Nível 6:Força Descomunal – Testes de brutalidade têm +3 e causam +1d10 de dano adicional em ataques críticos.
+Nível 7:Estouro de Poder – Pode realizar dois ataques adicionais em uma única ação completa (custo: 5 especial, uma vez por combate).
+Nível 8:Predador Incansável – Sempre que derrotar um inimigo, recupera 2 especial e pode usar uma ação de movimento sem custo.
+Nível 9:Carnificina Absoluta – Uma vez por combate, Gira acertando todos os inimigos adjacentes a 2m com um golpe devastador, causando 3d10 de dano bruto (custo: 7 especial).
+
+🐉Cauda Letal
+Nível 1:Chicote Natural – Ganha +1 em testes de brutalidade. Ataques com cauda causam 1d12+1d6 de dano (custo: 1 especial, teste de brutalidade, corpo a corpo).
+Nível 2:Presença Intimidadora – Sempre que atingir com a cauda, reduz a precisão do alvo em -1 no próximo ataque.
+Nível 3:Golpe Estonteante – Um ataque bem-sucedido com a cauda impede o movimento do alvo por 1 turno (custo: 3 especial).
+Nível 4:Barreira Instintiva – Reduz o dano de ataques recebidos em metade enquanto usar a cauda para bloquear (custo: 2 especial por bloqueio, ação livre).
+Nível 5:Círculo de Espinhos – Realiza um ataque com a cauda contra todos os inimigos em um raio de 3 metros, causando +1d8 de dano (custo: 4 especial).
+Nível 6:Reflexos Predatórios – Sempre que evitar um ataque com sucesso, realiza um contra-ataque imediato com a cauda (custo: 3 especial).
+Nível 7:Flagelo Impiedoso – Uma vez por combate, atinge todos os inimigos adjacentes com a cauda, causando 2d8 de dano e empurrando-os 3 metros (custo: 5 especial).
+Nível 8:Cauda Sombria – Ganha +2 em furtividade e +1d10 de dano em ataques furtivos realizados com a cauda.
+Nível 9:Destruição Implacável – Realiza um ataque devastador com a cauda que atinge todos os inimigos em um cone de 6 metros, causando 3d10 de dano e os derrubando (custo: 7 especial).
+
+🦊Ágil e Predatório
+Nível 1:Movimentos Ágeis – Ganha +2 em testes de furtividade e acrobacia.
+Nível 2:Instinto Selvagem – Adquire a passiva Consumir, ativável sem custo 1 vez por combate.
+Nível 3:Golpe Preciso – Ao realiza um ataque furtivo contra inimigos desatentos, causando +1d6 de dano adicional (custo: 1 especial).
+Nível 4:Velocidade Predatória – Pode realizar uma ação de movimento adicional em combate ao custo de 2 especial.
+Nível 5:Fúria Controlada – Adquire a passiva Raiva.
+Nível 6:Predador das Sombras – Ganha +3 em testes de furtividade. Ao realiza ataques furtivos ignora resistências (custo 3 especial).
+Nível 7:Vantagem Natural – Sempre que passar em um teste de acrobacia ou furtividade, pode realizar uma ação livre de ataque (uma vez por turno).
+Nível 8:Caçador das Profundezas – Ganha +3 em testes de enganação e intimidação contra inimigos que estejam sozinhos.
+Nível 9:Golpe Impecável – Uma vez por combate, realiza um ataque crítico automático ao primeiro acerto contra um inimigo isolado, causando 3d12 de dano adicional (custo: 5 especial).`,
       "movimento_pass": 4.5
     },
     "Duelista": { 

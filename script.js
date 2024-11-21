@@ -1803,9 +1803,9 @@ function updatePastImage() {
   }
   else if (past === "Samurai") { pastImage.src = "imagens/pass/Samurai.png"; 
   }
-  else if (past === "Sacerdote") { pastImage.src = "imagens/pass/Sacerdote.gif"; 
+  else if (past === "Sacerdote") { pastImage.src = "imagens/pass/Sacerdote.png"; 
   }
-  else if (past === "Soberano") { pastImage.src = "imagens/pass/Soberano.png"; 
+  else if (past === "Soberano") { pastImage.src = "imagens/pass/Soberano.gif"; 
   }
   else if (past === "Taverneiro") { pastImage.src = "imagens/pass/Taverneiro.png"; 
   }

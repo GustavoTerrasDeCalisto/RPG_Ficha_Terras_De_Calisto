@@ -1648,27 +1648,27 @@ function updateRaceImage() {
   if (race === "sua raça") {
     raceImage.src = "imagens/raças/sua raça.png";
   }else if (race === "Elfo") {
-    raceImage.src = "imagens/raças/elfo.png";
+    raceImage.src = "imagens/raças/elfo.gif";
   } else if (race === "Humano") {
-    raceImage.src = "imagens/raças/humano.png";
+    raceImage.src = "imagens/raças/humano.gif";
   } else if (race === "Krahzhik") {
-    raceImage.src = "imagens/raças/Krahzhik.png";
+    raceImage.src = "imagens/raças/Krahzhik.gif";
   } else if (race === "Anão") {
-    raceImage.src = "imagens/raças/Anão.png";
+    raceImage.src = "imagens/raças/Anão.gif";
   } else if (race === "Gigante") {
-    raceImage.src = "imagens/raças/Gigante.png";
+    raceImage.src = "imagens/raças/Gigante.gif";
   } else if (race === "Skywalker") {
-    raceImage.src = "imagens/raças/Skywalkers.png";
+    raceImage.src = "imagens/raças/Skywalkers.gif";
   } else if (race === "Elfo da profundeza") {
-    raceImage.src = "imagens/raças/Elfo da profundeza.png";
+    raceImage.src = "imagens/raças/Elfo da profundeza.gif";
   } else if (race === "Tritão") {
     raceImage.src = "imagens/raças/Tritão.png";
   } else if (race === "Shrivvel – Pele Palida") {
-    raceImage.src = "imagens/raças/Shrivvel – Pele Palida.png";
+    raceImage.src = "imagens/raças/Shrivvel – Pele Palida.gif";
   } else if (race === "Gronklech – Durock") {
-    raceImage.src = "imagens/raças/Gronklech – Durock.png";
+    raceImage.src = "imagens/raças/Gronklech – Durock.gif";
   } else if (race === "Umbrowalker – Shlurp") {
-    raceImage.src = "imagens/raças/Umbrowalker – Shlurp.png";
+    raceImage.src = "imagens/raças/Umbrowalker – Shlurp.gif";
   } else if (race === "Gornis - Temp") {
     raceImage.src = "imagens/raças/Gornis - Temp.png";
   } else {

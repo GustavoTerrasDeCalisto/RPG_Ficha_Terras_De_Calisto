@@ -1310,3 +1310,7 @@ button:hover {
 
 
 
+#image-compare {
+  max-width: 100%;
+  margin: 20px auto;
+}

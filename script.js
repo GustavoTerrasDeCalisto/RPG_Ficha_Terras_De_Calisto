@@ -1666,7 +1666,7 @@ function updateRaceImage() {
   } else if (race === "Shrivvel – Pele Palida") {
     raceImage.src = "imagens/raças/Shrivvel – Pele Palida.gif";
   } else if (race === "Gronklech – Durock") {
-    raceImage.src = "imagens/raças/Gronklech – Durock.gif";
+    raceImage.src = "imagens/raças/Durock.gif";
   } else if (race === "Umbrowalker – Shlurp") {
     raceImage.src = "imagens/raças/Umbrowalker – Shlurp.gif";
   } else if (race === "Gornis - Temp") {

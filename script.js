@@ -2173,3 +2173,30 @@ function toggleBonusSection(bonus) {
 
 // Verifique o conteúdo dos elementos e, se necessário, adicione a classe hidden
 // Verifica se o "Bônus de Raça" é igual a "N/A" e oculta o elemento se for
+
+
+// sistema do mapa interativo
+document.addEventListener('DOMContentLoaded', function () {
+    new juxtapose.JXSlider('#image-compare', [
+        {
+            src: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/mapa-correto-2-ac-novo-com-efeito-final-1.png",
+            label: "Antes"
+        },
+        {
+            src: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/mapa-correto-2-ac-1-1-novo2-1.png",
+            label: "Depois"
+        }
+    ],
+    {
+        animate: true,
+        startingPosition: "50%",
+        mode: "horizontal"
+    });
+});
+
+
+
+// sistema do mapa interativo
+
+
+

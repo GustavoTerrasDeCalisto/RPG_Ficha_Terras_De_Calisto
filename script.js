@@ -1662,7 +1662,7 @@ function updateRaceImage() {
   } else if (race === "Elfo da profundeza") {
     raceImage.src = "imagens/raças/Elfo da profundeza.gif";
   } else if (race === "Tritão") {
-    raceImage.src = "imagens/raças/Tritão.png";
+    raceImage.src = "imagens/raças/Tritão.gif";
   } else if (race === "Shrivvel – Pele Palida") {
     raceImage.src = "imagens/raças/Shrivvel – Pele Palida.gif";
   } else if (race === "Gronklech – Durock") {

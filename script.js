@@ -1731,7 +1731,7 @@ function updatePastImage() {
   }
   else if (past === "Criatura") { pastImage.src = "imagens/pass/Criatura.png"; 
   }
-  else if (past === "Duelista") { pastImage.src = "imagens/pass/Duelista.png"; 
+  else if (past === "Duelista") { pastImage.src = "imagens/pass/Duelista.gif"; 
   }
   else if (past === "Escudeiro") { pastImage.src = "imagens/pass/Escudeiro.png"; 
   }

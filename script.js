@@ -1065,7 +1065,46 @@ Nível 9:Fim das Sombras – Realiza um ataque mortal contra um alvo isolado, ca
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 1,
       "resistencia": "Fogo",
-      "bonusPass": "Tem Vantagem com Passivas.",
+      "bonusPass": `
+Nível 0: Tem Vantagem com Passivas.
+
+🧠Especialista em passivas
+“Para escolher quais as passivas, deve sempre falar com o mestre“
+
+Nível 1:Passiva Inicial – Ganha uma passiva aleatória relacionada ao seu estilo de combate. Além disso, aumenta em +1 todos os testes de resistência.
+Nível 2:Passiva Desbloqueada 1 – Desbloqueia uma passiva adicional. A cada dois turnos, ganha +1 de armadura temporária.
+Nível 3:Passiva Desbloqueada 2 – Desbloqueia mais uma passiva. Além disso, ganha uma ação extra de movimento por combate.
+Nível 4:Passiva Desbloqueada 3 e 4 – Ganha duas passivas adicionais. Além disso, ganha +2 em testes de resistência dano mental.
+Nível 5:Passiva Desbloqueada 5 – Ganha uma nova passiva, focada em resistência ou evasão. Além disso, aumenta em +1 turno a duração de todas as passivas que afetam a armadura.
+Nível 6:Passiva Desbloqueada 6 e 7 – Desbloqueia mais duas passivas, incluindo uma passiva de cura ou regeneração. Além disso, pode usar uma ação extra de ataque uma vez por combate.
+Nível 7:Passiva Desbloqueada 8 e 9 – Ganha duas passivas adicionais. Todas as passivas que aumentam armadura temporária têm seu efeito aumentado em 1d4.
+Nível 8:Passiva Desbloqueada 10 e 11 – Desbloqueia duas passivas, com foco em aumento de poder ofensivo e armadura. Ganho de +1d6 de dano em todas as ações de dano.
+Nível 9:Passiva Desbloqueada 12 – Desbloqueia a última passiva. Além disso, ganha uma ação bônus única por combate que pode ser utilizada para ativar qualquer passiva sem custo adicional.
+
+🌪️Especialista do Caos
+Ordem do caos: “é os estudiosos do elemento da natureza.”
+O elemento Caos: ” é a própria representação pura da ordem e do caos, contendo varias magias de tipos diferentes.“
+
+Nível 1: +2 em Testes de Preservação – Aumenta a resistência ao caos.
+Nível 2: +1d8 de dano em magias de Caos de nível 1 e 2 – libera uma magia de caos de nível 1 a 2.
+Nível 3: Ganha uma magia de Ordem do Caos de nível 1 a 3 ou Escolha uma magia de nível 1 ou 3 do elemento Caos para aprender.
+Nível 4: Magias de Ordem do Caos de nível 1, 2 e 3 de sem consumir sanidade, uma vez por dia.
+Nível 5: +1 em Testes de Preservação ao usar magias de Caos – ganha +1 em armadura temporária contra dano Mental e Psicológico ao conjurar magias de Caos.
+Nível 6: Ganha uma magia de Ordem do Caos de nível 3 a 4 – Escolha uma magia de nível 3 ou 4 do elemento Caos para aprender.
+Nível 7: Magia Avançada de Caos – Ganha uma magia de nível 5 ou 6 do elemento Caos para aprender e conjurar uma vez por dia sem custo de sanidade.
+Nível 8: Custo Mínimo – Reduz o custo de uma magia de Caos por dia para 1 ponto de sanidade.
+Nível 9: Mestre Elemental do Caos – Ganha uma magia de nível 6 de Caos e pode conjurá-la uma vez por dia sem custo de sanidade.
+
+⚙️Mestre dos equipamentos
+Nível 1:Talento de Armas – Espadas – Desbloqueia o uso de espadas e adagas. Ganha +2 de dano com ataques corpo a corpo usando essas armas.
+Nível 2:Talento de Armas – Machados e Martelos – Desbloqueia o uso de machados e martelos. Ganha +1 de dano extra em ataques com essas armas.
+Nível 3:Talento de Armas – Lanças e Armas com Haste – Desbloqueia o uso de lanças e alabardas. Ganha +1 de alcance e +1 de dano com essas armas.
+Nível 4:Talento de Armas – Arcos e Bestas – Desbloqueia o uso de arcos e bestas. Pode realizar ataques à distância com +1d4 de dano adicional.
+Nível 5:Talento de Armas – Katanas – Desbloqueia o uso de katanas e nagamakis. Recebe +2 de dano com essas armas e pode realizar um ataque adicional por turno.
+Nível 6:Talento de Armas – Fundas e Estilingues – Desbloqueia o uso de fundas e estilingues. Ganha a capacidade de atingir alvos distantes com +1d6 de dano extra.
+Nível 7:Talento de Armas – Armas Exóticas e Diversas – Desbloqueia o uso de nunchakus e shurikens. Ganha +2 de dano e bônus em acrobacia ao usar essas armas.
+Nível 8:Talento de Armas – Armas de Cerco – Desbloqueia o uso de catapultas e balistas. Ganha bônus de dano em ataques de área com armas de cerco (custo: 4 especial).
+Nível 9:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha bônus de +1 em armadura. Pode usar um escudo como ataque corpo a corpo (custo: 2 especial).`,
       "movimento_pass": 4.5
     },
     "Espectro": { 

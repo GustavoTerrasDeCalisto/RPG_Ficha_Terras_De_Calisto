@@ -1015,7 +1015,41 @@ Nível 9:Golpe Impecável – Uma vez por combate, realiza um ataque crítico au
       "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Perfurante",
-      "bonusPass": "+1d10 de dano contra alvos isolados (sem ninguém próximo de 10m) e tem +4 em testes de Furtividade.",
+      "bonusPass": `
+Nível 0: +1d10 de dano contra alvos isolados (sem ninguém próximo de 10m) e tem +4 em testes de Furtividade.
+
+🗡️Espadachim Solitário
+Nível 1:Foco do Duelista – Ganha +2 de dano e +1 em testes de ataque contra inimigos isolados (sem aliados ou inimigos a 10 metros).
+Nível 2:Estocada Perfeita – Uma vez por turno, pode causar +1d6 de dano adicional ao atingir um alvo isolado com uma rapiera.
+Nível 3:Resistência da Solidão – Enquanto não houver aliados ou inimigos próximos, ganha +2 em testes de defesa contra ataques direcionados a você.
+Nível 4:Rapidez Refinada – Pode realizar uma ação de ataque adicional contra um inimigo isolado (uma vez por combate).
+Nível 5:Precisão Mortal – Críticos com rapieras contra alvos isolados causam +2d8 de dano adicional.
+Nível 6:Arte do Duelista – Ganha +3 em todos os testes de acrobacia enquanto enfrenta inimigos isolados.
+Nível 7:Supremacia Solitária – Enquanto estiver enfrentando um único inimigo, pode ignorar 5 da armadura do alvo.
+Nível 8:Dança das Lâminas – Pode realizar dois ataques adicionais contra um inimigo isolado ao custo de 4 especial (uma vez por combate).
+Nível 9:Corte Final – Uma vez por combate, realiza um ataque mortal contra um inimigo isolado, causando +4d10 de dano adicional e ignorando totalmente a armadura (custo: 5 especial).
+
+⚔️Convite ao Duelo
+Nível 1:Marca do Duelo – Escolha um alvo para duelar (custo: 1 especial). Contra esse alvo, ganha +2 de teste de ataque e +3 de dano de Escuridão.
+Nível 2:Bravura Crescente – Cada vez que derrotar um inimigo em duelo, ganha +1 permanente em testes de ataque até ser derrotado.
+Nível 3:Defesa do Desafiante – Durante um duelo, pode gastar 2 especial para reduzir em metade o dano de um ataque recebido.
+Nível 4:Golpe Honrado – Contra o alvo do duelo, pode causar +1d8 de dano adicional em ataques críticos.
+Nível 5:Vontade Invencível – Enquanto estiver invicto, ganha +2 em todos os testes de resistência.
+Nível 6:Provocação Mortal – Pode chamar um segundo alvo para duelo simultaneamente (custo: 3 especial).
+Nível 7:Maestria do Desafio – Contra inimigos marcados pelo duelo, ignora 6 da armadura e Libera Vingança.
+Nível 8:Corte Vitorioso – Cada vez que derrotar um inimigo em duelo, recupera 3 especial e ganha uma ação de movimento adicional.
+Nível 9:Campeão Invicto – Enquanto estiver invicto, ganha +4 em ataques e testes de resistência. Uma vez por combate, pode realizar um ataque mortal que causa +6d10 de dano.
+
+🕶️Assassino Furtivo
+Nível 1:Silêncio Mortal – Ganha +2 em testes de furtividade e +1d4 de dano adicional em ataques furtivos contra alvos isolados.
+Nível 2:Predador Sutil – Sempre que eliminar um alvo isolado furtivamente, recupera 2 especial.
+Nível 3:Movimentos Sombrios – Ganha +2 em acrobacia e pode realizar uma ação de movimento adicional ao se mover furtivamente.
+Nível 4:Lâmina Oculta – Ataques furtivos com adagas contra alvos isolados causam +1d6 de dano adicional.
+Nível 5:Instinto de Sobrevivência – Quando está sozinho, recebe +2 em testes de agilidade.
+Nível 6:Golpe Preciso – Ignora metade da armadura de inimigos atacados furtivamente.
+Nível 7:Mestre da Sombra – Pode atacar furtivamente um inimigo isolado e se mover sem perder o efeito de furtividade (custo: 2 especial).
+Nível 8:Execução Silenciosa – Uma vez por combate, pode realizar um ataque crítico automático em um alvo isolado (custo: 4 especial).
+Nível 9:Fim das Sombras – Realiza um ataque mortal contra um alvo isolado, causando +6d8 de dano adicional. Após eliminar o inimigo, pode se mover sem ser detectado por 1 turno (custo: 5 especial).`,
       "movimento_pass": 4
     },
     "Escudeiro": { 

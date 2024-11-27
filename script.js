@@ -1760,7 +1760,7 @@ function updatePastImage() {
   const pastImage = document.getElementById('past-image');
 
   if (past === "Aldeão") {
-    pastImage.src = "imagens/pass/aldeao.png";
+    pastImage.src = "imagens/pass/aldeao.gif";
   } else if (past === "Arauto") {
     pastImage.src = "imagens/pass/arauto.png";
   } else if (past === "Assassino") {

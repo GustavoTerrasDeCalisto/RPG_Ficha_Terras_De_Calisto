@@ -581,10 +581,17 @@ button:hover {
 
 #race-image,
 #past-image {
-  width: 200px; /* Adjust image width as needed */
-  height: 300px; /* Adjust image height as needed */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  width: 200px; /* Tamanho inicial da imagem */
+  height: 300px; /* Tamanho inicial da imagem */
+  object-fit: cover; /* Mantém a proporção da imagem */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
+
+#race-image:hover,
+#past-image:hover {
+  transform: scale(1.3); /* Aumenta a imagem para 200% */
+}
+
 
 #character-stats > div:nth-child(4),
 #character-stats > div:nth-child(5) {

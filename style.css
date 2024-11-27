@@ -581,16 +581,19 @@ button:hover {
 
 #race-image,
 #past-image {
-  background-color: #fcfcfc; /* Define o fundo específico */
+  background-color: #fcfcfc;
   width: 200px;
   height: 300px;
   object-fit: cover;
-  transition: transform 0.3s ease; /* Transição suave para o hover */
+  transition: transform 0.3s ease, z-index 0s; /* Suaviza o crescimento e evita atraso no z-index */
+  position: relative; /* Posição padrão antes do hover */
 }
 
 #race-image:hover,
 #past-image:hover {
-  transform: scale(2); /* Aumenta para 200% no hover */
+  transform: scale(2); /* Aumenta a imagem para 200% */
+  position: absolute; /* Torna a imagem sobreposta */
+  z-index: 9999; /* Garante que fique acima de outros elementos */
 }
 
 

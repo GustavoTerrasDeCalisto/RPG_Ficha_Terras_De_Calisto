@@ -1057,7 +1057,45 @@ Nível 9:Fim das Sombras – Realiza um ataque mortal contra um alvo isolado, ca
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Esmagante",
-      "bonusPass": "+4 dano com escudo, passiva Emanar energia sem Negativo e sem custo uma vez por dia.",
+      "bonusPass": `
+Nível 0: +4 dano com escudo, passiva Emanar energia sem Negativo e sem custo uma vez por dia.
+
+🛡️ Bastião Imóvel
+Nível 1: Muralha de Ferro – Recebe +2 de armadura enquanto estiver segurando um escudo.
+Passiva Exclusiva: libera Sonambulismo e Pode manter a postura de bloqueio mesmo enquanto dorme, reduzindo qualquer dano recebido pela metade.
+Nível 2: Postura Inabalável – Ganha resistência a ataques de esmagante e cortante enquanto estiver em posição de defesa.
+Nível 3: Libera a magia Aura de Proteção, pode usar sem custo uma vez ao dia.
+Nível 4: Barreira Crescente – Acumula +1 em armadura para cada turno consecutivo em posição de bloqueio (máximo +3).
+Nível 5: Escudo Resiliente – Pode anular completamente o dano de um ataque uma vez por combate.
+Nível 6: Defesa Elemental – Ganha resistência contra quaisquer danos de um dos elementos a sua escolha (Fé, Desconhecido, Poder e Caos) custo 6 deespecial.
+Nível 7: Fortaleza Imóvel – Ao custo de 8 de especial, reduz o dano de todos os ataques direcionados a você no próximo turno pela metade.
+Nível 8: Bônus de Persistência – Enquanto permanecer bloqueando com o escudo por mais de 2 turnos consecutivos, recebe +2 em testes contra ataque.
+Nível 9: Sentinela Inquebrável – Ganha imunidade a um ataque por combate e reflete metade do dano recebido ao atacante.
+
+👐 Guardião dos Fracos
+Nível 1: Proteção Aliada – Pode redirecionar até 1d8 de dano de um aliado para si enquanto estiver segurando o escudo.
+Passiva Exclusiva: Libera Inveja e ao ver aliados receberem dano, ganha +2 de especial por turno.
+Nível 2: Escudo Coletivo – Ganha +1 de armadura para cada aliado próximo (máximo +4).
+Nível 3: Libera Aura de Retaliação – pode conjurar essa magia por um custo de 8 de especial uma vez a cada 2 dias (caso conjure fora com sanidade o custo é o da magia).
+Nível 4: Presença Inspiradora – Aliados em um raio de 5 metros recebem +2 em testes de esquiva enquanto você estiver vivo.
+Nível 5: Barreira Protetora – Ao custo de 5 de especial, cria uma barreira mágica que protege aliados por 1 turno, anulando até 2d8 de dano.
+Nível 6: Guarda Impecável – Pode bloquear ataques direcionados a aliados no próximo turno sem penalidade um vez por combate.
+Nível 7: Escudo Vingador – Ao custo de 10 de especial, bloqueia o próximo ataque direcionado a um aliado e devolve 2d12 de dano ao atacante.
+Nível 8: Vínculo de Proteção – Aliados recebem metade da sua armadura como bônus por 1 turno ao custo de 8 de especial.(pode ser usado como ação livre na reação de um aliado).
+Nível 9: Defensor Supremo – Ganha a habilidade de proteger todos os aliados dentro de um raio de 10 metros de ataques por um turno inteiro (uma vez por combate).
+
+⚔️ Combatente do Escudo
+Nível 1: Golpe com Escudo – Ataques com o escudo causam +1d6 de dano esmagante.
+Passiva Exclusiva: Libera Escudo Elemental e danos com escudo ganha um bônus elemental aleatório de 1d6.
+Nível 2: Impacto Devastador – Ganha +2 de dano ao realizar ataques corpo a corpo com o escudo.
+Nível 3: Marcas das Cinzas – Conjura uma marca mágica em um inimigo que o enfraquece, reduzindo sua armadura em 2 por 2 turnos. Custo: 8 de especial.
+Nível 4: Força do Escudo – Recebe +2 em testes de brutalidade ao usar o escudo como arma principal.
+Nível 5: Carga do Colosso – Ao custo de 6 de especial, pode investir contra um inimigo com o escudo, empurrando-o 3 metros e causando 2d8 de dano esmagante.
+Nível 6: Defesa Ofensiva – Recebe +1 de armadura enquanto ataca com o escudo.
+Nível 7: Impacto Elemental – Ao custo de 10 de especial, ativa o poder elemental do escudo para causar 3d12 de dano adicional em um ataque.
+Nível 8: Pressão Incessante – Ganha um ataque adicional por turno ao utilizar o escudo como arma principal.
+Nível 9: Campeão do Escudo – Com a habilidade “Investida Final”, ao custo de 15 de especial, realiza uma série de ataques com o escudo, causando 4d10 de dano total e atordoando (condição confuso) o alvo por 1 turno..`,
+
       "movimento_pass": 3.5
     },
     "Especialista": { 

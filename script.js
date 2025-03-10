@@ -1150,7 +1150,51 @@ Nível 9:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha b
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": "+1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal).",
+      "bonusPass": `Nivel 0: +1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal).
+
+      👻Assombração Relâmpago
+Especializado em teletransportes e reações rápidas.
+
+Passiva Exclusiva: Teleporte Repentino – desbloqueada. Uma vez por combate sem custo.
+
+Nível 1: Desaparecimento Sombrio – Após se teletransportar, ganha +2 em testes de esquiva até o próximo turno.
+Nível 2: Surto Espectral – Se movimentar mais de 6 metros em um turno concede +1d6 de dano laser no próximo ataque.
+Nível 3: Escapar da Realidade – Ao custo de 4 de especial, pode se teletransportar no meio de um ataque recebido, evitando completamente o dano.
+Nível 4: Passo da Fenda – O primeiro teleporte de cada combate não consome ações.
+Nível 5: Reflexos Sombrios – Sempre que esquivar de um ataque, pode se teleportar até 2 metros.
+Nível 6: Evasão Instantânea – Ao custo de 6 de especial, pode se teleportar para evitar ataques em área.
+Nível 7: Golpe Relâmpago – Pode realizar um ataque adicional ao final de um teleporte uma vez por turno.
+Nível 8: Sombra Imparável – Ao custo de 8 de especial, pode se teleportar para qualquer lugar que tenha visto nos últimos 2 turnos.
+Nível 9: Devorador do Espaço – Sempre que realizar um teleporte, o próximo ataque recebe +2d12 de dano laser.
+
+🌌Espírito Desvinculado
+Focado na passiva “Separar a Alma”, com regeneração e resistência aumentadas.
+
+Passiva Exclusiva: Separar a Alma – desbloqueada. Ao ativar essa habilidade, pode lutar com o corpo e a alma separadamente, recebendo imunidade a estados negativos por 1 turno. – Uma vez por combate sem custo.
+
+Nível 1: Presença Etérea – Enquanto “Separar a Alma” estiver ativa, recebe +2 em testes de Libertação.
+Nível 2: Essência Restauradora – Regenera 1d6 de sanidade no final do turno se estiver em forma espiritual.
+Nível 3: Toque do Além – Enquanto “Separar a Alma” estiver ativa, causa +1d8 de dano de plasma em ataques corpo a corpo.
+Nível 4: Véu do Espectro – Ao custo de 6 de especial, pode ficar intangível por 1 turno.
+Nível 5: Chamado do Vazio – Se atingir um inimigo enquanto estiver na forma espiritual, recupera 2 de especial.
+Nível 6: Dualidade Sombria – Pode trocar entre forma física e espiritual sem gastar ação uma vez por turno.
+Nível 7: Distorção da Alma – Ao custo de 8 de especial, pode entrar e sair da forma espiritual imediatamente após um ataque.
+Nível 8: Ressurgência Fantasma – Se atingir um inimigo enquanto estiver na forma espiritual, pode recuperar 6 de sanidade adicional.
+Nível 9: Manifestação Completa – Quando retornar ao corpo, causa uma explosão de energia espectral de 3d12 de dano de plasma em um raio de 5 metros.
+
+🔮Feixe Espectral
+Especializado em magias de Plasma, liberando magias poderosas ao longo dos níveis.
+Passiva Exclusiva: Sinergia de Plasma – Todas as magias de Plasma que conjurar podem causar +1d6 de dano adicional ao custo de 2 de especial.
+Nível 1: Carga Instável – Ganha uma magia de nível 1 do tipo Plasma.
+Nível 2: Emissão Energética – Se lançar uma magia de Plasma, pode rolar +1d4 de dano extra.
+Nível 3: Rajada Crescente – Ganha uma magia de nível 2 do tipo Plasma.
+Nível 4: Sobrecarga Conectada – Se acertar um inimigo com uma magia de Plasma, recebe +1 de especial.
+Nível 5: Explosão Radiante – Ganha uma magia de nível 3 do tipo Plasma.
+Nível 6: Liberação Instável – Pode gastar 5 de especial para adicionar 1d10 de dano extra em magias de Plasma.
+Nível 7: Descarga Destrutiva – Ganha uma magia de nível 4 do tipo Plasma.
+Nível 8: Pulso Volátil – Ao conjurar uma magia de Plasma, pode realizar um ataque adicional com -2 de dano e ganha uma magia de nível 5 do tipo Plasma.
+Nível 9: Estouro Final – Ganha uma magia de nível 6 do tipo Plasma e pode conjurá-la uma magia de plasma uma vez por combate sem custo de sanidade.
+        `,
       "movimento_pass": 4.5
     },
     "Espiritualista": { 

@@ -1150,7 +1150,9 @@ Nível 9:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha b
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": `Nivel 0: +1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal).
+      "bonusPass": `
+      
+Nivel 0: +1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal).
 
       👻Assombração Relâmpago
 Especializado em teletransportes e reações rápidas.

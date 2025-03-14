@@ -1878,7 +1878,7 @@ function updatePastImage() {
   }
   else if (past === "Carpinteiro") { pastImage.src = "imagens/pass/Carpinteiro.png"; 
   }
-  else if (past === "Catador") { pastImage.src = "imagens/pass/Catador.png"; 
+  else if (past === "Catador") { pastImage.src = "imagens/pass/Catador.gif"; 
   }
   else if (past === "Colosso") { pastImage.src = "imagens/pass/Colosso.png"; 
   }

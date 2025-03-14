@@ -1954,7 +1954,7 @@ function updatePastImage() {
   }
   else if (past === "Protetor") { pastImage.src = "imagens/pass/Protetor.png"; 
   }
-  else if (past === "Pugilista") { pastImage.src = "imagens/pass/pugilista.gif"; 
+  else if (past === "Pugilista") { pastImage.src = "imagens/pass/Pugilista.gif"; 
   }
   else if (past === "Revivido") { pastImage.src = "imagens/pass/Revivido.png"; 
   }

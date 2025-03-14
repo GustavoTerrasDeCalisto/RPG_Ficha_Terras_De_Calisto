@@ -1874,7 +1874,7 @@ function updatePastImage() {
   }
   else if (past === "Bardo") { pastImage.src = "imagens/pass/Bardo.png"; 
   }
-  else if (past === "Bruxo") { pastImage.src = "imagens/pass/Bruxo.png"; 
+  else if (past === "Bruxo") { pastImage.src = "imagens/pass/Bruxo.gif"; 
   }
   else if (past === "Carpinteiro") { pastImage.src = "imagens/pass/Carpinteiro.png"; 
   }

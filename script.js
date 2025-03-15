@@ -1890,7 +1890,7 @@ function updatePastImage() {
   }
   else if (past === "Duelista") { pastImage.src = "imagens/pass/Duelista.gif"; 
   }
-  else if (past === "Escudeiro") { pastImage.src = "imagens/pass/Escudeiro.png"; 
+  else if (past === "Escudeiro") { pastImage.src = "imagens/pass/Escudeiro.gif"; 
   }
   else if (past === "Especialista") { pastImage.src = "imagens/pass/Especialista.png"; 
   }

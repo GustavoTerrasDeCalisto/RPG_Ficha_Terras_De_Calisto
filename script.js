@@ -1870,7 +1870,7 @@ function updatePastImage() {
   }
   else if (past === "Barão") { pastImage.src = "imagens/pass/Barão.gif"; 
   }
-  else if (past === "Bárbaro") { pastImage.src = "imagens/pass/Bárbaro.png"; 
+  else if (past === "Bárbaro") { pastImage.src = "imagens/pass/Bárbaro.gif"; 
   }
   else if (past === "Bardo") { pastImage.src = "imagens/pass/Bardo.png"; 
   }

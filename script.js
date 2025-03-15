@@ -1886,7 +1886,7 @@ function updatePastImage() {
   }
   else if (past === "Costeiro") { pastImage.src = "imagens/pass/Costeiro.gif"; 
   }
-  else if (past === "Criatura") { pastImage.src = "imagens/pass/Criatura.png"; 
+  else if (past === "Criatura") { pastImage.src = "imagens/pass/Criatura.gif"; 
   }
   else if (past === "Duelista") { pastImage.src = "imagens/pass/Duelista.gif"; 
   }

@@ -1866,7 +1866,7 @@ function updatePastImage() {
   
   } else if (past === "Arqueiro") {
     pastImage.src = "imagens/pass/arqueiro.png";
-  } else if (past === "Atirador") { pastImage.src = "imagens/pass/Atirador.png"; 
+  } else if (past === "Atirador") { pastImage.src = "imagens/pass/Atirador.gif"; 
   }
   else if (past === "Barão") { pastImage.src = "imagens/pass/Barão.png"; 
   }

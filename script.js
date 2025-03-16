@@ -1910,7 +1910,7 @@ function updatePastImage() {
   }
   else if (past === "Hemomantico") { pastImage.src = "imagens/pass/Hemomantico.png"; 
   }
-  else if (past === "Imitador") { pastImage.src = "imagens/pass/Imitador.png"; 
+  else if (past === "Imitador") { pastImage.src = "imagens/pass/Imitador.gif"; 
   }
   else if (past === "Juíz") { pastImage.src = "imagens/pass/Juiz.png"; 
   }

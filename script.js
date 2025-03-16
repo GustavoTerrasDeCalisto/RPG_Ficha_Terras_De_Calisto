@@ -1934,7 +1934,7 @@ function updatePastImage() {
   }
   else if (past === "Monge") { pastImage.src = "imagens/pass/Monge.png"; 
   }
-  else if (past === "Naturalista") { pastImage.src = "imagens/pass/Naturalista.png"; 
+  else if (past === "Naturalista") { pastImage.src = "imagens/pass/Naturalista.gif"; 
   }
   else if (past === "Nobre") { pastImage.src = "imagens/pass/Nobre.png"; 
   }

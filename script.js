@@ -1853,7 +1853,7 @@ function updatePastImage() {
     pastImage.src = "imagens/pass/arqueiro.png";
   
   } else if (past === "Assombração") {
-    pastImage.src = "imagens/pass/assombração.png";
+    pastImage.src = "imagens/pass/assombração.gif";
   
   } else if (past === "Krahzhik") {
     pastImage.src = "imagens/pass/Krahzhik.png";

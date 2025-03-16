@@ -1872,7 +1872,7 @@ function updatePastImage() {
   }
   else if (past === "Bárbaro") { pastImage.src = "imagens/pass/Bárbaro.gif"; 
   }
-  else if (past === "Bardo") { pastImage.src = "imagens/pass/Bardo.png"; 
+  else if (past === "Bardo") { pastImage.src = "imagens/pass/Bardo.gif"; 
   }
   else if (past === "Bruxo") { pastImage.src = "imagens/pass/Bruxo.gif"; 
   }

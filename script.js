@@ -1846,7 +1846,7 @@ function updatePastImage() {
   if (past === "Aldeão") {
     pastImage.src = "imagens/pass/aldeao.gif";
   } else if (past === "Arauto") {
-    pastImage.src = "imagens/pass/arauto.png";
+    pastImage.src = "imagens/pass/Arauto.gif";
   } else if (past === "Assassino") {
     pastImage.src = "imagens/pass/assassino.gif";
   } else if (past === "Arqueiro") {

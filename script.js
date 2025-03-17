@@ -1943,7 +1943,7 @@ function updatePastImage() {
   }
   else if (past === "Bruxo") { pastImage.src = "imagens/pass/Bruxo.gif"; 
   }
-  else if (past === "Carpinteiro") { pastImage.src = "imagens/pass/Carpinteiro.png"; 
+  else if (past === "Carpinteiro") { pastImage.src = "imagens/pass/Carpinteiro.gif"; 
   }
   else if (past === "Catador") { pastImage.src = "imagens/pass/Catador.gif"; 
   }

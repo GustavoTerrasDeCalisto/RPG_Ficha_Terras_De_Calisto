@@ -1983,7 +1983,7 @@ function updatePastImage() {
   }
   else if (past === "Espiritualista") { pastImage.src = "imagens/pass/Espiritualista.gif"; 
   }
-  else if (past === "Fera") { pastImage.src = "imagens/pass/Fera.png"; 
+  else if (past === "Fera") { pastImage.src = "imagens/pass/fera.gif"; 
   }
   else if (past === "Ferreiro") { pastImage.src = "imagens/pass/Ferreiro.png"; 
   }

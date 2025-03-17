@@ -1939,18 +1939,8 @@ function updatePastImage() {
   
   } else if (past === "Assombração") {
     pastImage.src = "imagens/pass/assombração.gif";
-  
-  } else if (past === "Krahzhik") {
-    pastImage.src = "imagens/pass/Krahzhik.png";
-  
   } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/pass/arqueiro.png";
-  
-  } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/pass/arqueiro.png";
-  
-  } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/pass/arqueiro.png";
+    pastImage.src = "imagens/pass/arqueiro.gif";
   } else if (past === "Atirador") { pastImage.src = "imagens/pass/Atirador.gif"; 
   }
   else if (past === "Barão") { pastImage.src = "imagens/pass/Barão.gif"; 

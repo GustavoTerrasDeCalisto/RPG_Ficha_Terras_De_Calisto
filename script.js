@@ -1928,19 +1928,11 @@ function updatePastImage() {
   const past = document.getElementById('past').value;
   const pastImage = document.getElementById('past-image');
 
-  if (past === "Aldeão") {
-    pastImage.src = "imagens/pass/aldeao.gif";
-  } else if (past === "Arauto") {
-    pastImage.src = "imagens/pass/Arauto.gif";
-  } else if (past === "Assassino") {
-    pastImage.src = "imagens/pass/assassino.gif";
-  } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/pass/arqueiro.png";
-  
-  } else if (past === "Assombração") {
-    pastImage.src = "imagens/pass/assombração.gif";
-  } else if (past === "Arqueiro") {
-    pastImage.src = "imagens/pass/arqueiro.gif";
+  if (past === "Aldeão") { pastImage.src = "imagens/pass/aldeao.gif";
+  } else if (past === "Arauto") {pastImage.src = "imagens/pass/Arauto.gif";
+  } else if (past === "Assassino") { pastImage.src = "imagens/pass/assassino.gif";
+  } else if (past === "Assombração") { pastImage.src = "imagens/pass/assombração.gif";
+  } else if (past === "Arqueiro") { pastImage.src = "imagens/pass/arqueiro.gif";
   } else if (past === "Atirador") { pastImage.src = "imagens/pass/Atirador.gif"; 
   }
   else if (past === "Barão") { pastImage.src = "imagens/pass/Barão.gif"; 

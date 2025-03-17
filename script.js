@@ -1896,7 +1896,7 @@ function updatePastImage() {
   }
   else if (past === "Espectro") { pastImage.src = "imagens/pass/Espectro.png"; 
   }
-  else if (past === "Espiritualista") { pastImage.src = "imagens/pass/Espiritualista.png"; 
+  else if (past === "Espiritualista") { pastImage.src = "imagens/pass/Espiritualista.gif"; 
   }
   else if (past === "Fera") { pastImage.src = "imagens/pass/Fera.png"; 
   }

@@ -1204,7 +1204,49 @@ Nível 9: Estouro Final – Ganha uma magia de nível 6 do tipo Plasma e pode co
       "sanidadePorNivel": 5,
       "armaduraPorNivel": 1,
       "resistencia": "Aura",
-      "bonusPass": "Magia Possessão de Luz Sem custo uma vez por dia.",
+      "bonusPass": `
+      
+Nivel 0: Magia Possessão de Luz Sem custo uma vez por dia.
+
+💀Discípulo do Abismo
+Focado em Libertação, dano extra com Escuridão, aprendizado progressivo de magias, e um estilo de jogo que premia a paciência, concedendo Armadura Extra ao ficar sem atacar.
+
+Nível 1: Pele Sombria – Sempre que passar um turno sem atacar, ganha +2 de Armadura até o próximo turno. Esse efeito pode acumular até +6.
+Nível 2: Marcas do Vazio – Se estiver com pelo menos +4 de Armadura Extra devido a Pele Sombria, seu próximo ataque causa +2d6 de dano de Escuridão.
+Nível 3: Conhecimento Proibido – Ganha 1 magia de nível 1 a 3 do tipo Escuridão ou Aura (pode escolher apenas uma por vez).
+Nível 4: Guardião do Abismo – Se passar dois turnos sem atacar, pode gastar uma Ação Completa para receber +5 de Armadura Extra por três turnos.
+Nível 5:.Despertar das Sombras – Pode consumir toda sua Armadura Extra para causar +2d10 de dano de Escuridão no próximo ataque.
+Nível 6: Caminho da Aniquilação – Escolha 1 magia de nível 3 a 5 do tipo Escuridão ou Aura (pode escolher apenas uma por vez).
+Nível 7: Fardo Sombrio – Se estiver com pelo menos +6 de Armadura Extra, seu primeiro ataque que acertar um alvo ignora 10 de Armadura do alvo e é CRÍTICO
+Nível 8: Existência Abissal – Ganha Resistência a Escuridão e pode ignorar os primeiros 20 de dano do tipo Distorção.
+Nível 9: Avatar do Vazio – Se começar um turno com +6 ou mais de Armadura Extra, pode gastar uma Ação Completa para ativar um estado onde seus ataques ignoram toda a Armadura do alvo por 2 turnos e ganha +1d12 de dano de Aura.
+
+👊Punho Etéreo
+Focado em Plasma, ataques rápidos, coleta de almas, aprendizado progressivo de magias e ganho de Vida Temporária ao derrotar ou ferir inimigos.
+
+Nível 1: Absorção Espiritual – Sempre que acertar um ataque corpo a corpo, ganha 1d6 de Vida Temporária. Se derrotar um inimigo, ganha 10 de Vida Temporária.
+Nível 2: Impacto Etéreo – Se estiver com pelo menos 8 de Vida Temporária, seu próximo ataque causa +1d10 de dano de Plasma.
+Nível 3: Mestre do Fluxo – Ganha 1 magia de nível 1 a 3 do tipo Plasma ou Alma (pode escolher apenas uma por vez).
+Nível 4: Espírito Indomável – Pode gastar 2 de Especial para dobrar o ganho de Vida Temporária por dois turnos.
+Nível 5: Alma da Tempestade – Se estiver com pelo menos 12 de Vida Temporária, seu primeiro ataque em um turno recebe +3 em Acerto.
+Nível 6: Lótus dos Espíritos – Escolha 1 magia de nível 3 a 5 do tipo Plasma ou Alma (pode escolher apenas uma por vez).
+Nível 7: Pulso Vital – Ao recuperar Vida Temporária por Absorção Espiritual, pode consumir 3 de Especial para causar +3d8 de dano de Plasma no próximo ataque.
+Nível 8: Fonte de Energia – Sempre que atacar um inimigo com menos de 50% da vida máxima, ganha 1d20 de Vida Temporária.
+Nível 9: Espírito Ascendente – Se estiver com 20 ou mais de Vida Temporária, pode gastar uma Ação Completa para liberar uma explosão de Plasma, causando 7d12 de dano de Plasma a todos os inimigos em um raio de 5 metros.
+
+👻Arauto dos Espíritos
+Focado na passiva Fluxo da Vida (Specter), aumentando seu poder conforme sobe de nível, obtendo ação completa extra e bônus de dano com custo de ações livres e especiais.
+
+Nível 1: Chamado Espectral – +2 em testes de Conexão ao ativar Fluxo da Vida (Specter).
+Nível 2: Guardião Sombrio – Enquanto Specter estiver ativo, pode gastar 3 de Especial para fazer com que ele ataque duas vezes no turno.
+Nível 3: Alma Forjada – Pode ativar Specter sem gastar.
+Nível 4: Vínculo Inquebrável – Ganha Ação Completa Extra uma vez por combate enquanto Specter estiver ativo.
+Nível 5: Protetor Etéreo – Sempre que Specter atacar, pode gastar 2 de Especial para causar +1d6 de dano de Alma adicional.
+Nível 6: Espírito Devoto – Specter agora dura +2 turnos e pode atacar duas vezes em um turno consumindo apenas 1 de Especial.
+Nível 7: Presença Maldita – Uma vez por combate, pode ativar um segundo Specter ao custo dobrado de especial e mais 1D20 de dano Psicológico (Specter) ao término da duração.
+Nível 8: Aliança Sobrenatural – Sempre que Specter atacar, o usuário recupera 1d4 de sanidade.
+Nível 9: Emissário da Eternidade – Quando Specter for ativado, pode gastar 4 de Especial para aumentar seu dano para 2d12 + 8 de Alma e conceder +5 em Conexão por 8 turnos.
+`,
       "movimento_pass": 4
     },
     "Fera": { 
@@ -1212,7 +1254,50 @@ Nível 9: Estouro Final – Ganha uma magia de nível 6 do tipo Plasma e pode co
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 3,
       "resistencia": "Eclipse",
-      "bonusPass": "+5 em Atletismo e Adestrar animais.",
+      "bonusPass": `
+      
+      Nivel 0: +5 em Atletismo e Adestrar animais.
+
+🌘Arauto do Eclipse
+Focado em dano de Eclipse, ações extras e ataques brutais.
+
+Nível 1: Sombras Cortantes – Seus ataques físicos e mágicos de Eclipse causam +1d8 de dano extra.
+Nível 2: Presságio Sombrio – Sempre que atingir um inimigo com dano de Eclipse, rola 1d6: se tirar 4 ou mais, ganha uma Ação de Movimento extra no turno seguinte.
+Nível 3: Presa Lunar – Pode gastar 3 de Especial para atacar duas vezes na mesma Ação de Ataque.
+Nível 4: Manto do Eclipse – Ganha +3 de Armadura Temporária se começar o turno sem atacar.
+Nível 5: Devastação Noturna – Se for o primeiro a atacar em um combate, causa +2d12 de dano Eclipse no primeiro golpe.
+Nível 6: Eclipse Vivo – Sempre que reduzir um inimigo a 0 de vida, recupera 1d8 de vida.
+Nível 7: Rajada Crepuscular – Pode gastar 4 de Especial para atacar todos os inimigos em um raio de 3 metros, com + 2d10 de dano Eclipse.
+Nível 8: Presságio Final – Se atingir um inimigo com menos de 30 de vida, o ataque causa dano dobrado.
+Nível 9: Cataclismo da Fera Sombria – Uma vez por combate, pode liberar uma onda de Eclipse em volta, causando 6d12 de dano Eclipse a inimigos próximos e ganhando +2 em todas as jogadas de ataque até o final da cena.
+
+🔮Artesão espiritual
+Transformação bestial à noite, ágil e furtivo de dia.
+
+Nível 1: Instinto Lunar – Durante o dia, ganha +2 em testes de Agilidade. Durante a noite, entra em Forma Bestial, ganhando +3 em testes de Brutalidade.
+Nível 2: Fúria da Lua – Se estiver na Forma Bestial, ataques corpo a corpo causam +1d6 de dano extra.
+Nível 3: Passos das Sombras – Durante o dia, pode gastar 2 de Especial para se mover sem ser detectado.
+Nível 4: Sangue da Noite – Durante a Forma Bestial, ganha Resistência a dano Físico (cortante, perfurante, esmagante).
+Nível 5: Devastação Lupina – Pode gastar 3 de Especial para atacar duas vezes seguidas quando está transformado.
+Nível 6: Presságio da Caçada – Durante a noite, pode farejar inimigos ocultos e detectar presas a até 30 metros.
+Nível 7: Golpe da Noite Eterna – Se atacar um inimigo sem que ele tenha agido no combate, o ataque causa +3d8 de dano.
+Nível 8: Forma Selvagem Aprimorada – Durante a noite, recebe +4 de Armadura e +4 de Movimento enquanto transformado.
+Nível 9: Fera Primordial – Durante a Forma Bestial, ataques corpo a corpo causam +2d12 de dano e ignoram 6 de armadura.
+
+🐺Tirano Carniceiro
+Passiva/Habilidade de Consumir aprimorada, regeneração e resistência.
+
+Nível 1: Fome Voraz – Sempre que usar Consumir, o dano causado é aumentado em +1d6.
+Nível 2: Devorador de Dor – Sempre que consumir Sanidade, o alvo fica com -1 em testes de Conexão até o final do combate.
+Nível 3: Voracidade Crescente – Sempre que reduzir um inimigo a 0 de vida, recupera 1d12 de Vida.
+Nível 4: Sangue Predador – Se estiver com menos da metade da vida máxima, ganha +2 em Brutalidade e Resistência a Sangue.
+Nível 5: Mastigar a Alma – Se usar Consumir contra um inimigo com menos de 22 de vida, o ataque automaticamente causa dano máximo.
+Nível 6: Predador Incansável – Se causar dano com Consumir, pode gastar 3 de Especial para realizar um ataque extra.
+Nível 7: Regeneração Maldita – Sempre que consumir Vida de um inimigo, recupera +1d6 de Vida Temporária.
+Nível 8: Devorador Supremo – Se derrotar um inimigo com Consumir, recebe um bônus de +2 em todas as rolagens de ataque até o fim do combate.
+Nível 9: Glutão da Carnificina – Uma vez por combate, pode gastar 6 de Especial para atacar todos os inimigos próximos, causando 4d12 de dano Sangue e absorvendo metade do dano como Vida Temporária.
+      
+      `,
       "movimento_pass": 4.5
     },
     "Ferreiro": { 

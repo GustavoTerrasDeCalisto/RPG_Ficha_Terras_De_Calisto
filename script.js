@@ -1975,7 +1975,7 @@ function updatePastImage() {
   }
   else if (past === "Guerreiro") { pastImage.src = "imagens/pass/Guerreiro.png"; 
   }
-  else if (past === "Hemomantico") { pastImage.src = "imagens/pass/Hemomantico.png"; 
+  else if (past === "Hemomantico") { pastImage.src = "imagens/pass/Hemomantico.gif"; 
   }
   else if (past === "Imitador") { pastImage.src = "imagens/pass/Imitador.gif"; 
   }

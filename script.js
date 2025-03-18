@@ -1313,7 +1313,7 @@ Nível 9: Glutão da Carnificina – Uma vez por combate, pode gastar 6 de Espec
       "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": "+1d10 com dano de Maldição e +1d10 com espadas curtas.",
+      "bonusPass": "+1d10 com dano de Laser e +1d10 com espadas curtas.",
       "movimento_pass": 4
     },
     "Glacinata": { 

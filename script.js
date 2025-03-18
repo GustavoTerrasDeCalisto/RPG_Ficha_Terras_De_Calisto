@@ -1999,7 +1999,7 @@ function updatePastImage() {
   }
   else if (past === "Mendigo") { pastImage.src = "imagens/pass/Mendigo.png"; 
   }
-  else if (past === "Monge") { pastImage.src = "imagens/pass/Monge.png"; 
+  else if (past === "Monge") { pastImage.src = "imagens/pass/monge.gif"; 
   }
   else if (past === "Naturalista") { pastImage.src = "imagens/pass/Naturalista.gif"; 
   }

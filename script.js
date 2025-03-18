@@ -1969,7 +1969,7 @@ function updatePastImage() {
   }
   else if (past === "Ferreiro") { pastImage.src = "imagens/pass/Ferreiro.png"; 
   }
-  else if (past === "Forasteiro") { pastImage.src = "imagens/pass/Forasteiro.png"; 
+  else if (past === "Forasteiro") { pastImage.src = "imagens/pass/Forasteiro.gif"; 
   }
   else if (past === "Glacinata") { pastImage.src = "imagens/pass/Glacinata.png"; 
   }

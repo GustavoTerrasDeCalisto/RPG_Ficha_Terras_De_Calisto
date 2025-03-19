@@ -1947,7 +1947,7 @@ function updatePastImage() {
   }
   else if (past === "Catador") { pastImage.src = "imagens/pass/Catador.gif"; 
   }
-  else if (past === "Colosso") { pastImage.src = "imagens/pass/Colosso.png"; 
+  else if (past === "Colosso") { pastImage.src = "imagens/pass/Colosso.gif"; 
   }
   else if (past === "Conjurador") { pastImage.src = "imagens/pass/Conjurador.png"; 
   }

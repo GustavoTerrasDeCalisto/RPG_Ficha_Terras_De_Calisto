@@ -75,6 +75,8 @@ const raceData = {
   "Anão": { // Elfo adicionado como exemplo
     "vidaBase": 57,
     "sanidadeBase": 15,
+    "vida": 57,
+    "sanidade": 15,
     "especialBase": 0,
     "armaduraBase": 2,
     "movimentoBase": 4,
@@ -97,6 +99,8 @@ const raceData = {
   "Gigante": { // Elfo adicionado como exemplo
     "vidaBase": 66,
     "sanidadeBase": 15,
+    "vida": 66,
+    "sanidade": 15,
     "especialBase": 7,
     "armaduraBase": 1,
     "movimentoBase": 3,
@@ -120,6 +124,8 @@ const raceData = {
   "Skywalker": { // Elfo adicionado como exemplo
     "vidaBase": 55,
     "sanidadeBase": 17,
+    "vida": 55,
+    "sanidade": 17,
     "especialBase": 6,
     "armaduraBase": 0,
     "movimentoBase": 6,
@@ -143,6 +149,8 @@ const raceData = {
   "Elfo da profundeza": { // Elfo adicionado como exemplo
     "vidaBase": 50,
     "sanidadeBase": 27,
+    "vida": 50,
+    "sanidade": 27,
     "especialBase": 5,
     "armaduraBase": 0,
     "movimentoBase": 5,
@@ -165,6 +173,8 @@ const raceData = {
   "Tritão": { // Elfo adicionado como exemplo
     "vidaBase": 60,
     "sanidadeBase": 21,
+    "vida": 60,
+    "sanidade": 21,
     "especialBase": 4,
     "armaduraBase": 0,
     "movimentoBase": 4.5,
@@ -188,6 +198,8 @@ const raceData = {
   "Shrivvel – Pele Palida": { // Elfo adicionado como exemplo
     "vidaBase": 48,
     "sanidadeBase": 30,
+    "vida": 48,
+    "sanidade": 30,
     "especialBase": 0,
     "armaduraBase": 2,
     "movimentoBase": 6.5,
@@ -211,6 +223,8 @@ const raceData = {
   "Gronklech – Durock": { // Elfo adicionado como exemplo
     "vidaBase": 53,
     "sanidadeBase": 15,
+    "vida": 53,
+    "sanidade": 15,
     "especialBase": 0,
     "armaduraBase": 3,
     "movimentoBase": 4,
@@ -234,6 +248,8 @@ const raceData = {
   "Umbrowalker – Shlurp": { // Elfo adicionado como exemplo
     "vidaBase": 57,
     "sanidadeBase": 14,
+    "vida": 57,
+    "sanidade": 14,
     "especialBase": 0,
     "armaduraBase": 1,
     "movimentoBase": 6,
@@ -254,8 +270,10 @@ const raceData = {
     "especialPorNivel": 5
   },
   "Gornis - Temp": { // Elfo adicionado como exemplo
-    "vidaBase": 5,
-    "sanidadeBase": 0,
+    "vidaBase": 1,
+    "sanidadeBase": 1,
+    "vida": 1,
+    "sanidade": 1,
     "especialBase": 0,
     "armaduraBase": 0,
     "movimentoBase": 1,

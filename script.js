@@ -1949,7 +1949,7 @@ function updatePastImage() {
   }
   else if (past === "Colosso") { pastImage.src = "imagens/pass/Colosso.gif"; 
   }
-  else if (past === "Conjurador") { pastImage.src = "imagens/pass/Conjurador.png"; 
+  else if (past === "Conjurador") { pastImage.src = "imagens/pass/Conjurador.gif"; 
   }
   else if (past === "Costeiro") { pastImage.src = "imagens/pass/Costeiro.gif"; 
   }

@@ -3,7 +3,7 @@ const raceData = {
   "Elfo": {
     "vida": 51,
     "vidaBase": 51,
-    "sanidadeBase": 25,
+    "sanidade": 25,
     "especialBase": 0,
     "armaduraBase": 1,
     "movimentoBase": 5,

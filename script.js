@@ -1,6 +1,7 @@
 // Dados de butos das raças (Exemplo: Raça Alfo, Passado Aldeão)
 const raceData = {
   "Elfo": {
+    "vida": 51,
     "vidaBase": 51,
     "sanidadeBase": 25,
     "especialBase": 0,
@@ -1690,10 +1691,7 @@ function calculateLevel() {
   const carLevel = parseInt(document.getElementById('car').value, 10);
 
   // Desconta os 8 pontos base de cada atributo 
-  const total = forLevel + desLevel + conLevel + intLevel + sabLevel + carLevel - (12 * 7);
-
-  // Nível nunca pode ser menor que zero
-  return Math.max(total, 0);
+  return forLevel + desLevel + conLevel + intLevel + sabLevel + carLevel - (12 * 7);
 }
 
 // Function to update bonus values based on attribute level

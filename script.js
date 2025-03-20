@@ -1690,7 +1690,10 @@ function calculateLevel() {
   const carLevel = parseInt(document.getElementById('car').value, 10);
 
   // Desconta os 8 pontos base de cada atributo 
-  return forLevel + desLevel + conLevel + intLevel + sabLevel + carLevel - (12 * 7);
+  const total = forLevel + desLevel + conLevel + intLevel + sabLevel + carLevel - (12 * 7);
+
+  // Nível nunca pode ser menor que zero
+  return Math.max(total, 0);
 }
 
 // Function to update bonus values based on attribute level

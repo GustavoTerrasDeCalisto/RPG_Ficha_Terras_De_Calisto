@@ -1,8 +1,9 @@
 // Dados de butos das raças (Exemplo: Raça Alfo, Passado Aldeão)
 const raceData = {
   "Elfo": {
-    "vida": 51,
     "vidaBase": 51,
+    "sanidadeBase": 25,
+    "vida": 51,
     "sanidade": 25,
     "especialBase": 0,
     "armaduraBase": 1,
@@ -26,6 +27,8 @@ const raceData = {
   "Humano": { // Humano adicionado como exemplo
     "vidaBase": 49,
     "sanidadeBase": 19,
+    "vida": 49,
+    "sanidade": 19,
     "especialBase": 2,
     "armaduraBase": 1,
     "movimentoBase": 5,
@@ -48,6 +51,8 @@ const raceData = {
   "Krahzhik": { // Elfo adicionado como exemplo
     "vidaBase": 60,
     "sanidadeBase": 12,
+    "vida": 60,
+    "sanidade": 12,
     "especialBase": 10,
     "armaduraBase": 1,
     "movimentoBase": 6,

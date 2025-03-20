@@ -866,8 +866,8 @@ Nível 9: Avatar da Destruição Cadavérica – Com a habilidade “Desmembrame
       "movimento_pass": 3.5
     },
     "Colosso": { 
-      "vidaPorNivel": 13,
-      "sanidadePorNivel": 3,
+      "vidaPorNivel": 16,
+      "sanidadePorNivel": 0,
       "armaduraPorNivel": 4,
       "resistencia": "Esmagante",
       "bonusPass": `
@@ -1692,8 +1692,10 @@ function calculateCurrentAttributes() {
 
   }
 
-  attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) -110;
-  attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car)-30;
+  attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) - ((forLevel + desLevel + conLevel) * level)
+;
+  attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car)- ((intLevel + sabLevel + carLevel) * level)
+;
   attributes.especial += level * raceData[race].especialPorNivel + 15; 
   let valorSubtrair = 0; // Inicializa o valor de subtração
   function atualizarValorSubtrair() {

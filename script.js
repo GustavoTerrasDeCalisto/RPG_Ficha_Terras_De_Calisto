@@ -1663,7 +1663,7 @@ function calculateCurrentAttributes() {
   const intLevel = parseInt(document.getElementById('int').value, 10) - 8;
   const sabLevel = parseInt(document.getElementById('sab').value, 10) - 8;
   const carLevel = parseInt(document.getElementById('car').value, 10) - 8;
-const level = Math.max(1, calculateLevel()); // Garante que o level seja no mínimo 1
+  const level = calculateLevel(); // Calcula o nível
 
   let attributes = {
     vida: raceData[race].vidaBase,
@@ -1692,15 +1692,9 @@ const level = Math.max(1, calculateLevel()); // Garante que o level seja no mín
 
   }
 
-attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + 
-                   (desLevel * raceData[race].vidaPorNivel.des) + 
-                   (conLevel * raceData[race].vidaPorNivel.con) - 
-                   ((forLevel + desLevel + conLevel) * (level - 1)); // Penalidade só cresce depois do level 1
+  attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) - 110)
 ;
-attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + 
-                       (sabLevel * raceData[race].sanidadePorNivel.sab) + 
-                       (carLevel * raceData[race].sanidadePorNivel.car) - 
-                       ((intLevel + sabLevel + carLevel) * (level - 1)); // Mesma lógica aqui
+  attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car)- 10)
 ;
   attributes.especial += level * raceData[race].especialPorNivel + 15; 
   let valorSubtrair = 0; // Inicializa o valor de subtração

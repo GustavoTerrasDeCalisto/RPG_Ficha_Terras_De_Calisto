@@ -375,7 +375,7 @@ const pastData = {
     "armaduraPorNivel": 1,
     "resistencia": "Mental",
     "bonusPass": `
-    Nível 0: Passiva Medo oculto sem custo uma vez por dia.
+    Nível 0: Passiva Medo oculto sem custo uma vez por dia e personagem pode voar.
     
     🧠Mentor Psíquico
 Nível 1: +1 em testes de a dano Mental.
@@ -1176,7 +1176,7 @@ Nível 9:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha b
       "resistencia": "Laser",
       "bonusPass": `
       
-Nivel 0: +1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal).
+Nivel 0: +1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal) e personagem pode voar.
 
       👻Assombração Relâmpago
 Especializado em teletransportes e reações rápidas.
@@ -1593,7 +1593,7 @@ Nível 9: Glutão da Carnificina – Uma vez por combate, pode gastar 6 de Espec
     "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Tempestade",
-    "bonusPass": "+1d12 em magias de Tempestade e elas usam o atributo de Brutalidade.",
+    "bonusPass": "+1d12 em magias de Tempestade e elas usam o atributo de Brutalidade e personagem pode voar.",
     "movimento_pass": 4
   }
   

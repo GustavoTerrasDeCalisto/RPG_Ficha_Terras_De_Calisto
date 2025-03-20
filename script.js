@@ -1985,7 +1985,7 @@ function updatePastImage() {
   }
   else if (past === "Ladrão") { pastImage.src = "imagens/pass/Ladrão.png"; 
   }
-  else if (past === "Louco") { pastImage.src = "imagens/pass/Louco.png"; 
+  else if (past === "Louco") { pastImage.src = "imagens/pass/Louco.gif"; 
   }
   else if (past === "Mago") { pastImage.src = "imagens/pass/Mago.png"; 
   }

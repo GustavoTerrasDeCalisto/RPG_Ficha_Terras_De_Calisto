@@ -866,8 +866,8 @@ Nível 9: Avatar da Destruição Cadavérica – Com a habilidade “Desmembrame
       "movimento_pass": 3.5
     },
     "Colosso": { 
-      "vidaPorNivel": 16,
-      "sanidadePorNivel": 2,
+      "vidaPorNivel": 13,
+      "sanidadePorNivel": 3,
       "armaduraPorNivel": 4,
       "resistencia": "Esmagante",
       "bonusPass": `

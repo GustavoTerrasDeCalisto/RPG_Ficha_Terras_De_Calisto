@@ -97,10 +97,10 @@ const raceData = {
     "especialPorNivel": 5
   },
   "Gigante": { // Elfo adicionado como exemplo
-    "vidaBase": 66,
-    "sanidadeBase": 15,
     "vida": 66,
     "sanidade": 15,
+    "vidaBase": 66,
+    "sanidadeBase": 15,
     "especialBase": 7,
     "armaduraBase": 1,
     "movimentoBase": 3,

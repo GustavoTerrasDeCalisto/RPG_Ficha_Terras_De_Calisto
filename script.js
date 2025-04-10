@@ -1997,7 +1997,7 @@ function updatePastImage() {
   }
   else if (past === "Glacinata") { pastImage.src = "imagens/pass/Glacinata.png"; 
   }
-  else if (past === "Guerreiro") { pastImage.src = "imagens/pass/Guerreiro.png"; 
+  else if (past === "Guerreiro") { pastImage.src = "imagens/pass/Guerreiro.gif"; 
   }
   else if (past === "Hemomantico") { pastImage.src = "imagens/pass/Hemomantico.gif"; 
   }

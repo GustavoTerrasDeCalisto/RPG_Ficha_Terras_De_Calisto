@@ -453,7 +453,11 @@ button:hover {
   font-size: 0.8rem; /* Tamanho da fonte */
   margin-right: 2px; /* Espaço entre os textos */
 }
-
+.stat-container button {
+  padding: 1px 4px;
+  font-size: 11px;
+  border-radius: 3px;
+}
 
 .stat-bar {
   background-color: #ddd;

@@ -2442,7 +2442,41 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function applyDamage(type) {
+    let damageInput;
+    let currentValue;
 
+    switch (type) {
+        case 'life':
+            damageInput = document.getElementById('damage-life');
+            currentValue = parseInt(document.getElementById('life-view').textContent, 10);
+            break;
+        case 'sanity':
+            damageInput = document.getElementById('damage-sanity');
+            currentValue = parseInt(document.getElementById('sanity-view').textContent, 10);
+            break;
+        case 'special':
+            damageInput = document.getElementById('damage-special');
+            currentValue = parseInt(document.getElementById('special-view').textContent, 10);
+            break;
+    }
+
+    const damage = parseInt(damageInput.value, 10);
+    if (!isNaN(damage)) {
+        const newValue = currentValue - damage;
+        switch (type) {
+            case 'life':
+                document.getElementById('life-view').textContent = newValue;
+                break;
+            case 'sanity':
+                document.getElementById('sanity-view').textContent = newValue;
+                break;
+            case 'special':
+                document.getElementById('special-view').textContent = newValue;
+                break;
+        }
+    }
+}
 
 // sistema do mapa interativo
 

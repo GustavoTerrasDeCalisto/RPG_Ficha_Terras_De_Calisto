@@ -454,9 +454,9 @@ button:hover {
   margin-right: 2px; /* Espaço entre os textos */
 }
 .stat-container button {
-  padding: 1px 4px;
-  font-size: 11px;
-  border-radius: 3px;
+  padding: 1px 7px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 .stat-bar {

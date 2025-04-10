@@ -1995,7 +1995,7 @@ function updatePastImage() {
   }
   else if (past === "Forasteiro") { pastImage.src = "imagens/pass/Forasteiro.gif"; 
   }
-  else if (past === "Glacinata") { pastImage.src = "imagens/pass/Glacinata.png"; 
+  else if (past === "Glacinata") { pastImage.src = "imagens/pass/Glacinata.gif"; 
   }
   else if (past === "Guerreiro") { pastImage.src = "imagens/pass/Guerreiro.gif"; 
   }

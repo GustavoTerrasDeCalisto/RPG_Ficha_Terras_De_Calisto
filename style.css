@@ -517,6 +517,9 @@ button:hover {
   background: rgba(255, 255, 255, 0.2);
   animation: shimmer 1.5s infinite;
 }
+.stat-container:has(.stat-bar) {
+  margin: 0 15px 0 0;
+}
 
 @keyframes shimmer {
   0% {

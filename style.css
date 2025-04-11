@@ -428,21 +428,31 @@ button:hover {
 #character-stats > div { /* Only apply to direct children of #character-stats */
   margin-right: 15px; /* Add space between stats and images */
 }
-.stats-wrapper span {
-  display: flex; /* Usar flexbox para alinhar os itens lado a lado */
+.stats-wrapper {
+  display: flex; /* Flexbox para alinhar na horizontal */
+  flex-wrap: wrap; /* Permite quebrar linha se não couber tudo */
   justify-content: space-around; /* Espaço igual entre os itens */
-  align-items: center; /* Alinha verticalmente os itens ao centro */
-  margin: 0px 5px 0px 5px;
-  padding: 1px; /* Adiciona padding ao redor do contêiner */
-  background-color: #e0e0e0; /* Cor de fundo do contêiner */
-  border-radius: 5px; /* Bordas arredondadas */
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Sombra leve */
-  transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+  align-items: center;
+  gap: 10px; /* Espaço entre os blocos */
+  margin: 10px 0;
 }
 
-.stats-wrapper:hover {
-  transform: scale(1.000001); /* Leve aumento no hover */
+.stats-wrapper .stat-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 8px 12px;
+  transition: transform 0.3s ease;
+  min-width: 100px;
+  text-align: center;
+  flex: 1 1 30%; /* Cresce, encolhe, com base de 30% */
+  box-sizing: border-box;
 }
+
+.stats-wrapper .stat-container:hover {
+  transform: scale(1.03);
+}
+
 .stat-container {
   display: flex;
   flex-direction: row; /* Mantenha os itens em linha */

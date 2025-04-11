@@ -458,6 +458,9 @@ button:hover {
   flex-direction: row; /* Mantenha os itens em linha */
   align-items: center; /* Alinha os itens verticalmente no centro */
 }
+.stat-bar-container {
+  margin: 0 15px 0 0;
+}
 
 .stat-container span {
   font-size: 0.8rem; /* Tamanho da fonte */

@@ -1488,64 +1488,45 @@ input[type="number"] {
   padding: 5px;
   font-size: 14px;
 }
-
-/* Responsividade */
+/* MOBILE: Até 768px */
+/* MOBILE: Até 768px */
 @media (max-width: 768px) {
   .status-rpg-popup-content {
     width: 95%;
-    padding: 15px;
+    padding: 12px;
   }
 
-  .status-rpg-bar-wrapper {
-    flex-direction: column;
-  }
-
-  .status-rpg-input-group input[type="number"],
-  .status-rpg-input-group button {
-    width: 100%;
-  }
-
-  /* Tornar a largura dos botões de dano e cura mais compacta no mobile */
+  /* Mantém os grupos lado a lado e bem organizados */
   .status-rpg-input-group {
-    flex-direction: column; /* Coloca os inputs e botões em uma coluna */
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .status-rpg-input-group label {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+
+  .status-rpg-input-group input[type="number"] {
+    width: 65px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
 
   .status-rpg-input-group button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .status-rpg-btn {
-    width: 100%;
-    font-size: 14px;
-    padding: 1px;
-  }
-
-  .status-rpg-popup-content {
-    width: 90%;
-  }
-
-  .status-rpg-title {
-    font-size: 14px;
-  }
-
-  .status-rpg-container {
-    margin-bottom: 15px;
-  }
-
-  .status-rpg-fill {
-    font-size: 14px;
-  }
-
-  /* Ajuste dos botões de dano e cura no mobile */
-  .status-rpg-input-group {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .status-rpg-input-group button {
-    width: 100%;
+    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
   }
 }

@@ -913,7 +913,7 @@ label {
   display: block; /* Faz com que o label ocupe toda a largura */
   margin-bottom: 4px; /* Espaço abaixo do label */
   font-weight: 600; /* Aumenta a espessura do texto */
-  color: #333; /* Cor do texto */
+  color: #ff3e3e; /* Cor do texto */
 }
 
 input[type="number"] {
@@ -1422,8 +1422,10 @@ button:hover {
 /* Título */
 .status-rpg-title {
   font-weight: bold;
-  font-size: 16px;
   margin-bottom: 5px;
+  font-size: 25px; /* Aumenta o tamanho do título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 15px; /* Espaço abaixo do título */
 }
 
 /* Barra de status */
@@ -1491,12 +1493,18 @@ input[type="number"] {
 /* MOBILE: Até 768px */
 /* MOBILE: Até 768px */
 @media (max-width: 768px) {
+  .status-rpg-title {
+    font-size: 25px; /* Aumenta o tamanho do título */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+  }
+
+  /* Restante do seu CSS para o mobile */
   .status-rpg-popup-content {
     width: 95%;
     padding: 12px;
   }
 
-  /* Mantém os grupos lado a lado e bem organizados */
   .status-rpg-input-group {
     display: flex;
     flex-wrap: wrap;
@@ -1523,10 +1531,11 @@ input[type="number"] {
     font-size: 13px;
     padding: 4px 8px;
     border-radius: 4px;
-    background-color: #3498db;
+    background-color: #db3434;
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 5px;
   }
 }
+

@@ -403,6 +403,19 @@
               <div class="nav-list">
                   <ul>
                     <button class="toggle-button" onclick="toggleMenu()">Pericias - Talentos - Armas</button>
+ 
+ <!-- Botão para abrir o popup -->
+<button id="abrir-status-rpg" class="status-rpg-btn">Abrir Status RPG</button>
+
+<!-- Popup -->
+<div id="status-rpg-popup" class="status-rpg-popup oculto">
+  <div class="status-rpg-popup-content">
+    <span id="fechar-status-rpg" class="status-rpg-close">&times;</span>
+    <div id="status-rpg-app"></div>
+  </div>
+</div>
+
+
                       <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
                       <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/racas/" class="nav-link" target="_blank">Raças</a></li>
                       <li class="nav-item"><a href="https://terrasdecalistoficha.wordpress.com/passados/" class="nav-link" target="_blank">Passados</a></li>
@@ -449,51 +462,18 @@
   <div id="app">
 
     
-      <!-- Seção da esquerda -->
-      <div id="left-section">
-        <!-- Menu Lateral -->
+    <!-- Seção da esquerda -->
+<div id="left-section">
+  <!-- Menu Lateral -->
 
-
-        <div id="character-stats">
-                      <div class="stat-container">
- 
-              <div>
-
-        <label>Vida:</label>
-
-        <input type="number" id="damage-life" placeholder="Dano" />
-        <button onclick="applyDamage('life')">Aplicar Dano</button>
+  <div id="character-stats">
+    <div class="stat-container">
+      <!-- Barra de Status -->
+      <div class="stat-bar">
+        <div id="life-fill" class="fill" style="width: 0%;"></div>
+        <span>Life: <span id="life-view">0</span></span>
+      </div>
     </div>
-    <div>
-        <label>Sanidade:</label>
-
-        <input type="number" id="damage-sanity" placeholder="Dano" />
-        <button onclick="applyDamage('sanity')">Aplicar Dano</button>
-    </div>
-    <div>
-        <label>Especial:</label>
-
-        <input type="number" id="damage-special" placeholder="Dano" />
-        <button onclick="applyDamage('special')">Aplicar Dano</button>
-    </div>
-</div>
-        <div class="stat-container">
-<div>
-    <label>Armadura Temporária:</label>
-    <input type="number" id="temporary-armor" placeholder="Armadura Temporária" />
-</div>
-<div>
-    <label>Vida Temporária:</label>
-    <input type="number" id="temporary-life" placeholder="Vida Temporária" />
-</div>
-   </div>
-          <div class="stat-container">
-           <!-- <h3 class="barras-text">Life: </h3> -->
-            <div class="stat-bar">
-              <div id="life-fill" class="fill" style="width: 0%;"></div>
-              <span>Life:<span id="life-view">0</span></span>
-            </div>
-          </div>
           <div class="stat-container">
            <!-- <h3 class="barras-text">Sanity: </h3> -->
             <div class="stat-bar">
@@ -596,7 +576,7 @@
       </div>
 
     <!-- Seção da direita -->
-     
+
     <div id="right-section">
       <div id="character-creation-section">
         <h1 class="Aviso">A aparência do seu personagem será uma mistura entre o seu passado e a sua raça, imagine-o como quiser! Você tem 25 pontos para distribuir na sua ficha entre os atributos BRU, AGI, DET, PRE, LIB e CNX. O valor mínimo por atributo é 8 e o máximo é 99. Você pode compensar pontos entre os atributos, distribuindo-os até alcançar o nível 1.

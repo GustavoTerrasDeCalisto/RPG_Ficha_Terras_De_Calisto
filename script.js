@@ -1704,6 +1704,162 @@ function calculateCurrentAttributes() {
   return attributes;
 }
 
+
+// LEMBRAR
+
+// Obtendo os elementos do botão e popup
+const abrirBtn = document.getElementById("abrir-status-rpg");
+const fecharBtn = document.getElementById("fechar-status-rpg");
+const popup = document.getElementById("status-rpg-popup");
+const app = document.getElementById("status-rpg-app");
+
+// Abrir o popup
+abrirBtn.addEventListener("click", () => {
+  popup.classList.add("ativo");
+});
+
+// Fechar o popup
+fecharBtn.addEventListener("click", () => {
+  popup.classList.remove("ativo");
+});
+
+// Definindo os estados e temporários
+const estados = ["vida", "sanidade", "especial"];
+const temporarios = { vida: 0, sanidade: 0, especial: 0 };
+
+// Função para criar as barras de status
+const criarBarra = (estado) => {
+  const container = document.createElement("div");
+  container.className = "status-rpg-container";
+
+  container.innerHTML = `
+    <div class="status-rpg-title">${estado.toUpperCase()}</div>
+
+    <div class="status-rpg-input-group">
+      <label>Total:</label>
+      <input type="number" id="${estado}-total" placeholder="Total" min="1">
+      <label>Atual:</label>
+      <input type="number" id="${estado}-atual" placeholder="Atual" min="0">
+      <label>Temp:</label>
+      <input type="number" id="${estado}-temp" placeholder="Temp" min="0">
+      <button onclick="atualizar('${estado}')">Confirmar</button>
+    </div>
+
+    <div class="status-rpg-bar-wrapper">
+      <div class="status-rpg-bar">
+        <div id="${estado}-temp-bar" class="status-rpg-temp"></div>
+        <div id="${estado}-barra" class="status-rpg-fill ${estado}">0% (0 / 0)</div>
+      </div>
+    </div>
+
+    <div class="status-rpg-input-group">
+      <label>Dano:</label>
+      <input type="number" id="${estado}-dano" placeholder="Dano" min="0">
+      <button onclick="aplicarDano('${estado}')">Aplicar Dano</button>
+    </div>
+
+    <div class="status-rpg-input-group">
+      <label>Cura:</label>
+      <input type="number" id="${estado}-cura" placeholder="Cura" min="0">
+      <button onclick="aplicarCura('${estado}')">Aplicar Cura</button>
+    </div>
+  `;
+
+  return container;
+};
+
+// Função para atualizar as barras de status
+const atualizar = (estado) => {
+  const total = parseInt(document.getElementById(`${estado}-total`).value);
+  let atual = parseInt(document.getElementById(`${estado}-atual`).value);
+  let temp = parseInt(document.getElementById(`${estado}-temp`).value) || 0;
+
+  // Garante que o valor atual não ultrapasse o total e que não seja negativo
+  atual = Math.min(atual, total);
+  atual = Math.max(atual, 0);
+  temporarios[estado] = temp;
+
+  // Atualiza a barra de status
+  atualizarBarra(estado, atual, total, temp);
+};
+
+// Função para aplicar dano
+const aplicarDano = (estado) => {
+  let dano = parseInt(document.getElementById(`${estado}-dano`).value) || 0;
+  const total = parseInt(document.getElementById(`${estado}-total`).value);
+  let atual = parseInt(document.getElementById(`${estado}-atual`).value);
+  let temp = temporarios[estado];
+
+  // Aplica dano no valor temporário primeiro
+  if (dano <= temp) {
+    temp -= dano;
+    dano = 0;
+  } else {
+    dano -= temp;
+    temp = 0;
+  }
+
+  // Aplica o dano restante no valor atual
+  atual = Math.max(atual - dano, 0);
+  temporarios[estado] = temp;
+
+  // Atualiza a barra de status
+  atualizarBarra(estado, atual, total, temp);
+};
+
+// Função para aplicar cura
+const aplicarCura = (estado) => {
+  const cura = parseInt(document.getElementById(`${estado}-cura`).value) || 0;
+  const total = parseInt(document.getElementById(`${estado}-total`).value);
+  let atual = parseInt(document.getElementById(`${estado}-atual`).value);
+
+  // Aplica a cura sem ultrapassar o total
+  atual = Math.min(atual + cura, total);
+
+  // Atualiza a barra de status
+  atualizarBarra(estado, atual, total, temporarios[estado]);
+};
+
+// Função para atualizar a barra de status
+// Função para atualizar a barra de status
+const atualizarBarra = (estado, atual, total, temp) => {
+  // Atualiza o valor da barra com base no percentual atual
+  const porcentagem = total > 0 ? Math.floor((atual / total) * 100) : 0;
+  const barra = document.getElementById(`${estado}-barra`);
+  const barraTemp = document.getElementById(`${estado}-temp-bar`);
+
+  // Atualiza a largura do preenchimento
+  barra.style.width = `${porcentagem}%`;
+  barra.textContent = `${porcentagem}% (${atual} / ${total})`;
+
+  // Atualiza a cor do preenchimento com base no estado
+  if (estado === "vida") {
+    barra.classList.add("status-rpg-vida");
+    barra.classList.remove("status-rpg-sanidade", "status-rpg-especial");
+  } else if (estado === "sanidade") {
+    barra.classList.add("status-rpg-sanidade");
+    barra.classList.remove("status-rpg-vida", "status-rpg-especial");
+  } else if (estado === "especial") {
+    barra.classList.add("status-rpg-especial");
+    barra.classList.remove("status-rpg-vida", "status-rpg-sanidade");
+  }
+
+  // Atualiza a barra temporária
+  const tempPorcentagem = total > 0 ? Math.floor((temp / total) * 100) : 0;
+  barraTemp.style.width = `${tempPorcentagem}%`;
+
+  // Atualiza os campos de entrada
+  document.getElementById(`${estado}-atual`).value = atual;
+  document.getElementById(`${estado}-temp`).value = temp;
+};
+
+
+// Adiciona as barras ao app dentro do popup
+estados.forEach(e => app.appendChild(criarBarra(e)));
+
+
+//LEMBRAR
+
 // Function to calculate total level based on attribute levels
 function calculateLevel() {
   const forLevel = parseInt(document.getElementById('for').value, 10);

@@ -2210,7 +2210,7 @@ function updatePastImage() {
   }
   else if (past === "Fera") { pastImage.src = "imagens/pass/fera.gif"; 
   }
-  else if (past === "Ferreiro") { pastImage.src = "imagens/pass/Ferreiro.png"; 
+  else if (past === "Ferreiro") { pastImage.src = "imagens/pass/Ferreiro.gif"; 
   }
   else if (past === "Forasteiro") { pastImage.src = "imagens/pass/Forasteiro.gif"; 
   }

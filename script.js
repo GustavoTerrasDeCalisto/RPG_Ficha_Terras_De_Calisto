@@ -1329,7 +1329,70 @@ Nível 9: Glutão da Carnificina – Uma vez por combate, pode gastar 6 de Espec
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 2,
       "resistencia": "Fogo",
-      "bonusPass": "Vantagem em testes de Ofício",
+      "bonusPass": `
+ Nivel 0: Vantagem em testes de Ofício.
+ 
+ 🔨Mestre do Encantamento
+ Especializado na criação de armas e armaduras com poder elemental, canalizando a essência dos materiais e elementos através do ofício. Negocie com mestre efeitos diferentes na hora da Forja.
+
+Nível 1: Forjador das Chamas – Pode imbuir armas forjadas com o elemento Fogo, causando +1d4 de dano flamejante por 3 turnos. Alvos atingidos devem passar em um teste de Determinação ou sofrer queimaduras persistentes. Recebe +1 em testes de Ofício.
+Nível 2: Artesão do Gelo – Aprende a imbuir suas armas com o elemento Gelo. O inimigo atingido deve passar em um teste de Preservação ou ficará congelado por 1 turno, perdendo sua ação principal. Armas forjadas causam +1 de dano fixo.
+Nível 3: Moldador da Corrosão – Adiciona o elemento Ácido às suas criações. Inimigos atingidos por armas ácidas recebem 1d4 de dano por 2 turnos, a menos que passem em um teste de Determinação. +1 em testes para reparar ou modificar armamentos.
+Nível 4: Engenheiro da Água Viva – Pode forjar equipamentos com o elemento Água, que reduzem o deslocamento do inimigo em 4 metros por 2 turnos. O alvo pode resistir com um teste de Agilidade. +1 em testes para criar armaduras com efeitos adicionais.
+Nível 5: Senhor do Trovão – Ganha acesso ao elemento Eletricidade. Armas forjadas causam 1d6 extra contra alvos metálicos ou molhados. Alvos devem passar em um teste de Libertação ou ficam atordoados por 1 turno. Ganha +1 em ataques com armas criadas por si.
+Nível 6: Ferreiro da Tempestade – Imbuir com o elemento Tempestade permite empurrar o alvo 2 metros a cada golpe. Teste de Brutalidade evita o empurrão. Além disso, escudos criados por você oferecem +1 de armadura contra ataques à distância.
+Nível 7: Arquimestre do Abismo – Forja com o dano de Aura, podendo aplicar “Medo Oculto” por 1 turno se o alvo falhar em um teste de Intimidação. Ganha +1 em testes de Percepção e Intimidação com equipamentos próprios.
+Nível 8: Metalurgista do Caos Primordial – Consegue forjar com o elemento Caos, criando armas imprevisíveis: o jogador rola 1d4 a cada golpe para aplicar efeitos aleatórios (fogo, gelo, ácido ou eletricidade). Recebe +2 em Ofício.
+Nível 9: Lenda das Forjas Eternas – Pode imbuir até dois elementos diferentes em uma única arma criada. O dano extra de cada elemento é rolado separadamente. Uma vez por combate, pode criar uma arma temporária com 3 elementos que dura 3 turnos. Recebe +2 em testes de Preservação.
+
+🔥Metalurgia do Fogo
+
+Nível 1: Fagulha da Criação
+Ganha +2 em testes de Ofício ao lidar com metais. (Passivo – baseado em Preservação)
+Nível 2: Mãos Flamejantes
+Uma vez por turno, adiciona +1d6 de dano de fogo (Caos) ao ataque com arma criada. (Passivo – dano baseado em Brutalidade)
+Nível 3: Magia: Chama Persistente
+Ganha acesso a uma magia de fogo de nível 1 ao desbloquear este nível. (Teste de conjuração por Preservação)
+Nível 4: Escudo de Brasas
+Quando sofre dano corpo a corpo, o inimigo sofre 1d8 de dano de fogo (Caos). (Passivo – ativação por Determinação)
+Nível 5: Magia: Fornalha Ardente
+Ganha acesso a uma magia de fogo de nível 2 ao desbloquear este nível. (Teste de conjuração por Preservação)
+Nível 6: Controle Térmico
+Pode fundir duas peças metálicas instantaneamente, até mesmo durante o combate. (Passivo – usa Preservação)
+Nível 7: Arma Incandescente
+Infundi uma arma por 3 turnos para ela causar +2d8 de dano de fogo (Caos). (Custo: 3 de especial – ativação por Preservação ou Brutalidade)
+Nível 8: Magia: Pilar de Fogo
+Ganha acesso a uma magia de fogo de nível 3 ao desbloquear este nível. (Teste de conjuração por Preservação)
+Nível 9: Fusão Ígnea
+Transforma qualquer arma metálica em uma versão flamejante permanente com +1d10 de dano de fogo (Caos). (Custo: 5 de especial – requer Preservação e Brutalidade)
+
+🌀Copiador do Metal
+
+Nível 1: Duplicador Ágil
+Pode usar a passiva Réplica Imperfeita como ação bônus sem custo uma vez por combate. (Passivo – teste de ativação com Conexão)
+Nível 2: Duplo Fantasma
+Pode manter duas réplicas ativas ao mesmo tempo. (Custo: 3 de especial – depende de Conexão e Preservação)
+Nível 3: Refino da Réplica
+Réplicas criadas causam 1d8 de dano extra ao atingir o mesmo inimigo que o original atingiu no turno anterior. (Passivo – dano baseado em Brutalidade ou Agilidade da réplica)
+Nível 4: Eco de Precisão
+Ganha +1 em testes de acerto ao usar réplicas. (Passivo – utiliza Agilidade)
+Nível 5: Especialista em Cópias
+Ganha +2 em testes de Ofício ao tentar replicar qualquer item. (Passivo – baseado em Preservação)
+Nível 6: Fluxo Espelhado
+Réplicas não desaparecem no fim da duração se o conjurador passar um teste de Preservação (Dificuldade 12). (Passivo)
+Nível 7: Reflexo Agressivo
+Réplicas causam +1d6 de dano adicional se o alvo já tiver sido atingido naquele turno. (Passivo – usa Brutalidade ou Agilidade)
+Nível 8: Ressonância de Metal
+Cada vez que uma réplica desaparece, o conjurador regenera +2 de especial. (Passivo – relacionado à Conexão)
+Nível 9: Réplica Lendária
+Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turnos e ignora efeitos de destruição mágica. (Custo: 5 de especial – ativação com Conexão ou Libertação)
+
+
+
+
+`
+      
+      ,
       "movimento_pass": 3.5
     },
     "Forasteiro": { 

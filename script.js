@@ -1663,6 +1663,407 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
   
 };
 
+const items = [
+  { 
+    id: "Kongens hjerte", 
+    name: "Kongens hjerte", 
+    desc: "Adaga Fóssil de Coração, poucas partes moles de um corpo podem ser fossilizadas, porém curiosamente o coração de um rei antigo foi. Quem usa essa arma em formato de coração ganha 50 de vida temporária.", 
+    img: "imagens/Armas/Armas/Kongens hjerte.png", 
+    damageType: "1d4", 
+    elementalDamage: "1d12+3d6", 
+    damageDice: "Escuridão", 
+    range: "1m", 
+    critical: "(18) - Dano(x3)", 
+    equipBonus: "Ganha 50 de vida temporária" // Adicionando o bônus de equipar
+  },
+    { 
+      id: "Thorvilles hammer", 
+      name: "Thorvilles hammer", 
+      desc: "Martelo com raios vazados de seu cabo cobrindo a mão do usuário, dizem que o próprio Thorville usava na grande guerra.", 
+      img: "imagens/Armas/Armas/Thorvilles hammer.png", 
+      damageType: "2d12", 
+      elementalDamage: "4d6", 
+      damageDice: "Eletricidade", 
+      range: "2m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Skytten torden pierce", 
+      name: "Skytten torden pierce", 
+      desc: "Lança com formato de trovão dourada, desconhecida para as pessoas, porém passa um ar de soberba para quem usa.", 
+      img: "imagens/Armas/Armas/Skytten torden pierce.png", 
+      damageType: "2d10", 
+      elementalDamage: "1d8+3d6", 
+      damageDice: "Eletricidade", 
+      range: "1m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Forbanna fabelaktig", 
+      name: "Forbanna fabelaktig", 
+      desc: "Adaga de Sangue, formada do sangue de uma criatura forte. Só aceita ser empunhada pelos fortes.", 
+      img: "imagens/Armas/Armas/Forbanna fabelaktig.png", 
+      damageType: "3d6", 
+      elementalDamage: "1d10+3d6", 
+      damageDice: "Sangue", 
+      range: "—", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Tropisk jordskjelv", 
+      name: "Tropisk jordskjelv", 
+      desc: "Machado terremoto tropical. Todos a até 3m do alvo sofrem 1d8 de Tremor (exceto o usuário).", 
+      img: "imagens/Armas/Armas/Tropisk jordskjelv.png", 
+      damageType: "1d12", 
+      elementalDamage: "1d4+3d6", 
+      damageDice: "Tremor", 
+      range: "2m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Bannestokk", 
+      name: "Bannestokk", 
+      desc: "Bastão amaldiçoado que levita e gira. Permite usar outras duas armas e quem vê sofre dano de maldição.", 
+      img: "imagens/Armas/Armas/Bannestokk.png", 
+      damageType: "1d6", 
+      elementalDamage: "1d12+3d6", 
+      damageDice: "Maldição", 
+      range: "5m", 
+      critical: "(17) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "storm gud", 
+      name: "storm gud", 
+      desc: "Deus da tempestade, objeto esférico. Quem for atingido por magia recebe +1d8 de Tempestade.", 
+      img: "imagens/Armas/Armas/storm gud.png", 
+      damageType: "1d4", 
+      elementalDamage: "5d6", 
+      damageDice: "Tempestade", 
+      range: "1m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Slangekjeder", 
+      name: "Slangekjeder", 
+      desc: "Correntes ou cobras? Difícil saber. Arma extremamente flexível e letal.", 
+      img: "imagens/Armas/Armas/Slangekjeder.png", 
+      damageType: "3d4", 
+      elementalDamage: "1d8+3d6", 
+      damageDice: "Ácido", 
+      range: "1,5m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Tapt jegerinne", 
+      name: "Tapt jegerinne", 
+      desc: "Espada de vidro da Caçadora Perdida. Dá +4 em investigação sobrenatural.", 
+      img: "imagens/Armas/Armas/Tapt jegerinne.png", 
+      damageType: "1d6", 
+      elementalDamage: "2d8+3d6", 
+      damageDice: "Distorção", 
+      range: "1m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "+4 em testes de Investigação" 
+    },
+    { 
+      id: "arven etter den dømte kongen", 
+      name: "arven etter den dømte kongen", 
+      desc: "Grande espada do rei julgado, infame por sua força incontrolável.", 
+      img: "imagens/Armas/Armas/arven etter den dømte kongen.png", 
+      damageType: "2d8", 
+      elementalDamage: "1d20+3d6", 
+      damageDice: "Alma", 
+      range: "2m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "" 
+    },
+    { 
+      id: "Onde slem stab", 
+      name: "Onde slem stab", 
+      desc: "Cajado perverso que permite usar Sonhos Reais sem custo uma vez ao dia, -2 em carisma.", 
+      img: "imagens/Armas/Armas/Onde slem stab.png", 
+      damageType: "1d4", 
+      elementalDamage: "4d6", 
+      damageDice: "Sono", 
+      range: "1m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "Pode usar Sonhos Reais 1x por dia sem custo" 
+    },{ 
+      id: "Requiescens fan", 
+      name: "Requiescens fan", 
+      desc: "Leques orientais, antigas dançarinas do oriente do continente oeste desenvolveram uma dança adormecedora, cortes causam Preguiça nos alvos.", 
+      img: "imagens/Armas/Armas/Requiescens_fan.png", 
+      damageType: "1d8", 
+      elementalDamage: "2d8+3d6", 
+      damageDice: "Sono", 
+      range: "3m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Causa Preguiça nos alvos"
+  },
+  
+  { 
+      id: "Mørkt blad av hat", 
+      name: "Mørkt blad av hat", 
+      desc: "Katana Rancor das eras sombrias, algumas lâminas foram forjadas durante a grande guerra e representam o clima presente nesse período, aqueles que usam essa lâmina é possuído por um ódio inexplicável. (passiva ódio desativa se for desarmado ou guardar a lâmina na bainha).", 
+      img: "imagens/Armas/Armas/Mørkt_blad_av_hat.png", 
+      damageType: "1d20", 
+      elementalDamage: "2d12+3d6", 
+      damageDice: "Distorção", 
+      range: "1,5m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Possui ódio desativado se desarmado ou guardado"
+  },
+  
+  { 
+      id: "Uendelige kutt", 
+      name: "Uendelige kutt", 
+      desc: "Cimitarra de mercúrio sombria, lâmina encontrada no pico mais alto das terras de calisto, quem usa essa lâmina tem chance de deixar seu inimigo sangrando 3x crítico.", 
+      img: "imagens/Armas/Armas/Uendelige_kutt.png", 
+      damageType: "2d10", 
+      elementalDamage: "1d10+3d6", 
+      damageDice: "Cortante", 
+      range: "1m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Chance de causar sangramento 3x crítico"
+  },
+  
+  { 
+      id: "kongen av pierced", 
+      name: "kongen av pierced", 
+      desc: "Confeccionada pelo chifre de um dragão oriental muito antigo, a Rapiera antiga dos magos da floresta negra, sua lâmina pode causar envenenado no inimigo, Crítico 3x.", 
+      img: "imagens/Armas/Armas/kongen_av_pierced.png", 
+      damageType: "2d12", 
+      elementalDamage: "1d20+3d6", 
+      damageDice: "Perfurante", 
+      range: "1,5m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Causa envenenado no inimigo"
+  },
+  
+  { 
+      id: "munk av mount ryogi", 
+      name: "munk av mount ryogi", 
+      desc: "Bastão do antigo monge, um dos lendários lutadores do reino leste, o rei dos gigantes uma vez fez negócios com esse monge e confeccionou essa arma para ele, as marcas tentam deixar o inimigo louco +1d8 de dano sanidade nos inimigos.", 
+      img: "imagens/Armas/Armas/munk_av_mount_ryogi.png", 
+      damageType: "2d12", 
+      elementalDamage: "1d8+3d6", 
+      damageDice: "Mental", 
+      range: "1m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "+1d8 de dano sanidade nos inimigos"
+  },
+  
+  { 
+      id: "Skygger av fornuft", 
+      name: "Skygger av fornuft", 
+      desc: "Sombras da sanidade, haladie, uma adaga de dois gumes da antiga Syrmania, dizem que essa haladie possui uma irmã. Crítico 18, causa o valor do dano extra na sanidade do inimigo. Se arremessar essa arma ela volta para a mão após atingir algo.", 
+      img: "imagens/Armas/Armas/Skygger_av_fornuft.png", 
+      damageType: "2d8", 
+      elementalDamage: "2d12+3d6", 
+      damageDice: "Distorção", 
+      range: "5m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Causa dano extra na sanidade do inimigo"
+  },
+  
+  { 
+      id: "Skygger av nøkternhet", 
+      name: "Skygger av nøkternhet", 
+      desc: "Sombras da sobriedade, haladie, uma adaga de dois gumes da antiga indrainland, dizem que essa haladie possui uma irmã. Crítico 18, Cura o valor do dano extra na sua sanidade. Se arremessar essa arma ela volta para a mão após atingir algo.", 
+      img: "imagens/Armas/Armas/Skygger_av_nokternhet.png", 
+      damageType: "2d8", 
+      elementalDamage: "2d12+3d6", 
+      damageDice: "Maldição", 
+      range: "5m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Cura o valor do dano extra na sua sanidade"
+  },
+  
+  { 
+      id: "Eclipse Greatsword", 
+      name: "Eclipse Greatsword", 
+      desc: "Espada grande do eclipse, espada perdida do reino dos elfos da floresta crepúsculo (enquanto segurando ganha resistência para danos de Maldição).", 
+      img: "imagens/Armas/Armas/Eclipse_Greatsword.png", 
+      damageType: "2d8", 
+      elementalDamage: "2d12+3d6", 
+      damageDice: "Sagrado", 
+      range: "2m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Resistência para danos de Maldição"
+  },
+  
+  { 
+      id: "Komplett Karakia-gresskar", 
+      name: "Komplett Karakia-gresskar", 
+      desc: "Cabaça Karakia completa, uma pequena cabaça com punhal, quando completa sai dela um fio de água formando uma lâmina chicote que possui um alcance alto.", 
+      img: "imagens/Armas/Armas/Komplett_Karakia_gresskar.png", 
+      damageType: "1d10", 
+      elementalDamage: "3d8+3d6", 
+      damageDice: "Água", 
+      range: "3m", 
+      critical: "(18) - Dano(x3)", 
+      equipBonus: "Lâmina chicote com alcance alto"
+  },
+  
+  { 
+      id: "Stor øks å Donar", 
+      name: "Stor øks å Donar", 
+      desc: "Machado grande de Donar, um grande machado pulsando eletricidade por toda lamina, aqueles que usam esse machado são denominados Deuses do Trovão, lendas antigas citam essa força, mas todas elas convergem em Donar. Ganha imunidade a danos de Eletricidade enquanto empunha.", 
+      img: "imagens/Armas/Armas/Stor_øks_å_Donar.png", 
+      damageType: "2d20", 
+      elementalDamage: "3d20+3d6", 
+      damageDice: "Eletricidade", 
+      range: "8m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "Imunidade a danos de Eletricidade"
+  },
+  
+  { 
+      id: "Escudo", 
+      name: "Escudo", 
+      desc: "Escudo aparentemente comum, ao equipar ganha 2 de armadura temporária.", 
+      img: "imagens/Armas/Armas/Escudo.png", 
+      damageType: "1d4", 
+      elementalDamage: "–", 
+      damageDice: "Esmagante", 
+      range: "1m", 
+      critical: "(20) - Dano(x2)", 
+      equipBonus: "Ganha 2 de armadura temporária"
+  },
+  
+  { 
+      id: "Tåkefiolin", 
+      name: "Tåkefiolin", 
+      desc: "Tåkefiolin é um instrumento perdido nas Terras de Calisto, dizem que ele vaga junto ao som buscando um portador para tocar a Valsa das névoas.", 
+      img: "imagens/Armas/Armas/Tåkefiolin.png", 
+      damageType: "1d4", 
+      elementalDamage: "2d6+3d6", 
+      damageDice: "Névoa", 
+      range: "9m", 
+      critical: "(20) - Dano(x2)", 
+      equipBonus: "Toca a Valsa das névoas"
+  }
+  
+  
+  //em andamento
+];
+
+const itemGrid = document.getElementById('itemGrid');
+const descPopup = document.getElementById('itemDescPopup');
+const equipBtn = document.getElementById('equipItem');
+const equippedSlot = document.getElementById('equippedItemSlot');
+
+// Preenche a grid de itens
+items.forEach(item => {
+  const card = document.createElement('div');
+  card.className = 'item-card';
+  card.innerHTML = `<img src="${item.img}"><div>${item.name}</div>`;
+  card.addEventListener('click', () => showItemDesc(item));
+  itemGrid.appendChild(card);
+});
+
+function showItemDesc(item) {
+  // Atualiza o título e a descrição do item
+  document.getElementById('itemDescTitle').textContent = item.name;
+  document.getElementById('itemDescText').textContent = item.desc;
+  document.getElementById('itemDescImage').src = item.img;
+
+  // Adicionando as novas informações
+  const damageTypeElem = document.getElementById('itemDescDamageType');
+  const elementalDamageElem = document.getElementById('itemDescElementalDamage');
+  const damageDiceElem = document.getElementById('itemDescDamageDice');
+  const rangeElem = document.getElementById('itemDescRange');
+  const criticalElem = document.getElementById('itemDescCritical');
+  const equipBonusElem = document.getElementById('itemDescEquipBonus');
+  
+  // Preenche os campos com os valores do item
+  damageTypeElem.textContent = `Dano Físico: ${item.damageType || 'N/A'}`;
+  elementalDamageElem.textContent = `Dano Elemental: ${item.elementalDamage || 'N/A'}`;
+  damageDiceElem.textContent = `Tipo de Dano: ${item.damageDice || 'N/A'}`;
+  rangeElem.textContent = `Alcance: ${item.range || 'N/A'}`;
+  criticalElem.textContent = `Crítico: ${item.critical || 'N/A'}`;
+  equipBonusElem.textContent = `Bônus ao Equipar: ${item.equipBonus || 'Nenhum'}`;
+
+  // Altera o texto do botão de Equipar/Remover dependendo do estado
+  equipBtn.textContent = item.id === equippedItemId ? "Remover" : "Equipar";
+
+  // Ação do botão de Equipar/Remover
+  equipBtn.onclick = (event) => {
+    event.preventDefault(); // Impede a propagação do evento de clique
+    event.stopPropagation(); // Impede que o evento se propague para outros elementos
+
+    if (equippedItemId === item.id) {
+      equippedItemId = null;
+      equippedSlot.innerHTML = "";
+    } else {
+      equippedItemId = item.id;
+      equippedSlot.innerHTML = `<img src="${item.img}" style="width: 50px;"><div>${item.name}</div>`;
+   
+    }
+    descPopup.classList.add('hidden');
+  };
+
+  // Exibe o popup
+  descPopup.classList.remove('hidden');
+}
+
+// Função para carregar o item equipado do armazenamento
+function loadEquippedItem() {
+  const savedCharacter = JSON.parse(localStorage.getItem('savedCharacter'));
+  if (savedCharacter && savedCharacter.equippedItemId) {
+    equippedItemId = savedCharacter.equippedItemId;
+
+    // Procura o item no array e exibe no slot de item equipado
+    const equippedItem = items.find(item => item.id === equippedItemId);
+    if (equippedItem) {
+      // Certifique-se de que o caminho da imagem está correto
+      equippedSlot.innerHTML = `<img src="${equippedItem.img}" style="width: 50px;"><div>${equippedItem.name}</div>`;
+    } else {
+      // Caso o item não seja encontrado, você pode exibir uma mensagem de erro
+      console.error('Item equipado não encontrado');
+    }
+  } else {
+    console.log('Nenhum item equipado encontrado no localStorage');
+  }
+}
+
+// Carregar o personagem ao abrir a página
+document.addEventListener('DOMContentLoaded', () => {
+  loadEquippedItem();
+});
+
+
+// Mostrar/esconder os popups
+// Para abrir o popup de itens
+document.getElementById('openItemPopup').addEventListener('click', (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  
+  document.getElementById('itemSelectPopup').classList.remove('hidden');
+});
+
+// Para fechar o popup de seleção de itens
+document.getElementById('closeItemPopup').addEventListener('click', (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  
+  document.getElementById('itemSelectPopup').classList.add('hidden');
+});
+
+// Para fechar o popup de descrição de itens
+document.getElementById('closeDescPopup').addEventListener('click', (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  
+  descPopup.classList.add('hidden');
+});
 
 
 const resistenciaColors = {
@@ -2291,66 +2692,81 @@ function updatePastImage() {
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
-document.getElementById('character-form').addEventListener('submit', (event) => {
-  event.preventDefault();
+document.addEventListener('DOMContentLoaded', () => { 
+  const form = document.getElementById('character-form');
+  
+  // Verifique se o listener já foi adicionado
+  if (!form._hasListener) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Impede o envio do formulário e recarregamento da página
 
-  const name = document.getElementById('char-name').value;
-  const race = document.getElementById('race').value;
-  const past = document.getElementById('past').value;
-  const forLevel = parseInt(document.getElementById('for').value, 10);
-  const desLevel = parseInt(document.getElementById('des').value, 10);
-  const conLevel = parseInt(document.getElementById('con').value, 10);
-  const intLevel = parseInt(document.getElementById('int').value, 10);
-  const sabLevel = parseInt(document.getElementById('sab').value, 10);
-  const carLevel = parseInt(document.getElementById('car').value, 10);
-  // Coleta as perícias e seus valores atuais
-  const skills = {};
-  document.querySelectorAll('.pericia').forEach((skillElement) => {
-    const skillName = skillElement.getAttribute('data-name');
-    const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
-    skills[skillName] = skillValue;
-  });
-  // Store character data in local storage 
-  let characterCount = localStorage.getItem('characterCount') ? parseInt(localStorage.getItem('characterCount'), 10) : 0;
-  characterCount++;
-  localStorage.setItem('characterCount', characterCount);
+      // Coleta os valores dos campos do formulário
+      const name = document.getElementById('char-name').value;
+      const race = document.getElementById('race').value;
+      const past = document.getElementById('past').value;
+      const forLevel = parseInt(document.getElementById('for').value, 10);
+      const desLevel = parseInt(document.getElementById('des').value, 10);
+      const conLevel = parseInt(document.getElementById('con').value, 10);
+      const intLevel = parseInt(document.getElementById('int').value, 10);
+      const sabLevel = parseInt(document.getElementById('sab').value, 10);
+      const carLevel = parseInt(document.getElementById('car').value, 10);
 
-  // Save character data, including all fields
-  localStorage.setItem(`characterData${characterCount}`, JSON.stringify({
-      name: name,
-      race: race,
-      past: past,
-      for: forLevel,
-      des: desLevel,
-      con: conLevel,
-      int: intLevel,
-      sab: sabLevel,
-      car: carLevel,
-      skills: skills, // Adicionando as perícias
+      // Coleta as habilidades do personagem
+      const skills = {};
+      document.querySelectorAll('.pericia').forEach((skillElement) => {
+        const skillName = skillElement.getAttribute('data-name');
+        const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
+        skills[skillName] = skillValue;
+      });
 
-      life: 100,   // Defina o valor inicial da vida
-      sanity: 100, // Defina o valor inicial da sanidade
-      special: 0,  // Defina o valor inicial da especial
-      armor: 0,    // Defina o valor inicial da armadura
-      movement: 0, // Defina o valor inicial do movimento
-      level: 1,     // Defina o nível inicial
-  }));
+      // Salva os dados do personagem
+      let characterCount = localStorage.getItem('characterCount') ? parseInt(localStorage.getItem('characterCount'), 10) : 0;
+      characterCount++; // Incrementa a contagem de personagens
+      localStorage.setItem('characterCount', characterCount);
 
-  // Update character view section with data
-  document.getElementById('char-name-view').textContent = name;
-  document.getElementById('char-race-view').textContent = race;
-  document.getElementById('char-past-view').textContent = past;
+      // Salva os dados no localStorage
+      localStorage.setItem(`characterData${characterCount}`, JSON.stringify({
+        name: name,
+        race: race,
+        past: past,
+        for: forLevel,
+        des: desLevel,
+        con: conLevel,
+        int: intLevel,
+        sab: sabLevel,
+        car: carLevel,
+        skills: skills,
 
-  // Call updateStats to display initial values
-  updateStats();
+        life: 100,
+        sanity: 100,
+        special: 0,
+        armor: 0,
+        movement: 0,
+        level: 1,
+  // ✅ Aqui salva o item equipado
+  equippedItemId: equippedItemId      }));
 
-  // Show success message
-  const saveMessage = document.getElementById('save-message');
-  saveMessage.textContent = 'Personagem salvo!';
-  saveMessage.style.display = 'block';
-  setTimeout(() => {
-      saveMessage.style.display = 'none';
-  }, 5000);
+      // Atualiza a visualização do personagem
+      document.getElementById('char-name-view').textContent = name;
+      document.getElementById('char-race-view').textContent = race;
+      document.getElementById('char-past-view').textContent = past;
+
+      updateStats();
+
+      // Exibe a mensagem de sucesso
+      const saveMessage = document.getElementById('save-message');
+      if (saveMessage) {
+        saveMessage.textContent = 'Personagem salvo!';
+        saveMessage.style.display = 'block';
+        setTimeout(() => {
+          saveMessage.style.display = 'none';
+        }, 5000);
+      }
+    });
+
+    // Marca que o listener foi adicionado para evitar múltiplas adições
+    form._hasListener = true;
+  }
 });
 
 // Function to load characters from local storage
@@ -2407,9 +2823,28 @@ document.getElementById('confirm-load').addEventListener('click', () => {
           Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
             const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
             if (skillElement) {
-                skillElement.innerText = skillValue; // Assuming you're displaying the value in a button
+                skillElement.innerText = skillValue;
             }
-        });
+          });
+
+      // Carregar os dados do item equipado
+      loadEquippedItem(characterData);
+
+      // Carregar as magias e habilidades
+      Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
+        const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
+        if (skillElement) {
+          skillElement.innerText = skillValue;
+        }
+      });
+       // ✅ ADICIONE ISSO AQUI
+       equippedItemId = characterData.equippedItemId || null;
+       if (equippedItemId) {
+         const equippedItem = items.find(item => item.id === equippedItemId);
+         if (equippedItem) {
+           equippedSlot.innerHTML = `<img src="${equippedItem.img}" style="width: 50px;"><div>${equippedItem.name}</div>`;
+         }
+       }
           // Call updateStats to display loaded values
           updateStats();
       }
@@ -2418,97 +2853,7 @@ document.getElementById('confirm-load').addEventListener('click', () => {
   }
 });
 
-// Download character data as JSON file
-document.getElementById('download-character').addEventListener('click', () => {
-  const characterData = {
-      name: document.getElementById('char-name-view').textContent,
-      race: document.getElementById('char-race-view').textContent,
-      past: document.getElementById('char-past-view').textContent,
-      for: parseInt(document.getElementById('for').value, 10),
-      des: parseInt(document.getElementById('des').value, 10),
-      con: parseInt(document.getElementById('con').value, 10),
-      int: parseInt(document.getElementById('int').value, 10),
-      sab: parseInt(document.getElementById('sab').value, 10),
-      car: parseInt(document.getElementById('car').value, 10),
-      life: parseInt(document.getElementById('life-view').textContent, 10),
-      sanity: parseInt(document.getElementById('sanity-view').textContent, 10),
-      special: parseInt(document.getElementById('special-view').textContent, 10),
-      armor: parseInt(document.getElementById('armor-view').textContent, 10),
-      movement: parseInt(document.getElementById('movement-view').textContent, 10),
-      level: parseInt(document.getElementById('level-view').textContent, 10),
-      skills: {} // Inclua as perícias no download
 
-  };
-    // Adiciona as perícias no objeto characterData
-    document.querySelectorAll('.pericia').forEach((skillElement) => {
-      const skillName = skillElement.getAttribute('data-name');
-      const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
-      characterData.skills[skillName] = skillValue;
-  });
-
-  const blob = new Blob([JSON.stringify(characterData, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `${characterData.name}_character.json`; // Nome do arquivo
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-});
-
-// Event listener for uploading character file
-document.getElementById('load-file-character').addEventListener('click', () => {
-  document.getElementById('upload-character').click();
-});
-
-// Handle file upload and load character data
-document.getElementById('upload-character').addEventListener('change', (event) => {
-  const file = event.target.files[0];
-  if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-          const characterData = JSON.parse(e.target.result);
-
-          // Preenche os campos do personagem com os dados carregados
-          document.getElementById('char-name-view').textContent = characterData.name;
-          document.getElementById('char-race-view').textContent = characterData.race;
-          document.getElementById('char-past-view').textContent = characterData.past;
-
-          // Atualiza os campos de input e select com os dados do arquivo
-          document.getElementById('char-name').value = characterData.name;
-          document.getElementById('race').value = characterData.race;
-          document.getElementById('past').value = characterData.past;
-          document.getElementById('for').value = characterData.for;
-          document.getElementById('des').value = characterData.des;
-          document.getElementById('con').value = characterData.con;
-          document.getElementById('int').value = characterData.int;
-          document.getElementById('sab').value = characterData.sab;
-          document.getElementById('car').value = characterData.car;
-
-          // Carrega estatísticas adicionais
-          document.getElementById('life-view').textContent = characterData.life;
-          document.getElementById('sanity-view').textContent = characterData.sanity;
-          document.getElementById('special-view').textContent = characterData.special;
-          document.getElementById('armor-view').textContent = characterData.armor;
-          document.getElementById('movement-view').textContent = characterData.movement;
-          document.getElementById('level-view').textContent = characterData.level;
-
-          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
-            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
-            if (skillElement) {
-                skillElement.innerText = skillValue; // Assuming you're displaying the value in a button
-            }
-        });
-
-          // Atualiza as estatísticas
-          updateStats();
-      };
-
-      reader.readAsText(file);
-  }
-});
 
 
 

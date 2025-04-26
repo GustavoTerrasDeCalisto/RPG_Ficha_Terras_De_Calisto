@@ -526,7 +526,19 @@
                   <h4 class="Bonus-pass-tex" id="bonus-pass-titulo">Bônus de Passado: N/A</h4>
                 </div>
               </section>
-              
+                       <!-- Botão para abrir o popup de itens -->
+
+              <!-- Popup com grid de itens -->
+<div id="itemSelectPopup" class="popup hidden">
+  <div class="popup-content scrollable-grid">
+    <button id="closeItemPopup">Fechar</button>
+
+    <h2>Escolha um Item</h2>
+    <div class="item-grid" id="itemGrid">
+      <!-- Itens vão ser inseridos por JS -->
+    </div>
+  </div>
+</div>
               <section>
                 <button class="expand-btn2" onclick="toggleSection()">
                   Nuncaaaa AAApague isssso, jamaissssss poiss não resolver, aprendi a programar faz 1 mês ,não sei tirar essa pohaaa, pois toda vez que tiro, some as imagens, vai entender XDD
@@ -672,8 +684,37 @@
 <option value="Taverneiro">Taverneiro</option>
 <option value="Tormentalista">Tormentalista</option> 
             </select>
+            
           </div>
-         
+
+
+
+<!-- Popup de descrição -->
+<div id="itemDescPopup" class="popup hidden">
+  <div id="itemDescTitle"></div>
+  <img id="itemDescImage" src="" alt="Item">
+  <div id="itemDescText"></div>
+
+  <!-- Novas informações -->
+  <div id="itemDescDamageType"></div>
+  <div id="itemDescElementalDamage"></div>
+  <div id="itemDescDamageDice"></div>
+  <div id="itemDescRange"></div>
+  <div id="itemDescCritical"></div>
+  <div id="itemDescEquipBonus"></div>
+
+  <button id="equipItem"></button>
+  <button id="closeDescPopup">Fechar</button>
+</div>
+
+<button id="openItemPopup">Equipamento</button>
+
+<!-- Visual do item equipado -->
+<div id="equippedItemDisplay">
+  <h4>Item Equipado:</h4>
+  <div id="equippedItemSlot"></div>
+</div>
+
   
           <div class="form-row">
             <div class="form-group2">
@@ -750,7 +791,8 @@
             </div>
         </div>
 
-        
+        <div id="save-message" style="display: none;"></div>
+
         <!-- gerar imagem-->
         
         

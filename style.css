@@ -1645,20 +1645,3 @@ input[type="number"] {
   }
 }
 
-/* Ajuste para telas menores, como celulares */
-@media (max-width: 768px) {
-  /* Seletores para ajustar os itens de equipamento */
-  .iten-equipamento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  /* Ajustando a grid de itens */
-  .grid-itens {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas no mobile */
-    gap: 10px;
-  }
-}

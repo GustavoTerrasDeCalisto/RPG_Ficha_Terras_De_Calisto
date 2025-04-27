@@ -1716,7 +1716,7 @@ const items = [
     { 
       id: "Forbanna fabelaktig", 
       name: "Forbanna fabelaktig", 
-      desc: "Adaga de Sangue, formada do sangue de uma criatura forte. Só aceita ser empunhada pelos fortes.", 
+      desc: "Adaga de Sangue, formada do sangue de uma criatura forte. Só aceita ser empunhada pelos fortes, necessita ter 28 de Brutalidade e 17 de Determinação.", 
       img: "imagens/Armas/Armas/Forbanna fabelaktig.png", 
       damageType: "3d6", 
       elementalDamage: "1d10+3d6", 
@@ -1764,7 +1764,7 @@ const items = [
     { 
       id: "Slangekjeder", 
       name: "Slangekjeder", 
-      desc: "Correntes ou cobras? Difícil saber. Arma extremamente flexível e letal.", 
+      desc: "Chicote ou cobras? Difícil saber. Arma extremamente flexível e letal.", 
       img: "imagens/Armas/Armas/Slangekjeder.png", 
       damageType: "3d4", 
       elementalDamage: "1d8+3d6", 
@@ -1776,7 +1776,7 @@ const items = [
     { 
       id: "Tapt jegerinne", 
       name: "Tapt jegerinne", 
-      desc: "Espada de vidro da Caçadora Perdida. Dá +4 em investigação sobrenatural.", 
+      desc: "Espada de vidro da Caçadora Perdida. Dá +4 em investigação.", 
       img: "imagens/Armas/Armas/Tapt jegerinne.png", 
       damageType: "1d6", 
       elementalDamage: "2d8+3d6", 
@@ -1800,7 +1800,7 @@ const items = [
     { 
       id: "Onde slem stab", 
       name: "Onde slem stab", 
-      desc: "Cajado perverso que permite usar Sonhos Reais sem custo uma vez ao dia, -2 em carisma.", 
+      desc: "Cajado perverso que permite usar Sonhos Reais sem custo uma vez ao dia, -2 em Conexão.", 
       img: "imagens/Armas/Armas/Onde slem stab.png", 
       damageType: "1d4", 
       elementalDamage: "4d6", 
@@ -1811,14 +1811,14 @@ const items = [
     },{ 
       id: "Requiescens fan", 
       name: "Requiescens fan", 
-      desc: "Leques orientais, antigas dançarinas do oriente do continente oeste desenvolveram uma dança adormecedora, cortes causam Preguiça nos alvos.", 
+      desc: "Leques orientais, antigas dançarinas do oriente do continente oeste desenvolveram uma dança adormecedora, cortes causam a passiva Preguiça nos alvos.", 
       img: "imagens/Armas/Armas/Requiescens fan.png", 
       damageType: "1d8", 
       elementalDamage: "2d8+3d6", 
       damageDice: "Sono", 
       range: "3m", 
       critical: "(18) - Dano(x3)", 
-      equipBonus: "Causa Preguiça nos alvos"
+      equipBonus: "Causa a passiva Preguiça nos alvos"
   },
   
   { 
@@ -1837,14 +1837,14 @@ const items = [
   { 
       id: "Uendelige kutt", 
       name: "Uendelige kutt", 
-      desc: "Cimitarra de mercúrio sombria, lâmina encontrada no pico mais alto das terras de calisto, quem usa essa lâmina tem chance de deixar seu inimigo sangrando 3x crítico.", 
+      desc: "Cimitarra de mercúrio sombria, lâmina encontrada no pico mais alto das terras de calisto, quem usa essa lâmina tem chance de deixar seu inimigo sangrando ao toque (cara ou coroa).", 
       img: "imagens/Armas/Armas/Uendelige kutt.png", 
       damageType: "2d10", 
       elementalDamage: "1d10+3d6", 
       damageDice: "Cortante", 
       range: "1m", 
       critical: "(18) - Dano(x3)", 
-      equipBonus: "Chance de causar sangramento 3x crítico"
+      equipBonus: "Chance de causar sangramento ao toque (cara ou coroa)."
   },{
     id: "Løve retning",
     name: "Løve retning",
@@ -1895,14 +1895,14 @@ const items = [
   {
     id: "Fremtidens bue",
     name: "Fremtidens bue",
-    desc: "Arco vindo de outras regiões. Com esse arco, o usuário recebe +2 em acerto, 3x no crítico e dano adicional da flecha.",
+    desc: "Arco vindo de outras regiões. Com esse arco, o usuário recebe +4 em acerto e dano adicional da flecha.",
     img: "imagens/Armas/Armas/Fremtidens bue.png",
     damageType: "2d12",
     elementalDamage: "2d10+3d6",
     damageDice: "Perfurante",
     range: "8m",
     critical: "(19) - Dano(x3)",
-    equipBonus: "+2 em acerto, crítico x3, adiciona dano da flecha"
+    equipBonus: "+4 em acerto, adiciona dano da flecha"
   },
   {
     id: "hellig chakram",
@@ -1950,7 +1950,7 @@ const items = [
     damageDice: "Gelo",
     range: "1m",
     critical: "(18) - Dano(x3)",
-    equipBonus: "Ganha Vantagem em ataques"
+    equipBonus: "Ganha Vantagem em ataques com ela"
   },
   {
     id: "brannøgleklubb",
@@ -1970,7 +1970,7 @@ const items = [
   { 
       id: "kongen av pierced", 
       name: "kongen av pierced", 
-      desc: "Confeccionada pelo chifre de um dragão oriental muito antigo, a Rapiera antiga dos magos da floresta negra, sua lâmina pode causar envenenado no inimigo, Crítico 3x.", 
+      desc: "Confeccionada pelo chifre de um dragão oriental muito antigo, a Rapiera antiga dos magos da floresta negra, sua lâmina pode causar envenenado no inimigo.", 
       img: "imagens/Armas/Armas/kongen av perforerte.png", 
       damageType: "2d12", 
       elementalDamage: "1d20+3d6", 

@@ -1675,7 +1675,19 @@ const items = [
     range: "1m", 
     critical: "(18) - Dano(x3)", 
     equipBonus: "Ganha 50 de vida temporária" // Adicionando o bônus de equipar
-  },
+  },{
+    id: "Tåkefiolin",
+    name: "Violino da névoa",
+    desc: "Tåkefiolin é um instrumento perdido nas Terras de Calisto. Dizem que ele vaga junto ao som, buscando um portador para tocar a Valsa das Névoas.",
+    img: "imagens/Armas/Armas/Tåkefiolin.png",
+    damageType: "1d4",
+    elementalDamage: "5d6",
+    damageDice: "Névoa",
+    range: "9m",
+    critical: "(20) - Dano(x2)",
+    equipBonus: "Nenhum bônus de equipar" // Se quiser, podemos inventar um bônus aqui!
+  }
+  ,
     { 
       id: "Thorvilles hammer", 
       name: "Thorvilles hammer", 
@@ -1799,7 +1811,7 @@ const items = [
       id: "Requiescens fan", 
       name: "Requiescens fan", 
       desc: "Leques orientais, antigas dançarinas do oriente do continente oeste desenvolveram uma dança adormecedora, cortes causam Preguiça nos alvos.", 
-      img: "imagens/Armas/Armas/Requiescens_fan.png", 
+      img: "imagens/Armas/Armas/Requiescens fan.png", 
       damageType: "1d8", 
       elementalDamage: "2d8+3d6", 
       damageDice: "Sono", 
@@ -1812,7 +1824,7 @@ const items = [
       id: "Mørkt blad av hat", 
       name: "Mørkt blad av hat", 
       desc: "Katana Rancor das eras sombrias, algumas lâminas foram forjadas durante a grande guerra e representam o clima presente nesse período, aqueles que usam essa lâmina é possuído por um ódio inexplicável. (passiva ódio desativa se for desarmado ou guardar a lâmina na bainha).", 
-      img: "imagens/Armas/Armas/Mørkt_blad_av_hat.png", 
+      img: "imagens/Armas/Armas/Mørkt blad av hat.png", 
       damageType: "1d20", 
       elementalDamage: "2d12+3d6", 
       damageDice: "Distorção", 
@@ -1825,20 +1837,140 @@ const items = [
       id: "Uendelige kutt", 
       name: "Uendelige kutt", 
       desc: "Cimitarra de mercúrio sombria, lâmina encontrada no pico mais alto das terras de calisto, quem usa essa lâmina tem chance de deixar seu inimigo sangrando 3x crítico.", 
-      img: "imagens/Armas/Armas/Uendelige_kutt.png", 
+      img: "imagens/Armas/Armas/Uendelige kutt.png", 
       damageType: "2d10", 
       elementalDamage: "1d10+3d6", 
       damageDice: "Cortante", 
       range: "1m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Chance de causar sangramento 3x crítico"
+  },{
+    id: "Løve retning",
+    name: "Løve retning",
+    desc: "Direção do Leão, cestos cobertos por pelos de leão. Aqueles que seguem a vontade dos cestos seguem a do leão. Acertar um golpe no inimigo permite, caso queira, usar sem custo 'Invadir a Mente' no próximo turno.",
+    img: "imagens/Armas/Armas/Løve retning.png",
+    damageType: "3d8",
+    elementalDamage: "4d6",
+    damageDice: "Psicológico",
+    range: "1m",
+    critical: "(17) - Dano(x3)",
+    equipBonus: "Ao acertar um inimigo, pode usar 'Invadir a Mente' sem custo no próximo turno" 
+  },{
+    id: "Calisto Blessing Sickle",
+    name: "Calisto Blessing Sickle",
+    desc: "Foice da benção sagrada de Calisto. Não se sabe o quão real é essa foice, porém todos que a empunham ficam resistentes à escuridão (recebem metade do dano de escuridão).",
+    img: "imagens/Armas/Armas/Calisto Blessing Sickle.png",
+    damageType: "1d20",
+    elementalDamage: "2d20+3d6",
+    damageDice: "Sagrado",
+    range: "1,5m",
+    critical: "(18) - Dano(x4)",
+    equipBonus: "Resistência à escuridão (recebe metade do dano de escuridão)"
+  },{
+    id: "Skyggefull tåkepisk",
+    name: "Skyggefull tåkepisk",
+    desc: "Chicote de espinhos da Nebula, antiga rainha de um reino esquecido. Atingir um inimigo causa espinhos sombrios por todo o corpo do alvo, podendo imobilizá-lo caso deseje.",
+    img: "imagens/Armas/Armas/skyggefull tåkepisk.png",
+    damageType: "1d6",
+    elementalDamage: "5d6+3d6",
+    damageDice: "Névoa",
+    range: "3m",
+    critical: "(19) - Dano(x3)",
+    equipBonus: "Ao atingir um inimigo, pode optar por imobilizá-lo com espinhos sombrios"
+  }
+  
+  ,{
+    id: "donnie darko øks",
+    name: "Donnie darko øks",
+    desc: "Dizem que esse machado foi criado por um ser viajante, vindo de outras terras. Sua habilidade torna o usuário super forte: ao chegar seu turno, cura metade do dano recebido enquanto não era seu turno. Após agir, pode se teleportar para a posição original.",
+    img: "imagens/Armas/Armas/donnie darko øks.png",
+    damageType: "2d12",
+    elementalDamage: "1d12+3d6",
+    damageDice: "Aura",
+    range: "1m",
+    critical: "(18) - Dano(x3)",
+    equipBonus: "Cura metade do dano recebido antes do turno e pode teleportar de volta após agir"
   },
+  {
+    id: "Fremtidens bue",
+    name: "Fremtidens bue",
+    desc: "Arco vindo de outras regiões. Com esse arco, o usuário recebe +2 em acerto, 3x no crítico e dano adicional da flecha.",
+    img: "imagens/Armas/Armas/Fremtidens bue.png",
+    damageType: "2d12",
+    elementalDamage: "2d10+3d6",
+    damageDice: "Perfurante",
+    range: "8m",
+    critical: "(19) - Dano(x3)",
+    equipBonus: "+2 em acerto, crítico x3, adiciona dano da flecha"
+  },
+  {
+    id: "hellig chakram",
+    name: "Hellig chakram",
+    desc: "Chakram vindo dos céus. Dizem que surge quando um servo divino está em apuros.",
+    img: "imagens/Armas/Armas/hellig chakram.png",
+    damageType: "4d6",
+    elementalDamage: "1d8+3d6",
+    damageDice: "Luz",
+    range: "5m",
+    critical: "(17) - Dano(x3)",
+    equipBonus: "Nenhum bônus de equipar"
+  },
+  {
+    id: "Vannpistol",
+    name: "Vannpistol",
+    desc: "Pistola aparentemente inofensiva. Apesar de ninguém recarregá-la, misteriosamente sempre se enche de água.",
+    img: "imagens/Armas/Armas/Vannpistol.png",
+    damageType: "1d4",
+    elementalDamage: "9d6",
+    damageDice: "Água",
+    range: "6m",
+    critical: "(19) - Dano(x3)",
+    equipBonus: "Não precisa ser recarregada (sempre cheia)"
+  },
+  {
+    id: "tomt grep",
+    name: "Tomt grep",
+    desc: "Apesar de ser apenas o cabo de uma espada antiga, quando empunhada ela transmite uma luz que se molda no formato de uma lâmina brilhosa.",
+    img: "imagens/Armas/Armas/tomt grep.png",
+    damageType: "–",
+    elementalDamage: "3d12+3d6",
+    damageDice: "Laser",
+    range: "2m",
+    critical: "(18) - Dano(x5)",
+    equipBonus: "Espada de luz é criada ao empunhar"
+  },
+  {
+    id: "uovervinnelig ødelagt is",
+    name: "Uovervinnelig ødelagt is",
+    desc: "Luva de material suspeito, dizem que é indestrutível. Ganha Vantagem usando essa luva (joga dois dados e escolhe o melhor resultado).",
+    img: "imagens/Armas/Armas/uovervinnelig ødelagt is.png",
+    damageType: "2d6",
+    elementalDamage: "1d12+3d6",
+    damageDice: "Gelo",
+    range: "1m",
+    critical: "(18) - Dano(x3)",
+    equipBonus: "Ganha Vantagem em ataques"
+  },
+  {
+    id: "brannøgleklubb",
+    name: "brannøgleklubb",
+    desc: "Clava de fogo vinda da cauda de um lagarto gigante que viveu no reino dos anões. Ganha a magia 'Fogo Vivo'.",
+    img: "imagens/Armas/Armas/brannøgleklubb.png",
+    damageType: "2d10",
+    elementalDamage: "1d12+3d6",
+    damageDice: "Fogo",
+    range: "2m",
+    critical: "(19) - Dano(x3)",
+    equipBonus: "Concede a magia 'Fogo Vivo'"
+  }
+  
+  ,
   
   { 
       id: "kongen av pierced", 
       name: "kongen av pierced", 
       desc: "Confeccionada pelo chifre de um dragão oriental muito antigo, a Rapiera antiga dos magos da floresta negra, sua lâmina pode causar envenenado no inimigo, Crítico 3x.", 
-      img: "imagens/Armas/Armas/kongen_av_pierced.png", 
+      img: "imagens/Armas/Armas/kongen av perforerte.png", 
       damageType: "2d12", 
       elementalDamage: "1d20+3d6", 
       damageDice: "Perfurante", 
@@ -1851,7 +1983,7 @@ const items = [
       id: "munk av mount ryogi", 
       name: "munk av mount ryogi", 
       desc: "Bastão do antigo monge, um dos lendários lutadores do reino leste, o rei dos gigantes uma vez fez negócios com esse monge e confeccionou essa arma para ele, as marcas tentam deixar o inimigo louco +1d8 de dano sanidade nos inimigos.", 
-      img: "imagens/Armas/Armas/munk_av_mount_ryogi.png", 
+      img: "imagens/Armas/Armas/munk av mount ryogi.png", 
       damageType: "2d12", 
       elementalDamage: "1d8+3d6", 
       damageDice: "Mental", 
@@ -1955,27 +2087,83 @@ const items = [
   //em andamento
 ];
 
+
+
+const resistenciaColors = {
+    "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
+  "Ácido": { background: "#A5D6A7", color: "#1B5E20" }, // Verde ácido
+  "Fogo": { background: "#FF7043", color: "#BF360C" }, // Laranja vibrante para fogo
+  "Água": { background: "#81D4FA", color: "#01579B" }, // Azul aquático
+  "Eletricidade": { background: "#FFD600", color: "#F57F17" }, // Amarelo eletrizante
+  "Tempestade": { background: "#7E57C2", color: "#311B92" }, // Roxo tempestuoso
+  "Sangue": { background: "#D50000", color: "#FFFFFF" }, // Vermelho sangue
+  "Luz": { background: "#FFF59D", color: "#37474F" }, // Amarelo claro, tom suave
+  "Maldição": { background: "#512DA8", color: "#CE93D8" }, // Roxo sombrio
+  "Sagrado": { background: "#FFEB3B", color: "#5D4037" }, // Amarelo dourado
+  "Laser": { background: "#00E5FF", color: "#004D40" }, // Azul neon para laser
+  "Alma": { background: "#CE93D8", color: "#4A148C" }, // Roxo etéreo
+  "Escuridão": { background: "#263238", color: "#B0BEC5" }, // Preto acinzentado
+  "Plasma": { background: "#E1F5FE", color: "#0277BD" }, // Azul claro e intenso
+  "Tremor": { background: "#8D6E63", color: "#3E2723" }, // Marrom rochoso
+  "Aura": { background: "#FFF8E1", color: "#4E342E" }, // Amarelo suave e radiante
+  "Psicológico": { background: "#F48FB1", color: "#880E4F" }, // Rosa profundo
+  "Mental": { background: "#B0BEC5", color: "#263238" }, // Cinza azulado, neutro
+  "Distorção": { background: "#A1887F", color: "#D7CCC8" }, // Cinza com tom distorcido
+  "Névoa": { background: "#CFD8DC", color: "#455A64" }, // Cinza nebuloso
+  "Sono": { background: "#D1C4E9", color: "#4A148C" }, // Lilás suave
+  "Balístico": { background: "#BDBDBD", color: "#424242" }, // Cinza chumbo
+  "Perfurante": { background: "#90A4AE", color: "#263238" }, // Cinza azulado e sólido
+  "Cortante": { background: "#37474F", color: "#FFFFFF" }, // Cinza aço
+  "Esmagante": { background: "#ECEFF1", color: "#78909C" }, // Cinza claro e concreto
+  "Cinzas": { background: "#B0BEC5", color: "#455A64" }, // Cinza suave, quase esfumaçado
+  "Morte": { background: "#424242", color: "#D32F2F" }, // Cinza escuro com vermelho
+  "Eclipse": { background: "#212121", color: "#FFA000" }, // Cinza profundo com toque de dourado
+  "N/A": { background: "#f0f0f0", color: "#333333" } // Padrão para sem resistência
+};
 const itemGrid = document.getElementById('itemGrid');
 const descPopup = document.getElementById('itemDescPopup');
 const equipBtn = document.getElementById('equipItem');
 const equippedSlot = document.getElementById('equippedItemSlot');
 
-// Preenche a grid de itens
-items.forEach(item => {
+function createItemCard(item) {
   const card = document.createElement('div');
   card.className = 'item-card';
-  card.innerHTML = `<img src="${item.img}"><div>${item.name}</div>`;
+
+  const img = document.createElement('img');
+  img.src = item.img;
+  card.appendChild(img);
+
+  const title = document.createElement('h3');
+  title.textContent = item.name;
+  card.appendChild(title);
+
+  const damageDice = document.createElement('div');
+  const colors = resistenciaColors[item.damageDice] || resistenciaColors["N/A"];
+  damageDice.textContent = item.damageDice;
+  damageDice.style.backgroundColor = colors.background;
+  damageDice.style.color = colors.color;
+  damageDice.style.padding = "4px";
+  damageDice.style.borderRadius = "8px";
+  damageDice.style.marginTop = "5px";
+  damageDice.style.fontSize = "0.9em";
+  card.appendChild(damageDice);
+
+  // >>> adiciona o click para abrir a descrição
   card.addEventListener('click', () => showItemDesc(item));
-  itemGrid.appendChild(card);
+
+  return card;
+}
+
+// Preenche a grid de itens
+items.forEach(item => {
+  itemGrid.appendChild(createItemCard(item));
 });
 
 function showItemDesc(item) {
-  // Atualiza o título e a descrição do item
   document.getElementById('itemDescTitle').textContent = item.name;
   document.getElementById('itemDescText').textContent = item.desc;
   document.getElementById('itemDescImage').src = item.img;
 
-  // Adicionando as novas informações
   const damageTypeElem = document.getElementById('itemDescDamageType');
   const elementalDamageElem = document.getElementById('itemDescElementalDamage');
   const damageDiceElem = document.getElementById('itemDescDamageDice');
@@ -1983,7 +2171,6 @@ function showItemDesc(item) {
   const criticalElem = document.getElementById('itemDescCritical');
   const equipBonusElem = document.getElementById('itemDescEquipBonus');
   
-  // Preenche os campos com os valores do item
   damageTypeElem.textContent = `Dano Físico: ${item.damageType || 'N/A'}`;
   elementalDamageElem.textContent = `Dano Elemental: ${item.elementalDamage || 'N/A'}`;
   damageDiceElem.textContent = `Tipo de Dano: ${item.damageDice || 'N/A'}`;
@@ -1991,13 +2178,11 @@ function showItemDesc(item) {
   criticalElem.textContent = `Crítico: ${item.critical || 'N/A'}`;
   equipBonusElem.textContent = `Bônus ao Equipar: ${item.equipBonus || 'Nenhum'}`;
 
-  // Altera o texto do botão de Equipar/Remover dependendo do estado
   equipBtn.textContent = item.id === equippedItemId ? "Remover" : "Equipar";
 
-  // Ação do botão de Equipar/Remover
   equipBtn.onclick = (event) => {
-    event.preventDefault(); // Impede a propagação do evento de clique
-    event.stopPropagation(); // Impede que o evento se propague para outros elementos
+    event.preventDefault();
+    event.stopPropagation();
 
     if (equippedItemId === item.id) {
       equippedItemId = null;
@@ -2005,14 +2190,15 @@ function showItemDesc(item) {
     } else {
       equippedItemId = item.id;
       equippedSlot.innerHTML = `<img src="${item.img}" style="width: 50px;"><div>${item.name}</div>`;
-   
     }
     descPopup.classList.add('hidden');
   };
 
-  // Exibe o popup
   descPopup.classList.remove('hidden');
 }
+
+// Funções de carregar o item salvo e abrir/fechar popups continuam iguais
+
 
 // Função para carregar o item equipado do armazenamento
 function loadEquippedItem() {
@@ -2065,38 +2251,6 @@ document.getElementById('closeDescPopup').addEventListener('click', (event) => {
   descPopup.classList.add('hidden');
 });
 
-
-const resistenciaColors = {
-    "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
-  "Ácido": { background: "#A5D6A7", color: "#1B5E20" }, // Verde ácido
-  "Fogo": { background: "#FF7043", color: "#BF360C" }, // Laranja vibrante para fogo
-  "Água": { background: "#81D4FA", color: "#01579B" }, // Azul aquático
-  "Eletricidade": { background: "#FFD600", color: "#F57F17" }, // Amarelo eletrizante
-  "Tempestade": { background: "#7E57C2", color: "#311B92" }, // Roxo tempestuoso
-  "Sangue": { background: "#D50000", color: "#FFFFFF" }, // Vermelho sangue
-  "Luz": { background: "#FFF59D", color: "#37474F" }, // Amarelo claro, tom suave
-  "Maldição": { background: "#512DA8", color: "#CE93D8" }, // Roxo sombrio
-  "Sagrado": { background: "#FFEB3B", color: "#5D4037" }, // Amarelo dourado
-  "Laser": { background: "#00E5FF", color: "#004D40" }, // Azul neon para laser
-  "Alma": { background: "#CE93D8", color: "#4A148C" }, // Roxo etéreo
-  "Escuridão": { background: "#263238", color: "#B0BEC5" }, // Preto acinzentado
-  "Plasma": { background: "#E1F5FE", color: "#0277BD" }, // Azul claro e intenso
-  "Tremor": { background: "#8D6E63", color: "#3E2723" }, // Marrom rochoso
-  "Aura": { background: "#FFF8E1", color: "#4E342E" }, // Amarelo suave e radiante
-  "Psicológico": { background: "#F48FB1", color: "#880E4F" }, // Rosa profundo
-  "Mental": { background: "#B0BEC5", color: "#263238" }, // Cinza azulado, neutro
-  "Distorção": { background: "#A1887F", color: "#D7CCC8" }, // Cinza com tom distorcido
-  "Névoa": { background: "#CFD8DC", color: "#455A64" }, // Cinza nebuloso
-  "Sono": { background: "#D1C4E9", color: "#4A148C" }, // Lilás suave
-  "Balístico": { background: "#BDBDBD", color: "#424242" }, // Cinza chumbo
-  "Perfurante": { background: "#90A4AE", color: "#263238" }, // Cinza azulado e sólido
-  "Cortante": { background: "#37474F", color: "#FFFFFF" }, // Cinza aço
-  "Esmagante": { background: "#ECEFF1", color: "#78909C" }, // Cinza claro e concreto
-  "Cinzas": { background: "#B0BEC5", color: "#455A64" }, // Cinza suave, quase esfumaçado
-  "Morte": { background: "#424242", color: "#D32F2F" }, // Cinza escuro com vermelho
-  "Eclipse": { background: "#212121", color: "#FFA000" }, // Cinza profundo com toque de dourado
-  "N/A": { background: "#f0f0f0", color: "#333333" } // Padrão para sem resistência
-};
 
 // Função para calcular os atributos base
 function calculateBaseAttributes(race, past) {

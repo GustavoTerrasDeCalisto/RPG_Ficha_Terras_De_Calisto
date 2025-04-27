@@ -2160,6 +2160,8 @@ items.forEach(item => {
 });
 
 function showItemDesc(item) {
+  console.log("Exibindo o popup de descrição");
+
   document.getElementById('itemDescTitle').textContent = item.name;
   document.getElementById('itemDescText').textContent = item.desc;
   document.getElementById('itemDescImage').src = item.img;

@@ -1567,11 +1567,11 @@ button:hover {
   }
 
   #itemDescPopup {
-    width: 90%; /* Ajusta a largura para 90% da tela no mobile */
-    max-width: none; /* Remove o limite de largura máximo */
-    padding: 15px; /* Reduz o padding para otimizar o espaço */
-    max-height: 80vh; /* Ajusta a altura máxima para 80% da altura da tela */
+    width: 100%;
+    padding: 20px;
+    max-height: 90vh;
   }
+
 
   #itemDescPopup h2 {
     font-size: 1.2em;

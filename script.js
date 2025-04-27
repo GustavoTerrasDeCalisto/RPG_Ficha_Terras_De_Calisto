@@ -1662,6 +1662,7 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
   
   
 };
+let equippedItemId = null;
 
 const items = [
   { 
@@ -2986,13 +2987,7 @@ document.getElementById('confirm-load').addEventListener('click', () => {
       // Carregar os dados do item equipado
       loadEquippedItem(characterData);
 
-      // Carregar as magias e habilidades
-      Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
-        const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
-        if (skillElement) {
-          skillElement.innerText = skillValue;
-        }
-      });
+
        // ✅ ADICIONE ISSO AQUI
        equippedItemId = characterData.equippedItemId || null;
        if (equippedItemId) {
@@ -3021,98 +3016,6 @@ document.getElementById('confirm-load').addEventListener('click', () => {
 
 // Event listener for closing the character selection section
 // ... (We'll add this back later when we work on loading)
-// Download character data as JSON file
-document.getElementById('download-character').addEventListener('click', () => {
-  const characterData = {
-      name: document.getElementById('char-name-view').textContent,
-      race: document.getElementById('char-race-view').textContent,
-      past: document.getElementById('char-past-view').textContent,
-      for: parseInt(document.getElementById('for').value, 10),
-      des: parseInt(document.getElementById('des').value, 10),
-      con: parseInt(document.getElementById('con').value, 10),
-      int: parseInt(document.getElementById('int').value, 10),
-      sab: parseInt(document.getElementById('sab').value, 10),
-      car: parseInt(document.getElementById('car').value, 10),
-      life: parseInt(document.getElementById('life-view').textContent, 10),
-      sanity: parseInt(document.getElementById('sanity-view').textContent, 10),
-      special: parseInt(document.getElementById('special-view').textContent, 10),
-      armor: parseInt(document.getElementById('armor-view').textContent, 10),
-      movement: parseInt(document.getElementById('movement-view').textContent, 10),
-      level: parseInt(document.getElementById('level-view').textContent, 10),
-      skills: {} // Inclua as perícias no download
-
-  };
-    // Adiciona as perícias no objeto characterData
-    document.querySelectorAll('.pericia').forEach((skillElement) => {
-      const skillName = skillElement.getAttribute('data-name');
-      const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
-      characterData.skills[skillName] = skillValue;
-  });
-
-  const blob = new Blob([JSON.stringify(characterData, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `${characterData.name}_character.json`; // Nome do arquivo
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-});
-
-// Event listener for uploading character file
-document.getElementById('load-file-character').addEventListener('click', () => {
-  document.getElementById('upload-character').click();
-});
-
-// Handle file upload and load character data
-document.getElementById('upload-character').addEventListener('change', (event) => {
-  const file = event.target.files[0];
-  if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-          const characterData = JSON.parse(e.target.result);
-
-          // Preenche os campos do personagem com os dados carregados
-          document.getElementById('char-name-view').textContent = characterData.name;
-          document.getElementById('char-race-view').textContent = characterData.race;
-          document.getElementById('char-past-view').textContent = characterData.past;
-
-          // Atualiza os campos de input e select com os dados do arquivo
-          document.getElementById('char-name').value = characterData.name;
-          document.getElementById('race').value = characterData.race;
-          document.getElementById('past').value = characterData.past;
-          document.getElementById('for').value = characterData.for;
-          document.getElementById('des').value = characterData.des;
-          document.getElementById('con').value = characterData.con;
-          document.getElementById('int').value = characterData.int;
-          document.getElementById('sab').value = characterData.sab;
-          document.getElementById('car').value = characterData.car;
-
-          // Carrega estatísticas adicionais
-          document.getElementById('life-view').textContent = characterData.life;
-          document.getElementById('sanity-view').textContent = characterData.sanity;
-          document.getElementById('special-view').textContent = characterData.special;
-          document.getElementById('armor-view').textContent = characterData.armor;
-          document.getElementById('movement-view').textContent = characterData.movement;
-          document.getElementById('level-view').textContent = characterData.level;
-
-          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
-            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
-            if (skillElement) {
-                skillElement.innerText = skillValue; // Assuming you're displaying the value in a button
-            }
-        });
-
-          // Atualiza as estatísticas
-          updateStats();
-      };
-
-      reader.readAsText(file);
-  }
-});
-
 
 // Event listener for confirming load
 // ... (We'll add this back later when we work on loading)

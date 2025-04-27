@@ -1566,10 +1566,11 @@ button:hover {
     width: 90%; /* Aumenta um pouco a largura das imagens */
   }
 
-  #itemDescPopup {
-    width: 100%;
-    padding: 20px;
-    max-height: 90vh;
+ #itemDescPopup {
+    width: 95%; /* Ajusta a largura para 90% da tela no mobile */
+    max-width: none; /* Remove o limite de largura máximo */
+    padding: 5px; /* Reduz o padding para otimizar o espaço */
+    max-height: 90vh; /* Ajusta a altura máxima para 90% da altura da tela */
   }
 
 

@@ -1569,22 +1569,22 @@ button:hover {
  #itemDescPopup {
     width: 95%; /* Ajusta a largura para 90% da tela no mobile */
     max-width: none; /* Remove o limite de largura máximo */
-    padding: 5px; /* Reduz o padding para otimizar o espaço */
+    padding:10px; /* Reduz o padding para otimizar o espaço */
     max-height: 90vh; /* Ajusta a altura máxima para 90% da altura da tela */
   }
 
 
   #itemDescPopup h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   #itemDescPopup .desc-text,
   #itemDescPopup .desc-details {
-    font-size: 0.95em;
+    font-size: 0.80em;
   }
 
   #itemDescImage {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin-bottom: 15px;
   }

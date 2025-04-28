@@ -1686,7 +1686,7 @@ const items = [
     damageDice: "Névoa",
     range: "9m",
     critical: "(20) - Dano(x2)",
-    equipBonus: "Nenhum bônus de equipar" // Se quiser, podemos inventar um bônus aqui!
+    equipBonus: "Ataca com som" // Se quiser, podemos inventar um bônus aqui!
   }
   ,
     { 
@@ -2069,20 +2069,8 @@ const items = [
       range: "1m", 
       critical: "(20) - Dano(x2)", 
       equipBonus: "Ganha 2 de armadura temporária"
-  },
-  
-  { 
-      id: "Tåkefiolin", 
-      name: "Tåkefiolin", 
-      desc: "Tåkefiolin é um instrumento perdido nas Terras de Calisto, dizem que ele vaga junto ao som buscando um portador para tocar a Valsa das névoas.", 
-      img: "imagens/Armas/Armas/Tåkefiolin.png", 
-      damageType: "1d4", 
-      elementalDamage: "2d6+3d6", 
-      damageDice: "Névoa", 
-      range: "9m", 
-      critical: "(20) - Dano(x2)", 
-      equipBonus: "Toca a Valsa das névoas"
   }
+  
   
   
   //em andamento

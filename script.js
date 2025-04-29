@@ -1676,7 +1676,9 @@ const items = [
     range: "1m", 
     critical: "(18) - Dano(x3)", 
     equipBonus: "Ganha 50 de vida temporária" // Adicionando o bônus de equipar
-  },{
+  ,TipoItem:"Lendário"
+  },
+  {
     id: "Tåkefiolin",
     name: "Violino da névoa",
     desc: "Tåkefiolin é um instrumento perdido nas Terras de Calisto. Dizem que ele vaga junto ao som, buscando um portador para tocar a Valsa das Névoas.",
@@ -1687,8 +1689,8 @@ const items = [
     range: "9m",
     critical: "(20) - Dano(x2)",
     equipBonus: "Ataca com som" // Se quiser, podemos inventar um bônus aqui!
-  }
-  ,
+  ,TipoItem:"Lendário"
+  },
     { 
       id: "Thorvilles hammer", 
       name: "Thorvilles hammer", 
@@ -1700,7 +1702,8 @@ const items = [
       range: "2m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Skytten torden pierce", 
       name: "Skytten torden pierce", 
@@ -1712,7 +1715,8 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Forbanna fabelaktig", 
       name: "Forbanna fabelaktig", 
@@ -1724,7 +1728,8 @@ const items = [
       range: "—", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Tropisk jordskjelv", 
       name: "Tropisk jordskjelv", 
@@ -1736,7 +1741,8 @@ const items = [
       range: "2m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Bannestokk", 
       name: "Bannestokk", 
@@ -1748,7 +1754,8 @@ const items = [
       range: "5m", 
       critical: "(17) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "storm gud", 
       name: "storm gud", 
@@ -1760,7 +1767,8 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Slangekjeder", 
       name: "Slangekjeder", 
@@ -1772,7 +1780,8 @@ const items = [
       range: "1,5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Tapt jegerinne", 
       name: "Tapt jegerinne", 
@@ -1784,7 +1793,8 @@ const items = [
       range: "1m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "+4 em testes de Investigação" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "arven etter den dømte kongen", 
       name: "arven etter den dømte kongen", 
@@ -1796,7 +1806,8 @@ const items = [
       range: "2m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    },
+    ,TipoItem:"Lendário"
+  },
     { 
       id: "Onde slem stab", 
       name: "Onde slem stab", 
@@ -1808,7 +1819,9 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "Pode usar Sonhos Reais 1x por dia sem custo" 
-    },{ 
+    ,TipoItem:"Lendário"
+  },
+  { 
       id: "Requiescens fan", 
       name: "Requiescens fan", 
       desc: "Leques orientais, antigas dançarinas do oriente do continente oeste desenvolveram uma dança adormecedora, cortes causam a passiva Preguiça nos alvos.", 
@@ -1819,6 +1832,7 @@ const items = [
       range: "3m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa a passiva Preguiça nos alvos"
+  ,TipoItem:"Lendário"
   },
   
   { 
@@ -1832,6 +1846,7 @@ const items = [
       range: "1,5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Possui ódio desativado se desarmado ou guardado"
+  ,TipoItem:"Lendário"
   },
   
   { 
@@ -1845,7 +1860,9 @@ const items = [
       range: "1m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Chance de causar sangramento ao toque (cara ou coroa)."
-  },{
+  ,TipoItem:"Lendário"
+  },
+  {
     id: "Løve retning",
     name: "Løve retning",
     desc: "Direção do Leão, cestos cobertos por pelos de leão. Aqueles que seguem a vontade dos cestos seguem a do leão. Acertar um golpe no inimigo permite, caso queira, usar sem custo 'Invadir a Mente' no próximo turno.",
@@ -1856,7 +1873,9 @@ const items = [
     range: "1m",
     critical: "(17) - Dano(x3)",
     equipBonus: "Ao acertar um inimigo, pode usar 'Invadir a Mente' sem custo no próximo turno" 
-  },{
+  ,TipoItem:"Lendário"
+  },
+  {
     id: "Calisto Blessing Sickle",
     name: "Calisto Blessing Sickle",
     desc: "Foice da benção sagrada de Calisto. Não se sabe o quão real é essa foice, porém todos que a empunham ficam resistentes à escuridão (recebem metade do dano de escuridão).",
@@ -1867,7 +1886,9 @@ const items = [
     range: "1,5m",
     critical: "(18) - Dano(x4)",
     equipBonus: "Resistência à escuridão (recebe metade do dano de escuridão)"
-  },{
+  ,TipoItem:"Lendário"
+  },
+  {
     id: "Skyggefull tåkepisk",
     name: "Skyggefull tåkepisk",
     desc: "Chicote de espinhos da Nebula, antiga rainha de um reino esquecido. Atingir um inimigo causa espinhos sombrios por todo o corpo do alvo, podendo imobilizá-lo caso deseje.",
@@ -1878,9 +1899,9 @@ const items = [
     range: "3m",
     critical: "(19) - Dano(x3)",
     equipBonus: "Ao atingir um inimigo, pode optar por imobilizá-lo com espinhos sombrios"
-  }
-  
-  ,{
+  ,TipoItem:"Lendário"
+  },
+  {
     id: "donnie darko øks",
     name: "Donnie darko øks",
     desc: "Dizem que esse machado foi criado por um ser viajante, vindo de outras terras. Sua habilidade torna o usuário super forte: ao chegar seu turno, cura metade do dano recebido enquanto não era seu turno. Após agir, pode se teleportar para a posição original.",
@@ -1891,6 +1912,7 @@ const items = [
     range: "1m",
     critical: "(18) - Dano(x3)",
     equipBonus: "Cura metade do dano recebido antes do turno e pode teleportar de volta após agir"
+  ,TipoItem:"Lendário"
   },
   {
     id: "Fremtidens bue",
@@ -1903,6 +1925,7 @@ const items = [
     range: "8m",
     critical: "(19) - Dano(x3)",
     equipBonus: "+4 em acerto, adiciona dano da flecha"
+    ,TipoItem:"Lendário"
   },
   {
     id: "hellig chakram",
@@ -1915,6 +1938,7 @@ const items = [
     range: "5m",
     critical: "(17) - Dano(x3)",
     equipBonus: "Nenhum bônus de equipar"
+    ,TipoItem:"Lendário"
   },
   {
     id: "Vannpistol",
@@ -1927,6 +1951,7 @@ const items = [
     range: "6m",
     critical: "(19) - Dano(x3)",
     equipBonus: "Não precisa ser recarregada (sempre cheia)"
+    ,TipoItem:"Lendário"
   },
   {
     id: "tomt grep",
@@ -1939,6 +1964,7 @@ const items = [
     range: "2m",
     critical: "(18) - Dano(x5)",
     equipBonus: "Espada de luz é criada ao empunhar"
+    ,TipoItem:"Lendário"
   },
   {
     id: "uovervinnelig ødelagt is",
@@ -1951,6 +1977,7 @@ const items = [
     range: "1m",
     critical: "(18) - Dano(x3)",
     equipBonus: "Ganha Vantagem em ataques com ela"
+    ,TipoItem:"Lendário"
   },
   {
     id: "brannøgleklubb",
@@ -1963,9 +1990,8 @@ const items = [
     range: "2m",
     critical: "(19) - Dano(x3)",
     equipBonus: "Concede a magia 'Fogo Vivo'"
-  }
-  
-  ,
+    ,TipoItem:"Lendário"
+  },
   
   { 
       id: "kongen av pierced", 
@@ -1978,6 +2004,7 @@ const items = [
       range: "1,5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa envenenado no inimigo"
+    ,TipoItem:"Lendário"
   },
   
   { 
@@ -1991,6 +2018,7 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "+1d8 de dano sanidade nos inimigos"
+    ,TipoItem:"Lendário"
   },
   
   { 
@@ -2004,6 +2032,7 @@ const items = [
       range: "5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa dano extra na sanidade do inimigo"
+    ,TipoItem:"Lendário"
   },
   
   { 
@@ -2017,6 +2046,7 @@ const items = [
       range: "5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Cura o valor do dano extra na sua sanidade"
+    ,TipoItem:"Lendário"
   },
   
   { 
@@ -2030,6 +2060,7 @@ const items = [
       range: "2m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Resistência para danos de Maldição"
+  ,TipoItem:"Lendário"
   },
   
   { 
@@ -2043,6 +2074,7 @@ const items = [
       range: "3m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Lâmina chicote com alcance alto"
+  ,TipoItem:"Lendário"
   },
   
   { 

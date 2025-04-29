@@ -1676,7 +1676,7 @@ const items = [
     range: "1m", 
     critical: "(18) - Dano(x3)", 
     equipBonus: "Ganha 50 de vida temporária" // Adicionando o bônus de equipar
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,melee"
   },
   {
     id: "Tåkefiolin",
@@ -1689,7 +1689,7 @@ const items = [
     range: "9m",
     critical: "(20) - Dano(x2)",
     equipBonus: "Ataca com som" // Se quiser, podemos inventar um bônus aqui!
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Distância"
   },
     { 
       id: "Thorvilles hammer", 
@@ -1702,7 +1702,7 @@ const items = [
       range: "2m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "Skytten torden pierce", 
@@ -1715,7 +1715,7 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "Forbanna fabelaktig", 
@@ -1728,7 +1728,7 @@ const items = [
       range: "—", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "Tropisk jordskjelv", 
@@ -1741,7 +1741,7 @@ const items = [
       range: "2m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "Bannestokk", 
@@ -1754,7 +1754,7 @@ const items = [
       range: "5m", 
       critical: "(17) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Distância"
   },
     { 
       id: "storm gud", 
@@ -1767,7 +1767,7 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Distância"
   },
     { 
       id: "Slangekjeder", 
@@ -1780,7 +1780,7 @@ const items = [
       range: "1,5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "Tapt jegerinne", 
@@ -1793,7 +1793,7 @@ const items = [
       range: "1m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "+4 em testes de Investigação" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "arven etter den dømte kongen", 
@@ -1806,12 +1806,12 @@ const items = [
       range: "2m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
     { 
       id: "Onde slem stab", 
       name: "Onde slem stab", 
-      desc: "Cajado perverso que permite usar Sonhos Reais sem custo uma vez ao dia, -2 em Conexão.", 
+      desc: "Cajado perverso que permite usar a magia Sonhos Reais sem custo uma vez ao dia, -2 em Conexão.", 
       img: "imagens/Armas/Armas/Onde slem stab.png", 
       damageType: "1d4", 
       elementalDamage: "4d6", 
@@ -1819,7 +1819,7 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "Pode usar Sonhos Reais 1x por dia sem custo" 
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
   { 
       id: "Requiescens fan", 
@@ -1832,7 +1832,7 @@ const items = [
       range: "3m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa a passiva Preguiça nos alvos"
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Medieval"
   },
   
   { 
@@ -1846,7 +1846,7 @@ const items = [
       range: "1,5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Possui ódio desativado se desarmado ou guardado"
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,melee"
   },
   
   { 
@@ -1860,7 +1860,7 @@ const items = [
       range: "1m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Chance de causar sangramento ao toque (cara ou coroa)."
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Medieval"
   },
   {
     id: "Løve retning",
@@ -1873,7 +1873,7 @@ const items = [
     range: "1m",
     critical: "(17) - Dano(x3)",
     equipBonus: "Ao acertar um inimigo, pode usar 'Invadir a Mente' sem custo no próximo turno" 
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Medieval"
   },
   {
     id: "Calisto Blessing Sickle",
@@ -1886,7 +1886,7 @@ const items = [
     range: "1,5m",
     critical: "(18) - Dano(x4)",
     equipBonus: "Resistência à escuridão (recebe metade do dano de escuridão)"
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Medieval,melee"
   },
   {
     id: "Skyggefull tåkepisk",
@@ -1899,7 +1899,7 @@ const items = [
     range: "3m",
     critical: "(19) - Dano(x3)",
     equipBonus: "Ao atingir um inimigo, pode optar por imobilizá-lo com espinhos sombrios"
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Distância"
   },
   {
     id: "donnie darko øks",
@@ -1912,7 +1912,7 @@ const items = [
     range: "1m",
     critical: "(18) - Dano(x3)",
     equipBonus: "Cura metade do dano recebido antes do turno e pode teleportar de volta após agir"
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,melee"
   },
   {
     id: "Fremtidens bue",
@@ -1925,7 +1925,7 @@ const items = [
     range: "8m",
     critical: "(19) - Dano(x3)",
     equipBonus: "+4 em acerto, adiciona dano da flecha"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Distância"
   },
   {
     id: "hellig chakram",
@@ -1938,7 +1938,7 @@ const items = [
     range: "5m",
     critical: "(17) - Dano(x3)",
     equipBonus: "Nenhum bônus de equipar"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee,Distância"
   },
   {
     id: "Vannpistol",
@@ -1951,7 +1951,7 @@ const items = [
     range: "6m",
     critical: "(19) - Dano(x3)",
     equipBonus: "Não precisa ser recarregada (sempre cheia)"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Distância,gun"
   },
   {
     id: "tomt grep",
@@ -1964,7 +1964,7 @@ const items = [
     range: "2m",
     critical: "(18) - Dano(x5)",
     equipBonus: "Espada de luz é criada ao empunhar"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
   {
     id: "uovervinnelig ødelagt is",
@@ -1977,7 +1977,7 @@ const items = [
     range: "1m",
     critical: "(18) - Dano(x3)",
     equipBonus: "Ganha Vantagem em ataques com ela"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Medieval"
   },
   {
     id: "brannøgleklubb",
@@ -1990,7 +1990,7 @@ const items = [
     range: "2m",
     critical: "(19) - Dano(x3)",
     equipBonus: "Concede a magia 'Fogo Vivo'"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Medieval"
   },
   
   { 
@@ -2004,7 +2004,7 @@ const items = [
       range: "1,5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa envenenado no inimigo"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Medieval"
   },
   
   { 
@@ -2018,7 +2018,7 @@ const items = [
       range: "1m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "+1d8 de dano sanidade nos inimigos"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,melee"
   },
   
   { 
@@ -2032,7 +2032,7 @@ const items = [
       range: "5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa dano extra na sanidade do inimigo"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendári,Distância,melee"
   },
   
   { 
@@ -2046,7 +2046,7 @@ const items = [
       range: "5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Cura o valor do dano extra na sua sanidade"
-    ,TipoItem:"Lendário"
+    ,TipoItem:"Lendário,Distância,melee"
   },
   
   { 
@@ -2060,7 +2060,7 @@ const items = [
       range: "2m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Resistência para danos de Maldição"
-  ,TipoItem:"Lendário"
+  ,TipoItem:"Lendário,Medieval"
   },
   
   { 
@@ -2074,7 +2074,7 @@ const items = [
       range: "3m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Lâmina chicote com alcance alto"
-  ,TipoItem:"Lendário"
+,TipoItem:"Lendário,melee"
   },
   
   { 
@@ -2088,7 +2088,7 @@ const items = [
       range: "8m", 
       critical: "(19) - Dano(x3)", 
       equipBonus: "Imunidade a danos de Eletricidade",
-      TipoItem:"Lendário"
+      TipoItem:"Lendário,Medieval"
   },
   
   { 
@@ -2102,7 +2102,7 @@ const items = [
       range: "1m", 
       critical: "(20) - Dano(x2)", 
       equipBonus: "Ganha 2 de armadura temporária",
-      TipoItem:"Clássica"
+      TipoItem:"Clássica,Medieval"
   },
   {
   id: "Pathfinder22",

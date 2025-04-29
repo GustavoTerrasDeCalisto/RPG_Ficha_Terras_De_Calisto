@@ -2133,6 +2133,7 @@ function createItemCard(item) {
   const card = document.createElement('div');
   card.className = 'item-card';
 
+  // Cria a tag do tipo do item
   const itemTypeTag = document.createElement('div');
   itemTypeTag.textContent = item.TipoItem || "Clássica";
   itemTypeTag.style.fontWeight = "bold";
@@ -2144,6 +2145,7 @@ function createItemCard(item) {
   itemTypeTag.style.width = "fit-content";
   itemTypeTag.style.margin = "0 auto 6px";
 
+  // Define as cores com base no tipo
   switch (item.TipoItem) {
     case "Lendário":
       itemTypeTag.style.backgroundColor = "#FFD700"; // gold
@@ -2153,14 +2155,6 @@ function createItemCard(item) {
       itemTypeTag.style.backgroundColor = "#C0C0C0"; // silver
       itemTypeTag.style.color = "#000";
       break;
-    case "Armas":
-      itemTypeTag.style.backgroundColor = "#90A4AE"; // Armas
-      itemTypeTag.style.color = "#fff";
-      break;
-    case "Medieval":
-      itemTypeTag.style.backgroundColor = "#8D6E63"; // Medieval
-      itemTypeTag.style.color = "#fff";
-      break;
     case "Clássica":
     default:
       itemTypeTag.style.backgroundColor = "#cd7f32"; // bronze
@@ -2169,8 +2163,6 @@ function createItemCard(item) {
   }
 
   card.appendChild(itemTypeTag);
-  return card;
-}
 
   const img = document.createElement('img');
   img.src = item.img;
@@ -2195,7 +2187,8 @@ function createItemCard(item) {
   card.addEventListener('click', () => showItemDesc(item));
 
   return card;
-    }
+}
+
 
 // Preenche a grid de itens
 items.forEach(item => {

@@ -2115,7 +2115,7 @@ const items = [
   range: "6m",
   critical: "(19) - Dano(x2)",
   equipBonus: "1 tiro com vantagem, 1 tiro com desvantagem",
-  TipoItem: "Distância"
+  TipoItem: "Distância,Gun"
   }
   
   
@@ -2162,39 +2162,79 @@ const equipBtn = document.getElementById('equipItem');
 const equippedSlot = document.getElementById('equippedItemSlot');
 
 function createItemCard(item) {
+function createItemCard(item) {
   const card = document.createElement('div');
   card.className = 'item-card';
 
-  // Cria a tag do tipo do item
-  const itemTypeTag = document.createElement('div');
-  itemTypeTag.textContent = item.TipoItem || "Clássica";
-  itemTypeTag.style.fontWeight = "bold";
-  itemTypeTag.style.textAlign = "center";
-  itemTypeTag.style.borderRadius = "6px";
-  itemTypeTag.style.padding = "2px 6px";
-  itemTypeTag.style.marginBottom = "4px";
-  itemTypeTag.style.fontSize = "0.8em";
-  itemTypeTag.style.width = "fit-content";
-  itemTypeTag.style.margin = "0 auto 6px";
+  // Container para as tags
+  const tagsContainer = document.createElement('div');
+  tagsContainer.style.display = "flex";
+  tagsContainer.style.flexWrap = "wrap";
+  tagsContainer.style.justifyContent = "center";
+  tagsContainer.style.gap = "4px";
+  tagsContainer.style.marginBottom = "6px";
 
-  // Define as cores com base no tipo
-  switch (item.TipoItem) {
-    case "Lendário":
-      itemTypeTag.style.backgroundColor = "#FFD700"; // gold
-      itemTypeTag.style.color = "#000";
-      break;
-    case "Distância":
-      itemTypeTag.style.backgroundColor = "#C0C0C0"; // silver
-      itemTypeTag.style.color = "#000";
-      break;
-    case "Clássica":
-    default:
-      itemTypeTag.style.backgroundColor = "#cd7f32"; // bronze
-      itemTypeTag.style.color = "#fff";
-      break;
-  }
+  const tipos = (item.TipoItem || "Clássica").split(',');
+  tipos.forEach(tipo => {
+    const trimmedTipo = tipo.trim();
+    const tag = document.createElement('div');
 
-  card.appendChild(itemTypeTag);
+    // Traduções ou renomeações
+    let label = trimmedTipo;
+    if (label.toLowerCase() === "gun") label = "Arma";
+    if (label.toLowerCase() === "melee") label = "Corpo a Corpo";
+
+    tag.textContent = label;
+    tag.style.fontWeight = "bold";
+    tag.style.borderRadius = "6px";
+    tag.style.padding = "2px 6px";
+    tag.style.fontSize = "0.8em";
+    tag.style.width = "fit-content";
+    tag.style.display = "inline-block";
+
+    // Cores por tipo
+    switch (label) {
+      case "Lendária":
+        tag.style.backgroundColor = "#FFD700";
+        tag.style.color = "#000";
+        break;
+      case "Normal":
+        tag.style.backgroundColor = "#ccc";
+        tag.style.color = "#000";
+        break;
+      case "Distância":
+        tag.style.backgroundColor = "#87CEEB";
+        tag.style.color = "#000";
+        break;
+      case "Corpo a Corpo":
+        tag.style.backgroundColor = "#DC143C";
+        tag.style.color = "#fff";
+        break;
+      case "Arma":
+        tag.style.backgroundColor = "#708090";
+        tag.style.color = "#fff";
+        break;
+      case "Clássica":
+        tag.style.backgroundColor = "#cd7f32";
+        tag.style.color = "#fff";
+        break;
+      case "Medieval":
+        tag.style.backgroundColor = "#8B4513";
+        tag.style.color = "#fff";
+        break;
+      default:
+        tag.style.backgroundColor = "#444";
+        tag.style.color = "#fff";
+        break;
+    }
+
+    tagsContainer.appendChild(tag);
+  });
+
+  card.appendChild(tagsContainer);
+
+  // (Depois disso, você adiciona imagem, nome, descrição etc. como antes)
+  
 
   const img = document.createElement('img');
   img.src = item.img;

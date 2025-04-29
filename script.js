@@ -2115,7 +2115,7 @@ const items = [
   range: "6m",
   critical: "(19) - Dano(x2)",
   equipBonus: "1 tiro com vantagem, 1 tiro com desvantagem",
-  TipoItem: "Distância,Gun"
+  TipoItem: "Distância,gun"
   }
   
   

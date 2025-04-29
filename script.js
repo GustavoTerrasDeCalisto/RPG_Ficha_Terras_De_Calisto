@@ -2083,7 +2083,7 @@ const items = [
   range: "6m",
   critical: "(19) - Dano(x2)",
   equipBonus: "1 tiro com vantagem, 1 tiro com desvantagem",
-  TipoItem: "Ranged"
+  TipoItem: "Distância"
   }
   
   
@@ -2151,13 +2151,23 @@ function createItemCard(item) {
       itemTypeTag.style.backgroundColor = "#FFD700"; // gold
       itemTypeTag.style.color = "#000";
       break;
-    case "Ranged":
+    case "Distância":
       itemTypeTag.style.backgroundColor = "#C0C0C0"; // silver
       itemTypeTag.style.color = "#000";
       break;
-    case "Normal":
+    case "Clássica":
     default:
       itemTypeTag.style.backgroundColor = "#cd7f32"; // bronze
+      itemTypeTag.style.color = "#fff";
+      break;
+      case "Armas":
+    default:
+      itemTypeTag.style.backgroundColor = "#90A4AE"; // Armas
+      itemTypeTag.style.color = "#fff";
+      break;
+      case "Medieval":
+    default:
+      itemTypeTag.style.backgroundColor = "#8D6E63"; // Medieval
       itemTypeTag.style.color = "#fff";
       break;
   }

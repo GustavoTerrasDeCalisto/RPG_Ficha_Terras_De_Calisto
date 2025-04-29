@@ -3110,9 +3110,11 @@ const resistenciaColors = {
   "N/A": { background: "#f0f0f0", color: "#333333" } // Padrão para sem resistência
 };
 const itemGrid = document.getElementById('itemGrid');
+const itemFilter = document.getElementById('itemFilter');
 const descPopup = document.getElementById('itemDescPopup');
 const equipBtn = document.getElementById('equipItem');
 const equippedSlot = document.getElementById('equippedItemSlot');
+
 
 
 function createItemCard(item) {
@@ -3190,7 +3192,9 @@ function createItemCard(item) {
   
 
   const img = document.createElement('img');
-  img.src = item.img;
+img.src = item.img;
+img.loading = "lazy"; // Ativa o lazy loading
+
   card.appendChild(img);
 
   const title = document.createElement('h3');
@@ -3287,6 +3291,41 @@ function loadEquippedItem() {
 document.addEventListener('DOMContentLoaded', () => {
   loadEquippedItem();
 });
+
+
+// Extrai todos os tipos únicos
+const tiposUnicos = new Set();
+items.forEach(item => {
+  (item.TipoItem || "Clássica").split(',').forEach(t => tiposUnicos.add(t.trim()));
+});
+
+// Preenche o filtro
+tiposUnicos.forEach(tipo => {
+  const option = document.createElement('option');
+  option.value = tipo;
+  option.textContent = tipo;
+  itemFilter.appendChild(option);
+});
+
+// Função de renderização com filtro
+function renderItems(filter = "Todos") {
+  itemGrid.innerHTML = ''; // limpa grid
+
+  items.forEach(item => {
+    const tipos = (item.TipoItem || "Clássica").split(',').map(t => t.trim());
+    if (filter === "Todos" || tipos.includes(filter)) {
+      itemGrid.appendChild(createItemCard(item));
+    }
+  });
+}
+
+// Evento ao mudar o filtro
+itemFilter.addEventListener('change', () => {
+  renderItems(itemFilter.value);
+});
+
+// Renderiza inicialmente
+renderItems();
 
 
 // Mostrar/esconder os popups

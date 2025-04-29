@@ -2161,7 +2161,7 @@ const descPopup = document.getElementById('itemDescPopup');
 const equipBtn = document.getElementById('equipItem');
 const equippedSlot = document.getElementById('equippedItemSlot');
 
-function createItemCard(item) {
+
 function createItemCard(item) {
   const card = document.createElement('div');
   card.className = 'item-card';

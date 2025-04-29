@@ -2055,7 +2055,8 @@ const items = [
       damageDice: "Eletricidade", 
       range: "8m", 
       critical: "(19) - Dano(x3)", 
-      equipBonus: "Imunidade a danos de Eletricidade"
+      equipBonus: "Imunidade a danos de Eletricidade",
+      TipoItem:"Lendário"
   },
   
   { 
@@ -2068,7 +2069,8 @@ const items = [
       damageDice: "Esmagante", 
       range: "1m", 
       critical: "(20) - Dano(x2)", 
-      equipBonus: "Ganha 2 de armadura temporária"
+      equipBonus: "Ganha 2 de armadura temporária",
+      TipoItem:"Normal"
   }
   
   
@@ -2118,6 +2120,37 @@ function createItemCard(item) {
   const card = document.createElement('div');
   card.className = 'item-card';
 
+  // Cria a tag do tipo do item
+  const itemTypeTag = document.createElement('div');
+  itemTypeTag.textContent = item.TipoItem || "Normal";
+  itemTypeTag.style.fontWeight = "bold";
+  itemTypeTag.style.textAlign = "center";
+  itemTypeTag.style.borderRadius = "6px";
+  itemTypeTag.style.padding = "2px 6px";
+  itemTypeTag.style.marginBottom = "4px";
+  itemTypeTag.style.fontSize = "0.8em";
+  itemTypeTag.style.width = "fit-content";
+  itemTypeTag.style.margin = "0 auto 6px";
+
+  // Define as cores com base no tipo
+  switch (item.TipoItem) {
+    case "Lendário":
+      itemTypeTag.style.backgroundColor = "#FFD700"; // gold
+      itemTypeTag.style.color = "#000";
+      break;
+    case "Ranged":
+      itemTypeTag.style.backgroundColor = "#C0C0C0"; // silver
+      itemTypeTag.style.color = "#000";
+      break;
+    case "Normal":
+    default:
+      itemTypeTag.style.backgroundColor = "#cd7f32"; // bronze
+      itemTypeTag.style.color = "#fff";
+      break;
+  }
+
+  card.appendChild(itemTypeTag);
+
   const img = document.createElement('img');
   img.src = item.img;
   card.appendChild(img);
@@ -2137,11 +2170,11 @@ function createItemCard(item) {
   damageDice.style.fontSize = "0.9em";
   card.appendChild(damageDice);
 
-  // >>> adiciona o click para abrir a descrição
+  // Adiciona o evento de clique
   card.addEventListener('click', () => showItemDesc(item));
 
   return card;
-}
+    }
 
 // Preenche a grid de itens
 items.forEach(item => {

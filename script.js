@@ -2071,6 +2071,19 @@ const items = [
       critical: "(20) - Dano(x2)", 
       equipBonus: "Ganha 2 de armadura temporária",
       TipoItem:"Normal"
+  },
+  {
+  id: "Pathfinder22",
+  name: "Pathfinder (.22)",
+  desc: "Revólver calibre .22 conhecido por sua leveza. Capacidade de 6 tiros, com chance de vantagem no primeiro disparo e desvantagem no segundo.",
+  img: "imagens/Armas/Armas/Pathfinder22.png", // adapte o caminho se necessário
+  damageType: "1d12",
+  elementalDamage: "–",
+  damageDice: "Perfurante",
+  range: "6m",
+  critical: "(19) - Dano(x2)",
+  equipBonus: "1 tiro com vantagem, 1 tiro com desvantagem",
+  TipoItem: "Ranged"
   }
   
   

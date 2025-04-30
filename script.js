@@ -3149,7 +3149,7 @@ function createItemCard(item) {
 
     // Cores por tipo
 switch (label) {
-  case "Lendária":
+  case "Lendário":
     tag.classList.add("prismatic"); // Gradiente animado
     tag.style.color = "#fff";
     break;

@@ -2924,7 +2924,7 @@ const items = [
     "range": "30m",
     "critical": "(20) - Dano(x2)",
     "equipBonus": "4 tiros com desvantagem",
-    "TipoItem": "Distância,Arma"
+    "TipoItem": "Lendário,Distância,Arma"
   },
   {
     "id": "M2HB",
@@ -2937,7 +2937,7 @@ const items = [
     "range": "33m",
     "critical": "(20) - Dano(x1)",
     "equipBonus": "6 tiros com desvantagem",
-    "TipoItem": "Distância,Arma"
+    "TipoItem": "Lendário,Distância,Arma"
   },
   {
     "id": "M72A3LAW",
@@ -2950,7 +2950,7 @@ const items = [
     "range": "45m",
     "critical": "(20) - Dano(x1)",
     "equipBonus": "1 tiro normal",
-    "TipoItem": "Distância,Arma"
+    "TipoItem": "Lendário,Distância,Arma"
   },
   {
     "id": "M79",
@@ -2963,7 +2963,7 @@ const items = [
     "range": "21m",
     "critical": "(20) - Dano(x1)",
     "equipBonus": "1 tiro normal",
-    "TipoItem": "Distância,Arma"
+    "TipoItem": "Lendário,Distância,Arma"
   },
   {
     "id": "ArcoComposto",
@@ -2976,7 +2976,7 @@ const items = [
     "range": "12m",
     "critical": "(20) - Dano(x3)",
     "equipBonus": "1 flecha por turno",
-    "TipoItem": "Distância,Medieval"
+    "TipoItem": "Lendário,Distância,Medieval"
   },
   {
     "id": "Besta",
@@ -3005,30 +3005,17 @@ const items = [
     "TipoItem": "Distância,Arma"
   },
   {
-    "id": "Azagaia",
-    "name": "Azagaia",
-    "desc": "",
-    "img": "imagens/Armas/Armas/Azagaia.png",
-    "damageType": "1d6+3d4",
-    "elementalDamage": "–",
-    "damageDice": "Perfurante",
-    "range": "9m",
-    "critical": "(18) - Dano(x2)",
-    "equipBonus": "–",
-    "TipoItem": "Distância,Medieval"
-  },
-  {
     "id": "SpraydePimenta",
     "name": "Spray de Pimenta",
     "desc": "",
     "img": "imagens/Armas/Armas/SpraydePimenta.png",
-    "damageType": "1d4 + 1d4 P/T",
+    "damageType": "2d4",
     "elementalDamage": "–",
     "damageDice": "Ácido",
     "range": "1.5m",
-    "critical": "(18) - Dano(x2)",
+    "critical": "(10) - Dano(x3)",
     "equipBonus": "1 uso por turno",
-    "TipoItem": "Distância,Arma"
+    "TipoItem": "Lendário,Distância,Arma"
   },
   {
     "id": "Shuriken",
@@ -3054,7 +3041,7 @@ const items = [
     "range": "2.5m",
     "critical": "(19) - Dano(x3)",
     "equipBonus": "1 tiro normal",
-    "TipoItem": "Distância,Arma"
+    "TipoItem": "Lendário,Distância,Arma"
   },
   {
     "id": "Chicote",

@@ -2709,7 +2709,7 @@ const items = [
     "id": "AKM/AK-47",
     "name": "AKM/AK-47",
     "desc": "",
-    "img": "imagens/Armas/Armas/AKM/AK-47.png",
+    "img": "imagens/Armas/Armas/AK-47.png",
     "damageType": "3d8",
     "elementalDamage": "–",
     "damageDice": "Balístico",

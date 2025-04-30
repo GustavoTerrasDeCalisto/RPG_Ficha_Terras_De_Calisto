@@ -1544,24 +1544,31 @@ button:hover {
 /* Slot de item equipado */
 #equippedItemSlot {
   display: flex;
-  align-items: center;
-  padding: 10px;
-  border: 2px solid #444;
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaço entre imagem e texto */
   background-color: #f5f5f5;
-  margin-top: 20px;
-  border-radius: 8px;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: fit-content;
+  min-height: 60px;
+  margin-top: 15px;
 }
 
 #equippedItemSlot img {
   width: 50px;
-  height: auto;
-  margin-right: 10px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 #equippedItemSlot div {
-  font-size: 1.2em;
-  color: #333;
+  font-size: 1em;
+  color: #222;
+  font-weight: bold;
 }
+
 
 /* RESPONSIVO para telas menores */
 /* Responsivo para telas menores */
@@ -1610,24 +1617,33 @@ button:hover {
     margin-bottom: 15px;
   }
 
-  #equippedItemSlot {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px;
-    margin-top: 15px;
-  }
+#equippedItemSlot {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaço entre imagem e texto */
+  background-color: #f5f5f5;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: fit-content;
+  min-height: 60px;
+  margin-top: 15px;
+}
 
+#equippedItemSlot img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
+#equippedItemSlot div {
+  font-size: 1em;
+  color: #222;
+  font-weight: bold;
+}
 
-
-  #equippedItemSlot img {
-    width: 40px; /* Ajusta o tamanho da imagem do item equipado */
-  }
-
-  #equippedItemSlot div {
-    font-size: 1.1em;
-    color: #333;
-  }
 
   /* Adicionando um ajuste de layout para o conteúdo da descrição */
   .desc-text, .desc-details {

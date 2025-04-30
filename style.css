@@ -1380,6 +1380,27 @@ button:hover {
   overflow-y: auto;  /* Permite o scroll quando necessário */
 }
 /* Grid de Itens */
+
+
+@keyframes prism-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.prismatic {
+  background: linear-gradient(270deg, 
+    #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #cc33ff, #ff0000);
+  background-size: 600% 600%;
+  color: #fff;
+  animation: prism-shine 5s linear infinite;
+  border: 1px solid #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  font-weight: bold;
+}
 .item-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1778,23 +1799,5 @@ input[type="number"] {
 
 
 
-@keyframes prism-shine {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
 
-.prismatic {
-  background: linear-gradient(270deg, 
-    #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #cc33ff, #ff0000);
-  background-size: 600% 600%;
-  color: #fff;
-  animation: prism-shine 5s linear infinite;
-  border: 1px solid #fff;
-  box-shadow: 0 0 8px rgba(255,255,255,0.6);
-  font-weight: bold;
-}
 

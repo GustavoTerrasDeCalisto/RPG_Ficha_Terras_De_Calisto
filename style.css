@@ -1542,32 +1542,41 @@ button:hover {
 }
 
 /* Slot de item equipado */
+#equippedItemDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 20px;
+}
+
 #equippedItemSlot {
-  display: flex;
-  align-items: center; /* Alinha verticalmente */
-  gap: 10px; /* Espaço entre imagem e texto */
-  background-color: #f5f5f5;
-  border: 2px solid #999;
-  border-radius: 10px;
-  padding: 10px 15px;
-  width: fit-content;
-  min-height: 60px;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza conteúdo internamente */
+  gap: 10px;
+  background-color: #f5f5f5;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 300px; /* Largura mínima fixa */
+  min-height: 70px; /* Altura mínima fixa */
+  transition: all 0.3s ease;
 }
 
 #equippedItemSlot img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 #equippedItemSlot div {
-  font-size: 1em;
-  color: #222;
-  font-weight: bold;
+  font-size: 1em;
+  color: #222;
+  font-weight: bold;
 }
+
 
 
 /* RESPONSIVO para telas menores */
@@ -1617,32 +1626,41 @@ button:hover {
     margin-bottom: 15px;
   }
 
+#equippedItemDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 20px;
+}
+
 #equippedItemSlot {
-  display: flex;
-  align-items: center; /* Alinha verticalmente */
-  gap: 10px; /* Espaço entre imagem e texto */
-  background-color: #f5f5f5;
-  border: 2px solid #999;
-  border-radius: 10px;
-  padding: 10px 15px;
-  width: fit-content;
-  min-height: 60px;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza conteúdo internamente */
+  gap: 10px;
+  background-color: #f5f5f5;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 300px; /* Largura mínima fixa */
+  min-height: 70px; /* Altura mínima fixa */
+  transition: all 0.3s ease;
 }
 
 #equippedItemSlot img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 #equippedItemSlot div {
-  font-size: 1em;
-  color: #222;
-  font-weight: bold;
+  font-size: 1em;
+  color: #222;
+  font-weight: bold;
 }
+
 
 
   /* Adicionando um ajuste de layout para o conteúdo da descrição */

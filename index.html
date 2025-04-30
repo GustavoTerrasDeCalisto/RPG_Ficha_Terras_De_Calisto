@@ -529,20 +529,17 @@
                        <!-- Botão para abrir o popup de itens -->
 
               <!-- Popup com grid de itens -->
+              <!-- Popup com grid de itens -->
 <div id="itemSelectPopup" class="popup hidden">
-<!-- Popup com grid de itens -->
-<div id="itemSelectPopup" class="popup hidden">
-  <div class="popup-content">
+  <div class="popup-content scrollable-grid">
     <button id="closeItemPopup">Fechar</button>
 
     <h2>Escolha um Item</h2>
+      <select id="itemFilter">
+  <option value="Todos">Todos os Tipos</option>
+</select>
 
-    <select id="itemFilter">
-      <option value="Todos">Todos os Tipos</option>
-    </select>
-
-    <!-- Scroll apenas na grid, não no popup todo -->
-    <div class="item-grid scrollable-grid" id="itemGrid">
+    <div class="item-grid" id="itemGrid">
       <!-- Itens vão ser inseridos por JS -->
     </div>
   </div>

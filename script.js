@@ -1963,7 +1963,7 @@ const items = [
     "range": "3m",
     "critical": "20 - Dano(x2)",
     "equipBonus": "-",
-    "TipoItem": "Distância,Clássica"
+    "TipoItem": "Lendário,Distância,Clássica"
   },
   {
     "id": "funda",

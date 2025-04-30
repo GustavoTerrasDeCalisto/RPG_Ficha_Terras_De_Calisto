@@ -1595,7 +1595,7 @@ button:hover {
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
   .item-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas no mobile */
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas no mobile */
     gap: 10px;
     max-height: 400px;
   }

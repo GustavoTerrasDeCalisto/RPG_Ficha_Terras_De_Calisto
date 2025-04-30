@@ -1676,20 +1676,20 @@ const items = [
     "damageDice": "Cortante",
     "range": "3m",
     "critical": "18 - Dano(x2)",
-    "equipBonus": "Leve, fácil de esconder",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
     "id": "ataqueDesarmado",
     "name": "Ataque Desarmado",
-    "desc": "Golpes com o corpo, usados sem armas.",
+    "desc": "Golpes com o corpo, sem armas.",
     "img": "imagens/Armas/Simples/ataquedesarmado.png",
     "damageType": "1d4+1d8+3d4",
     "elementalDamage": "–",
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "18 - Dano(x2)",
-    "equipBonus": "Utilizável mesmo sem estar armado",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1702,7 +1702,7 @@ const items = [
     "damageDice": "Perfurante",
     "range": "–",
     "critical": "18 - Dano(x2)",
-    "equipBonus": "Boa para esgrima",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1715,7 +1715,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "18 - Dano(x2)",
-    "equipBonus": "Pode ser usada com armaduras",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1728,7 +1728,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Seguro para lutas de treinamento",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1738,10 +1738,23 @@ const items = [
     "img": "imagens/Armas/Simples/machado.png",
     "damageType": "1d6+1d10+3d4",
     "elementalDamage": "–",
-    "damageDice": "Esmagante",
+    "damageDice": "Cortante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Alto impacto contra armaduras",
+    "equipBonus": "-",
+    "TipoItem": "Corpo a Corpo,Clássica"
+  },
+  {
+    "id": "machadoGrande",
+    "name": "Machado Grande",
+    "desc": "Arma de uma mão com excelente poder de corte e impacto.",
+    "img": "imagens/Armas/Simples/machadoGrande.png",
+    "damageType": "1d6+1d12+3d4",
+    "elementalDamage": "–",
+    "damageDice": "Cortante",
+    "range": "–",
+    "critical": "20 - Dano(x3)",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1754,7 +1767,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Improvisada e disfarçada",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1767,7 +1780,7 @@ const items = [
     "damageDice": "Perfurante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Versátil e equilibrada",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1780,7 +1793,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Fácil de fabricar",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1793,7 +1806,7 @@ const items = [
     "damageDice": "Perfurante",
     "range": "6m",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Versátil: corpo a corpo e distância",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1806,7 +1819,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Boa contra inimigos com armadura",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1819,7 +1832,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x3)",
-    "equipBonus": "Poderosa mas pesada",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1832,7 +1845,7 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Boa defesa e ataque",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1845,7 +1858,7 @@ const items = [
     "damageDice": "Perfurante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Alcance ampliado",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
@@ -1858,124 +1871,124 @@ const items = [
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "19 - Dano(x2)",
-    "equipBonus": "Rústica, mas letal",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
     "id": "lancaAdaga",
-    "name": "Lança a Adaga",
+    "name": "Adaga de Arremesso",
     "desc": "Arremessável com precisão e perfuração elevada.",
-    "img": "imagens/Armas/Distancia/lancaadaga.png",
+    "img": "imagens/Armas/Simples/lancaadaga.png",
     "damageType": "1d12+4d4",
     "elementalDamage": "–",
     "damageDice": "Perfurante",
     "range": "3m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Ideal para emboscadas",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
     "id": "pedras",
     "name": "Pedras",
     "desc": "Improvisadas mas úteis para ataque à distância.",
-    "img": "imagens/Armas/Distancia/pedras.png",
+    "img": "imagens/Armas/Simples/pedras.png",
     "damageType": "9d4",
     "elementalDamage": "–",
     "damageDice": "Esmagante",
     "range": "3m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Disponíveis em qualquer lugar",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
     "id": "chakram",
     "name": "Chakram",
     "desc": "Disco cortante arremessável.",
-    "img": "imagens/Armas/Distancia/chakram.png",
+    "img": "imagens/Armas/Simples/chakram.png",
     "damageType": "7d6",
     "elementalDamage": "–",
     "damageDice": "Cortante",
     "range": "–",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Boa curva e ricochete",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
     "id": "azagaia",
     "name": "Azagaia",
     "desc": "Lança curta e leve, ideal para arremesso.",
-    "img": "imagens/Armas/Distancia/azagaia.png",
+    "img": "imagens/Armas/Simples/azagaia.png",
     "damageType": "1d6+1d10+3d4",
     "elementalDamage": "–",
     "damageDice": "Perfurante",
     "range": "9m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Boa mobilidade",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
     "id": "algemas",
     "name": "Algemas",
     "desc": "Usadas de forma improvisada para conter e atacar.",
-    "img": "imagens/Armas/Improvisadas/algemas.png",
+    "img": "imagens/Armas/Simples/algemas.png",
     "damageType": "1d8+3d4",
     "elementalDamage": "–",
     "damageDice": "Esmagante",
     "range": "2m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Imobilização e ataque",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
     "id": "cabacaKarakia",
     "name": "Cabaça Karakia",
-    "desc": "Arma tribal simbólica com poder físico e místico.",
-    "img": "imagens/Armas/Improvisadas/cabacakarakia.png",
+    "desc": "Um pequeno pote de vinho, e muito resistente, mesmo com arremesso ou impacto continua intacto e místico, pode ser usado para arremessar, porém todo vinho dentro dele sempre fica aguado.",
+    "img": "imagens/Armas/Simples/cabacakarakia.png",
     "damageType": "1d8+3d4",
     "elementalDamage": "–",
     "damageDice": "Esmagante",
     "range": "–",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Usada em rituais",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
   {
     "id": "craniodefogo",
     "name": "Crânio de Fogo Alquímico",
     "desc": "Artefato explosivo usado em combates mágicos.",
-    "img": "imagens/Armas/Distancia/craniofogo.png",
+    "img": "imagens/Armas/Simples/craniofogo.png",
     "damageType": "1d6+1d10+3d4",
     "elementalDamage": "Fogo",
     "damageDice": "Fogo",
     "range": "3m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Área e queimadura",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
     "id": "funda",
     "name": "Funda",
     "desc": "Arma de arremesso de pedras ou projéteis pequenos.",
-    "img": "imagens/Armas/Distancia/funda.png",
+    "img": "imagens/Armas/Simples/funda.png",
     "damageType": "1d12+1d6+3d4",
     "elementalDamage": "–",
     "damageDice": "Esmagante",
     "range": "15m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Alcance médio, recarga rápida",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
     "id": "granadaRudimentar",
     "name": "Granada Rudimentar",
     "desc": "Dispositivo explosivo primitivo de curto alcance.",
-    "img": "imagens/Armas/Distancia/granada.png",
+    "img": "imagens/Armas/Simples/granada.png",
     "damageType": "4d12+3d4",
     "elementalDamage": "–",
     "damageDice": "Distorção",
     "range": "3m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Dano em área",
+    "equipBonus": "-",
     "TipoItem": "Distância,Clássica"
   },
   {
@@ -1988,7 +2001,7 @@ const items = [
     "damageDice": "Cortante",
     "range": "2m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "Alta precisão e estilo",
+    "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Medieval"
   }
 
@@ -2393,7 +2406,7 @@ const items = [
   { 
       id: "Komplett Karakia-gresskar", 
       name: "Komplett Karakia-gresskar", 
-      desc: "Cabaça Karakia completa, uma pequena cabaça com punhal, quando completa sai dela um fio de água formando uma lâmina chicote que possui um alcance alto.", 
+      desc: "Cabaça Karakia completa, uma pequena cabaça com runas, quando completa sai dela um fio de água formando uma lâmina chicote que possui um alcance alto.", 
       img: "imagens/Armas/Armas/Komplett_Karakia_gresskar.png", 
       damageType: "1d10", 
       elementalDamage: "3d8+3d6", 

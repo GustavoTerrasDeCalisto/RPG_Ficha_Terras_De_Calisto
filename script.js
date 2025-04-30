@@ -2359,7 +2359,7 @@ const items = [
       range: "5m", 
       critical: "(18) - Dano(x3)", 
       equipBonus: "Causa dano extra na sanidade do inimigo"
-    ,TipoItem:"Lendári,Distância,Corpo a Corpo"
+    ,TipoItem:"Lendário,Distância,Corpo a Corpo"
   },
   
   { 

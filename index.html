@@ -530,15 +530,24 @@
 
               <!-- Popup com grid de itens -->
 <div id="itemSelectPopup" class="popup hidden">
-  <div class="popup-content scrollable-grid">
+<!-- Popup com grid de itens -->
+<div id="itemSelectPopup" class="popup hidden">
+  <div class="popup-content">
     <button id="closeItemPopup">Fechar</button>
 
     <h2>Escolha um Item</h2>
-    <div class="item-grid" id="itemGrid">
+
+    <select id="itemFilter">
+      <option value="Todos">Todos os Tipos</option>
+    </select>
+
+    <!-- Scroll apenas na grid, não no popup todo -->
+    <div class="item-grid scrollable-grid" id="itemGrid">
       <!-- Itens vão ser inseridos por JS -->
     </div>
   </div>
 </div>
+
               <section>
                 <button class="expand-btn2" onclick="toggleSection()">
                   Nuncaaaa AAApague isssso, jamaissssss poiss não resolver, aprendi a programar faz 1 mês ,não sei tirar essa pohaaa, pois toda vez que tiro, some as imagens, vai entender XDD
@@ -714,6 +723,7 @@
   <h4>Item Equipado:</h4>
   <div id="equippedItemSlot"></div>
 </div>
+
 
   
           <div class="form-row">

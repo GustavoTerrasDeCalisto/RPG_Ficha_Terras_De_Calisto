@@ -1414,6 +1414,24 @@ s {
   
 }
 
+/* Estilo padrão para os links */
+a {
+  text-decoration: none;
+  color: #3498db; /* Cor azul para o link */
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Estilo do link quando passar o mouse (hover) */
+a:hover {
+  color: #e74c3c; /* Cor vermelha quando hover */
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Estilo do link quando for clicado (ativo) */
+a:active {
+  color: #2ecc71; /* Cor verde quando o link for clicado */
+}
 
 
 

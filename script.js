@@ -323,11 +323,10 @@ const pastData = {
     "sanidadePorNivel": 4,
     "armaduraPorNivel": 1,
     "resistencia": "Sagrado",
-    "bonusPass":`
-    Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</strong>
-`
-,
 "movimento_pass": 2,
+"bonusPass":`
+Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</strong>
+`,
 bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
 `,
     bonusTexto_1: `<p>Nível 1: +1d4 de dano com ferramentas improvisadas.</p>
@@ -368,50 +367,49 @@ bonusTexto_2: `Nível 1: +1 em precisão à distância.
     "sanidadePorNivel": 6,
     "armaduraPorNivel": 1,
     "resistencia": "Mental",
-    "bonusPass": `
-    Nível 0: Passiva Medo oculto sem custo uma vez por dia e personagem pode voar.
-    
-    🧠Mentor Psíquico
-Nível 1: +1 em testes de a dano Mental.
-Nível 2: Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra Mental.
-Nível 3: +1d4 em ataques que envolvam manipulação mental ou ilusão.
-Nível 4: +2 em testes de persuasão e intimidar.
-Nível 5: Leitura de Mentes
-Pode ler brevemente a mente de um alvo, detectando seus medos ou intenções, uma vez por combate.
-Nível 6: +1d6 de dano em ataques psíquicos, como controle de pensamentos ou ataques mentais diretos.
-Nível 7: Reflexos Psíquicos - +2 em testes de resistência contra Confusão e Paralisado.
-Nível 8: Manipulação Mental Avançada - Aumenta em +1d8 o dano de feitiços que envolvem manipulação mental.
-Nível 9: Mestre da Psique - Uma vez por combate, pode forçar um inimigo a fazer um teste de resistência contra medo ou confusão, com penalidade de -1d6.
-    
-🎩Ilusionista
-Nível 1: +1 em testes de Enganação e Diplomacia.
-Nível 2: +2 em testes de Agilidade para manobras evasivas.
-Nível 3: Criação de Imagens - Pode criar ilusões simples que confundem inimigos, uma vez por combate.
-Nível 4: +2 em testes de iniciativa quando usando ilusões para enganar inimigos.
-Nível 5: Desorientação
-Em vez de causar dano direto, causa desorientação ao inimigo, aplicando a condição Confuso por 1d4 turnos.
-Nível 6: +1d8 de dano em ataques que utilizem ilusões ou manipulação mental.
-Nível 7: Engano Impecável - Quando atacado enquanto invisível ou disfarçado, o inimigo sofre -1d6 em ataques contra você.
-Nível 8: Reflexo Ilusório - Uma vez por combate, pode evitar um ataque totalmente usando uma ilusão de si mesmo.
-Nível 9: Ilusão Suprema - Pode criar uma ilusão gigantesca que afeta toda a área de combate, tornando inimigos Cegos por 1d6 turnos.
-
-🔮Vidente
-Nível 1: +1 em testes de Percepção e Intuição.
-Nível 2: Ganha uma visão futura de 1d4 turnos, podendo antecipar ação de um alvo e o que ocorrerá.
-Nível 3: Visão Psíquica - Consegue perceber os sentimentos e intenções de outros, podendo detectar mentiras facilmente.
-Nível 4: +2 em testes de resistência contra Cegueira e Paralisado.
-Nível 5: Clarividência -Pode perceber eventos distantes, sem o uso de visão física, uma vez por combate.
-Nível 6: +1d6 de dano em ataques que exploram fraquezas mentais ou espirituais.
-Nível 7: Perspectiva Expandida -Pode lançar um feitiço de Clarividência que revele uma área de 30 metros.
-Nível 8: Visão Total - Recebe uma visão geral de todos os inimigos em combate, podendo planejar com maior eficácia.
-Nível 9: Futuro Imediato - Uma vez por combate, pode usar uma ação para antecipar um movimento de qualquer inimigo e bloquear ou desviar um ataque.`,
 "movimento_pass": 2,
-bonustitulo_1: "arauuuuuuuuuto",
-    bonusTexto_1: "c222222222222222222222",
-    bonustitulo_2: "Especialização de Força2222",
-    bonusTexto_2: "Aumenta a força do personagem em 2 pontoscuuuuuuuuuuu.",
-    bonustitulo_3: "Especialização de Força3333333",
-    bonusTexto_3: "Aumenta a força do personagem em 2 pontsssssssssssssssssssssssssssssssos.",
+"bonusPass": `
+<p>Nível 0: <strong>Passiva Medo oculto</strong> sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
+`,
+
+bonustitulo_1: `<p>🧠<strong>Mentor Psíquico</strong></p>`,
+bonusTexto_1: `
+<p>Nível 1: +1 em testes de dano <strong>Mental</strong>.</p>
+<p>Nível 2: Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra <strong>Mental</strong>.</p>
+<p>Nível 3: +1d4 em ataques que envolvam <strong>manipulação mental</strong> ou <strong>ilusão</strong>.</p>
+<p>Nível 4: +2 em testes de <strong>persuasão</strong> e <strong>intimidar</strong>.</p>
+<p>Nível 5: <strong>Leitura de Mentes</strong> — Detecta medos ou intenções de um alvo, uma vez por combate.</p>
+<p>Nível 6: +1d6 de dano em <strong>ataques psíquicos</strong>.</p>
+<p>Nível 7: <strong>Reflexos Psíquicos</strong> — +2 em resistência contra <strong>Confusão</strong> e <strong>Paralisado</strong>.</p>
+<p>Nível 8: <strong>Manipulação Mental Avançada</strong> — +1d8 de dano em feitiços mentais.</p>
+<p>Nível 9: <strong>Mestre da Psique</strong> — Uma vez por combate, força um inimigo a testar contra <strong>medo</strong> ou <strong>confusão</strong>, com penalidade de -1d6.</p>
+`,
+
+bonustitulo_2: `<p>🎩<strong>Ilusionista</strong></p>`,
+bonusTexto_2: `
+<p>Nível 1: +1 em testes de <strong>Enganação</strong> e <strong>Diplomacia</strong>.</p>
+<p>Nível 2: +2 em testes de <strong>Agilidade</strong> para manobras evasivas.</p>
+<p>Nível 3: <strong>Criação de Imagens</strong> — Cria ilusões simples que confundem inimigos, uma vez por combate.</p>
+<p>Nível 4: +2 em <strong>iniciativa</strong> ao usar ilusões.</p>
+<p>Nível 5: <strong>Desorientação</strong> — Aplica <strong>Confuso</strong> por 1d4 turnos em vez de dano direto.</p>
+<p>Nível 6: +1d8 de dano com <strong>ilusões</strong> ou manipulação mental.</p>
+<p>Nível 7: <strong>Engano Impecável</strong> — Enquanto <strong>invisível</strong> ou <strong>disfarçado</strong>, inimigos sofrem -1d6 contra você.</p>
+<p>Nível 8: <strong>Reflexo Ilusório</strong> — Evita um ataque usando uma ilusão de si mesmo, uma vez por combate.</p>
+<p>Nível 9: <strong>Ilusão Suprema</strong> — Cria uma ilusão gigantesca. Inimigos ficam <strong>Cegos</strong> por 1d6 turnos.</p>
+`,
+
+bonustitulo_3: `<p>🔮<strong>Vidente</strong></p>`,
+bonusTexto_3: `
+<p>Nível 1: +1 em testes de <strong>Percepção</strong> e <strong>Intuição</strong>.</p>
+<p>Nível 2: Visão futura de 1d4 turnos, antecipando ações e eventos.</p>
+<p>Nível 3: <strong>Visão Psíquica</strong> — Detecta sentimentos, intenções e mentiras facilmente.</p>
+<p>Nível 4: +2 em resistência contra <strong>Cegueira</strong> e <strong>Paralisado</strong>.</p>
+<p>Nível 5: <strong>Clarividência</strong> — Percebe eventos distantes, uma vez por combate.</p>
+<p>Nível 6: +1d6 de dano em ataques que exploram <strong>fraquezas mentais</strong> ou espirituais.</p>
+<p>Nível 7: <strong>Perspectiva Expandida</strong> — Conjura feitiço de Clarividência em uma área de 30 metros.</p>
+<p>Nível 8: <strong>Visão Total</strong> — Visualiza todos os inimigos em combate.</p>
+<p>Nível 9: <strong>Futuro Imediato</strong> — Antecipação de movimento inimigo para bloquear ou desviar um ataque, uma vez por combate.</p>
+`
 
 },
   "Arqueiro": { // Mago adicionado como exemplo
@@ -420,42 +418,47 @@ bonustitulo_1: "arauuuuuuuuuto",
     "armaduraPorNivel": 1,
     "resistencia": "Maldição",
     "bonusPass": `
-    Nível 0: +5 em dados de dano com fundas, arcos e bestas.
-    
-   🏹 Caçador Preciso
-Nível 1: +1 em testes de Percepção para rastreamento.
-Nível 2: Aumenta o alcance efetivo de ataques à distância em +10 metros.
-Nível 3: Flecha Envenenada • Pode envenenar a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.
-Nível 4: +2 em testes de furtividade para emboscadas.
-Nível 5: Disparo Cirúrgico • Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.
-Nível 6: +1d8 de dano em ataques que visam partes específicas do corpo.
-Nível 7: Resistência do Caçador • +2 em testes de resistência contra Veneno e Hemorragia.
-Nível 8: Mestre da Emboscada • Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.
-Nível 9: Flecha Mortal • Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.
+<p>Nível 0: +5 em dados de dano com <strong>funda</strong>, <strong>arcos</strong> e <strong>bestas</strong>.</p>
+`,
+bonustitulo_1: "<p>🏹 <strong>Caçador Preciso</strong></p>",
+bonusTexto_1: `
+<p>Nível 1: +1 em testes de <strong>Percepção</strong> para rastreamento.</p>
+<p>Nível 2: Aumenta o alcance efetivo de ataques à distância em +10 metros.</p>
+<p>Nível 3: <strong>Flecha Envenenada</strong> — Envenena a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.</p>
+<p>Nível 4: +2 em testes de <strong>furtividade</strong> para emboscadas.</p>
+<p>Nível 5: <strong>Disparo Cirúrgico</strong> — Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.</p>
+<p>Nível 6: +1d8 de dano em ataques que visam partes específicas do corpo.</p>
+<p>Nível 7: <strong>Resistência do Caçador</strong> — +2 em testes de resistência contra <strong>Veneno</strong> e <strong>Hemorragia</strong>.</p>
+<p>Nível 8: <strong>Mestre da Emboscada</strong> — Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.</p>
+<p>Nível 9: <strong>Flecha Mortal</strong> — Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.</p>
+`,
 
-🎯Atirador de Elite
-Nível 1: +1 em precisão ao usar arcos e bestas.
-Nível 2: +2 em testes de Agilidade para esquivas rápidas.
-Nível 3: Disparo Perfurante • Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.
-Nível 4: +2 em iniciativas ao utilizar armas à distância.
-Nível 5: Tiro Rápido • Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.
-Nível 6: +1d8 de dano adicional em ataques consecutivos no mesmo alvo.
-Nível 7: Alvo Escorregadio • Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o Arqueiro.
-Nível 8: Instinto de Sobrevivência • Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.
-Nível 9: Disparo Destruidor • Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.
+bonustitulo_2: "<p>🎯 <strong>Atirador de Elite</strong></p>",
+bonusTexto_2: `
+<p>Nível 1: +1 em <strong>precisão</strong> ao usar <strong>arcos</strong> e <strong>bestas</strong>.</p>
+<p>Nível 2: +2 em testes de <strong>Agilidade</strong> para esquivas rápidas.</p>
+<p>Nível 3: <strong>Disparo Perfurante</strong> — Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.</p>
+<p>Nível 4: +2 em <strong>iniciativas</strong> ao utilizar armas à distância.</p>
+<p>Nível 5: <strong>Tiro Rápido</strong> — Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.</p>
+<p>Nível 6: +1d8 de dano adicional em ataques consecutivos no mesmo alvo.</p>
+<p>Nível 7: <strong>Alvo Escorregadio</strong> — Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o <strong>Arqueiro</strong>.</p>
+<p>Nível 8: <strong>Instinto de Sobrevivência</strong> — Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.</p>
+<p>Nível 9: <strong>Disparo Destruidor</strong> — Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.</p>
+`,
 
-🌌Explorador das Sombras
-Nível 1: +1 em Furtividade e Movimentação em terrenos variados.
-Nível 2: +2 em testes de Sobrevivência para explorar áreas desconhecidas.
-Nível 3: Caminho Oculto • Permite ao grupo avançar sem deixar rastros, uma vez por dia.
-Nível 4: +2 em testes de resistência contra Confusão e Cegueira.
-Nível 5: Flecha da Escuridão • Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.
-Nível 6: +1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.
-Nível 7: Emboscada Letal • Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.
-Nível 8: Vantagem na Escuridão • Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.
-Nível 9: Ataque Sombrio • Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.
-    
-    `,
+bonustitulo_3: "<p>🌌 <strong>Explorador das Sombras</strong></p>",
+bonusTexto_3: `
+<p>Nível 1: +1 em <strong>Furtividade</strong> e <strong>Movimentação</strong> em terrenos variados.</p>
+<p>Nível 2: +2 em testes de <strong>Sobrevivência</strong> para explorar áreas desconhecidas.</p>
+<p>Nível 3: <strong>Caminho Oculto</strong> — Permite ao grupo avançar sem deixar rastros, uma vez por dia.</p>
+<p>Nível 4: +2 em testes de resistência contra <strong>Confusão</strong> e <strong>Cegueira</strong>.</p>
+<p>Nível 5: <strong>Flecha da Escuridão</strong> — Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.</p>
+<p>Nível 6: +1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.</p>
+<p>Nível 7: <strong>Emboscada Letal</strong> — Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.</p>
+<p>Nível 8: <strong>Vantagem na Escuridão</strong> — Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.</p>
+<p>Nível 9: <strong>Ataque Sombrio</strong> — Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.</p>
+`
+,
     "movimento_pass": 2
   },
   "Assassino": { // Mago adicionado como exemplo
@@ -464,89 +467,96 @@ Nível 9: Ataque Sombrio • Uma vez por combate, pode se teleportar silenciosam
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
     "bonusPass": `
-    Nível 0: Passiva Furtividade sombria 1 vez no dia sem custo,+5 com Adagas.
-    
-    🗡️Assassinato Furtivo
-Nível 1: +1 em Furtividade para emboscadas.
-Nível 2: +1 em testes de Agilidade para aproximações silenciosas.
-Nível 3: Golpe Fatal – Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.
-Nível 4: +2 em ataques com adagas contra alvos desprevenidos.
-Nível 5: Execução Impecável – Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.
-Nível 6: +1d6 de dano ao atacar inimigos que ainda não agiram no combate.
-Nível 7: Resiliência das Sombras – +2 em testes de resistência contra envenenamento e paralisia.
-Nível 8: Mestre da Furtividade – Permite ficar completamente invisível por até um turno.
-Nível 9: Assassinato Silencioso – Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.
+<p>Nível 0: Passiva <strong>Furtividade Sombria</strong> — 1 vez no dia sem custo, +5 com <strong>Adagas</strong>.</p>
+`,
+bonustitulo_1: "<p>🗡️ <strong>Assassinato Furtivo</strong></p>",
+bonusTexto_1: `
+<p>Nível 1: +1 em <strong>Furtividade</strong> para emboscadas.</p>
+<p>Nível 2: +1 em testes de <strong>Agilidade</strong> para aproximações silenciosas.</p>
+<p>Nível 3: <strong>Golpe Fatal</strong> — Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.</p>
+<p>Nível 4: +2 em ataques com <strong>adagas</strong> contra alvos desprevenidos.</p>
+<p>Nível 5: <strong>Execução Impecável</strong> — Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.</p>
+<p>Nível 6: +1d6 de dano ao atacar inimigos que ainda não agiram no combate.</p>
+<p>Nível 7: <strong>Resiliência das Sombras</strong> — +2 em testes de resistência contra <strong>envenenamento</strong> e <strong>paralisia</strong>.</p>
+<p>Nível 8: <strong>Mestre da Furtividade</strong> — Permite ficar completamente invisível por até um turno.</p>
+<p>Nível 9: <strong>Assassinato Silencioso</strong> — Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.</p>
+`,
 
-🥷Shurikins Mortais
-Nível 1: +1 em precisão ao usar shurikins e armas arremessáveis.
-Nível 2: +2 em testes de Agilidade para esquivas e deslocamento rápido.
-Nível 3:Projétil Rápido – Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.
-Nível 4: +1d6 de dano em ataques arremessados com precisão aprimorada.
-Nível 5:Tiro Preciso – Realiza um disparo que ignora defesas naturais do alvo.
-Nível 6: +1d8 de dano extra em ataques sucessivos contra o mesmo alvo.
-Nível 7:Desvio Ágil – +2 em testes de esquiva contra projéteis inimigos.
-Nível 8:Projéteis Penetrantes – Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.
-Nível 9:Dança das Lâminas – Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.
+bonustitulo_2: "<p>⛩️ <strong>Shurikins Mortais</strong></p>",
+bonusTexto_2: `
+<p>Nível 1: +1 em precisão ao usar <strong>shurikins</strong> e armas arremessáveis.</p>
+<p>Nível 2: +2 em testes de <strong>Agilidade</strong> para esquivas e deslocamento rápido.</p>
+<p>Nível 3: <strong>Projétil Rápido</strong> — Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.</p>
+<p>Nível 4: +1d6 de dano em ataques arremessados com precisão aprimorada.</p>
+<p>Nível 5: <strong>Tiro Preciso</strong> — Realiza um disparo que ignora defesas naturais do alvo.</p>
+<p>Nível 6: +1d8 de dano extra em ataques sucessivos contra o mesmo alvo.</p>
+<p>Nível 7: <strong>Desvio Ágil</strong> — +2 em testes de esquiva contra projéteis inimigos.</p>
+<p>Nível 8: <strong>Projéteis Penetrantes</strong> — Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.</p>
+<p>Nível 9: <strong>Dança das Lâminas</strong> — Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.</p>
+`,
 
-🌑Sombras do Infinito
-Nível 1: +1 em testes de Conexão para controlar magias do eclipse.
-Nível 2:Véu das Sombras – Envolve-se em sombras, ganhando +2 em Furtividade por um turno.
-Nível 3:Reflexão de Eclipse – Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.
-Nível 4: +1 em testes com feitiços de eclipse.
-Libera a magia Clone das Sombras (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.
-Nível 5:Espelho Sombrio – Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno.
-Libera a magia Fragmento do Tempo (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.
-Nível 6:Dano do Eclipse – Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras.
-Libera a magia Ilusão Lunar (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.
-Nível 7:Olhos nas Sombras – Permite ver através de sombras, evitando ataques furtivos.
-Libera a magia Mutação Sombria (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.
-Nível 8:Sombra da Noite – Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).
-Nível 9:Senhor do Eclipse – Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8.
-Libera a magia Cataclismo do Eclipse (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.`,
-    "movimento_pass": 3
+bonustitulo_3: "<p>🌑 <strong>Sombras do Infinito</strong></p>",
+bonusTexto_3: `
+<p>Nível 1: +1 em testes de <strong>Conexão</strong> para controlar magias do eclipse.</p>
+<p>Nível 2: <strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.</p>
+<p>Nível 3: <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=luz%20e%20sombra.-,Reflex%C3%A3o%20de%20Eclipse,-Eklipsens%20Refleksjon" target="_blank" rel="noopener noreferrer">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
+<p>Nível 4: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=de%20Alvos%3A%20Agilidade-,Fragmento%20do%20Tempo,-Fragmentum%20Tempus" target="_blank" rel="noopener noreferrer">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
+<p>Nível 5: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20%E2%80%94-,Clone%20das%20Sombras,-Clonum%20Umbra" target="_blank" rel="noopener noreferrer">Clone das Sombras</a></strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
+<p>Nível 6: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=qualidade%20do%20item-,Ilus%C3%A3o%20Lunar,-Illusio%20Lunae" target="_blank" rel="noopener noreferrer">Ilusão Lunar</a></strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
+<p>Nível 7: <strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o%20Sombria,-Mutatio%20Obscura" target="_blank" rel="noopener noreferrer">Mutação Sombria</a></strong> (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.</p>
+<p>Nível 8: <strong>Sombra da Noite</strong> — Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).</p>
+<p>Nível 9: <strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Cataclismo%20do%20Eclipse" target="_blank" rel="noopener noreferrer">Cataclismo do Eclipse</a></strong> (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.</p>
+`
+,  "movimento_pass": 3
   },
   "Assombração": { // Assombração adicionado como exemplo
     "vidaPorNivel": 11,
     "sanidadePorNivel": 5,
     "armaduraPorNivel": 1,
     "resistencia": "Alma",
-    "bonusPass": `
-    Nível 0: +1d12 em magias de Alma e a magia Poltergeist pode ser usado em dois objetos por vez.
-    
-    👤Perseguidor Sombrio
-Nível 1: Sombras Vorazes (custo: 2 especial) – Executa uma investida, esquivando de todos os ataques até o fim do turno.
-Nível 2: Golpe Oculto (custo: 3 especial) – Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano.
-Nível 3: Manto das Trevas (custo: 2 especial) – Torna-se invisível em locais escuros por um turno.
-Nível 4: Velocidade Espiritual (custo: 3 especial) – Movimenta-se duas vezes no mesmo turno, escapando de emboscadas.
-Nível 5: Reflexo Sombrio (custo: 4 especial) – Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano.
-Nível 6: Golpe do Abismo (custo: 5 especial) – Executa um ataque de sombra que ignora armadura e causa +2d8 de dano.
-Nível 7: Sombra Penetrante – Reduz o custo de sanidade para magias de Alma em 50%.
-Nível 8: Força Noturna – Aumenta o dano em +1d6 para ataques físicos e magias de Alma.
-Nível 9:Sombra Aniquiladora(custo: 6 especial) – Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos.
+"bonusPass": `
+<p>Nível 0: +1d12 em <strong>magias de Alma</strong> e a magia [Poltergeist](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Poltergeist,-Overnaturlig%20bes%C3%B8kende) pode ser usada em dois objetos por vez.</p>
+`,
 
-🛠️Artesão espiritual
-Cada nível de aprimoramento infunde habilidades únicas nos equipamentos, permitindo maior poder ao custo de especial, duração máxima de aprimoramento uma cena ou 1h.
-Nível 1: Energia Espiritual – Armazena uma alma, conferindo +1 de dano ou +1 em resistência. (Sem custo de especial)
-Nível 2: Lâmina Viva – Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 de especial por uso)
-Nível 3: Alma Guardiã – Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)
-Nível 4: Vínculo Espiritual – Torna o equipamento mais resiliente, +2 em resistência a deterioração. (Sem custo de especial)
-Nível 5: Conexão Profunda – Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 de especial por uso)
-Nível 6: Escudo da Alma – Libera uma barreira espiritual que reduz o dano recebido em 50% por um turno. (4 de especial, 1 vez por combate)
-Nível 7: Chama da Vingança – Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 de espl por uso)
-Nível 8: Força Espiritual – Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)
-Nível 9: Guardião das Almas – Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 de especial por ativação, 1 vez por combate)
+bonustitulo_1: "<p>👤 <strong>Perseguidor Sombrio</strong></p>",
+bonusTexto_1: `
+<p>Nível 1: <strong>Sombras Vorazes</strong> (custo: 2 especial) – Executa uma investida, esquivando de todos os ataques até o fim do turno.</p>
+<p>Nível 2: <strong>Golpe Oculto</strong> (custo: 3 especial) – Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano.</p>
+<p>Nível 3: <strong>Manto das Trevas</strong> (custo: 2 especial) – Torna-se invisível em locais escuros por um turno.</p>
+<p>Nível 4: <strong>Velocidade Espiritual</strong> (custo: 3 especial) – Movimenta-se duas vezes no mesmo turno, escapando de emboscadas.</p>
+<p>Nível 5: <strong>Reflexo Sombrio</strong> (custo: 4 especial) – Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano.</p>
+<p>Nível 6: <strong>Golpe do Abismo</strong> (custo: 5 especial) – Executa um ataque de sombra que ignora armadura e causa +2d8 de dano.</p>
+<p>Nível 7: <strong>Sombra Penetrante</strong> – Reduz o custo de sanidade para <strong>magias de Alma</strong> pela metade.</p>
+<p>Nível 8: <strong>Força Noturna</strong> – Aumenta o dano em +1d6 para ataques físicos e <strong>magias de Alma</strong>.</p>
+<>Nível 9: <strong>Sombra Aniquiladora</strong> (custo: 6 especial) – Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos.</p>
+`,
 
-🕊️Espiritualista da Ordem
-Nível 1: Iniciado Espiritual – Ganha uma magia de nível 1 e +1 em testes de resistência contra efeitos espirituais.
-Nível 2: Espírito Reforçado – Reduz o custo de sanidade ao usar magias de Alma em 1.
-Nível 3: Protetor da Essência – Ganha uma magia de nível 2 e +1 de dano em ataques com Magias de Alma.
-Nível 4: Escudo Espiritual – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.
-Nível 5: Tecelão da Alma – Ganha uma magia de nível 3 e aumenta a duração das magias em 1 turno.
-Nível 6: Voz do Além – Permite ao jogador identificar a presença de espíritos em até 20 metros.
-Nível 7: Profeta da Eternidade – Ganha uma magia de nível 4 e +2 em percepção para detectar entidades invisíveis.
-Nível 8: Eco Espiritual – Ganha uma magia de nível 5 e Metade do custo de sanidade para magias de Alma.
-Nível 9: Guardião Eterno – Ganha uma magia de nível 6 e uma ação completa extra por 7 de especial.`,
-    "movimento_pass": 3
+bonustitulo_2: "<p>🛠️ <strong>Artesão Espiritual</strong></p>",
+bonusTexto_2: `
+<p>Cada nível de aprimoramento infunde habilidades únicas nos equipamentos, permitindo maior poder ao custo de especial. Duração máxima de aprimoramento: uma cena ou 1h.</p>
+<p>Nível 1: <strong>Energia Espiritual</strong> – Armazena uma alma, conferindo +1 de dano ou +1 em resistência. (Sem custo de especial)</p>
+<p>Nível 2: <strong>Lâmina Viva</strong> – Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 de especial por uso)</p>
+<p>Nível 3: <strong>Alma Guardiã</strong> – Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)</p>
+<p>Nível 4: <strong>Vínculo Espiritual</strong> – Torna o equipamento mais resiliente, +2 em resistência à deterioração. (Sem custo de especial)</p>
+<p>Nível 5: <strong>Conexão Profunda</strong> – Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 de especial por uso)</p>
+<p>Nível 6: <strong>Escudo da Alma</strong> – Libera uma barreira espiritual que reduz o dano recebido pela metade por um turno. (4 de especial, 1 vez por combate)</>
+<p>Nível 7: <strong>Chama da Vingança</strong> – Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 de especial por uso)</p>
+<p>Nível 8: <strong>Força Espiritual</strong> – Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)</p>
+<p>Nível 9: <strong>Guardião das Almas</strong> – Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 de especial por ativação, 1 vez por combate)</p>
+`,
+
+bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
+bonusTexto_3: `
+<p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma [magia de nível 1](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hiearquias%20de%20Guardi%C3%B5es) e +1 em testes de resistência contra efeitos espirituais.</p>
+<p>Nível 2: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
+<p>Nível 3: <strong>Protetor da Essência</strong> – Ganha uma [magia de nível 2](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
+<p>Nível 4: <strong>Escudo Espiritual<strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
+<p>Nível 5: <strong>Tecelão da Alma</strong> – Ganha uma [magia de nível 3](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e aumenta a duração das magias em 1 turno.</p>
+<p>Nível 6: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
+<p>Nível 7: <strong>Profeta da Eternidade</strong> – Ganha uma [magia de nível 4](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +2 em percepção para detectar entidades invisíveis.</p>
+<p>Nível 8: <strong>Eco Espiritual</strong> – Ganha uma [magia de nível 5](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
+<p>Nível 9: <strong>Guardião Eterno</strong> – Ganha uma [magia de nível 6](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e uma ação completa extra por 7 de especial.</p>
+`, "movimento_pass": 3
   },
     "Atirador": { 
       "vidaPorNivel": 13,
@@ -3842,32 +3852,32 @@ function updateStats() {
   }
   
   const bonusRaceElement = document.querySelector('.Bonus-race-tex');
-  if (currentAttributes.bonusRace) {
-    bonusRaceElement.textContent = `Bônus de Raça: ${currentAttributes.bonusRace}`;
-  } else {
-    bonusRaceElement.textContent = 'Bônus de Raça: N/A';
-  }
-  const PassivaDisponivelElement = document.querySelector('.Bonus-passiva-tex');
-  if (currentAttributes.bonusRace) {
-    PassivaDisponivelElement.textContent = `Passiva: ${currentAttributes.PassivaDisponivel}`;
-  } else {
-    PassivaDisponivelElement.textContent = 'Passiva: N/A';
-  }
-  const MagiaDisponivelElement = document.querySelector('.Bonus-magia-tex');
-  if (currentAttributes.bonusRace) {
-    MagiaDisponivelElement.textContent = `Magia: ${currentAttributes.MagiaDisponivel}`;
-  } else {
-    MagiaDisponivelElement.textContent = 'Magia: N/A';
-  }
-  const TalentoDisponivelElement = document.querySelector('.Bonus-talento-tex');
-  if (currentAttributes.bonusRace) {
-    TalentoDisponivelElement.textContent = `Talento: ${currentAttributes.TalentoDisponivel}`;
-  } else {
-    TalentoDisponivelElement.textContent = 'Talento: N/A';
-  }
-  
+if (currentAttributes.bonusRace) {
+  bonusRaceElement.innerHTML = `Bônus de Raça: ${currentAttributes.bonusRace}`;
+} else {
+  bonusRaceElement.innerHTML = 'Bônus de Raça: N/A';
+}
 
+const PassivaDisponivelElement = document.querySelector('.Bonus-passiva-tex');
+if (currentAttributes.bonusRace) {
+  PassivaDisponivelElement.innerHTML = `Passiva: ${currentAttributes.PassivaDisponivel}`;
+} else {
+  PassivaDisponivelElement.innerHTML = 'Passiva: N/A';
+}
 
+const MagiaDisponivelElement = document.querySelector('.Bonus-magia-tex');
+if (currentAttributes.bonusRace) {
+  MagiaDisponivelElement.innerHTML = `Magia: ${currentAttributes.MagiaDisponivel}`;
+} else {
+  MagiaDisponivelElement.innerHTML = 'Magia: N/A';
+}
+
+const TalentoDisponivelElement = document.querySelector('.Bonus-talento-tex');
+if (currentAttributes.bonusRace) {
+  TalentoDisponivelElement.innerHTML = `Talento: ${currentAttributes.TalentoDisponivel}`;
+} else {
+  TalentoDisponivelElement.innerHTML = 'Talento: N/A';
+}
 
 
 
@@ -4193,7 +4203,8 @@ document.getElementById('confirm-load').addEventListener('click', () => {
                 skillElement.innerText = skillValue;
             }
           });
-
+// CHAMA ISSO PARA ATUALIZAR AS ESPECIALIZAÇÕES
+atualizarBonusDoPassado(characterData.past);
       // Carregar os dados do item equipado
       loadEquippedItem(characterData);
 

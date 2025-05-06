@@ -2109,8 +2109,8 @@ input[type="number"] {
 #life-view, #sanity-view, #special-view {
   color: #301a1a; /* Aplica a cor #ccc apenas no texto de vida, sanidade e especial */
   text-align: left; /* Alinhamento à esquerda */
-  transform: translateX(+200px); /* Apenas verticalmente centralizado */
-
+  position: absolute; /* ou relative, dependendo do seu caso */
+  right: 0; /* Alinha o elemento à direita do contêiner */
 }
 span {
   position: relative;

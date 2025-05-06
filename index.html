@@ -46,7 +46,12 @@
 
 <div class="container-centralizado">
   <!--<h1>Perícias</h1> -->
-  <p class="descrição_pericias">"Você pode deixar em +2 três perícias e somar +2 nas que ganhar com o passado."</p>
+  <p class="descrição_pericias">
+    <strong>Perícias, Talentos e Armas (P.T.A.)</strong>
+    <p>Escolha três P.T.A. para receber um bônus de <span id="pta-bonus-value">+2</span>.</p>
+    <p>Além disso, pode adicionar <span id="past-bonus-value">+2</span> às perícias concedidas pelo seu passado ou raça.</p>
+    
+  </p>
   <div class="pericias_arrumado">
     <div class="pericias">
       <div class="pericia" data-name="Espadas" data-requirement="Brutalidade" data-description="Desbloqueia o uso de: Espada curta, Florete, Punhal, Adaga, Espada longa, Espada bastarda, Espadão, Claymore, Cimitarra e Sabre.">
@@ -403,7 +408,7 @@
         </div>
               <div class="nav-list">
                   <ul>
-                    <button class="toggle-button" onclick="toggleMenu()">Pericias - Talentos - Armas</button>
+                    <button class="toggle-button2" onclick="toggleMenu()">Talentos</button>
  
  <!-- Botão para abrir o popup -->
 <button id="abrir-status-rpg" class="status-rpg-btn">Abrir Status RPG</button>
@@ -518,10 +523,11 @@
             <!-- outros conteúdos -->
             <div class="bonus-container">
               <h2 class="resistencia-index">Resistência: N/A</h2>
-              <h4 class="Bonus-race-tex">Bônus de Raça: N/A</h4>
-              <h4 class="Bonus-passiva-tex">Passiva: N/A</h4>
-              <h4 class="Bonus-magia-tex">Magia: N/A</h4>
-              <h4 class="Bonus-talento-tex">Talento: N/A</h4>
+              <h4 class="Bonus-race-tex" onclick="window.open('https://terrasdecalistoficha.wordpress.com/como-jogar/', '_blank')">Bônus de Raça: N/A</h4>
+              <h4 class="Bonus-passiva-tex" onclick="window.open('https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/', '_blank')">Passiva: N/A</h4>
+              <h4 class="Bonus-magia-tex" onclick="window.open('https://terrasdecalistoficha.wordpress.com/magias/', '_blank')">Magia: N/A</h4>
+
+              <h4 class="Bonus-talento-tex" onclick="toggleMenu()">Talento: N/A</h4>
 
 
               <section>
@@ -606,9 +612,17 @@
     <!-- Seção da direita -->
 
     <div id="right-section">
-      <div id="character-creation-section">
-        <h1 class="Aviso">A aparência do seu personagem será uma mistura entre o seu passado e a sua raça, imagine-o como quiser! Você tem 25 pontos para distribuir na sua ficha entre os atributos BRU, AGI, DET, PRE, LIB e CNX. O valor mínimo por atributo é 8 e o máximo é 99. Você pode compensar pontos entre os atributos, distribuindo-os até alcançar o nível 1.
-        </h1> 
+      <div id="character-info-section" style="margin: 20px 0;">
+        <button class="toggle-button2" onclick="toggleSectionInfo()" style="background-color: red; color: white; padding: 5px 15px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+AVISO!        </button>
+      
+        <div id="expandableSectionInfo" style="display: none; margin-top: 15px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; border: 1px solid #ccc;">
+          <h1 class="Aviso" style="font-size: 11px;">
+            A aparência do seu personagem será uma fusão entre seu passado e sua raça — imagine-o livremente! No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14, mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
+          </h1>
+        </div>
+      </div>
+       
         
         <form id="character-form">
           <div class="form-group">
@@ -631,7 +645,6 @@
               <option value="Tritão">Glubrust – Tritão</option>
               <option value="Shrivvel – Pele Palida">Shrivvel – Pele Palida</option>
               <option value="Gronklech – Durock">Gronklech – Durock</option>
-              <option value="Gornis - Temp">Gornis - Temp</option>
             
             
               
@@ -736,7 +749,7 @@
           <div class="form-row">
             <div class="form-group2">
               <label for="for">Brutalidade:</label>
-              <input type="number" id="for" name="for" min="8" max="99" value="10" required>
+              <input type="number" id="for" name="for" min="8" max="99" value="14" required>
               <div class="bonus-group">
                 <span>Bônus de Teste: <span id="for-bonus-test">0</span></span>
                 <span>Bônus de Dano: <span id="for-bonus-damage">0</span></span>
@@ -744,7 +757,7 @@
             </div>
             <div class="form-group2">
               <label for="des">Agilidade:</label>
-              <input type="number" id="des" name="des" min="8" max="99" value="10" required>
+              <input type="number" id="des" name="des" min="8" max="99" value="14" required>
               <div class="bonus-group">
                 <span>Bônus de Teste: <span id="des-bonus-test">0</span></span>
                 <span>Bônus de Dano: <span id="des-bonus-damage">0</span></span>
@@ -752,7 +765,7 @@
             </div>
             <div class="form-group2">
               <label for="con">Determinação:</label>
-              <input type="number" id="con" name="con" min="8" max="99" value="10" required>
+              <input type="number" id="con" name="con" min="8" max="99" value="14" required>
               <div class="bonus-group">
                 <span>Bônus de Teste: <span id="con-bonus-test">0</span></span>
                 <span>Bônus de Dano: <span id="con-bonus-damage">0</span></span>
@@ -763,7 +776,7 @@
           <div class="form-row">
             <div class="form-group2">
               <label for="int">Preservação:</label>
-              <input type="number" id="int" name="int" min="8" max="99" value="10" required>
+              <input type="number" id="int" name="int" min="8" max="99" value="14" required>
               <div class="bonus-group">
                 <span>Bônus de Teste: <span id="int-bonus-test">0</span></span>
                 <span>Bônus de Dano: <span id="int-bonus-damage">0</span></span>
@@ -771,7 +784,7 @@
             </div>
             <div class="form-group2">
               <label for="sab">Libertação:</label>
-              <input type="number" id="sab" name="sab" min="8" max="99" value="10" required>
+              <input type="number" id="sab" name="sab" min="8" max="99" value="14" required>
               <div class="bonus-group">
                 <span>Bônus de Teste: <span id="sab-bonus-test">0</span></span>
                 <span>Bônus de Dano: <span id="sab-bonus-damage">0</span></span>
@@ -779,7 +792,7 @@
             </div>
             <div class="form-group2">
               <label for="car">Conexão:</label>
-              <input type="number" id="car" name="car" min="8" max="99" value="10" required>
+              <input type="number" id="car" name="car" min="8" max="99" value="14" required>
               <div class="bonus-group">
                 <span>Bônus de Teste: <span id="car-bonus-test">0</span></span>
                 <span>Bônus de Dano: <span id="car-bonus-damage">0</span></span>

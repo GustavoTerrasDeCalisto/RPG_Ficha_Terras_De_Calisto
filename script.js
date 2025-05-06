@@ -4169,6 +4169,10 @@ document.addEventListener('click', function(event) {
       menu.classList.remove('open');
   }
 });
+function toggleSectionInfo() {
+  const sectionContent = document.getElementById('expandableSectionInfo');
+  sectionContent.style.display = sectionContent.style.display === 'none' ? 'block' : 'none';
+}
 
 // Função genérica para aplicar dano/ajuste
 // Valores de status base (cópia do status original)

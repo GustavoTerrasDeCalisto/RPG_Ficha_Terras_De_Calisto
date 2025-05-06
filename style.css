@@ -192,7 +192,7 @@ body {
   width: 1000px; /* Ajuste a largura conforme necessário */
   height: auto; /* Permite que a altura se expanda conforme o conteúdo */
   text-align: center;
-  margin-top: 60px; /* Adiciona espaço abaixo do header para o conteúdo */
+  margin-top: 70px; /* Adiciona espaço abaixo do header para o conteúdo */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

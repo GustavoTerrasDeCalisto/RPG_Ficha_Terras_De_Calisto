@@ -530,19 +530,41 @@
               <h4 class="Bonus-talento-tex" onclick="toggleMenu()">Talento: N/A</h4>
 
 
-              <section>
-                <!-- Botão com texto "Bônus de Passado" -->
-                <button class="expand-btn" onclick="toggleSection()">Bônus de Passado</button>
-              
-                <!-- Conteúdo expansível -->
-                <div class="section-content" id="expandableSection" style="display:none;">
-                  <h4 class="especializacao_titulo">Especializações</h4>
-                  <h4>Escolha entre essas 3 formas de jogar</h4>
+<!-- Essa parte representa os 3 bônus do passado -->
+<!-- Botão com texto "Bônus de Passado" -->
+<section>
+  <button class="expand-btn" onclick="abrirSecaoBonusPassado()">Bônus de Passado</button>
 
-                  <h4 class="Bonus-pass-tex" id="bonus-pass-titulo">Bônus de Passado: N/A</h4>
-                </div>
-              </section>
+  <div class="section-content" id="secaoBonusPassado" style="display:none;">
+    <h4 class="especializacao_titulo" id="tituloBonusPassado">Bônus de Passado: N/A</h4>
+    <h4>Escolha entre essas 3 formas de jogar</h4>
+
+    <div class="bonus-subsection">
+      <h3 class="bonusTexto1 especializacao_titulo1" onclick="alternarTextoBonus(1)" id="tituloBonus1"></h3>
+      <div class="bonusTexto1 bonus-texto" id="textoBonus1" style="display:none;"></div>
+    </div>
+
+    <div class="bonus-subsection">
+      <h3 class="especializacao_titulo2" onclick="alternarTextoBonus(2)" id="tituloBonus2"></h3>
+      <div class="bonusTexto2 bonus-texto" id="textoBonus2" style="display:none;"></div>
+    </div>
+
+    <div class="bonus-subsection">
+      <h3 class="especializacao_titulo3" onclick="alternarTextoBonus(3)" id="tituloBonus3"></h3>
+      <div class="bonusTexto3 bonus-texto" id="textoBonus3" style="display:none;"></div>
+    </div>
+  </div>
+</section>
+
+              
                        <!-- Botão para abrir o popup de itens -->
+
+
+
+
+
+
+
 
               <!-- Popup com grid de itens -->
               <!-- Popup com grid de itens -->
@@ -561,36 +583,7 @@
   </div>
 </div>
 
-              <section>
-                <button class="expand-btn2" onclick="toggleSection()">
-                  Nuncaaaa AAApague isssso, jamaissssss poiss não resolver, aprendi a programar faz 1 mês ,não sei tirar essa pohaaa, pois toda vez que tiro, some as imagens, vai entender XDD
-                </button>
-                <div class="section-content" id="expandableSection">
-                  <h4 class="especializacao_titulo">Especializações</h4>
-              
-                  <!-- Bônus 1 -->
-                  <section id="bonus-sections">
-                    <div class="bonus-section" id="bonus1">
-                      <h4 id="bonustitulo_1">Título do Bônus 1</h4>
-                      <p id="bonustexto_1">Descrição do Bônus 1</p>
-                    </div>
-              
-                    <!-- Bônus 2 -->
-                    <div class="bonus-section" id="bonus2">
-                      <h4 id="bonustitulo_2">Título do Bônus 2</h4>
-                      <p id="bonustexto_2">Descrição do Bônus 2</p>
-                    </div>
-              
-                    <!-- Bônus 3 -->
-                    <div class="bonus-section" id="bonus3">
-                      <h4 id="bonustitulo_3">Título do Bônus 3</h4>
-                      <p id="bonustexto_3">Descrição do Bônus 3</p>
-                    </div>
-                  </section>
-                </div>
-              </section>
-              
-              
+
               
             
               

@@ -1823,7 +1823,7 @@ s {
   top: 0;
   bottom: 0;
   background-color: rgba(100, 0, 0, 0.8);
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Preenchimento da barra */
@@ -1948,5 +1948,177 @@ input[type="number"] {
   transition: all 0.3s ease;
 }
 
+
+
+#status-principal {
+  margin: 20px;
+  max-width: 300px;
+}
+
+.status-item {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.barra {
+  background: #ccc;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  width: 0%;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.status-rpg-vida {
+  background: red;
+}
+
+.status-rpg-sanidade {
+  background: blue;
+}
+
+.status-rpg-especial {
+  background: purple;
+}
+/* Esconde as barras fora do popup por padrão */
+/* Esconde as barras de status fora do popup por padrão */
+.status-externo {
+  display: none; /* Esconde completamente as barras */
+}
+
+/* Torna as barras visíveis quando a classe 'ativo' é adicionada */
+.status-externo.ativo {
+  display: block; /* Torna as barras visíveis */
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fill {
+  height: 16px;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+.fill {
+  width: 0%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  white-space: nowrap; /* Garante que o texto não quebre */
+  overflow: hidden;
+}
+
+.status-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+/* Remova ou comente essas linhas */
+.status-externo {
+  display: none;
+}
+
+.status-externo.ativo {
+  display: block;
+}
+.status-externo {
+  margin-bottom: 10px;
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.status-rpg-vida {
+  background-color: red;
+}
+
+.status-rpg-sanidade {
+  background-color: blue;
+}
+
+.status-rpg-especial {
+  background-color: purple;
+}
+
+.status-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.status-externo {
+  margin-bottom: 10px; /* Menos espaço entre as barras */
+}
+
+.status-label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 3px; /* Menos espaço entre o label e a barra */
+}
+
+.status-bar {
+  position: relative; /* Necessário para as barras ficarem sobrepostas */
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo dentro da barra */
+  justify-content: center;
+  background-color: #ccc;
+  height: 20px; /* A altura total da barra */
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fill, .temp-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2; /* A barra de progresso tem z-index maior que o texto */
+}
+
+.fill {
+  background-color: green; /* Cor da barra de progresso principal */
+  transition: width 0.3s ease;
+}
+
+.temp-fill {
+  position: absolute;
+
+  background-color: rgba(255, 165, 0, 0.7); /* Cor da barra temporária */
+  transition: width 0.3s ease;
+  z-index: 3; /* Barra temporária ficará acima da barra principal */
+}
+#life-view, #sanity-view, #special-view {
+  color: #301a1a; /* Aplica a cor #ccc apenas no texto de vida, sanidade e especial */
+  text-align: left; /* Alinhamento à esquerda */
+  transform: translateX(+200px); /* Apenas verticalmente centralizado */
+
+}
+span {
+  position: relative;
+
+  z-index: 0; /* O texto fica atrás da barra de progresso */
+  font-size: 12px;
+  color: #000000;
+  margin-top: 3px; /* Menos espaço entre a barra e o valor */
+}
 
 

@@ -1674,20 +1674,32 @@ function formatBonusText(text, type = "default") {
 
 
 function abrirSecaoBonusPassado() {
-  document.getElementById("secaoBonusPassado").style.display = "block";
-  document.getElementById("tituloBonus1").textContent = dadosBonus.bonustitulo_1;
-  document.getElementById("tituloBonus2").textContent = dadosBonus.bonustitulo_2;
-  document.getElementById("tituloBonus3").textContent = dadosBonus.bonustitulo_3;
+  const secao = document.getElementById("secaoBonusPassado");
 
-  document.getElementById("textoBonus1").innerHTML = formatBonusText(dadosBonus.bonusTexto_1, "bonus1");
-  document.getElementById("textoBonus2").innerHTML = formatBonusText(dadosBonus.bonusTexto_2, "bonus2");
-  document.getElementById("textoBonus3").innerHTML = formatBonusText(dadosBonus.bonusTexto_3, "bonus3");
+  // Verifica se a seção está aberta ou fechada
+  if (secao.style.display === "none" || secao.style.display === "") {
+    // Abre a seção
+    secao.style.display = "block";
+    
+    // Preenche os conteúdos
+    document.getElementById("tituloBonus1").textContent = dadosBonus.bonustitulo_1;
+    document.getElementById("tituloBonus2").textContent = dadosBonus.bonustitulo_2;
+    document.getElementById("tituloBonus3").textContent = dadosBonus.bonustitulo_3;
+
+    document.getElementById("textoBonus1").innerHTML = formatBonusText(dadosBonus.bonusTexto_1, "bonus1");
+    document.getElementById("textoBonus2").innerHTML = formatBonusText(dadosBonus.bonusTexto_2, "bonus2");
+    document.getElementById("textoBonus3").innerHTML = formatBonusText(dadosBonus.bonusTexto_3, "bonus3");
+  } else {
+    // Fecha a seção
+    secao.style.display = "none";
+  }
 }
 
 function alternarTextoBonus(num) {
   const el = document.getElementById(`textoBonus${num}`);
   el.style.display = el.style.display === "none" ? "block" : "none";
 }
+
 
 
 // Abrir ou fechar a seção de bônus
@@ -3512,12 +3524,26 @@ function calculateCurrentAttributes() {
 
 
 // LEMBRAR
+// Atualiza a barra principal fora do popup
+
 
 // Obtendo os elementos do botão e popup
 const abrirBtn = document.getElementById("abrir-status-rpg");
 const fecharBtn = document.getElementById("fechar-status-rpg");
 const popup = document.getElementById("status-rpg-popup");
 const app = document.getElementById("status-rpg-app");
+
+// Função para obter o valor total de cada status
+const obterTotal = (estado) => {
+  if (estado === "vida") {
+    return parseInt(document.getElementById('life-view').textContent) || 0;
+  } else if (estado === "sanidade") {
+    return parseInt(document.getElementById('sanity-view').textContent) || 0;
+  } else if (estado === "especial") {
+    return parseInt(document.getElementById('special-view').textContent) || 0;
+  }
+  return 0;
+};
 
 // Abrir o popup
 abrirBtn.addEventListener("click", () => {
@@ -3542,8 +3568,7 @@ const criarBarra = (estado) => {
     <div class="status-rpg-title">${estado.toUpperCase()}</div>
 
     <div class="status-rpg-input-group">
-      <label>Total:</label>
-      <input type="number" id="${estado}-total" placeholder="Total" min="1">
+      
       <label>Atual:</label>
       <input type="number" id="${estado}-atual" placeholder="Atual" min="0">
       <label>Temp:</label>
@@ -3571,12 +3596,16 @@ const criarBarra = (estado) => {
     </div>
   `;
 
+  // Adiciona o evento de input para atualização automática
+  container.querySelector(`#${estado}-atual`).addEventListener("input", () => atualizar(estado));
+  container.querySelector(`#${estado}-temp`).addEventListener("input", () => atualizar(estado));
+
   return container;
 };
 
 // Função para atualizar as barras de status
 const atualizar = (estado) => {
-  const total = parseInt(document.getElementById(`${estado}-total`).value);
+  const total = obterTotal(estado);
   let atual = parseInt(document.getElementById(`${estado}-atual`).value);
   let temp = parseInt(document.getElementById(`${estado}-temp`).value) || 0;
 
@@ -3592,7 +3621,7 @@ const atualizar = (estado) => {
 // Função para aplicar dano
 const aplicarDano = (estado) => {
   let dano = parseInt(document.getElementById(`${estado}-dano`).value) || 0;
-  const total = parseInt(document.getElementById(`${estado}-total`).value);
+  const total = obterTotal(estado);
   let atual = parseInt(document.getElementById(`${estado}-atual`).value);
   let temp = temporarios[estado];
 
@@ -3616,7 +3645,7 @@ const aplicarDano = (estado) => {
 // Função para aplicar cura
 const aplicarCura = (estado) => {
   const cura = parseInt(document.getElementById(`${estado}-cura`).value) || 0;
-  const total = parseInt(document.getElementById(`${estado}-total`).value);
+  const total = obterTotal(estado);
   let atual = parseInt(document.getElementById(`${estado}-atual`).value);
 
   // Aplica a cura sem ultrapassar o total
@@ -3625,20 +3654,24 @@ const aplicarCura = (estado) => {
   // Atualiza a barra de status
   atualizarBarra(estado, atual, total, temporarios[estado]);
 };
+const nomeCapitalizado = (estado) => {
+  return {
+    vida: 'Vida',
+    sanidade: 'Sanidade',
+    especial: 'Especial'
+  }[estado] || estado.charAt(0).toUpperCase() + estado.slice(1);
+};
 
 // Função para atualizar a barra de status
 // Função para atualizar a barra de status
 const atualizarBarra = (estado, atual, total, temp) => {
-  // Atualiza o valor da barra com base no percentual atual
   const porcentagem = total > 0 ? Math.floor((atual / total) * 100) : 0;
   const barra = document.getElementById(`${estado}-barra`);
   const barraTemp = document.getElementById(`${estado}-temp-bar`);
 
-  // Atualiza a largura do preenchimento
   barra.style.width = `${porcentagem}%`;
   barra.textContent = `${porcentagem}% (${atual} / ${total})`;
 
-  // Atualiza a cor do preenchimento com base no estado
   if (estado === "vida") {
     barra.classList.add("status-rpg-vida");
     barra.classList.remove("status-rpg-sanidade", "status-rpg-especial");
@@ -3650,21 +3683,57 @@ const atualizarBarra = (estado, atual, total, temp) => {
     barra.classList.remove("status-rpg-vida", "status-rpg-sanidade");
   }
 
-  // Atualiza a barra temporária
   const tempPorcentagem = total > 0 ? Math.floor((temp / total) * 100) : 0;
   barraTemp.style.width = `${tempPorcentagem}%`;
 
-  // Atualiza os campos de entrada
+  // Atualiza os inputs
   document.getElementById(`${estado}-atual`).value = atual;
   document.getElementById(`${estado}-temp`).value = temp;
-};
 
+  // Atualiza a barra principal fora do popup
+  const barraPrincipalId = {
+    vida: 'life-fill',
+    sanidade: 'sanity-fill',
+    especial: 'special-fill'
+  }[estado];
+
+  const barraPrincipal = document.getElementById(barraPrincipalId);
+  if (barraPrincipal) {
+    const porcentagemPrincipal = total > 0 ? Math.floor((atual / total) * 100) : 0;
+    barraPrincipal.style.width = `${porcentagemPrincipal}%`;
+    barraPrincipal.textContent = `${nomeCapitalizado(estado)}: ${atual} / ${total}`;
+  }
+};
 
 // Adiciona as barras ao app dentro do popup
 estados.forEach(e => app.appendChild(criarBarra(e)));
 
-
 //LEMBRAR
+// Função para mostrar as barras quando raça ou pass for selecionado
+
+// Obtendo os elementos de seleção
+const pastSelect = document.getElementById("past");
+const raceSelect = document.getElementById("race");
+
+// Função para mostrar as barras quando "Passado" ou "Raça" forem selecionados
+const ativarBarras = () => {
+  const barrasExternas = document.querySelectorAll('.status-externo');
+  
+  // Se alguma opção de "Passado" ou "Raça" for selecionada, mostra as barras
+  if (pastSelect.value !== "" || raceSelect.value !== "") {
+    barrasExternas.forEach(barra => barra.classList.add('ativo'));
+  } else {
+    // Se nenhuma seleção for feita, esconde as barras
+    barrasExternas.forEach(barra => barra.classList.remove('ativo'));
+  }
+};
+
+// Adiciona os eventos de mudança nos selects de "Passado" e "Raça"
+pastSelect.addEventListener('change', ativarBarras);
+raceSelect.addEventListener('change', ativarBarras);
+
+// Chama a função inicial para garantir que as barras estejam invisíveis quando a página carregar
+ativarBarras();
 
 // Function to calculate total level based on attribute levels
 function calculateLevel() {
@@ -3778,7 +3847,6 @@ function updateStats() {
 
 
 
- 
 
 
   // Atualizar as barras de progresso
@@ -4318,4 +4386,41 @@ function applyDamage(type) {
 }
 
 // sistema do mapa interativo
+
+
+  // Atualiza os campos de entrada
+  document.getElementById(`${estado}-atual`).value = atual;
+  document.getElementById(`${estado}-temp`).value = temp;
+
+  // Atualiza a barra principal fora do popup (ex: life-fill, sanity-fill, special-fill)
+  const barraPrincipalId = {
+    vida: 'life-fill',
+    sanidade: 'sanity-fill',
+    especial: 'special-fill'
+  }[estado];
+
+  const barraPrincipal = document.getElementById(barraPrincipalId);
+  if (barraPrincipal) {
+    const porcentagemPrincipal = total > 0 ? Math.floor((atual / total) * 100) : 0;
+    barraPrincipal.style.width = `${porcentagemPrincipal}%`;
+    barraPrincipal.textContent = `${atual} / ${total}`;
+  }
+
+
+
+
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+  // Atualiza as barras principais do HTML (fora do popup)
+  // Atualiza as barras principais do HTML (fora do popup)
+// Atualiza a barra principal fora do popup
+
 

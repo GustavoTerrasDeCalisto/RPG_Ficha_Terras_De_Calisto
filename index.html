@@ -479,30 +479,37 @@
     
     <!-- Seção da esquerda -->
 <div id="left-section">
-  <!-- Menu Lateral -->
-
-  <div id="character-stats">
-    <div class="stat-container">
-      <!-- Barra de Status -->
-      <div class="stat-bar">
-        <div id="life-fill" class="fill" style="width: 0%;"></div>
-        <span>Life: <span id="life-view">0</span></span>
-      </div>
+  <div class="status-externo">
+    <div class="status-bar">
+      <div id="life-fill" class="fill"></div>
+      <div id="life-temp-fill" class="temp-fill"></div> <!-- Barra Temporária -->
+      <span id="life-view">0 / 0</span>
     </div>
-          <div class="stat-container">
-           <!-- <h3 class="barras-text">Sanity: </h3> -->
-            <div class="stat-bar">
-              <div id="sanity-fill" class="fill" style="width: 0%;"></div>
-              <span>Sanity:<span id="sanity-view">0</span></span>
-            </div>
-          </div>
-          <div class="stat-container">
-            <!--<h3 class="barras-text">Special: </h3> -->
-            <div class="stat-bar">
-              <div id="special-fill" class="fill" style="width: 0%;"></div>
-              <span>Special:<span id="special-view">0</span></span>
-            </div>
-          </div>
+  </div>
+  
+  <div class="status-externo">
+    <div class="status-bar">
+      <div id="sanity-fill" class="fill"></div>
+      <div id="sanity-temp-fill" class="temp-fill"></div> <!-- Barra Temporária -->
+      <span id="sanity-view">0 / 0</span>
+    </div>
+  </div>
+  
+  <div class="status-externo">
+    <div class="status-bar">
+      <div id="special-fill" class="fill"></div>
+      <div id="special-temp-fill" class="temp-fill"></div> <!-- Barra Temporária -->
+      <span id="special-view">0 / 0</span>
+    </div>
+  </div>
+  
+
+
+
+  
+<div id="character-stats">
+  
+
           <div class="stats-wrapper">
             <div class="stat-container">
               <span>Armor: <span id="armor-view">0</span></span>

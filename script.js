@@ -324,7 +324,7 @@ const pastData = {
     "armaduraPorNivel": 1,
     "resistencia": "Sagrado",
     "bonusPass":`
-    Nível 0: +2 em testes de Conexão, +5 em testes de Sobrevivência.
+    Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</strong>
 `
 ,
 "movimento_pass": 2,
@@ -339,10 +339,28 @@ bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
 <p>Nível 7: <strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.</p>
 <p>Nível 8: +1d8 de dano com armas pesadas.</p>
 <p>Nível 9: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>`,
-    bonustitulo_2: "Aldesão cuuuuu2",
-    bonusTexto_2: "Aumenta a força do personagem em 2 pontoscuuuuuuuuuuu.",
-    bonustitulo_3: "aldesão pintt6",
-    bonusTexto_3: "Aumenta a força do personagem em 2 pontsssssssssssssssssssssssssssssssos.",
+bonustitulo_2: "<p>♟️<strong>Estrategista</strong></p>",
+bonusTexto_2: `Nível 1: +1 em precisão à distância.
+<p>Nível 1: +1 em precisão à distância.</p>
+<p>Nível 2: +2 em testes de Agilidade.</p>
+<p>Nível 3: <strong>Observador</strong> - +1 em testes de percepção em situações de combate ou exploração.</p>
+<p>Nível 4: +1 em iniciativas e bônus de evasão contra ataques mágicos.</p>
+<p>Nível 5: <strong>Estratégia Rápida</strong> - +1 em testes de comando e bônus em ações táticas.</p>
+<p>Nível 6: +1d8 de dano em ataques com projéteis.</p>
+<p>Nível 7: <strong>Alvo Improvável</strong> - Você recebe +2 de bônus na armadura contra inimigos que ainda não sofreram dano.</p>
+<p>Nível 8: <strong>Tático Experiente</strong> - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.</p>
+<p>Nível 9: <strong>Plano de Batalha</strong> - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.</p>`
+,
+    bonustitulo_3: "<p>🧙‍♂️<strong>Conjurador</strong></p>",
+    bonusTexto_3: `<p>Nível 1: +1 em Conexão.</p>
+<p>Nível 2: +1d6 de cura/dano com feitiços simples.</p>
+<p>Nível 3: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.</p>
+<p>Nível 4: <strong>Magias de nível 1, 2 e 3</strong> - Consegue conjurar magias pequenas sem consumir recursos extras.</p>
+<p>Nível 5: +1 em testes de Conjuração ao invocar elementos.</p>
+<p>Nível 6: Ganha uma magia de nível 3 a 4 do grupo elemental escolhido.</p>
+<p>Nível 7: <strong>Magia Avançada</strong> - Ganha uma magia de nível 5 a 6 do grupo elemental escolhido.</p>
+<p>Nível 8: <strong>Custo Mínimo</strong> - Reduz o custo de uma magia por dia em 1 ponto de sanidade.</p>
+<p>Nível 9: <strong>Mestre Elemental</strong> - Ganha uma magia de nível 7 a 9 do grupo elemental escolhido e pode conjurá-la uma vez por dia sem custo.</p>`,
     
   },
   "Arauto": { // Cavaleiro adicionado como exemplo
@@ -1661,8 +1679,9 @@ function formatBonusText(text, type = "default") {
           .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
           .replace(/_(.*?)_/g, '<em>$1</em>')
           .replace(/~(.*?)~/g, '<u>$1</u>')
-          .replace(/tachado\((.*?)\)/g, '<s>$1</s>') // Usando a palavra 'tachado'
-          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>');
+          .replace(/tachado\((.*?)\)/g, '<s>$1</s>')
+          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
+          .replace(/\[(.*?)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
         return `<p class="${className}">${formattedSentence}</p>`;
       } else {
         return '';
@@ -1724,6 +1743,9 @@ function atualizarBonusDoPassado(passadoSelecionado) {
     document.getElementById(`tituloBonus${i}`).innerHTML = formatBonusText(titulo, `bonus${i}`);
     document.getElementById(`textoBonus${i}`).innerHTML = formatBonusText(texto, `bonus${i}`);
   }
+  // Novo trecho para bonusPass
+  const bonusPassText = dados?.bonusPass || '';
+  document.getElementById("textoBonusPassado").innerHTML = formatBonusText(bonusPassText);
 }
 
 // Ao carregar a página ou mudar o select

@@ -47,11 +47,27 @@
 <div class="container-centralizado">
   <!--<h1>Perícias</h1> -->
   <p class="descrição_pericias">
-    <strong>Perícias, Talentos e Armas (P.T.A.)</strong>
+    <strong>Perícias, Talentos e Armas (P.T.A.) </strong>
+    
     <p>Escolha três P.T.A. para receber um bônus de <span id="pta-bonus-value">+2</span>.</p>
     <p>Além disso, pode adicionar <span id="past-bonus-value">+2</span> às perícias concedidas pelo seu passado ou raça.</p>
+    <div id="character-info-section-1" style="margin: 0px 0;">
+      <button class="toggle-button2" onclick="toggleSectionInfo('expandableSectionInfo1')" 
+        style="background-color: red; color: white; padding: 4px 10px; border: none; border-radius: 8px; font-size: 12px; cursor: pointer;">
+        Importante!
+      </button>
     
-  </p>
+      <div id="expandableSectionInfo1" style="display: none; margin-top: 15px; background-color: #555151; padding: 20px; border-radius: 10px; border: 1px solid #292727;">
+        <h1 class="descrição_pericias" style="font-size: 11px;">
+          <strong>Observação:</strong>
+          <p>
+            Cada talento escolhido concede +2 nos testes relacionados à perícia. Alguns talentos também desbloqueiam o uso de certos tipos de equipamento. Caso o personagem tente usar um equipamento sem o talento correspondente, ele sofre desvantagem nos testes de acerto.
+          </p>
+        </h1>
+      </div>
+    </div>
+    
+      </p>
   <div class="pericias_arrumado">
     <div class="pericias">
       <div class="pericia" data-name="Espadas" data-requirement="Brutalidade" data-description="Desbloqueia o uso de: Espada curta, Florete, Punhal, Adaga, Espada longa, Espada bastarda, Espadão, Claymore, Cimitarra e Sabre.">
@@ -411,7 +427,7 @@
                     <button class="toggle-button2" onclick="toggleMenu()">Talentos</button>
  
  <!-- Botão para abrir o popup -->
-<button id="abrir-status-rpg" class="status-rpg-btn">Abrir Status RPG</button>
+<button id="abrir-status-rpg" class="status-rpg-btn">Editar</button>
 
 <!-- Popup -->
 <div id="status-rpg-popup" class="status-rpg-popup oculto">
@@ -614,16 +630,19 @@
     <!-- Seção da direita -->
 
     <div id="right-section">
-      <div id="character-info-section" style="margin: 20px 0;">
-        <button class="toggle-button2" onclick="toggleSectionInfo()" style="background-color: red; color: white; padding: 5px 15px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
-AVISO!        </button>
+      <div id="character-info-section-2" style="margin: 0px 0;">
+        <button class="toggle-button2" onclick="toggleSectionInfo('expandableSectionInfo2')" 
+          style="background-color: red; color: white; padding: 5px 15px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+          AVISO!
+        </button>
       
-        <div id="expandableSectionInfo" style="display: none; margin-top: 15px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; border: 1px solid #ccc;">
+        <div id="expandableSectionInfo2" style="display: none; margin-top: 15px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; border: 1px solid #ccc;">
           <h1 class="Aviso" style="font-size: 11px;">
             A aparência do seu personagem será uma fusão entre seu passado e sua raça — imagine-o livremente! No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14, mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
           </h1>
         </div>
       </div>
+      
        
         
         <form id="character-form">

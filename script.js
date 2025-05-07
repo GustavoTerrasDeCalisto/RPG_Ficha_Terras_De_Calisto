@@ -564,41 +564,47 @@ bonusTexto_3: `
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
       "bonusPass": `
-      Nível 0:+2 em dados de acerto com armas a distância, pode Mirar sem lado negativo uma vez por combate.
-      
-      🔫Pistoleiro
-Nível 1: Mão Ágil – Permite sacar e guardar armas com rapidez, ganhando +1 em precisão ao atirar com duas armas. (1 de especial por uso)
-Nível 2: Tiro Duplo – Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 de especial por uso)
-Nível 3: Ponto Cego – Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 de especial por uso)
-Nível 4: Reflexos Rápidos – Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)
-Nível 5: Bala Certeira – Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 de especial por uso)
-Nível 6: Velocidade da Bala – Pode realizar um tiro extra sem penalidade. (3 de especial por uso)
-Nível 7: Destemido – Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)
-Nível 8: Impacto Devastador – Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 de especial por uso)
-Nível 9: Fúria do Pistoleiro – Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 de especial por ativação, 1 vez por combate)
+<p><strong>Nível 0:</strong> +2 em dados de acerto com armas à distância. Pode [Mirar](https://terrasdecalistoficha.wordpress.com/como-jogar/#:~:text=para%20se%20levantar.-,Mirar,-%3A%20O%20personagem%20est%C3%A1) sem lado negativo uma vez por combate.</p>
+`,
 
-🚨Fora da Lei
-Nível 1: Infâmia – Ganha +1 em testes de intimidação contra NPCs e inimigos. (1 de especial por uso)
-Nível 2: Procurado – Quanto mais alta a reputação de foragido, maior a chance de esquivar ataques (+1 em esquiva para cada estrela no seu cartaz de procurado Max.5). (Passivo)
-Nível 3: Tiro Ameaçador – Efetua um disparo que assusta o alvo, causando -1d4 nos próximos ataques do inimigo. (2 de especial por uso)
-Nível 4: Sangue Frio – Ganha +2 em resistência contra efeitos de medo. (Passivo)
-Nível 5: Fama Implacável – Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 de especial por ativação, 1 vez por combate)
-Nível 6: Presença Intimidadora – Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem contra você. (Passivo)
-Nível 7: Desprezo Mortal – Disparo que ignora armadura, causando +2d6 de dano adicional ao inimigo. (4 de especial por uso)
-Nível 8: Terror do Oeste – Todos os inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)
-Nível 9: Lenda Viva – Seus ataques causam +2d10 de dano a qualquer alvo que falhe em resistir ao medo. (5 de especial por ativação, 1 vez por combate)
+bonustitulo_1: "<p>🔫 <strong>Pistoleiro</strong></p>",
+bonusTexto_1: `
+<p><strong>Nível 1:</strong> <strong>Mão Ágil</strong> – Permite sacar e guardar armas com rapidez, ganhando +1 em precisão ao atirar com duas armas. (1 de especial por uso)</p>
+<p><strong>Nível 2:</strong> <strong>Tiro Duplo</strong> – Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 de especial por uso)</p>
+<p><strong>Nível 3:</strong> <strong>Ponto Cego</strong> – Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 de especial por uso)</p>
+<p><strong>Nível 4:</strong> <strong>Reflexos Rápidos</strong> – Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)</p>
+<p><strong>Nível 5:</strong> <strong>Bala Certeira</strong> – Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 de especial por uso)</p>
+<p><strong>Nível 6:</strong> <strong>Velocidade da Bala</strong> – Pode realizar um tiro extra sem penalidade. (3 de especial por uso)</p>
+<p><strong>Nível 7:</strong> <strong>Destemido</strong> – Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)</p>
+<p><strong>Nível 8:</strong> <strong>Impacto Devastador</strong> – Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 de especial por uso)</p>
+<p><strong>Nível 9:</strong> <strong>Fúria do Pistoleiro</strong> – Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 de especial por ativação, 1 vez por combate)</p>
+`,
 
-💥Inimigo da Bala
-Nível 1: Pancada Letal – Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 de especial por uso)
-Nível 2: Defesa da Arma – Ganha +1 em resistência quando evita disparos por mais de um turno. (Passivo) e + Libera a magia Flecha de Luz
-Nível 3: Bônus de Especial – Regenera 1 ponto de especial para cada turno sem disparar. (Passivo) e Libera a passiva Teleporte Repentino
-Nível 4: Controle do Combate – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)
-Nível 5: Quebra-Defesa – Um golpe poderoso que ignora a defesa física do alvo, causando +1d6 de dano. (3 de especial por uso)
-Nível 6: Fúria Contida – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)
-Nível 7: Impacto Brutal – Causa +2d6 de dano extra em ataque corpo a corpo, derrubando o inimigo com sucesso. (4 de especial por uso)
-Nível 8: Dominância do Combate – Todos os ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)
-Nível 9: Força da Calma – Ganha +2d10 de dano em um ataque devastador, disponível apenas após três turnos sem disparar. (5 de especial por ativação, 1 vez por combate)`,
-      "movimento_pass": 4
+bonustitulo_2: "<p>🚨 <strong>Fora da Lei</strong></p>",
+bonusTexto_2: `
+<p><strong>Nível 1:</strong> <strong>Infâmia</strong> – Ganha +1 em testes de intimidação contra NPCs e inimigos. (1 de especial por uso)</p>
+<p><strong>Nível 2:</strong> <strong>Procurado</strong> – Para cada estrela no cartaz de procurado, recebe +1 em esquiva (máx. 5). (Passivo)</p>
+<p><strong>Nível 3:</strong> <strong>Tiro Ameaçador</strong> – Disparo que assusta o alvo, causando -1d4 nos próximos ataques dele. (2 de especial por uso)</p>
+<p><strong>Nível 4:</strong> <strong>Sangue Frio</strong> – Ganha +2 em resistência contra efeitos de medo. (Passivo)</p>
+<p><strong>Nível 5:</strong> <strong>Fama Implacável</strong> – Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 de especial por ativação, 1 vez por combate)</p>
+<p><strong>Nível 6:</strong> <strong>Presença Intimidadora</strong> – Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem. (Passivo)</p>
+<p><strong>Nível 7:</strong> <strong>Desprezo Mortal</strong> – Disparo que ignora armadura, causando +2d6 de dano adicional. (4 de especial por uso)</p>
+<p><strong>Nível 8:</strong> <strong>Terror do Oeste</strong> – Inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)</p>
+<p><strong>Nível 9:</strong> <strong>Lenda Viva</strong> – Ataques causam +2d10 de dano a alvos que falharem em resistir ao medo. (5 de especial por ativação, 1 vez por combate)</p>
+`,
+
+bonustitulo_3: "<p>💥 <strong>Inimigo da Bala</strong></p>",
+bonusTexto_3: `
+<p><strong>Nível 1:</strong> <strong>Pancada Letal</strong> – Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 de especial por uso)</p>
+<p><strong>Nível 2:</strong> <strong>Defesa da Arma</strong> – Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) e libera a magia [Flecha de Luz](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=antes%20de%20conjurar.-,Flecha%20de%20Luz,-Sagitta%20Lux)</p>
+<p><strong>Nível 3:</strong> <strong>Bônus de Especial</strong> – Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) e libera a passiva [Teleporte Repentino](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Preserva%C3%A7%C3%A3o-,Teleporte%20repentino,-Subitus%20Ianuae)</p>
+<p><strong>Nível 4:</strong> <strong>Controle do Combate</strong> – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)</p>
+<p><strong>Nível 5:</strong> <strong>Quebra-Defesa</strong> – Golpe que ignora defesa física e causa +1d6 de dano. (3 de especial por uso)</p>
+<p><strong>Nível 6:</strong> <strong>Fúria Contida</strong> – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)</p>
+<p><strong>Nível 7:</strong> <strong>Impacto Brutal</strong> – Ataque corpo a corpo que causa +2d6 de dano e derruba o inimigo. (4 de especial por uso)</p>
+<p><strong>Nível 8:</strong> <strong>Dominância do Combate</strong> – Ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)</p>
+<p><strong>Nível 9:</strong> <strong>Força da Calma</strong> – Executa ataque devastador com +2d10 de dano, disponível após três turnos sem disparar. (5 de especial por ativação, 1 vez por combate)</p>
+`, "movimento_pass": 4
     },
     "Barão": { 
       "vidaPorNivel": 14,
@@ -4292,6 +4298,10 @@ document.addEventListener('click', function(event) {
 function toggleSectionInfo() {
   const sectionContent = document.getElementById('expandableSectionInfo');
   sectionContent.style.display = sectionContent.style.display === 'none' ? 'block' : 'none';
+}
+function toggleSectionInfo(id) {
+  const section = document.getElementById(id);
+  section.style.display = section.style.display === 'none' ? 'block' : 'none';
 }
 
 // Função genérica para aplicar dano/ajuste

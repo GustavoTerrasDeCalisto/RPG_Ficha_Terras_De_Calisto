@@ -1490,7 +1490,7 @@ a:active {
 }
 .item-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 .popup {
@@ -1515,7 +1515,7 @@ a:active {
   padding: 20px;
   border-radius: 10px;
   width: 90%;
-  max-width: 600px;
+  max-width: 900px;
   max-height: 90vh;
   overflow-y: auto;
   box-sizing: border-box;

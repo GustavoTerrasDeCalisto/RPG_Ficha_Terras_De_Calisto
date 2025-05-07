@@ -1492,11 +1492,45 @@ a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  max-height: 600px;
-  overflow-y: auto;
-  padding: 10px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
 }
 
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  
+  flex-direction: column;
+  gap: 10px;
+}
+.scrollable-grid {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 20px;
+  justify-content: start;
+
+}
 /* Cartões dos itens */
 .item-card {
   width: 140px;
@@ -1531,15 +1565,18 @@ a:active {
 .item-card img {
   width: 100%; /* Mantém a largura das imagens */
   height: auto;
-  margin: 0 auto;
   border-radius: 5px;
 }
 
 /* Imagem grande da descrição */
 #itemDescImage {
   width: 250px;
+  max-width: 100%; /* responsivo para não ultrapassar a largura do popup */
   height: auto;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  flex-shrink: 0; /* evita encolher */
 }
 
 /* Popup escondido */
@@ -1550,36 +1587,39 @@ a:active {
 
 /* Popup de descrição dos itens */
 
-
-/* Popup de descrição dos itens */
 #itemDescPopup {
   position: fixed;
-  top: 50%;
+  top: 5vh;                  /* Ajuste para começar mais próximo do topo da viewport */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: #1e1e1e;
   border: 2px solid #444;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  z-index: 1000;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  z-index: 10001;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 12px;
-  max-width: 500px;
-  width: 80%;
-  overflow-y: auto;
-  max-height: 80vh;
-}
+  width: 90%;                /* largura responsiva para ocupar a tela com margem */
+  max-width: 500px;          /* limita a largura máxima */
+  max-height: 95vh;          /* limita a altura para 80% da viewport */
+  min-width: 300px;          /* largura mínima para melhor usabilidade */
+  min-height: 200px;         /* altura mínima para evitar popups muito pequenos */
+  overflow-y: auto;          /* habilita rolagem vertical quando necessário */
+  box-sizing: border-box;    /* inclui padding e borda no cálculo de largura/altura */
+  overflow-x: hidden;        /* evita overflow horizontal */
+  justify-content: start;
 
+}
 #itemDescTitle {
+  
   margin-bottom: 15px;
   font-size: 1.8em;
   font-weight: bold;
   color: #f0f0f0;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 #itemDescText {
@@ -1681,34 +1721,43 @@ a:active {
 /* RESPONSIVO para telas menores */
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
+
+  .scrollable-grid {
+    padding: 10px;
+    max-height: 80vh;
+    gap: 8px;
+    justify-content: center;
+  }
+
   .item-grid {
-    grid-template-columns: repeat(2, 1fr); /* 3 colunas no mobile */
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 colunas no mobile */
+    gap: 2px;
     max-height: 400px;
   }
 
   .item-card {
     padding: 10px;
     font-size: 0.9em;
-    min-height: 180px; /* Mantém o mesmo tamanho do cartão */
+    min-height: 180px;
   }
 
   .item-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensifica o efeito de hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .item-card img {
-    width: 90%; /* Aumenta um pouco a largura das imagens */
+    width: 90%;
+    height: auto;
   }
 
- #itemDescPopup {
-    width: 95%; /* Ajusta a largura para 90% da tela no mobile */
-    max-width: none; /* Remove o limite de largura máximo */
-    padding:10px; /* Reduz o padding para otimizar o espaço */
-    max-height: 90vh; /* Ajusta a altura máxima para 90% da altura da tela */
+  #itemDescPopup {
+    width: 95%;
+    max-width: none;
+    max-height: 90vh;
+    justify-content: flex-start;
   }
-
 
   #itemDescPopup h2 {
     font-size: 1.3em;
@@ -1717,12 +1766,14 @@ a:active {
   #itemDescPopup .desc-text,
   #itemDescPopup .desc-details {
     font-size: 0.80em;
+    text-align: justify;
   }
 
   #itemDescImage {
     width: 60%;
     height: auto;
     margin-bottom: 15px;
+    margin-top: 10px; /* caso precise espaço superior */
   }
 
   #equippedItemDisplay {
@@ -1760,14 +1811,8 @@ a:active {
     font-weight: bold;
   }
 
-
-
-  /* Adicionando um ajuste de layout para o conteúdo da descrição */
-  .desc-text, .desc-details {
-    text-align: justify; /* Melhor distribuição do texto */
-  }
-  
 }
+
 
 
 /* Visível */

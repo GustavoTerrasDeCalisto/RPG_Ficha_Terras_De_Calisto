@@ -593,20 +593,21 @@
 
               <!-- Popup com grid de itens -->
               <!-- Popup com grid de itens -->
-<div id="itemSelectPopup" class="popup hidden">
-  <div class="popup-content scrollable-grid">
-    <button id="closeItemPopup">Fechar</button>
-
-    <h2>Escolha um Item</h2>
-      <select id="itemFilter">
-  <option value="Todos">Todos os Tipos</option>
-</select>
-
-    <div class="item-grid" id="itemGrid">
-      <!-- Itens vão ser inseridos por JS -->
-    </div>
-  </div>
-</div>
+              <div id="itemSelectPopup" class="popup hidden">
+                <div class="popup-content scrollable-grid">
+                  <button id="closeItemPopup">Fechar</button>
+                  <h2>Escolha um Item</h2>
+                  
+                  <select id="itemFilter">
+                    <option value="Todos">Todos os Tipos</option>
+                  </select>
+              
+                  <div class="item-grid" id="itemGrid">
+                    <!-- Itens inseridos por JS -->
+                  </div>
+                </div>
+              </div>
+              
 
 
               
@@ -741,9 +742,9 @@
 
 <!-- Popup de descrição -->
 <div id="itemDescPopup" class="popup hidden">
-  <div id="itemDescTitle"></div>
   <img id="itemDescImage" src="" alt="Item">
   <div id="itemDescText"></div>
+  <div id="itemDescTitle"></div>
 
   <!-- Novas informações -->
   <div id="itemDescDamageType"></div>

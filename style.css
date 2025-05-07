@@ -1731,7 +1731,7 @@ a:active {
 
   .item-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 colunas no mobile */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas no mobile */
     gap: 2px;
     max-height: 400px;
   }

@@ -1754,8 +1754,9 @@ a:active {
 
   #itemDescPopup {
     width: 95%;
+    
     max-width: none;
-    max-height: 90vh;
+    max-height: 80vh;
     justify-content: flex-start;
   }
 

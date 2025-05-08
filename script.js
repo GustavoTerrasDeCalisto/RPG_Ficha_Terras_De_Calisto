@@ -369,7 +369,7 @@ bonusTexto_2: `Nível 1: +1 em precisão à distância.
     "resistencia": "Mental",
 "movimento_pass": 2,
 "bonusPass": `
-<p>Nível 0: <strong>Passiva Medo oculto</strong> sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
+<p>Nível 0: <strong>Passiva</strong> [Medo oculto](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Medo%20oculto,-Occulta%20timor) sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
 `,
 
 bonustitulo_1: `<p>🧠<strong>Mentor Psíquico</strong></p>`,
@@ -467,7 +467,7 @@ bonusTexto_3: `
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
     "bonusPass": `
-<p>Nível 0: Passiva <strong>Furtividade Sombria</strong> — 1 vez no dia sem custo, +5 com <strong>Adagas</strong>.</p>
+<p>Nível 0: <strong>Passiva</strong> [Furtividade Sombria](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Conex%C3%A3o-,Furtividade%20sombria,-Furtim%20tenebris) — 1 vez no dia sem custo, +5 com <strong>Adagas</strong>.</p>
 `,
 bonustitulo_1: "<p>🗡️ <strong>Assassinato Furtivo</strong></p>",
 bonusTexto_1: `
@@ -612,41 +612,48 @@ bonusTexto_3: `
       "armaduraPorNivel": 1,
       "resistencia": "Ácido",
       "bonusPass": `
-      Nível 0: +1 para todas as rolagens de dados, Magia Cuspe ácido sem custo uma vez por dia.
+<p><strong>Nível 0:</strong> +1 para todas as rolagens de dados. Libera e pode usar a Magia [Cuspe Ácido](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Cuspe%20%C3%A1cido-,Acidum%20veru,-O%20que%20acontece) sem custo uma vez por dia.</p>
+`,
 
-      🧪Manipulação Ácida
-Nível 1: +1 em testes de Enganação ao influenciar outros.
-Nível 2: Insidioso – +1 em testes de Agilidade para ações furtivas ou subversivas.
-Nível 3: Mestre da Dissolução – Libera uma magia de nível 1 à escolha na Cúpula da Corrosão.
-Nível 4: Controle Ácido – +2 em intimidação ao demonstrar poder ácido em combate.
-Nível 5: Comando Persuasivo – Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)
-Nível 6: Senhor do Veneno – Libera uma magia de nível 2 à escolha na Cúpula da Corrosão.
-Nível 7: Olhar Corrosivo – Inimigos próximos sofrem -1 em resistência mental.
-Nível 8: Manipulador Implacável – +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.
-Nível 9: Barão do Subjugamento – Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)
+bonustitulo_1: "<p>🧪 <strong>Manipulação Ácida</strong></p>",
+bonusTexto_1: `
+<p><strong>Nível 1:</strong> +1 em testes de Enganação ao influenciar outros.</p>
+<p><strong>Nível 2:</strong> <strong>Insidioso</strong> – +1 em testes de Agilidade para ações furtivas ou subversivas.</p>
+<p><strong>Nível 3:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 4:</strong> <strong>Controle Ácido</strong> – +2 em Intimidação ao demonstrar poder ácido em combate.</p>
+<p><strong>Nível 5:</strong> <strong>Comando Persuasivo</strong> – Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)</p>
+<p><strong>Nível 6:</strong> <strong>Senhor do Veneno</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 7:</strong> <strong>Olhar Corrosivo</strong> – Inimigos próximos sofrem -1 em resistência mental.</p>
+<p><strong>Nível 8:</strong> <strong>Manipulador Implacável</strong> – +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.</p>
+<p><strong>Nível 9:</strong> <strong>Barão do Subjugamento</strong> – Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)</p>
+`,
 
-💀Corrupto
-Nível 1: +1 em testes de Intimidação ao causar medo através do poder corrosivo.
-Nível 2: Sopro Ácido – Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)
-Nível 3: Mestre da Dissolução – Libera uma magia de nível 1 à escolha na Cúpula da Corrosão.
-Nível 4: Aura da Corrosão – Inimigos próximos recebem -1 em resistência ao ácido.
-Nível 5: Maldição Ácida – Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa um dano adicional de +1d6 ácido. (Custo: 3 de especial)
-Nível 6: Senhor da Ruína Ácida – Libera uma magia de nível 2 à escolha na Cúpula da Corrosão.
-Nível 7: Decadência Profunda – Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)
-Nível 8: Desolador Corrosivo – +2 de dano ácido contra alvos debilitados.
-Nível 9: Propagador da Degradação – Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)
+bonustitulo_2: "<p>💀 <strong>Corrupto</strong></p>",
+bonusTexto_2: `
+<p><strong>Nível 1:</strong> +1 em testes de Intimidação ao causar medo através do poder corrosivo.</p>
+<p><strong>Nível 2:</strong> <strong>Sopro Ácido</strong> – Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)</p>
+<p><strong>Nível 3:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 4:</strong> <strong>Aura da Corrosão</strong> – Inimigos próximos recebem -1 em resistência ao ácido.</p>
+<p><strong>Nível 5:</strong> <strong>Maldição Ácida</strong> – Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa +1d6 de dano ácido adicional. (Custo: 3 de especial)</p>
+<p><strong>Nível 6:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 7:</strong> <strong>Decadência Profunda</strong> – Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)</p>
+<p><strong>Nível 8:</strong> <strong>Desolador Corrosivo</strong> – +2 de dano ácido contra alvos debilitados.</p>
+<p><strong>Nível 9:</strong> <strong>Propagador da Degradação</strong> – Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)</p>
+`,
 
-🦠Adepto da Corrosão
-Nível 1: +1d4 em vida ao sofrer dano ácido, aproveitando o poder da corrosão para fortalecimento.
-Nível 2: Pele Resistente – +2 em resistência contra venenos e ácidos.
-Nível 3: Mestre da Dissolução – Libera uma magia de nível 1 à escolha na Cúpula da Corrosão.
-Nível 4: Fluxo Ácido – Ao receber cura mágica, regenera +1d6 adicional.
-Nível 5: Ciclo da Corrosão – +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)
-Nível 6: Senhor da Ruína Ácida – Libera uma magia de nível 2 à escolha na Cúpula da Corrosão.
-Nível 7: Conexão Corrosiva – Cura 1d4 ao infligir dano ácido.
-Nível 8: Poder da Dissolução – Magias de ácido causam +1d8 de dano adicional.
-Nível 9: Guardião da Corrosão Suprema – Libera uma magia de nível 3 da Cúpula sem custo de especial, uma vez por combate. (Custo: 6 de especial para reativar em outro combate)`,
-      "movimento_pass": 4.5
+bonustitulo_3: "<p>🦠 <strong>Adepto da Corrosão</strong></p>",
+bonusTexto_3: `
+<p><strong>Nível 1:</strong> +1d4 em vida ao sofrer dano ácido, aproveitando o poder da corrosão para fortalecimento.</p>
+<p><strong>Nível 2:</strong> <strong>Pele Resistente</strong> – +2 em resistência contra venenos e ácidos.</p>
+<p><strong>Nível 3:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 4:</strong> <strong>Fluxo Ácido</strong> – Ao receber cura mágica, regenera +1d6 adicional.</p>
+<p><strong>Nível 5:</strong> <strong>Ciclo da Corrosão</strong> – +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)</p>
+<p><strong>Nível 6:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 7:</strong> <strong>Conexão Corrosiva</strong> – Cura 1d4 ao infligir dano ácido.</p>
+<p><strong>Nível 8:</strong> <strong>Poder da Dissolução</strong> – Magias de ácido causam +1d8 de dano adicional.</p>
+<p><strong>Nível 9:</strong> <strong>Guardião da Corrosão Suprema</strong> – Libera uma magia de nível 3 da [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula) sem custo de especial, uma vez por combate. (Custo: 6 de especial para reativar em outro combate)</p>
+`
+,  "movimento_pass": 4.5
     },
     "Bárbaro": { 
       "vidaPorNivel": 15,

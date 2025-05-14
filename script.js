@@ -1649,7 +1649,6 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
         "bonusPass": `
-<p>Personagem resistente a dano <strong>Cortante</strong><br>
 +1d8 de dano com <strong>Katanas</strong> e desembainhar no contra-ataque gasta ação livre e ganha +1d8 de dano (armas corpo a corpo).</p>
 `,
 

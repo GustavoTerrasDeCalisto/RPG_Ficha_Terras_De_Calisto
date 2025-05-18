@@ -3313,7 +3313,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.className = "cartao-criatura-custom";
     card.innerHTML = `
-      <img src="imagens/racas/${raca.imagens[0]}" alt="${raca.nome}">
+      <img src="imagens/raças/${raca.imagens[0]}" alt="${raca.nome}">
       <p>${raca.nome}</p>
     `;
     card.onclick = () => abrirPopupImagemRacaCustom(raca);

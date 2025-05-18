@@ -3333,7 +3333,7 @@ document.addEventListener("DOMContentLoaded", function () {
     raca.imagens.forEach(imagem => {
       const card = document.createElement("div");
       card.className = "cartao-criatura-custom";
-      card.innerHTML = `<img src="imagens/racas/${imagem}" alt="${raca.nome}">`;
+      card.innerHTML = `<img src="imagens/raças/${imagem}" alt="${raca.nome}">`;
       card.onclick = () => {
         alert(`Você escolheu a imagem: ${imagem} da raça ${raca.nome}`);
         fecharTodosPopupsCustom();

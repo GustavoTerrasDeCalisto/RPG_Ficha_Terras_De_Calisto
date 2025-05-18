@@ -551,6 +551,15 @@
             <img id="race-image" src="" alt="Raça"> 
             <img id="past-image" src="" alt="Passado"> 
           </div>
+    <div class="prompt-wrapper">
+  <button class="toggle-prompt-btn" onclick="togglePromptBox()">✏️ Token</button>
+
+  <div class="prompt-gerador-box hidden" id="promptBox">
+    <label for="descricao-personagem">Aparência do Token do personagem:</label>
+<textarea id="descricao-personagem" placeholder="Ex: Um elfo de pele escarlate, cabelo negro, vestindo armadura de ossos antigos e segurando um arco detalhado... Descreva cores, roupas e objetos para um resultado melhor."></textarea>
+    <button onclick="gerarPromptPersonagem()">Gerar Token</button>
+  </div>
+</div>
           <div class="content">
             <!-- outros conteúdos -->
             <div class="bonus-container">

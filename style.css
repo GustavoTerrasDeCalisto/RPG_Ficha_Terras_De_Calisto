@@ -2202,3 +2202,88 @@ span {
 }
 
 
+/* Botão personalizado */
+.toggle-button-custom {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 20px auto;
+  display: block;
+  background-color: #353535;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-button-custom:hover {
+  background-color: #505050;
+}
+
+/* Overlay escurecido para popups */
+.popup-overlay-custom {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo principal do popup */
+.popup-content-custom {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Cartão individual de criatura */
+.cartao-criatura-custom {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  width: 160px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cartao-criatura-custom:hover {
+  transform: scale(1.05);
+  background: #3a3a3a;
+}
+
+.cartao-criatura-custom img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  .popup-content-custom {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .cartao-criatura-custom {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}

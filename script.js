@@ -3259,6 +3259,110 @@ const items = [
   //em andamento
 ];
 
+document.addEventListener("DOMContentLoaded", function () {
+  // TODO SEU CÓDIGO ORIGINAL AQUI DENTRO
+(function () {
+  const racasLista = [
+    { id: "elfo", nome: "Elfo", imagens: [
+        "Elfo1.png", "Elfo2.png", "Elfo3.png", "Elfo4.png", "Elfo5.png",
+        "Elfo6.png", "Elfo7.png", "Elfo8.png", "Elfo9.png"
+      ]},
+    { id: "humano", nome: "Zhilak – Humano", imagens: [
+        "humano1.png", "humano2.png", "humano3.png", "humano4.png", "humano5.png",
+        "humano6.png", "humano7.png", "humano8.png", "humano9.png"
+      ]},
+    { id: "anao", nome: "Grunthrok – Anão", imagens: [
+        "Anão1.png", "Anão2.png", "Anão3.png", "Anão4.png", "Anão5.png",
+        "Anão6.png", "Anão7.png", "Anão8.png", "Anão9.png"
+      ]},
+    { id: "gigante", nome: "Thudrok – Gigante", imagens: [
+        "gigante1.png", "gigante2.png", "gigante3.png", "gigante4.png", "gigante5.png",
+        "gigante6.png", "gigante7.png", "gigante8.png", "gigante9.png"
+      ]},
+    { id: "krahzhik", nome: "Krahzhik – IgnisAlatus", imagens: [
+        "Ignis1.png", "Ignis2.png", "Ignis3.png", "Ignis4.png", "Ignis5.png",
+        "Ignis6.png", "Ignis7.png", "Ignis8.png", "Ignis9.png"
+      ]},
+    { id: "skywalker", nome: "Skywalkers – Flumplux", imagens: [
+        "skywalkers1.png", "skywalkers2.png", "skywalkers3.png", "skywalkers4.png", "skywalkers5.png",
+        "skywalkers6.png", "skywalkers7.png", "skywalkers8.png", "skywalkers9.png"
+      ]},
+    { id: "umbrowalker", nome: "Umbrowalker – Shlurp", imagens: [
+        "umbrowalker1.png", "umbrowalker2.png", "umbrowalker3.png", "umbrowalker4.png", "umbrowalker5.png",
+        "umbrowalker6.png", "umbrowalker7.png", "umbrowalker8.png", "umbrowalker9.png"
+      ]},
+    { id: "elfo_profundezas", nome: "Glublorp – Elfo da Profundeza", imagens: [
+        "elfo_profundezas1.png", "elfo_profundezas2.png", "elfo_profundezas3.png", "elfo_profundezas4.png", "elfo_profundezas5.png",
+        "elfo_profundezas6.png", "elfo_profundezas7.png", "elfo_profundezas8.png", "elfo_profundezas9.png"
+      ]},
+    { id: "tritao", nome: "Glubrust – Tritão", imagens: [
+        "Tritão1.png", "Tritão2.png", "Tritão3.png", "Tritão4.png", "Tritão5.png",
+        "Tritão6.png", "Tritão7.png", "Tritão8.png", "Tritão9.png"
+      ]},
+    { id: "shrivvel", nome: "Shrivvel – Pele Pálida", imagens: [
+        "Pele-Palida1.png", "Pele-Palida2.png", "Pele-Palida3.png", "Pele-Palida4.png", "Pele-Palida5.png",
+        "Pele-Palida6.png", "Pele-Palida7.png", "Pele-Palida8.png", "Pele-Palida9.png"
+      ]},
+    { id: "gronklech", nome: "Gronklech – Durock", imagens: [
+        "Durock1.png", "Durock2.png", "Durock3.png", "Durock4.png", "Durock5.png",
+        "Durock6.png", "Durock7.png", "Durock8.png", "Durock9.png"
+      ]},
+  ];
+
+  function criarCartaoRaca(raca) {
+    const card = document.createElement("div");
+    card.className = "cartao-criatura-custom";
+    card.innerHTML = `
+      <img src="imagens/racas/${raca.imagens[0]}" alt="${raca.nome}">
+      <p>${raca.nome}</p>
+    `;
+    card.onclick = () => abrirPopupImagemRacaCustom(raca);
+    return card;
+  }
+
+  function abrirPopupRacasCustom() {
+    const content = document.getElementById("racaContentCustom");
+    content.innerHTML = ""; // limpa o conteúdo
+    racasLista.forEach(raca => content.appendChild(criarCartaoRaca(raca)));
+    document.getElementById("popupRacaCustom").style.display = "flex";
+  }
+
+  function abrirPopupImagemRacaCustom(raca) {
+    const content = document.getElementById("imagemRacaContentCustom");
+    content.innerHTML = `<h3 style="width: 100%; text-align: center;">Escolha a imagem de ${raca.nome}</h3>`;
+    raca.imagens.forEach(imagem => {
+      const card = document.createElement("div");
+      card.className = "cartao-criatura-custom";
+      card.innerHTML = `<img src="imagens/racas/${imagem}" alt="${raca.nome}">`;
+      card.onclick = () => {
+        alert(`Você escolheu a imagem: ${imagem} da raça ${raca.nome}`);
+        fecharTodosPopupsCustom();
+      };
+      content.appendChild(card);
+    });
+    document.getElementById("popupImagemRacaCustom").style.display = "flex";
+  }
+
+  function fecharTodosPopupsCustom() {
+    document.getElementById("popupRacaCustom").style.display = "none";
+    document.getElementById("popupImagemRacaCustom").style.display = "none";
+  }
+
+  // Botão inicial
+  document.getElementById("abrirPopupRacaCustom").addEventListener("click", abrirPopupRacasCustom);
+
+  // Fecha popups ao clicar fora do conteúdo
+  document.querySelectorAll(".popup-overlay-custom").forEach(popup => {
+    popup.addEventListener("click", e => {
+      if (e.target.classList.contains("popup-overlay-custom")) {
+        fecharTodosPopupsCustom();
+      }
+    });
+  });
+})();
+
+});
+
 
 
 const resistenciaColors = {
@@ -4514,5 +4618,3 @@ function applyDamage(type) {
   // Atualiza as barras principais do HTML (fora do popup)
   // Atualiza as barras principais do HTML (fora do popup)
 // Atualiza a barra principal fora do popup
-
-

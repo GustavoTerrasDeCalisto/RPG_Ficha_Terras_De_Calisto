@@ -4615,6 +4615,58 @@ function applyDamage(type) {
 // Atualiza a barra e o display do "life-view" com base no valor de vida
 // Atualiza a barra e o display do "life-view" com base no valor de vida
 // Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
+// Atualiza a barra e o display do "life-view" com base no valor de vida
   // Atualiza as barras principais do HTML (fora do popup)
   // Atualiza as barras principais do HTML (fora do popup)
 // Atualiza a barra principal fora do popup
+function gerarPromptPersonagem() {
+  const descricao = document.getElementById('descricao-personagem').value.trim();
+  const raca = document.getElementById('race').value.trim();
+  const passado = document.getElementById('past').value.trim();
+  const imagemRaca = document.getElementById('race-image').src.trim();
+  const imagemPassado = document.getElementById('past-image').src.trim();
+
+  if (!descricao) {
+    alert('Por favor, escreva a aparência do personagem.');
+    return;
+  }
+
+  const prompt = `
+Chat, Crie uma imagem, seguindo as regras abaixo, sem exceção;🫡  
+
+✅ PROMPT_FIXO
+Full-body character, from head to toe (no crop); isometric angle; PNG format; transparent background (no scenery); high-quality, masterpiece level. 
+Art style: stylized medieval fantasy RPG; dramatic lighting; heroic body proportions (realistic head-to-body ratio); fantasy realism. Character only — no background.
+Camera angle: 3/4 front view (right-facing), isometric perspective from slightly above, showing chest and both legs clearly. Character slightly turned to the viewer’s left, but eyes looking forward. Arms positioned visibly, one possibly holding an item or posed dynamically. Lighting from top front, with light-shadow definition on muscles and armor folds.
+
+Aparência do personagem: ${descricao}
+Raça: ${raca}
+Passado: ${passado}
+
+📌 Imagens de referência:
+- Raça: ${imagemRaca}
+- Passado: ${imagemPassado}
+
+❌ NEGATIVE_PROMPT
+blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, text, background, scenery, jpeg artifacts
+  `;
+
+  navigator.clipboard.writeText(prompt).then(() => {
+    alert("Prompt copiado! Agora você será redirecionado ao ChatGPT. Basta colar (Ctrl+V) e enviar.");
+    window.open("https://chat.openai.com/", "_blank");
+  }).catch(err => {
+    console.error("Erro ao copiar para a área de transferência:", err);
+    alert("Ocorreu um erro ao copiar o prompt.");
+  });
+}
+  function togglePromptBox() {
+    const box = document.getElementById("promptBox");
+    box.classList.toggle("hidden");
+  }
+
+

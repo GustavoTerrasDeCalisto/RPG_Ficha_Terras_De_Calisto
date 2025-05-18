@@ -2235,18 +2235,19 @@ span {
 }
 
 /* Conteúdo principal do popup */
+/* Conteúdo principal do popup */
 .popup-content-custom {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90vw;
-  max-height: 80vh;
-  overflow-y: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 16px;
-  justify-content: center;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
   color: #fff;
+  justify-items: center; /* Centraliza os cartões dentro da grid */
 }
 
 /* Cartão individual de criatura */
@@ -2255,10 +2256,11 @@ span {
   color: #fff;
   padding: 12px;
   border-radius: 8px;
-  width: 160px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s ease, background 0.2s ease;
+  width: 100%;
+  max-width: 160px; /* Limita o tamanho no desktop */
 }
 
 .cartao-criatura-custom:hover {
@@ -2273,17 +2275,20 @@ span {
   border-radius: 6px;
   margin-bottom: 8px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
   .popup-content-custom {
+    grid-template-columns: repeat(2, 1fr); /* Sempre 2 colunas no mobile */
     gap: 10px;
-    justify-content: space-between;
+    justify-items: center; /* Centraliza os cartões */
   }
 
   .cartao-criatura-custom {
-    width: 45%;
-    margin-bottom: 20px;
+    max-width: 140px;
   }
 }
+

@@ -3263,7 +3263,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // TODO SEU CÓDIGO ORIGINAL AQUI DENTRO
 (function () {
   const racasLista = [
-    { id: "elfo", nome: "Elfo", imagens: [
+    { id: "elfo", nome: "Lyrithil – Elfo", imagens: [
         "Elfo1.png", "Elfo2.png", "Elfo3.png", "Elfo4.png", "Elfo5.png",
         "Elfo6.png", "Elfo7.png", "Elfo8.png", "Elfo9.png"
       ]},

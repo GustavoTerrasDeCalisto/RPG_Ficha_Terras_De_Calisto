@@ -2292,3 +2292,133 @@ span {
   }
 }
 
+
+
+/* Wrapper fixo */
+.prompt-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  text-align: right;
+  font-family: sans-serif;
+}
+
+/* Botão compacto inicial */
+.toggle-prompt-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.toggle-prompt-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Caixa oculta inicialmente */
+.prompt-gerador-box.hidden {
+  display: none;
+}
+
+/* Caixa do formulário de prompt */
+.prompt-gerador-box {
+  background-color: #1e1e2f;
+  padding: 16px;
+  margin-top: 10px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Label */
+.prompt-gerador-box label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Textarea */
+.prompt-gerador-box textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  background-color: #2e2e3f;
+  color: #fff;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+/* Botão interno */
+.prompt-gerador-box button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #00b3ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Mobile ajustes refinados */
+@media (max-width: 500px) {
+  .prompt-wrapper {
+    position: fixed;
+    inset: 0; /* top, right, bottom, left = 0 */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: none; /* permite interações apenas nos elementos visíveis */
+    z-index: 9999;
+  }
+
+  .toggle-prompt-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    pointer-events: auto;
+    z-index: 10000;
+  }
+
+  .prompt-gerador-box {
+    width: 95vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #222;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    color: #fff;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+  }
+
+  .prompt-gerador-box.active {
+    display: flex;
+  }
+
+  .prompt-gerador-box textarea,
+  .prompt-gerador-box button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

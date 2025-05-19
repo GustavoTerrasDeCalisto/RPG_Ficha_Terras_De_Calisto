@@ -4639,10 +4639,7 @@ function gerarPromptPersonagem() {
   const prompt = `
 Chat, Crie uma imagem, seguindo as regras abaixo, sem exceção;🫡  
 
-✅ PROMPT_FIXO
-Full-body character, from head to toe (no crop); isometric angle; PNG format; transparent background (no scenery); high-quality, masterpiece level. 
-Art style: stylized medieval fantasy RPG; dramatic lighting; heroic body proportions (realistic head-to-body ratio); fantasy realism. Character only — no background.
-Camera angle: 3/4 front view (right-facing), isometric perspective from slightly above, showing chest and both legs clearly. Character slightly turned to the viewer’s left, but eyes looking forward. Arms positioned visibly, one possibly holding an item or posed dynamically. Lighting from top front, with light-shadow definition on muscles and armor folds.
+✅ PROMPT_FIXO Full-body character, from head to toe (no crop); isometric angle, slightly top-down perspective; PNG format; transparent background (no scenery); high-quality, masterpiece level. Art style: stylized medieval fantasy RPG; dramatic lighting; heroic body proportions (realistic head-to-body ratio); fantasy realism. Character only — no background. Camera angle: 3/4 front view (right-facing), isometric perspective from a slightly higher angle, almost top-down; showing chest and both legs clearly. Character slightly turned to the viewer’s left, but eyes looking forward. Arms positioned visibly, one possibly holding an item or posed dynamically. Lighting from top front, with light-shadow definition on muscles and armor folds.
 
 Aparência do personagem: ${descricao}
 Raça: ${raca}

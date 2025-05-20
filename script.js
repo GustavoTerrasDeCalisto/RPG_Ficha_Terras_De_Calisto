@@ -4635,11 +4635,15 @@ function gerarPromptPersonagem() {
     alert('Por favor, escreva a aparência do personagem.');
     return;
   }
+  if (!raca || !passado) {
+    alert('Por favor, escolha a raça e o passado antes de gerar o token.');
+    return;
+  }
 
   const prompt = `
 Chat, Crie uma imagem, seguindo as regras abaixo, sem exceção;🫡  
 
-✅ PROMPT_FIXO Full-body character, from head to toe (no crop); isometric angle, slightly top-down perspective; PNG format; transparent background (no scenery); high-quality, masterpiece level. Art style: stylized medieval fantasy RPG; dramatic lighting; heroic body proportions (realistic head-to-body ratio); fantasy realism. Character only — no background. Camera angle: 3/4 front view (right-facing), isometric perspective from a slightly higher angle, almost top-down; showing chest and both legs clearly. Character slightly turned to the viewer’s left, but eyes looking forward. Arms positioned visibly, one possibly holding an item or posed dynamically. Lighting from top front, with light-shadow definition on muscles and armor folds.
+✅ PROMPT_FIXO Full-body character, from head to toe (no crop); isometric angle, slightly top-down perspective; PNG format; transparent background (no scenery); high-quality, masterpiece level. Art style: stylized medieval fantasy RPG; dramatic lighting; heroic body proportions (realistic head-to-body ratio); fantasy realism. Character only — no background. Camera angle: 3/4 front view (right-facing), isometric perspective from a slightly higher angle, almost top-down; showing chest and both legs clearly. Character slightly turned to the viewer’s left, but eyes looking forward. Arms positioned visibly, one possibly holding um item ou posado dinamicamente. Iluminação de topo frontal, com definição de luz e sombra em músculos e dobras da armadura.
 
 Aparência do personagem: ${descricao}
 Raça: ${raca}
@@ -4654,13 +4658,25 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
   `;
 
   navigator.clipboard.writeText(prompt).then(() => {
-    alert("Prompt copiado! Agora você será redirecionado ao ChatGPT. Basta colar (Ctrl+V) e enviar.");
-    window.open("https://chat.openai.com/", "_blank");
+    // Mostrar popup com as opções
+    document.getElementById('choicePopup').style.display = 'flex';
   }).catch(err => {
     console.error("Erro ao copiar para a área de transferência:", err);
     alert("Ocorreu um erro ao copiar o prompt.");
   });
 }
+
+// Eventos para os botões do popup
+document.getElementById('openChatGPT').addEventListener('click', () => {
+  window.open("https://chat.openai.com/", "_blank", "noopener,noreferrer");
+  document.getElementById('choicePopup').style.display = 'none';
+});
+
+document.getElementById('openCopilot').addEventListener('click', () => {
+  window.open("https://copilot.microsoft.com/", "_blank", "noopener,noreferrer");
+  document.getElementById('choicePopup').style.display = 'none';
+});
+
   function togglePromptBox() {
     const box = document.getElementById("promptBox");
     box.classList.toggle("hidden");

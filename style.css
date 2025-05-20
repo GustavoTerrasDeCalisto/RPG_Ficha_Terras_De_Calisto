@@ -102,7 +102,13 @@ header {
 
   .button-menu {
     display: block;
+
   }
+
+
+
+
+
   
  /* Oculta o menu por padrão */
 .mobile-menu {
@@ -2219,7 +2225,12 @@ span {
 .toggle-button-custom:hover {
   background-color: #505050;
 }
-
+@media (max-width: 600px) {
+  .toggle-button-custom {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+}
 /* Overlay escurecido para popups */
 .popup-overlay-custom {
   display: none;

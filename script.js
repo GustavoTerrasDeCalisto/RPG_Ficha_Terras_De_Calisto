@@ -1497,7 +1497,7 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
         "armaduraPorNivel": 1,
         "resistencia": "Eletricidade",
         bonusPass: `
-Magias de atributo Preservação custam metade, Libera uma magia de nível 1 que use preservação como teste. +2 de movimento.
+Nível 0:Magias de atributo Preservação custam metade, Libera uma magia de nível 1 que use preservação como teste. +2 de movimento.
 `,
 
 bonustitulo_1: `<p>🌪️<strong>Condutor do Vórtice Caótico</strong></p>`,

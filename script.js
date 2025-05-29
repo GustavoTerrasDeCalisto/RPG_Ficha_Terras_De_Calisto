@@ -1496,7 +1496,43 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
         "sanidadePorNivel": 6,
         "armaduraPorNivel": 1,
         "resistencia": "Eletricidade",
-        "bonusPass": "Magias de atributo Preservação custam metade.",
+        bonusPass: `
+Magias de atributo Preservação custam metade, Libera uma magia de nível 1 que use preservação como teste. +2 de movimento.
+`,
+
+bonustitulo_1: `<p>🌪️<strong>Condutor do Vórtice Caótico</strong></p>`,
+bonusTexto_1: `<p>Nível 1: <strong>Chamar o Caos</strong> – Sempre que conjurar uma magia de Caos, pode realizar um teste de Preservação (CD 12). Se passar, pode conjurar outra magia com custo até 3 sem gastar ação – Libera uma magia de nível 1 do elemento Caos.</p>
+<p>Nível 2: <strong>Toque do Abismo</strong> – Magias de Caos causam +1d6 de dano e aplicam um efeito aleatório secundário escolhido pelo mestre (Paralisado ou Debilitado).</p>
+<p>Nível 3: <strong>Coração Rasgado</strong> – Pode gastar 2 de Especial para fazer testes de Preservação com Vantagem (rolar dois dados e ficar com o melhor) – Libera uma magia de nível 2 do elemento Caos.</p>
+<p>Nível 4: <strong>Fluxo Instável</strong> – Sempre que uma magia de Caos for conjurada com sucesso, recupera 1 de Especial.</p>
+<p>Nível 5: <strong>Duplicação Arcana</strong> – Uma vez por combate, pode conjurar duas magias no mesmo turno, desde que ambas sejam de Preservação e ao menos uma seja de Caos – Libera uma magia de nível 3 do elemento Caos.</p>
+<p>Nível 6: <strong>Eco do Impossível</strong> – Se um inimigo for reduzido a 0 por uma magia de Caos, pode repetir a mesma magia em outro alvo sem gastar custo.</p>
+<p>Nível 7: <strong>Círculo do Destino Torcido</strong> – Ao iniciar um turno com 0 de Especial, recebe +3 em testes de Preservação até o fim da rodada – Libera uma magia de nível 4 do elemento Caos.</p>
+<p>Nível 8: <strong>Raiva Elemental</strong> – Pode conjurar uma magia de Caos como reação quando sofrer dano mágico.</p>
+<p>Nível 9: <strong>Avatar da Quebra</strong> – Uma vez por combate, conjurar uma magia de Caos não consome ação nem Especial, e ela atinge todos os inimigos próximos (até 6 metros) – Libera uma magia de nível 5 do elemento Caos.</p>`,
+
+bonustitulo_2: `<p>🛡️<strong>Guardião dos Ecos Fragmentados</strong></p>`,
+bonusTexto_2: `<p>Nível 1: <strong>Desmanchar</strong> – Adiciona ao Arsenal a magia Desmanchar (Distorção). Sempre que conjurar essa magia, pode reduzir temporariamente a Armadura do alvo em -7 até o fim do próximo turno.</p>
+<p>Nível 2: <strong>Lança da Luz</strong> – Adiciona ao Arsenal a magia Lança da Luz (Luz). Ao conjurá-la, se causar dano, recupera 2 pontos de Sanidade – Libera uma magia de nível 1.</p>
+<p>Nível 3: <strong>Eco da Dor</strong> – Adiciona ao Arsenal a magia Eco da Dor (Maldição). Sempre que o alvo falhar no teste contra essa magia, sofre 1d4 de dano adicional no início do próximo turno.</p>
+<p>Nível 4: <strong>Fuligem Obscura</strong> – Adiciona ao Arsenal a magia Fuligem Obscura (Cinzas). Conjurar essa magia impõe Desvantagem no próximo teste de Determinação do alvo.</p>
+<p>Nível 5: <strong>Chama do Limiar</strong> – Adiciona ao Arsenal a magia Chama do Limiar (Morte). Uma vez por combate, ao conjurá-la, pode optar por causar metade do dano, mas o alvo não pode se curar até o fim da próxima rodada – Libera uma magia de nível 2.</p>
+<p>Nível 6: <strong>Corte Prismático</strong> – Adiciona ao Arsenal a magia Corte Prismático (Laser). Sempre que conjurar essa magia, pode realizar um ataque adicional com uma arma leve como ação bônus.</p>
+<p>Nível 7: <strong>Vínculo Runiforme</strong> – Sempre que conjurar qualquer magia adversa do seu Arsenal, causa +1d8 de dano adicional e o alvo sofre -3 em todos os testes até o fim do próximo turno.</p>
+<p>Nível 8: <strong>Fragmento da Ruína</strong> – Sempre que causar dano com duas magias diferentes no mesmo turno, o alvo recebe mais 1d12 de dano no fim do turno – Libera uma magia de nível 3.</p>
+<p>Nível 9: <strong>Enciclopédia do Colapso</strong> – Pode ser usada uma vez por combate, com custo de 12 de Especial. O mago deve escolher até 6 magias para esse Arsenal da Enciclopédia. Pode então conjurar essas 6 magias uma após a outra, sem gastar ação, mas deve passar em um teste de Preservação (CD 16) ou sofre 3d10 de dano de Sanidade.</p>`,
+
+bonustitulo_3: `<p>🌿<strong>Sábio da Natureza Profunda</strong></p>`,
+bonusTexto_3: `<p>Nível 1: <strong>Sabedoria Instintiva</strong> – Ganha a passiva “Sabedoria Natural“. Sempre que conjurar uma magia de Caos, recupera 2d6 de vida.</p>
+<p>Nível 2: <strong>Voz da Terra</strong> – Pode se comunicar com criaturas não-humanoides de forma empática e receber respostas básicas – Sem custo. Quando ‘Sabedoria Natural’ estiver ativa, testes de Libertação podem ser feitos usando Preservação, e vice-versa.</p>
+<p>Nível 3: <strong>Chamado Verdejante</strong> – Cria uma área de 3m onde alvos sofrem 2d6 de dano de Caos por turno e têm -2 em testes de ataque – custo 3 de Especial – Libera duas magias de nível 1 de Poder.</p>
+<p>Nível 4: <strong>Pele Selvagem</strong> – Recebe +4 de Armadura enquanto estiver em ambientes naturais, templos ou florestais – Libera duas magias de nível 2 e 3 de Caos.</p>
+<p>Nível 5: <strong>Explosão Natural</strong> – Pode gastar 4 de Especial para causar 5d10 de dano Água ou Fogo a todos os inimigos próximos (3m), com teste de Preservação para evitar a metade.</p>
+<p>Nível 6: <strong>Mestre da Mutação</strong> – Pode conjurar uma magia de Caos e imediatamente alterar seu alvo ou área após ver o resultado da rolagem.</p>
+<p>Nível 7: <strong>Raízes Eternas</strong> – Enquanto estiver parado, regenera 3d8 de vida por turno. Não pode se mover nesse estado – ativar custa 6 de Especial.</p>
+<p>Nível 8: <strong>Guardião Selvagem</strong> – Conjurar magias de Caos concede +6 em todas as resistências até o próximo turno.</p>
+<p>Nível 9: <strong>Alma das Tempestades</strong> – (descrição incompleta – adicione o efeito final aqui).</p>`
+,
         "movimento_pass": 3.5
       },
       "Malabarista": {

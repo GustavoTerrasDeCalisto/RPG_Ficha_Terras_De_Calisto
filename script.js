@@ -1488,8 +1488,33 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
         "sanidadePorNivel": 0,
         "armaduraPorNivel": 1,
         "resistencia": "Sono",
-        "bonusPass": "Menos sanidade por nível mas dobra os danos com magias.",
-        "movimento_pass": 4.5
+"bonusPass": `
+Nível 0: Menos sanidade por nível e dobra os danos com magias.
+`,
+
+"bonustitulo_1": `<p>🎭<strong>Mestre das Brincadeiras</strong></p>`,
+"bonusTexto_1": `
+<p>Nível 1: <strong>Peguei Seu Nariz</strong> – Agarrar contra Agilidade. O alvo fica sem respirar até alguém pegar o nariz de volta (DT8). Todo turno recebe <strong>1d12 de Distorção</strong> e adiciona <strong>+1d20 ao dano</strong> que recebe por turno acumulado.</p>
+<p>Nível 2: <strong>Sumiu... Achou</strong> – Fica invisível até tirar a mão do rosto. Enquanto invisível, sofre <strong>–5m de movimento</strong> e não pode esquivar de habilidades em área. Libera uma magia de <strong>Maldição</strong> Nível 1 ou 2.</p>
+<p>Nível 3: <strong>Jo Ken Pô — Pedra</strong> – Conjura uma pedra de 2 metros sobre um inimigo. O alvo deve passar em um teste de Agilidade ou sofre <strong>2d12 de dano Esmagador</strong>.</p>
+<p>Nível 4: <strong>Jo Ken Pô — Papel</strong> – Surge uma parede de papel de 3 metros em área. É altamente inflamável e replica <strong>danos de Fogo</strong> duas vezes se o alvo estiver dentro da área. Libera uma magia de <strong>Aura</strong> Nível 2 ou 3.</p>
+<p>Nível 5: <strong>Jo Ken Pô — Tesoura</strong> – Movimento cortante com o braço. Objetos orgânicos sofrem <strong>3d12 de dano de Maldição</strong>. Objetos inorgânicos são divididos em dois.</p>
+<p>Nível 6: <strong>Vaca Amarela</strong> – Todos na área que falarem após a ativação devem fazer um teste de Determinação. Falhar causa <strong>6d12 de Maldição</strong>. Magias que exigem fala são desabilitadas por 2 turnos. Libera uma magia de <strong>Sono</strong> Nível 3 ou 4.</p>
+<p>Nível 7: <strong>Invocação da Loira do Banheiro</strong> – Invoca uma criatura maldita. Custo: <strong>23 de Sanidade</strong>.</p>
+<p>Nível 8: <strong>Salame Mingue</strong> – Causa <strong>5d12 de Distorção</strong> em um alvo aleatório. O alvo pode transferir o dano para alguém a até 1 metro com um teste de Conexão. Libera uma magia de <strong>Fogo</strong> ou <strong>Tempestade</strong> de Nível 4.</p>
+<p>Nível 9: <strong>Batata Quente</strong> – Todo turno, uma batata surge na cabeça de um inimigo. Pode ser passada com um teste de Libertação. Todo alvo que recebe a batata faz um teste; se tirar menos que 8, ela explode causando <strong>2d20 de Fogo</strong> em área de 3m. A explosão causa mais <strong>4d4 de dano</strong> para cada vez que a batata foi passada.</p>
+`,
+
+"bonustitulo_2": `<p>PLACEHOLDER</p>`,
+"bonusTexto_2": `
+<p>PLACEHOLDER</p>
+`,
+
+"bonustitulo_3": `<p>PLACEHOLDER</p>`,
+"bonusTexto_3": `
+<p>PLACEHOLDER</p>
+`
+,        "movimento_pass": 4.5
       },
       "Mago": {
         "vidaPorNivel": 10,

@@ -1846,6 +1846,10 @@ function abrirSecaoBonusPassado() {
   }
 }
 
+// Chama automaticamente ao carregar a página
+window.addEventListener("DOMContentLoaded", abrirSecaoBonusPassado);
+
+
 function alternarTextoBonus(num) {
   const el = document.getElementById(`textoBonus${num}`);
   el.style.display = el.style.display === "none" ? "block" : "none";

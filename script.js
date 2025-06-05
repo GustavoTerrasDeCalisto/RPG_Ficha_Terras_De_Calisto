@@ -2183,7 +2183,7 @@ const items = [
     "desc": "Artefato explosivo usado em combates mágicos.",
     "img": "imagens/Armas/Simples/craniofogo.png",
     "damageType": "1d6+1d10+3d4",
-    "elementalDamage": "Fogo",
+    "elementalDamage": "3d12",
     "damageDice": "Fogo",
     "range": "3m",
     "critical": "20 - Dano(x2)",

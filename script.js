@@ -1520,9 +1520,20 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 <p>Nível 9: <strong>Mente Indestrutível</strong> – Você pode manter sua sanidade em zero sem que seu personagem seja eliminado. Sua mente vive no limite, dominando a loucura ao máximo. Além disso, conjura magias com custo de Especial reduzido pela metade.</p>
 `,
 
-"bonustitulo_3": `<p>PLACEHOLDER</p>`,
-"bonusTexto_3": `
-<p>PLACEHOLDER</p>
+ "bonustitulo_3": "<p>🧠 <strong>Fragmentado</strong></p>",
+  "bonusTexto_3": `
+  <p><strong>Regra especial:</strong> No início do combate, role 1d10 para determinar a personalidade dominante. Com resultado 10, escolha qualquer uma. Níveis altos permitem escolha mais fácil. Quanto maior o nível, menor o risco de "se perder".
+   
+  </p>
+<p>Nível 1: <strong>A Criança Ingênua</strong> – Personalidade doce, usa magias de <strong>Sagrado (Luz)</strong> para cura e proteção. +2 em testes de <strong>Determinação</strong>.</p>
+<p>Nível 2: <strong>A Mulher Sedutora</strong> – Manipuladora com magias de <strong>Maldição</strong>. +2 em testes de <strong>Furtividade</strong> e manipulação social.</p>
+<p>Nível 3: <strong>O Senhor Agressivo</strong> – Raivoso e brutal, com magias de <strong>Sangue</strong>. +2 em testes de <strong>Brutalidade</strong> e dano físico.</p>
+<p>Nível 4: <strong>A Sábia Anciã</strong> – Calma e centrada, invoca magias de <strong>Alma</strong>. +2 em testes de <strong>Libertação</strong> e resistência mental.</p>
+<p>Nível 5: <strong>O Guerreiro Errante</strong> – Ágil e ofensivo, usa magias de <strong>Plasma</strong>. +2 em testes de <strong>Agilidade</strong> e +4 em testes com <strong>espadas</strong>.</p>
+<p>Nível 6: <strong>O Guardião Estoico</strong> – Defensivo e firme, usa magias de <strong>Tremor</strong>. +4 em testes com <strong>escudos</strong> e +2 em resistência física.</p>
+<p>Nível 7: <strong>A Curandeira Serena</strong> – Empática, usa magias de <strong>Aura</strong>. +2 em testes de <strong>Conexão</strong> e +1 em cura.</p>
+<p>Nível 8: <strong>O Arauto da Morte</strong> – Sombrio e fatalista, invoca magias de <strong>Morte</strong>. +4 em testes de <strong>Brutalidade</strong> e +2 em dano com magias de morte.</p>
+<p>Nível 9: <strong>O Mestre Fragmentado</strong> – Caótico e versátil, pode escolher magias dos grupos <strong>Laser, Alma, Escuridão, Plasma, Tremor, Aura, Maldição, Sagrado, Cinzas, Morte</strong>. +4 em testes com <strong>espadas</strong> e +2 em todos testes físicos e mágicos.</p>
 `
 ,        "movimento_pass": 4.5
       },

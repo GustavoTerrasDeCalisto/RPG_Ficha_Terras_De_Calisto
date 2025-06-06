@@ -1505,9 +1505,19 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 <p>Nível 9: <strong>Batata Quente</strong> – Todo turno, uma batata surge na cabeça de um inimigo. Pode ser passada com um teste de Libertação. Todo alvo que recebe a batata faz um teste; se tirar menos que 8, ela explode causando <strong>2d20 de Fogo</strong> em área de 3m. A explosão causa mais <strong>4d4 de dano</strong> para cada vez que a batata foi passada.</p>
 `,
 
-"bonustitulo_2": `<p>PLACEHOLDER</p>`,
+"bonustitulo_2": `<p>😵<strong>Mestre da Loucura</strong></p>`,
 "bonusTexto_2": `
-<p>PLACEHOLDER</p>
+<p>Nível 1: <strong>Loucura Velada</strong> – Quando sua sanidade zera, role 1d4:<br>
+1: falha — você fica perdido, incapaz de agir até recuperar a sanidade por tratamento ou teste futuro.<br>
+2-4: cura sanidade igual ao valor rolado.</p>
+<p>Nível 2: <strong>Imersão Mental</strong> – Você aprende uma magia de nível 1 do elemento Psicológico. Seus ataques com magias desse tipo de dano causam +1d8 de dano extra.</p>
+<p>Nível 3: <strong>Distorção da Realidade</strong> – Você escolhe duas magias: uma de nível 1 e outra de nível 2, dos elementos Distorção e Mental (à sua escolha). Seus ataques com magias desses elementos causam +1d6 de dano extra.</p>
+<p>Nível 4: <strong>Sanidade Fragmentada</strong> – Enquanto estiver com sanidade zero, o dano causado por suas magias é multiplicado por 2x. Além disso, você ganha 40 de vida temporária.</p>
+<p>Nível 5: <strong>Névoa Envolvente</strong> – Você escolhe duas magias: uma de nível 2 e outra de nível 3, do elemento Névoa. Seus ataques com magias desse tipo de dano causam +2d6 de dano extra.</p>
+<p>Nível 6: <strong>Sussurros do Sono</strong> – Você escolhe duas magias: uma de nível 2 e outra de nível 3, do elemento Sono. Seus ataques com magias desse tipo de dano causam +2d8 de dano extra.</p>
+<p>Nível 7: <strong>Ato Insano</strong> – Você pode realizar uma ação extra em seu turno. Essa ação pode ser usada para atacar, lançar magia ou se mover.</p>
+<p>Nível 8: <strong>Eclipse da Razão</strong> – Você escolhe três magias: uma de nível 3 e duas de nível 4, do elemento Eclipse. Seus ataques com magias desse tipo de dano causam +3d8 de dano extra.</p>
+<p>Nível 9: <strong>Mente Indestrutível</strong> – Você pode manter sua sanidade em zero sem que seu personagem seja eliminado. Sua mente vive no limite, dominando a loucura ao máximo. Além disso, conjura magias com custo de Especial reduzido pela metade.</p>
 `,
 
 "bonustitulo_3": `<p>PLACEHOLDER</p>`,

@@ -1522,7 +1522,7 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 
  "bonustitulo_3": "<p>🧠 <strong>Fragmentado</strong></p>",
   "bonusTexto_3": `
-<p><strong>Regra especial:</strong> No início do combate, role 1d10 para determinar a personalidade dominante. Se o resultado for igual ou menor que o seu nível, você fica preso a essa personalidade (Exemplo: no nível 6, se tirar 1 a 6, fica com a personalidade do número tirado). Se tirar um número maior que seu nível, pode escolher qualquer personalidade para usar. Quanto maior o nível, maior a chance de se “perder” e ser forçado a usar uma personalidade aleatória.</p>
+<p><strong>Regra especial:</strong> No início do combate, role 1d10 para determinar a personalidade dominante. Se o resultado for igual ou menor que o seu nível, você fica preso a essa personalidade (Exemplo: no nível 6, se tirar 1 a 6, fica com a personalidade do número tirado). Se tirar um número maior que seu nível, pode escolher qualquer personalidade para usar. Quanto maior o nível, maior a chance de se “perder” e ser forçado a usar uma personalidade aleatória.
    
   </p>
 <p>Nível 1: <strong>A Criança Ingênua</strong> – Personalidade doce, usa magias de <strong>Sagrado (Luz)</strong> para cura e proteção. +2 em testes de <strong>Determinação</strong>.</p>

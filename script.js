@@ -1501,7 +1501,7 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 <p>Nível 5: <strong>Jo Ken Pô — Tesoura</strong> – Movimento cortante com o braço. Objetos orgânicos sofrem <strong>3d12 de dano de Maldição</strong>. Objetos inorgânicos são divididos em dois.</p>
 <p>Nível 6: <strong>Vaca Amarela</strong> – Todos na área que falarem após a ativação devem fazer um teste de Determinação. Falhar causa <strong>6d12 de Maldição</strong>. Magias que exigem fala são desabilitadas por 2 turnos. Libera uma magia de <strong>Sono</strong> Nível 3 ou 4.</p>
 <p>Nível 7: <strong>Invocação da Loira do Banheiro</strong> – Invoca uma criatura maldita [No Link Selecione Ela](https://bestiario-terrasdecalisto.netlify.app/). Custo: <strong>23 de Sanidade</strong>.</p>
-<p>Nível 8: <strong>Salame Mingue</strong> – Causa <strong>5d12 de Distorção</strong> em um alvo aleatório. O alvo pode transferir o dano para alguém a até 1 metro com um teste de Conexão. Libera uma magia de <strong>Fogo</strong> ou <strong>Tempestade</strong> de Nível 4.</p>
+<p>Nível 8: <strong>Salamê Minguê</strong> – Causa <strong>5d12 de Distorção</strong> em um alvo aleatório. O alvo pode transferir o dano para alguém a até 1 metro com um teste de Conexão. Libera uma magia de <strong>Fogo</strong> ou <strong>Tempestade</strong> de Nível 4.</p>
 <p>Nível 9: <strong>Batata Quente</strong> – Todo turno, uma batata surge na cabeça de um inimigo. Pode ser passada com um teste de Libertação. Todo alvo que recebe a batata faz um teste; se tirar menos que 8, ela explode causando <strong>2d20 de Fogo</strong> em área de 3m. A explosão causa mais <strong>4d4 de dano</strong> para cada vez que a batata foi passada.</p>
 `,
 

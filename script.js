@@ -1520,7 +1520,7 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 <p>Nível 9: <strong>Mente Indestrutível</strong> – Você pode manter sua sanidade em zero sem que seu personagem seja eliminado. Sua mente vive no limite, dominando a loucura ao máximo. Além disso, conjura magias com custo de Especial reduzido pela metade.</p>
 `,
 
- "bonustitulo_3": "<p>🧠 <strong>Transtorno Dissociativo de Identidade</strong></p>",
+ "bonustitulo_3": "<p>🧠 <strong>Fragmentado</strong></p>",
   "bonusTexto_3": `
 <p><strong>Regra especial:</strong> No início do combate, role 1d10 para determinar a personalidade dominante. Se o resultado for igual ou menor que o seu nível, você fica preso a essa personalidade (Exemplo: no nível 6, se tirar 1 a 6, fica com a personalidade do número tirado). Se tirar um número maior que seu nível, pode escolher qualquer personalidade para usar. Quanto maior o nível, maior a chance de se “perder” e ser forçado a usar uma personalidade aleatória.
    

@@ -1608,22 +1608,21 @@ bonusTexto_3: `
         "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Sangue",
-       bonusPass: `
-<p><strong>Nível 0:</strong> Correntes com <strong>+1d6</strong>, autoinfligir <strong>dano (1d6)</strong> como <strong>ação livre</strong> para ganhar <strong>+1d12 extra</strong>.</p>
-`
-
-        "bonusTitulo_1": `<p>🏴<strong>Sofrimento Prolongado</strong></p>`,
+      "bonusPass": `
+Nível 0: Correntes com <strong>+1d6</strong>, autoinfligir <strong>dano (1d6)</strong> como <strong>ação livre</strong> para ganhar <strong>+1d12 extra</strong>.
+`,
+"bonustitulo_1": `<p>🏴<strong>Sofrimento Prolongado</strong></p>`,
 "bonusTexto_1": `
 <p><em>O verdadeiro sobrevivente conhece a dor como única aliada. Isolado, ferido, enlouquecido… é quando está mais perto da morte que ele finalmente vive.</em></p>
 <p><strong>Nível 1: Primeiro Ferimento</strong> – Sempre que iniciar um combate, recebe <strong>+2 de movimento por 3 turnos</strong>.</p>
 <p><strong>Nível 2: Dor Afiada</strong> – Sempre que sofre <strong>dano físico</strong>, ganha <strong>+2 em Esquiva até o próximo turno</strong>.<br>
-Se o dano for do tipo <strong>Sangue</strong>, cura <strong>-1d12 de Vida</strong> e <strong>2 de Sanidade</strong>.</p>
+Se o dano for do tipo <strong>Sangue</strong>, cura <strong>1d12 de Vida</strong> e <strong>2 de Sanidade</strong>.</p>
 <p><strong>Nível 3: Vício em Sofrimento</strong> – Se receber <strong>dano duas vezes em um mesmo turno</strong>, todos os ataques contra você causam <strong>-1d6 de dano</strong> até o fim do próximo turno.</p>
 <p><strong>Nível 4: Pele que Endurece</strong> – Em qualquer turno em que você <strong>não estiver sob cobertura</strong> e for alvo de uma magia, ganha <strong>+1 em Resistência contra o efeito</strong>.<br>
 Se estiver com a condição <strong>Sangrando</strong>, ganha <strong>+2 em vez de +1</strong>.</p>
 <p><strong>Nível 5: Frieza Letal</strong> – Se for atingido e sobreviver, pode realizar um <strong>contra-ataque com +2d8 de dano</strong> (<strong>custo: 3 Especial</strong>).<br>
 Se tiver se ferido neste turno, esse contra-ataque <strong>ignora 2 pontos de Armadura</strong>.</p>
-<p><strong>Nível 6: Improviso Doloroso</strong> – Você pode <strong>usar o ambiente para criar uma armadura rudimentar</strong>, reduzindo <strong>pela metade o próximo dano recebido</strong> (<strong>custo: 4 Especial</strong>).<br>
+<p><strong>Nível 6: Improviso Doloroso</strong> – Você pode <strong>usar o ambiente para criar uma armadura rudimentar</strong>, reduzindo <strong>o próximo dano recebido em 50%</strong> (<strong>custo: 4 Especial</strong>).<br>
 Se estiver <strong>Sangrando</strong>, o atacante sofre <strong>1d6 de dano de volta</strong>.</p>
 <p><strong>Nível 7: Coração Quebra-Ossos</strong> – Se receber <strong>dano</strong>, ganha <strong>+2 em Esquiva</strong> e <strong>+2 em Resistência</strong> até o fim do combate.<br>
 Se estiver <strong>Sangrando</strong>, também causa <strong>+1d8 de dano físico</strong> em todos os ataques corpo a corpo.</p>
@@ -1631,7 +1630,8 @@ Se estiver <strong>Sangrando</strong>, também causa <strong>+1d8 de dano físic
 Se o ataque for contra quem causou <strong>dano de Sangue</strong> em você, você <strong>permanece com 1 de Vida</strong> por <strong>1 turno</strong> antes de cair.</p>
 <p><strong>Nível 9: Sobrevivente da Dor</strong> – Uma vez por combate, você pode <strong>recuperar 3d12 de Vida</strong> (<strong>custo: 5 Especial</strong>).<br>
 Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</strong> e <strong>3 de Sanidade</strong>.</p>
-`,
+`
+,
 
         "movimento_pass": 4.5
       },

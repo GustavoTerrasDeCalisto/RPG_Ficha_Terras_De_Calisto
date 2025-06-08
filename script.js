@@ -1608,8 +1608,10 @@ bonusTexto_3: `
         "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Sangue",
-        "bonusPass": `
-        Nível 0:Correntes com +1d6, autoinfligir dano (1d6) como ação livre para ganhar 1d12 extra.`,
+       bonusPass: `
+<p><strong>Nível 0:</strong> Correntes com <strong>+1d6</strong>, autoinfligir <strong>dano (1d6)</strong> como <strong>ação livre</strong> para ganhar <strong>+1d12 extra</strong>.</p>
+`
+
         "bonusTitulo_1": `<p>🏴<strong>Sofrimento Prolongado</strong></p>`,
 "bonusTexto_1": `
 <p><em>O verdadeiro sobrevivente conhece a dor como única aliada. Isolado, ferido, enlouquecido… é quando está mais perto da morte que ele finalmente vive.</em></p>

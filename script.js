@@ -3852,6 +3852,7 @@ function calculateCurrentAttributes() {
 }
 
 
+
 // LEMBRAR
 // Atualiza a barra principal fora do popup
 
@@ -4064,6 +4065,7 @@ raceSelect.addEventListener('change', ativarBarras);
 // Chama a função inicial para garantir que as barras estejam invisíveis quando a página carregar
 ativarBarras();
 
+// Function to calculate total level based on attribute levels
 // Function to calculate total level based on attribute levels
 function calculateLevel() {
   const forLevel = parseInt(document.getElementById('for').value, 10);

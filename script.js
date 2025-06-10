@@ -2004,6 +2004,19 @@ const items = [
     "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Clássica"
   },
+   { 
+      id: "Rapieira", 
+      name: "Rapieira", 
+      desc: "Rapieira leve e versátil, eficaz em combate corpo a corpo e em duelos.", 
+      img: "imagens/Armas/Armas/Rapieira.png", 
+      damageType: "1d12+3d4", 
+      elementalDamage: "-", 
+      damageDice: "Perfurante", 
+      range: "2m", 
+      critical: "(19) - Dano(x3)", 
+      equipBonus: "-"
+    ,TipoItem:"Corpo a Corpo,Clássica"
+  },
   {
     "id": "manopla",
     "name": "Manopla",

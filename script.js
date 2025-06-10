@@ -329,42 +329,15 @@ Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</str
 `,
 bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
 `,
-    bonusTexto_1: `<p><única><strong>Nível 1 (Única):</strong></única> Escolha 1 entre 3 estilos de combate:</p>
-<ul>
-  <li><strong>Furioso:</strong> Quando estiver com menos da metade da vida, ganha +1 ataque por turno (máximo de 2), mas sofre -2 em testes de defesa.</li>
-  <li><strong>Calculista:</strong> Sempre que o inimigo errar um ataque contra você, você pode realizar 1 ataque básico imediato (1 vez por rodada).</li>
-  <li><strong>Adaptativo:</strong> Você pode escolher entre +2 em ataque, +2 em defesa ou +2 em dano no início de cada combate (dura até o fim do combate).</li>
-</ul>
-
-<p><strong>Nível 2:</strong> Você pode atacar duas vezes por turno com armas leves ou de uma mão.</p>
-<p><única><strong>Nível 3 (Única):</strong></única> Seus ataques com armas improvisadas causam +1d6 de dano adicional.</p>
-<p><strong>Nível 4:</strong> Escolha uma entre 3 opções: +2 em Armadura, +2 em Esquiva ou Resistência a um tipo de dano.</p>
-<p><única><strong>Nível 5 (Única):</strong></única> Você pode usar qualquer arma ou ferramenta como se fosse proficiente com ela.</p>
-<p><strong>Nível 6:</strong> Você pode realizar uma Ação de Defesa como reação uma vez por rodada.</p>
-<p><strong>Nível 7:</strong> Escolha uma habilidade de nível 1 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 8:</strong> Seus ataques causam sangramento no inimigo se o alvo falhar em um teste de Resistência Física (CD 12).</p>
-<p><única><strong>Nível 9 (Única):</strong></única> +2 em ataques corpo a corpo com ferramentas ou armas simples.</p>
-<p><strong>Nível 10:</strong> Escolha sua Vocação: Fé, Poder, Desconhecido ou Caos. Ganha 2 resistências a tipos de dano ligados ao elemento escolhido.</p>
-<p><strong>Nível 11:</strong> Escolha uma habilidade de nível 5 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 12:</strong> <strong>Despertar da Raça</strong> – Recebe +2 em testes com Talentos ou Passivas raciais.</p>
-<p><única><strong>Nível 13 (Única):</strong></única> <strong>Golpe Improvável</strong> – Dano extra de +1d6 ao atacar em condições desfavoráveis.</p>
-<p><strong>Nível 14:</strong> Escolha uma entre 3 opções: Libera uma Magia (nível 2 a 4), +2 em Armadura, Esquiva ou Resistência, ou Ganha +1 por turno (Ataque Extra, Ação Completa ou Ação de Movimento).</p>
-<p><strong>Nível 15:</strong> Escolha uma habilidade de nível 9 de outra especialização <única2>(Única)</única2>.</p>
-<p><única><strong>Nível 16 (Única):</strong></única> +1d6 de dano com armas cortantes ou perfurantes.</p>
-<p><strong>Nível 17:</strong> Escolha uma habilidade de nível 13 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 18:</strong> Escolha uma entre 3 opções: +2 em Armadura, +2 em Esquiva ou Resistência a um tipo de dano.</p>
-<p><strong>Nível 19:</strong> Escolha uma habilidade de nível 16 de outra especialização <única2>(Única)</única2>.</p>
-<p><única><strong>Nível 20 (Única):</strong></única> <strong>Combate Resiliente</strong> – +2 em testes de resistência contra Hemorragia e Paralisado.</p>
-<p><strong>Nível 21:</strong> Escolha uma habilidade de nível 20 de outra especialização <única2>(Única)</única2>.</p>
-<p><única><strong>Nível 22 (Única):</strong></única> +1d8 de dano com armas pesadas.</p>
-<p><strong>Nível 23:</strong> Escolha uma habilidade de nível 22 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 24:</strong> Escolha uma entre 3 opções: Ganha uma Passiva (nível 3 a 7), +1d6 de dano com sua arma favorita ou Resistência a um novo tipo de dano.</p>
-<p><única><strong>Nível 25 (Única):</strong></única> <strong>Frenesi Berserker</strong> – Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>
-<p><strong>Nível 26:</strong> Escolha uma entre 3 opções: 1 Ataque Extra por turno, 1 Magia nova (nível 4–5) ou +1d12 de dano com arma favorita.</p>
-<p><strong>Nível 27:</strong> Escolha uma habilidade de nível 25 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 28:</strong> Escolha uma habilidade de nível 1, 3, 5 ou 9 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 29:</strong> Escolha uma habilidade de nível 13, 16, 20 ou 22 de outra especialização <única2>(Única)</única2>.</p>
-<p><strong>Nível 30:</strong> Escolha uma entre 3 opções: 1 Ataque Extra por turno, 1 Magia nova (nível 5–9) ou +1d20 de dano com arma favorita.</p>`,
+    bonusTexto_1: `<p>Nível 1: +1d4 de dano com ferramentas improvisadas.</p>
+<p>Nível 2: +1 em testes de Brutalidade.</p>
+<p>Nível 3: +1 em testes de Sobrevivência.</p>
+<p>Nível 4: +2 em ataques corpo a corpo com ferramentas ou armas simples.</p>
+<p>Nível 5: <strong>Golpe Improvável</strong> - Dano extra de +1d6 ao atacar em condições desfavoráveis.</p>
+<p>Nível 6: +1d6 de dano com armas cortantes ou perfurantes.</p>
+<p>Nível 7: <strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.</p>
+<p>Nível 8: +1d8 de dano com armas pesadas.</p>
+<p>Nível 9: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>`,
 bonustitulo_2: "<p>♟️<strong>Estrategista</strong></p>",
 bonusTexto_2: `Nível 1: +1 em precisão à distância.
 <p>Nível 1: +1 em precisão à distância.</p>
@@ -1873,6 +1846,8 @@ function formatBonusText(text, type = "default") {
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
   else if (type === "bonus3") className = "bonus3-paragraph";
+  else if (type === "bonus4") className = "bonus4-paragraph";
+  else if (type === "bonus5") className = "bonus5-paragraph";
   else className = "bonus-paragraph";
 
   return text
@@ -1908,10 +1883,17 @@ function abrirSecaoBonusPassado() {
     document.getElementById("tituloBonus1").textContent = dadosBonus.bonustitulo_1;
     document.getElementById("tituloBonus2").textContent = dadosBonus.bonustitulo_2;
     document.getElementById("tituloBonus3").textContent = dadosBonus.bonustitulo_3;
+    document.getElementById("tituloBonus4").textContent = dadosBonus.bonustitulo_4;
+    document.getElementById("tituloBonus5").textContent = dadosBonus.bonustitulo_5;
+
+
 
     document.getElementById("textoBonus1").innerHTML = formatBonusText(dadosBonus.bonusTexto_1, "bonus1");
     document.getElementById("textoBonus2").innerHTML = formatBonusText(dadosBonus.bonusTexto_2, "bonus2");
     document.getElementById("textoBonus3").innerHTML = formatBonusText(dadosBonus.bonusTexto_3, "bonus3");
+    document.getElementById("textoBonus4").innerHTML = formatBonusText(dadosBonus.bonusTexto_4, "bonus4");
+    document.getElementById("textoBonus5").innerHTML = formatBonusText(dadosBonus.bonusTexto_5, "bonus5");
+
   } else {
     // Fecha a seção
     secao.style.display = "none";

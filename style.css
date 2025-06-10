@@ -1344,7 +1344,9 @@ button:hover {
 }
 .especializacao_titulo1,
 .especializacao_titulo2,
-.especializacao_titulo3 {
+.especializacao_titulo3,
+.especializacao_titulo4,
+.especializacao_titulo5 {
   display: block;
   padding: 12px 16px;
   margin: 0px 0;
@@ -1377,7 +1379,17 @@ button:hover {
   border-left-color: #5a7fa3;
   background-color: #f7f9fc;
 }
+.especializacao_titulo4 {
+  color: #991a1a; /* Azul mais suave */
+  border-left-color: #d81212;
+  background-color: #f7f9fc;
+}
 
+.especializacao_titulo5 {
+  color: #d37a15; /* Azul mais suave */
+  border-left-color: #d37a15;
+  background-color: #f7f9fc;
+}
 .pigmento {
   color: rgb(104, 6, 79);
   font-weight: bold;
@@ -1400,7 +1412,7 @@ button:hover {
 }
 
 
-.bonus1-paragraph, .bonus2-paragraph, .bonus3-paragraph {
+.bonus1-paragraph, .bonus2-paragraph, .bonus3-paragraph, .bonus4-paragraph {
   margin: 4px 0;
 }
 
@@ -2432,3 +2444,51 @@ span {
     font-size: 1rem;
   }
 }
+.bonus4-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 1em 0;
+  list-style: none;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.bonus4-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* centraliza tudo horizontalmente */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  color: #222121;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  position: relative;
+  min-height: 80px;
+  height: 100%;
+  align-self: stretch;
+  text-align: center; /* centraliza o texto */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bonus4-list-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.01);
+}
+
+.bonus4-list-item::before {
+  content: "★";
+  color: rgba(255, 215, 0, 0.7);
+  font-size: 1em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+

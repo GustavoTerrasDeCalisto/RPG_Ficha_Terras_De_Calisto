@@ -2008,7 +2008,7 @@ const items = [
       id: "Rapieira", 
       name: "Rapieira", 
       desc: "Rapieira leve e versátil, eficaz em combate corpo a corpo e em duelos.", 
-      img: "imagens/Armas/Armas/Rapieira.png", 
+      img: "imagens/Armas/Simples/Rapieira.png", 
       damageType: "1d12+3d4", 
       elementalDamage: "-", 
       damageDice: "Perfurante", 

@@ -330,25 +330,25 @@ Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</str
 bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
 `,
     bonusTexto_1: `<p>Nível 1: +1d4 de dano com ferramentas improvisadas.</p>
-<p>Nível 2: +1 em testes de Brutalidade.</p>
-<p>Nível 3: +1 em testes de Sobrevivência.</p>
-<p>Nível 4: +2 em ataques corpo a corpo com ferramentas ou armas simples.</p>
-<p>Nível 5: <strong>Golpe Improvável</strong> - Dano extra de +1d6 ao atacar em condições desfavoráveis.</p>
-<p>Nível 6: +1d6 de dano com armas cortantes ou perfurantes.</p>
-<p>Nível 7: <strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.</p>
-<p>Nível 8: +1d8 de dano com armas pesadas.</p>
-<p>Nível 9: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>`,
+<p>Nível 3: +1 em testes de Brutalidade.</p>
+<p>Nível 5: +1 em testes de Sobrevivência.</p>
+<p>Nível 9: +2 em ataques corpo a corpo com ferramentas ou armas simples.</p>
+<p>Nível 13: <strong>Golpe Improvável</strong> - Dano extra de +1d6 ao atacar em condições desfavoráveis.</p>
+<p>Nível 16: +1d6 de dano com armas cortantes ou perfurantes.</p>
+<p>Nível 20: <strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.</p>
+<p>Nível 22: +1d8 de dano com armas pesadas.</p>
+<p>Nível 25: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>`,
 bonustitulo_2: "<p>♟️<strong>Estrategista</strong></p>",
 bonusTexto_2: `Nível 1: +1 em precisão à distância.
 <p>Nível 1: +1 em precisão à distância.</p>
-<p>Nível 2: +2 em testes de Agilidade.</p>
-<p>Nível 3: <strong>Observador</strong> - +1 em testes de percepção em situações de combate ou exploração.</p>
-<p>Nível 4: +1 em iniciativas e bônus de evasão contra ataques mágicos.</p>
-<p>Nível 5: <strong>Estratégia Rápida</strong> - +1 em testes de comando e bônus em ações táticas.</p>
-<p>Nível 6: +1d8 de dano em ataques com projéteis.</p>
-<p>Nível 7: <strong>Alvo Improvável</strong> - Você recebe +2 de bônus na armadura contra inimigos que ainda não sofreram dano.</p>
-<p>Nível 8: <strong>Tático Experiente</strong> - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.</p>
-<p>Nível 9: <strong>Plano de Batalha</strong> - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.</p>`
+<p>Nível 3: +2 em testes de Agilidade.</p>
+<p>Nível 5: <strong>Observador</strong> - +1 em testes de percepção em situações de combate ou exploração.</p>
+<p>Nível 9: +1 em iniciativas e bônus de evasão contra ataques mágicos.</p>
+<p>Nível 13: <strong>Estratégia Rápida</strong> - +1 em testes de comando e bônus em ações táticas.</p>
+<p>Nível 16: +1d8 de dano em ataques com projéteis.</p>
+<p>Nível 20: <strong>Alvo Improvável</strong> - Você recebe +2 de bônus na armadura contra inimigos que ainda não sofreram dano.</p>
+<p>Nível 22: <strong>Tático Experiente</strong> - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.</p>
+<p>Nível 25: <strong>Plano de Batalha</strong> - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.</p>`
 ,
     bonustitulo_3: "<p>🧙‍♂️<strong>Conjurador</strong></p>",
     bonusTexto_3: `<p>Nível 1: +1 em Conexão.</p>

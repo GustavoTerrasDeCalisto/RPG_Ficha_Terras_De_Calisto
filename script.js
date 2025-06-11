@@ -340,7 +340,6 @@ bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
 <p>Nível 25: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>`,
 bonustitulo_2: "<p>♟️<strong>Estrategista</strong></p>",
 bonusTexto_2: `Nível 1: +1 em precisão à distância.
-<p>Nível 1: +1 em precisão à distância.</p>
 <p>Nível 3: +2 em testes de Agilidade.</p>
 <p>Nível 5: <strong>Observador</strong> - +1 em testes de percepção em situações de combate ou exploração.</p>
 <p>Nível 9: +1 em iniciativas e bônus de evasão contra ataques mágicos.</p>

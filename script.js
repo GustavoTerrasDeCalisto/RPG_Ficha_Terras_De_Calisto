@@ -352,14 +352,14 @@ bonusTexto_2: `Nível 1: +1 em precisão à distância.
 ,
     bonustitulo_3: "<p>🧙‍♂️<strong>Conjurador</strong></p>",
     bonusTexto_3: `<p>Nível 1: +1 em Conexão.</p>
-<p>Nível 2: +1d6 de cura/dano com feitiços simples.</p>
-<p>Nível 3: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.</p>
-<p>Nível 4: <strong>Magias de nível 1, 2 e 3</strong> - Consegue conjurar magias pequenas sem consumir recursos extras.</p>
-<p>Nível 5: +1 em testes de Conjuração ao invocar elementos.</p>
-<p>Nível 6: Ganha uma magia de nível 3 a 4 do grupo elemental escolhido.</p>
-<p>Nível 7: <strong>Magia Avançada</strong> - Ganha uma magia de nível 5 a 6 do grupo elemental escolhido.</p>
-<p>Nível 8: <strong>Custo Mínimo</strong> - Reduz o custo de uma magia por dia em 1 ponto de sanidade.</p>
-<p>Nível 9: <strong>Mestre Elemental</strong> - Ganha uma magia de nível 7 a 9 do grupo elemental escolhido e pode conjurá-la uma vez por dia sem custo.</p>`,
+<p>Nível 3: +1d6 de cura/dano com feitiços simples.</p>
+<p>Nível 5: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.</p>
+<p>Nível 9: <strong>Magias de nível 1, 2 e 3</strong> - Consegue conjurar magias pequenas sem consumir recursos extras.</p>
+<p>Nível 13: +1 em testes de Conjuração ao invocar elementos.</p>
+<p>Nível 16: Ganha uma magia de nível 3 a 4 do grupo elemental escolhido.</p>
+<p>Nível 20: <strong>Magia Avançada</strong> - Ganha uma magia de nível 5 a 6 do grupo elemental escolhido.</p>
+<p>Nível 22: <strong>Custo Mínimo</strong> - Reduz o custo de uma magia por dia em 1 ponto de sanidade.</p>
+<p>Nível 25: <strong>Mestre Elemental</strong> - Ganha uma magia de nível 7 a 9 do grupo elemental escolhido e pode conjurá-la uma vez por dia sem custo.</p>`,
     
   },
   "Arauto": { // Cavaleiro adicionado como exemplo

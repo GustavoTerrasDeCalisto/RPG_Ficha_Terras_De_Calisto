@@ -1506,6 +1506,21 @@ a:active {
   box-shadow: 0 0 8px rgba(255,255,255,0.6);
   font-weight: bold;
 }
+
+.gold-gradient {
+  background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 .item-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

@@ -374,40 +374,40 @@ bonusTexto_2: `Nível 1: +1 em precisão à distância.
 bonustitulo_1: `<p>🧠<strong>Mentor Psíquico</strong></p>`,
 bonusTexto_1: `
 <p>Nível 1: +1 em testes de dano <strong>Mental</strong>.</p>
-<p>Nível 2: Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra <strong>Mental</strong>.</p>
-<p>Nível 3: +1d4 em ataques que envolvam <strong>manipulação mental</strong> ou <strong>ilusão</strong>.</p>
-<p>Nível 4: +2 em testes de <strong>persuasão</strong> e <strong>intimidar</strong>.</p>
-<p>Nível 5: <strong>Leitura de Mentes</strong> — Detecta medos ou intenções de um alvo, uma vez por combate.</p>
-<p>Nível 6: +1d6 de dano em <strong>ataques psíquicos</strong>.</p>
-<p>Nível 7: <strong>Reflexos Psíquicos</strong> — +2 em resistência contra <strong>Confusão</strong> e <strong>Paralisado</strong>.</p>
-<p>Nível 8: <strong>Manipulação Mental Avançada</strong> — +1d8 de dano em feitiços mentais.</p>
-<p>Nível 9: <strong>Mestre da Psique</strong> — Uma vez por combate, força um inimigo a testar contra <strong>medo</strong> ou <strong>confusão</strong>, com penalidade de -1d6.</p>
+<p>Nível 3: Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra <strong>Mental</strong>.</p>
+<p>Nível 5: +1d4 em ataques que envolvam <strong>manipulação mental</strong> ou <strong>ilusão</strong>.</p>
+<p>Nível 9: +2 em testes de <strong>persuasão</strong> e <strong>intimidar</strong>.</p>
+<p>Nível 13: <strong>Leitura de Mentes</strong> — Detecta medos ou intenções de um alvo, uma vez por combate.</p>
+<p>Nível 16: +1d6 de dano em <strong>ataques psíquicos</strong>.</p>
+<p>Nível 20: <strong>Reflexos Psíquicos</strong> — +2 em resistência contra <strong>Confusão</strong> e <strong>Paralisado</strong>.</p>
+<p>Nível 22: <strong>Manipulação Mental Avançada</strong> — +1d8 de dano em feitiços mentais.</p>
+<p>Nível 25: <strong>Mestre da Psique</strong> — Uma vez por combate, força um inimigo a testar contra <strong>medo</strong> ou <strong>confusão</strong>, com penalidade de -1d6.</p>
 `,
 
 bonustitulo_2: `<p>🎩<strong>Ilusionista</strong></p>`,
 bonusTexto_2: `
 <p>Nível 1: +1 em testes de <strong>Enganação</strong> e <strong>Diplomacia</strong>.</p>
-<p>Nível 2: +2 em testes de <strong>Agilidade</strong> para manobras evasivas.</p>
-<p>Nível 3: <strong>Criação de Imagens</strong> — Cria ilusões simples que confundem inimigos, uma vez por combate.</p>
-<p>Nível 4: +2 em <strong>iniciativa</strong> ao usar ilusões.</p>
-<p>Nível 5: <strong>Desorientação</strong> — Aplica <strong>Confuso</strong> por 1d4 turnos em vez de dano direto.</p>
-<p>Nível 6: +1d8 de dano com <strong>ilusões</strong> ou manipulação mental.</p>
-<p>Nível 7: <strong>Engano Impecável</strong> — Enquanto <strong>invisível</strong> ou <strong>disfarçado</strong>, inimigos sofrem -1d6 contra você.</p>
-<p>Nível 8: <strong>Reflexo Ilusório</strong> — Evita um ataque usando uma ilusão de si mesmo, uma vez por combate.</p>
-<p>Nível 9: <strong>Ilusão Suprema</strong> — Cria uma ilusão gigantesca. Inimigos ficam <strong>Cegos</strong> por 1d6 turnos.</p>
+<p>Nível 3: +2 em testes de <strong>Agilidade</strong> para manobras evasivas.</p>
+<p>Nível 5: <strong>Criação de Imagens</strong> — Cria ilusões simples que confundem inimigos, uma vez por combate.</p>
+<p>Nível 9: +2 em <strong>iniciativa</strong> ao usar ilusões.</p>
+<p>Nível 13: <strong>Desorientação</strong> — Aplica <strong>Confuso</strong> por 1d4 turnos em vez de dano direto.</p>
+<p>Nível 16: +1d8 de dano com <strong>ilusões</strong> ou manipulação mental.</p>
+<p>Nível 20: <strong>Engano Impecável</strong> — Enquanto <strong>invisível</strong> ou <strong>disfarçado</strong>, inimigos sofrem -1d6 contra você.</p>
+<p>Nível 22: <strong>Reflexo Ilusório</strong> — Evita um ataque usando uma ilusão de si mesmo, uma vez por combate.</p>
+<p>Nível 25: <strong>Ilusão Suprema</strong> — Cria uma ilusão gigantesca. Inimigos ficam <strong>Cegos</strong> por 1d6 turnos.</p>
 `,
 
 bonustitulo_3: `<p>🔮<strong>Vidente</strong></p>`,
 bonusTexto_3: `
 <p>Nível 1: +1 em testes de <strong>Percepção</strong> e <strong>Intuição</strong>.</p>
-<p>Nível 2: Visão futura de 1d4 turnos, antecipando ações e eventos.</p>
-<p>Nível 3: <strong>Visão Psíquica</strong> — Detecta sentimentos, intenções e mentiras facilmente.</p>
-<p>Nível 4: +2 em resistência contra <strong>Cegueira</strong> e <strong>Paralisado</strong>.</p>
-<p>Nível 5: <strong>Clarividência</strong> — Percebe eventos distantes, uma vez por combate.</p>
-<p>Nível 6: +1d6 de dano em ataques que exploram <strong>fraquezas mentais</strong> ou espirituais.</p>
-<p>Nível 7: <strong>Perspectiva Expandida</strong> — Conjura feitiço de Clarividência em uma área de 30 metros.</p>
-<p>Nível 8: <strong>Visão Total</strong> — Visualiza todos os inimigos em combate.</p>
-<p>Nível 9: <strong>Futuro Imediato</strong> — Antecipação de movimento inimigo para bloquear ou desviar um ataque, uma vez por combate.</p>
+<p>Nível 3: Visão futura de 1d4 turnos, antecipando ações e eventos.</p>
+<p>Nível 5: <strong>Visão Psíquica</strong> — Detecta sentimentos, intenções e mentiras facilmente.</p>
+<p>Nível 9: +2 em resistência contra <strong>Cegueira</strong> e <strong>Paralisado</strong>.</p>
+<p>Nível 13: <strong>Clarividência</strong> — Percebe eventos distantes, uma vez por combate.</p>
+<p>Nível 16: +1d6 de dano em ataques que exploram <strong>fraquezas mentais</strong> ou espirituais.</p>
+<p>Nível 20: <strong>Perspectiva Expandida</strong> — Conjura feitiço de Clarividência em uma área de 30 metros.</p>
+<p>Nível 22: <strong>Visão Total</strong> — Visualiza todos os inimigos em combate.</p>
+<p>Nível 25: <strong>Futuro Imediato</strong> — Antecipação de movimento inimigo para bloquear ou desviar um ataque, uma vez por combate.</p>
 `
 
 },
@@ -422,40 +422,40 @@ bonusTexto_3: `
 bonustitulo_1: "<p>🏹 <strong>Caçador Preciso</strong></p>",
 bonusTexto_1: `
 <p>Nível 1: +1 em testes de <strong>Percepção</strong> para rastreamento.</p>
-<p>Nível 2: Aumenta o alcance efetivo de ataques à distância em +10 metros.</p>
-<p>Nível 3: <strong>Flecha Envenenada</strong> — Envenena a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.</p>
-<p>Nível 4: +2 em testes de <strong>furtividade</strong> para emboscadas.</p>
-<p>Nível 5: <strong>Disparo Cirúrgico</strong> — Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.</p>
-<p>Nível 6: +1d8 de dano em ataques que visam partes específicas do corpo.</p>
-<p>Nível 7: <strong>Resistência do Caçador</strong> — +2 em testes de resistência contra <strong>Veneno</strong> e <strong>Hemorragia</strong>.</p>
-<p>Nível 8: <strong>Mestre da Emboscada</strong> — Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.</p>
-<p>Nível 9: <strong>Flecha Mortal</strong> — Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.</p>
+<p>Nível 3: Aumenta o alcance efetivo de ataques à distância em +10 metros.</p>
+<p>Nível 5: <strong>Flecha Envenenada</strong> — Envenena a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.</p>
+<p>Nível 9: +2 em testes de <strong>furtividade</strong> para emboscadas.</p>
+<p>Nível 13: <strong>Disparo Cirúrgico</strong> — Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.</p>
+<p>Nível 16: +1d8 de dano em ataques que visam partes específicas do corpo.</p>
+<p>Nível 20: <strong>Resistência do Caçador</strong> — +2 em testes de resistência contra <strong>Veneno</strong> e <strong>Hemorragia</strong>.</p>
+<p>Nível 22: <strong>Mestre da Emboscada</strong> — Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.</p>
+<p>Nível 25: <strong>Flecha Mortal</strong> — Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.</p>
 `,
 
 bonustitulo_2: "<p>🎯 <strong>Atirador de Elite</strong></p>",
 bonusTexto_2: `
 <p>Nível 1: +1 em <strong>precisão</strong> ao usar <strong>arcos</strong> e <strong>bestas</strong>.</p>
-<p>Nível 2: +2 em testes de <strong>Agilidade</strong> para esquivas rápidas.</p>
-<p>Nível 3: <strong>Disparo Perfurante</strong> — Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.</p>
-<p>Nível 4: +2 em <strong>iniciativas</strong> ao utilizar armas à distância.</p>
-<p>Nível 5: <strong>Tiro Rápido</strong> — Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.</p>
-<p>Nível 6: +1d8 de dano adicional em ataques consecutivos no mesmo alvo.</p>
-<p>Nível 7: <strong>Alvo Escorregadio</strong> — Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o <strong>Arqueiro</strong>.</p>
-<p>Nível 8: <strong>Instinto de Sobrevivência</strong> — Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.</p>
-<p>Nível 9: <strong>Disparo Destruidor</strong> — Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.</p>
+<p>Nível 3: +2 em testes de <strong>Agilidade</strong> para esquivas rápidas.</p>
+<p>Nível 5: <strong>Disparo Perfurante</strong> — Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.</p>
+<p>Nível 9: +2 em <strong>iniciativas</strong> ao utilizar armas à distância.</p>
+<p>Nível 13: <strong>Tiro Rápido</strong> — Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.</p>
+<p>Nível 16: +1d8 de dano adicional em ataques consecutivos no mesmo alvo.</p>
+<p>Nível 20: <strong>Alvo Escorregadio</strong> — Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o <strong>Arqueiro</strong>.</p>
+<p>Nível 22: <strong>Instinto de Sobrevivência</strong> — Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.</p>
+<p>Nível 25: <strong>Disparo Destruidor</strong> — Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.</p>
 `,
 
 bonustitulo_3: "<p>🌌 <strong>Explorador das Sombras</strong></p>",
 bonusTexto_3: `
 <p>Nível 1: +1 em <strong>Furtividade</strong> e <strong>Movimentação</strong> em terrenos variados.</p>
-<p>Nível 2: +2 em testes de <strong>Sobrevivência</strong> para explorar áreas desconhecidas.</p>
-<p>Nível 3: <strong>Caminho Oculto</strong> — Permite ao grupo avançar sem deixar rastros, uma vez por dia.</p>
-<p>Nível 4: +2 em testes de resistência contra <strong>Confusão</strong> e <strong>Cegueira</strong>.</p>
-<p>Nível 5: <strong>Flecha da Escuridão</strong> — Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.</p>
-<p>Nível 6: +1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.</p>
-<p>Nível 7: <strong>Emboscada Letal</strong> — Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.</p>
-<p>Nível 8: <strong>Vantagem na Escuridão</strong> — Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.</p>
-<p>Nível 9: <strong>Ataque Sombrio</strong> — Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.</p>
+<p>Nível 3: +2 em testes de <strong>Sobrevivência</strong> para explorar áreas desconhecidas.</p>
+<p>Nível 5: <strong>Caminho Oculto</strong> — Permite ao grupo avançar sem deixar rastros, uma vez por dia.</p>
+<p>Nível 9: +2 em testes de resistência contra <strong>Confusão</strong> e <strong>Cegueira</strong>.</p>
+<p>Nível 13: <strong>Flecha da Escuridão</strong> — Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.</p>
+<p>Nível 16: +1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.</p>
+<p>Nível 20: <strong>Emboscada Letal</strong> — Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.</p>
+<p>Nível 22: <strong>Vantagem na Escuridão</strong> — Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.</p>
+<p>Nível 25: <strong>Ataque Sombrio</strong> — Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.</p>
 `
 ,
     "movimento_pass": 2
@@ -471,40 +471,40 @@ bonusTexto_3: `
 bonustitulo_1: "<p>🗡️ <strong>Assassinato Furtivo</strong></p>",
 bonusTexto_1: `
 <p>Nível 1: +1 em <strong>Furtividade</strong> para emboscadas.</p>
-<p>Nível 2: +1 em testes de <strong>Agilidade</strong> para aproximações silenciosas.</p>
-<p>Nível 3: <strong>Golpe Fatal</strong> — Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.</p>
-<p>Nível 4: +2 em ataques com <strong>adagas</strong> contra alvos desprevenidos.</p>
-<p>Nível 5: <strong>Execução Impecável</strong> — Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.</p>
-<p>Nível 6: +1d6 de dano ao atacar inimigos que ainda não agiram no combate.</p>
-<p>Nível 7: <strong>Resiliência das Sombras</strong> — +2 em testes de resistência contra <strong>envenenamento</strong> e <strong>paralisia</strong>.</p>
-<p>Nível 8: <strong>Mestre da Furtividade</strong> — Permite ficar completamente invisível por até um turno.</p>
-<p>Nível 9: <strong>Assassinato Silencioso</strong> — Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.</p>
+<p>Nível 3: +1 em testes de <strong>Agilidade</strong> para aproximações silenciosas.</p>
+<p>Nível 5: <strong>Golpe Fatal</strong> — Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.</p>
+<p>Nível 9: +2 em ataques com <strong>adagas</strong> contra alvos desprevenidos.</p>
+<p>Nível 13: <strong>Execução Impecável</strong> — Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.</p>
+<p>Nível 16: +1d6 de dano ao atacar inimigos que ainda não agiram no combate.</p>
+<p>Nível 20: <strong>Resiliência das Sombras</strong> — +2 em testes de resistência contra <strong>envenenamento</strong> e <strong>paralisia</strong>.</p>
+<p>Nível 22: <strong>Mestre da Furtividade</strong> — Permite ficar completamente invisível por até um turno.</p>
+<p>Nível 25: <strong>Assassinato Silencioso</strong> — Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.</p>
 `,
 
 bonustitulo_2: "<p>⛩️ <strong>Shurikins Mortais</strong></p>",
 bonusTexto_2: `
 <p>Nível 1: +1 em precisão ao usar <strong>shurikins</strong> e armas arremessáveis.</p>
-<p>Nível 2: +2 em testes de <strong>Agilidade</strong> para esquivas e deslocamento rápido.</p>
-<p>Nível 3: <strong>Projétil Rápido</strong> — Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.</p>
-<p>Nível 4: +1d6 de dano em ataques arremessados com precisão aprimorada.</p>
-<p>Nível 5: <strong>Tiro Preciso</strong> — Realiza um disparo que ignora defesas naturais do alvo.</p>
-<p>Nível 6: +1d8 de dano extra em ataques sucessivos contra o mesmo alvo.</p>
-<p>Nível 7: <strong>Desvio Ágil</strong> — +2 em testes de esquiva contra projéteis inimigos.</p>
-<p>Nível 8: <strong>Projéteis Penetrantes</strong> — Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.</p>
-<p>Nível 9: <strong>Dança das Lâminas</strong> — Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.</p>
+<p>Nível 3: +2 em testes de <strong>Agilidade</strong> para esquivas e deslocamento rápido.</p>
+<p>Nível 5: <strong>Projétil Rápido</strong> — Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.</p>
+<p>Nível 9: +1d6 de dano em ataques arremessados com precisão aprimorada.</p>
+<p>Nível 13: <strong>Tiro Preciso</strong> — Realiza um disparo que ignora defesas naturais do alvo.</p>
+<p>Nível 16: +1d8 de dano extra em ataques sucessivos contra o mesmo alvo.</p>
+<p>Nível 20: <strong>Desvio Ágil</strong> — +2 em testes de esquiva contra projéteis inimigos.</p>
+<p>Nível 22: <strong>Projéteis Penetrantes</strong> — Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.</p>
+<p>Nível 25: <strong>Dança das Lâminas</strong> — Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.</p>
 `,
 
 bonustitulo_3: "<p>🌑 <strong>Sombras do Infinito</strong></p>",
 bonusTexto_3: `
 <p>Nível 1: +1 em testes de <strong>Conexão</strong> para controlar magias do eclipse.</p>
-<p>Nível 2: <strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.</p>
-<p>Nível 3: <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=luz%20e%20sombra.-,Reflex%C3%A3o%20de%20Eclipse,-Eklipsens%20Refleksjon" target="_blank" rel="noopener noreferrer">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
-<p>Nível 4: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=de%20Alvos%3A%20Agilidade-,Fragmento%20do%20Tempo,-Fragmentum%20Tempus" target="_blank" rel="noopener noreferrer">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
-<p>Nível 5: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20%E2%80%94-,Clone%20das%20Sombras,-Clonum%20Umbra" target="_blank" rel="noopener noreferrer">Clone das Sombras</a></strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
-<p>Nível 6: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=qualidade%20do%20item-,Ilus%C3%A3o%20Lunar,-Illusio%20Lunae" target="_blank" rel="noopener noreferrer">Ilusão Lunar</a></strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
-<p>Nível 7: <strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o%20Sombria,-Mutatio%20Obscura" target="_blank" rel="noopener noreferrer">Mutação Sombria</a></strong> (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.</p>
-<p>Nível 8: <strong>Sombra da Noite</strong> — Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).</p>
-<p>Nível 9: <strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Cataclismo%20do%20Eclipse" target="_blank" rel="noopener noreferrer">Cataclismo do Eclipse</a></strong> (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.</p>
+<p>Nível 3: <strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.</p>
+<p>Nível 5: <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=luz%20e%20sombra.-,Reflex%C3%A3o%20de%20Eclipse,-Eklipsens%20Refleksjon" target="_blank" rel="noopener noreferrer">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
+<p>Nível 9: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=de%20Alvos%3A%20Agilidade-,Fragmento%20do%20Tempo,-Fragmentum%20Tempus" target="_blank" rel="noopener noreferrer">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
+<p>Nível 13: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20%E2%80%94-,Clone%20das%20Sombras,-Clonum%20Umbra" target="_blank" rel="noopener noreferrer">Clone das Sombras</a></strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
+<p>Nível 16: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=qualidade%20do%20item-,Ilus%C3%A3o%20Lunar,-Illusio%20Lunae" target="_blank" rel="noopener noreferrer">Ilusão Lunar</a></strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
+<p>Nível 20: <strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o%20Sombria,-Mutatio%20Obscura" target="_blank" rel="noopener noreferrer">Mutação Sombria</a></strong> (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.</p>
+<p>Nível 22: <strong>Sombra da Noite</strong> — Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).</p>
+<p>Nível 25: <strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Cataclismo%20do%20Eclipse" target="_blank" rel="noopener noreferrer">Cataclismo do Eclipse</a></strong> (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.</p>
 `
 ,  "movimento_pass": 3
   },
@@ -520,41 +520,41 @@ bonusTexto_3: `
 bonustitulo_1: "<p>👤 <strong>Perseguidor Sombrio</strong></p>",
 bonusTexto_1: `
 <p>Nível 1: <strong>Sombras Vorazes</strong> (custo: 2 especial) – Executa uma investida, esquivando de todos os ataques até o fim do turno.</p>
-<p>Nível 2: <strong>Golpe Oculto</strong> (custo: 3 especial) – Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano.</p>
-<p>Nível 3: <strong>Manto das Trevas</strong> (custo: 2 especial) – Torna-se invisível em locais escuros por um turno.</p>
-<p>Nível 4: <strong>Velocidade Espiritual</strong> (custo: 3 especial) – Movimenta-se duas vezes no mesmo turno, escapando de emboscadas.</p>
-<p>Nível 5: <strong>Reflexo Sombrio</strong> (custo: 4 especial) – Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano.</p>
-<p>Nível 6: <strong>Golpe do Abismo</strong> (custo: 5 especial) – Executa um ataque de sombra que ignora armadura e causa +2d8 de dano.</p>
-<p>Nível 7: <strong>Sombra Penetrante</strong> – Reduz o custo de sanidade para <strong>magias de Alma</strong> pela metade.</p>
-<p>Nível 8: <strong>Força Noturna</strong> – Aumenta o dano em +1d6 para ataques físicos e <strong>magias de Alma</strong>.</p>
-<>Nível 9: <strong>Sombra Aniquiladora</strong> (custo: 6 especial) – Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos.</p>
+<p>Nível 3: <strong>Golpe Oculto</strong> (custo: 3 especial) – Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano.</p>
+<p>Nível 5: <strong>Manto das Trevas</strong> (custo: 2 especial) – Torna-se invisível em locais escuros por um turno.</p>
+<p>Nível 9: <strong>Velocidade Espiritual</strong> (custo: 3 especial) – Movimenta-se duas vezes no mesmo turno, escapando de emboscadas.</p>
+<p>Nível 13: <strong>Reflexo Sombrio</strong> (custo: 4 especial) – Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano.</p>
+<p>Nível 16: <strong>Golpe do Abismo</strong> (custo: 5 especial) – Executa um ataque de sombra que ignora armadura e causa +2d8 de dano.</p>
+<p>Nível 20: <strong>Sombra Penetrante</strong> – Reduz o custo de sanidade para <strong>magias de Alma</strong> pela metade.</p>
+<p>Nível 22: <strong>Força Noturna</strong> – Aumenta o dano em +1d6 para ataques físicos e <strong>magias de Alma</strong>.</p>
+<>Nível 25: <strong>Sombra Aniquiladora</strong> (custo: 6 especial) – Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos.</p>
 `,
 
 bonustitulo_2: "<p>🛠️ <strong>Artesão Espiritual</strong></p>",
 bonusTexto_2: `
 <p>Cada nível de aprimoramento infunde habilidades únicas nos equipamentos, permitindo maior poder ao custo de especial. Duração máxima de aprimoramento: uma cena ou 1h.</p>
 <p>Nível 1: <strong>Energia Espiritual</strong> – Armazena uma alma, conferindo +1 de dano ou +1 em resistência. (Sem custo de especial)</p>
-<p>Nível 2: <strong>Lâmina Viva</strong> – Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 de especial por uso)</p>
-<p>Nível 3: <strong>Alma Guardiã</strong> – Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)</p>
-<p>Nível 4: <strong>Vínculo Espiritual</strong> – Torna o equipamento mais resiliente, +2 em resistência à deterioração. (Sem custo de especial)</p>
-<p>Nível 5: <strong>Conexão Profunda</strong> – Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 de especial por uso)</p>
-<p>Nível 6: <strong>Escudo da Alma</strong> – Libera uma barreira espiritual que reduz o dano recebido pela metade por um turno. (4 de especial, 1 vez por combate)</>
-<p>Nível 7: <strong>Chama da Vingança</strong> – Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 de especial por uso)</p>
-<p>Nível 8: <strong>Força Espiritual</strong> – Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)</p>
-<p>Nível 9: <strong>Guardião das Almas</strong> – Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 de especial por ativação, 1 vez por combate)</p>
+<p>Nível 3: <strong>Lâmina Viva</strong> – Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 de especial por uso)</p>
+<p>Nível 5: <strong>Alma Guardiã</strong> – Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)</p>
+<p>Nível 9: <strong>Vínculo Espiritual</strong> – Torna o equipamento mais resiliente, +2 em resistência à deterioração. (Sem custo de especial)</p>
+<p>Nível 13: <strong>Conexão Profunda</strong> – Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 de especial por uso)</p>
+<p>Nível 16: <strong>Escudo da Alma</strong> – Libera uma barreira espiritual que reduz o dano recebido pela metade por um turno. (4 de especial, 1 vez por combate)</>
+<p>Nível 20: <strong>Chama da Vingança</strong> – Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 de especial por uso)</p>
+<p>Nível 22: <strong>Força Espiritual</strong> – Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)</p>
+<p>Nível 25: <strong>Guardião das Almas</strong> – Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 de especial por ativação, 1 vez por combate)</p>
 `,
 
 bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
 bonusTexto_3: `
 <p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma [magia de nível 1](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hiearquias%20de%20Guardi%C3%B5es) e +1 em testes de resistência contra efeitos espirituais.</p>
-<p>Nível 2: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
-<p>Nível 3: <strong>Protetor da Essência</strong> – Ganha uma [magia de nível 2](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
-<p>Nível 4: <strong>Escudo Espiritual<strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
-<p>Nível 5: <strong>Tecelão da Alma</strong> – Ganha uma [magia de nível 3](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e aumenta a duração das magias em 1 turno.</p>
-<p>Nível 6: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
-<p>Nível 7: <strong>Profeta da Eternidade</strong> – Ganha uma [magia de nível 4](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +2 em percepção para detectar entidades invisíveis.</p>
-<p>Nível 8: <strong>Eco Espiritual</strong> – Ganha uma [magia de nível 5](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
-<p>Nível 9: <strong>Guardião Eterno</strong> – Ganha uma [magia de nível 6](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e uma ação completa extra por 7 de especial.</p>
+<p>Nível 3: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
+<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma [magia de nível 2](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
+<p>Nível 9: <strong>Escudo Espiritual<strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
+<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma [magia de nível 3](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e aumenta a duração das magias em 1 turno.</p>
+<p>Nível 16: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
+<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma [magia de nível 4](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +2 em percepção para detectar entidades invisíveis.</p>
+<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma [magia de nível 5](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
+<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma [magia de nível 6](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e uma ação completa extra por 7 de especial.</p>
 `, "movimento_pass": 3
   },
     "Atirador": { 
@@ -569,40 +569,40 @@ bonusTexto_3: `
 bonustitulo_1: "<p>🔫 <strong>Pistoleiro</strong></p>",
 bonusTexto_1: `
 <p><strong>Nível 1:</strong> <strong>Mão Ágil</strong> – Permite sacar e guardar armas com rapidez, ganhando +1 em precisão ao atirar com duas armas. (1 de especial por uso)</p>
-<p><strong>Nível 2:</strong> <strong>Tiro Duplo</strong> – Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 de especial por uso)</p>
-<p><strong>Nível 3:</strong> <strong>Ponto Cego</strong> – Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 de especial por uso)</p>
-<p><strong>Nível 4:</strong> <strong>Reflexos Rápidos</strong> – Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)</p>
-<p><strong>Nível 5:</strong> <strong>Bala Certeira</strong> – Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 de especial por uso)</p>
-<p><strong>Nível 6:</strong> <strong>Velocidade da Bala</strong> – Pode realizar um tiro extra sem penalidade. (3 de especial por uso)</p>
-<p><strong>Nível 7:</strong> <strong>Destemido</strong> – Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)</p>
-<p><strong>Nível 8:</strong> <strong>Impacto Devastador</strong> – Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 de especial por uso)</p>
-<p><strong>Nível 9:</strong> <strong>Fúria do Pistoleiro</strong> – Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 de especial por ativação, 1 vez por combate)</p>
+<p><strong>Nível 3:</strong> <strong>Tiro Duplo</strong> – Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 de especial por uso)</p>
+<p><strong>Nível 5:</strong> <strong>Ponto Cego</strong> – Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 de especial por uso)</p>
+<p><strong>Nível 9:</strong> <strong>Reflexos Rápidos</strong> – Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)</p>
+<p><strong>Nível 13:</strong> <strong>Bala Certeira</strong> – Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 de especial por uso)</p>
+<p><strong>Nível 16:</strong> <strong>Velocidade da Bala</strong> – Pode realizar um tiro extra sem penalidade. (3 de especial por uso)</p>
+<p><strong>Nível 20:</strong> <strong>Destemido</strong> – Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)</p>
+<p><strong>Nível 22:</strong> <strong>Impacto Devastador</strong> – Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 de especial por uso)</p>
+<p><strong>Nível 25:</strong> <strong>Fúria do Pistoleiro</strong> – Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 de especial por ativação, 1 vez por combate)</p>
 `,
 
 bonustitulo_2: "<p>🚨 <strong>Fora da Lei</strong></p>",
 bonusTexto_2: `
 <p><strong>Nível 1:</strong> <strong>Infâmia</strong> – Ganha +1 em testes de intimidação contra NPCs e inimigos. (1 de especial por uso)</p>
-<p><strong>Nível 2:</strong> <strong>Procurado</strong> – Para cada estrela no cartaz de procurado, recebe +1 em esquiva (máx. 5). (Passivo)</p>
-<p><strong>Nível 3:</strong> <strong>Tiro Ameaçador</strong> – Disparo que assusta o alvo, causando -1d4 nos próximos ataques dele. (2 de especial por uso)</p>
-<p><strong>Nível 4:</strong> <strong>Sangue Frio</strong> – Ganha +2 em resistência contra efeitos de medo. (Passivo)</p>
-<p><strong>Nível 5:</strong> <strong>Fama Implacável</strong> – Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 de especial por ativação, 1 vez por combate)</p>
-<p><strong>Nível 6:</strong> <strong>Presença Intimidadora</strong> – Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem. (Passivo)</p>
-<p><strong>Nível 7:</strong> <strong>Desprezo Mortal</strong> – Disparo que ignora armadura, causando +2d6 de dano adicional. (4 de especial por uso)</p>
-<p><strong>Nível 8:</strong> <strong>Terror do Oeste</strong> – Inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)</p>
-<p><strong>Nível 9:</strong> <strong>Lenda Viva</strong> – Ataques causam +2d10 de dano a alvos que falharem em resistir ao medo. (5 de especial por ativação, 1 vez por combate)</p>
+<p><strong>Nível 3:</strong> <strong>Procurado</strong> – Para cada estrela no cartaz de procurado, recebe +1 em esquiva (máx. 5). (Passivo)</p>
+<p><strong>Nível 5:</strong> <strong>Tiro Ameaçador</strong> – Disparo que assusta o alvo, causando -1d4 nos próximos ataques dele. (2 de especial por uso)</p>
+<p><strong>Nível 9:</strong> <strong>Sangue Frio</strong> – Ganha +2 em resistência contra efeitos de medo. (Passivo)</p>
+<p><strong>Nível 13:</strong> <strong>Fama Implacável</strong> – Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 de especial por ativação, 1 vez por combate)</p>
+<p><strong>Nível 16:</strong> <strong>Presença Intimidadora</strong> – Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem. (Passivo)</p>
+<p><strong>Nível 20:</strong> <strong>Desprezo Mortal</strong> – Disparo que ignora armadura, causando +2d6 de dano adicional. (4 de especial por uso)</p>
+<p><strong>Nível 22:</strong> <strong>Terror do Oeste</strong> – Inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)</p>
+<p><strong>Nível 25:</strong> <strong>Lenda Viva</strong> – Ataques causam +2d10 de dano a alvos que falharem em resistir ao medo. (5 de especial por ativação, 1 vez por combate)</p>
 `,
 
 bonustitulo_3: "<p>💥 <strong>Inimigo da Bala</strong></p>",
 bonusTexto_3: `
 <p><strong>Nível 1:</strong> <strong>Pancada Letal</strong> – Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 de especial por uso)</p>
-<p><strong>Nível 2:</strong> <strong>Defesa da Arma</strong> – Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) e libera a magia [Flecha de Luz](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=antes%20de%20conjurar.-,Flecha%20de%20Luz,-Sagitta%20Lux)</p>
-<p><strong>Nível 3:</strong> <strong>Bônus de Especial</strong> – Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) e libera a passiva [Teleporte Repentino](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Preserva%C3%A7%C3%A3o-,Teleporte%20repentino,-Subitus%20Ianuae)</p>
-<p><strong>Nível 4:</strong> <strong>Controle do Combate</strong> – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)</p>
-<p><strong>Nível 5:</strong> <strong>Quebra-Defesa</strong> – Golpe que ignora defesa física e causa +1d6 de dano. (3 de especial por uso)</p>
-<p><strong>Nível 6:</strong> <strong>Fúria Contida</strong> – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)</p>
-<p><strong>Nível 7:</strong> <strong>Impacto Brutal</strong> – Ataque corpo a corpo que causa +2d6 de dano e derruba o inimigo. (4 de especial por uso)</p>
-<p><strong>Nível 8:</strong> <strong>Dominância do Combate</strong> – Ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)</p>
-<p><strong>Nível 9:</strong> <strong>Força da Calma</strong> – Executa ataque devastador com +2d10 de dano, disponível após três turnos sem disparar. (5 de especial por ativação, 1 vez por combate)</p>
+<p><strong>Nível 3:</strong> <strong>Defesa da Arma</strong> – Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) e libera a magia [Flecha de Luz](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=antes%20de%20conjurar.-,Flecha%20de%20Luz,-Sagitta%20Lux)</p>
+<p><strong>Nível 5:</strong> <strong>Bônus de Especial</strong> – Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) e libera a passiva [Teleporte Repentino](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Preserva%C3%A7%C3%A3o-,Teleporte%20repentino,-Subitus%20Ianuae)</p>
+<p><strong>Nível 9:</strong> <strong>Controle do Combate</strong> – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)</p>
+<p><strong>Nível 13:</strong> <strong>Quebra-Defesa</strong> – Golpe que ignora defesa física e causa +1d6 de dano. (3 de especial por uso)</p>
+<p><strong>Nível 16:</strong> <strong>Fúria Contida</strong> – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)</p>
+<p><strong>Nível 20:</strong> <strong>Impacto Brutal</strong> – Ataque corpo a corpo que causa +2d6 de dano e derruba o inimigo. (4 de especial por uso)</p>
+<p><strong>Nível 22:</strong> <strong>Dominância do Combate</strong> – Ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)</p>
+<p><strong>Nível 25:</strong> <strong>Força da Calma</strong> – Executa ataque devastador com +2d10 de dano, disponível após três turnos sem disparar. (5 de especial por ativação, 1 vez por combate)</p>
 `, "movimento_pass": 4
     },
     "Barão": { 
@@ -617,40 +617,40 @@ bonusTexto_3: `
 bonustitulo_1: "<p>🧪 <strong>Manipulação Ácida</strong></p>",
 bonusTexto_1: `
 <p><strong>Nível 1:</strong> +1 em testes de Enganação ao influenciar outros.</p>
-<p><strong>Nível 2:</strong> <strong>Insidioso</strong> – +1 em testes de Agilidade para ações furtivas ou subversivas.</p>
-<p><strong>Nível 3:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 4:</strong> <strong>Controle Ácido</strong> – +2 em Intimidação ao demonstrar poder ácido em combate.</p>
-<p><strong>Nível 5:</strong> <strong>Comando Persuasivo</strong> – Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)</p>
-<p><strong>Nível 6:</strong> <strong>Senhor do Veneno</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 7:</strong> <strong>Olhar Corrosivo</strong> – Inimigos próximos sofrem -1 em resistência mental.</p>
-<p><strong>Nível 8:</strong> <strong>Manipulador Implacável</strong> – +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.</p>
-<p><strong>Nível 9:</strong> <strong>Barão do Subjugamento</strong> – Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)</p>
+<p><strong>Nível 3:</strong> <strong>Insidioso</strong> – +1 em testes de Agilidade para ações furtivas ou subversivas.</p>
+<p><strong>Nível 5:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 9:</strong> <strong>Controle Ácido</strong> – +2 em Intimidação ao demonstrar poder ácido em combate.</p>
+<p><strong>Nível 13:</strong> <strong>Comando Persuasivo</strong> – Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)</p>
+<p><strong>Nível 16:</strong> <strong>Senhor do Veneno</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 20:</strong> <strong>Olhar Corrosivo</strong> – Inimigos próximos sofrem -1 em resistência mental.</p>
+<p><strong>Nível 22:</strong> <strong>Manipulador Implacável</strong> – +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.</p>
+<p><strong>Nível 25:</strong> <strong>Barão do Subjugamento</strong> – Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)</p>
 `,
 
 bonustitulo_2: "<p>💀 <strong>Corrupto</strong></p>",
 bonusTexto_2: `
 <p><strong>Nível 1:</strong> +1 em testes de Intimidação ao causar medo através do poder corrosivo.</p>
-<p><strong>Nível 2:</strong> <strong>Sopro Ácido</strong> – Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)</p>
-<p><strong>Nível 3:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 4:</strong> <strong>Aura da Corrosão</strong> – Inimigos próximos recebem -1 em resistência ao ácido.</p>
-<p><strong>Nível 5:</strong> <strong>Maldição Ácida</strong> – Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa +1d6 de dano ácido adicional. (Custo: 3 de especial)</p>
-<p><strong>Nível 6:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 7:</strong> <strong>Decadência Profunda</strong> – Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)</p>
-<p><strong>Nível 8:</strong> <strong>Desolador Corrosivo</strong> – +2 de dano ácido contra alvos debilitados.</p>
-<p><strong>Nível 9:</strong> <strong>Propagador da Degradação</strong> – Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)</p>
+<p><strong>Nível 3:</strong> <strong>Sopro Ácido</strong> – Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)</p>
+<p><strong>Nível 5:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 9:</strong> <strong>Aura da Corrosão</strong> – Inimigos próximos recebem -1 em resistência ao ácido.</p>
+<p><strong>Nível 13:</strong> <strong>Maldição Ácida</strong> – Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa +1d6 de dano ácido adicional. (Custo: 3 de especial)</p>
+<p><strong>Nível 16:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 20:</strong> <strong>Decadência Profunda</strong> – Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)</p>
+<p><strong>Nível 22:</strong> <strong>Desolador Corrosivo</strong> – +2 de dano ácido contra alvos debilitados.</p>
+<p><strong>Nível 25:</strong> <strong>Propagador da Degradação</strong> – Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)</p>
 `,
 
 bonustitulo_3: "<p>🦠 <strong>Adepto da Corrosão</strong></p>",
 bonusTexto_3: `
 <p><strong>Nível 1:</strong> +1d4 em vida ao sofrer dano ácido, aproveitando o poder da corrosão para fortalecimento.</p>
-<p><strong>Nível 2:</strong> <strong>Pele Resistente</strong> – +2 em resistência contra venenos e ácidos.</p>
-<p><strong>Nível 3:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 4:</strong> <strong>Fluxo Ácido</strong> – Ao receber cura mágica, regenera +1d6 adicional.</p>
-<p><strong>Nível 5:</strong> <strong>Ciclo da Corrosão</strong> – +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)</p>
-<p><strong>Nível 6:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 7:</strong> <strong>Conexão Corrosiva</strong> – Cura 1d4 ao infligir dano ácido.</p>
-<p><strong>Nível 8:</strong> <strong>Poder da Dissolução</strong> – Magias de ácido causam +1d8 de dano adicional.</p>
-<p><strong>Nível 9:</strong> <strong>Guardião da Corrosão Suprema</strong> – Libera uma magia de nível 3 da [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula) sem custo de especial, uma vez por combate. (Custo: 6 de especial para reativar em outro combate)</p>
+<p><strong>Nível 3:</strong> <strong>Pele Resistente</strong> – +2 em resistência contra venenos e ácidos.</p>
+<p><strong>Nível 5:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 9:</strong> <strong>Fluxo Ácido</strong> – Ao receber cura mágica, regenera +1d6 adicional.</p>
+<p><strong>Nível 13:</strong> <strong>Ciclo da Corrosão</strong> – +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)</p>
+<p><strong>Nível 16:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
+<p><strong>Nível 20:</strong> <strong>Conexão Corrosiva</strong> – Cura 1d4 ao infligir dano ácido.</p>
+<p><strong>Nível 22:</strong> <strong>Poder da Dissolução</strong> – Magias de ácido causam +1d8 de dano adicional.</p>
+<p><strong>Nível 25:</strong> <strong>Guardião da Corrosão Suprema</strong> – Libera uma magia de nível 3 da [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula) sem custo de especial, uma vez por combate. (Custo: 6 de especial para reativar em outro combate)</p>
 `
 ,  "movimento_pass": 4.5
     },
@@ -664,36 +664,36 @@ bonusTexto_3: `
       
       😡Berserker
       Nível 1: Instinto Selvagem – Aumenta em +1d4 o dano de ataques realizados com as próprias mãos ou armas improvisadas quando em combate corpo a corpo. (Passivo) e Libera a passiva Ódio.
-Nível 2: Força Primordial – Recebe +2 em testes de força física, especialmente em situações de quebra de objetos ou arrancamento. (Passivo)
-Nível 3: Resistência Implacável – Ganha +1 em testes de resistência contra venenos e efeitos de cansaço. (Passivo)
-Nível 4: Rugido de Guerra – Ao lançar um grito de batalha, impõe -1 nos testes dos inimigos próximos por um turno. (2 de especial por uso)
-Nível 5: Golpe Devastador – Aplica um bônus de +1d6 de dano ao atacar quando sua vida estiver abaixo de 50%. (3 de especial por uso)
-Nível 6: Fúria Cortante – +1d6 de dano adicional ao usar armas de corte quando está em fúria. (Passivo)
-Nível 7: Espírito da Batalha – Recebe +2 em resistência contra condições debilitantes como Lentidão e Paralisia enquanto luta com mais de um inimigo. (Passivo)
-Nível 8: Destruição Imparável – +1d8 de dano adicional ao acertar golpes críticos com armas pesadas. (Passivo)
-Nível 9: Frenesi Berserker – Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)
+Nível 3: Força Primordial – Recebe +2 em testes de força física, especialmente em situações de quebra de objetos ou arrancamento. (Passivo)
+Nível 5: Resistência Implacável – Ganha +1 em testes de resistência contra venenos e efeitos de cansaço. (Passivo)
+Nível 9: Rugido de Guerra – Ao lançar um grito de batalha, impõe -1 nos testes dos inimigos próximos por um turno. (2 de especial por uso)
+Nível 13: Golpe Devastador – Aplica um bônus de +1d6 de dano ao atacar quando sua vida estiver abaixo de 50%. (3 de especial por uso)
+Nível 16: Fúria Cortante – +1d6 de dano adicional ao usar armas de corte quando está em fúria. (Passivo)
+Nível 20: Espírito da Batalha – Recebe +2 em resistência contra condições debilitantes como Lentidão e Paralisia enquanto luta com mais de um inimigo. (Passivo)
+Nível 22: Destruição Imparável – +1d8 de dano adicional ao acertar golpes críticos com armas pesadas. (Passivo)
+Nível 25: Frenesi Berserker – Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)
 
 🪓Mestre dos Machados
 Nível 1: Precisão Brutal – Recebe +1d4 de dano adicional ao usar machados para acertar alvos fixos ou de movimento lento. (Passivo)
-Nível 2: Braços de Ferro – +1 em testes ao usar armas pesadas como machados, mesmo em condições de combate prolongado. (Passivo)
-Nível 3: Agilidade com Peso – +1 em testes de Agilidade quando carrega armas pesadas em combate. (Passivo)
-Nível 4: Machado Veloz – Concede +2 em ataques consecutivos com machados contra o mesmo alvo. (Passivo)
-Nível 5: Corte Rachador – Executa um golpe com o machado que reduz a defesa do alvo em 1 por dois turnos. (2 de especial por uso)
-Nível 6: Lâmina Impiedosa – +1d8 de dano em ataques críticos realizados com machados ao mirar na cabeça ou em partes vulneráveis. (Passivo)
-Nível 7: Mestre de Impacto – Recebe +2 em resistência contra efeitos de recuo ao atacar com machados em combate corpo a corpo. (Passivo)
-Nível 8: Golpe Fatal – Ao acertar um golpe crítico, causa um sangramento extra de +1d10 de dano em turnos seguintes. (4 de especial por uso)
-Nível 9: Executador de Batalha – Pode realizar um ataque extra com machado uma vez por combate, com +2d8 de dano adicional. (5 de especial por ativação, uma vez por combate)
+Nível 3: Braços de Ferro – +1 em testes ao usar armas pesadas como machados, mesmo em condições de combate prolongado. (Passivo)
+Nível 5: Agilidade com Peso – +1 em testes de Agilidade quando carrega armas pesadas em combate. (Passivo)
+Nível 9: Machado Veloz – Concede +2 em ataques consecutivos com machados contra o mesmo alvo. (Passivo)
+Nível 13: Corte Rachador – Executa um golpe com o machado que reduz a defesa do alvo em 1 por dois turnos. (2 de especial por uso)
+Nível 16: Lâmina Impiedosa – +1d8 de dano em ataques críticos realizados com machados ao mirar na cabeça ou em partes vulneráveis. (Passivo)
+Nível 20: Mestre de Impacto – Recebe +2 em resistência contra efeitos de recuo ao atacar com machados em combate corpo a corpo. (Passivo)
+Nível 22: Golpe Fatal – Ao acertar um golpe crítico, causa um sangramento extra de +1d10 de dano em turnos seguintes. (4 de especial por uso)
+Nível 25: Executador de Batalha – Pode realizar um ataque extra com machado uma vez por combate, com +2d8 de dano adicional. (5 de especial por ativação, uma vez por combate)
 
 ✨Caminho Puritano
 Nível 1: Vitalidade Curativa – Recupera +1d4 de vida própria ao final de cada combate ao manter a integridade do grupo. (Passivo)
-Nível 2: Resiliência Sagrada – +1 em testes de primeiros socorros, aplicável a si e aliados próximos. (Passivo)
-Nível 3: Fonte de Cura – Ao receber cura, aumenta o efeito em +1d4 de vida extra. (Passivo)
-Nível 4: Proteção Natural – +2 em resistência contra ataques mágicos enquanto está curando aliados. (Passivo)
-Nível 5: Mão Restauradora – Cura a si ou um aliado em +1d6 instantaneamente. (3 de especial por uso)
-Nível 6: Energia Salvadora – Regenera +1d8 de vida ao final de cada turno enquanto estiver ao lado de aliados feridos. (Passivo)
-Nível 7: Guardião de Batalha – Recebe +2 em resistência contra efeitos de maldição e envenenamento enquanto cura ou protege um aliado. (Passivo)
-Nível 8: Reforço de Vida – Cura um aliado em +1d10 ao usar uma ação de suporte em combate. (4 de especial por uso)
-Nível 9: Guardião Puritano – Cura todos os aliados próximos em +2d8 uma vez por combate. (5 de especial por ativação, uma vez por combate)`,
+Nível 3: Resiliência Sagrada – +1 em testes de primeiros socorros, aplicável a si e aliados próximos. (Passivo)
+Nível 5: Fonte de Cura – Ao receber cura, aumenta o efeito em +1d4 de vida extra. (Passivo)
+Nível 9: Proteção Natural – +2 em resistência contra ataques mágicos enquanto está curando aliados. (Passivo)
+Nível 13: Mão Restauradora – Cura a si ou um aliado em +1d6 instantaneamente. (3 de especial por uso)
+Nível 16: Energia Salvadora – Regenera +1d8 de vida ao final de cada turno enquanto estiver ao lado de aliados feridos. (Passivo)
+Nível 20: Guardião de Batalha – Recebe +2 em resistência contra efeitos de maldição e envenenamento enquanto cura ou protege um aliado. (Passivo)
+Nível 22: Reforço de Vida – Cura um aliado em +1d10 ao usar uma ação de suporte em combate. (4 de especial por uso)
+Nível 25: Guardião Puritano – Cura todos os aliados próximos em +2d8 uma vez por combate. (5 de especial por ativação, uma vez por combate)`,
       "movimento_pass": 4
     },
     "Bardo": { 
@@ -708,14 +708,14 @@ Nível 9: Guardião Puritano – Cura todos os aliados próximos em +2d8 uma vez
 "O Mestre da Dança usa sua habilidade com a música para curar, purificar e confundir os inimigos enquanto mantém sua presença dinâmica em combate. A dança é acompanhada pelo som de seu instrumento que, magicamente, levita e toca por conta própria."
 
 Nível 1: Dança da Purificação – Aprende a passiva Dança da Purificação, permitindo remover condições negativas de aliados próximos. (Sem custo uma vez por dia)
-Nível 2: Movimentos Encantados – +1 em testes de esquiva e resistência a ataques à distância enquanto dança. (Passivo)
-Nível 3: Toque da Harmonia – Ao tocar o instrumento, restaura +1d4 pontos de vida ou sanidade para aliados próximos. (2 de especial por uso)
-Nível 4: Encanto das Melodias – +2 em testes de Conexão quando usa a dança para ganhar a confiança de aliados e NPCs. (Passivo)
-Nível 5: Ritmo Desorientador – Confunde inimigos ao dançar, reduzindo seus testes de precisão em -1 por três turnos. (3 de especial por uso)
-Nível 6: Harmonia Fluida – Restaura +1d6 de vida para aliados em combate ao fim de cada turno em que dançar por ao menos dois turnos. (Passivo)
-Nível 7: Explosão Melódica – Causa +1d8 de dano aos inimigos ao redor, que são atingidos por uma onda de som enquanto dança. (3 de especial por uso)
-Nível 8: Aura de Cura – Enquanto dança, aliados ganham +2 em resistência a condições. (Passivo)
-Nível 9: Apoteose da Dança – Invoca uma dança final que remove todas as condições negativas de aliados e reduz a armadura dos inimigos em 2 e faz as armas de todos caírem e ficar grudas no chão enquanto estiver dançando. (5 de especial, 1 vez por combate)
+Nível 3: Movimentos Encantados – +1 em testes de esquiva e resistência a ataques à distância enquanto dança. (Passivo)
+Nível 5: Toque da Harmonia – Ao tocar o instrumento, restaura +1d4 pontos de vida ou sanidade para aliados próximos. (2 de especial por uso)
+Nível 9: Encanto das Melodias – +2 em testes de Conexão quando usa a dança para ganhar a confiança de aliados e NPCs. (Passivo)
+Nível 13: Ritmo Desorientador – Confunde inimigos ao dançar, reduzindo seus testes de precisão em -1 por três turnos. (3 de especial por uso)
+Nível 16: Harmonia Fluida – Restaura +1d6 de vida para aliados em combate ao fim de cada turno em que dançar por ao menos dois turnos. (Passivo)
+Nível 20: Explosão Melódica – Causa +1d8 de dano aos inimigos ao redor, que são atingidos por uma onda de som enquanto dança. (3 de especial por uso)
+Nível 22: Aura de Cura – Enquanto dança, aliados ganham +2 em resistência a condições. (Passivo)
+Nível 25: Apoteose da Dança – Invoca uma dança final que remove todas as condições negativas de aliados e reduz a armadura dos inimigos em 2 e faz as armas de todos caírem e ficar grudas no chão enquanto estiver dançando. (5 de especial, 1 vez por combate)
 
 🎶Guerreiro Musical
 "O Guerreiro Musical usa a música para inspirar a si mesmo e aos seus aliados, enquanto luta com armas e instrumentos. Ele se destaca ao utilizar sua música como arma e se aprimorar para o combate."

@@ -1440,7 +1440,7 @@ bonusTexto_1: `
 <p>Nível 20: <strong>Instinto Predador</strong> — +2 em testes de resistência contra <strong>medo</strong> e <strong>desorientação</strong> ao perseguir o <strong>alvo caçado</strong>.</p>
 <p>Nível 22: <strong>Execução Tática</strong> — Pode realizar <strong>2 ataques extras</strong> com armas de fogo contra o <strong>alvo caçado</strong>, uma vez por combate.</p>
 <p>Nível 25: <strong>Disparo Final</strong> — Uma vez por combate, executa um disparo fatal que causa +2d10 de dano e ignora toda a armadura do <strong>alvo caçado</strong>.</p>
-`
+`,
       "movimento_pass": 4
     },
     "Glacinata": { 

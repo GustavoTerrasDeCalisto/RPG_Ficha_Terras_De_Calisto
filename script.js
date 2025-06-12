@@ -1423,7 +1423,24 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
       "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": "+1d10 com dano de Laser e +1d10 com espadas curtas.",
+"bonusPass": `
+<p>Nível 0: +5 em dados de dano com <strong>armas de fogo</strong> (pistolas, rifles, escopetas) e +1d10 com dano de Laser e +1d10 com espadas curtas.</p>
+`,
+
+bonustitulo_1: "<p>🔫 <strong>Exterminador Implacável</strong></p>",
+bonusTexto_1: `
+<p><strong>Regra de Caçada:</strong> A partir do Nível 1, você pode <strong>marcar um inimigo como "alvo caçado"</strong>. Apenas um alvo pode ser marcado por vez, e essa marca <strong>permanece até sua morte</strong>. Você não pode trocar de alvo enquanto o anterior estiver vivo.</p>
+
+<p>Nível 1: +1 em testes de <strong>Percepção</strong> ao rastrear o <strong>alvo caçado</strong>. Ganha a <a href="https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o,-Mutatio" target="_blank">[mutação](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o,-Mutatio)</a>.</p>
+<p>Nível 3: Aumenta o alcance efetivo de <strong>armas de fogo</strong> em +10 metros contra o <strong>alvo caçado</strong>.</p>
+<p>Nível 5: <strong>Rajada Letal</strong> — Uma vez por combate, pode realizar um <strong>ataque adicional</strong> com arma de fogo contra o <strong>alvo caçado</strong>.</p>
+<p>Nível 9: +2 em testes de <strong>furtividade</strong> ao preparar emboscadas contra o <strong>alvo caçado</strong>.</p>
+<p>Nível 13: <strong>Munição Penetrante</strong> — Ignora 2 pontos de armadura do <strong>alvo caçado</strong>.</p>
+<p>Nível 16: Causa +1d8 de dano adicional ao <strong>alvo caçado</strong> se ele estiver com menos da metade da vida.</p>
+<p>Nível 20: <strong>Instinto Predador</strong> — +2 em testes de resistência contra <strong>medo</strong> e <strong>desorientação</strong> ao perseguir o <strong>alvo caçado</strong>.</p>
+<p>Nível 22: <strong>Execução Tática</strong> — Pode realizar <strong>2 ataques extras</strong> com armas de fogo contra o <strong>alvo caçado</strong>, uma vez por combate.</p>
+<p>Nível 25: <strong>Disparo Final</strong> — Uma vez por combate, executa um disparo fatal que causa +2d10 de dano e ignora toda a armadura do <strong>alvo caçado</strong>.</p>
+`
       "movimento_pass": 4
     },
     "Glacinata": { 

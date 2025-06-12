@@ -1431,7 +1431,7 @@ bonustitulo_1: "<p>🔫 <strong>Exterminador Implacável</strong></p>",
 bonusTexto_1: `
 <p><strong>Regra de Caçada:</strong> A partir do Nível 1, você pode <strong>marcar um inimigo como "alvo caçado"</strong>. Apenas um alvo pode ser marcado por vez, e essa marca <strong>permanece até sua morte</strong>. Você não pode trocar de alvo enquanto o anterior estiver vivo.</p>
 
-<p>Nível 1: +1 em testes de <strong>Percepção</strong> ao rastrear o <strong>alvo caçado</strong>. Ganha a <a href="https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o,-Mutatio" target="_blank">[mutação](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o,-Mutatio)</a>.</p>
+<p>Nível 1: +1 em testes de <strong>Percepção</strong> ao rastrear o <strong>alvo caçado</strong>. Ganha a <a href="https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o,-Mutatio" target="_blank">[mutação](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o,-Mutatio)</a> e pode usar 2 vezes sem custo ao dia.</p>
 <p>Nível 3: Aumenta o alcance efetivo de <strong>armas de fogo</strong> em +10 metros contra o <strong>alvo caçado</strong>.</p>
 <p>Nível 5: <strong>Rajada Letal</strong> — Uma vez por combate, pode realizar um <strong>ataque adicional</strong> com arma de fogo contra o <strong>alvo caçado</strong>.</p>
 <p>Nível 9: +2 em testes de <strong>furtividade</strong> ao preparar emboscadas contra o <strong>alvo caçado</strong>.</p>

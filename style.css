@@ -188,13 +188,15 @@ header {
 
 
 
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1000px;
-  }
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh; /* Limita a altura máxima à altura da janela */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
   .close {
     float: right;
     font-size: 20px;

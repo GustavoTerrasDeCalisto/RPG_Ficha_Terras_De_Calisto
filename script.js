@@ -1856,6 +1856,46 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
   
   
 };
+  // Botão para resetar perícias (exemplo)
+  document.getElementById("resetSkillsButton").addEventListener("click", () => {
+    document.querySelectorAll(".pericia button").forEach(btn => btn.innerText = "0");
+  });
+
+  // Função para limitar seleção a 3 perícias (exemplo)
+  function toggleSkill(button) {
+    const selected = Array.from(document.querySelectorAll(".pericia button"))
+      .filter(btn => btn.innerText === "+2").length;
+
+    if (button.innerText !== "+2" && selected >= 3) return;
+
+    button.innerText = button.innerText === "+2" ? "0" : "+2";
+  }
+
+  // Controle do popup tutorial e contador de visitas
+  const tutorialPopup = document.getElementById("tutorialPopup");
+  const closeTutorial = document.getElementById("closeTutorial");
+  const openTutorialButton = document.getElementById("openTutorialButton");
+
+  // Pega quantas vezes o usuário já abriu o tutorial
+  let timesVisited = localStorage.getItem("calisto_visitas");
+  if (!timesVisited) timesVisited = 0;
+  else timesVisited = parseInt(timesVisited);
+
+  // Mostrar popup automático só nas primeiras 5 visitas
+  if (timesVisited < 5) {
+    tutorialPopup.style.display = "flex";
+    localStorage.setItem("calisto_visitas", timesVisited + 1);
+  }
+
+  // Fechar popup
+  closeTutorial.onclick = () => {
+    tutorialPopup.style.display = "none";
+  };
+
+  // Abrir popup pelo botão fixo, SEM limite
+  openTutorialButton.onclick = () => {
+    tutorialPopup.style.display = "flex";
+  };
 
 function formatBonusText(text, type = "default") {
   let className;
@@ -4821,5 +4861,4 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
     const box = document.getElementById("promptBox");
     box.classList.toggle("hidden");
   }
-
 

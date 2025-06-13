@@ -168,10 +168,53 @@ header {
 
 
 
+/* Botão fixo tutorial */
+#openTutorialButton {
+  position: fixed;
+  top: 15px;       /* fica no topo, igualzinho */
+  right: 15px;     /* alinhado à direita */
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  pointer-events: auto;
+  z-index: 10000;
+  border: none;
+  background-color: #3a86ff;  /* ou a cor que quiser */
+  color: white;
+  cursor: pointer;
+}
 
 
 
 
+
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+  }
+  .close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .tutorial-flex {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tutorial-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  @media (max-width: 768px) {
+    .tutorial-flex {
+      flex-direction: column;
+    }
+  }
 
 
 
@@ -2522,5 +2565,4 @@ span {
   margin-bottom: 6px;
   display: block;
 }
-
 

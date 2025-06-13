@@ -47,6 +47,8 @@
               </a>
           </div>
           <div id="side-menu" class="side-menu">
+            <!-- Botão para resetar perícias (exemplo simples) -->
+
             <ul>
               <button class="close-button" onclick="toggleMenu()">Fechar</button> <!-- Botão de Fechar -->
 <!-- mudança de menu de vida atual e status e os carai virouuuuuuuuuu periciasss-->
@@ -54,6 +56,7 @@
 <div class="container-centralizado">
   <!--<h1>Perícias</h1> -->
   <p class="descrição_pericias">
+    
     <strong>Perícias, Talentos e Armas (P.T.A.) </strong>
     
     <p>Escolha três P.T.A. para receber um bônus de <span id="pta-bonus-value">+2</span>.</p>
@@ -62,7 +65,8 @@
       <button class="toggle-button2" onclick="toggleSectionInfo('expandableSectionInfo1')" 
         style="background-color: red; color: white; padding: 4px 10px; border: none; border-radius: 8px; font-size: 12px; cursor: pointer;">
         Importante!
-      </button>
+      </button><button id="resetSkillsButton">Resetar Perícias</button>
+
     
       <div id="expandableSectionInfo1" style="display: none; margin-top: 15px; background-color: #555151; padding: 20px; border-radius: 10px; border: 1px solid #292727;">
         <h1 class="descrição_pericias" style="font-size: 11px;">
@@ -423,7 +427,7 @@
 </div>
 
 
-                     
+          
 <!-- mudança de menu de vida atual e status e os carai-->
 
               </div>
@@ -505,6 +509,30 @@
 
 <body>
 
+
+<!-- Popup tutorial -->
+<div id="tutorialPopup" class="popup">
+  <div class="popup-content">
+    <span id="closeTutorial" class="close">&times;</span>
+    <div class="tutorial-flex">
+      <div class="tutorial-section">
+        <h2>1. Introdução</h2>
+        <p>Os jogadores controlam seus personagens...</p>
+      </div>
+      <div class="tutorial-section">
+        <h2>2. Criação</h2>
+        <p>Escolha raça, classe, distribua atributos...</p>
+      </div>
+      <div class="tutorial-section">
+        <h2>3. Combate</h2>
+        <p>Utilize a iniciativa, teste de atributos...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Botão fixo para abrir tutorial -->
+<button id="openTutorialButton">Tutorial</button>
 
   <div id="app">
 

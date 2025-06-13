@@ -184,7 +184,14 @@ header {
   cursor: pointer;
 }
 
-
+@media (max-width: 768px) {
+  #openTutorialButton {
+    top: auto;
+    bottom: 15px;
+    right: auto;
+    left: 15px;
+  }
+}
 
 
 

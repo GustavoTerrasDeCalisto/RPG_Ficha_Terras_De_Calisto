@@ -512,24 +512,260 @@
 
 <!-- Popup tutorial -->
 <div id="tutorialPopup" class="popup">
+  <style>
+    /* Títulos e subtítulos */
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #D8902D, #DC143C); /* Fé */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.6em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #DC143C; /* Fé vermelho mais forte */
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+    }
+
+    /* Estilo para listas e parágrafos */
+    li {
+      margin-left: 1.5em;
+      margin-bottom: 0.3em;
+      font-weight: 600;
+    }
+
+    /* Palavras-chave e elementos destacados */
+    .pv { color: #D32F2F; font-weight: 700; } /* vermelho para PV */
+    .san { color: #7B1FA2; font-weight: 700; } /* roxo para SAN */
+    .especial { color: #FBC02D; font-weight: 700; } /* amarelo especial */
+    
+    /* Atributos com fundo e texto */
+    .bru {
+      background-color: #000000;
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+.agi {
+  background-color: #81D4FA; /* Azul claro */
+  color: #01579B; /* Azul escuro */
+  padding: 0 5px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+    .pre {
+      background: linear-gradient(135deg, orange, green);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .det {
+      background: linear-gradient(135deg, #D8902D, #DC143C);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .lib {
+      background: linear-gradient(135deg, #201d36, #8A2BE2);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .cnx {
+      background: linear-gradient(135deg, purple, #8A2BE2);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+
+    /* Textos com degradê */
+    .grad-text {
+      background: linear-gradient(90deg, #D8902D, #DC143C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    /* Outros ajustes gerais para facilitar leitura */
+    p, li {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 0.5em;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+  </style>
+
   <div class="popup-content">
     <span id="closeTutorial" class="close">&times;</span>
     <div class="tutorial-flex">
+
       <div class="tutorial-section">
         <h2>1. Introdução</h2>
-        <p>Os jogadores controlam seus personagens...</p>
+        <p>
+          Terras de Calisto é um RPG de mesa de fantasia sombria onde os jogadores interpretam personagens em um mundo moldado pelas forças de <strong class="det">Fé</strong>, <strong class="pre">Caos</strong>, <strong class="lib">Poder</strong> e <strong class="cnx">Desconhecido</strong>.
+        </p>
+        <p>
+          Os jogadores tomam decisões que afetam diretamente a narrativa, enquanto o Mestre de Jogo (GM) conduz os eventos, descreve os cenários e interpreta NPCs.
+        </p>
+        <img src="/imagens/mundo_calisto.png" alt="Mapa sombrio de Calisto com ícones dos quatro elementos" style="width:100%; border-radius:10px;">
       </div>
+
       <div class="tutorial-section">
         <h2>2. Criação</h2>
-        <p>Escolha raça, classe, distribua atributos...</p>
+        <p>Na criação do personagem, o jogador escolhe:</p>
+
+          <li>Uma <strong class="grad-text">Raça</strong></li>
+          <li>Um <strong class="grad-text">Passado</strong></li>
+          <li>Um <strong class="grad-text">Equipamento Inicial</strong></li>
+          <li><strong class="especial">3 Talentos Extras</strong> (além dos da Raça e Passado)</li>
+          <li>Redistribui seus <strong class="grad-text">Atributos</strong></li>
+
+        <p>
+          O personagem começa com todos os atributos em <span class="bru">14</span>, representando o nível 0. Para iniciar, deve redistribuir esses pontos, com o <strong>mínimo de 8 por atributo</strong>.
+        </p>
+        <p>
+          <strong><span class="bru">Brutalidade</span>, <span class="agi">Agilidade</span> e <span class="det">Determinação</span></strong> afetam mais a <span class="pv">Vida (PV)</span>, enquanto <strong><span class="pre">Preservação</span>, <span class="lib">Libertação</span> e <span class="cnx">Conexão</span></strong> influenciam a <span class="san">Sanidade (SAN)</span>.
+        </p>
+        <img src="/imagens/Atributos.png" alt="Distribuição de atributos do personagem" style="width:100%; border-radius:10px;">
       </div>
+
+      <div class="tutorial-section">
+        <h2>Atributos</h2>
+        <div class="tutorial-flex">
+         <div class="tutorial-section">
+          <p><strong class="bru">Brutalidade (BRU)</strong> – <br>
+            Força física e poder bruto em combate. Influencia a <span class="pv">Vida (PV)</span>.
+          </p>
+          <p><strong class="agi">Agilidade (AGI)</strong> – <br>
+            Rapidez, reflexos e precisão em ataques e esquivas.
+          </p>
+          <p><strong class="det">Determinação (DET)</strong> – <em>Frequentemente usado em magias e passivas do elemento <span class="det">Fé</span></em><br>
+            Resistência física e força de vontade. Afeta <span class="pv">PV</span> e defesa mental.
+          </p>
+
+          <p><strong class="pre">Preservação (PRE)</strong> – <em>Frequentemente usado em magias e passivas do elemento <span class="pre">Caos</span></em><br>
+            Conhecimento natural, alquimia e estratégias. Influencia a <span class="san">Sanidade (SAN)</span>.
+          </p>
+          <p><strong class="lib">Libertação (LIB)</strong> – <em>Frequentemente usado em magias e passivas do elemento <span class="lib">Poder</span></em><br>
+            Despertar mágico e percepção espiritual. Afeta magias e <span class="san">SAN</span>.
+          </p>
+          <p><strong class="cnx">Conexão (CNX)</strong> – <em>Frequentemente usado em magias e passivas do elemento <span class="cnx">Desconhecido</span></em><br>
+            Vínculo com entidades e carisma místico. Fortemente ligado à <span class="san">SAN</span>.
+          </p>
+        </div>
+       </div>
+      </div>
+
       <div class="tutorial-section">
         <h2>3. Combate</h2>
-        <p>Utilize a iniciativa, teste de atributos...</p>
+        <p>
+          O combate acontece em turnos com ordem definida por Iniciativa (D20). No turno, o jogador pode realizar:
+        </p>
+        <p><strong>Ação Livre:</strong> Usar passiva, falar, sacar arma etc.</p>
+        <p><strong>Ação de Movimento:</strong> Caminhar.</p>
+        <p><strong>Ação Completa:</strong> Atacar, lançar magia.</p>
+        <p>
+          A rolagem de ações usa 1D20 + modificador de atributo contra uma <strong>Dificuldade Temporária (DT)</strong>, gerada por uma rolagem do oponente.
+        </p>
+        <h3>Exemplo de ataque</h3>
+        <p>
+          Para atacar, o jogador rola 1D20 + modificadores de ataque. Se o resultado for igual ou superior à <strong>DT</strong> do alvo, o ataque acerta.
+          O dano é determinado pelo tipo de arma ou magia usada, somando os modificadores adequados.
+        </p>
+        <p>
+          Exemplo: Uma espada pode causar 1D8 de dano + modificador de <strong class="bru">Brutalidade</strong>.
+        </p>
+
+        <img src="/imagens/batalha_combate.png" alt="Cena de batalha entre personagens e criaturas" style="width:100%; border-radius:10px;">
       </div>
+
+      <div class="tutorial-section">
+        <h2>4. Opções de Reação</h2>
+        <p>
+          No combate, além da ação principal, o personagem pode reagir de formas específicas ao ataque inimigo:
+        </p>
+<p>
+  <strong>Esquivar:</strong> Para evitar um ataque, role 1D20 + modificador do atributo indicado pela habilidade, magia ou passiva (pode ser qualquer um dos seis atributos). Se o resultado for maior que o valor do ataque inimigo, o personagem esquiva com sucesso e não sofre dano.
+</p>
+
+        <p>
+          <strong>Defender:</strong> O personagem pode entrar em postura defensiva somando o valor da armadura mais os bônus de <em class="det">Determinação</em> e <em class="bru">Brutalidade</em>. Este valor é somado à defesa para resistir ao dano do inimigo, reduzindo o dano recebido.
+        </p>
+<p>
+  <strong>Contra-atacar:</strong> Caso o ataque inimigo não supere a armadura do personagem, ele pode usar sua reação para realizar um contra-ataque. Essa reação é gratuita e não consome sua ação do turno, permitindo atacar o inimigo imediatamente.
+</p>
+
+      </div>
+
+      <div class="tutorial-section">
+        <h2>5. Magia e Passivas</h2>
+        <p>
+          Magias usam <strong class="san">Sanidade (SAN)</strong> como recurso. O jogador rola D20 + atributo (<span class="pre">Preservação</span>, <span class="lib">Libertação</span> ou <span class="cnx">Conexão</span>). Passar a DT ativa o efeito da magia.
+        </p>
+        <p>
+          Passivas usam <strong class="especial">Especial e Sanidade</strong> como recurso. São habilidades ativadas automaticamente e não consomem ação. O personagem pode ter até <strong class="especial">4 passivas</strong> ativas ao mesmo tempo (uma de cada elemento).
+        </p>
+        <img src="/imagens/efeito_magia_passiva.png" alt="Personagem ativando magia com aura" style="width:100%; border-radius:10px;">
+      </div>
+
+      <div class="tutorial-section">
+        <h2>6. Exploração</h2>
+        <p>
+          O GM narra o ambiente e os jogadores podem investigar, interagir com NPCs, desarmar armadilhas e encontrar itens escondidos.
+          Testes de atributos e perícias como <strong>Percepção, Diplomacia, Furtividade</strong> e outras são utilizados para definir o sucesso.
+        </p>
+        <img src="/imagens/exploracao_npc.png" alt="Aventureiros falando com NPCs em dungeon ou aldeia" style="width:100%; border-radius:10px;">
+      </div>
+
+      <div class="tutorial-section">
+        <h2>7. Evolução</h2>
+        <p>
+          Os personagens ganham <strong class="especial">pontos de experiência (XP)</strong> ao completar missões, derrotar inimigos ou alcançar marcos na história. A quantidade de XP concedida varia conforme a dificuldade do desafio.
+        </p>
+        <p><strong>XP por Tipo de Desafio:</strong></p>
+        <p>Fáceis: 50–75 XP<br>
+           Moderados: 100–150 XP<br>
+           Difíceis: 200–300 XP<br>
+           Muito Difíceis: 400–500 XP<br>
+           Épicos: 1.000+ XP
+        </p>
+        <p>XP bônus pode ser concedido por conquistas extraordinárias.</p>
+        <p>
+          Cada 100 XP acumulados equivalem a 1 ponto de nível, que pode ser distribuído para aumentar os atributos do personagem:
+        </p>
+        <p><strong>Atributos:</strong></p>
+        <p>
+          <span class="bru">Brutalidade (BRU)</span><br>
+          <span class="agi">Agilidade (AGI)</span><br>
+          <span class="det">Determinação (DET)</span><br>
+          <span class="pre">Preservação (PRE)</span><br>
+          <span class="lib">Libertação (LIB)</span><br>
+          <span class="cnx">Conexão (CNX)</span>
+        </p>
+        <p>
+          <strong>Exemplo:</strong> Com 300 XP, o personagem ganha 3 pontos de nível para distribuir entre os atributos como desejar (por exemplo, +1 em <span class="bru">Brutalidade</span>, +1 em <span class="agi">Agilidade</span> e +1 em <span class="det">Determinação</span>).
+        </p>
+        <img src="/imagens/evolucao_nivel.png" alt="Evolução do personagem com XP e atributos" style="width:100%; border-radius:10px;">
+      </div>
+
     </div>
   </div>
 </div>
+
+
 
 <!-- Botão fixo para abrir tutorial -->
 <button id="openTutorialButton">Tutorial</button>

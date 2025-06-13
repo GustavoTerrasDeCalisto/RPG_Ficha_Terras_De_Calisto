@@ -212,6 +212,7 @@ header {
     flex: 1;
     min-width: 250px;
   }
+  
   @media (max-width: 768px) {
     .tutorial-flex {
       flex-direction: column;
@@ -220,6 +221,18 @@ header {
 
 
 
+  /* 🔧 Corrige UL/LI bugado */
+  .tutorial-section ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  .tutorial-section li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+    font-size: 15px;
+  }
 body {
   font-family: 'inter', sans-serif;
   display: flex;

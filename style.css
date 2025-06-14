@@ -1640,6 +1640,144 @@ a:active {
   flex-direction: column;
   gap: 10px;
 }
+
+/* Container do popup (fundo) */
+#dicePopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none; /* será alterado para 'flex' via JS */
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 9999;
+}
+/* Conteúdo centralizado do popup */
+#dicePopup .popup-content {
+  background-color: #222;
+  color: #eee;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90vw;
+  max-width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Botão de fechar */
+#dicePopup .close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ccc;
+}
+#dicePopup .close:hover {
+  color: #fff;
+}
+
+/* Input da fórmula de dano */
+#diceInput {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: #eee;
+  margin-top: 6px;
+  outline: none;
+}
+
+/* Botão rolar dados */
+#dicePopup button {
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: 600;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+#dicePopup button:hover {
+  background-color: #005fa3;
+}
+
+/* Container do gif */
+#diceGifContainer {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin: 15px auto 10px;
+  background-color: transparent; /* Corrige fundo escuro */
+  border-radius: 12px;
+  overflow: hidden;
+}
+#diceGifContainer img {
+  width: 100%;
+  border-radius: 12px;
+  user-select: none;
+  display: block;
+}
+
+/* Overlay do total */
+#diceOverlay {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* Resultados detalhados */
+#detailedResults {
+  max-height: 140px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  color: #ff4444;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  #dicePopup .popup-content {
+    padding: 15px;
+  }
+
+  #diceOverlay {
+    font-size: 22px;
+    top: 8%;
+  }
+
+  #detailedResults {
+    max-height: 100px;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  #dicePopup button {
+    font-size: 1rem;
+    padding: 9px 0;
+  }
+}
+
+
 .scrollable-grid {
   max-height: 90vh;
   overflow-y: auto;

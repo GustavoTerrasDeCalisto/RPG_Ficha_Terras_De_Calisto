@@ -1856,12 +1856,100 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
   
   
 };
-  // Botão para resetar perícias (exemplo)
-  document.getElementById("resetSkillsButton").addEventListener("click", () => {
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // 🎲 Dice Popup
+    const dicePopup = document.getElementById("dicePopup");
+    const openDiceBtn = document.getElementById("openPopup");
+    const closeDiceBtn = dicePopup.querySelector(".close");
+
+    openDiceBtn.onclick = function () {
+      dicePopup.style.display = "flex";
+
+      const physical = document.getElementById("physicalDamage").textContent;
+      const elemental = document.getElementById("elementalDamage").textContent;
+      document.getElementById("diceInput").value = physical + "+" + elemental;
+    };
+
+    closeDiceBtn.onclick = function () {
+      dicePopup.style.display = "none";
+    };
+
+    // Fecha popup de dados se clicar fora
+    window.addEventListener("click", function (event) {
+      if (event.target === dicePopup) {
+        dicePopup.style.display = "none";
+      }
+    });
+
+    // 📘 Tutorial Popup
+    const tutorialPopup = document.getElementById("tutorialPopup");
+    const closeTutorial = document.getElementById("closeTutorial");
+    const openTutorialButton = document.getElementById("openTutorialButton");
+
+    let timesVisited = localStorage.getItem("calisto_visitas");
+    if (!timesVisited) timesVisited = 0;
+    else timesVisited = parseInt(timesVisited);
+
+    if (timesVisited < 5) {
+      tutorialPopup.style.display = "flex";
+      localStorage.setItem("calisto_visitas", timesVisited + 1);
+    }
+
+    closeTutorial.onclick = () => {
+      tutorialPopup.style.display = "none";
+    };
+
+    openTutorialButton.onclick = () => {
+      tutorialPopup.style.display = "flex";
+    };
+
+    // Fecha popup do tutorial se clicar fora
+    window.addEventListener("click", function (event) {
+      if (event.target === tutorialPopup) {
+        tutorialPopup.style.display = "none";
+      }
+    });
+  });
+
+  // 🎲 Função de rolar dados
+  function rollDice() {
+    const input = document.getElementById("diceInput").value;
+      const gif = document.getElementById("diceGif");
+
+    const pattern = /(\d*)d(\d+)/gi;
+    let match;
+    let total = 0;
+    let detailed = "";
+
+    while ((match = pattern.exec(input)) !== null) {
+      const count = parseInt(match[1] || "1");
+      const sides = parseInt(match[2]);
+
+      detailed += `<strong>${count}d${sides}:</strong> `;
+      for (let i = 0; i < count; i++) {
+        const roll = Math.floor(Math.random() * sides) + 1;
+        total += roll;
+        detailed += roll + (i < count - 1 ? ", " : "");
+      }
+      detailed += "<br>";
+    }
+ // Resetando a imagem pra reiniciar o gif
+  gif.style.display = "none";
+  gif.src = "";
+  setTimeout(() => {
+    gif.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif"; // ou outro gif
+    gif.style.display = "block";
+  }, 50); // pequeno delay para reiniciar animação
+    document.getElementById("diceOverlay").innerText = `Total: ${total}`;
+    document.getElementById("detailedResults").innerHTML = detailed;
+  }
+
+  // 🎯 Resetar e limitar perícias
+  document.getElementById("resetSkillsButton")?.addEventListener("click", () => {
     document.querySelectorAll(".pericia button").forEach(btn => btn.innerText = "0");
   });
 
-  // Função para limitar seleção a 3 perícias (exemplo)
   function toggleSkill(button) {
     const selected = Array.from(document.querySelectorAll(".pericia button"))
       .filter(btn => btn.innerText === "+2").length;
@@ -1870,39 +1958,6 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
 
     button.innerText = button.innerText === "+2" ? "0" : "+2";
   }
-
-// Controle do popup tutorial e contador de visitas
-const tutorialPopup = document.getElementById("tutorialPopup");
-const closeTutorial = document.getElementById("closeTutorial");
-const openTutorialButton = document.getElementById("openTutorialButton");
-
-// Pega quantas vezes o usuário já abriu o tutorial
-let timesVisited = localStorage.getItem("calisto_visitas");
-if (!timesVisited) timesVisited = 0;
-else timesVisited = parseInt(timesVisited);
-
-// Mostrar popup automático só nas primeiras 5 visitas
-if (timesVisited < 5) {
-  tutorialPopup.style.display = "flex";
-  localStorage.setItem("calisto_visitas", timesVisited + 1);
-}
-
-// Fechar popup ao clicar no "X"
-closeTutorial.onclick = () => {
-  tutorialPopup.style.display = "none";
-};
-
-// Abrir popup pelo botão fixo, SEM limite
-openTutorialButton.onclick = () => {
-  tutorialPopup.style.display = "flex";
-};
-
-// Fechar popup ao clicar fora do conteúdo do popup
-window.onclick = (event) => {
-  if (event.target === tutorialPopup) {
-    tutorialPopup.style.display = "none";
-  }
-};
 
   
 

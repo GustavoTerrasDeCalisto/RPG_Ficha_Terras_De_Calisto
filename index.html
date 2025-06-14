@@ -1175,7 +1175,32 @@ Bonus por Níveis Do Personagem  </h3>
 
   </div>
 </div>
+<!-- Botão para abrir o popup -->
+<button id="openPopup">Abrir Rolagem de Dano</button>
 
+<!-- Popup -->
+<div id="dicePopup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Rolagem de Dano</h2>
+
+    <div id="infoContainer">
+
+    </div>
+
+    <label>Digite sua fórmula de dano:</label>
+    <input type="text" id="diceInput" placeholder="ex: 2d8+1d6+4d12">
+<button type="button" onclick="rollDice()">Rolar Dados</button>
+
+    <div id="diceResultArea">
+      <div id="diceGifContainer">
+<img id="diceGif" src="" alt="Rolando..." style="display: none;" />
+        <div id="diceOverlay"></div>
+      </div>
+      <div id="detailedResults"></div>
+    </div>
+  </div>
+</div>
   
           <div class="form-row">
             <div class="form-group2">

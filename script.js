@@ -1871,31 +1871,40 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
     button.innerText = button.innerText === "+2" ? "0" : "+2";
   }
 
-  // Controle do popup tutorial e contador de visitas
-  const tutorialPopup = document.getElementById("tutorialPopup");
-  const closeTutorial = document.getElementById("closeTutorial");
-  const openTutorialButton = document.getElementById("openTutorialButton");
+// Controle do popup tutorial e contador de visitas
+const tutorialPopup = document.getElementById("tutorialPopup");
+const closeTutorial = document.getElementById("closeTutorial");
+const openTutorialButton = document.getElementById("openTutorialButton");
 
-  // Pega quantas vezes o usuário já abriu o tutorial
-  let timesVisited = localStorage.getItem("calisto_visitas");
-  if (!timesVisited) timesVisited = 0;
-  else timesVisited = parseInt(timesVisited);
+// Pega quantas vezes o usuário já abriu o tutorial
+let timesVisited = localStorage.getItem("calisto_visitas");
+if (!timesVisited) timesVisited = 0;
+else timesVisited = parseInt(timesVisited);
 
-  // Mostrar popup automático só nas primeiras 5 visitas
-  if (timesVisited < 5) {
-    tutorialPopup.style.display = "flex";
-    localStorage.setItem("calisto_visitas", timesVisited + 1);
-  }
+// Mostrar popup automático só nas primeiras 5 visitas
+if (timesVisited < 5) {
+  tutorialPopup.style.display = "flex";
+  localStorage.setItem("calisto_visitas", timesVisited + 1);
+}
 
-  // Fechar popup
-  closeTutorial.onclick = () => {
+// Fechar popup ao clicar no "X"
+closeTutorial.onclick = () => {
+  tutorialPopup.style.display = "none";
+};
+
+// Abrir popup pelo botão fixo, SEM limite
+openTutorialButton.onclick = () => {
+  tutorialPopup.style.display = "flex";
+};
+
+// Fechar popup ao clicar fora do conteúdo do popup
+window.onclick = (event) => {
+  if (event.target === tutorialPopup) {
     tutorialPopup.style.display = "none";
-  };
+  }
+};
 
-  // Abrir popup pelo botão fixo, SEM limite
-  openTutorialButton.onclick = () => {
-    tutorialPopup.style.display = "flex";
-  };
+  
 
 function formatBonusText(text, type = "default") {
   let className;
@@ -3604,16 +3613,13 @@ function createItemCard(item) {
 
   // Container para as tags
   const tagsContainer = document.createElement('div');
-  tagsContainer.style.display = "flex";
-  tagsContainer.style.flexWrap = "wrap";
-  tagsContainer.style.justifyContent = "center";
-  tagsContainer.style.gap = "4px";
-  tagsContainer.style.marginBottom = "6px";
+  tagsContainer.className = 'item-tags';
 
   const tipos = (item.TipoItem || "Clássica").split(',');
   tipos.forEach(tipo => {
     const trimmedTipo = tipo.trim();
     const tag = document.createElement('div');
+    tag.className = 'item-tag';
 
     // Traduções ou renomeações
     let label = trimmedTipo;
@@ -3621,86 +3627,65 @@ function createItemCard(item) {
     if (label.toLowerCase() === "melee") label = "Corpo a Corpo";
 
     tag.textContent = label;
-    tag.style.fontWeight = "bold";
-    tag.style.borderRadius = "6px";
-    tag.style.padding = "2px 6px";
-    tag.style.fontSize = "0.8em";
-    tag.style.width = "fit-content";
-    tag.style.display = "inline-block";
 
-    // Cores por tipo
-switch (label) {
-  case "Lendário":
-    tag.classList.add("prismatic"); // Gradiente animado
-    tag.style.color = "#fff";
-    break;
-  case "Normal":
-    tag.style.backgroundColor = "#d3d3d3"; // cinza claro
-    tag.style.color = "#000";
-    break;
-  case "Distância":
-    tag.style.backgroundColor = "#5eb2ff"; // azul claro
-    tag.style.color = "#000";
-    break;
-  case "Corpo a Corpo":
-    tag.style.backgroundColor = "#DC143C"; // vermelho carmesim
-    tag.style.color = "#fff";
-    break;
-  case "Arma":
-    tag.style.backgroundColor = "#606060"; // cinza aço
-    tag.style.color = "#fff";
-    break;
-  case "Clássica":
-    tag.style.backgroundColor = "#cd7f32"; // bronze
-    tag.style.color = "#fff";
-    break;
-  case "Medieval":
-    tag.style.backgroundColor = "#8B4513"; // marrom escuro
-    tag.style.color = "#fff";
-    break;
-  default:
-    tag.style.backgroundColor = "#444"; // grafite
-    tag.style.color = "#fff";
-    break;
-}
-
-
+    // Definir classe específica para cores
+    switch (label.toLowerCase()) {
+      case "lendário":
+        tag.classList.add("prismatic");
+        break;
+      case "normal":
+        tag.classList.add("normal");
+        break;
+      case "distância":
+        tag.classList.add("distancia");
+        break;
+      case "corpo a corpo":
+        tag.classList.add("corpoacorpo");
+        break;
+      case "arma":
+        tag.classList.add("arma");
+        break;
+      case "clássica":
+        tag.classList.add("classica");
+        break;
+      case "medieval":
+        tag.classList.add("medieval");
+        break;
+      default:
+        tag.classList.add("default");
+        break;
+    }
 
     tagsContainer.appendChild(tag);
   });
 
   card.appendChild(tagsContainer);
 
-  // (Depois disso, você adiciona imagem, nome, descrição etc. como antes)
-  
-
+  // Imagem do item
   const img = document.createElement('img');
-img.src = item.img;
-img.loading = "lazy"; // Ativa o lazy loading
-
+  img.src = item.img;
+  img.loading = "lazy";
   card.appendChild(img);
 
+  // Nome do item
   const title = document.createElement('h3');
   title.textContent = item.name;
   card.appendChild(title);
 
+  // Badge de dano
   const damageDice = document.createElement('div');
+  damageDice.className = 'damage-badge';
   const colors = resistenciaColors[item.damageDice] || resistenciaColors["N/A"];
   damageDice.textContent = item.damageDice;
   damageDice.style.backgroundColor = colors.background;
   damageDice.style.color = colors.color;
-  damageDice.style.padding = "4px";
-  damageDice.style.borderRadius = "8px";
-  damageDice.style.marginTop = "5px";
-  damageDice.style.fontSize = "0.9em";
   card.appendChild(damageDice);
 
-  // Adiciona o evento de clique
+  // Evento de clique
   card.addEventListener('click', () => showItemDesc(item));
 
   return card;
 }
-
 
 // Preenche a grid de itens
 items.forEach(item => {
@@ -3735,11 +3720,21 @@ function showItemDesc(item) {
     event.stopPropagation();
 
     if (equippedItemId === item.id) {
+      // Remover equipamento
       equippedItemId = null;
       equippedSlot.innerHTML = "";
     } else {
+      // Equipar item com detalhes completos usando classes CSS
       equippedItemId = item.id;
-      equippedSlot.innerHTML = `<img src="${item.img}" style="width: 50px;"><div>${item.name}</div>`;
+      equippedSlot.innerHTML = `
+        <img src="${item.img}" alt="${item.name}">
+        <div class="item-info">
+          <div>${item.name}</div>
+          <div>Dano Físico: ${item.damageType || 'N/A'}</div>
+          <div>Dano Elemental: ${item.elementalDamage || 'N/A'}</div>
+          <div>Tipo de Dano: ${item.damageDice || 'N/A'}</div>
+        </div>
+      `;
     }
     descPopup.classList.add('hidden');
   };
@@ -3747,10 +3742,7 @@ function showItemDesc(item) {
   descPopup.classList.remove('hidden');
 }
 
-// Funções de carregar o item salvo e abrir/fechar popups continuam iguais
-
-
-// Função para carregar o item equipado do armazenamento
+// Função para carregar o item equipado do armazenamento localStorage
 function loadEquippedItem() {
   const savedCharacter = JSON.parse(localStorage.getItem('savedCharacter'));
   if (savedCharacter && savedCharacter.equippedItemId) {
@@ -3759,10 +3751,16 @@ function loadEquippedItem() {
     // Procura o item no array e exibe no slot de item equipado
     const equippedItem = items.find(item => item.id === equippedItemId);
     if (equippedItem) {
-      // Certifique-se de que o caminho da imagem está correto
-      equippedSlot.innerHTML = `<img src="${equippedItem.img}" style="width: 50px;"><div>${equippedItem.name}</div>`;
+      equippedSlot.innerHTML = `
+        <img src="${equippedItem.img}" alt="${equippedItem.name}">
+        <div class="item-info">
+          <div>${equippedItem.name}</div>
+          <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
+          <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
+          <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
+        </div>
+      `;
     } else {
-      // Caso o item não seja encontrado, você pode exibir uma mensagem de erro
       console.error('Item equipado não encontrado');
     }
   } else {
@@ -3820,7 +3818,7 @@ document.getElementById('openItemPopup').addEventListener('click', (event) => {
   document.getElementById('itemSelectPopup').classList.remove('hidden');
 });
 
-// Para fechar o popup de seleção de itens
+// Para fechar o popup de seleção de itens pelo botão
 document.getElementById('closeItemPopup').addEventListener('click', (event) => {
   event.preventDefault();
   event.stopPropagation();
@@ -3828,12 +3826,26 @@ document.getElementById('closeItemPopup').addEventListener('click', (event) => {
   document.getElementById('itemSelectPopup').classList.add('hidden');
 });
 
-// Para fechar o popup de descrição de itens
+// Para fechar o popup de descrição de itens pelo botão
 document.getElementById('closeDescPopup').addEventListener('click', (event) => {
   event.preventDefault();
   event.stopPropagation();
   
   descPopup.classList.add('hidden');
+});
+
+// Fechar popup ao clicar fora da área do conteúdo
+window.addEventListener('click', (event) => {
+  // Fechar popup de seleção de itens se o clique foi no fundo (fundo = próprio elemento do popup)
+  const itemSelectPopup = document.getElementById('itemSelectPopup');
+  if (!itemSelectPopup.classList.contains('hidden') && event.target === itemSelectPopup) {
+    itemSelectPopup.classList.add('hidden');
+  }
+
+  // Fechar popup de descrição se o clique foi no fundo do popup
+  if (!descPopup.classList.contains('hidden') && event.target === descPopup) {
+    descPopup.classList.add('hidden');
+  }
 });
 
 

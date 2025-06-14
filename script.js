@@ -1912,28 +1912,54 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
     });
   });
 
-  // 🎲 Função de rolar dados
   function rollDice() {
-    const input = document.getElementById("diceInput").value;
-      const gif = document.getElementById("diceGif");
+  const input = document.getElementById("diceInput").value.trim();
+  const gif = document.getElementById("diceGif");
 
-    const pattern = /(\d*)d(\d+)/gi;
-    let match;
-    let total = 0;
-    let detailed = "";
+  // Separar a parte dos dados da parte do modificador
+  // Exemplo: "1d2+9" vira ["1d2", "+9"]
+  // Pode ter um + ou - no final
+  let dicePart = input;
+  let modifier = 0;
 
-    while ((match = pattern.exec(input)) !== null) {
-      const count = parseInt(match[1] || "1");
-      const sides = parseInt(match[2]);
+  // Regex para detectar + ou - no final e pegar o valor
+  const modMatch = input.match(/([+-]\d+)$/);
+  if (modMatch) {
+    modifier = parseInt(modMatch[1]);
+    dicePart = input.slice(0, modMatch.index);
+  }
 
-      detailed += `<strong>${count}d${sides}:</strong> `;
-      for (let i = 0; i < count; i++) {
-        const roll = Math.floor(Math.random() * sides) + 1;
-        total += roll;
-        detailed += roll + (i < count - 1 ? ", " : "");
-      }
-      detailed += "<br>";
+  const pattern = /(\d*)d(\d+)/gi;
+  let match;
+  let total = 0;
+  let detailed = "";
+
+  while ((match = pattern.exec(dicePart)) !== null) {
+    const count = parseInt(match[1] || "1");
+    const sides = parseInt(match[2]);
+
+    detailed += `<strong>${count}d${sides}:</strong> `;
+    for (let i = 0; i < count; i++) {
+      const roll = Math.floor(Math.random() * sides) + 1;
+      total += roll;
+      detailed += roll + (i < count - 1 ? ", " : "");
     }
+    detailed += "<br>";
+  }
+
+  total += modifier;
+
+  if (modifier !== 0) {
+    detailed += `<strong>Modifier:</strong> ${modifier}<br>`;
+  }
+  
+
+  // Exemplo de usar o gif, pode controlar o display dele aqui se quiser
+  // gif.style.display = "block"; // Exibe o gif
+  // Depois, quando terminar, pode esconder
+
+  // Atualize onde quiser no seu HTML com o resultado
+
  // Resetando a imagem pra reiniciar o gif
   gif.style.display = "none";
   gif.src = "";

@@ -4576,16 +4576,24 @@ atualizarBonusDoPassado(characterData.past);
       loadEquippedItem(characterData);
 
 
-       // ✅ ADICIONE ISSO AQUI
-       equippedItemId = characterData.equippedItemId || null;
-       if (equippedItemId) {
-         const equippedItem = items.find(item => item.id === equippedItemId);
-         if (equippedItem) {
-           equippedSlot.innerHTML = `<img src="${equippedItem.img}" style="width: 50px;"><div>${equippedItem.name}</div>`;
-         }
-       }
-          // Call updateStats to display loaded values
-          updateStats();
+// ✅ ADICIONE ISSO AQUI
+equippedItemId = characterData.equippedItemId || null;
+if (equippedItemId) {
+  const equippedItem = items.find(item => item.id === equippedItemId);
+  if (equippedItem) {
+    equippedSlot.innerHTML = `
+      <img src="${equippedItem.img}" alt="${equippedItem.name}">
+      <div class="item-info">
+        <div>${equippedItem.name}</div>
+        <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
+        <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
+        <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
+      </div>
+    `;
+  }
+}
+// Call updateStats to display loaded values
+updateStats();
       }
 
       document.getElementById('character-select-section').style.display = 'none';

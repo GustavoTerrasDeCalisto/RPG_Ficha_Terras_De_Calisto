@@ -1920,6 +1920,9 @@ window.addEventListener("click", function (event) {
     localStorage.setItem("calisto_fechamentos", timesClosed);
   }
 });
+  });
+
+
 
   function rollDice() {
   const input = document.getElementById("diceInput").value.trim();

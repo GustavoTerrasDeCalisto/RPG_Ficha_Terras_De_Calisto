@@ -1986,25 +1986,32 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
   }
 
   
- const chessPopup = document.getElementById("chessTutorialPopup");
-  const openChess = document.getElementById("openChessPopup");
-  const closeChess = document.getElementById("closeChessPopup");
+const chessPopup = document.getElementById("chessTutorialPopup");
+const openChess = document.getElementById("openChessPopup");
+const closeChess = document.getElementById("closeChessPopup");
 
-  const combatPopup = document.getElementById("combatPopup");
-  const openCombat = document.getElementById("openCombatPopup");
-  const closeCombat = document.getElementById("closeCombatPopup");
+const combatPopup = document.getElementById("combatPopup");
+const openCombat = document.getElementById("openCombatPopup");
+const closeCombat = document.getElementById("closeCombatPopup");
 
-  // Abrir e fechar principal
+// Abrir e fechar principal
+if (openChess && chessPopup && closeChess) {
   openChess.onclick = () => chessPopup.style.display = "flex";
   closeChess.onclick = () => chessPopup.style.display = "none";
-  window.onclick = (e) => {
-    if (e.target === chessPopup) chessPopup.style.display = "none";
-    if (e.target === combatPopup) combatPopup.style.display = "none";
-  }
+}
 
-  // Abrir e fechar secundário
+// Abrir e fechar secundário
+if (openCombat && combatPopup && closeCombat) {
   openCombat.onclick = () => combatPopup.style.display = "flex";
   closeCombat.onclick = () => combatPopup.style.display = "none";
+}
+
+// Fechar se clicar fora do popup
+window.onclick = (e) => {
+  if (e.target === chessPopup) chessPopup.style.display = "none";
+  if (e.target === combatPopup) combatPopup.style.display = "none";
+};
+  
 function formatBonusText(text, type = "default") {
   let className;
   if (type === "bonus1") className = "bonus1-paragraph";

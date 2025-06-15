@@ -1882,35 +1882,42 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
       }
     });
 
-    // 📘 Tutorial Popup
-    const tutorialPopup = document.getElementById("tutorialPopup");
-    const closeTutorial = document.getElementById("closeTutorial");
-    const openTutorialButton = document.getElementById("openTutorialButton");
+   // 📘 Tutorial Popup
+const tutorialPopup = document.getElementById("tutorialPopup");
+const closeTutorial = document.getElementById("closeTutorial");
+const openTutorialButton = document.getElementById("openTutorialButton");
 
-    let timesVisited = localStorage.getItem("calisto_visitas");
-    if (!timesVisited) timesVisited = 0;
-    else timesVisited = parseInt(timesVisited);
+let timesVisited = parseInt(localStorage.getItem("calisto_visitas") || "0");
 
+// Só mostra o popup se não passou do limite
+if (timesVisited < 5) {
+  tutorialPopup.style.display = "flex";
+}
+
+closeTutorial.onclick = () => {
+  tutorialPopup.style.display = "none";
+
+  // Só aumenta o contador se ainda não passou do limite
+  if (timesVisited < 5) {
+    localStorage.setItem("calisto_visitas", timesVisited + 1);
+  }
+};
+
+openTutorialButton.onclick = () => {
+  tutorialPopup.style.display = "flex";
+};
+
+// Fecha popup se clicar fora
+window.addEventListener("click", function (event) {
+  if (event.target === tutorialPopup) {
+    tutorialPopup.style.display = "none";
+
+    // Também conta se fechar clicando fora
     if (timesVisited < 5) {
-      tutorialPopup.style.display = "flex";
       localStorage.setItem("calisto_visitas", timesVisited + 1);
     }
-
-    closeTutorial.onclick = () => {
-      tutorialPopup.style.display = "none";
-    };
-
-    openTutorialButton.onclick = () => {
-      tutorialPopup.style.display = "flex";
-    };
-
-    // Fecha popup do tutorial se clicar fora
-    window.addEventListener("click", function (event) {
-      if (event.target === tutorialPopup) {
-        tutorialPopup.style.display = "none";
-      }
-    });
-  });
+  }
+});
 
   function rollDice() {
   const input = document.getElementById("diceInput").value.trim();

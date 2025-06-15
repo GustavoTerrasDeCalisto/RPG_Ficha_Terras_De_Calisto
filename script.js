@@ -1884,6 +1884,7 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
 
    // 📘 Tutorial Popup
 // 📘 Tutorial Popup
+// 📘 Tutorial Popup
 const tutorialPopup = document.getElementById("tutorialPopup");
 const closeTutorial = document.getElementById("closeTutorial");
 const openTutorialButton = document.getElementById("openTutorialButton");
@@ -1896,25 +1897,30 @@ if (timesVisited < 5) {
   tutorialPopup.style.display = "flex";
 }
 
-// Fechar pelo botão
+// Contador só aumenta ao fechar o popup
+function registrarFechamento() {
+  timesVisited++;
+  localStorage.setItem("calisto_visitas", timesVisited);
+}
+
+// Fecha pelo botão
 closeTutorial.onclick = () => {
   tutorialPopup.style.display = "none";
-  localStorage.setItem("calisto_visitas", timesVisited + 1);
+  registrarFechamento();
 };
 
-// Abrir manualmente
+// Abre manualmente
 openTutorialButton.onclick = () => {
   tutorialPopup.style.display = "flex";
 };
 
-// Fechar clicando fora
+// Fecha clicando fora
 window.addEventListener("click", function (event) {
   if (event.target === tutorialPopup) {
     tutorialPopup.style.display = "none";
-    localStorage.setItem("calisto_visitas", timesVisited + 1);
+    registrarFechamento();
   }
 });
-
 
   function rollDice() {
   const input = document.getElementById("diceInput").value.trim();

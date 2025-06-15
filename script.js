@@ -1886,42 +1886,40 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
 // 📘 Tutorial Popup
 // 📘 Tutorial Popup
   // 📘 Tutorial Popup
-  const tutorialPopup = document.getElementById("tutorialPopup");
-  const closeTutorial = document.getElementById("closeTutorial");
-  const openTutorialButton = document.getElementById("openTutorialButton");
+ // 📘 Tutorial Popup
+const tutorialPopup = document.getElementById("tutorialPopup");
+const closeTutorial = document.getElementById("closeTutorial");
+const openTutorialButton = document.getElementById("openTutorialButton");
 
-  let timesClosed = localStorage.getItem("calisto_fechamentos");
-  if (!timesClosed) timesClosed = 0;
-  else timesClosed = parseInt(timesClosed);
+let timesClosed = localStorage.getItem("calisto_fechamentos");
+if (!timesClosed) timesClosed = 0;
+else timesClosed = parseInt(timesClosed);
 
-  // Só exibe automaticamente se ainda não fechou 5 vezes
-  if (timesClosed < 5) {
-    tutorialPopup.style.display = "flex";
-  }
+// Só exibe automaticamente se ainda não fechou 5 vezes
+if (timesClosed < 5) {
+  tutorialPopup.style.display = "flex";
+}
 
-  function registrarFechamento() {
+// Fecha pelo botão ✖️
+closeTutorial.onclick = () => {
+  tutorialPopup.style.display = "none";
+  timesClosed++;
+  localStorage.setItem("calisto_fechamentos", timesClosed);
+};
+
+// Abre manualmente 🟢
+openTutorialButton.onclick = () => {
+  tutorialPopup.style.display = "flex";
+};
+
+// Fecha ao clicar fora
+window.addEventListener("click", function (event) {
+  if (event.target === tutorialPopup) {
+    tutorialPopup.style.display = "none";
     timesClosed++;
     localStorage.setItem("calisto_fechamentos", timesClosed);
   }
-
-  // Fecha pelo botão ✖️
-  closeTutorial.onclick = () => {
-    tutorialPopup.style.display = "none";
-    registrarFechamento();
-  };
-
-  // Abre manualmente 🟢
-  openTutorialButton.onclick = () => {
-    tutorialPopup.style.display = "flex";
-  };
-
-  // Fecha ao clicar fora
-  window.addEventListener("click", function (event) {
-    if (event.target === tutorialPopup) {
-      tutorialPopup.style.display = "none";
-      registrarFechamento();
-    }
-  });
+});
 
   function rollDice() {
   const input = document.getElementById("diceInput").value.trim();

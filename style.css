@@ -212,7 +212,7 @@ header {
   }
   .tutorial-flex {
     display: flex;
-    gap: 15px;
+    gap: 50px;
     flex-direction: row;
     flex-wrap: wrap;
   }

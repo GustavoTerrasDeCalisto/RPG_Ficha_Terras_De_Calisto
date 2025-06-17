@@ -659,234 +659,245 @@ bonusTexto_3: `
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Fogo",
-      "bonusPass": `
-      Nível 0: +2 em curas recebidas, + 5 de dano com Machados e Martelos.
-      
-      😡Berserker
-      Nível 1: Instinto Selvagem – Aumenta em +1d4 o dano de ataques realizados com as próprias mãos ou armas improvisadas quando em combate corpo a corpo. (Passivo) e Libera a passiva Ódio.
-Nível 3: Força Primordial – Recebe +2 em testes de força física, especialmente em situações de quebra de objetos ou arrancamento. (Passivo)
-Nível 5: Resistência Implacável – Ganha +1 em testes de resistência contra venenos e efeitos de cansaço. (Passivo)
-Nível 9: Rugido de Guerra – Ao lançar um grito de batalha, impõe -1 nos testes dos inimigos próximos por um turno. (2 de especial por uso)
-Nível 13: Golpe Devastador – Aplica um bônus de +1d6 de dano ao atacar quando sua vida estiver abaixo de 50%. (3 de especial por uso)
-Nível 16: Fúria Cortante – +1d6 de dano adicional ao usar armas de corte quando está em fúria. (Passivo)
-Nível 20: Espírito da Batalha – Recebe +2 em resistência contra condições debilitantes como Lentidão e Paralisia enquanto luta com mais de um inimigo. (Passivo)
-Nível 22: Destruição Imparável – +1d8 de dano adicional ao acertar golpes críticos com armas pesadas. (Passivo)
-Nível 25: Frenesi Berserker – Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)
-
-🪓Mestre dos Machados
-Nível 1: Precisão Brutal – Recebe +1d4 de dano adicional ao usar machados para acertar alvos fixos ou de movimento lento. (Passivo)
-Nível 3: Braços de Ferro – +1 em testes ao usar armas pesadas como machados, mesmo em condições de combate prolongado. (Passivo)
-Nível 5: Agilidade com Peso – +1 em testes de Agilidade quando carrega armas pesadas em combate. (Passivo)
-Nível 9: Machado Veloz – Concede +2 em ataques consecutivos com machados contra o mesmo alvo. (Passivo)
-Nível 13: Corte Rachador – Executa um golpe com o machado que reduz a defesa do alvo em 1 por dois turnos. (2 de especial por uso)
-Nível 16: Lâmina Impiedosa – +1d8 de dano em ataques críticos realizados com machados ao mirar na cabeça ou em partes vulneráveis. (Passivo)
-Nível 20: Mestre de Impacto – Recebe +2 em resistência contra efeitos de recuo ao atacar com machados em combate corpo a corpo. (Passivo)
-Nível 22: Golpe Fatal – Ao acertar um golpe crítico, causa um sangramento extra de +1d10 de dano em turnos seguintes. (4 de especial por uso)
-Nível 25: Executador de Batalha – Pode realizar um ataque extra com machado uma vez por combate, com +2d8 de dano adicional. (5 de especial por ativação, uma vez por combate)
-
-✨Caminho Puritano
-Nível 1: Vitalidade Curativa – Recupera +1d4 de vida própria ao final de cada combate ao manter a integridade do grupo. (Passivo)
-Nível 3: Resiliência Sagrada – +1 em testes de primeiros socorros, aplicável a si e aliados próximos. (Passivo)
-Nível 5: Fonte de Cura – Ao receber cura, aumenta o efeito em +1d4 de vida extra. (Passivo)
-Nível 9: Proteção Natural – +2 em resistência contra ataques mágicos enquanto está curando aliados. (Passivo)
-Nível 13: Mão Restauradora – Cura a si ou um aliado em +1d6 instantaneamente. (3 de especial por uso)
-Nível 16: Energia Salvadora – Regenera +1d8 de vida ao final de cada turno enquanto estiver ao lado de aliados feridos. (Passivo)
-Nível 20: Guardião de Batalha – Recebe +2 em resistência contra efeitos de maldição e envenenamento enquanto cura ou protege um aliado. (Passivo)
-Nível 22: Reforço de Vida – Cura um aliado em +1d10 ao usar uma ação de suporte em combate. (4 de especial por uso)
-Nível 25: Guardião Puritano – Cura todos os aliados próximos em +2d8 uma vez por combate. (5 de especial por ativação, uma vez por combate)`,
-      "movimento_pass": 4
+  "bonusPass": `
+<p><strong>Nível 0:</strong> +2 em curas recebidas, +5 de dano com Machados e Martelos.</p>
+`,
+  "bonustitulo_1": `<p>😡<strong>Berserker</strong></p>`,
+  "bonusTexto_1": `
+<p><strong>Nível 1:</strong> Instinto Selvagem – +1d4 de dano com ataques desarmados ou armas improvisadas em corpo a corpo (Passivo). Libera a passiva <strong>[Ódio](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,%C3%93dio,-Odium)</strong>.</p>
+<p><strong>Nível 3:</strong> Força Primordial – +2 em testes de força física para quebrar ou arrancar objetos (Passivo).</p>
+<p><strong>Nível 5:</strong> Resistência Implacável – +1 em testes contra venenos e cansaço (Passivo).</p>
+<p><strong>Nível 9:</strong> Rugido de Guerra – Grito impõe -1 em testes dos inimigos próximos por 1 turno (2 de especial por uso).</p>
+<p><strong>Nível 13:</strong> Golpe Devastador – +1d6 de dano extra se HP &lt; 50% (3 de especial por uso).</p>
+<p><strong>Nível 16:</strong> Fúria Cortante – +1d6 de dano ao usar armas de corte em fúria (Passivo).</p>
+<p><strong>Nível 20:</strong> Espírito da Batalha – +2 em resistência contra Lentidão e Paralisia ao lutar com múltiplos inimigos (Passivo).</p>
+<p><strong>Nível 22:</strong> Destruição Imparável – +1d8 de dano em críticos com armas pesadas (Passivo).</p>
+<p><strong>Nível 25:</strong> Frenesi Berserker – Ao atingir 0 HP, ganha 1 ataque extra sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido (5 de especial por ativação, 1x por combate).</p>
+`,
+  "bonustitulo_2": `<p>🪓<strong>Mestre dos Machados</strong></p>`,
+  "bonusTexto_2": `
+<p><strong>Nível 1:</strong> Precisão Brutal – +1d4 de dano ao usar machados contra alvos lentos ou fixos (Passivo).</p>
+<p><strong>Nível 3:</strong> Braços de Ferro – +1 em testes com armas pesadas, mesmo em combate prolongado (Passivo).</p>
+<p><strong>Nível 5:</strong> Agilidade com Peso – +1 em Agilidade com armas pesadas (Passivo).</p>
+<p><strong>Nível 9:</strong> Machado Veloz – +2 em ataques consecutivos com machado no mesmo alvo (Passivo).</p>
+<p><strong>Nível 13:</strong> Corte Rachador – Reduz defesa do inimigo em 1 por 2 turnos (2 de especial por uso).</p>
+<p><strong>Nível 16:</strong> Lâmina Impiedosa – +1d8 de dano crítico com machado mirando em pontos vulneráveis (Passivo).</p>
+<p><strong>Nível 20:</strong> Mestre de Impacto – +2 em resistência a recuo em ataques corpo a corpo com machado (Passivo).</p>
+<p><strong>Nível 22:</strong> Golpe Fatal – Críticos causam sangramento extra de +1d10 (4 de especial por uso).</p>
+<p><strong>Nível 25:</strong> Executador de Batalha – 1 ataque extra com machado por combate com +2d8 de dano (5 de especial por ativação).</p>
+`,
+  "bonustitulo_3": `<p>✨<strong>Caminho Puritano</strong></p>`,
+  "bonusTexto_3": `
+<p><strong>Nível 1:</strong> Vitalidade Curativa – Recupera +1d4 de vida após combates mantendo integridade do grupo (Passivo).</p>
+<p><strong>Nível 3:</strong> Resiliência Sagrada – +1 em primeiros socorros para si e aliados próximos (Passivo).</p>
+<p><strong>Nível 5:</strong> Fonte de Cura – Cura recebida aumenta em +1d4 (Passivo).</p>
+<p><strong>Nível 9:</strong> Proteção Natural – +2 em resistência mágica ao curar aliados (Passivo).</p>
+<p><strong>Nível 13:</strong> Mão Restauradora – Cura instantânea de +1d6 (3 de especial por uso).</p>
+<p><strong>Nível 16:</strong> Energia Salvadora – Regenera +1d8 de vida por turno ao lado de aliados feridos (Passivo).</p>
+<p><strong>Nível 20:</strong> Guardião de Batalha – +2 em resistência contra maldição e veneno ao proteger ou curar aliados (Passivo).</p>
+<p><strong>Nível 22:</strong> Reforço de Vida – Cura de +1d10 em ação de suporte (4 de especial por uso).</p>
+<p><strong>Nível 25:</strong> Guardião Puritano – Cura em área de +2d8 em todos os aliados próximos (5 de especial por ativação, 1x por combate).</p>
+`
+,
+     "movimento_pass": 4
     },
     "Bardo": { 
       "vidaPorNivel": 9,
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Luz",
-      "bonusPass": `
-      Nível 0: +2 em qualquer rolagem de dados em Conexão e + 2 em diplomacia.
-      
-      💃Mestre da Dança
-"O Mestre da Dança usa sua habilidade com a música para curar, purificar e confundir os inimigos enquanto mantém sua presença dinâmica em combate. A dança é acompanhada pelo som de seu instrumento que, magicamente, levita e toca por conta própria."
-
-Nível 1: Dança da Purificação – Aprende a passiva Dança da Purificação, permitindo remover condições negativas de aliados próximos. (Sem custo uma vez por dia)
-Nível 3: Movimentos Encantados – +1 em testes de esquiva e resistência a ataques à distância enquanto dança. (Passivo)
-Nível 5: Toque da Harmonia – Ao tocar o instrumento, restaura +1d4 pontos de vida ou sanidade para aliados próximos. (2 de especial por uso)
-Nível 9: Encanto das Melodias – +2 em testes de Conexão quando usa a dança para ganhar a confiança de aliados e NPCs. (Passivo)
-Nível 13: Ritmo Desorientador – Confunde inimigos ao dançar, reduzindo seus testes de precisão em -1 por três turnos. (3 de especial por uso)
-Nível 16: Harmonia Fluida – Restaura +1d6 de vida para aliados em combate ao fim de cada turno em que dançar por ao menos dois turnos. (Passivo)
-Nível 20: Explosão Melódica – Causa +1d8 de dano aos inimigos ao redor, que são atingidos por uma onda de som enquanto dança. (3 de especial por uso)
-Nível 22: Aura de Cura – Enquanto dança, aliados ganham +2 em resistência a condições. (Passivo)
-Nível 25: Apoteose da Dança – Invoca uma dança final que remove todas as condições negativas de aliados e reduz a armadura dos inimigos em 2 e faz as armas de todos caírem e ficar grudas no chão enquanto estiver dançando. (5 de especial, 1 vez por combate)
-
-🎶Guerreiro Musical
-"O Guerreiro Musical usa a música para inspirar a si mesmo e aos seus aliados, enquanto luta com armas e instrumentos. Ele se destaca ao utilizar sua música como arma e se aprimorar para o combate."
-
-Nível 1: Golpe Harmônico – Causa +1d4 de dano adicional com seu instrumento usado como arma improvisada. (Passivo)
-Nível 3: Ritmo de Batalha – +1 em testes de precisão enquanto luta usando arco ou besta. (Passivo)
-Nível 5: Melodia de Inspiração – Aumenta a precisão de aliados em +1 durante um turno. (2 de especial por uso)
-Nível 9: Som Impenetrável – Ao tocar música, ganha +1 em resistência a ataques mentais e mágicos. (Passivo)
-Nível 13: Crescendo Devastador – Ataque poderoso com o instrumento, causando +1d6 de dano e atordoando o inimigo por um turno. (3 de especial por uso)
-Nível 16: Canto da Armadura – Ganha +2 em resistência física ao tocar uma melodia protetora. (Passivo)
-Nível 20: Corda Rasgante – Ataque cortante que causa +2d6 de dano e reduz a defesa do alvo em -1. (4 de especial por uso)
-Nível 22: Hino de Guerra – Todos os aliados recebem +2 em resistência a condições por dois turnos ao ouvir a música de combate. (Passivo)
-Nível 25: Concerto de Vitória – Concede +3d8 de dano de Luz em um ataque final, atingindo todos os inimigos próximos. (5 de especial, 1 vez por combate)
-
-💤Apanhador de Sonhos
-"O Apanhador de Sonhos é iniciado nas Hierarquias dos Cultos dos Apanhadores, conectando-se ao mundo espiritual e manipulando sonhos e pesadelos para apoiar aliados e afetar inimigos."
-
-Nível 1: Aspirante dos Sonhos – Ganha uma magia de nível 1 a 2 de Aspirante dos Sonhos e +1d4 de bônus em combate usando bestas.
-Nível 3: Tecelão de Devaneios – Libera uma magia de nível 1 a 2 de Tecelão de Devaneios e reduz em 1 o custo de sanidade ao usar magias que afetam a mente.
-Nível 5: Guardião dos Subconscientes – Ganha uma magia de nível 1 a 3 de Guardião dos Subconscientes e concede aos aliados próximos +1 em resistência mental durante a batalha.
-Nível 9: Senhor do Sono Eterno – Adquire uma magia de nível 1 a 4 de Senhor do Sono Eterno e ganha uma vez por combate a habilidade de criar uma névoa que provoca sonolência ao redor, afetando inimigos em um raio de 5 metros.
-Nível 13: Profeta das Visões Oníricas – Ganha uma magia de nível 1 a 4 de Profeta das Visões Oníricas e +1 em esquiva, além de poder vislumbrar ataques iminentes de inimigos.
-Nível 16: Apanhador dos Pesadelos – Libera uma magia de nível 1 a 4 de Apanhador dos Pesadelos e drena 1d6 de sanidade dos inimigos em combate, convertendo em energia especial.
-Nível 20: Guardião do Mundo Onírico – Concede uma magia adicional de nível 1 a 5 e +2 de percepção para detectar seres invisíveis ou ilusionários.
-Nível 22: Mestre dos Devaneios – Ganha uma magia de nível 1 a 5 e reduz à metade o custo de sanidade para todas as magias de sonhos ou pesadelos.
-Nível 25: Guardião Eterno dos Sonhos – Ganha uma magia de nível 6 e pode realizar uma ação completa extra uma vez por combate ao custo de 7 de especial, conectando-se profundamente com o mundo espiritual e manipulando os sonhos de todos ao redor.`,
-      "movimento_pass": 3.5
+  "bonusPass": `
+<p><strong>Nível 0:</strong> +2 em qualquer rolagem de dados em Conexão e +2 em Diplomacia.</p>
+`,
+  "bonustitulo_1": `<p>💃<strong>Mestre da Dança</strong></p>`,
+  "bonusTexto_1": `
+<p><em>"O Mestre da Dança usa sua habilidade com a música para curar, purificar e confundir os inimigos enquanto mantém sua presença dinâmica em combate. A dança é acompanhada pelo som de seu instrumento que, magicamente, levita e toca por conta própria."</em></p>
+<p><strong>Nível 1:</strong> [Dança da Purificação](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Dan%C3%A7a%20da%20Purifica%C3%A7%C3%A3o) – Remove condições negativas de aliados próximos (1x por dia, sem custo).</p>
+<p><strong>Nível 3:</strong> Movimentos Encantados – +1 em esquiva e resistência a ataques à distância enquanto dança (Passivo).</p>
+<p><strong>Nível 5:</strong> Toque da Harmonia – Restaura +1d4 de vida ou sanidade a aliados próximos (2 de especial por uso).</p>
+<p><strong>Nível 9:</strong> Encanto das Melodias – +2 em testes de Conexão ao usar dança para ganhar confiança (Passivo).</p>
+<p><strong>Nível 13:</strong> Ritmo Desorientador – Reduz testes de precisão inimigos em -1 por 3 turnos (3 de especial por uso).</p>
+<p><strong>Nível 16:</strong> Harmonia Fluida – Cura +1d6 por turno para aliados se dançar por 2+ turnos (Passivo).</p>
+<p><strong>Nível 20:</strong> Explosão Melódica – +1d8 de dano em área via onda sonora (3 de especial por uso).</p>
+<p><strong>Nível 22:</strong> Aura de Cura – Aliados ganham +2 em resistência a condições enquanto dança (Passivo).</p>
+<p><strong>Nível 25:</strong> Apoteose da Dança – Remove condições de aliados, reduz armadura inimiga em -2 e faz armas grudarem no chão enquanto dança (5 de especial, 1x por combate).</p>
+`,
+  "bonustitulo_2": `<p>🎶<strong>Guerreiro Musical</strong></p>`,
+  "bonusTexto_2": `
+<p><em>"O Guerreiro Musical usa a música para inspirar a si mesmo e aos seus aliados, enquanto luta com armas e instrumentos. Ele se destaca ao utilizar sua música como arma e se aprimorar para o combate."</em></p>
+<p><strong>Nível 1:</strong> Golpe Harmônico – +1d4 de dano com instrumento como arma (Passivo).</p>
+<p><strong>Nível 3:</strong> Ritmo de Batalha – +1 em testes de precisão com arco ou besta (Passivo).</p>
+<p><strong>Nível 5:</strong> Melodia de Inspiração – Concede +1 de precisão a aliados por 1 turno (2 de especial por uso).</p>
+<p><strong>Nível 9:</strong> Som Impenetrável – +1 em resistência a ataques mentais e mágicos ao tocar (Passivo).</p>
+<p><strong>Nível 13:</strong> Crescendo Devastador – +1d6 de dano e atordoa inimigo por 1 turno (3 de especial por uso).</p>
+<p><strong>Nível 16:</strong> Canto da Armadura – +2 em resistência física ao tocar melodia protetora (Passivo).</p>
+<p><strong>Nível 20:</strong> Corda Rasgante – +2d6 de dano e reduz defesa do alvo em -1 (4 de especial por uso).</p>
+<p><strong>Nível 22:</strong> Hino de Guerra – Aliados recebem +2 em resistência a condições por 2 turnos (Passivo).</p>
+<p><strong>Nível 25:</strong> Concerto de Vitória – +3d8 de dano de Luz em todos os inimigos próximos (5 de especial, 1x por combate).</p>
+`,
+  "bonustitulo_3": `<p>💤<strong>Apanhador de Sonhos</strong></p>`,
+  "bonusTexto_3": `
+<p><em>"O Apanhador de Sonhos é iniciado nas Hierarquias dos Cultos dos Apanhadores, conectando-se ao mundo espiritual e manipulando sonhos e pesadelos para apoiar aliados e afetar inimigos."</em></p>
+<p><strong>Nível 1:</strong> Aspirante dos Sonhos – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-2) e +1d4 com bestas.</p>
+<p><strong>Nível 3:</strong> Tecelão de Devaneios – Libera 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-2) e -1 de custo de sanidade ao afetar mentes.</p>
+<p><strong>Nível 5:</strong> Guardião dos Subconscientes – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-3) e aliados próximos ganham +1 em resistência mental.</p>
+<p><strong>Nível 9:</strong> Senhor do Sono Eterno – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-4) e cria névoa de sonolência (1x por combate).</p>
+<p><strong>Nível 13:</strong> Profeta das Visões Oníricas – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-4), +1 em esquiva e pode prever ataques iminentes.</p>
+<p><strong>Nível 16:</strong> Apanhador dos Pesadelos – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-4), drena 1d6 de sanidade e converte em energia especial.</p>
+<p><strong>Nível 20:</strong> Guardião do Mundo Onírico – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-5) e +2 em percepção contra ilusões e invisibilidade.</p>
+<p><strong>Nível 22:</strong> Mestre dos Devaneios – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-5) e reduz pela metade o custo de magias de sonho/pesadelo.</p>
+<p><strong>Nível 25:</strong> Guardião Eterno dos Sonhos – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 6) e pode realizar ação completa extra (7 de especial, 1x por combate).</p>
+`
+,
+     "movimento_pass": 3.5
     },
     "Bruxo": { 
       "vidaPorNivel": 9,
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Escuridão",
-      "bonusPass": `
-      Nível 0:Magias de atributo Libertação custam metade.
-      
-      🔮Umbromante
-"Especializado em magia de Escuridão, com Hierarquias dos Filhos de Eldoria."
-
-Nível 1: Aprendiz das Sombras – Libera uma magia de nível 1 de Escuridão e +1 em testes de Identificar Magia.
-Nível 3: Mestre da Penumbra – Ganha uma magia de nível 2 de Escuridão e +1 em testes contra danos de Escuridão.
-Nível 5: Guardião da Noite – Libera uma magia de nível 2 de Escuridão e permite realizar um ataque extra de Escuridão ao custo de 3 de especial.
-Nível 9: Profeta do Eclipse – Ganha uma magia de nível 3 de Escuridão e a habilidade “Libertação das Sombras”, permitindo reduzir o custo de sanidade de uma magia de Escuridão pela metade uma vez por combate.
-Nível 13: Arauto das Trevas – Ganha uma magia de nível 4 e +2 de dano em magias de Escuridão.
-Nível 16: Sombra Absoluta – Libera uma magia de nível 4 de Escuridão e +2 em movimento quando em áreas escuras. Uma vez por combate, pode causar “Borborigmo” ao oponente por 1d4 turnos.
-Nível 20: Senhor das Sombras Eternas – Ganha +2 em testes de Identificar Magia e recebe um escudo sombrio que absorve até 1d8 de dano em combate uma vez por turno.
-Nível 22: Guardião das Trevas Profundas – Recebe uma magia de nível 5 e, ao usar uma ação completa de Escuridão, causa “Confusão” em inimigos ao redor.
-Nível 25: Profeta da Sombra Suprema – Ganha uma magia de nível 6 e pode realizar uma ação completa extra ao custo de 8 de Sanidade em combate.
-
-💀Maldizente
-"Especializado em maldições, com foco em fé e controle espiritual."
-
-Nível 1: Aprendiz da Maldição – Libera uma magia de nível 1 de Maldição e Libera a Passiva “Amaldiçoar,”.
-Nível 3: Portador dos Presságios – Ganha uma magia de nível 1 de Maldição e +1 em dano em ataques de Maldição.
-Nível 5: Mestre dos Anátemas – Libera uma magia de nível 2 de Maldição e concede +1 em testes de conexão.
-Nível 9: Profeta da Ruína – Ganha uma magia de nível 3 e a habilidade “Libertação da Maldição”, reduzindo o custo de sanidade ao lançar Maldições pela metade uma vez por combate.
-Nível 13: Arauto dos Destinos Sombrio – Libera uma magia de nível 3 e concede +2 de dano adicional em ataques de Maldição.
-Nível 16: Véu do Fim – Libera uma magia de nível 4 de Maldição e pode envolver-se em um véu sombrio, aumentando a resistência a ataques físicos em +2.
-Nível 20: Mestre da Profecia Desoladora – Ganha uma magia de nível 4 e pode reduzir o dano mágico de um inimigo em 1d12 ao custo de 3 de especial.
-Nível 22: Guardião dos Destinos Perdidos – Libera uma magia de nível 5 e ganha +2 em testes de conexão +1d8 de dano com magias de Maldição.
-Nível 25: Profeta dos Pesadelos Eterno – Ganha uma magia de nível 6 e pode aplicar “Amaldiçoar” a um inimigo extra em combate ao custo de 7 de especial e alvos amaldiçoados tem desvantagem para tirar maldição.
-
-🪄Duelista de Varinhas
-"Especializado em duelos de varinhas, escolhendo uma varinha no nível 1 que concede bônus únicos."
-
-Nível 1: Duelista das Varinhas – Escolhe uma varinha: Fé (Determinação +1), Poder (Libertação +1), Desconhecido (Conexão +1) ou Caos (Preservação +1). Recebe um bônus de +1 em combate de varinha, pode conjurar magias com a varinha.
-Nível 3: Mago Duelista – Ganha uma habilidade de ataque de varinha causa 2d10 de plasma ao custo de 2 de especial (alvo a sua vista) e um bônus de +1 de dano com plasma.
-Nível 5: Mestre da Varinha – Aumenta o dano de plasma em +2 e recebe um bônus de +1 em esquiva, Libera duas magias de plasma de nível 1 a 2
-Nível 9: Guerreiro das Bruxarias – Pode realizar um ataque extra com a varinha ao custo de 4 de especial e +1 em resistência contra magias do elemento desconhecido.
-Nível 13: Arauto das Bruxarias – Ganha +2 em ataques de plasma e reduz o custo de sanidade em magias de duelo, Libera duas magias de plasma de nível 3 a 4
-Nível 16: Guardião Arcano das Varinhas – Ganha uma habilidade de bloqueio arcano, reduzindo o dano recebido em 1d8 ao custo de 2 de especial.
-Nível 20: Profeta do Plasma Arcano – Recebe +1 de dano adicional em magias de plasma e um bônus de +2 em testes de conexão em combates com varinhas.
-Nível 22: Guardião do Poder Arcano – Libera duas magias de plasma de nível 1 a 6 e pode realizar uma ação completa extra ao custo de 6 de especial, aplicando dois ataques com a varinha consecutivos.
-Nível 25: Mestre Supremo das Varinhas – Ganha +3 em todos os ataques com plasma e uma habilidade de ataque de varinha definitiva ao custo de 8 de especial, os danos rebatem em todos inimigos próximos a 10m do alvo.`,
-      "movimento_pass": 3.5
+  "bonusPass": `
+<p><strong>Nível 0:</strong> Magias de atributo <strong>Libertação</strong> custam metade.</p>
+`,
+  "bonustitulo_1": `<p>🔮<strong>Umbromante</strong></p>`,
+  "bonusTexto_1": `
+<p><em>"Especializado em magia de Escuridão, com Hierarquias dos Filhos de Eldoria."</em></p>
+<p><strong>Nível 1:</strong> Aprendiz das Sombras – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 1 de Escuridão e +1 em Identificar Magia.</p>
+<p><strong>Nível 3:</strong> Mestre da Penumbra – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 2 de Escuridão e +1 contra dano de Escuridão.</p>
+<p><strong>Nível 5:</strong> Guardião da Noite – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 2 e ataque extra de Escuridão (3 de especial).</p>
+<p><strong>Nível 9:</strong> Profeta do Eclipse – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 3 e <strong>Libertação das Sombras</strong>: metade do custo de sanidade para 1 magia (1x por combate).</p>
+<p><strong>Nível 13:</strong> Arauto das Trevas – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 4 e +2 de dano com Escuridão.</p>
+<p><strong>Nível 16:</strong> Sombra Absoluta – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 4 e +2 em movimento no escuro. Pode causar <strong>Borborigmo</strong> por 1d4 turnos (1x por combate).</p>
+<p><strong>Nível 20:</strong> Senhor das Sombras Eternas – +2 em Identificar Magia e escudo sombrio que absorve até 1d8 de dano (1x por turno).</p>
+<p><strong>Nível 22:</strong> Guardião das Trevas Profundas – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 5 e ação completa de Escuridão causa <strong>Confusão</strong> em inimigos.</p>
+<p><strong>Nível 25:</strong> Profeta da Sombra Suprema – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 6 e ação completa extra (8 de Sanidade).</p>
+`,
+  "bonustitulo_2": `<p>💀<strong>Maldizente</strong></p>`,
+  "bonusTexto_2": `
+<p><em>"Especializado em maldições, com foco em fé e controle espiritual."</em></p>
+<p><strong>Nível 1:</strong> Aprendiz da Maldição – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 1 de Maldição e passiva <strong>[Amaldiçoar](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Amaldi%C3%A7oar,-Maledictio)</strong>.</p>
+<p><strong>Nível 3:</strong> Portador dos Presságios – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 1 e +1 em dano com Maldição.</p>
+<p><strong>Nível 5:</strong> Mestre dos Anátemas – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 2 e +1 em testes de Conexão.</p>
+<p><strong>Nível 9:</strong> Profeta da Ruína – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 3 e <strong>Libertação da Maldição</strong>: metade do custo de sanidade 1x por combate.</p>
+<p><strong>Nível 13:</strong> Arauto dos Destinos Sombrios – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 3 e +2 de dano em Maldição.</p>
+<p><strong>Nível 16:</strong> Véu do Fim – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 4 e véu sombrio que concede +2 contra dano físico.</p>
+<p><strong>Nível 20:</strong> Mestre da Profecia Desoladora – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 4 e pode reduzir dano mágico inimigo em 1d12 (3 de especial).</p>
+<p><strong>Nível 22:</strong> Guardião dos Destinos Perdidos – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 5, +2 em Conexão e +1d8 de dano com Maldição.</p>
+<p><strong>Nível 25:</strong> Profeta dos Pesadelos Eternos – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 6 e <strong>Amaldiçoar</strong> inimigo extra (7 de especial). Alvo afetado tem desvantagem para remover maldição.</p>
+`,
+  "bonustitulo_3": `<p>🌟<strong>Duelista de Varinhas</strong></p>`,
+  "bonusTexto_3": `
+<p><em>"Especializado em duelos de varinhas, escolhendo uma varinha no nível 1 que concede bônus únicos."</em></p>
+<p><strong>Nível 1:</strong> Duelista das Varinhas – Escolhe varinha: Fé (Determinação +1), Poder (Libertação +1), Desconhecido (Conexão +1), Caos (Preservação +1). Ganha +1 em combate com varinhas e pode conjurar com elas.</p>
+<p><strong>Nível 3:</strong> Mago Duelista – Ataque de varinha causa 2d10 de plasma (2 de especial) e +1 de dano com plasma.</p>
+<p><strong>Nível 5:</strong> Mestre da Varinha – +2 em dano de plasma, +1 em Esquiva e libera 2 magias de [plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Plasma%20%E2%80%93%20Conclave%20da%20Conex%C3%A3o%20Irreal,-Hierarquias%20de%20Conclave) nível 1–2.</p>
+<p><strong>Nível 9:</strong> Guerreiro das Bruxarias – Ataque extra com varinha (4 de especial) e +1 contra magia do Desconhecido.</p>
+<p><strong>Nível 13:</strong> Arauto das Bruxarias – +2 em ataques de plasma, reduz custo de sanidade de magias de duelo e ganha 2 magias de plasma nível 3–4.</p>
+<p><strong>Nível 16:</strong> Guardião Arcano das Varinhas – Defesa arcana reduz 1d8 de dano (2 de especial).</p>
+<p><strong>Nível 20:</strong> Profeta do Plasma Arcano – +1 em dano com plasma e +2 em Conexão em combates com varinhas.</p>
+<p><strong>Nível 22:</strong> Guardião do Poder Arcano – Libera 2 magias de [plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Plasma%20%E2%80%93%20Conclave%20da%20Conex%C3%A3o%20Irreal,-Hierarquias%20de%20Conclave) (nível 1–6) e pode fazer 2 ataques com varinha na mesma ação (6 de especial).</p>
+<p><strong>Nível 25:</strong> Mestre Supremo das Varinhas – +3 em ataques de plasma e ataque final que rebate entre inimigos num raio de 10m (8 de especial).</p>
+`
+,
+   "movimento_pass": 3.5
     },
     "Carpinteiro": { 
       "vidaPorNivel": 13,
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Tempestade",
-      "bonusPass": `
-      Nível 0: Uma ação livre extra por turno.
-      
-      ⚒️Construtor Improvisado
-"O Carpinteiro usa troncos, cadeiras e outros objetos de madeira como armas improvisadas, utilizando habilidades de combate bruto e improvisação."
-
-Nível 1: Martelada Bruta – Usa um tronco ou objeto de madeira, causando +1d4 de dano corpo a corpo. (Custo: 1 de especial por uso)
-Nível 3: Bloco de Proteção – Ganha +1 em resistência ao utilizar objetos de madeira como escudo. (Passivo)
-Nível 5: Força Adaptável – Regenera 1 ponto de especial se usar objetos improvisados em combate por dois turnos seguidos. (Passivo)
-Nível 9: Perícia com Improviso – Recebe +1 em testes de ataque ao usar armas improvisadas. (Passivo)
-Nível 13: Golpe Demolidor – Causa +1d6 de dano extra em um golpe que ignora a defesa do alvo. (Custo: 3 de especial por uso)
-Nível 16: Resistência Férrea – Ganha +2 em resistência ao dano físico se usar um objeto improvisado desde o início do combate. (Passivo)
-Nível 20: Explosão de Impacto – Um ataque pesado que causa +2d6 de dano adicional e pode atordoar o inimigo. (Custo: 4 de especial por uso)
-Nível 22: Maestria em Improviso – Todos os ataques com objetos improvisados causam +1d6 adicional enquanto evita ataques à distância. (Passivo)
-Nível 25: Golpe Devastador – Um ataque massivo que causa +2d10 de dano, disponível após três turnos sem usar outras habilidades. (Custo: 5 de especial por ativação, 1 vez por combate)
-
-🪵Artesão de Barricadas
-"O Carpinteiro constrói barricadas e armadilhas de madeira para criar obstruções e distrações, dominando o campo de batalha com construções rápidas."
-
-Nível 1: Mini Barricada – Constrói uma pequena barreira que concede +1 em defesa a aliados atrás dela por um turno. (Sem custo de especial)
-Nível 3: Parede de Madeira – Cria uma barreira durável que bloqueia uma passagem por dois turnos. (Custo: 2 de especial por uso)
-Nível 5: Prendedor Ágil – Consegue travar objetos leves no chão para dificultar a passagem de inimigos, aumentando testes de esquiva de aliados próximos em +1. (Passivo)
-Nível 9: Barreira Resistente – Barricadas e paredes de madeira duram um turno extra. (Passivo)
-Nível 13: Armadilha Surpresa – Constrói uma pequena armadilha que causa +1d6 de dano em inimigos que tentarem atravessá-la. (Custo: 3 de especial por uso)
-Nível 16: Cobertura Completa – Constrói uma barreira que reduz o dano recebido em 50% para quem estiver atrás dela por um turno. (Custo: 4 de especial, 1 vez por combate)
-Nível 20: Estratégia de Distração – Coloca um objeto de madeira que atrai inimigos por um turno, facilitando ataques surpresas. (Custo: 2 de especial por uso)
-Nível 22: Mestre das Barricadas – Pode construir uma segunda barricada simultânea, concedendo bônus de defesa a aliados próximos. (Passivo)
-Nível 25: Catapulta Improvisada – Constrói uma pequena catapulta para lançar objetos, causando +2d10 de dano à distância. (Custo: 5 de especial, uma vez por combate)
-
-🪓Guerreiro de Machado
-"O Carpinteiro luta com machados, tornando-se quase tão habilidoso quanto o Mestre dos Machados, com seu próprio estilo de combate implacável."
-
-Nível 1: Corte Preciso – Causa +1d4 de dano adicional ao usar machados em combate. (Passivo)
-Nível 3: Fúria do Lenhador – Ganha +1 em resistência ao usar machados para golpes rápidos. (Passivo)
-Nível 5: Machado Veloz – Recebe +1 em Agilidade quando ataca com machados. (Passivo)
-Nível 9: Ataque Sequencial – Concede +2 em dano ao acertar o mesmo alvo com ataques consecutivos. (Passivo)
-Nível 13: Machado Partidor – Um golpe com o machado reduz a defesa do alvo em 1 por dois turnos. (Custo: 2 de especial por uso)
-Nível 16: Golpe Devastador – +1d8 de dano em ataques críticos com machados ao atingir áreas vitais. (Passivo)
-Nível 20: Equilíbrio de Aço – Ganha +2 em resistência contra ataques de recuo ao usar machados. (Passivo)
-Nível 22: Hemorragia Fatal – Um golpe crítico com o machado causa +1d10 de dano contínuo no alvo. (Custo: 4 de especial por uso)
-Nível 25: Mestre do Machado – Realiza um ataque extra com o machado, causando +2d8 de dano adicional. (Custo: 5 de especial por ativação, uma vez por combate)`,
-      "movimento_pass": 3.5
+     "bonusPass": `
+<p><strong>Nível 0:</strong> Uma ação livre extra por turno.</p>
+`,
+"bonustitulo_1": `<p>⚒️<strong>Construtor Improvisado</strong></p>`,
+"bonusTexto_1": `
+<p><em>"O Carpinteiro usa troncos, cadeiras e outros objetos de madeira como armas improvisadas, utilizando habilidades de combate bruto e improvisação."</em></p>
+<p><strong>Nível 1:</strong> Martelada Bruta – +1d4 de dano corpo a corpo com madeira (1 de especial).</p>
+<p><strong>Nível 3:</strong> Bloco de Proteção – +1 em resistência ao usar madeira como escudo (Passivo).</p>
+<p><strong>Nível 5:</strong> Força Adaptável – Regenera 1 de especial após dois turnos com objetos improvisados (Passivo).</p>
+<p><strong>Nível 9:</strong> Perícia com Improviso – +1 em ataques com armas improvisadas (Passivo).</p>
+<p><strong>Nível 13:</strong> Golpe Demolidor – +1d6 de dano que ignora defesa (3 de especial).</p>
+<p><strong>Nível 16:</strong> Resistência Férrea – +2 em resistência física se usar objeto improvisado desde o início (Passivo).</p>
+<p><strong>Nível 20:</strong> Explosão de Impacto – +2d6 de dano e chance de atordoar (4 de especial).</p>
+<p><strong>Nível 22:</strong> Maestria em Improviso – +1d6 de dano adicional com improvisos e bônus contra ataques à distância (Passivo).</p>
+<p><strong>Nível 25:</strong> Golpe Devastador – +2d10 de dano após 3 turnos sem usar habilidades (5 de especial, 1x por combate).</p>
+`,
+"bonustitulo_2": `<p>👷‍♂️<strong>Artesão de Barricadas</strong></p>`,
+"bonusTexto_2": `
+<p><em>"O Carpinteiro constrói barricadas e armadilhas de madeira para criar obstruções e distrações, dominando o campo de batalha com construções rápidas."</em></p>
+<p><strong>Nível 1:</strong> Mini Barricada – Concede +1 em defesa para aliados por um turno (Sem custo).</p>
+<p><strong>Nível 3:</strong> Parede de Madeira – Bloqueia passagem por 2 turnos (2 de especial).</p>
+<p><strong>Nível 5:</strong> Prendedor Ágil – +1 em esquiva para aliados próximos ao travar objetos leves (Passivo).</p>
+<p><strong>Nível 9:</strong> Barreira Resistente – Barricadas duram +1 turno (Passivo).</p>
+<p><strong>Nível 13:</strong> Armadilha Surpresa – +1d6 de dano ao inimigo que atravessa (3 de especial).</p>
+<p><strong>Nível 16:</strong> Cobertura Completa – Reduz metade do dano para quem estiver atrás da barreira (4 de especial, 1x por combate).</p>
+<p><strong>Nível 20:</strong> Estratégia de Distração – Atrai inimigos com objeto de madeira por 1 turno (2 de especial).</p>
+<p><strong>Nível 22:</strong> Mestre das Barricadas – Pode construir 2 barricadas simultaneamente (Passivo).</p>
+<p><strong>Nível 25:</strong> Catapulta Improvisada – Lança objetos com +2d10 de dano à distância (5 de especial, 1x por combate).</p>
+`,
+"bonustitulo_3": `<p>🪓<strong>Guerreiro de Machado</strong></p>`,
+"bonusTexto_3": `
+<p><em>"O Carpinteiro luta com machados, tornando-se quase tão habilidoso quanto o Mestre dos Machados, com seu próprio estilo de combate implacável."</em></p>
+<p><strong>Nível 1:</strong> Corte Preciso – +1d4 de dano adicional com machado (Passivo).</p>
+<p><strong>Nível 3:</strong> Fúria do Lenhador – +1 em resistência com golpes rápidos usando machado (Passivo).</p>
+<p><strong>Nível 5:</strong> Machado Veloz – +1 em Agilidade ao usar machado (Passivo).</p>
+<p><strong>Nível 9:</strong> Ataque Sequencial – +2 de dano ao atingir o mesmo alvo repetidamente (Passivo).</p>
+<p><strong>Nível 13:</strong> Machado Partidor – Reduz armadura do alvo em -1 por 2 turnos (2 de especial).</p>
+<p><strong>Nível 16:</strong> Golpe Devastador – +1d8 de dano crítico com machado (Passivo).</p>
+<p><strong>Nível 20:</strong> Equilíbrio de Aço – +2 em resistência a recuos com machado (Passivo).</p>
+<p><strong>Nível 22:</strong> Hemorragia Fatal – Crítico com machado causa +1d10 de dano contínuo (4 de especial).</p>
+<p><strong>Nível 25:</strong> Mestre do Machado – Ataque extra com +2d8 de dano (5 de especial, 1x por combate).</p>
+`
+,   "movimento_pass": 3.5
     },
     "Catador": { 
       "vidaPorNivel": 8,
       "sanidadePorNivel": 8,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
-      "bonusPass": `
-      Nível 0: Cada órgão adiciona +1 invocação extra, magia LEVANTA sem custo uma vez por dia.
-      
-      ⚰️Necromante
-"Especialista em manipulação de mortos e absorção de poder de cadáveres."
-
-Nível 1: Eco dos Mortos – Cada órgão coletado concede +1 em resistência a efeitos de medo e intimidação. Pode lançar a magia “Levanta” duas vezes por dia sem custo e ganha +2 de movimento em terrenos onde corpos ou esqueletos estejam presentes.
-Nível 3: Alimento das Sombras – Ao absorver um cadáver, recupera 1d4 pontos de sanidade. Pode usar essa habilidade até três vezes por dia.
-Nível 5: Aura Cadavérica – Cria uma aura sombria ao redor, reduzindo o dano recebido em 2 para cada inimigo morto próximo. Esse efeito dura até o fim do combate (custa 4 especial).
-Nível 9: Colecionador de Almas Perdidas – Ao derrotar um inimigo, pode armazenar a essência do cadáver por 1d10 turnos, recebendo -2 de dano contra danos de sangue e luz.
-Nível 13: Devorador de Essências – Permite drenar 1d20 de sanidade de um cadáver uma vez por combate, aplicando esse valor a si mesmo ou a um aliado próximo.
-Nível 16: Aura de Terror – Ganha um bônus passivo de +3 em testes de intimidação ao se aproximar de inimigos com vida abaixo de 50%. Em combate, aplica desvantagem a oponentes que tentam atacar em curta distância (custo 2 de especial).
-Nível 20: Fortificação Cadavérica – Com a habilidade “Muralha de Ossos”, ao custo de 6 de sanidade, cria uma barreira de ossos que reduz o dano de ataques à distância por 2d8 por três turnos.
-Nível 22: Ceifeiro dos Defuntos – Ganha “Sangue Morto”, ao custo de 6 de sanidade, que permite drenar a força vital de um cadáver, recuperando 2d20 de vida.
-Nível 25: Guardião da Sombra Eterna – Com a habilidade “Escudo Profano”, ao custo de 12 de sanidade, pode absorver metade do dano recebido em um turno de combate, canalizando essa energia para aumentar o próprio ataque em 1d10 no próximo turno.
-
-🏺Colecionador
-"Especializado em colecionar e manipular itens sagrados, com habilidades de levitação e aura de proteção."
-
-Nível 1: Coleção Sagrada – Ganha a habilidade de marcar até dois itens como “sagrados”, os quais adquirem uma aura brilhante rosa. Esses itens ganham vantagem em testes de Agilidade e podem levitar até o Catador no seu turno. Causam +4 de dano de Aura se usados para golpear.
-Nível 3: Guardião dos Tesouros – Ganha +1 em Ofício e a passiva “Réplica Imperfeita“, permitindo copiar qualquer item que esteja em sua posse.
-Nível 5: Mestre dos Artefatos – Ganha um terceiro slot na coleção sagrada e pode adicionar +1d4 de dano a ataques com esses itens.
-Nível 9: Saqueador Experiente – Concede +2 em testes de Ofício e a habilidade “Roubo Sombrio“, permitindo pegar um item de um inimigo distraído sem custo de ação (custo 6 de especial) “O alvo não pode ter visão sua ou informação de onde está”.
-Nível 13: Guardião de Relíquias Antigas – Concede +1 de Defesa para cada item ativo em sua coleção sagrada.
-Nível 16: Santuário dos Artefatos Perdidos – Concede +3 de dano adicional com itens da coleção sagrada e +1 em testes de Agilidade ao manipular objetos.
-Nível 20: Levitação Perfeita – Com a habilidade “Chamada dos Artefatos“, ao custo de 5 de sanidade, pode atrair todos os itens em um raio de 15 metros para si, independentemente do peso.
-Nível 22: Guardião Supremo dos Tesouros – Ganha “Proteção Sagrada“: ao custo de 8 de sanidade, reduz o dano de todos os ataques recebidos em 2d8 enquanto um item sagrado estiver ativo.
-Nível 25: Senhor da Coleção Sagrada – A habilidade “Roubo Fantasmagórico“, ao custo de 10 de sanidade, permite que ele roube um item mágico do inimigo diretamente durante o combate e o adicione temporariamente à coleção.
-
-🩸Sanguinário
-"Especialista em combate corpo a corpo, utilizando partes do corpo como armas e habilidades de destruição visceral."
-
-Nível 1: Guerreiro de Ossos – Cada órgão coletado concede +1 em ataques corpo a corpo. Ganha a passiva “Dilacera e Atacar“.
-Nível 3: Punhos Macabros – Ganha +1 em Preservação e +1d4 de dano adicional ao usar partes do corpo como armas improvisadas.
-Nível 5: Mestre dos Ossos – Ganha a magia “Órgãos Sombrios“, e aumentar o próprio dano físico em +2 uma vez por combate, ao custo de 3 de sanidade.
-Nível 9: Destruidor de Corpos – Cada ataque com partes de corpos concede +2 de dano extra e um bônus de +1 teste de resistência.
-Nível 13: Arauto da Carne Profana – Recebe +2 em testes de Preservação e concede +1 em Defesa ao atacar com partes de corpos.
-Nível 16: Ceifador dos Mortos-Vivos – Aumenta o dano com órgãos e partes em +1d6 e ganha resistência a efeitos de paralisia.
-Nível 20: Impacto Demolidor – Ganha a habilidade “Esmagamento Cadavérico”, ao custo de 6 de sanidade, podendo aplicar 3d8 de dano adicional e quebrar a defesa de um oponente temporariamente “alvo sem armadura ou possibilidade de defender”.
-Nível 22: Guerreiro das Sombras Corpóreas – Ganha “Fúria dos Ossos”: aumenta o dano de todos os ataques corpo a corpo em +1d12 durante um turno.
-Nível 25: Avatar da Destruição Cadavérica – Com a habilidade “Desmembramento Fatal” pode realizar um ataque devastador que aplica um sangramento profundo, causando 2d10 de dano contínuo por 3 turnos, custo 2 de especial.`,
-      "movimento_pass": 3.5
+     "bonusPass": `
+<p><strong>Nível 0:</strong> Cada órgão adiciona +1 invocação extra. Magia <strong>[LEVANTA](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Levanta!,-Surgiteoooooo!!!)</strong> sem custo uma vez por dia.</p>
+`,
+"bonustitulo_1": `<p>⚰️<strong>Necromante</strong></p>`,
+"bonusTexto_1": `
+<p><em>"Especialista em manipulação de mortos e absorção de poder de cadáveres."</em></p>
+<p><strong>Nível 1:</strong> Eco dos Mortos – Cada órgão coletado concede +1 em resistência a medo e intimidação. Magia <strong>[LEVANTA](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Levanta!,-Surgiteoooooo!!!)</strong> 2x/dia sem custo. +2 de movimento em terrenos com corpos.</p>
+<p><strong>Nível 3:</strong> Alimento das Sombras – Absorver um cadáver recupera 1d4 de sanidade (até 3x por dia).</p>
+<p><strong>Nível 5:</strong> Aura Cadavérica – Reduz o dano recebido em 2 por inimigo morto próximo (4 de especial, dura até o fim do combate).</p>
+<p><strong>Nível 9:</strong> Colecionador de Almas Perdidas – Armazena essência por 1d10 turnos, recebe -2 de dano contra sangue e luz.</p>
+<p><strong>Nível 13:</strong> Devorador de Essências – Drena 1d20 de sanidade de um cadáver e aplica a si ou a um aliado (1x por combate).</p>
+<p><strong>Nível 16:</strong> Aura de Terror – +3 em intimidação passiva com inimigos abaixo de metade de vida. Aplica <strong>desvantagem</strong> em ataques corpo a corpo contra você (2 de especial).</p>
+<p><strong>Nível 20:</strong> Fortificação Cadavérica – Habilidade única “Muralha de Ossos”: reduz dano à distância em 2d8 por 3 turnos (6 de sanidade).</p>
+<p><strong>Nível 22:</strong> Ceifeiro dos Defuntos – Habilidade única “Sangue Morto”: drena vitalidade de cadáver e recupera 2d20 de vida (6 de sanidade).</p>
+<p><strong>Nível 25:</strong> Guardião da Sombra Eterna – Habilidade única “Escudo Profano”: absorve metade do dano por um turno e transforma em +1d10 de ataque no turno seguinte (12 de sanidade).</p>
+`,
+"bonustitulo_2": `<p>🏺<strong>Colecionador</strong></p>`,
+"bonusTexto_2": `
+<p><em>"Especializado em colecionar e manipular itens sagrados, com habilidades de levitação e aura de proteção."</em></p>
+<p><strong>Nível 1:</strong> Coleção Sagrada – Marca até <strong>2</strong> itens “sagrados” com aura rosa. Ganham vantagem em Agilidade e levitam até você. +4 de dano de Aura.</p>
+<p><strong>Nível 3:</strong> Guardião dos Tesouros – +1 em Ofício. Habilidade "<strong>[Réplica Imperfeita](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Nenhum-,R%C3%A9plica%20Imperfeita,-Imperfectum%20Effigies)</strong>" permite copiar itens em posse.</p>
+<p><strong>Nível 5:</strong> Mestre dos Artefatos – <strong>Terceiro</strong> slot sagrado. +1d4 de dano em ataques com os itens.</p>
+<p><strong>Nível 9:</strong> Saqueador Experiente – +2 em Ofício. "Roubo Sombrio": rouba item de inimigo distraído (6 de especial).</p>
+<p><strong>Nível 13:</strong> Guardião de Relíquias Antigas – +1 de armadura por item ativo da coleção sagrada.</p>
+<p><strong>Nível 16:</strong> Santuário dos Artefatos Perdidos – +3 de dano com itens sagrados e +1 em Agilidade ao manipulá-los.</p>
+<p><strong>Nível 20:</strong> Levitação Perfeita – “Chamada dos Artefatos”: atrai todos os itens num raio de 15m (5 de sanidade).</p>
+<p><strong>Nível 22:</strong> Guardião Supremo dos Tesouros – “Proteção Sagrada”: reduz dano recebido em 2d8 com item sagrado ativo (8 de sanidade).</p>
+<p><strong>Nível 25:</strong> Senhor da Coleção Sagrada – “Roubo Fantasmagórico”: rouba 1 item mágico do inimigo temporariamente (10 de sanidade).</p>
+`,
+"bonustitulo_3": `<p>🩸<strong>Sanguinário</strong></p>`,
+"bonusTexto_3": `
+<p><em>"Especialista em combate corpo a corpo, utilizando partes do corpo como armas e habilidades de destruição visceral."</em></p>
+<p><strong>Nível 1:</strong> Guerreiro de Ossos – Cada órgão coletado dá +1 em ataques corpo a corpo. Passiva: "<strong>[Dilacera e Atacar](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Dilacera%20e%20atacar,-Lacrimis%20et%20impetus)</strong>".</p>
+<p><strong>Nível 3:</strong> Punhos Macabros – +1 em Preservação e +1d4 de dano com partes do corpo.</p>
+<p><strong>Nível 5:</strong> Mestre dos Ossos – Magia “<strong>[Órgãos Sombrios](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,%C3%93rg%C3%A3os%20sombrios,-Tenebris%20organa)<strong>”. Aumenta dano físico em +2 (1x por combate, 3 de sanidade).</p>
+<p><strong>Nível 9:</strong> Destruidor de Corpos – +2 de dano e +1 em resistência a cada ataque com partes corporais.</p>
+<p><strong>Nível 13:</strong> Arauto da Carne Profana – +2 em Preservação e +1 em Defesa ao atacar com partes corporais.</p>
+<p><strong>Nível 16:</strong> Ceifador dos Mortos-Vivos – +1d6 de dano com órgãos e imunidade a paralisia.</p>
+<p><strong>Nível 20:</strong> Impacto Demolidor – “Esmagamento Cadavérico”: +3d8 de dano e ignora armadura (6 de sanidade).</p>
+<p><strong>Nível 22:</strong> Guerreiro das Sombras Corpóreas – “Fúria dos Ossos”: +1d12 de dano corpo a corpo por 1 turno.</p>
+<p><strong>Nível 25:</strong> Avatar da Destruição Cadavérica – “Desmembramento Fatal”: ataque devastador com sangramento de 2d10 por 3 turnos (2 de especial).</p>
+`
+,      "movimento_pass": 3.5
     },
     "Colosso": { 
       "vidaPorNivel": 16,

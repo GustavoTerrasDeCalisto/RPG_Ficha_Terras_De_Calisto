@@ -889,7 +889,7 @@ bonusTexto_3: `
 <p><em>"Especialista em combate corpo a corpo, utilizando partes do corpo como armas e habilidades de destruição visceral."</em></p>
 <p><strong>Nível 1:</strong> Guerreiro de Ossos – Cada órgão coletado dá +1 em ataques corpo a corpo. Passiva: "<strong>[Dilacera e Atacar](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Dilacera%20e%20atacar,-Lacrimis%20et%20impetus)</strong>".</p>
 <p><strong>Nível 3:</strong> Punhos Macabros – +1 em Preservação e +1d4 de dano com partes do corpo.</p>
-<p><strong>Nível 5:</strong> Mestre dos Ossos – Magia “<strong>[Órgãos Sombrios](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,%C3%93rg%C3%A3os%20sombrios,-Tenebris%20organa)<strong>”. Aumenta dano físico em +2 (1x por combate, 3 de sanidade).</p>
+<p><strong>Nível 5:</strong> Mestre dos Ossos – Magia “<strong>[Órgãos Sombrios](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,%C3%93rg%C3%A3os%20sombrios,-Tenebris%20organa)</strong>”. Aumenta dano físico em +2 (1x por combate, 3 de sanidade).</p>
 <p><strong>Nível 9:</strong> Destruidor de Corpos – +2 de dano e +1 em resistência a cada ataque com partes corporais.</p>
 <p><strong>Nível 13:</strong> Arauto da Carne Profana – +2 em Preservação e +1 em Defesa ao atacar com partes corporais.</p>
 <p><strong>Nível 16:</strong> Ceifador dos Mortos-Vivos – +1d6 de dano com órgãos e imunidade a paralisia.</p>
@@ -904,85 +904,92 @@ bonusTexto_3: `
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 4,
       "resistencia": "Esmagante",
-      "bonusPass": `
-      Nível 0: Passiva armadura sobrenatural sem custo uma vez por dia.
-      
-      🦾Guardião de Ferro
-Nível 1: Resiliência do Colosso – Resistência contra qualquer dano de cortante e + 1 de armadura.
-Nível 3: Pele de Pedra – Dano de esmagante recebido é reduzido em 2.
-Nível 5: Barreira Implacável – Ganha “Defesa Absoluta”, que pode ser ativada ao custo de 4 de especial. Por 1 turno, bloqueia completamente o próximo ataque.
-Nível 9: Fortificação Permanente – Recebe +1 de armadura enquanto permanecer no mesmo lugar por um turno completo.
-Nível 13: Muralha do Colosso – Com a habilidade “Defesa Profunda”, ao custo de 6 de especial, pode redirecionar 1d12 de dano recebido para uma barreira de energia, protegendo aliados próximos por um turno.
-Nível 16: Resiliência Sobrenatural – Ganha resistência a qualquer ataque de perfurante quando utilizando armadura pesada. Esse efeito é permanente.
-Nível 20: Aegis Sagrada – “Escudo Final”, ao custo de 8 de especial, permite que o Colosso absorva até 2d12 de dano de um ataque direcionado a ele.
-Nível 22: Muralha de Aço Vivo – Ao manter uma postura defensiva, ele pode bloquear um ataque de outro alvo a aliados por turno e ainda ganha +2 em armadura ao bloquear.
-Nível 25: Guardião Inquebrável – Com a habilidade “Proteção Ancestral”, ao custo de 12 de especial, pode negar totalmente o dano de um ataque e refletir 1d10 de dano de volta ao atacante, tornando-o uma barreira quase invulnerável.
-
-💪Dominador
-Nível 1: Força Inigualável – Recebe +2 em testes de Brutalidade e para testes de agarrão e empurrão, aumentando sua capacidade de controlar inimigos diretamente. Cada sucesso concede 1 ponto temporário de especial.
-Nível 3: Domínio de Impacto – Causa +2 de dano esmagante em ataques ao agarrar ou empurrar inimigos.
-Nível 5: Investida Destruidora – Ganha “Investida do Colosso”, ao custo de 4 de especial, que permite empurrar um inimigo a até 5 metros de distância, causando 1d4 de dano de esmagante.
-Nível 9: Agarrão Sobrenatural – Recebe +2 em Brutalidade ao manter um inimigo agarrado, o que o ajuda a manter o controle sobre o oponente.
-Nível 13: Golpe Desestabilizador – Com o ataque “Confusão Brutal”, ao custo de 2 de especial, pode causar confusão no oponente, aplicando por 1 turno.
-Nível 16: Presença Imponente – Ganha um bônus de +3 em dano quando empurrar ou arrastar oponentes, sendo quase impossível de ser desafiado.
-Nível 20: Força dos Antigos – Ganha “Força Ancestral”, ao custo de 8 de especial, que concede +4 em Brutalidade por um turno e permite arrastar um inimigo por até 5 metros, esmagando-o no chão.
-Nível 22: Poder de Controle Total – Ao empurrar um inimigo, pode realizar um ataque adicional no mesmo turno, concedendo controle máximo do campo.
-Nível 25: Sufocamento Final – Com a habilidade “Agarre Inescapável”, ao custo de 12 de especial, pode imobilizar completamente o alvo por 1 turno e causar 3d12 de dano, finalizando o oponente.
-
-👑Vingança ao Rei
-Nível 1: Postura de Vingança – Recebe +2 de armadura ao bloquear ataques corpo a corpo e Libera a passiva “Vingança“, sem custo uma vez por combate.
-Nível 3: Retaliação Agressiva – Causa +2 de dano em ataques de curto alcance em resposta a ataques recebidos.
-Nível 5: Escudo Defensivo – Ganha “Escudo Contra Golpes”, ao custo de 8 de especial, que permite bloquear o próximo ataque e, em seguida, contra-atacar o inimigo com um ataque completo.
-Nível 9: Firmeza Sobrenatural – Recebe +3 em Brutalidade ao resistir a tentativas de empurrão e agarrões, tornando-se uma presença difícil de derrubar.
-Nível 13: Contragolpe Devastador – “Destruição Reflexa”, ao custo de 12 de especial, permite realizar um ataque poderoso em resposta a qualquer ataque falho de um oponente, causando o dobro do dano normal.
-Nível 16: Reflexo de Ferro – Recebe +4 de dano em contra-ataques realizados em resposta a um ataque corpo a corpo.
-Nível 20: Braço da Retaliação – Ganha “Justiça Implacável”, ao custo de 13 de especial, que permite bloquear completamente o próximo ataque de um inimigo e devolvê-lo com um contra-ataque poderoso.
-Nível 22: Reflexo Sobrenatural – permite somar o bônus de agilidade em contra-ataques, permitindo realizar um ataque adicional a cada vez que for atacado.
-Nível 25: Golpe de Vingança Suprema – Com a habilidade “Juízo do Colosso”, ao custo de 18 de especial, realiza um contra-ataque massivo que causa 4d10 de dano de extra ao atacante, derrubando-o no chão.`,
-      "movimento_pass": 3.5
+     "bonusPass": `
+<p><strong>Nível 0:</strong> Passiva <strong>[Armadura Sobrenatural](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Armadura%20sobrenatural)</strong> sem custo uma vez por dia.</p>
+`,
+"bonustitulo_1": `<p>🦾<strong>Guardião de Ferro</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Nível 1:</strong> Resiliência do Colosso – Resistência contra dano cortante e +1 de armadura.</p>
+<p><strong>Nível 3:</strong> Pele de Pedra – Reduz dano de esmagamento em 2.</p>
+<p><strong>Nível 5:</strong> Barreira Implacável – “Defesa Absoluta”: bloqueia totalmente o próximo ataque (4 de especial).</p>
+<p><strong>Nível 9:</strong> Fortificação Permanente – +1 de armadura ao permanecer parado por 1 turno.</p>
+<p><strong>Nível 13:</strong> Muralha do Colosso – “Defesa Profunda”: redireciona 1d12 de dano para proteger aliados (6 de especial).</p>
+<p><strong>Nível 16:</strong> Resiliência Sobrenatural – Resistência permanente a perfuração ao usar armadura pesada.</p>
+<p><strong>Nível 20:</strong> Aegis Sagrada – “Escudo Final”: absorve até 2d12 de dano (8 de especial).</p>
+<p><strong>Nível 22:</strong> Muralha de Aço Vivo – Bloqueia ataques contra aliados 1x por turno e ganha +2 em armadura ao bloquear.</p>
+<p><strong>Nível 25:</strong> Guardião Inquebrável – “Proteção Ancestral”: nega o dano de um ataque e reflete 1d10 de volta (12 de especial).</p>
+`,
+"bonustitulo_2": `<p>💪<strong>Dominador</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Nível 1:</strong> Força Inigualável – +2 em Brutalidade e agarrões; cada sucesso gera 1 especial temporário.</p>
+<p><strong>Nível 3:</strong> Domínio de Impacto – +2 de dano esmagante ao empurrar ou agarrar.</p>
+<p><strong>Nível 5:</strong> Investida Destruidora – “Investida do Colosso”: empurra inimigo 5m e causa 1d4 (4 de especial).</p>
+<p><strong>Nível 9:</strong> Agarrão Sobrenatural – +2 em Brutalidade ao manter inimigo agarrado.</p>
+<p><strong>Nível 13:</strong> Golpe Desestabilizador – “Confusão Brutal”: causa confusão por 1 turno (2 de especial).</p>
+<p><strong>Nível 16:</strong> Presença Imponente – +3 de dano ao empurrar ou arrastar oponentes.</p>
+<p><strong>Nível 20:</strong> Força dos Antigos – “Força Ancestral”: +4 em Brutalidade e arrasta inimigo 5m (8 de especial).</p>
+<p><strong>Nível 22:</strong> Poder de Controle Total – Ao empurrar um inimigo, realiza um ataque adicional no mesmo turno.</p>
+<p><strong>Nível 25:</strong> Sufocamento Final – “Agarre Inescapável”: imobiliza e causa 3d12 de dano (12 de especial).</p>
+`,
+"bonustitulo_3": `<p>👑<strong>Vingança ao Rei</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Nível 1:</strong> Postura de Vingança – +2 de armadura ao bloquear corpo a corpo. Passiva “[Vingança](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Vingan%C3%A7a,-Vindicta)” 1x por combate.</p>
+<p><strong>Nível 3:</strong> Retaliação Agressiva – +2 de dano em resposta a ataques recebidos.</p>
+<p><strong>Nível 5:</strong> Escudo Defensivo – “Escudo Contra Golpes”: bloqueia ataque e revida com ataque completo (8 de especial).</p>
+<p><strong>Nível 9:</strong> Firmeza Sobrenatural – +3 em Brutalidade contra empurrões e agarrões.</p>
+<p><strong>Nível 13:</strong> Contragolpe Devastador – “Destruição Reflexa”: causa o dobro do dano em resposta a ataque falho (12 de especial).</p>
+<p><strong>Nível 16:</strong> Reflexo de Ferro – +4 de dano em contra-ataques corpo a corpo.</p>
+<p><strong>Nível 20:</strong> Braço da Retaliação – “Justiça Implacável”: bloqueia e devolve ataque poderoso (13 de especial).</p>
+<p><strong>Nível 22:</strong> Reflexo Sobrenatural – Usa bônus de Agilidade em contra-ataques e pode revidar a cada vez que for atacado.</p>
+<p><strong>Nível 25:</strong> Golpe de Vingança Suprema – “Juízo do Colosso”: 4d10 de dano extra no contra-ataque e derruba o inimigo (18 de especial).</p>
+`
+,     "movimento_pass": 3.5
     },
     "Conjurador": { 
       "vidaPorNivel": 10,
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Distorção",
-      "bonusPass": `
-      Nível 0: Passivas e Magias têm custo reduzido baseado em 1d6, valido por combate.
-      
-      ⚔️Espadachim Arcano
-Nível 1: Lampejo Arcano – Pode conjurar magia com sua espada, +2 em ataques corpo a corpo quando canaliza magia através da espada.
-Nível 3: Corte Espectral – Libera a habilidade “Aura Manifestada” e permite uma investida rápida de 6m que causa 3d6 de dano e derruba o alvo. (3 especial)
-Nível 5: Discípulo do Raio Fendido – Aprenda duas magias de nível 1 a 2 do tipo Laser; ganhe +1 em Conexão ao conjurar com a espada.
-Nível 9: Plasma Pulsante – Corte corpo a corpo com dano de plasma, causando 2d8 adicional de dano de Plasma por dois turnos consecutivos (custo: 3 de especial).
-Nível 13: Golpe Espiritual – Um ataque imbuído de aura que, ao acertar, reduz em 3 a armadura de quem atinge (custo: 4 de especial).
-Nível 16: Manifesto dos Sentinelas Invisíveis – Aprenda duas magias de nível 2 a 3 do tipo Aura, e pode conjurar uma magia que tenha desbloqueado uma vez ao dia sem custo.
-Nível 20: Lâmina da Extinção – Aprenda duas magia de nível 3 a 4 do tipo Plasma e ganha +2 em testes de Conexão ao conjurar por uma espada.
-Nível 22: Corte da Condenação – Aprenda duas magias de nível 4 a 5 do tipo Morte, Golpe final com dano de aura ou plasma, causando 2d10 de dano ao alvo e impedindo-o de se curar por um turno.
-Nível 25: Assalto Arcano – Aprenda uma magia de nível 6 do tipo Plasma, Laser, Aura ou morte”. Uma vez por combate, realize três ataques com espada, cada um com dano adicional de 1d12 em Morte, laser, aura ou plasma.
-
-👻Invocador das Sombras
-Nível 1: Sombras Profundas – +2 em testes de Conexão e Libertação para conjurar magias de escuridão ou alma.
-Nível 3: Véu da Distopia – Passiva “Sombra da Distopia” é liberada, permitindo ocultação em áreas de baixa luz, dificultando a percepção inimiga.
-Nível 5: Golpe da Alma Perdida – Concede um ataque corpo a corpo que causa +4d6 de dano de alma (custo: 2 de especial).
-Nível 9: Chamado das Trevas – Ganha +2 em Conexão e Libertação para conjurar magias de escuridão em combate.
-Nível 13: Laço Obscuro – Encanta o alvo, reduzindo sua armadura em 2 por dois turnos (custo: 3 de especial).
-Nível 16: Passagem Oculta – Torna-se intangível por dois turno, evitando qualquer dano físico (custo: 6 de especial).
-Nível 20: Maestria Sombria – Ganha três magias de nível 1 a 4 da linha de escuridão ou alma que pode ser usada uma vez ao dia sem custo.
-Nível 22: Profundezas da Alma – Pode absorver +3d6 de sanidade ao causar dano com habilidades de alma ou escuridão. (passivo)
-Nível 25: Avanço da Penumbra – Uma vez por combate, invoca um véu sombrio em volta, recebendo +4d8 de armadura temporária por 10 turnos e causando Pavor nos inimigos em 30m.
-
-🌪️Conjuração Caótica
-Nível 1: Estudo Elemental – +2 em testes com magias de nível 1 a 2 dos elementos de fogo, gelo, água e eletricidade.
-Nível 3: Chama Persistente – Concede a habilidade de lançar uma rajada de fogo contínua, que aplica 2d8 de dano de fogo ao longo de dois turnos. (6 de especial, 2m, teste de agilidade)
-Nível 5: Toque Gélido – Libera uma aura de gelo ao seu redor que reduz a velocidade dos inimigos próximos por um turno, metade de movimento.
-Nível 9: Tempestade Condutora – Invoca uma tempestade que causa 1d12 de dano elétrico a inimigos em um raio de três metros (4 de especial).
-Nível 13: Escudo caótico – Conjura um escudo de água que reduz todos os danos de Caos, fica Resistente por dois turnos.
-Nível 16: Maestria Elemental – Libera três magias de nível 1 a 4 dos elementos fogo, gelo, água ou eletricidade para conjurar uma vez ao dia sem custo de sanidade, e fica liberado.
-Nível 20: Vórtice de Gelo – Invoca um vórtice que empurra os inimigos para trás 3m e causa 3d8 de dano de gelo (3 de especial).
-Nível 22: Caos Elemental – Quando lança uma magia de dano, rola +1d8 de dano adicional em fogo, gelo, água ou eletricidade.
-Nível 25: Mestre Elemental
-Libera quatro magias de nível 1 a 5 dos elementos fogo, gelo, água ou eletricidade e pode conjurar uma delas uma vez por dia sem custo.`,
-      "movimento_pass": 4.5
+     "bonusPass": `
+<p><strong>Nível 0:</strong> <strong>Passivas</strong> e <strong>Magias</strong> têm custo reduzido baseado em 1d6, válido por combate.</p>
+`,
+"bonustitulo_1": `<p>⚔️<strong>Espadachim Arcano</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Nível 1:</strong> <strong>Lampejo Arcano</strong> – Conjura magia pela espada. +2 em ataques corpo a corpo ao canalizar.</p>
+<p><strong>Nível 3:</strong> <strong>Corte Espectral</strong> – “[Aura Manifestada](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Preserva%C3%A7%C3%A3o-,Aura%20Manifestada,-Manifestare%20Auram)” + investida de 6m com 3d6 de dano e derruba (3 de especial).</p>
+<p><strong>Nível 5:</strong> <strong>Discípulo do Raio Fendido</strong> – Aprende 2 magias nível 1–2 do tipo <strong>[Laser](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Laser%20%E2%80%93%20Disc%C3%ADpulos%20do%20Raio%20Fendido,-Hierarquias%20de%20Disc%C3%ADpulos)</strong>; +1 em Conexão com espada.</p>
+<p><strong>Nível 9:</strong> <strong>Plasma Pulsante</strong> – Corte com 2d8 adicionais de <strong>Plasma</strong> por 2 turnos (3 de especial).</p>
+<p><strong>Nível 13:</strong> <strong>Golpe Espiritual</strong> – Reduz 3 de armadura no acerto (4 de especial).</p>
+<p><strong>Nível 16:</strong> <strong>Manifesto dos Sentinelas Invisíveis</strong> – Aprende 2 magias nível 2–3 do tipo <strong>[Aura](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Aura%20%E2%80%93%20Manifesto%20dos%20Sentinelas%20Invis%C3%ADveis,-Hierarquias%20de%20Manifesto)</strong>, pode conjurar 1 delas 1x/dia sem custo.</p>
+<p><strong>Nível 20:</strong> <strong>Lâmina da Extinção</strong> – Aprende 2 magias nível 3–4 do tipo <strong>[Plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Plasma%20%E2%80%93%20Conclave%20da%20Conex%C3%A3o%20Irreal,-Hierarquias%20de%20Conclave)</strong>, +2 em Conexão com espada.</p>
+<p><strong>Nível 22:</strong> <strong>Corte da Condenação</strong> – Aprende 2 magias nível 4–5 do tipo <strong>[Morte](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Morte%20%E2%80%93%20Culto%20da%20Morte,-Hierarquias%20de%20Culto)</strong>, golpe final causa 2d10 e impede cura por 1 turno.</p>
+<p><strong>Nível 25:</strong> <strong>Assalto Arcano</strong> – Aprende 1 magia nível 6 (<strong>Plasma</strong>, <strong>Laser</strong>, <strong>Aura</strong> ou <strong>Morte</strong>), realiza 3 ataques com +1d12 de dano mágico.</p>
+`,
+"bonustitulo_2": `<p>👻<strong>Invocador das Sombras</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Nível 1:</strong> <strong>Sombras Profundas</strong> – +2 em Conexão e Libertação para magias de <strong>Escuridão</strong> ou <strong>Alma</strong>.</p>
+<p><strong>Nível 3:</strong> <strong>Véu da Distopia</strong> – Passiva “[Sombra da Distopia](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Nenhum-,Sombra%20da%20Distopia,-Umbra%20Dystopia)” para ocultação em baixa luz.</p>
+<p><strong>Nível 5:</strong> <strong>Golpe da Alma Perdida</strong> – Ataque causa +4d6 de dano <strong>Alma</strong> (2 de especial).</p>
+<p><strong>Nível 9:</strong> <strong>Chamado das Trevas</strong> – +2 em Conexão e Libertação para <strong>Escuridão</strong>.</p>
+<p><strong>Nível 13:</strong> <strong>Laço Obscuro</strong> – Reduz armadura do alvo em 2 por 2 turnos (3 de especial).</p>
+<p><strong>Nível 16:</strong> <strong>Passagem Oculta</strong> – Intangível por 2 turnos, imune a dano físico (6 de especial).</p>
+<p><strong>Nível 20:</strong> <strong>Maestria Sombria</strong> – Ganha 3 magias nível 1–4 de <strong>[Escuridão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos)</strong> ou <strong>[Alma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es)</strong> (1x/dia, sem custo).</p>
+<p><strong>Nível 22:</strong> <strong>Profundezas da Alma</strong> – Absorve +3d6 de sanidade com habilidades de <strong>Alma</strong> ou <strong>Escuridão</strong> (passivo).</p>
+<p><strong>Nível 25:</strong> <strong>Avanço da Penumbra</strong> – Véu sombrio: +4d8 de armadura por 10 turnos e Pavor em inimigos (1x por combate).</p>
+`,
+"bonustitulo_3": `<p>🌪️<strong>Conjuração Caótica</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Nível 1:</strong> <strong>Estudo Elemental</strong> – +2 em magias de nível 1–2 dos elementos: <strong>[Fogo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Fogo%20%E2%80%93%20Chamas%20Eternas,-Hierarquias%20de%20Chamas)</strong>, <strong>[Gelo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Gelo,-%E2%80%93%20Punhos%20de%20Inverno)</strong>, <strong>[Água](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua,-%E2%80%93%20Mestres%20da%20Correnteza)</strong>, <strong>[Eletricidade](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Eletricidade%20%E2%80%93%20Seguidores%20de%20Thorvill,-Hierarquias%20de%20Seguidores)</strong>.</p>
+<p><strong>Nível 3:</strong> <strong>Chama Persistente</strong> – Rajada causa 2d8 de dano de <strong>Fogo</strong> por 2 turnos (6 de especial).</p>
+<p><strong>Nível 5:</strong> <strong>Toque Gélido</strong> – Aura de <strong>Gelo</strong> reduz movimento inimigo por 1 turno.</p>
+<p><strong>Nível 9:</strong> <strong>Tempestade Condutora</strong> – Tempestade causa 1d12 de dano de <strong>Eletricidade</strong> em área (4 de especial).</p>
+<p><strong>Nível 13:</strong> <strong>Escudo Caótico</strong> – <strong>Água</strong> protege contra dano de Caos por 2 turnos.</p>
+<p><strong>Nível 16:</strong> <strong>Maestria Elemental</strong> – Ganha 3 magias nível 1–4 de <strong>[Fogo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Fogo%20%E2%80%93%20Chamas%20Eternas,-Hierarquias%20de%20Chamas)</strong>, <strong>[Gelo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Gelo,-%E2%80%93%20Punhos%20de%20Inverno)</strong>, <strong>[Água](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua,-%E2%80%93%20Mestres%20da%20Correnteza)</strong>, ou <strong>[Eletricidade](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Eletricidade%20%E2%80%93%20Seguidores%20de%20Thorvill,-Hierarquias%20de%20Seguidores)</strong> (1x/dia sem custo).</p>
+<p><strong>Nível 20:</strong> <strong>Vórtice de Gelo</strong> – Empurra inimigos 3m e causa 3d8 de <strong>Gelo</strong> (3 de especial).</p>
+<p><strong>Nível 22:</strong> <strong>Caos Elemental</strong> – Magias de dano ganham +1d8 adicional de <strong>Fogo</strong>, <strong>Gelo</strong>, <strong>Água</strong>, ou <strong>Eletricidade</strong>.</p>
+<p><strong>Nível 25:</strong> <strong>Mestre Elemental</strong> – Libera 4 magias de nível 1–5 dos [elementos](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Caos,-Ordem%20do%20Caos) e pode usar uma 1x/dia sem custo.</p>
+`
+,    "movimento_pass": 4.5
     },
     "Costeiro": { 
       "vidaPorNivel": 12,

@@ -1785,87 +1785,102 @@ a:active {
   justify-content: start;
 
 }
+/* Cartões dos itens */
 .item-card {
-  width: 140px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  text-align: center !important;
-  background-color: #fdfdfd !important;
-  border: 1px solid #444 !important;
-  border-radius: 8px !important;
-  padding: 10px !important;
-  font-size: 0.8em !important;
-  cursor: pointer !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-  overflow: hidden !important;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #fdfdfd;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Esconde conteúdo que ultrapassar */
 }
 .item-card .item-title {
-  max-height: 40px !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+/* Hover nos cartões */
 .item-card:hover {
-  transform: scale(1.05) !important;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+/* Imagem dos itens */
 .item-card img {
-  width: 100% !important;
-  height: auto !important;
-  border-radius: 5px !important;
+  width: 100%; /* Mantém a largura das imagens */
+  height: auto;
+  border-radius: 5px;
 }
+
+/* Imagem grande da descrição */
 #itemDescImage {
-  width: 250px !important;
-  max-width: 100% !important;
-  height: auto !important;
-  margin-top: 15px !important;
-  margin-bottom: 8px !important;
-  border-radius: 8px !important;
-  flex-shrink: 0 !important;
+  width: 250px;
+  max-width: 100%; /* responsivo para não ultrapassar a largura do popup */
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  flex-shrink: 0; /* evita encolher */
 }
+
+/* Popup escondido */
 .popup.hidden,
 .hidden {
   display: none !important;
 }
+
+/* Popup de descrição dos itens */
+
 #itemDescPopup {
-  position: fixed !important;
-  top: 5vh !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  background-color: #1e1e1e !important;
-  border: 2px solid #444 !important;
+  position: fixed;
+  top: 5vh;                  /* Ajuste para começar mais próximo do topo da viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e1e1e;
+  border: 2px solid #444;
   box-shadow:
     rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
-  z-index: 10001 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  border-radius: 12px !important;
-  width: 90% !important;
-  max-width: 500px !important;
-  max-height: 95vh !important;
-  min-width: 300px !important;
-  min-height: 200px !important;
-  overflow-y: auto !important;
-  box-sizing: border-box !important;
-  overflow-x: hidden !important;
-  justify-content: start !important;
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  width: 90%;                /* largura responsiva para ocupar a tela com margem */
+  max-width: 500px;          /* limita a largura máxima */
+  max-height: 95vh;          /* limita a altura para 80% da viewport */
+  min-width: 300px;          /* largura mínima para melhor usabilidade */
+  min-height: 200px;         /* altura mínima para evitar popups muito pequenos */
+  overflow-y: auto;          /* habilita rolagem vertical quando necessário */
+  box-sizing: border-box;    /* inclui padding e borda no cálculo de largura/altura */
+  overflow-x: hidden;        /* evita overflow horizontal */
+  justify-content: start;
+
 }
 #itemDescTitle {
-  margin-bottom: 15px !important;
-  font-size: 1.8em !important;
-  font-weight: bold !important;
-  color: #f0f0f0 !important;
+  
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f0f0f0;
 }
+
 #itemDescText {
-  margin-bottom: 15px !important;
-  font-size: 1em !important;
-  text-align: center !important;
-  color: #cccccc !important;
+  margin-bottom: 15px;
+  font-size: 1em;
+  text-align: center;
+  color: #cccccc;
 }
 
 

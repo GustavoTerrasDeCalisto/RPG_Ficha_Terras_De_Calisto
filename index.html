@@ -952,6 +952,41 @@ Bonus por Níveis Do Personagem  </h3>
       <li class="bonus4-list-item">+2 em <strong>Armadura</strong></li>
       <li class="bonus4-list-item">Libera uma <strong>Magia</strong> (nível 1)</li>
     </ul>
+
+    <h4>Escolha sua especialização principal</h4>
+<p>Sua especialização principal não pode ser mudada.</p>
+<section>
+
+    <div class="bonus-subsection">
+      <h3 class="bonusTexto1 especializacao_titulo1" onclick="alternarTextoBonus(1)" id="tituloBonus1"></h3>
+      <div class="bonusTexto1 bonus-texto" id="textoBonus1" style="display:none;"></div>
+    </div>
+
+    <div class="bonus-subsection">
+      <h3 class="especializacao_titulo2" onclick="alternarTextoBonus(2)" id="tituloBonus2"></h3>
+      <div class="bonusTexto2 bonus-texto" id="textoBonus2" style="display:none;"></div>
+    </div>
+
+    <div class="bonus-subsection">
+      <h3 class="especializacao_titulo3" onclick="alternarTextoBonus(3)" id="tituloBonus3"></h3>
+      <div class="bonusTexto3 bonus-texto" id="textoBonus3" style="display:none;"></div>
+    </div>
+
+  
+</section>
+    
+<div id="popupOverlay" class="popup-overlay" style="display: none;"></div>
+
+<!-- Popup central -->
+<div id="popupEspecializacoes" class="popup-especializacoes" style="display: none;">
+  <!-- Botão de fechar interno -->
+  <button class="fechar-popup" onclick="fecharPopupEspecializacoes()">✕</button>
+  <h2>Especializações por Passado</h2>
+  <div class="especializacoes-grid" id="especializacoesContainer">
+    <!-- Conteúdo JS -->
+  </div>
+</div>
+
     <p class="bonus4-paragraph"><strong>Nível 2:</strong> Escolha um atributo entre <strong>Brutalidade, Agilidade, Determinação, Preservação, Libertação ou Conexão</strong>. Você recebe <strong>+2 em testes</strong> com o atributo escolhido.</p>
 <p class="bonus4-paragraph"><strong>Nível 3:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
 
@@ -975,13 +1010,23 @@ Bonus por Níveis Do Personagem  </h3>
     <p class="bonus4-paragraph"><strong>Nível 7:</strong> Escolha uma habilidade de nível 1 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
 
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
     <p class="bonus4-paragraph"><strong>Nível 8:</strong> Escolha uma habilidade de nível 3 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+    
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
 <p class="bonus4-paragraph"><strong>Nível 9:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
     <p class="bonus4-paragraph"><strong>Nível 10:</strong> Escolha sua <strong>Vocação:</strong> Fé, Poder, Desconhecido ou Caos. Ganha <strong>2 resistências</strong> a tipos de dano ligados ao elemento escolhido.</p>
 
     <p class="bonus4-paragraph"><strong>Nível 11:</strong> Escolha uma habilidade de nível 5 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
 
     <p class="bonus4-paragraph"><strong>Nível 12:</strong> <strong>Despertar da Raça.</strong> Recebe +2 em testes com <strong>Talentos ou Passivas raciais</strong>.</p>
 <p class="bonus4-paragraph"><strong>Nível 13:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
@@ -994,9 +1039,16 @@ Bonus por Níveis Do Personagem  </h3>
 
     <p class="bonus4-paragraph"><strong>Nível 15:</strong> Escolha uma habilidade de nível 9 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+    
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
 <p class="bonus4-paragraph"><strong>Nível 16:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
     <p class="bonus4-paragraph"><strong>Nível 17:</strong> Escolha uma habilidade de nível 13 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
 
     <p class="bonus4-paragraph"><strong>Nível 18:</strong> Escolha uma entre 3 opções:</p>
     <ul class="bonus4-paragraph">
@@ -1007,12 +1059,23 @@ Bonus por Níveis Do Personagem  </h3>
 
     <p class="bonus4-paragraph"><strong>Nível 19:</strong> Escolha uma habilidade de nível 16 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+    
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
 <p class="bonus4-paragraph"><strong>Nível 20:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
     <p class="bonus4-paragraph"><strong>Nível 21:</strong> Escolha uma habilidade de nível 20 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+    
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
 <p class="bonus4-paragraph"><strong>Nível 22:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
     <p class="bonus4-paragraph"><strong>Nível 23:</strong> Escolha uma habilidade de nível 22 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
 
     <p class="bonus4-paragraph"><strong>Nível 24:</strong> Escolha uma entre 3 opções:</p>
     <ul class="bonus4-paragraph">
@@ -1031,11 +1094,20 @@ Bonus por Níveis Do Personagem  </h3>
     <p class="bonus4-paragraph"><strong>Nível 27:</strong> Escolha uma habilidade de nível 25 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
 
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
     <p class="bonus4-paragraph"><strong>Nível 28:</strong> Escolha uma habilidade de nível 1, 3, 5 ou 9 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
 
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+
     <p class="bonus4-paragraph"><strong>Nível 29:</strong> Escolha uma habilidade de nível 13, 16, 20 ou 22 de    <strong>
     outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+
+<!-- Botão que abre o popup -->
+<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
 
     <p class="bonus4-paragraph"><strong>Nível 30:</strong> Escolha uma entre 3 opções:</p>
     <ul class="bonus4-paragraph">
@@ -1046,27 +1118,7 @@ Bonus por Níveis Do Personagem  </h3>
 
   </div>
 </div>
-<h4>Escolha sua especialização principal</h4>
-<p>Sua especialização principal não pode ser mudada.</p>
-<section>
 
-    <div class="bonus-subsection">
-      <h3 class="bonusTexto1 especializacao_titulo1" onclick="alternarTextoBonus(1)" id="tituloBonus1"></h3>
-      <div class="bonusTexto1 bonus-texto" id="textoBonus1" style="display:none;"></div>
-    </div>
-
-    <div class="bonus-subsection">
-      <h3 class="especializacao_titulo2" onclick="alternarTextoBonus(2)" id="tituloBonus2"></h3>
-      <div class="bonusTexto2 bonus-texto" id="textoBonus2" style="display:none;"></div>
-    </div>
-
-    <div class="bonus-subsection">
-      <h3 class="especializacao_titulo3" onclick="alternarTextoBonus(3)" id="tituloBonus3"></h3>
-      <div class="bonusTexto3 bonus-texto" id="textoBonus3" style="display:none;"></div>
-    </div>
-
-  
-</section>
 
               
                        <!-- Botão para abrir o popup de itens -->

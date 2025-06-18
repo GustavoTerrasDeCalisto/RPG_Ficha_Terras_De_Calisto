@@ -1875,7 +1875,18 @@ a:active {
 .item-tag.classica { background-color: #7c4dff; }
 .item-tag.medieval { background-color: #4e342e; }
 .item-tag.default { background-color: #607d8b; }
-
+.item-card h3 {
+  font-family: 'Cinzel', serif; /* Tipografia com ar de fantasia e nobreza */
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4px;
+}
 /* Imagem grande da descrição */
 #itemDescImage {
   width: 250px;

@@ -1969,7 +1969,7 @@ function alternarTextoBonusPopup(id) {
 
 // Tudo dentro do DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
-  // Clique fora do popup fecha
+  // Fecha popup se clicar fora
   document.getElementById("popupOverlay").addEventListener("click", (event) => {
     const popup = document.getElementById("popupEspecializacoes");
     if (!popup.contains(event.target)) {
@@ -1977,15 +1977,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Botão que abre o popup
-  const botao = document.querySelector(".botao-abrir-especializacoes");
-  if (botao) {
+  // Aqui! pega TODOS os botões com a classe e adiciona evento de clique
+  const botoes = document.querySelectorAll(".botao-abrir-especializacoes");
+  botoes.forEach(botao => {
     botao.addEventListener("click", () => {
       podeAbrirPopup = true;
       abrirPopupEspecializacoes();
       podeAbrirPopup = false;
     });
-  }
+  });
 });
 
 

@@ -1822,6 +1822,60 @@ a:active {
   border-radius: 5px;
 }
 
+.item-tags,
+.damage-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+
+/* Estilo base para cada tag */
+.item-tag,
+.damage-badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  background-color: #666; /* padrão */
+}
+
+/* Cores específicas para item-tag */
+.item-tag.prismatic {
+  background: linear-gradient(45deg, 
+    #ff00cc, #ff9900, #33cc33, #00ccff, #9933ff, #ff00cc
+  );
+  background-size: 400% 400%;
+  color: #fff;
+  font-weight: bold;
+  animation: diamond-glow 3s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* borda leve, opcional */
+}
+
+/* Animação de fundo cintilante */
+@keyframes diamond-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.item-tag.normal { background-color: #999; }
+.item-tag.distancia { background-color: #2a9df4; }
+.item-tag.corpoacorpo { background-color: #b22222; }
+.item-tag.arma { background-color: #444; }
+.item-tag.classica { background-color: #7c4dff; }
+.item-tag.medieval { background-color: #4e342e; }
+.item-tag.default { background-color: #607d8b; }
+
 /* Imagem grande da descrição */
 #itemDescImage {
   width: 250px;

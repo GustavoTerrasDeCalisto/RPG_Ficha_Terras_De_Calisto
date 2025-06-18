@@ -1875,6 +1875,138 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
   
 };
 
+
+
+
+
+
+
+
+
+
+function carregarEspecializacoes(pastData) {
+  const container = document.getElementById("especializacoesContainer");
+  container.innerHTML = '';
+
+  for (const [nomePassado, dados] of Object.entries(pastData)) {
+    const bloco = document.createElement('div');
+    bloco.className = 'passado-bloco';
+
+    const titulo = document.createElement('h3');
+    titulo.className = 'nome-passado';
+    titulo.textContent = nomePassado;
+    bloco.appendChild(titulo);
+
+    for (let i = 1; i <= 3; i++) {
+      const tituloKey = `bonustitulo_${i}`;
+      const textoKey = `bonusTexto_${i}`;
+      const id = nomePassado.replace(/\s+/g, "_") + i; // evita espaço em id
+
+      const sub = document.createElement('div');
+      sub.className = 'bonus-subsection';
+
+      const h4 = document.createElement('h4');
+      h4.innerHTML = dados[tituloKey] || `Especialização ${i}`;
+      h4.id = `esp_tituloBonus${id}`;
+      h4.setAttribute('onclick', `alternarTextoBonusPopup('${id}')`);
+
+      const textoDiv = document.createElement('div');
+      textoDiv.className = 'bonus-texto';
+      textoDiv.id = `esp_textoBonus${id}`;
+      textoDiv.style.display = 'none';
+      textoDiv.innerHTML = formatBonusText(dados[textoKey] || '', 'bonus' + i);
+
+      sub.appendChild(h4);
+      sub.appendChild(textoDiv);
+      bloco.appendChild(sub);
+    }
+
+    container.appendChild(bloco);
+  }
+}
+
+let podeAbrirPopup = false;
+
+function abrirPopupEspecializacoes() {
+  if (!podeAbrirPopup) {
+    console.warn("🔒 Tentativa de abrir popup bloqueada.");
+    return;
+  }
+
+  console.log("✅ Popup aberto corretamente via botão.");
+  document.getElementById("popupOverlay").style.display = "block";
+  document.getElementById("popupEspecializacoes").style.display = "block";
+  carregarEspecializacoes(pastData);
+}
+
+function fecharPopupEspecializacoes() {
+  document.getElementById("popupOverlay").style.display = "none";
+  document.getElementById("popupEspecializacoes").style.display = "none";
+}
+
+function abrirSecaoBonusPassado() {
+  const el = document.getElementById("textoBonus4");
+  if (el) {
+    el.style.display = "block";
+  } else {
+    console.warn("Elemento #textoBonus4 não encontrado ao tentar abrir bônus.");
+  }
+}
+
+function alternarTextoBonus(id) {
+  const el = document.getElementById("textoBonus" + id);
+  if (el) {
+    el.style.display = el.style.display === "none" ? "block" : "none";
+  }
+}
+
+function alternarTextoBonusPopup(id) {
+  const el = document.getElementById("esp_textoBonus" + id);
+  if (el) {
+    el.style.display = el.style.display === "none" ? "block" : "none";
+  }
+}
+
+// Tudo dentro do DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Clique fora do popup fecha
+  document.getElementById("popupOverlay").addEventListener("click", (event) => {
+    const popup = document.getElementById("popupEspecializacoes");
+    if (!popup.contains(event.target)) {
+      fecharPopupEspecializacoes();
+    }
+  });
+
+  // Botão que abre o popup
+  const botao = document.querySelector(".botao-abrir-especializacoes");
+  if (botao) {
+    botao.addEventListener("click", () => {
+      podeAbrirPopup = true;
+      abrirPopupEspecializacoes();
+      podeAbrirPopup = false;
+    });
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
     // 🎲 Dice Popup
     const dicePopup = document.getElementById("dicePopup");

@@ -1898,21 +1898,21 @@ function carregarEspecializacoes(pastData) {
     bloco.appendChild(titulo);
 
     for (let i = 1; i <= 3; i++) {
-      const tituloKey = bonustitulo_${i};
-      const textoKey = bonusTexto_${i};
+      const tituloKey = `bonustitulo_${i}`;
+      const textoKey = `bonusTexto_${i}`;
       const id = nomePassado.replace(/\s+/g, "_") + i; // evita espaço em id
 
       const sub = document.createElement('div');
       sub.className = 'bonus-subsection';
 
       const h4 = document.createElement('h4');
-      h4.innerHTML = dados[tituloKey] || Especialização ${i};
-      h4.id = esp_tituloBonus${id};
-      h4.setAttribute('onclick', alternarTextoBonusPopup('${id}'));
+      h4.innerHTML = dados[tituloKey] || `Especialização ${i}`;
+      h4.id = `esp_tituloBonus${id}`;
+      h4.setAttribute('onclick', `alternarTextoBonusPopup('${id}')`);
 
       const textoDiv = document.createElement('div');
       textoDiv.className = 'bonus-texto';
-      textoDiv.id = esp_textoBonus${id};
+      textoDiv.id = `esp_textoBonus${id}`;
       textoDiv.style.display = 'none';
       textoDiv.innerHTML = formatBonusText(dados[textoKey] || '', 'bonus' + i);
 

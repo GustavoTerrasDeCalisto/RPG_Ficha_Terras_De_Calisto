@@ -1904,11 +1904,14 @@ function carregarEspecializacoes(pastData) {
 
       const sub = document.createElement('div');
       sub.className = 'bonus-subsection';
+      sub.setAttribute('onclick', `alternarTextoBonusPopup('${id}')`);
+      sub.style.cursor = 'pointer';
 
+      // h4 é apenas visual, o clique agora está no "sub"
       const h4 = document.createElement('h4');
-      h4.innerHTML = dados[tituloKey] || `Especialização ${i}`;
+      h4.className = 'especializacao-titulo';
       h4.id = `esp_tituloBonus${id}`;
-      h4.setAttribute('onclick', `alternarTextoBonusPopup('${id}')`);
+      h4.innerHTML = dados[tituloKey] || `Especialização ${i}`;
 
       const textoDiv = document.createElement('div');
       textoDiv.className = 'bonus-texto';

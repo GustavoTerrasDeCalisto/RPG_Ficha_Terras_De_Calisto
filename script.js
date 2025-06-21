@@ -4176,8 +4176,17 @@ function calculateCurrentAttributes() {
   }
 
   attributes.vida += (forLevel * raceData[race].vidaPorNivel.for) + (desLevel * raceData[race].vidaPorNivel.des) + (conLevel * raceData[race].vidaPorNivel.con) -110;
+
+
+// Garante que a vida não seja menor que a vida base da raça
+attributes.vida = Math.max(attributes.vida, raceData[race].vidaBase);
+
   attributes.sanidade += (intLevel * raceData[race].sanidadePorNivel.int) + (sabLevel * raceData[race].sanidadePorNivel.sab) + (carLevel * raceData[race].sanidadePorNivel.car)-30;
-  attributes.especial += level * raceData[race].especialPorNivel + 15; 
+  
+// Garante que a sanidade não seja menor que a sanidade base da raça
+attributes.sanidade = Math.max(attributes.sanidade, raceData[race].sanidadeBase);
+
+attributes.especial += level * raceData[race].especialPorNivel + 15; 
   let valorSubtrair = 0; // Inicializa o valor de subtração
   function atualizarValorSubtrair() {
     valorSubtrair = parseInt(document.getElementById('valor-subtrair').value) || 0;

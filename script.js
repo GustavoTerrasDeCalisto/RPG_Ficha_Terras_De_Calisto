@@ -4465,9 +4465,17 @@ function updateStats() {
   const sanidadePorNivel = pastData[document.getElementById('past').value]?.sanidadePorNivel || 0;
 
   // Calcular a vida e sanidade baseadas no nível
-  const vidaTotal = currentAttributes.vida + (level * vidaPorNivel);
-  const sanidadeTotal = currentAttributes.sanidade + (level * sanidadePorNivel);
+// Calcular a vida e sanidade baseadas no nível
+let vidaTotal = currentAttributes.vida + (level * vidaPorNivel);
+let sanidadeTotal = currentAttributes.sanidade + (level * sanidadePorNivel);
 
+// Reforçar o mínimo garantido da raça
+vidaTotal = Math.max(vidaTotal, raceData[document.getElementById('race').value].vidaBase);
+sanidadeTotal = Math.max(sanidadeTotal, raceData[document.getElementById('race').value].sanidadeBase);
+currentAttributes.especial = Math.max(currentAttributes.especial, raceData[document.getElementById('race').value].especialBase);
+
+
+  
   // Atualizar as visualizações com os valores corrigidos
   document.getElementById('life-view').textContent = vidaTotal;
   document.getElementById('sanity-view').textContent = sanidadeTotal;

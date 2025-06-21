@@ -4187,6 +4187,8 @@ attributes.vida = Math.max(attributes.vida, raceData[race].vidaBase);
 attributes.sanidade = Math.max(attributes.sanidade, raceData[race].sanidadeBase);
 
 attributes.especial += level * raceData[race].especialPorNivel + 15; 
+  // Garante que o especial não seja menor que o especial base da raça
+attributes.especial = Math.max(attributes.especial, raceData[race].especialBase);
   let valorSubtrair = 0; // Inicializa o valor de subtração
   function atualizarValorSubtrair() {
     valorSubtrair = parseInt(document.getElementById('valor-subtrair').value) || 0;

@@ -1577,7 +1577,7 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
         "armaduraPorNivel": 1,
         "resistencia": "Eletricidade",
        bonusPass: `
-<p><strong>Nível 0:</strong> Magias de atributo Preservação custam metade, libera uma magia de nível 1 que use Preservação como teste. +2 de movimento.</p>
+<p><strong>Nível 0:</strong> Magias de atributo Preservação custam metade, libera uma [magia](https://terrasdecalistoficha.wordpress.com/magias/) de nível 1 que use Preservação como teste. +2 de movimento.</p>
 `,
 
 bonustitulo_1: `<p>🌪️<strong>Condutor do Vórtice Caótico</strong></p>`,

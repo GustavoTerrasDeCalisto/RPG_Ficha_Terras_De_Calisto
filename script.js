@@ -997,125 +997,137 @@ bonusTexto_3: `
       "armaduraPorNivel": 3,
       "resistencia": "Água",
       "bonusPass": `
-      Nível 0: +1d6 com porretes ou katanas, +2 armadura e não pode ser Desarmado.
-      
-      🌊Marés Cortantes
-Nível 1: Toque das Ondas – +1 em teste de ataques com katana; adiciona 1d4 de dano água (1 de especial).
-Nível 3: Redemoinho Fluido – Ao acertar dois ataques consecutivos, ganha +1 em teste no próximo ataque.
-Nível 5: Fúria das Marés – Por 2 de especial, adiciona 1d8 de dano de água em uma arma a sua escolha por dois turnos.
-Nível 9: Correnteza Precisa – Recebe +1 em teste de esquiva e +2 em ataques com katana ao usar dano de água.
-Nível 13: Maré Inquebrável – Por 3 de especial, reduz o dano recebido em 50% por um turno.
-Nível 16: Pressão Submersa – Ataques com katana causa Debilitado em alvos sem resistência à água.
-Nível 20: Ritmo da Maré – Acertar três ataques consecutivos concede um ataque adicional (passivo).
-Nível 22: Corte Torrencial – Dano de água aumenta em +1d12 por três turnos (3 de especial).
-Nível 25: Último Suspiro da Correnteza – Uma vez por combate, realiza uma ação extra com +4d10 de dano de água.
-
-🌀Força das Marés
-Nível 1: Golpe Contundente – +3 em ataques com porrete; 1d4 de dano esmagante (1 de especial).
-Nível 3: Ataque de Oportunidade – Reação: Quando uma criatura sai do seu alcance (1m), você pode gastar sua ação livre para fazer um ataque corpo a corpo contra ela (+2 em teste de acerto, alvo teste de agilidade).
-Nível 5: Vingança das Ondas – Por 2 de especial, adiciona 1d12 de dano esmagante em ataques de reação.
-Nível 9: Rastro de Destroços – Acertar oponente em movimento concede +5 em dano esmagante por dois turnos.
-Nível 13: Defesa das Marés – Se um inimigo passar por você até (3m de distância) sem realizar um ataque, você pode reagir com um golpe, causando +3d8 de dano esmagador (custa 3 de Especial, alvo teste de agilidade).
-Nível 16: Investida da Correnteza – Ganha uma ação completa adicional para atacar com golpe esmagante que causa 4d8 e deixa o alvo Caído “derrubado” (5 de especial, alvo teste de agilidade).
-Nível 20: Muralha Intransponível – Ignorado “caso não atacado por um turno” por mais de um inimigo, recebe +2 em armadura e +2 em dano de água em reações.
-Nível 22: Impacto das Profundezas – Ataque livre extra ao derrubar um inimigo.
-Nível 25: Força Brutal da Maré – Uma vez por combate, realiza uma ação completa extra e um ataque reativo com +3d10 de dano.
-
-💧Correnteza Mística – Hidromante
-Nível 1: Iniciado da Maré – Ganha uma magia de água de nível 1.
-Nível 3: Tecelão das Correntes – Ganha uma magia de água de nível 2 e +1 em testes de preservação para magias de água.
-Nível 5: Senhor dos Rios – Ganha uma magia de água de nível 3; recupera 2 de sanidade ao acertar ataque aquático.
-Nível 9: Guardião dos Oceanos – Ganha uma magia de água de nível 4 e adiciona 1d8 de dano de água a qualquer magia (2 de sanidade).
-Nível 13: Profeta das Profundezas – Ganha uma magia de água de nível 5 e +2 em armadura por 5 turnos ao conjurar magia de água.
-Nível 16: Aura da Hidrocinese – Concede +3 em danos com magia e reduz o custo de sanidade das magias em 2 por três turnos (Custo 6 especial).
-Nível 20: Chamada do Abismo – Recupera 1d12 de sanidade ao final do combate se uma magia de água foi usada.
-Nível 22: Guardião das Marés – Recebe-2 de danos contra ataques elementais (apenas para fé, desconhecido e Poder) por 2 turnos ao conjurar magias de água.
-Nível 25: Mestre da Correnteza – Duas vezes por combate, lança qualquer magia de água de até nível 5 sem custo de sanidade.`,
-      "movimento_pass": 4.5
+<p><strong>Nível 0:</strong> +1d6 com porretes ou katanas, +2 de armadura e não pode ser Desarmado.</p>
+`,
+"bonustitulo_1": `<p>🌊<strong>Marés Cortantes</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Nível 1:</strong> Toque das Ondas – +1 em ataque com katana; +1d4 de dano de água (1 de especial).</p>
+<p><strong>Nível 3:</strong> Redemoinho Fluido – Ao acertar dois ataques consecutivos, +1 no próximo ataque.</p>
+<p><strong>Nível 5:</strong> Fúria das Marés – Adiciona +1d8 de dano de água em arma por dois turnos (2 de especial).</p>
+<p><strong>Nível 9:</strong> Correnteza Precisa – +1 em Esquiva e +2 em ataques com katana ao usar dano de água.</p>
+<p><strong>Nível 13:</strong> Maré Inquebrável – Reduz o dano recebido em metade por 1 turno (3 de especial).</p>
+<p><strong>Nível 16:</strong> Pressão Submersa – Ataques com katana causam Debilitado se o alvo não tiver resistência à água.</p>
+<p><strong>Nível 20:</strong> Ritmo da Maré – Ao acertar três ataques consecutivos, realiza 1 ataque adicional (passivo).</p>
+<p><strong>Nível 22:</strong> Corte Torrencial – Aumenta o dano de água em +1d12 por três turnos (3 de especial).</p>
+<p><strong>Nível 25:</strong> Último Suspiro da Correnteza – Ação extra com +4d10 de dano de água (1x por combate).</p>
+`,
+"bonustitulo_2": `<p>🌀<strong>Força das Marés</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Nível 1:</strong> Golpe Contundente – +3 em ataque com porrete e +1d4 de dano esmagante (1 de especial).</p>
+<p><strong>Nível 3:</strong> Ataque de Oportunidade – Reação contra inimigo que sai do alcance. +2 em acerto; inimigo faz teste de agilidade.</p>
+<p><strong>Nível 5:</strong> Vingança das Ondas – Adiciona +1d12 de dano esmagante em reações (2 de especial).</p>
+<p><strong>Nível 9:</strong> Rastro de Destroços – Ao atingir inimigo em movimento, recebe +5 de dano esmagante por dois turnos.</p>
+<p><strong>Nível 13:</strong> Defesa das Marés – Golpe de reação que causa +3d8 de dano esmagador ao inimigo que não atacou (3 de especial).</p>
+<p><strong>Nível 16:</strong> Investida da Correnteza – Ação adicional com 4d8 de dano esmagante e deixa o alvo Caído (5 de especial, teste de agilidade).</p>
+<p><strong>Nível 20:</strong> Muralha Intransponível – Se ignorado por mais de um inimigo, ganha +2 de armadura e +2 de dano de água em reações.</p>
+<p><strong>Nível 22:</strong> Impacto das Profundezas – Ao derrubar um inimigo, recebe um ataque livre extra.</p>
+<p><strong>Nível 25:</strong> Força Brutal da Maré – Ação completa extra + 1 ataque reativo com +3d10 de dano (1x por combate).</p>
+`,
+"bonustitulo_3": `<p>💧<strong>Correnteza Mística – Hidromante</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Nível 1:</strong> Iniciado da Maré – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 1</strong>.</p>
+<p><strong>Nível 3:</strong> Tecelão das Correntes – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 2</strong> e +1 em Preservação com magias de água.</p>
+<p><strong>Nível 5:</strong> Senhor dos Rios – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 3</strong> e recupera 2 de sanidade ao acertar ataque aquático.</p>
+<p><strong>Nível 9:</strong> Guardião dos Oceanos – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 4</strong> e adiciona +1d8 de dano de água em magias (2 de sanidade).</p>
+<p><strong>Nível 13:</strong> Profeta das Profundezas – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 5</strong> e +2 em armadura por 5 turnos ao conjurar.</p>
+<p><strong>Nível 16:</strong> Aura da Hidrocinese – +3 de dano com magias e -2 de sanidade no custo por 3 turnos (6 de especial).</p>
+<p><strong>Nível 20:</strong> Chamada do Abismo – Recupera +1d12 de sanidade ao fim do combate se usou magia de água.</p>
+<p><strong>Nível 22:</strong> Guardião das Marés – Ao conjurar magia de água, recebe -2 de dano de ataques elementais (fé, desconhecido, poder) por 2 turnos.</p>
+<p><strong>Nível 25:</strong> Mestre da Correnteza – Duas vezes por combate, lança uma <strong>Magia de Água até Nível 5</strong> sem custo de sanidade.</p>
+`
+,      "movimento_pass": 4.5
     },
     "Criatura": { 
       "vidaPorNivel": 15,
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 4,
       "resistencia": "Gelo",
-      "bonusPass": `
-Nível 0: Passiva Pavor custo uma vez por dia ou sem lado negativo.
-
-🦍Fúria Primordial
-Nível 1:Golpe Selvagem – Ganha +1 em testes de brutalidade e ataques corpo a corpo causam +2 de dano adicional (custo: 1 especial).
-Nível 3:Investida Brutal – Após um ataque bem-sucedido, pode realizar um teste de brutalidade. Se for bem-sucedido, realiza um ataque adicional (custo: 2 especial).
-Nível 5:Fúria Incontrolável – Adiciona 1d6 de dano bruto em ataques corpo a corpo enquanto estiver com menos de metade da vida.
-Nível 9:Resiliência Selvagem – Reduz em metade o dano de um ataque recebido ao custo de 3 especial (uma vez por combate).
-Nível 13:Ira Devastadora – Ganha a passiva Raiva e pode ativá-la sem custo duas vezes ao dia.
-Nível 16:Força Descomunal – Testes de brutalidade têm +3 e causam +1d10 de dano adicional em ataques críticos.
-Nível 20:Estouro de Poder – Pode realizar dois ataques adicionais em uma única ação completa (custo: 5 especial, uma vez por combate).
-Nível 22:Predador Incansável – Sempre que derrotar um inimigo, recupera 2 especial e pode usar uma ação de movimento sem custo.
-Nível 25:Carnificina Absoluta – Uma vez por combate, Gira acertando todos os inimigos adjacentes a 2m com um golpe devastador, causando 3d10 de dano bruto (custo: 7 especial).
-
-🐉Cauda Letal
-Nível 1:Chicote Natural – Ganha +1 em testes de brutalidade. Ataques com cauda causam 1d12+1d6 de dano (custo: 1 especial, teste de brutalidade, corpo a corpo).
-Nível 3:Presença Intimidadora – Sempre que atingir com a cauda, reduz a precisão do alvo em -1 no próximo ataque.
-Nível 5:Golpe Estonteante – Um ataque bem-sucedido com a cauda impede o movimento do alvo por 1 turno (custo: 3 especial).
-Nível 9:Barreira Instintiva – Reduz o dano de ataques recebidos em metade enquanto usar a cauda para bloquear (custo: 2 especial por bloqueio, ação livre).
-Nível 13:Círculo de Espinhos – Realiza um ataque com a cauda contra todos os inimigos em um raio de 3 metros, causando +1d8 de dano (custo: 4 especial).
-Nível 16:Reflexos Predatórios – Sempre que evitar um ataque com sucesso, realiza um contra-ataque imediato com a cauda (custo: 3 especial).
-Nível 20:Flagelo Impiedoso – Uma vez por combate, atinge todos os inimigos adjacentes com a cauda, causando 2d8 de dano e empurrando-os 3 metros (custo: 5 especial).
-Nível 22:Cauda Sombria – Ganha +2 em furtividade e +1d10 de dano em ataques furtivos realizados com a cauda.
-Nível 25:Destruição Implacável – Realiza um ataque devastador com a cauda que atinge todos os inimigos em um cone de 6 metros, causando 3d10 de dano e os derrubando (custo: 7 especial).
-
-🦊Ágil e Predatório
-Nível 1:Movimentos Ágeis – Ganha +2 em testes de furtividade e acrobacia.
-Nível 3:Instinto Selvagem – Adquire a passiva Consumir, ativável sem custo 1 vez por combate.
-Nível 5:Golpe Preciso – Ao realiza um ataque furtivo contra inimigos desatentos, causando +1d6 de dano adicional (custo: 1 especial).
-Nível 9:Velocidade Predatória – Pode realizar uma ação de movimento adicional em combate ao custo de 2 especial.
-Nível 13:Fúria Controlada – Adquire a passiva Raiva.
-Nível 16:Predador das Sombras – Ganha +3 em testes de furtividade. Ao realiza ataques furtivos ignora resistências (custo 3 especial).
-Nível 20:Vantagem Natural – Sempre que passar em um teste de acrobacia ou furtividade, pode realizar uma ação livre de ataque (uma vez por turno).
-Nível 22:Caçador das Profundezas – Ganha +3 em testes de enganação e intimidação contra inimigos que estejam sozinhos.
-Nível 25:Golpe Impecável – Uma vez por combate, realiza um ataque crítico automático ao primeiro acerto contra um inimigo isolado, causando 3d12 de dano adicional (custo: 5 especial).`,
-      "movimento_pass": 4.5
+   "bonusPass": `
+<p><strong>Nível 0:</strong> Passiva <strong>[Pavor](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Alvo%3A%C2%A0Identificar%20Magia-,Pavor,-Formido)</strong> com custo removido uma vez por dia ou sem efeito colateral.</p>
+`,
+"bonustitulo_1": `<p>🦍<strong>Fúria Primordial</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Nível 1:</strong> Golpe Selvagem – +1 em Brutalidade e +2 de dano corpo a corpo (1 de especial).</p>
+<p><strong>Nível 3:</strong> Investida Brutal – Após ataque bem-sucedido, teste de Brutalidade concede ataque adicional (2 de especial).</p>
+<p><strong>Nível 5:</strong> Fúria Incontrolável – +1d6 de dano bruto corpo a corpo quando com menos de metade da vida.</p>
+<p><strong>Nível 9:</strong> Resiliência Selvagem – Reduz metade do dano de um ataque (3 de especial, 1x por combate).</p>
+<p><strong>Nível 13:</strong> Ira Devastadora – Ganha a passiva <strong>[Raiva](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Conex%C3%A3o-,Raiva,-Ira)</strong>, ativável 2x por dia sem custo.</p>
+<p><strong>Nível 16:</strong> Força Descomunal – +3 em Brutalidade e +1d10 em críticos.</p>
+<p><strong>Nível 20:</strong> Estouro de Poder – Executa dois ataques extras em uma ação completa (5 de especial, 1x por combate).</p>
+<p><strong>Nível 22:</strong> Predador Incansável – Ao derrotar inimigo, recupera 2 de especial e ganha ação de movimento grátis.</p>
+<p><strong>Nível 25:</strong> Carnificina Absoluta – Gira e atinge todos a 2m com 3d10 de dano bruto (7 de especial, 1x por combate).</p>
+`,
+"bonustitulo_2": `<p>🐉<strong>Cauda Letal</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Nível 1:</strong> Chicote Natural – +1 em Brutalidade. Cauda causa 1d12+1d6 de dano (1 de especial, corpo a corpo).</p>
+<p><strong>Nível 3:</strong> Presença Intimidadora – Ataques com cauda reduzem precisão do alvo em -1.</p>
+<p><strong>Nível 5:</strong> Golpe Estonteante – Ataque com cauda impede movimento do alvo por 1 turno (3 de especial).</p>
+<p><strong>Nível 9:</strong> Barreira Instintiva – Reduz metade do dano recebido ao bloquear com cauda (2 de especial por bloqueio).</p>
+<p><strong>Nível 13:</strong> Círculo de Espinhos – Ataque em área com a cauda em 3m, causando +1d8 (4 de especial).</p>
+<p><strong>Nível 16:</strong> Reflexos Predatórios – Ao evitar um ataque, revida automaticamente com cauda (3 de especial).</p>
+<p><strong>Nível 20:</strong> Flagelo Impiedoso – Ataque em área com cauda causa 2d8 de dano e empurra 3m (5 de especial, 1x por combate).</p>
+<p><strong>Nível 22:</strong> Cauda Sombria – +2 em Furtividade e +1d10 em ataques furtivos com cauda.</p>
+<p><strong>Nível 25:</strong> Destruição Implacável – Cone de 6m com 3d10 de dano e derrubada dos alvos (7 de especial).</p>
+`,
+"bonustitulo_3": `<p>🦊<strong>Ágil e Predatório</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Nível 1:</strong> Movimentos Ágeis – +2 em Furtividade e Acrobacia.</p>
+<p><strong>Nível 3:</strong> Instinto Selvagem – Ganha a passiva <strong>[Consumir](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Eletricidade%20e%20Tempestade.-,Consumir,-Consumere)</strong>, ativável sem custo 1x por combate.</p>
+<p><strong>Nível 5:</strong> Golpe Preciso – Ataques furtivos causam +1d6 adicional contra inimigos desatentos (1 de especial).</p>
+<p><strong>Nível 9:</strong> Velocidade Predatória – Ganha ação de movimento adicional (2 de especial).</p>
+<p><strong>Nível 13:</strong> Fúria Controlada – Ganha a passiva <strong>[Raiva](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Conex%C3%A3o-,Raiva,-Ira)</strong>.</p>
+<p><strong>Nível 16:</strong> Predador das Sombras – +3 em Furtividade; ataques furtivos ignoram resistências (3 de especial).</p>
+<p><strong>Nível 20:</strong> Vantagem Natural – Ao passar em teste de Acrobacia ou Furtividade, ganha ataque livre (1x por turno).</p>
+<p><strong>Nível 22:</strong> Caçador das Profundezas – +3 em Enganação e Intimidação contra inimigos solitários.</p>
+<p><strong>Nível 25:</strong> Golpe Impecável – Primeiro acerto contra inimigo isolado é crítico automático com +3d12 de dano (5 de especial, 1x por combate).</p>
+`
+, "movimento_pass": 4.5
     },
     "Duelista": { 
       "vidaPorNivel": 14,
       "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Perfurante",
-      "bonusPass": `
-Nível 0: +1d10 de dano contra alvos isolados (sem ninguém próximo de 10m) e tem +4 em testes de Furtividade.
-
-🗡️Espadachim Solitário
-Nível 1:Foco do Duelista – Ganha +2 de dano e +1 em testes de ataque contra inimigos isolados (sem aliados ou inimigos a 10 metros).
-Nível 3:Estocada Perfeita – Uma vez por turno, pode causar +1d6 de dano adicional ao atingir um alvo isolado com uma rapiera.
-Nível 5:Resistência da Solidão – Enquanto não houver aliados ou inimigos próximos, ganha +2 em testes de defesa contra ataques direcionados a você.
-Nível 9:Rapidez Refinada – Pode realizar uma ação de ataque adicional contra um inimigo isolado (uma vez por combate).
-Nível 13:Precisão Mortal – Críticos com rapieras contra alvos isolados causam +2d8 de dano adicional.
-Nível 16:Arte do Duelista – Ganha +3 em todos os testes de acrobacia enquanto enfrenta inimigos isolados.
-Nível 20:Supremacia Solitária – Enquanto estiver enfrentando um único inimigo, pode ignorar 5 da armadura do alvo.
-Nível 22:Dança das Lâminas – Pode realizar dois ataques adicionais contra um inimigo isolado ao custo de 4 especial (uma vez por combate).
-Nível 25:Corte Final – Uma vez por combate, realiza um ataque mortal contra um inimigo isolado, causando +4d10 de dano adicional e ignorando totalmente a armadura (custo: 5 especial).
-
-⚔️Convite ao Duelo
-Nível 1:Marca do Duelo – Escolha um alvo para duelar (custo: 1 especial). Contra esse alvo, ganha +2 de teste de ataque e +3 de dano de Escuridão.
-Nível 3:Bravura Crescente – Cada vez que derrotar um inimigo em duelo, ganha +1 permanente em testes de ataque até ser derrotado.
-Nível 5:Defesa do Desafiante – Durante um duelo, pode gastar 2 especial para reduzir em metade o dano de um ataque recebido.
-Nível 9:Golpe Honrado – Contra o alvo do duelo, pode causar +1d8 de dano adicional em ataques críticos.
-Nível 13:Vontade Invencível – Enquanto estiver invicto, ganha +2 em todos os testes de resistência.
-Nível 16:Provocação Mortal – Pode chamar um segundo alvo para duelo simultaneamente (custo: 3 especial).
-Nível 20:Maestria do Desafio – Contra inimigos marcados pelo duelo, ignora 6 da armadura e Libera Vingança.
-Nível 22:Corte Vitorioso – Cada vez que derrotar um inimigo em duelo, recupera 3 especial e ganha uma ação de movimento adicional.
-Nível 25:Campeão Invicto – Enquanto estiver invicto, ganha +4 em ataques e testes de resistência. Uma vez por combate, pode realizar um ataque mortal que causa +6d10 de dano.
-
-🕶️Assassino Furtivo
-Nível 1:Silêncio Mortal – Ganha +2 em testes de furtividade e +1d4 de dano adicional em ataques furtivos contra alvos isolados.
-Nível 3:Predador Sutil – Sempre que eliminar um alvo isolado furtivamente, recupera 2 especial.
-Nível 5:Movimentos Sombrios – Ganha +2 em acrobacia e pode realizar uma ação de movimento adicional ao se mover furtivamente.
-Nível 9:Lâmina Oculta – Ataques furtivos com adagas contra alvos isolados causam +1d6 de dano adicional.
-Nível 13:Instinto de Sobrevivência – Quando está sozinho, recebe +2 em testes de agilidade.
-Nível 16:Golpe Preciso – Ignora metade da armadura de inimigos atacados furtivamente.
-Nível 20:Mestre da Sombra – Pode atacar furtivamente um inimigo isolado e se mover sem perder o efeito de furtividade (custo: 2 especial).
-Nível 22:Execução Silenciosa – Uma vez por combate, pode realizar um ataque crítico automático em um alvo isolado (custo: 4 especial).
-Nível 25:Fim das Sombras – Realiza um ataque mortal contra um alvo isolado, causando +6d8 de dano adicional. Após eliminar o inimigo, pode se mover sem ser detectado por 1 turno (custo: 5 especial).`,
-      "movimento_pass": 4
+    "bonusPass": `
+<p><strong>Nível 0:</strong> +1d10 de dano contra alvos isolados (sem ninguém próximo de 10m) e +4 em testes de Furtividade.</p>
+`,
+"bonustitulo_1": `<p>🗡️<strong>Espadachim Solitário</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Nível 1:</strong> Foco do Duelista – +2 de dano e +1 em testes de ataque contra inimigos isolados.</p>
+<p><strong>Nível 3:</strong> Estocada Perfeita – 1x por turno, +1d6 de dano ao atingir alvo isolado com rapiera.</p>
+<p><strong>Nível 5:</strong> Resistência da Solidão – Sem aliados/inimigos por perto, +2 em armadura contra ataques diretos.</p>
+<p><strong>Nível 9:</strong> Rapidez Refinada – Ação de ataque adicional contra inimigo isolado (1x por combate).</p>
+<p><strong>Nível 13:</strong> Precisão Mortal – Críticos com rapiera causam +2d8 em alvos isolados.</p>
+<p><strong>Nível 16:</strong> Arte do Duelista – +3 em Acrobacia enfrentando inimigos isolados.</p>
+<p><strong>Nível 20:</strong> Supremacia Solitária – Ignora 5 de armadura de inimigo único.</p>
+<p><strong>Nível 22:</strong> Dança das Lâminas – Dois ataques extras contra isolado (4 especial, 1x por combate).</p>
+<p><strong>Nível 25:</strong> Corte Final – Ataque mortal com +4d10 e ignora armadura (5 especial, 1x por combate).</p>
+`,
+"bonustitulo_2": `<p>⚔️<strong>Convite ao Duelo</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Nível 1:</strong> Marca do Duelo – Marca 1 alvo (1 especial); +2 em ataque e +3 de dano de Escuridão contra ele.</p>
+<p><strong>Nível 3:</strong> Bravura Crescente – Cada inimigo vencido no duelo: +1 permanente em testes de ataque.</p>
+<p><strong>Nível 5:</strong> Defesa do Desafiante – Reduz em metade o dano recebido no duelo (2 especial).</p>
+<p><strong>Nível 9:</strong> Golpe Honrado – +1d8 de dano em críticos contra alvo do duelo.</p>
+<p><strong>Nível 13:</strong> Vontade Invencível – Enquanto invicto: +2 em todos os testes de resistência.</p>
+<p><strong>Nível 16:</strong> Provocação Mortal – Pode chamar 1 segundo alvo para duelo (3 especial).</p>
+<p><strong>Nível 20:</strong> Maestria do Desafio – Ignora 6 de armadura de marcados e <strong>Libera [Vingança](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Vingan%C3%A7a,-Vindicta)</strong>.</p>
+<p><strong>Nível 22:</strong> Corte Vitorioso – Derrotando um duelista: +3 especial e 1 ação de movimento extra.</p>
+<p><strong>Nível 25:</strong> Campeão Invicto – Enquanto invicto: +4 em ataque e resistência. Pode causar +6d10 (1x por combate).</p>
+`,
+"bonustitulo_3": `<p>🕶️<strong>Assassino Furtivo</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Nível 1:</strong> Silêncio Mortal – +2 em Furtividade e +1d4 em ataques furtivos contra isolados.</p>
+<p><strong>Nível 3:</strong> Predador Sutil – Ao eliminar alvo isolado furtivamente, recupera 2 especial.</p>
+<p><strong>Nível 5:</strong> Movimentos Sombrios – +2 em Acrobacia e ganha ação de movimento furtiva extra.</p>
+<p><strong>Nível 9:</strong> Lâmina Oculta – Adagas furtivas causam +1d6 em alvos isolados.</p>
+<p><strong>Nível 13:</strong> Instinto de Sobrevivência – Sozinho, recebe +2 em Agilidade.</p>
+<p><strong>Nível 16:</strong> Golpe Preciso – Ignora metade da armadura em ataques furtivos.</p>
+<p><strong>Nível 20:</strong> Mestre da Sombra – Ataca e se move furtivamente contra alvo isolado (2 especial).</p>
+<p><strong>Nível 22:</strong> Execução Silenciosa – Crítico automático contra isolado (4 especial, 1x por combate).</p>
+<p><strong>Nível 25:</strong> Fim das Sombras – Ataque mortal com +6d8 em isolado. Movimento sem ser detectado por 1 turno (5 especial).</p>
+`,
+     "movimento_pass": 4
     },
     "Escudeiro": { 
       "vidaPorNivel": 15,
@@ -1123,45 +1135,45 @@ Nível 25:Fim das Sombras – Realiza um ataque mortal contra um alvo isolado, c
       "armaduraPorNivel": 3,
       "resistencia": "Esmagante",
       "bonusPass": `
-Nível 0: +4 dano com escudo, passiva Emanar energia sem Negativo e sem custo uma vez por dia.
-
-🛡️ Bastião Imóvel
-Nível 1: Muralha de Ferro – Recebe +2 de armadura enquanto estiver segurando um escudo.
-Passiva Exclusiva: libera Sonambulismo e Pode manter a postura de bloqueio mesmo enquanto dorme, reduzindo qualquer dano recebido pela metade.
-Nível 3: Postura Inabalável – Ganha resistência a ataques de esmagante e cortante enquanto estiver em posição de defesa.
-Nível 5: Libera a magia Aura de Proteção, pode usar sem custo uma vez ao dia.
-Nível 9: Barreira Crescente – Acumula +1 em armadura para cada turno consecutivo em posição de bloqueio (máximo +3).
-Nível 13: Escudo Resiliente – Pode anular completamente o dano de um ataque uma vez por combate.
-Nível 16: Defesa Elemental – Ganha resistência contra quaisquer danos de um dos elementos a sua escolha (Fé, Desconhecido, Poder e Caos) custo 6 deespecial.
-Nível 20: Fortaleza Imóvel – Ao custo de 8 de especial, reduz o dano de todos os ataques direcionados a você no próximo turno pela metade.
-Nível 22: Bônus de Persistência – Enquanto permanecer bloqueando com o escudo por mais de 2 turnos consecutivos, recebe +2 em testes contra ataque.
-Nível 25: Sentinela Inquebrável – Ganha imunidade a um ataque por combate e reflete metade do dano recebido ao atacante.
-
-👐 Guardião dos Fracos
-Nível 1: Proteção Aliada – Pode redirecionar até 1d8 de dano de um aliado para si enquanto estiver segurando o escudo.
-Passiva Exclusiva: Libera Inveja e ao ver aliados receberem dano, ganha +2 de especial por turno.
-Nível 3: Escudo Coletivo – Ganha +1 de armadura para cada aliado próximo (máximo +4).
-Nível 5: Libera Aura de Retaliação – pode conjurar essa magia por um custo de 8 de especial uma vez a cada 2 dias (caso conjure fora com sanidade o custo é o da magia).
-Nível 9: Presença Inspiradora – Aliados em um raio de 5 metros recebem +2 em testes de esquiva enquanto você estiver vivo.
-Nível 13: Barreira Protetora – Ao custo de 5 de especial, cria uma barreira mágica que protege aliados por 1 turno, anulando até 2d8 de dano.
-Nível 16: Guarda Impecável – Pode bloquear ataques direcionados a aliados no próximo turno sem penalidade um vez por combate.
-Nível 20: Escudo Vingador – Ao custo de 10 de especial, bloqueia o próximo ataque direcionado a um aliado e devolve 2d12 de dano ao atacante.
-Nível 22: Vínculo de Proteção – Aliados recebem metade da sua armadura como bônus por 1 turno ao custo de 8 de especial.(pode ser usado como ação livre na reação de um aliado).
-Nível 25: Defensor Supremo – Ganha a habilidade de proteger todos os aliados dentro de um raio de 10 metros de ataques por um turno inteiro (uma vez por combate).
-
-⚔️ Combatente do Escudo
-Nível 1: Golpe com Escudo – Ataques com o escudo causam +1d6 de dano esmagante.
-Passiva Exclusiva: Libera Escudo Elemental e danos com escudo ganha um bônus elemental aleatório de 1d6.
-Nível 3: Impacto Devastador – Ganha +2 de dano ao realizar ataques corpo a corpo com o escudo.
-Nível 5: Marcas das Cinzas – Conjura uma marca mágica em um inimigo que o enfraquece, reduzindo sua armadura em 2 por 2 turnos. Custo: 8 de especial.
-Nível 9: Força do Escudo – Recebe +2 em testes de brutalidade ao usar o escudo como arma principal.
-Nível 13: Carga do Colosso – Ao custo de 6 de especial, pode investir contra um inimigo com o escudo, empurrando-o 3 metros e causando 2d8 de dano esmagante.
-Nível 16: Defesa Ofensiva – Recebe +1 de armadura enquanto ataca com o escudo.
-Nível 20: Impacto Elemental – Ao custo de 10 de especial, ativa o poder elemental do escudo para causar 3d12 de dano adicional em um ataque.
-Nível 22: Pressão Incessante – Ganha um ataque adicional por turno ao utilizar o escudo como arma principal.
-Nível 25: Campeão do Escudo – Com a habilidade “Investida Final”, ao custo de 15 de especial, realiza uma série de ataques com o escudo, causando 4d10 de dano total e atordoando (condição confuso) o alvo por 1 turno..`,
-
-      "movimento_pass": 3.5
+<p><strong>Nível 0:</strong> +4 de dano com escudo, passiva <strong>[Emanar Energia](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Emanar%20energia,-Procedunt%20navitas)</strong> sem negativo e sem custo 1x por dia.</p>
+`,
+"bonustitulo_1": `<p>🛡️<strong>Bastião Imóvel</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Nível 1:</strong> Muralha de Ferro – +2 de armadura com escudo. Libera a passiva <strong>[Sonambulismo](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Sonambulismo,-Somnus%20ambulans)</strong>, permitindo bloquear até dormindo e reduzindo o dano pela metade.</p>
+<p><strong>Nível 3:</strong> Postura Inabalável – Resistência a dano <strong>esmagante</strong> e cortante enquanto em defesa.</p>
+<p><strong>Nível 5:</strong> Libera a magia <strong>[Aura de Proteção](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Aura%20de%20Prote%C3%A7%C3%A3o,-Protegere%20aura)</strong>, utilizável sem custo 1x por dia.</p>
+<p><strong>Nível 9:</strong> Barreira Crescente – Acumula +1 de armadura a cada turno bloqueando (máximo +3).</p>
+<p><strong>Nível 13:</strong> Escudo Resiliente – Pode anular o dano de 1 ataque por combate.</p>
+<p><strong>Nível 16:</strong> Defesa Elemental – Resistência contra dano de Fé, Desconhecido, Poder ou Caos (6 de especial).</p>
+<p><strong>Nível 20:</strong> Fortaleza Imóvel – Reduz pela metade o dano de todos os ataques recebidos no turno (8 de especial).</p>
+<p><strong>Nível 22:</strong> Bônus de Persistência – Após 2 turnos consecutivos bloqueando, recebe +2 em testes contra ataque.</p>
+<p><strong>Nível 25:</strong> Sentinela Inquebrável – Imune a 1 ataque por combate e reflete metade do dano ao inimigo.</p>
+`,
+"bonustitulo_2": `<p>👐<strong>Guardião dos Fracos</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Nível 1:</strong> Proteção Aliada – Redireciona até 1d8 de dano de um aliado segurando escudo. Libera passiva <strong>Inveja</strong>: ao ver aliados sofrerem dano, ganha +2 de especial por turno.</p>
+<p><strong>Nível 3:</strong> Escudo Coletivo – +1 de armadura por aliado próximo (máximo +4).</p>
+<p><strong>Nível 5:</strong> Libera <strong>[Aura de Retaliação](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=desmascarar%20a%20ilus%C3%A3o)-,Aura%20de%20Retalia%C3%A7%C3%A3o,-Aura%20retaliare)</strong> – conjurável 1x a cada 2 dias por 8 de especial (ou custo normal via sanidade).</p>
+<p><strong>Nível 9:</strong> Presença Inspiradora – Aliados a 5m ganham +2 em esquiva enquanto você estiver vivo.</p>
+<p><strong>Nível 13:</strong> Barreira Protetora – Cria barreira que anula até 2d8 de dano em aliados (5 de especial).</p>
+<p><strong>Nível 16:</strong> Guarda Impecável – Bloqueia ataques a aliados sem penalidade (1x por combate).</p>
+<p><strong>Nível 20:</strong> Escudo Vingador – Bloqueia ataque a aliado e devolve 2d12 de dano (10 de especial).</p>
+<p><strong>Nível 22:</strong> Vínculo de Proteção – Aliado recebe metade da sua armadura como bônus por 1 turno (8 de especial, ação livre na reação).</p>
+<p><strong>Nível 25:</strong> Defensor Supremo – Protege todos os aliados em raio de 10m por 1 turno completo (1x por combate).</p>
+`,
+"bonustitulo_3": `<p>⚔️<strong>Combatente do Escudo</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Nível 1:</strong> Golpe com Escudo – +1d6 de dano esmagante. Libera passiva <strong>[Escudo Elemental](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Escudo%20Elemental,-Scutum%20Elementorum)</strong>, causando 1d6 de dano elemental aleatório em ataques com escudo.</p>
+<p><strong>Nível 3:</strong> Impacto Devastador – +2 de dano com escudo em combate corpo a corpo.</p>
+<p><strong>Nível 5:</strong> Marcas das Cinzas – Enfraquece inimigo, reduzindo armadura em -2 por 2 turnos (8 de especial).</p>
+<p><strong>Nível 9:</strong> Força do Escudo – +2 em testes de Brutalidade ao usar escudo como arma principal.</p>
+<p><strong>Nível 13:</strong> Carga do Colosso – Investida com escudo causa 2d8 e empurra 3m (6 de especial).</p>
+<p><strong>Nível 16:</strong> Defesa Ofensiva – +1 de armadura enquanto ataca com o escudo.</p>
+<p><strong>Nível 20:</strong> Impacto Elemental – Causa +3d12 de dano com o poder elemental do escudo (10 de especial).</p>
+<p><strong>Nível 22:</strong> Pressão Incessante – Ganha 1 ataque adicional por turno ao usar o escudo como arma principal.</p>
+<p><strong>Nível 25:</strong> Campeão do Escudo – “Investida Final”: série de ataques com escudo causa 4d10 de dano e aplica condição <strong>[Confuso](https://terrasdecalistoficha.wordpress.com/como-jogar/#:~:text=metade%20do%20movimento.-,Confuso,-%3A%20O%20personagem)</strong> por 1 turno (15 de especial).</p>
+`,
+  "movimento_pass": 3.5
     },
     "Especialista": { 
       "vidaPorNivel": 16,

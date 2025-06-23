@@ -3849,36 +3849,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const resistenciaColors = {
-    "Gelo": { background: "#B3E5FC", color: "#004D40" }, // Azul claro com tom frio
-  "Ácido": { background: "#A5D6A7", color: "#1B5E20" }, // Verde ácido
-  "Fogo": { background: "#FF7043", color: "#BF360C" }, // Laranja vibrante para fogo
-  "Água": { background: "#81D4FA", color: "#01579B" }, // Azul aquático
-  "Eletricidade": { background: "#FFD600", color: "#F57F17" }, // Amarelo eletrizante
-  "Tempestade": { background: "#7E57C2", color: "#311B92" }, // Roxo tempestuoso
-  "Sangue": { background: "#D50000", color: "#FFFFFF" }, // Vermelho sangue
-  "Luz": { background: "#FFF59D", color: "#37474F" }, // Amarelo claro, tom suave
-  "Maldição": { background: "#512DA8", color: "#CE93D8" }, // Roxo sombrio
-  "Sagrado": { background: "#FFEB3B", color: "#5D4037" }, // Amarelo dourado
-  "Laser": { background: "#00E5FF", color: "#004D40" }, // Azul neon para laser
-  "Alma": { background: "#CE93D8", color: "#4A148C" }, // Roxo etéreo
-  "Escuridão": { background: "#263238", color: "#B0BEC5" }, // Preto acinzentado
-  "Plasma": { background: "#E1F5FE", color: "#0277BD" }, // Azul claro e intenso
-  "Tremor": { background: "#8D6E63", color: "#3E2723" }, // Marrom rochoso
-  "Aura": { background: "#FFF8E1", color: "#4E342E" }, // Amarelo suave e radiante
-  "Psicológico": { background: "#F48FB1", color: "#880E4F" }, // Rosa profundo
-  "Mental": { background: "#B0BEC5", color: "#263238" }, // Cinza azulado, neutro
-  "Distorção": { background: "#A1887F", color: "#D7CCC8" }, // Cinza com tom distorcido
-  "Névoa": { background: "#CFD8DC", color: "#455A64" }, // Cinza nebuloso
-  "Sono": { background: "#D1C4E9", color: "#4A148C" }, // Lilás suave
-  "Balístico": { background: "#BDBDBD", color: "#424242" }, // Cinza chumbo
-  "Perfurante": { background: "#90A4AE", color: "#263238" }, // Cinza azulado e sólido
-  "Cortante": { background: "#37474F", color: "#FFFFFF" }, // Cinza aço
-  "Esmagante": { background: "#ECEFF1", color: "#78909C" }, // Cinza claro e concreto
-  "Cinzas": { background: "#B0BEC5", color: "#455A64" }, // Cinza suave, quase esfumaçado
-  "Morte": { background: "#424242", color: "#D32F2F" }, // Cinza escuro com vermelho
-  "Eclipse": { background: "#212121", color: "#FFA000" }, // Cinza profundo com toque de dourado
-  "N/A": { background: "#f0f0f0", color: "#333333" } // Padrão para sem resistência
+  "Gelo": { background: "#b7e1cd", color: "black" },
+  "Ácido": { background: "#38761d", color: "white" },
+  "Fogo": { background: "#ff9900", color: "white" },
+  "Água": { background: "#46bdc6", color: "black" },
+  "Eletricidade": { background: "#ffff00", color: "black" },
+  "Tempestade": { background: "#a4f4cf", color: "black" },
+  "Sangue": { background: "#980000", color: "white" },
+  "Luz": { background: "#ffe599", color: "black" },
+  "Maldição": { background: "#4c1130", color: "white" },
+  "Sagrado": { background: "#D8902D", color: "white" },
+  "Laser": { background: "#3cff92", color: "white" },
+  "Alma": { background: "#d5a6bd", color: "white" },
+  "Escuridão": { background: "black", color: "white" },
+  "Plasma": { background: "#c3dfb3", color: "#005e31" },
+  "Tremor": { background: "#311e5b", color: "#8eb8ff" },
+  "Aura": { background: "#b4a7d6", color: "black" },
+  "Psicológico": { background: "#c164f5", color: "black" },
+  "Mental": { background: "#281922", color: "white" },
+  "Distorção": { background: "#c27ba0", color: "white" },
+  "Névoa": { background: "#9fc5e8", color: "white" },
+  "Sono": { background: "#d9d2e9", color: "#666666" },
+  "Balístico": { background: "#434343", color: "black" },
+  "Perfurante": { background: "#d9d9d9", color: "black" },
+  "Cortante": { background: "#191818", color: "white" },
+  "Esmagante": { background: "#edfff6", color: "black" },
+  "Cinzas": { background: "#B0BEC5", color: "#455A64" }, // não presente no HTML, mantido original
+  "Morte": { background: "#424242", color: "#D32F2F" }, // idem
+  "Eclipse": { background: "#212121", color: "#FFA000" }, // idem
+  "N/A": { background: "#f0f0f0", color: "#333333" }
 };
+
 const itemGrid = document.getElementById('itemGrid');
 const itemFilter = document.getElementById('itemFilter');
 const descPopup = document.getElementById('itemDescPopup');

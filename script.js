@@ -313,7 +313,7 @@ const raceData = {
       "sab": 0,
       "car": 0
     },
-    "especialPorNivel": 5
+    "ialPorNivel": 5
   }
 };
 
@@ -337,7 +337,7 @@ bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
 <p>Nível 16: +1d6 de dano com armas cortantes ou perfurantes.</p>
 <p>Nível 20: <strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.</p>
 <p>Nível 22: +1d8 de dano com armas pesadas.</p>
-<p>Nível 25: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de especial por ativação, uma vez por combate)</p>`,
+<p>Nível 25: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de ial por ativação, uma vez por combate)</p>`,
 bonustitulo_2: "<p>♟️<strong>Estrategista</strong></p>",
 bonusTexto_2: `Nível 1: +1 em precisão à distância.
 <p>Nível 3: +2 em testes de Agilidade.</p>
@@ -1227,53 +1227,49 @@ Nível 25:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha 
       "sanidadePorNivel": 6,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
-      "bonusPass": `
-      
-Nivel 0: +1d12 em danos de Plasma e magia Orbe negro em área (pode acertar mais de um alvo em até 5m do alvo principal) e personagem pode voar.
+     "bonusPass": `
+<p><strong>Nível 0:</strong> +1d12 em danos de Plasma, a magia <strong>Orbe Negro</strong> atinge inimigos em até 5m do alvo principal e o personagem pode voar.</p>
+`,
+"bonustitulo_1": `<p>👻<strong>Assombração Relâmpago</strong></p>`,
+"bonusTexto_1": `
+<p><strong>Passiva Exclusiva:</strong> <strong>Teleporte Repentino</strong> – Pode se teleportar 1x por combate sem custo.</p>
+<p><strong>Nível 1:</strong> Desaparecimento Sombrio – Após teleporte, +2 em esquiva até o próximo turno.</p>
+<p><strong>Nível 3:</strong> Surto Espectral – Ao mover mais de 6m, +1d6 de dano <strong>Laser</strong> no próximo ataque.</p>
+<p><strong>Nível 5:</strong> Escapar da Realidade – Teleporta-se para evitar totalmente um ataque (4 de especial).</p>
+<p><strong>Nível 9:</strong> Passo da Fenda – O primeiro teleporte do combate não consome ação.</p>
+<p><strong>Nível 13:</strong> Reflexos Sombrios – Ao esquivar de um ataque, teleporta até 2m (gratuito).</p>
+<p><strong>Nível 16:</strong> Evasão Instantânea – Evita ataques em área com teleporte (6 de especial).</p>
+<p><strong>Nível 20:</strong> Golpe Relâmpago – Pode atacar ao final de um teleporte (1x por turno).</p>
+<p><strong>Nível 22:</strong> Sombra Imparável – Teleporte livre para lugar visto nos últimos 2 turnos (8 de especial).</p>
+<p><strong>Nível 25:</strong> Devorador do Espaço – Após teleporte, o próximo ataque recebe +2d12 de dano <strong>Laser</strong>.</p>
+`,
+"bonustitulo_2": `<p>🌌<strong>Espírito Desvinculado</strong></p>`,
+"bonusTexto_2": `
+<p><strong>Passiva Exclusiva:</strong> <strong>Separar a Alma</strong> – Pode agir separado do corpo, imune a estados negativos por 1 turno (1x por combate sem custo).</p>
+<p><strong>Nível 1:</strong> Presença Etérea – +2 em Libertação enquanto “Separar a Alma” estiver ativa.</p>
+<p><strong>Nível 3:</strong> Essência Restauradora – Regenera 1d6 de sanidade no fim do turno em forma espiritual.</p>
+<p><strong>Nível 5:</strong> Toque do Além – +1d8 de dano <strong>Plasma</strong> em corpo a corpo durante forma espiritual.</p>
+<p><strong>Nível 9:</strong> Véu do Espectro – Fica intangível por 1 turno (6 de especial).</p>
+<p><strong>Nível 13:</strong> Chamado do Vazio – Ao atingir inimigo em forma espiritual, ganha +2 de especial.</p>
+<p><strong>Nível 16:</strong> Dualidade Sombria – Troca entre corpo e alma 1x por turno sem custo de ação.</p>
+<p><strong>Nível 20:</strong> Distorção da Alma – Entra e sai da forma espiritual após ataque (8 de especial).</p>
+<p><strong>Nível 22:</strong> Ressurgência Fantasma – Recupera +6 de sanidade ao atingir inimigo na forma espiritual.</p>
+<p><strong>Nível 25:</strong> Manifestação Completa – Ao retornar ao corpo, libera explosão de 3d12 de dano <strong>Plasma</strong> em 5m.</p>
+`,
+"bonustitulo_3": `<p>🔮<strong>Feixe Espectral</strong></p>`,
+"bonusTexto_3": `
+<p><strong>Passiva Exclusiva:</strong> <strong>Sinergia de Plasma</strong> – Magias de <strong>Plasma</strong> ganham +1d6 de dano extra (2 de especial).</p>
+<p><strong>Nível 1:</strong> Carga Instável – Ganha uma magia de nível 1 do tipo <strong>Plasma</strong>.</p>
+<p><strong>Nível 3:</strong> Emissão Energética – Ao lançar magia de <strong>Plasma</strong>, causa +1d4 de dano extra.</p>
+<p><strong>Nível 5:</strong> Rajada Crescente – Ganha uma magia de nível 2 do tipo <strong>Plasma</strong>.</p>
+<p><strong>Nível 9:</strong> Sobrecarga Conectada – Ao acertar com magia de <strong>Plasma</strong>, ganha +1 de especial.</p>
+<p><strong>Nível 13:</strong> Explosão Radiante – Ganha uma magia de nível 3 do tipo <strong>Plasma</strong>.</p>
+<p><strong>Nível 16:</strong> Liberação Instável – Adiciona +1d10 de dano em magia de <strong>Plasma</strong> (5 de especial).</p>
+<p><strong>Nível 20:</strong> Descarga Destrutiva – Ganha uma magia de nível 4 do tipo <strong>Plasma</strong>.</p>
+<p><strong>Nível 22:</strong> Pulso Volátil – Ao conjurar magia de <strong>Plasma</strong>, realiza ataque adicional com -2 de dano e ganha magia de nível 5.</p>
+<p><strong>Nível 25:</strong> Estouro Final – Ganha uma magia de nível 6 de <strong>Plasma</strong> e pode conjurá-la sem custo de sanidade 1x por combate.</p>
+`,
 
-      👻Assombração Relâmpago
-Especializado em teletransportes e reações rápidas.
-
-Passiva Exclusiva: Teleporte Repentino – desbloqueada. Uma vez por combate sem custo.
-
-Nível 1: Desaparecimento Sombrio – Após se teletransportar, ganha +2 em testes de esquiva até o próximo turno.
-Nível 3: Surto Espectral – Se movimentar mais de 6 metros em um turno concede +1d6 de dano laser no próximo ataque.
-Nível 5: Escapar da Realidade – Ao custo de 4 de especial, pode se teletransportar no meio de um ataque recebido, evitando completamente o dano.
-Nível 9: Passo da Fenda – O primeiro teleporte de cada combate não consome ações.
-Nível 13: Reflexos Sombrios – Sempre que esquivar de um ataque, pode se teleportar até 2 metros.
-Nível 16: Evasão Instantânea – Ao custo de 6 de especial, pode se teleportar para evitar ataques em área.
-Nível 20: Golpe Relâmpago – Pode realizar um ataque adicional ao final de um teleporte uma vez por turno.
-Nível 22: Sombra Imparável – Ao custo de 8 de especial, pode se teleportar para qualquer lugar que tenha visto nos últimos 2 turnos.
-Nível 25: Devorador do Espaço – Sempre que realizar um teleporte, o próximo ataque recebe +2d12 de dano laser.
-
-🌌Espírito Desvinculado
-Focado na passiva “Separar a Alma”, com regeneração e resistência aumentadas.
-
-Passiva Exclusiva: Separar a Alma – desbloqueada. Ao ativar essa habilidade, pode lutar com o corpo e a alma separadamente, recebendo imunidade a estados negativos por 1 turno. – Uma vez por combate sem custo.
-
-Nível 1: Presença Etérea – Enquanto “Separar a Alma” estiver ativa, recebe +2 em testes de Libertação.
-Nível 3: Essência Restauradora – Regenera 1d6 de sanidade no final do turno se estiver em forma espiritual.
-Nível 5: Toque do Além – Enquanto “Separar a Alma” estiver ativa, causa +1d8 de dano de plasma em ataques corpo a corpo.
-Nível 9: Véu do Espectro – Ao custo de 6 de especial, pode ficar intangível por 1 turno.
-Nível 13: Chamado do Vazio – Se atingir um inimigo enquanto estiver na forma espiritual, recupera 2 de especial.
-Nível 16: Dualidade Sombria – Pode trocar entre forma física e espiritual sem gastar ação uma vez por turno.
-Nível 20: Distorção da Alma – Ao custo de 8 de especial, pode entrar e sair da forma espiritual imediatamente após um ataque.
-Nível 22: Ressurgência Fantasma – Se atingir um inimigo enquanto estiver na forma espiritual, pode recuperar 6 de sanidade adicional.
-Nível 25: Manifestação Completa – Quando retornar ao corpo, causa uma explosão de energia espectral de 3d12 de dano de plasma em um raio de 5 metros.
-
-🔮Feixe Espectral
-Especializado em magias de Plasma, liberando magias poderosas ao longo dos níveis.
-Passiva Exclusiva: Sinergia de Plasma – Todas as magias de Plasma que conjurar podem causar +1d6 de dano adicional ao custo de 2 de especial.
-Nível 1: Carga Instável – Ganha uma magia de nível 1 do tipo Plasma.
-Nível 3: Emissão Energética – Se lançar uma magia de Plasma, pode rolar +1d4 de dano extra.
-Nível 5: Rajada Crescente – Ganha uma magia de nível 2 do tipo Plasma.
-Nível 9: Sobrecarga Conectada – Se acertar um inimigo com uma magia de Plasma, recebe +1 de especial.
-Nível 13: Explosão Radiante – Ganha uma magia de nível 3 do tipo Plasma.
-Nível 16: Liberação Instável – Pode gastar 5 de especial para adicionar 1d10 de dano extra em magias de Plasma.
-Nível 20: Descarga Destrutiva – Ganha uma magia de nível 4 do tipo Plasma.
-Nível 22: Pulso Volátil – Ao conjurar uma magia de Plasma, pode realizar um ataque adicional com -2 de dano e ganha uma magia de nível 5 do tipo Plasma.
-Nível 25: Estouro Final – Ganha uma magia de nível 6 do tipo Plasma e pode conjurá-la uma magia de plasma uma vez por combate sem custo de sanidade.
-        `,
       "movimento_pass": 4.5
     },
     "Espiritualista": { 

@@ -1170,89 +1170,25 @@ Bonus por Níveis Do Personagem  </h3>
     <!-- Seção da direita -->
 
     <div id="right-section">
-<style>
-  #character-info-section-2 {
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-  }
-
-  .section-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-
-  .resistencia-index {
-    background: linear-gradient(to right, #ff4d4d, #ff1a1a);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  }
-
-  .resistencia-index:hover {
-    background: linear-gradient(to right, #e60000, #b30000);
-    transform: scale(1.05);
-  }
-
-  .popup-box {
-    display: none;
-    margin-top: 10px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 520px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
-  }
-
-  .popup-box h1 {
-    font-size: 14px;
-    color: #444;
-    margin-bottom: 15px;
-  }
-
-  .pix-qr {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 10px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-  }
-
-  .pix-key {
-    text-align: center;
-    font-size: 13px;
-    color: #111;
-    background-color: #f1f1f1;
-    padding: 8px;
-    border-radius: 6px;
-    margin-top: 10px;
-    word-break: break-word;
-  }
-</style>
-
-<div id="character-info-section-2">
-  <div class="section-buttons">
+<div id="character-info-section-2" style="margin: 20px 0; font-family: Arial, sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
     <!-- Botão 1: AVISO -->
-    <button class="resistencia-index" onclick="toggleSectionInfo('expandableSectionInfo2a')">AVISO!</button>
+    <button onclick="toggleSectionInfo('expandableSectionInfo2a')"
+      style="background: linear-gradient(to right, #ff4d4d, #ff1a1a); color: #fff; padding: 10px 20px; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);">
+      AVISO!
+    </button>
 
     <!-- Botão 2: APOIAR -->
-    <button class="resistencia-index" onclick="toggleSectionInfo('expandableSectionInfo2b')">APOIAR!</button>
+    <button onclick="toggleSectionInfo('expandableSectionInfo2b')"
+      style="background: linear-gradient(to right, #ff4d4d, #ff1a1a); color: #fff; padding: 10px 20px; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);">
+      APOIAR!
+    </button>
   </div>
 
   <!-- Conteúdo do popup AVISO -->
-  <div id="expandableSectionInfo2a" class="popup-box">
-    <h1>
+  <div id="expandableSectionInfo2a"
+    style="display: none; margin-top: 10px; background-color: #fff; padding: 20px; border-radius: 12px; border: 1px solid #ccc; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 520px; font-size: 14px; line-height: 1.6; color: #333;">
+    <h1 style="font-size: 14px; color: #444; margin-bottom: 15px;">
       A aparência do seu personagem será uma fusão entre seu passado e sua raça — imagine-o livremente!<br><br>
       No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14,
       mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
@@ -1260,16 +1196,21 @@ Bonus por Níveis Do Personagem  </h3>
   </div>
 
   <!-- Conteúdo do popup APOIAR -->
-  <div id="expandableSectionInfo2b" class="popup-box">
-    <h1>
+  <div id="expandableSectionInfo2b"
+    style="display: none; margin-top: 10px; background-color: #fff; padding: 20px; border-radius: 12px; border: 1px solid #ccc; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 520px; font-size: 14px; line-height: 1.6; color: #333;">
+    <h1 style="font-size: 14px; color: #444; margin-bottom: 15px;">
       💖 Ajude o projeto com um Pix!<br>
       Aponte a câmera para o QR Code abaixo:
     </h1>
-    <img src="imagens/qrcode-inter.png" alt="QR Code de apoio via Pix Inter" class="pix-qr">
-    <p class="pix-key"><strong>Chave Pix:</strong> gustavo.s.silvasantos2@gmail.com</p>
+    <img src="imagens/qrcode-inter.png" alt="QR Code de apoio via Pix Inter"
+      style="max-width: 200px; display: block; margin: 0 auto 10px; border-radius: 8px; border: 1px solid #ddd;">
+    <p
+      style="text-align: center; font-size: 13px; color: #111; background-color: #f1f1f1; padding: 8px; border-radius: 6px; margin-top: 10px; word-break: break-word;">
+      <strong>Chave Pix:</strong> gustavo.s.silvasantos2@gmail.com
+    </p>
   </div>
 </div>
-      
+
        
         
         <form id="character-form">

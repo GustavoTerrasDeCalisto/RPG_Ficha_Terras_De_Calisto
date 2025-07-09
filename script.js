@@ -2015,84 +2015,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // 🎲 Dice Popup
-    const dicePopup = document.getElementById("dicePopup");
-    const openDiceBtn = document.getElementById("openPopup");
-    const closeDiceBtn = dicePopup.querySelector(".close");
+// Ativação do popup e tutorial
+document.addEventListener("DOMContentLoaded", function () {
+  // 🎲 Dice Popup
+  const dicePopup = document.getElementById("dicePopup");
+  const openDiceBtn = document.getElementById("openPopup");
+  const closeDiceBtn = dicePopup.querySelector(".close");
 
-    openDiceBtn.onclick = function () {
-      dicePopup.style.display = "flex";
+  openDiceBtn.onclick = function () {
+    dicePopup.style.display = "flex";
 
-      const physical = document.getElementById("physicalDamage").textContent;
-      const elemental = document.getElementById("elementalDamage").textContent;
-      document.getElementById("diceInput").value = physical + "+" + elemental;
-    };
+    const physical = document.getElementById("physicalDamage").textContent;
+    const elemental = document.getElementById("elementalDamage").textContent;
+    document.getElementById("diceInput").value = physical + "+" + elemental;
+  };
 
-    closeDiceBtn.onclick = function () {
+  closeDiceBtn.onclick = function () {
+    dicePopup.style.display = "none";
+  };
+
+  // Fecha popup ao clicar fora
+  window.addEventListener("click", function (event) {
+    if (event.target === dicePopup) {
       dicePopup.style.display = "none";
-    };
+    }
+  });
 
-    // Fecha popup de dados se clicar fora
-    window.addEventListener("click", function (event) {
-      if (event.target === dicePopup) {
-        dicePopup.style.display = "none";
-      }
-    });
-
-   // 📘 Tutorial Popup
-// 📘 Tutorial Popup
-// 📘 Tutorial Popup
   // 📘 Tutorial Popup
- // 📘 Tutorial Popup
-const tutorialPopup = document.getElementById("tutorialPopup");
-const closeTutorial = document.getElementById("closeTutorial");
-const openTutorialButton = document.getElementById("openTutorialButton");
+  const tutorialPopup = document.getElementById("tutorialPopup");
+  const closeTutorial = document.getElementById("closeTutorial");
+  const openTutorialButton = document.getElementById("openTutorialButton");
 
-let timesClosed = localStorage.getItem("calisto_fechamentos");
-if (!timesClosed) timesClosed = 0;
-else timesClosed = parseInt(timesClosed);
+  let timesClosed = localStorage.getItem("calisto_fechamentos");
+  if (!timesClosed) timesClosed = 0;
+  else timesClosed = parseInt(timesClosed);
 
-// Só exibe automaticamente se ainda não fechou 5 vezes
-if (timesClosed < 5) {
-  tutorialPopup.style.display = "flex";
-}
+  if (timesClosed < 5) {
+    tutorialPopup.style.display = "flex";
+  }
 
-// Fecha pelo botão ✖️
-closeTutorial.onclick = () => {
-  tutorialPopup.style.display = "none";
-  timesClosed++;
-  localStorage.setItem("calisto_fechamentos", timesClosed);
-};
-
-// Abre manualmente 🟢
-openTutorialButton.onclick = () => {
-  tutorialPopup.style.display = "flex";
-};
-
-// Fecha ao clicar fora
-window.addEventListener("click", function (event) {
-  if (event.target === tutorialPopup) {
+  closeTutorial.onclick = () => {
     tutorialPopup.style.display = "none";
     timesClosed++;
     localStorage.setItem("calisto_fechamentos", timesClosed);
-  }
-});
+  };
+
+  openTutorialButton.onclick = () => {
+    tutorialPopup.style.display = "flex";
+  };
+
+  window.addEventListener("click", function (event) {
+    if (event.target === tutorialPopup) {
+      tutorialPopup.style.display = "none";
+      timesClosed++;
+      localStorage.setItem("calisto_fechamentos", timesClosed);
+    }
   });
+});
 
+// ✅ Modo de seleção ativa/desativa
+let usarMelhoresOuPiores = false;
 
+document.getElementById("ativarRegraBtn").addEventListener("click", () => {
+  usarMelhoresOuPiores = true;
+  alert("Modo 'Melhores/Piores' ATIVADO.");
+});
 
-  function rollDice() {
+document.getElementById("desativarRegraBtn").addEventListener("click", () => {
+  usarMelhoresOuPiores = false;
+  alert("Modo 'Melhores/Piores' DESATIVADO.");
+});
+
+// 🎲 Função de rolagem com lógica condicional
+function rollDice() {
   const input = document.getElementById("diceInput").value.trim();
   const gif = document.getElementById("diceGif");
 
-  // Separar a parte dos dados da parte do modificador
-  // Exemplo: "1d2+9" vira ["1d2", "+9"]
-  // Pode ter um + ou - no final
   let dicePart = input;
   let modifier = 0;
 
-  // Regex para detectar + ou - no final e pegar o valor
   const modMatch = input.match(/([+-]\d+)$/);
   if (modMatch) {
     modifier = parseInt(modMatch[1]);
@@ -2108,52 +2109,63 @@ window.addEventListener("click", function (event) {
     const count = parseInt(match[1] || "1");
     const sides = parseInt(match[2]);
 
-    detailed += `<strong>${count}d${sides}:</strong> `;
+    let rolls = [];
     for (let i = 0; i < count; i++) {
-      const roll = Math.floor(Math.random() * sides) + 1;
-      total += roll;
-      detailed += roll + (i < count - 1 ? ", " : "");
+      rolls.push(Math.floor(Math.random() * sides) + 1);
     }
-    detailed += "<br>";
-  }
 
-  total += modifier;
+    let usedRolls = rolls;
+    let infoExtra = "";
+
+    if (usarMelhoresOuPiores && modifier !== 0) {
+      const sorted = [...rolls].sort((a, b) => a - b);
+      const qtd = Math.min(Math.abs(modifier), rolls.length);
+      usedRolls = modifier > 0 ? sorted.slice(-qtd) : sorted.slice(0, qtd);
+      total += usedRolls.reduce((a, b) => a + b, 0);
+      total += modifier;
+      infoExtra = ` → usados: <strong>${usedRolls.join(", ")}</strong>`;
+    } else {
+      total += rolls.reduce((a, b) => a + b, 0);
+      total += modifier;
+    }
+
+    detailed += `<strong>${count}d${sides}:</strong> ${rolls.join(", ")}${infoExtra}<br>`;
+  }
 
   if (modifier !== 0) {
-    detailed += `<strong>Modifier:</strong> ${modifier}<br>`;
+    if (usarMelhoresOuPiores) {
+      detailed += `<strong>Tipo de seleção:</strong> ${modifier > 0 ? "maiores" : "menores"} ${Math.abs(modifier)}<br>`;
+      detailed += `<strong>Modificador adicional:</strong> ${modifier > 0 ? "+" : ""}${modifier}<br>`;
+    } else {
+      detailed += `<strong>Modificador:</strong> ${modifier > 0 ? "+" : ""}${modifier}<br>`;
+    }
   }
-  
 
-  // Exemplo de usar o gif, pode controlar o display dele aqui se quiser
-  // gif.style.display = "block"; // Exibe o gif
-  // Depois, quando terminar, pode esconder
-
-  // Atualize onde quiser no seu HTML com o resultado
-
- // Resetando a imagem pra reiniciar o gif
+  // Reiniciar o gif
   gif.style.display = "none";
   gif.src = "";
   setTimeout(() => {
-    gif.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif"; // ou outro gif
+    gif.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif";
     gif.style.display = "block";
-  }, 50); // pequeno delay para reiniciar animação
-    document.getElementById("diceOverlay").innerText = `Total: ${total}`;
-    document.getElementById("detailedResults").innerHTML = detailed;
-  }
+  }, 50);
 
-  // 🎯 Resetar e limitar perícias
-  document.getElementById("resetSkillsButton")?.addEventListener("click", () => {
-    document.querySelectorAll(".pericia button").forEach(btn => btn.innerText = "0");
-  });
+  document.getElementById("diceOverlay").innerText = `Total: ${total}`;
+  document.getElementById("detailedResults").innerHTML = detailed;
+}
 
-  function toggleSkill(button) {
-    const selected = Array.from(document.querySelectorAll(".pericia button"))
-      .filter(btn => btn.innerText === "+2").length;
+// 🎯 Resetar e limitar perícias
+document.getElementById("resetSkillsButton")?.addEventListener("click", () => {
+  document.querySelectorAll(".pericia button").forEach(btn => btn.innerText = "0");
+});
 
-    if (button.innerText !== "+2" && selected >= 3) return;
+function toggleSkill(button) {
+  const selected = Array.from(document.querySelectorAll(".pericia button"))
+    .filter(btn => btn.innerText === "+2").length;
 
-    button.innerText = button.innerText === "+2" ? "0" : "+2";
-  }
+  if (button.innerText !== "+2" && selected >= 3) return;
+
+  button.innerText = button.innerText === "+2" ? "0" : "+2";
+}
 
   
 const chessPopup = document.getElementById("chessTutorialPopup");

@@ -1170,18 +1170,33 @@ Bonus por Níveis Do Personagem  </h3>
     <!-- Seção da direita -->
 
     <div id="right-section">
-      <div id="character-info-section-2" style="margin: 0px 0;">
-        <button class="toggle-button2" onclick="toggleSectionInfo('expandableSectionInfo2')" 
-          style="background-color: red; color: white; padding: 5px 15px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
-          AVISO!
-        </button>
-      
-        <div id="expandableSectionInfo2" style="display: none; margin-top: 15px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; border: 1px solid #ccc;">
-          <h1 class="Aviso" style="font-size: 11px;">
-            A aparência do seu personagem será uma fusão entre seu passado e sua raça — imagine-o livremente! No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14, mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
-          </h1>
-        </div>
-      </div>
+   <div id="character-info-section-2">
+  <div class="section-buttons">
+    <!-- Botão 1: AVISO -->
+    <button class="resistencia-index" onclick="toggleSectionInfo('expandableSectionInfo2a')">AVISO!</button>
+
+    <!-- Botão 2: APOIAR -->
+    <button class="resistencia-index" onclick="toggleSectionInfo('expandableSectionInfo2b')">APOIAR!</button>
+  </div>
+
+  <!-- Conteúdo do popup AVISO -->
+  <div id="expandableSectionInfo2a" class="popup-box">
+    <h1>
+      A aparência do seu personagem será uma fusão entre seu passado e sua raça — imagine-o livremente!<br><br>
+      No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14, mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
+    </h1>
+  </div>
+
+  <!-- Conteúdo do popup APOIAR -->
+  <div id="expandableSectionInfo2b" class="popup-box">
+    <h1>
+      💖 Ajude o projeto com um Pix!<br>
+      Aponte a câmera para o QR Code abaixo:
+    </h1>
+    <img src="imagens/qrcode-inter.png" alt="QR Code de apoio via Pix Inter" class="pix-qr">
+    <p class="pix-key"><strong>Chave Pix:</strong> gustavo.s.silvasantos2@gmail.com</p>
+  </div>
+</div>
       
        
         

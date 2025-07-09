@@ -3285,18 +3285,16 @@ h2:not(.resistencia-index) {
 
 }
 #modoRegraContainer {
-  display: flex !important;
+  display: inline-flex !important;
   flex-direction: row !important;
-  justify-content: flex-start !important;
   align-items: center !important;
   gap: 4px !important;
   margin: 4px 0 !important;
-  width: fit-content !important;
 }
 
 #modoRegraContainer button {
   padding: 2px 6px !important;
-  font-size: 0.7rem !important;
+  font-size: 0.65rem !important;
   border: none !important;
   border-radius: 4px !important;
   cursor: pointer !important;
@@ -3307,20 +3305,21 @@ h2:not(.resistencia-index) {
 }
 
 #ativarRegraBtn {
-  background-color: #2ecc71 !important;
-  color: white !important;
+  background-color: #27ae60 !important;
+  color: #fff !important;
 }
 
 #ativarRegraBtn:hover {
-  background-color: #27ae60 !important;
+  background-color: #1e8a4d !important;
 }
 
 #desativarRegraBtn {
-  background-color: #e74c3c !important;
-  color: white !important;
+  background-color: #c0392b !important;
+  color: #fff !important;
 }
 
 #desativarRegraBtn:hover {
-  background-color: #c0392b !important;
+  background-color: #992d22 !important;
 }
+
 

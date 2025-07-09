@@ -3284,4 +3284,39 @@ h2:not(.resistencia-index) {
 
 
 }
+#modoRegraContainer {
+  display: inline-flex;
+  gap: 4px;
+  margin: 4px 0;
+  align-items: center;
+}
+
+#modoRegraContainer button {
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  line-height: 1;
+}
+
+#ativarRegraBtn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#ativarRegraBtn:hover {
+  background-color: #27ae60;
+}
+
+#desativarRegraBtn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#desativarRegraBtn:hover {
+  background-color: #c0392b;
+}
 

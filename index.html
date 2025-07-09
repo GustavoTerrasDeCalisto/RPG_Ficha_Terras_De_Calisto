@@ -1170,7 +1170,78 @@ Bonus por Níveis Do Personagem  </h3>
     <!-- Seção da direita -->
 
     <div id="right-section">
-   <div id="character-info-section-2">
+<style>
+  #character-info-section-2 {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .resistencia-index {
+    background: linear-gradient(to right, #ff4d4d, #ff1a1a);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .resistencia-index:hover {
+    background: linear-gradient(to right, #e60000, #b30000);
+    transform: scale(1.05);
+  }
+
+  .popup-box {
+    display: none;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .popup-box h1 {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+
+  .pix-qr {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .pix-key {
+    text-align: center;
+    font-size: 13px;
+    color: #111;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+    word-break: break-word;
+  }
+</style>
+
+<div id="character-info-section-2">
   <div class="section-buttons">
     <!-- Botão 1: AVISO -->
     <button class="resistencia-index" onclick="toggleSectionInfo('expandableSectionInfo2a')">AVISO!</button>
@@ -1183,7 +1254,8 @@ Bonus por Níveis Do Personagem  </h3>
   <div id="expandableSectionInfo2a" class="popup-box">
     <h1>
       A aparência do seu personagem será uma fusão entre seu passado e sua raça — imagine-o livremente!<br><br>
-      No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14, mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
+      No início da criação do personagem, todos os atributos BRU, AGI, DET, PRE, LIB e CNX começam com o valor 14,
+      mas você pode redistribuí-los como quiser, respeitando o mínimo de 8 e o máximo de 99 para cada um, mantendo o personagem no nível 1.
     </h1>
   </div>
 

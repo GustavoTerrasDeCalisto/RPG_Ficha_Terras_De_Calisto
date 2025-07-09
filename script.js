@@ -2013,8 +2013,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 // Ativação do popup e tutorial
 document.addEventListener("DOMContentLoaded", function () {
   // 🎲 Dice Popup
@@ -2073,35 +2071,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// ✅ Modo de seleção ativa/desativa
-let usarMelhoresOuPiores = false;
-
-document.getElementById("ativarRegraBtn").addEventListener("click", () => {
-  usarMelhoresOuPiores = true;
-  alert("Modo 'Melhores/Piores' ATIVADO.");
-});
-
-document.getElementById("desativarRegraBtn").addEventListener("click", () => {
-  usarMelhoresOuPiores = false;
-  alert("Modo 'Melhores/Piores' DESATIVADO.");
-});
-
+// ✅ Controle dos modos ativados
 let usarMelhoresOuPiores = false;
 let usarModificador = false;
 
 const btnRegra = document.getElementById("ativarRegraBtn");
 const btnMod = document.getElementById("usarModificadorBtn");
 
+// Toggle botão Melhores/Piores
 btnRegra.addEventListener("click", () => {
   usarMelhoresOuPiores = !usarMelhoresOuPiores;
   btnRegra.classList.toggle("ativo");
 });
 
+// Toggle botão Modificador
 btnMod.addEventListener("click", () => {
   usarModificador = !usarModificador;
   btnMod.classList.toggle("ativo");
 });
 
+// Função principal de rolagem de dados
 function rollDice() {
   const input = document.getElementById("diceInput").value.trim();
   const gif = document.getElementById("diceGif");
@@ -2154,10 +2143,12 @@ function rollDice() {
     }
   }
 
+  // Resetar e reiniciar gif
   gif.style.display = "none";
   gif.src = "";
   setTimeout(() => {
-    gif.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif";
+    gif.src =
+      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif";
     gif.style.display = "block";
   }, 50);
 
@@ -2165,20 +2156,21 @@ function rollDice() {
   document.getElementById("detailedResults").innerHTML = detailed;
 }
 
-
 // 🎯 Resetar e limitar perícias
 document.getElementById("resetSkillsButton")?.addEventListener("click", () => {
-  document.querySelectorAll(".pericia button").forEach(btn => btn.innerText = "0");
+  document.querySelectorAll(".pericia button").forEach((btn) => (btn.innerText = "0"));
 });
 
 function toggleSkill(button) {
-  const selected = Array.from(document.querySelectorAll(".pericia button"))
-    .filter(btn => btn.innerText === "+2").length;
+  const selected = Array.from(document.querySelectorAll(".pericia button")).filter(
+    (btn) => btn.innerText === "+2"
+  ).length;
 
   if (button.innerText !== "+2" && selected >= 3) return;
 
   button.innerText = button.innerText === "+2" ? "0" : "+2";
 }
+
 
   
 const chessPopup = document.getElementById("chessTutorialPopup");

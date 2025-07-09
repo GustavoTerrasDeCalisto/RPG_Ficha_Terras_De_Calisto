@@ -1322,7 +1322,10 @@ Bonus por Níveis Do Personagem  </h3>
     <label>Digite sua fórmula de dano:</label>
     <input type="text" id="diceInput" placeholder="ex: 2d8+1d6+4d12">
 <button type="button" onclick="rollDice()">Rolar Dados</button>
-
+<div id="modoRegraContainer">
+  <button id="ativarRegraBtn">🎲 Melhores/Piores</button>
+  <button id="desativarRegraBtn">❌ Normal</button>
+</div>
     <div id="diceResultArea">
       <div id="diceGifContainer">
 <img id="diceGif" src="" alt="Rolando..." style="display: none;" />

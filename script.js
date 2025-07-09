@@ -2086,7 +2086,22 @@ document.getElementById("desativarRegraBtn").addEventListener("click", () => {
   alert("Modo 'Melhores/Piores' DESATIVADO.");
 });
 
-// 🎲 Função de rolagem com lógica condicional
+let usarMelhoresOuPiores = false;
+let usarModificador = false;
+
+const btnRegra = document.getElementById("ativarRegraBtn");
+const btnMod = document.getElementById("usarModificadorBtn");
+
+btnRegra.addEventListener("click", () => {
+  usarMelhoresOuPiores = !usarMelhoresOuPiores;
+  btnRegra.classList.toggle("ativo");
+});
+
+btnMod.addEventListener("click", () => {
+  usarModificador = !usarModificador;
+  btnMod.classList.toggle("ativo");
+});
+
 function rollDice() {
   const input = document.getElementById("diceInput").value.trim();
   const gif = document.getElementById("diceGif");
@@ -2122,26 +2137,23 @@ function rollDice() {
       const qtd = Math.min(Math.abs(modifier), rolls.length);
       usedRolls = modifier > 0 ? sorted.slice(-qtd) : sorted.slice(0, qtd);
       total += usedRolls.reduce((a, b) => a + b, 0);
-      total += modifier;
       infoExtra = ` → usados: <strong>${usedRolls.join(", ")}</strong>`;
     } else {
       total += rolls.reduce((a, b) => a + b, 0);
-      total += modifier;
     }
 
     detailed += `<strong>${count}d${sides}:</strong> ${rolls.join(", ")}${infoExtra}<br>`;
   }
 
   if (modifier !== 0) {
-    if (usarMelhoresOuPiores) {
-      detailed += `<strong>Tipo de seleção:</strong> ${modifier > 0 ? "maiores" : "menores"} ${Math.abs(modifier)}<br>`;
-      detailed += `<strong>Modificador adicional:</strong> ${modifier > 0 ? "+" : ""}${modifier}<br>`;
-    } else {
+    if (!usarMelhoresOuPiores && usarModificador) {
+      total += modifier;
       detailed += `<strong>Modificador:</strong> ${modifier > 0 ? "+" : ""}${modifier}<br>`;
+    } else if (usarMelhoresOuPiores) {
+      detailed += `<strong>Tipo de seleção:</strong> ${modifier > 0 ? "maiores" : "menores"} ${Math.abs(modifier)}<br>`;
     }
   }
 
-  // Reiniciar o gif
   gif.style.display = "none";
   gif.src = "";
   setTimeout(() => {
@@ -2152,6 +2164,7 @@ function rollDice() {
   document.getElementById("diceOverlay").innerText = `Total: ${total}`;
   document.getElementById("detailedResults").innerHTML = detailed;
 }
+
 
 // 🎯 Resetar e limitar perícias
 document.getElementById("resetSkillsButton")?.addEventListener("click", () => {

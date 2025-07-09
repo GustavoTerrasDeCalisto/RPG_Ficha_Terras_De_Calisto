@@ -3286,40 +3286,28 @@ h2:not(.resistencia-index) {
 }
 #modoRegraContainer {
   display: inline-flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
   gap: 4px !important;
   margin: 4px 0 !important;
 }
 
 #modoRegraContainer button {
   padding: 2px 6px !important;
-  font-size: 0.65rem !important;
-  border: none !important;
+  font-size: 0.7rem !important;
+  border: 1px solid transparent !important;
   border-radius: 4px !important;
   cursor: pointer !important;
   font-weight: 600 !important;
   line-height: 1 !important;
   white-space: nowrap !important;
-  transition: background-color 0.2s ease !important;
+  transition: background-color 0.2s, border-color 0.2s !important;
+  background-color: #ccc !important;
+  color: #222 !important;
 }
 
-#ativarRegraBtn {
-  background-color: #27ae60 !important;
-  color: #fff !important;
-}
-
-#ativarRegraBtn:hover {
-  background-color: #1e8a4d !important;
-}
-
-#desativarRegraBtn {
-  background-color: #c0392b !important;
-  color: #fff !important;
-}
-
-#desativarRegraBtn:hover {
-  background-color: #992d22 !important;
+#modoRegraContainer button.ativo {
+  background-color: #2ecc71 !important;
+  border-color: #27ae60 !important;
+  color: white !important;
 }
 
 

@@ -1476,7 +1476,7 @@ bonusTexto_2: `
 <p>Nível 9: Pode refletir uma magia de energia com um teste de esquiva (1 vez por combate).</p>
 <p>Nível 13: +1d10 extra de dano contra inimigos que usaram magia no turno anterior.</p>
 <p>Nível 16: Pode realizar 1 ataque extra com a lâmina se estiver com menos da metade da vida.</p>
-<p>Nível 20: Ao derrotar um inimigo com a lâmina, recupera 10 de vida e 5 de sanidade (1 vez por combate).</p>
+<p>Nível 20: Ao derrotar um inimigo com a lâmina, recupera 15 de sanidade (1 vez por combate).</p>
 <p>Nível 22: +2 permanente em testes de <strong>agilidade</strong> e <strong>esquiva</strong>.</p>
 <p>Nível 25: <strong>Ruptura de Foco</strong> — Executa 3 cortes com +2d8 de dano cada. (1 vez por combate)</p>
 `,bonustitulo_3: "<p>🛠️ Engenheiro Arcano</p>",

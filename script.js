@@ -1466,6 +1466,30 @@ bonusTexto_1: `
 <p>Nível 20: <strong>Instinto Predador</strong> — +2 em testes de resistência contra <strong>medo</strong> e <strong>desorientação</strong> ao perseguir o <strong>alvo caçado</strong>.</p>
 <p>Nível 22: <strong>Execução Tática</strong> — Pode realizar <strong>2 ataques extras</strong> com armas de fogo contra o <strong>alvo caçado</strong>, uma vez por combate.</p>
 <p>Nível 25: <strong>Disparo Final</strong> — Uma vez por combate, executa um disparo fatal que causa +2d10 de dano e ignora toda a armadura do <strong>alvo caçado</strong>.</p>
+`,bonustitulo_2: "<p>⚔️ <strong>Executor da Luz Partida</strong></p>",
+bonusTexto_2: `
+<p><strong>Disciplina de Combate:</strong> Você treina com foco absoluto no uso de lâminas laser, desenvolvendo reflexos, esquiva e percepção. Inspirado nos guerreiros antigos da galáxia.</p>
+
+<p>Nível 1: Ganha as magias [Pulso de Plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Agilidade-,Pulso%20de%20Plasma,-Plasmae%20Pulsus) e [Tremor Abissal](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Tremor%20Abissal,-Abissalis%20tremor).</p>
+<p>Nível 3: +2 em <strong>esquiva</strong> ao usar apenas a lâmina. Uma vez a cada 3 turnos, pode evitar totalmente uma área de efeito com um salto preciso.</p>
+<p>Nível 5: +1d8 de dano se atacar após uma esquiva bem-sucedida. Ganha a passiva [Invadir a mente](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Invadir%20a%20mente,-Invadere%20mentem).</p>
+<p>Nível 9: Pode refletir uma magia de energia com um teste de esquiva (1 vez por combate).</p>
+<p>Nível 13: +1d10 extra de dano contra inimigos que usaram magia no turno anterior.</p>
+<p>Nível 16: Pode realizar 1 ataque extra com a lâmina se estiver com menos da metade da vida.</p>
+<p>Nível 20: Ao derrotar um inimigo com a lâmina, recupera 10 de vida e 5 de sanidade (1 vez por combate).</p>
+<p>Nível 22: +2 permanente em testes de <strong>agilidade</strong> e <strong>esquiva</strong>.</p>
+<p>Nível 25: <strong>Ruptura de Foco</strong> — Executa 3 cortes com +2d8 de dano cada. (1 vez por combate)</p>
+`,bonustitulo_3: "<p>🛠️ Engenheiro Arcano</p>",
+bonusTexto_3: `
+<p>Nível 1: Núcleo Condutor – Cria um canalizador de energia mágica em um objeto improvisado. Ataques com ele causam <strong>+1 de dano mágico</strong>. Libera uma magia de nível 1 de [Laser](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Laser,-%E2%80%93%20Disc%C3%ADpulos%20do%20Raio) ou [Tremor](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Tremor,-%E2%80%93%20C%C3%ADrculo%20dos%20Tremores).</p>
+<p>Nível 3: Reator Artesanal – Constrói um dispositivo rudimentar com pedaços de entulho que causa <strong>+1d8 de dano mágico</strong> ao colidir com o inimigo (1 vez por combate). Libera uma magia de nível 2 do mesmo elemento escolhido.</p>
+<p>Nível 5: Dronizador Improvisado – Cria um pequeno drone voador que te acompanha por 2 turnos, concedendo <strong>+1 de Armadura</strong> enquanto ativo. (1 vez por combate) Libera uma magia de nível 3.</p>
+<p>Nível 9: Armazenamento Arcano – Pode guardar até 2 magias dentro de sucata mágica e conjurá-las mais tarde, mesmo se estiver impedido de conjurar verbalmente. Dura até o fim da sessão. Libera uma magia de nível 4.</p>
+<p>Nível 13: Circuito de Fusão – Conecta dois efeitos mágicos distintos em um único dispositivo improvisado. Exemplo: explosão + desaceleração. Libera uma magia de nível 5.</p>
+<p>Nível 16: Núcleo Potencializado – Magias de [Laser](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Laser,-%E2%80%93%20Disc%C3%ADpulos%20do%20Raio) ou [Tremor](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Tremor,-%E2%80%93%20C%C3%ADrculo%20dos%20Tremores) canalizadas via objetos causam <strong>+1d10 de dano adicional</strong> e duram <strong>+2 turnos</strong>. Libera uma magia de nível 6.</p>
+<p>Nível 20: Engenho Singular – Pode fabricar 1 item tec-mágico por sessão, como granadas de pulso, campos de energia ou uma <strong>torreta sentinela</strong> que dispara automaticamente por 3 turnos. (Alcance: 10m | Dano: <strong>2d8 de Laser</strong> por turno em um inimigo visível.)</p>
+<p>Nível 22: Canalização Improvisada – Pode conjurar magias usando <strong>objetos arremessados</strong> como meio de impacto. Ex: lançar uma engrenagem que libera energia de Tremor ao colidir.</p>
+<p>Nível 25: Laboratório de Batalha – Monta um campo improvisado repleto de engenhocas: até 3 efeitos tec-mágicos (ex: escudos, minas ou lasers orbitais) ativos por 3 turnos. (1 vez por combate)</p>
 `,
       "movimento_pass": 4
     },

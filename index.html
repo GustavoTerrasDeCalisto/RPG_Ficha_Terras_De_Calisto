@@ -891,7 +891,103 @@
               <span>Nível: <span id="level-view">0</span></span>
             </div>
           </div>
-          
+          <!-- Nome -->
+<!-- Nome (100% largura com label alinhado ao input) -->
+<div style="margin-bottom: 10px;">
+  <label for="char-name" style="display: block; font-size: 14px; margin-bottom: 4px; color: red;">Nome:</label>
+  <input type="text" id="char-name" name="char-name" required
+         style="width: 100%; padding: 6px 8px; font-size: 14px; border: 1px solid #aaa; border-radius: 5px;">
+</div>
+
+<!-- Raça e Passado (lado a lado no PC, empilhados no mobile) -->
+<div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: nowrap;">
+
+  <!-- Raça -->
+  <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+    <label for="race" style="font-size: 14px; margin-bottom: 4px; color: red;">Raça:</label>
+    <select id="race" name="race" required
+            style="padding: 6px 8px; font-size: 14px; border: 1px solid #aaa; border-radius: 5px; width: 100%;">
+      <option value="">Selecione a Raça</option>
+      <option value="Elfo">Lyrithil – Elfo</option>
+      <option value="Humano">Zhilak – Humano</option>
+      <option value="Anão">Grunthrok – Anão</option>
+      <option value="Gigante">Thudrok – Gigante</option>
+      <option value="Krahzhik">Krahzhik – IgnisAlatus</option>
+      <option value="Skywalker">Skywalkers – Flumplux</option>
+      <option value="Umbrowalker – Shlurp">Umbrowalker – Shlurp</option>
+      <option value="Elfo da profundeza">Glublorp – Elfo da profundeza</option>
+      <option value="Tritão">Glubrust – Tritão</option>
+      <option value="Shrivvel – Pele Palida">Shrivvel – Pele Palida</option>
+      <option value="Gronklech – Durock">Gronklech – Durock</option>
+    </select>
+  </div>
+
+  <!-- Passado -->
+  <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+    <label for="past" style="font-size: 14px; margin-bottom: 4px; color: red;">Passado:</label>
+    <select id="past" name="past" required
+            style="padding: 6px 8px; font-size: 14px; border: 1px solid #aaa; border-radius: 5px; width: 100%;">
+      <option value="">Selecione o Passado</option>
+      <option value="Aldeão">Aldeão</option>
+      <option value="Arauto">Arauto</option>
+      <option value="Arqueiro">Arqueiro</option>
+      <option value="Assassino">Assassino</option>
+      <option value="Assombração">Assombração</option>
+      <option value="Atirador">Atirador</option>
+      <option value="Barão">Barão</option>
+      <option value="Bárbaro">Bárbaro</option>
+      <option value="Bardo">Bardo</option>
+      <option value="Bruxo">Bruxo</option>
+      <option value="Carpinteiro">Carpinteiro</option>
+      <option value="Catador">Catador</option>
+      <option value="Colosso">Colosso</option>
+      <option value="Conjurador">Conjurador</option>
+      <option value="Costeiro">Costeiro</option>
+      <option value="Criatura">Criatura</option>
+      <option value="Duelista">Duelista</option>
+      <option value="Escudeiro">Escudeiro</option>
+      <option value="Especialista">Especialista</option>
+      <option value="Espectro">Espectro</option>
+      <option value="Espiritualista">Espiritualista</option>
+      <option value="Fera">Fera</option>
+      <option value="Ferreiro">Ferreiro</option>
+      <option value="Forasteiro">Forasteiro</option>
+      <option value="Glacinata">Glacinata</option>
+      <option value="Guerreiro">Guerreiro</option>
+      <option value="Hemomantico">Hemomantico</option>
+      <option value="Imitador">Imitador</option>
+      <option value="Juíz">Juíz</option>
+      <option value="Lacaio">Lacaio</option>
+      <option value="Ladrão">Ladrão</option>
+      <option value="Louco">Louco</option>
+      <option value="Mago">Mago</option>
+      <option value="Malabarista">Malabarista</option>
+      <option value="Marinheiro">Marinheiro</option>
+      <option value="Masoquista">Masoquista</option>
+      <option value="Médico">Médico</option>
+      <option value="Mendigo">Mendigo</option>
+      <option value="Monge">Monge</option>
+      <option value="Naturalista">Naturalista</option>
+      <option value="Nobre">Nobre</option>
+      <option value="Perseguidor">Perseguidor</option>
+      <option value="Pervertido">Pervertido</option>
+      <option value="Pescador">Pescador</option>
+      <option value="Pirata">Pirata</option>
+      <option value="Prefeito">Prefeito</option>
+      <option value="Prisioneiro">Prisioneiro</option>
+      <option value="Profanado">Profanado</option>
+      <option value="Protetor">Protetor</option>
+      <option value="Pugilista">Pugilista</option>
+      <option value="Revivido">Revivido</option>
+      <option value="Samurai">Samurai</option>
+      <option value="Sacerdote">Sacerdote</option>
+      <option value="Soberano">Soberano</option>
+      <option value="Taverneiro">Taverneiro</option>
+      <option value="Tormentalista">Tormentalista</option>
+    </select>
+  </div>
+
+</div>
           <div class="stat-container">
             <img id="race-image" src="" alt="Raça"> 
             <img id="past-image" src="" alt="Passado"> 
@@ -1214,96 +1310,6 @@ Bonus por Níveis Do Personagem  </h3>
        
         
         <form id="character-form">
-          <div class="form-group">
-            <label for="char-name">Nome:</label>
-            <input type="text" id="char-name" name="char-name" required>
-          </div>
-          <div class="form-group">
-
-            <label for="race">Raça:</label>
-            <select id="race" name="race" required>
-              <option value="sua raça">Selecione a Raça</option>
-              <option value="Elfo">Lyrithil – Elfo</option>
-              <option value="Humano">Zhilak – Humano</option>  
-              <option value="Anão">Grunthrok – Anão</option>
-              <option value="Gigante">Thudrok – Gigante</option>
-              <option value="Krahzhik">Krahzhik – IgnisAlatus</option>
-              <option value="Skywalker">Skywalkers – Flumplux</option>
-              <option value="Umbrowalker – Shlurp">Umbrowalker – Shlurp</option>
-              <option value="Elfo da profundeza">Glublorp – Elfo da profundeza</option>
-              <option value="Tritão">Glubrust – Tritão</option>
-              <option value="Shrivvel – Pele Palida">Shrivvel – Pele Palida</option>
-              <option value="Gronklech – Durock">Gronklech – Durock</option>
-            
-            
-              
-            </select>
-          </div>
-          <div class="form-group">
-            
-            <label for="past">Passado:</label>
-            
-            <select id="past" name="past" required>
-              <option value="seu passado">Selecione o Passado</option>
-              <option value="Aldeão">Aldeão</option>
-              <option value="Arauto">Arauto</option> 
-              <option value="Arqueiro">Arqueiro</option> 
-              <option value="Assassino">Assassino</option> 
-              <option value="Assombração">Assombração</option>
-              <option value="Atirador">Atirador</option>
-<option value="Barão">Barão</option>
-<option value="Bárbaro">Bárbaro</option>
-<option value="Bardo">Bardo</option>
-<option value="Bruxo">Bruxo</option>
-<option value="Carpinteiro">Carpinteiro</option>
-<option value="Catador">Catador</option>
-<option value="Colosso">Colosso</option>
-<option value="Conjurador">Conjurador</option>
-<option value="Costeiro">Costeiro</option>
-<option value="Criatura">Criatura</option>
-<option value="Duelista">Duelista</option>
-<option value="Escudeiro">Escudeiro</option>
-<option value="Especialista">Especialista</option>
-<option value="Espectro">Espectro</option>
-<option value="Espiritualista">Espiritualista</option>
-<option value="Fera">Fera</option>
-<option value="Ferreiro">Ferreiro</option>
-<option value="Forasteiro">Forasteiro</option>
-<option value="Glacinata">Glacinata</option>
-<option value="Guerreiro">Guerreiro</option>
-<option value="Hemomantico">Hemomantico</option>
-<option value="Imitador">Imitador</option>
-<option value="Juíz">Juíz</option>
-<option value="Lacaio">Lacaio</option>
-<option value="Ladrão">Ladrão</option>
-<option value="Louco">Louco</option>
-<option value="Mago">Mago</option>
-<option value="Malabarista">Malabarista</option>
-<option value="Marinheiro">Marinheiro</option>
-<option value="Masoquista">Masoquista</option>
-<option value="Médico">Médico</option>
-<option value="Mendigo">Mendigo</option>
-<option value="Monge">Monge</option>
-<option value="Naturalista">Naturalista</option>
-<option value="Nobre">Nobre</option>
-<option value="Perseguidor">Perseguidor</option>
-<option value="Pervertido">Pervertido</option>
-<option value="Pescador">Pescador</option>
-<option value="Pirata">Pirata</option>
-<option value="Prefeito">Prefeito</option>
-<option value="Prisioneiro">Prisioneiro</option>
-<option value="Profanado">Profanado</option>
-<option value="Protetor">Protetor</option>
-<option value="Pugilista">Pugilista</option>
-<option value="Revivido">Revivido</option>
-<option value="Samurai">Samurai</option>
-<option value="Sacerdote">Sacerdote</option>
-<option value="Soberano">Soberano</option>
-<option value="Taverneiro">Taverneiro</option>
-<option value="Tormentalista">Tormentalista</option> 
-            </select>
-            
-          </div>
 
 
 

@@ -893,18 +893,32 @@
           </div>
           <!-- Nome -->
 <!-- Nome (100% largura com label alinhado ao input) -->
-<div style="margin-bottom: 10px;">
-  <label for="char-name" style="display: block; font-size: 14px; margin-bottom: 4px; color: red;">Nome:</label>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+  <label for="char-name" style="font-size: 1.8em; margin-right: 12px; color: #444; min-width: 70px; font-family: 'Caveat', cursive;">
+    Nome:
+  </label>
   <input type="text" id="char-name" name="char-name" required
-         style="width: 100%; padding: 6px 8px; font-size: 14px; border: 1px solid #aaa; border-radius: 5px;">
+         style="flex: 1; padding: 1px 10px; font-size: 2em;
+                border: none; border-bottom: 2px solid #888;
+                background-color: transparent;
+                outline: none; transition: border-color 0.3s;
+                font-family: 'Caveat', cursive;">
 </div>
+
+<style>
+  #char-name:focus {
+    border-bottom: 2px solid #0077cc;
+  }
+</style>
 
 <!-- Raça e Passado (lado a lado no PC, empilhados no mobile) -->
 <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: nowrap;">
 
   <!-- Raça -->
   <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
-    <label for="race" style="font-size: 14px; margin-bottom: 4px; color: red;">Raça:</label>
+    <label for="race" style="font-size: 14px; margin-bottom: 4px; color: rgb(255, 72, 0);">Raça:</label>
     <select id="race" name="race" required
             style="padding: 6px 8px; font-size: 14px; border: 1px solid #aaa; border-radius: 5px; width: 100%;">
       <option value="">Selecione a Raça</option>

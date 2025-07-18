@@ -1345,8 +1345,35 @@ Bonus por Níveis Do Personagem  </h3>
   <button id="closeDescPopup">Fechar</button>
 </div>
 
-<button id="openItemPopup">Equipamento</button>
+<button id="openItemPopup" class="mochila-btn"></button>
 
+<style>
+  .mochila-btn {
+    background-image: url('imagens/BotaoMochila.png'); /* nome da sua imagem PNG */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 200px;   /* ajuste conforme o tamanho real da imagem */
+    height: 70px;
+
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .mochila-btn:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+  }
+
+  .mochila-btn:active {
+    filter: brightness(0.9);
+    transform: scale(0.98);
+  }
+</style>
 <!-- Visual do item equipado -->
 <div id="equippedItemDisplay">
   <h4>Item Equipado:</h4>

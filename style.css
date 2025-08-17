@@ -3056,107 +3056,148 @@ span {
   text-align: left;
 }
 
+    /* Container do popup */
+    #tutorialPopup .popup-content {
+      background: #1a1a1a;
+      color: #eaeaea;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 850px;
+      margin: auto;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+      font-family: "Segoe UI", sans-serif;
+    }
 
-   /* Títulos e subtítulos */
-h2:not(.resistencia-index) {
-  font-size: 2rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #D8902D, #DC143C); /* Fé */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0.6em;
-}
-    h3 {
-      font-size: 1.3rem;
+    /* Botões no topo */
+    #tutorialPopup .chess-button-container {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 1em;
+    }
+
+    #tutorialPopup .close {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: #bbb;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    #tutorialPopup .close:hover { color: #fff; }
+
+    #tutorialPopup .chess-btn {
+      background: #2e2e2e;
+      color: #f0f0f0;
+      border: 1px solid #444;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
       font-weight: 600;
-      color: #DC143C; /* Fé vermelho mais forte */
+      transition: 0.25s;
+    }
+    #tutorialPopup .chess-btn:hover {
+      background: #444;
+      border-color: #666;
+    }
+
+    /* Estrutura geral */
+    #tutorialPopup .tutorial-section {
+      margin-bottom: 2em;
+    }
+
+    /* Títulos */
+    #tutorialPopup h2:not(.resistencia-index) {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #f5f5f5;
+      margin-bottom: 0.5em;
+      border-left: 4px solid #DC143C;
+      padding-left: 10px;
+    }
+
+    #tutorialPopup h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ccc;
       margin-top: 1em;
       margin-bottom: 0.4em;
     }
 
-    /* Estilo para listas e parágrafos */
-    li {
-      margin-left: 1.5em;
-      margin-bottom: 0.3em;
-      font-weight: 600;
-    }
-
-    /* Palavras-chave e elementos destacados */
-    .pv { color: #D32F2F; font-weight: 700; } /* vermelho para PV */
-    .san { color: #7B1FA2; font-weight: 700; } /* roxo para SAN */
-    .especial { color: #FBC02D; font-weight: 700; } /* amarelo especial */
-    
-    /* Atributos com fundo e texto */
-    .bru {
-      background-color: #000000;
-      color: white;
-      padding: 0 5px;
-      border-radius: 3px;
-      font-weight: 700;
-    }
-.agi {
-  background-color: #81D4FA; /* Azul claro */
-  color: #01579B; /* Azul escuro */
-  padding: 0 5px;
-  border-radius: 3px;
-  font-weight: 700;
-}
-
-    .pre {
-      background: linear-gradient(135deg, orange, green);
-      color: white;
-      padding: 0 5px;
-      border-radius: 3px;
-      font-weight: 700;
-    }
-    .det {
-      background: linear-gradient(135deg, #D8902D, #DC143C);
-      color: white;
-      padding: 0 5px;
-      border-radius: 3px;
-      font-weight: 700;
-    }
-    .lib {
-      background: linear-gradient(135deg, #201d36, #8A2BE2);
-      color: white;
-      padding: 0 5px;
-      border-radius: 3px;
-      font-weight: 700;
-    }
-    .cnx {
-      background: linear-gradient(135deg, purple, #8A2BE2);
-      color: white;
-      padding: 0 5px;
-      border-radius: 3px;
-      font-weight: 700;
-    }
-
-    /* Textos com degradê */
-    .grad-text {
-      background: linear-gradient(90deg, #D8902D, #DC143C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 700;
-    }
-
-    /* Outros ajustes gerais para facilitar leitura */
-    p, li {
+    /* Texto */
+    #tutorialPopup p,
+    #tutorialPopup li {
       font-size: 1rem;
-      line-height: 1.4;
-      margin-bottom: 0.5em;
+      line-height: 1.6;
+      margin-bottom: 0.7em;
+      color: #ddd;
     }
 
-    strong {
+    #tutorialPopup li {
+      margin-left: 1.5em;
+      list-style-type: disc;
+    }
+
+    #tutorialPopup strong {
+      font-weight: 700;
+      color: #f0f0f0;
+    }
+
+    /* Palavras-chave e atributos */
+    #tutorialPopup .pv { color: #E53935; font-weight: 700; }
+    #tutorialPopup .san { color: #8E24AA; font-weight: 700; }
+    #tutorialPopup .especial { color: #FDD835; font-weight: 700; }
+
+    #tutorialPopup .bru {
+      background: #000;
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    #tutorialPopup .agi {
+      background: #81D4FA;
+      color: #01579B;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    #tutorialPopup .det {
+      background: linear-gradient(135deg, #D8902D, #DC143C);
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    #tutorialPopup .pre {
+      background: linear-gradient(135deg, orange, green);
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    #tutorialPopup .lib {
+      background: linear-gradient(135deg, #201d36, #8A2BE2);
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    #tutorialPopup .cnx {
+      background: linear-gradient(135deg, purple, #8A2BE2);
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 4px;
       font-weight: 700;
     }
 
-
-
-
-
-
-
-
+    /* Imagens */
+    #tutorialPopup img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
 
 
 
@@ -3309,5 +3350,6 @@ h2:not(.resistencia-index) {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 

@@ -2889,42 +2889,17 @@ span {
 
 
 
+/* ------------------------------
+   Popup Tutorial Exclusivo
+--------------------------------*/
 
-
-
-
-
-/* Botões */
-.chess-btn, .combat-btn {
-  background-color: #3a86ff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: fit-content;
-}
-
-.combat-btn {
-  background-color: #8338ec;
-  font-size: 15px;
-  margin-top: 12px;
-}
-
-.chess-btn:hover,
-.combat-btn:hover {
-  opacity: 0.9;
-}
-
-/* Popup geral */
-.chess-popup {
+/* Container externo */
+#tutorialPopup.chess-popup {
   position: fixed;
   inset: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   z-index: 9999;
@@ -2932,273 +2907,200 @@ span {
   padding: 40px 20px;
   box-sizing: border-box;
 }
- .chess-button-container {
-    display: flex;
-    gap: 10px;
-    justify-content: left; /* centraliza na tela */
-    margin: 20px 0;
-  }
 
-/* Conteúdo interno do popup */
-.chess-popup-content {
-  background: #fff;
-  padding: 24px;
+/* Conteúdo interno */
+#tutorialPopup .popup-content {
+  background: #1a1a1a;
+  color: #eaeaea;
   border-radius: 14px;
+  padding: 24px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
   max-height: 95vh;
+  margin: auto;
   overflow-y: auto;
-  box-sizing: border-box;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  font-family: "Segoe UI", sans-serif;
   position: relative;
+  box-sizing: border-box;
 }
 
 /* Botão de fechar */
-.chess-popup-close {
+#tutorialPopup .chess-popup-close,
+#tutorialPopup .close {
   position: absolute;
   top: 12px;
   right: 20px;
-  font-size: 26px;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #bbb;
   cursor: pointer;
+  transition: 0.25s;
   z-index: 10;
-  color: #333;
+}
+#tutorialPopup .chess-popup-close:hover,
+#tutorialPopup .close:hover {
+  color: #fff;
 }
 
-/* Flex container das seções */
-.chess-popup-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-between;
-}
-
-/* Cada seção */
-.chess-popup-section {
-  flex: 1 1 300px;
-  min-width: 280px;
-  box-sizing: border-box;
-}
-
-/* Títulos */
-.chess-popup-section h2 {
-  color: #3a86ff;
-  margin-top: 0;
-  font-size: 20px;
-  line-height: 1.3;
-  margin-bottom: 12px;
-}
-
-/* Parágrafos */
-.chess-popup-section p {
-  font-size: 15.5px;
-  line-height: 1.7;
-  margin-bottom: 12px;
-  color: #222;
-}
-
-/* Listas */
-.chess-popup-section ul,
-.chess-hp-list {
-  padding-left: 20px;
+/* Botões */
+#tutorialPopup .chess-btn,
+#tutorialPopup .combat-btn {
+  background: #2e2e2e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
   font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 12px;
-  list-style-type: disc;
-  word-break: break-word;
+  transition: 0.25s;
+  width: fit-content;
+}
+#tutorialPopup .combat-btn {
+  background: #552b91;
+  border-color: #6a42a1;
+  margin-top: 10px;
+}
+#tutorialPopup .chess-btn:hover,
+#tutorialPopup .combat-btn:hover {
+  background: #444;
+  border-color: #666;
 }
 
-.chess-hp-list li,
-.chess-popup-section li {
-  margin-bottom: 6px;
+/* Container dos botões */
+#tutorialPopup .chess-button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+/* Estrutura do conteúdo */
+#tutorialPopup .tutorial-section {
+  margin-bottom: 2em;
+}
+
+#tutorialPopup h2:not(.resistencia-index) {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 0.6em;
+  border-left: 4px solid #DC143C;
+  padding-left: 10px;
+}
+
+#tutorialPopup h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+/* Texto e listas */
+#tutorialPopup p,
+#tutorialPopup li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.7em;
+  color: #ddd;
+}
+
+#tutorialPopup li {
+  margin-left: 1.5em;
+  list-style-type: disc;
+}
+
+#tutorialPopup strong {
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+/* Atributos / keywords */
+#tutorialPopup .pv { color: #E53935; font-weight: 700; }
+#tutorialPopup .san { color: #8E24AA; font-weight: 700; }
+#tutorialPopup .especial { color: #FDD835; font-weight: 700; }
+
+#tutorialPopup .bru {
+  background: #000;
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#tutorialPopup .agi {
+  background: #81D4FA;
+  color: #01579B;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#tutorialPopup .det {
+  background: linear-gradient(135deg, #D8902D, #DC143C);
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#tutorialPopup .pre {
+  background: linear-gradient(135deg, orange, green);
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#tutorialPopup .lib {
+  background: linear-gradient(135deg, #201d36, #8A2BE2);
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#tutorialPopup .cnx {
+  background: linear-gradient(135deg, purple, #8A2BE2);
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700;
 }
 
 /* Imagens */
-.chess-img {
+#tutorialPopup img {
   width: 100%;
-  max-width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+  border-radius: 10px;
+  margin: 1em 0;
+  display: block;
   object-fit: cover;
-  height: auto;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .chess-popup-flex {
-    flex-direction: column;
-  }
-
-  .chess-popup-content {
+  #tutorialPopup .popup-content {
     padding: 16px;
     border-radius: 10px;
   }
 
-  .chess-popup-section {
-    width: 100%;
+  #tutorialPopup h2 {
+    font-size: 1.4rem;
   }
 
-  .chess-popup-section h2 {
-    font-size: 18px;
+  #tutorialPopup h3 {
+    font-size: 1.1rem;
   }
 
-  .chess-popup-section p,
-  .chess-popup-section li {
+  #tutorialPopup p,
+  #tutorialPopup li {
     font-size: 15px;
   }
 
-  .chess-popup-close {
+  #tutorialPopup .chess-popup-close {
     font-size: 22px;
     top: 8px;
     right: 14px;
   }
 }
-.chess-popup li {
-  margin: 4px 0;
-  text-align: left;
-}
-
-    /* Container do popup */
-    #tutorialPopup .popup-content {
-      background: #1a1a1a;
-      color: #eaeaea;
-      border-radius: 12px;
-      padding: 20px;
-      max-width: 850px;
-      margin: auto;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    /* Botões no topo */
-    #tutorialPopup .chess-button-container {
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      margin-bottom: 1em;
-    }
-
-    #tutorialPopup .close {
-      background: transparent;
-      border: none;
-      font-size: 1.5rem;
-      color: #bbb;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    #tutorialPopup .close:hover { color: #fff; }
-
-    #tutorialPopup .chess-btn {
-      background: #2e2e2e;
-      color: #f0f0f0;
-      border: 1px solid #444;
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: 0.25s;
-    }
-    #tutorialPopup .chess-btn:hover {
-      background: #444;
-      border-color: #666;
-    }
-
-    /* Estrutura geral */
-    #tutorialPopup .tutorial-section {
-      margin-bottom: 2em;
-    }
-
-    /* Títulos */
-    #tutorialPopup h2:not(.resistencia-index) {
-      font-size: 1.7rem;
-      font-weight: 700;
-      color: #f5f5f5;
-      margin-bottom: 0.5em;
-      border-left: 4px solid #DC143C;
-      padding-left: 10px;
-    }
-
-    #tutorialPopup h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #ccc;
-      margin-top: 1em;
-      margin-bottom: 0.4em;
-    }
-
-    /* Texto */
-    #tutorialPopup p,
-    #tutorialPopup li {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 0.7em;
-      color: #ddd;
-    }
-
-    #tutorialPopup li {
-      margin-left: 1.5em;
-      list-style-type: disc;
-    }
-
-    #tutorialPopup strong {
-      font-weight: 700;
-      color: #f0f0f0;
-    }
-
-    /* Palavras-chave e atributos */
-    #tutorialPopup .pv { color: #E53935; font-weight: 700; }
-    #tutorialPopup .san { color: #8E24AA; font-weight: 700; }
-    #tutorialPopup .especial { color: #FDD835; font-weight: 700; }
-
-    #tutorialPopup .bru {
-      background: #000;
-      color: #fff;
-      padding: 0 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-    #tutorialPopup .agi {
-      background: #81D4FA;
-      color: #01579B;
-      padding: 0 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-    #tutorialPopup .det {
-      background: linear-gradient(135deg, #D8902D, #DC143C);
-      color: #fff;
-      padding: 0 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-    #tutorialPopup .pre {
-      background: linear-gradient(135deg, orange, green);
-      color: #fff;
-      padding: 0 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-    #tutorialPopup .lib {
-      background: linear-gradient(135deg, #201d36, #8A2BE2);
-      color: #fff;
-      padding: 0 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-    #tutorialPopup .cnx {
-      background: linear-gradient(135deg, purple, #8A2BE2);
-      color: #fff;
-      padding: 0 6px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-
-    /* Imagens */
-    #tutorialPopup img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-
 
 
 
@@ -3350,6 +3252,7 @@ span {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 
 

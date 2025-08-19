@@ -4825,7 +4825,7 @@ document.addEventListener('DOMContentLoaded', () => {
         movement: 0,
         level: 1,
   // ✅ Aqui salva o item equipado
-  equippedItemId: equippedItemId ,learned: getLearned() // 👈 aqui salva as magias/passivas aprendidas     }));
+  equippedItemId: equippedItemId      }));
 
       // Atualiza a visualização do personagem
       document.getElementById('char-name-view').textContent = name;
@@ -4868,11 +4868,6 @@ document.getElementById('load-character').addEventListener('click', () => {
 
   document.getElementById('character-select-section').style.display = 'block';
 });
-
-
-
-
-
 
 // Event listener for character selection
 document.getElementById('confirm-load').addEventListener('click', () => {
@@ -4941,6 +4936,11 @@ updateStats();
       document.getElementById('character-select-section').style.display = 'none';
   }
 });
+
+
+
+
+
 
 
 
@@ -5222,5 +5222,3 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
-
-

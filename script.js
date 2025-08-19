@@ -5219,3 +5219,358 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
     box.classList.toggle("hidden");
   }
 
+
+
+/* =========================== */
+/*           DATASET           */
+/*  Troque por seus dados!     */
+/* =========================== */
+const DATASET = {
+  magias: [
+    {
+  id: "m1",
+  nome: "Controle de sangue",
+  sub: "Sanguis imperium",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/b3e68955d9f8a0e03e204e80a408e760acffb882_high.webp",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: "Controla sangue ao seu alcance e é necessário estar vendo o sangue, acertando o inimigo e causando 1d12 de dano de Sangue. Caso o inimigo já tenha sido acertado, pode mover o próprio sangue dele causando +1d8.",
+  duracao: "Gasta ação",
+
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 1 – Iniciado do Sangue",
+
+  alcance: "5m",
+  testeConjurador: "Determinação",
+  testeAlvo: "Determinação"
+},
+    {
+  id: "m2",
+  nome: "Fechar feridas",
+  sub: "Prope vulnera",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-31.png",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: "Controla a ferida do alvo podendo fechar errado (“Profano”) para causar 1d8 + 1d6 de sangue. Se for em um aliado, pode escolher a ferida e tentar fechar curando 1d12 de dano. Pode gastar 1 Especial para tentar curar +1d6, ou no máximo o dano da ferida (caso tire 12 de cura e a ferida tenha sido 8, será curado apenas 8).",
+  duracao: "Gasta ação",
+
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 1 – Iniciado do Sangue",
+
+  alcance: "7m",
+  testeConjurador: "Determinação",
+  testeAlvo: "Determinação"
+},{
+  id: "m3",
+  nome: "Sangue fervido",
+  sub: "Coctum sanguinem",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/46c76fb20b8fb9c9ad039f8cf447b2eedd42de81_high.webp",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: "Olha para o alvo e o sangue dele começa a evaporar. Necessário estar olhando no olho do alvo para causar 2d10 de dano de Sangue. Toda vez que reconjurar essa magia no mesmo alvo e acertar, causa mais 1d4.",
+  duracao: "Gasta ação",
+
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 2 – Guardião Rubro",
+
+  alcance: "2m",
+  testeConjurador: "Determinação",
+  testeAlvo: "Agilidade"
+},{
+  id: "m66",
+  nome: "Olho do Desespero",
+  sub: "Oculus Desperatio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/c2769191832f2f0cbaa350d57f699594073a9ef1_high-1.png",
+  elemento: "Fé",
+  tipoDano: "Maldição",
+  descricao: "O alvo é atingido por uma maldição que causa desespero profundo. Enquanto estiver sob essa maldição, o alvo sofre desvantagem em todos os testes de Libertação e Preservação.\n\n“Para quebrar a maldição, o alvo deve se autoafirmar, dizendo uma frase positiva sobre si mesmo em voz alta, mas deve também realizar um teste de Conexão com dificuldade 15.“",
+  duracao: "Até ser quebrado",
+
+  tagLevel: "Maldizente",
+  tagLevelResposta: "Nível 1 – Aprendiz da Maldição",
+
+  alcance: "6m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+}
+  ],
+  passivas: [
+    {
+      id:"p1",
+      nome:"Consumir",
+      sub:"Consumere",
+      img:"https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop",
+      elemento:"Fé",                 /* tag 1 */
+      tipoDano:"Sangue",             /* tag 2 */
+      descricao:"Seu personagem fica faminto e se alimenta do alvo, curando um valor de vida ou sanidade.",
+      positivo:"Assume postura assassina e morde o alvo, tentando dilacerá-lo e consumir o valor do dano (opcional). Dano 1d12+1d4 (vida) e 1d6+1d4 (sanidade).",
+      negativo:"Dano e cura são acertos separados. Em falha, sofre metade do dano causado e pode ficar bêbado pelo gosto amargo do sangue.",
+      duracao:"Um turno",
+      nivel:"2",
+      alcance:"Visível",
+      testeConjurador:"Sobrevivência",
+      testeAlvo:"Agilidade"
+    },
+    {
+      id:"p2",
+      nome:"Pele de Gelo",
+      sub:"Cutis Glacies",
+      img:"https://images.unsplash.com/photo-1483347756197-71ef80e95f73?q=80&w=800&auto=format&fit=crop",
+      elemento:"Poder",
+      tipoDano:"Gelo",
+      descricao:"Uma camada fria protege sua pele.",
+      positivo:"+2 DEF contra ataques físicos enquanto estiver ativo.",
+      negativo:"Recebe +1 de dano de Fogo.",
+      duracao:"Cena",
+      nivel:"1",
+      alcance:"Passiva",
+      testeConjurador:"—",
+      testeAlvo:"—"
+    }
+  ]
+};
+
+/* =========================== */
+/*        LÓGICA DO UI         */
+/* =========================== */
+const TC = (() => {
+  const LS_KEY = "tc_grimorio_ids";  // array de ids aprendidos (magias e passivas)
+  let state = {
+    tab: "magias", page: 1, perPage: 20,
+    elemento: "", dano: "", busca: ""
+  };
+
+  // Helpers LocalStorage
+  const getLearned = () => JSON.parse(localStorage.getItem(LS_KEY) || "[]");
+  const setLearned = (arr) => localStorage.setItem(LS_KEY, JSON.stringify(arr));
+  const isLearned  = (id) => getLearned().includes(id);
+  const toggleLearn = (id) => {
+    const cur = new Set(getLearned());
+    cur.has(id) ? cur.delete(id) : cur.add(id);
+    setLearned([...cur]);
+    render(); // atualiza lista (inclusive “Aprendidas”)
+    showDetailById(id); // atualiza botão dentro do detalhe, se aberto
+  };
+
+  // Open / Close
+  function open(){ document.getElementById("tcOverlay").style.display="flex"; mountFilters(); render(); }
+  function close(){ document.getElementById("tcOverlay").style.display="none"; hideDetail(); }
+
+  // Mount dynamic filter options
+  function mountFilters(){
+    const elSel = document.getElementById("tcFiltroElemento");
+    const dnSel = document.getElementById("tcFiltroDano");
+    const all = [...DATASET.magias, ...DATASET.passivas];
+
+    const elementos = Array.from(new Set(all.map(x=>x.elemento).filter(Boolean))).sort();
+    const danos = Array.from(new Set(all.map(x=>x.tipoDano).filter(Boolean))).sort();
+
+    elSel.innerHTML = '<option value="">Elemento</option>' + elementos.map(v=>`<option>${v}</option>`).join('');
+    dnSel.innerHTML = '<option value="">Tipo de dano</option>' + danos.map(v=>`<option>${v}</option>`).join('');
+  }
+
+  // Data source by tab
+  function currentList(){
+    if(state.tab === "magias") return DATASET.magias;
+    if(state.tab === "passivas") return DATASET.passivas;
+    // aprendidas
+    const learned = new Set(getLearned());
+    return [...DATASET.magias, ...DATASET.passivas].filter(x=>learned.has(x.id));
+  }
+
+  // Filters
+  function applyFilters(list){
+    const q = state.busca.toLowerCase();
+    return list.filter(it=>{
+      if(state.elemento && it.elemento !== state.elemento) return false;
+      if(state.dano && it.tipoDano !== state.dano) return false;
+      if(q && !it.nome.toLowerCase().includes(q)) return false;
+      return true;
+    });
+  }
+
+  // Render grid & pagination
+  function render(){
+    const grid = document.getElementById("tcGrid");
+    const pag  = document.getElementById("tcPaginacao");
+
+    const base = currentList();
+    const list = applyFilters(base);
+    const totalPages = Math.max(1, Math.ceil(list.length / state.perPage));
+    if(state.page > totalPages) state.page = 1;
+
+    const slice = list.slice((state.page-1)*state.perPage, state.page*state.perPage);
+
+    grid.innerHTML = slice.map(it => `
+      <article class="tc-card" onclick="TC.showDetail('${it.id}')">
+        <img class="tc-img" src="${it.img || ''}" alt="">
+        <div class="tc-name">${it.nome}</div>
+        <div class="tc-meta">${it.tipoDano || '-'} • ${it.elemento || '-'}</div>
+      </article>
+    `).join("");
+
+    // pagination
+    pag.innerHTML = "";
+    for(let i=1;i<=totalPages;i++){
+      const b = document.createElement("button");
+      b.className = "tc-page" + (i===state.page ? " active" : "");
+      b.textContent = i;
+      b.onclick = () => { state.page = i; render(); };
+      pag.appendChild(b);
+    }
+
+    // tabs active state
+    document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
+    document.querySelector(`#tcOverlay .tc-tab[data-tab="${state.tab}"]`).classList.add("active");
+  }
+
+  // DETAIL
+  function showDetailById(id){
+    const it = [...DATASET.magias, ...DATASET.passivas].find(x=>x.id===id);
+    if(it) showDetail(id);
+  }
+  function showDetail(id){
+    const it = [...DATASET.magias, ...DATASET.passivas].find(x=>x.id===id);
+    if(!it) return;
+
+    const isPassiva = DATASET.passivas.some(p=>p.id===id);
+    const box = document.getElementById("tcDetailBox");
+    const learned = isLearned(id);
+
+    const top =
+      `<div class="tc-box-head">
+         <img class="tc-detail-img" src="${it.img||''}" alt="">
+         <div class="tc-title">${it.nome}</div>
+         ${it.sub ? `<div class="tc-sub">${it.sub}</div>` : ""}
+       </div>`;
+
+   const main = `
+<div class="tc-section">
+  <div class="tc-h2">${isPassiva ? "Descrição" : "O que acontece quando usa?"}</div>
+  <div class="tc-desc">${it.descricao || ""}</div>
+
+  <table class="tc-table" style="margin-top:14px">
+    <thead>
+      <tr>
+        <th>Duração</th>
+        <th>${isPassiva ? "Nível" : (it.tagLevel || "Nível")}</th>
+        <th>Alcance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>${it.duracao || "-"}</td>
+        <td>${isPassiva ? it.nivel : (it.tagLevelResposta || it.nivel) || "-"}</td>
+        <td>${it.alcance || "-"}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ${isPassiva ? `
+    <div class="tc-good">Positivo</div>
+    <div class="tc-desc">${it.positivo || "-"}</div>
+    <div class="tc-bad">Negativo</div>
+    <div class="tc-desc">${it.negativo || "-"}</div>
+  ` : ""}
+
+  <div class="tc-h2">Informações</div>
+  <div class="tc-desc"><b>Tipo de dano:</b> ${it.tipoDano || "-"}</div>
+  <div class="tc-desc"><b>Elemento:</b> ${it.elemento || "-"}</div>
+  <div class="tc-desc"><b>Teste do conjurador:</b> ${it.testeConjurador || "-"}</div>
+  <div class="tc-desc"><b>Teste do Alvo:</b> ${it.testeAlvo || "-"}</div>
+</div>`;
+
+    const actions =
+      `<div class="tc-actions">
+         <button class="tc-btn primary" onclick="TC.toggleLearn('${id}')">${learned ? "Remover do Grimório" : "Aprender"}</button>
+         <button class="tc-btn ghost" onclick="TC.hideDetail()">Fechar</button>
+       </div>`;
+
+    box.innerHTML = top + main + actions;
+    document.getElementById("tcDetail").style.display = "flex";
+    
+    setHash(id);
+  }
+  function hideDetail(){ document.getElementById("tcDetail").style.display="none"; clearhash();}
+
+  // Listeners (filtros + tabs)
+  document.addEventListener("click", (e)=>{
+    const t = e.target.closest("#tcOverlay .tc-tab");
+    if(!t) return;
+    state.tab = t.dataset.tab; state.page = 1;
+    render();
+  });
+
+  document.getElementById("tcFiltroElemento").addEventListener("change", e=>{
+    state.elemento = e.target.value; state.page=1; render();
+  });
+  document.getElementById("tcFiltroDano").addEventListener("change", e=>{
+    state.dano = e.target.value; state.page=1; render();
+  });
+  document.getElementById("tcBusca").addEventListener("input", e=>{
+    state.busca = e.target.value; state.page=1; render();
+  });
+/* ===========================
+   *   SUPORTE A HYPERLINK
+   *   #tc=<id>   ou   ?tc=<id>
+   *   (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
+   * =========================== */
+
+  function idFromURL(){
+    const h = window.location.hash.replace(/^#/, "");
+    const qs = new URLSearchParams(window.location.search);
+
+    // Formatos aceitos:
+    // #tc=m1  |  #m1
+    // ?tc=m1  |  ?id=m1  |  ?magia=m1  |  ?passiva=m1
+    let id = null;
+    if (h) {
+      id = h.startsWith("tc=") ? decodeURIComponent(h.slice(3)) : decodeURIComponent(h);
+    }
+    id = id || qs.get("tc") || qs.get("id") || qs.get("magia") || qs.get("passiva");
+    return id || null;
+  }
+
+  function setHash(id){
+    // Não dispara 'hashchange'
+    const url = new URL(location.href);
+    url.hash = `tc=${encodeURIComponent(id)}`;
+    history.replaceState(null, "", url);
+  }
+
+  function clearHash(){
+    // Só limpa se for nosso formato (#tc=...)
+    if (location.hash.startsWith("#tc=")) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+  }
+
+  function syncFromURL(){
+    const id = idFromURL();
+    if (!id) return;
+
+    const exists = [...DATASET.magias, ...DATASET.passivas].some(x => x.id === id);
+    if (exists){
+      open();
+      showDetail(id);
+    }
+  }
+
+  // Abre direto pelo link ao carregar a página
+  window.addEventListener("DOMContentLoaded", syncFromURL);
+
+  // Se o hash for alterado manualmente (#tc=...), sincroniza
+  window.addEventListener("hashchange", () => {
+    const id = idFromURL();
+    if (id){
+      if (document.getElementById("tcOverlay").style.display !== "flex") open();
+      showDetail(id);
+    } else {
+      hideDetail();
+    }
+  });
+  // API pública
+  return { open, close, showDetail, hideDetail, toggleLearn };
+})();
+
+

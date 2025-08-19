@@ -5221,10 +5221,10 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
 
-/* =========================== */
-/*           DATASET           */
-/*  Troque por seus dados!     */
-/* =========================== */
+// =========================== 
+//           DATASET           
+//  Troque por seus dados!     
+// =========================== 
 const DATASET = {
   magias: [
     {
@@ -5330,9 +5330,9 @@ const DATASET = {
   ]
 };
 
-/* =========================== */
-/*        LÓGICA DO UI         */
-/* =========================== */
+// =========================== 
+//        LÓGICA DO UI         
+// =========================== 
 const TC = (() => {
   const LS_KEY = "tc_grimorio_ids";  // array de ids aprendidos (magias e passivas)
   let state = {
@@ -5510,11 +5510,11 @@ const TC = (() => {
   document.getElementById("tcBusca").addEventListener("input", e=>{
     state.busca = e.target.value; state.page=1; render();
   });
-/* ===========================
-   *   SUPORTE A HYPERLINK
-   *   #tc=<id>   ou   ?tc=<id>
-   *   (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
-   * =========================== */
+// ===========================
+   //   SUPORTE A HYPERLINK
+   //  #tc=<id>   ou   ?tc=<id>
+   //   (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
+   // =========================== 
 
   function idFromURL(){
     const h = window.location.hash.replace(/^#/, "");
@@ -5572,5 +5572,6 @@ const TC = (() => {
   // API pública
   return { open, close, showDetail, hideDetail, toggleLearn };
 })();
+
 
 

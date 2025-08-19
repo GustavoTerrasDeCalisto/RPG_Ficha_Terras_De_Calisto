@@ -4825,7 +4825,7 @@ document.addEventListener('DOMContentLoaded', () => {
         movement: 0,
         level: 1,
   // ✅ Aqui salva o item equipado
-  equippedItemId: equippedItemId      }));
+  equippedItemId: equippedItemId ,learned: getLearned() // 👈 aqui salva as magias/passivas aprendidas     }));
 
       // Atualiza a visualização do personagem
       document.getElementById('char-name-view').textContent = name;
@@ -4869,74 +4869,86 @@ document.getElementById('load-character').addEventListener('click', () => {
   document.getElementById('character-select-section').style.display = 'block';
 });
 
-// Event listener for character selection
-document.getElementById('confirm-load').addEventListener('click', () => {
-  const characterSelect = document.getElementById('character-select');
-  const selectedIndex = characterSelect.value;
-
-  if (selectedIndex) {
-      const characterData = JSON.parse(localStorage.getItem(`characterData${selectedIndex}`));
-      if (characterData) {
-          // Update character view section with loaded data
-          document.getElementById('char-name-view').textContent = characterData.name;
-          document.getElementById('char-race-view').textContent = characterData.race;
-          document.getElementById('char-past-view').textContent = characterData.past;
-
-          // Update input fields with loaded stats
-          document.getElementById('char-name').value = characterData.name;
-          document.getElementById('race').value = characterData.race;
-          document.getElementById('past').value = characterData.past;
-          document.getElementById('for').value = characterData.for;
-          document.getElementById('des').value = characterData.des;
-          document.getElementById('con').value = characterData.con;
-          document.getElementById('int').value = characterData.int;
-          document.getElementById('sab').value = characterData.sab;
-          document.getElementById('car').value = characterData.car;
-
-          // Load additional stats
-          document.getElementById('life-view').textContent = characterData.life;
-          document.getElementById('sanity-view').textContent = characterData.sanity;
-          document.getElementById('special-view').textContent = characterData.special;
-          document.getElementById('armor-view').textContent = characterData.armor;
-          document.getElementById('movement-view').textContent = characterData.movement;
-          document.getElementById('level-view').textContent = characterData.level;
-
-          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
-            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
-            if (skillElement) {
-                skillElement.innerText = skillValue;
-            }
-          });
-// CHAMA ISSO PARA ATUALIZAR AS ESPECIALIZAÇÕES
-atualizarBonusDoPassado(characterData.past);
-      // Carregar os dados do item equipado
-      loadEquippedItem(characterData);
 
 
-// ✅ ADICIONE ISSO AQUI
-equippedItemId = characterData.equippedItemId || null;
-if (equippedItemId) {
-  const equippedItem = items.find(item => item.id === equippedItemId);
-  if (equippedItem) {
-    equippedSlot.innerHTML = `
-      <img src="${equippedItem.img}" alt="${equippedItem.name}">
-      <div class="item-info">
-        <div>${equippedItem.name}</div>
-        <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
-        <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
-        <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
-      </div>
-    `;
-  }
-}
-// Call updateStats to display loaded values
-updateStats();
-      }
 
-      document.getElementById('character-select-section').style.display = 'none';
-  }
+
+
+// Event listener for character selection  
+document.getElementById('confirm-load').addEventListener('click', () => {  
+  const characterSelect = document.getElementById('character-select');  
+  const selectedIndex = characterSelect.value;  
+
+  if (selectedIndex) {  
+      const characterData = JSON.parse(localStorage.getItem(`characterData${selectedIndex}`));  
+      if (characterData) {  
+          // Update character view section with loaded data  
+          document.getElementById('char-name-view').textContent = characterData.name;  
+          document.getElementById('char-race-view').textContent = characterData.race;  
+          document.getElementById('char-past-view').textContent = characterData.past;  
+
+          // Update input fields with loaded stats  
+          document.getElementById('char-name').value = characterData.name;  
+          document.getElementById('race').value = characterData.race;  
+          document.getElementById('past').value = characterData.past;  
+          document.getElementById('for').value = characterData.for;  
+          document.getElementById('des').value = characterData.des;  
+          document.getElementById('con').value = characterData.con;  
+          document.getElementById('int').value = characterData.int;  
+          document.getElementById('sab').value = characterData.sab;  
+          document.getElementById('car').value = characterData.car;  
+
+          // Load additional stats  
+          document.getElementById('life-view').textContent = characterData.life;  
+          document.getElementById('sanity-view').textContent = characterData.sanity;  
+          document.getElementById('special-view').textContent = characterData.special;  
+          document.getElementById('armor-view').textContent = characterData.armor;  
+          document.getElementById('movement-view').textContent = characterData.movement;  
+          document.getElementById('level-view').textContent = characterData.level;  
+
+          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {  
+            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);  
+            if (skillElement) {  
+                skillElement.innerText = skillValue;  
+            }  
+          });  
+
+          // Atualizar especializações
+          atualizarBonusDoPassado(characterData.past);  
+
+          // Carregar os dados do item equipado  
+          loadEquippedItem(characterData);  
+
+          // ✅ Carregar magias e passivas aprendidas
+          learnedSpells = characterData.learnedSpells || [];
+          learnedPassives = characterData.learnedPassives || [];
+          atualizarListaMagias();
+          atualizarListaPassivas();
+
+          // ✅ Itens equipados
+          equippedItemId = characterData.equippedItemId || null;  
+          if (equippedItemId) {  
+            const equippedItem = items.find(item => item.id === equippedItemId);  
+            if (equippedItem) {  
+              equippedSlot.innerHTML = `  
+                <img src="${equippedItem.img}" alt="${equippedItem.name}">  
+                <div class="item-info">  
+                  <div>${equippedItem.name}</div>  
+                  <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>  
+                  <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>  
+                  <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>  
+                </div>  
+              `;  
+            }  
+          }  
+
+          // Atualizar atributos derivados
+          updateStats();  
+      }  
+
+      document.getElementById('character-select-section').style.display = 'none';  
+  }  
 });
-
 
 
 
@@ -5222,3 +5234,4 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+

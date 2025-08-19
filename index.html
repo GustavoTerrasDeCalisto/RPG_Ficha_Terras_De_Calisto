@@ -1345,6 +1345,206 @@ Bonus por Níveis Do Personagem  </h3>
   <button id="closeDescPopup">Fechar</button>
 </div>
 
+
+
+<style>
+/* =========================== */
+/*   CSS EXCLUSIVO DO POPUP    */
+/* =========================== */
+#tcOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial;
+}
+
+#tcOverlay .tc-popup {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 94%;
+  max-width: 1000px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .4);
+}
+
+/* Cabeçalho fixo */
+#tcOverlay .tc-header {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #101926;
+  color: #fff;
+}
+
+/* Filtros fixos */
+#tcOverlay .tc-controls {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: #0f1724;
+  padding: 10px 14px;
+}
+
+/* Área scrollável */
+#tcOverlay .tc-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 14px;
+}
+
+/* Botões e tabs */
+#tcOverlay .tc-tabs { display: flex; gap: 8px; }
+#tcOverlay .tc-tab {
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #22324a;
+  color: #dfe7ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+#tcOverlay .tc-tab.active { background: #c0191f; color: #fff; }
+#tcOverlay .tc-close {
+  border: 0;
+  background: #2a3a53;
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Inputs */
+#tcOverlay .tc-select,
+#tcOverlay .tc-search {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #1a2333;
+  color: #eaf0ff;
+  min-width: 140px;
+  flex: 1;
+}
+#tcOverlay .tc-content{background:#0f1724;padding:16px;overflow:auto;max-height:calc(90vh - 114px)}
+/* grid 2 colunas fixo */
+#tcOverlay .tc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+/* card compacto */
+#tcOverlay .tc-card{background:#101a2b;border:1px solid #1f2b44;border-radius:16px;padding:10px;cursor:pointer;transition:transform .1s ease,box-shadow .1s ease;color:#e7eeff}
+#tcOverlay .tc-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.3)}
+#tcOverlay .tc-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;background:#0b1220}
+#tcOverlay .tc-name{margin:8px 0 4px;font-weight:800;font-size:15px;line-height:1.2}
+#tcOverlay .tc-meta{font-size:12px;color:#b7c4e1}
+
+#tcOverlay .tc-pagination{display:flex;justify-content:center;gap:6px;margin-top:14px}
+#tcOverlay .tc-page{border:0;background:#1a2333;color:#eaf0ff;border-radius:8px;padding:8px 10px;cursor:pointer}
+#tcOverlay .tc-page.active{background:#c0191f}
+
+/* Detalhe */
+#tcOverlay .tc-detail{position:fixed;inset:0;background:rgba(0,0,0,.66);display:none;align-items:center;justify-content:center;z-index:10000}
+#tcOverlay .tc-box{background:#ffffff;border-radius:22px;width:92%;max-width:760px;max-height:88vh;overflow:auto;color:#1a1a1a}
+#tcOverlay .tc-box-head{padding:18px 18px 0}
+#tcOverlay .tc-detail-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px}
+#tcOverlay .tc-title{margin:14px auto 6px;text-align:center;background:#9b0b0f;color:#fff;border-radius:999px;padding:10px 16px;font-size:22px;font-weight:800;width:fit-content}
+#tcOverlay .tc-sub{margin:0 auto 14px;text-align:center;color:#9b0b0f;font-style:italic}
+#tcOverlay .tc-section{padding:0 18px 16px}
+#tcOverlay .tc-h2{margin:10px 0 8px;font-size:16px;color:#0f172a}
+#tcOverlay .tc-desc{color:#222;line-height:1.55}
+
+#tcOverlay .tc-table{width:100%;border-collapse:collapse;margin-top:10px}
+#tcOverlay .tc-table th,#tcOverlay .tc-table td{border:1px solid #e5e7eb;padding:10px;text-align:left}
+#tcOverlay .tc-table th{background:#f4f6fb;font-weight:700;color:#111827}
+
+#tcOverlay .tc-good{color:#16a34a;font-weight:900;margin:8px 0 4px}
+#tcOverlay .tc-bad{color:#dc2626;font-weight:900;margin:14px 0 4px}
+
+#tcOverlay .tc-actions{display:flex;gap:8px;padding:0 18px 18px}
+#tcOverlay .tc-btn{border:0;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer}
+#tcOverlay .tc-btn.primary{background:#c0191f;color:#fff}
+#tcOverlay .tc-btn.ghost{background:#eef2ff;color:#0f172a}
+
+@media (max-width:420px){
+  #tcOverlay .tc-title{font-size:18px}
+}
+  .magias-btn {
+    background-image: url('https://raw.githubusercontent.com/GustavoTerrasDeCalisto/RPG_Ficha_Terras_De_Calisto/master/imagens/BotaoMagias.png'); /* link RAW do PNG */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 220px;   /* ajuste conforme o tamanho real da sua imagem */
+    height: 70px;
+
+    border: none;
+    padding: 0;
+    margin: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.magias-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.magias-btn:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}
+</style>
+
+
+
+<button onclick="TC.open()" class="magias-btn"></button>
+
+
+  
+<!-- POPUP -->
+<div id="tcOverlay" aria-hidden="true">
+  <div class="tc-popup" role="dialog" aria-modal="true">
+    <div class="tc-header">
+      <div class="tc-tabs">
+        <button class="tc-tab active" data-tab="magias">Magias</button>
+        <button class="tc-tab" data-tab="passivas">Passivas</button>
+        <button class="tc-tab" data-tab="aprendidas">Aprendidas</button>
+      </div>
+      <button class="tc-close" onclick="TC.close()">Fechar</button>
+    </div>
+
+    <div class="tc-controls">
+      <select id="tcFiltroElemento" class="tc-select" title="Elemento">
+        <option value="">Elemento</option><!-- preenchido via JS -->
+      </select>
+      <select id="tcFiltroDano" class="tc-select" title="Tipo de dano">
+        <option value="">Tipo de dano</option><!-- preenchido via JS -->
+      </select>
+      <input id="tcBusca" class="tc-search" type="search" placeholder="Buscar por nome (opcional)">
+    </div>
+
+    <div id="tcList" class="tc-content">
+      <div class="tc-grid" id="tcGrid"></div>
+      <div class="tc-pagination" id="tcPaginacao"></div>
+    </div>
+  </div>
+
+  <!-- Detalhe -->
+  <div id="tcDetail" class="tc-detail" onclick="event.target.id==='tcDetail'&&TC.hideDetail()">
+    <div class="tc-box" id="tcDetailBox"></div>
+  </div>
+</div>
+
+
+          
 <button id="openItemPopup" class="mochila-btn"></button>
 
 <style>
@@ -1527,4 +1727,5 @@ Bonus por Níveis Do Personagem  </h3>
   <script src="script.js"></script>
 </body>
 </html>
+
 

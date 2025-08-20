@@ -1898,7 +1898,10 @@ function clearHash(){
 
 function openById(id){
   const allItems = [...DATASET.magias, ...DATASET.passivas];
-  const item = allItems.find(x => normalizeId(x.id) === normalizeId(id));
+  const norm = normalizeId(id);
+const item = allItems.find(x => 
+  normalizeId(x.id) === norm || normalizeId(x.nome) === norm
+);
   if(!item) return;
 
   // Decide a aba correta
@@ -2136,6 +2139,7 @@ window.addEventListener("hashchange", syncFromURL);
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -1939,6 +1939,82 @@ function openById(id){
 
   // Marca a aba ativa
   document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
+/* ===========================
+   SUPORTE A HYPERLINK
+   #tc=<id>   ou   ?tc=<id>
+   (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
+   =========================== */
+
+function normalizeId(str){
+  if(!str) return "";
+  return String(str)
+    .normalize("NFD")                   // separa acentos
+    .replace(/[\u0300-\u036f]/g, "")    // remove acentos
+    .trim()
+    .toLowerCase();
+}
+
+function idFromURL(){
+  const h = window.location.hash.replace(/^#/, "");
+  const qs = new URLSearchParams(window.location.search);
+
+  let id = null;
+  if (h) {
+    id = h.startsWith("tc=") ? decodeURIComponent(h.slice(3)) : decodeURIComponent(h);
+  }
+  id = id || qs.get("tc") || qs.get("id") || qs.get("magia") || qs.get("passiva");
+  return id || null;
+}
+
+function setHash(id){
+  const url = new URL(location.href);
+  url.hash = `tc=${encodeURIComponent(id)}`;
+  history.replaceState(null, "", url.href);
+}
+
+function clearHash(){
+  if (location.hash.startsWith("#tc=")) {
+    history.replaceState(null, "", location.pathname + location.search);
+  }
+}
+
+function openById(id){
+  if(!id) return;
+  const allItems = [...DATASET.magias, ...DATASET.passivas];
+  const norm = normalizeId(id);
+
+  // criar candidatos para casar com id/nome (compatibilidade com underscores/espacos)
+  const candidates = [
+    norm,
+    norm.replace(/\s+/g, "_"),
+    norm.replace(/\s+/g, ""),
+    norm.replace(/_/g, "")
+  ];
+
+  const item = allItems.find(x =>
+    candidates.some(c => normalizeId(x.id) === c || normalizeId(x.nome) === c)
+  );
+
+  if(!item){
+    console.warn("TC: item não encontrado para id:", id);
+    return;
+  }
+
+  // Use a variável interna `state` (não TC.state)
+  if(DATASET.magias.some(m => m.id === item.id)){
+    state.tab = "magias";
+  } else if(DATASET.passivas.some(p => p.id === item.id)){
+    state.tab = "passivas";
+  } else {
+    state.tab = "aprendidas";
+  }
+
+  // Abre o overlay e mostra detalhe (usa funções internas open/showDetail)
+  open();
+  showDetail(item.id);
+
+  // Marca a aba ativa (usa state.tab)
+  document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
   document.querySelector(`#tcOverlay .tc-tab[data-tab="${state.tab}"]`)?.classList.add("active");
 }
 
@@ -1951,7 +2027,7 @@ function syncFromURL(){
 window.addEventListener("DOMContentLoaded", () => {
   syncFromURL();
 
-  // 🔑 Captura clique em qualquer link com #tc= ou #id ou ?tc=
+  // Captura clique em qualquer link com #tc= ou #id ou ?tc=
   document.body.addEventListener("click", e => {
     const a = e.target.closest("a[href]");
     if (!a) return;
@@ -1976,7 +2052,6 @@ window.addEventListener("DOMContentLoaded", () => {
         openById(tc);                // abre na hora
       }
     } catch (err) {
-      // Em caso de URL inválida, apenas ignore (não quebre tudo)
       console.error("TC: erro ao processar link:", err);
     }
   });
@@ -2175,6 +2250,7 @@ window.addEventListener("hashchange", syncFromURL);
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

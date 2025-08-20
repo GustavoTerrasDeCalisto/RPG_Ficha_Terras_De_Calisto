@@ -1899,14 +1899,29 @@ function clearHash(){
 
 function syncFromURL(){
   const id = idFromURL();
-  if (!id) return;
+  if(!id) return;
 
-  const exists = [...DATASET.magias, ...DATASET.passivas].some(x => normalizeId(x.id) === normalizeId(id));
-  if (exists){
-    open();
-    showDetail(id);
+  const allItems = [...DATASET.magias, ...DATASET.passivas];
+  const item = allItems.find(x => normalizeId(x.id) === normalizeId(id));
+  if(!item) return;
+
+  // Decide a aba correta
+  if(DATASET.magias.some(m => m.id === item.id)){
+    TC.state.tab = "magias";
+  } else if(DATASET.passivas.some(p => p.id === item.id)){
+    TC.state.tab = "passivas";
+  } else {
+    TC.state.tab = "aprendidas"; // caso seja aprendido
   }
-}
+
+  // Abre popup e renderiza a aba certa
+  TC.open();
+  TC.showDetail(item.id);
+
+  // Força a aba ativa visualmente
+  document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
+  document.querySelector(`#tcOverlay .tc-tab[data-tab="${TC.state.tab}"]`)?.classList.add("active");
+  }
 
 // Abre direto pelo link ao carregar a página
 window.addEventListener("DOMContentLoaded", syncFromURL);
@@ -2109,6 +2124,7 @@ window.addEventListener("hashchange", () => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

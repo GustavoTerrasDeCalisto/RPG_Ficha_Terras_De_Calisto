@@ -1859,87 +1859,134 @@ const TC = (() => {
   });
 
 
+
 /* ===========================
    SUPORTE A HYPERLINK (robusto)
    #tc=<id>   ou   ?tc=<id>
    (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
    =========================== */
-
-// Normaliza para comparação: decodifica URI, tira espaços extras e baixa caixa
-function normalizeId(str){
-  if (!str) return "";
-  try { str = decodeURIComponent(str); } catch(e){}
-  return str.replace(/\s+/g, " ").trim().toLowerCase();
-}
-
-// Encontra o item do DATASET aceitando id codificado/sem codificar/variações
-function findItemByRawId(rawId){
-  const target = normalizeId(rawId);
-  const all = [...DATASET.magias, ...DATASET.passivas];
-  return all.find(x => normalizeId(x.id) === target) || null;
-}
-
-// Extrai o id cru da URL (sem decodificar aqui)
-function idFromURL(){
-  const h  = window.location.hash.replace(/^#/, "");     // ex: "tc=m1" ou "m1"
-  const qs = new URLSearchParams(window.location.search);
-
-  let id = null;
-  if (h) id = h.startsWith("tc=") ? h.slice(3) : h;
-  id = id || qs.get("tc") || qs.get("id") || qs.get("magia") || qs.get("passiva");
-  return id || null;
-}
-
-// Grava o hash no formato #tc=<id> usando encodeURIComponent
-function setHash(id){
-  const url = new URL(location.href);
-  url.hash = `tc=${encodeURIComponent(id)}`;
-  history.replaceState(null, "", url);
-}
-
-// Limpa o hash somente se for nosso formato
-function clearHash(){
-  if (location.hash.startsWith("#tc=")) {
-    history.replaceState(null, "", location.pathname + location.search);
+(function(){
+  // Normaliza para comparação: decodifica URI, tira espaços extras e baixa caixa
+  function normalizeId(str){
+    if (!str) return "";
+    try { str = decodeURIComponent(str); } catch(e){}
+    return String(str).replace(/\s+/g, " ").trim().toLowerCase();
   }
-}
 
-// Abre direto do hash/query mostrando o DETALHE (não só a aba)
-function syncFromURL(){
-  const rawId = idFromURL();
-  if (!rawId) return;
+  // Encontra o item do DATASET aceitando id codificado/sem codificar/variações
+  function findItemByRawId(rawId){
+    const target = normalizeId(rawId);
+    const all = [...(window.DATASET?.magias || []), ...(window.DATASET?.passivas || [])];
+    return all.find(x => normalizeId(x.id) === target) || null;
+  }
 
-  const item = findItemByRawId(rawId);
-  if (!item) return;
+  // Extrai o id cru da URL (sem decodificar aqui)
+  function idFromURL(){
+    const h  = window.location.hash.replace(/^#/, "");     // ex: "tc=m1" ou "m1"
+    const qs = new URLSearchParams(window.location.search);
 
-  // Decide a aba correta (mantém compatibilidade com tabs do TC)
-  if(DATASET.magias.some(m => m.id === item.id)){
-    TC.state.tab = "magias";
-  } else if(DATASET.passivas.some(p => p.id === item.id)){
-    TC.state.tab = "passivas";
+    let id = null;
+    if (h) id = h.startsWith("tc=") ? h.slice(3) : h;
+    id = id || qs.get("tc") || qs.get("id") || qs.get("magia") || qs.get("passiva");
+    return id || null;
+  }
+
+  // Grava o hash no formato #tc=<id> usando encodeURIComponent
+  function setHash(id){
+    const url = new URL(location.href);
+    url.hash = `tc=${encodeURIComponent(id)}`;
+    history.replaceState(null, "", url);
+  }
+
+  // Limpa o hash somente se for nosso formato
+  function clearHash(){
+    if (location.hash.startsWith("#tc=")) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+  }
+
+  // Abre popup (tenta TC.open() -> fallback para open() -> fallback DOM)
+  function openPopup(){
+    if (window.TC && typeof TC.open === "function") return TC.open();
+    if (typeof open === "function") return open();
+    const el = document.getElementById("tcOverlay");
+    if (el) el.style.display = "flex";
+  }
+
+  // Mostra detalhe (tenta TC.showDetail() -> fallback showDetail())
+  function showDetailById(id){
+    if (window.TC && typeof TC.showDetail === "function") return TC.showDetail(id);
+    if (typeof showDetail === "function") return showDetail(id);
+    // se não existir função, nada faz (assume que seu script tem a função)
+  }
+
+  // Marca a aba correta visualmente e no estado TC (se existir)
+  function setActiveTabForItem(item){
+    try {
+      if (window.TC && TC.state) {
+        if ((window.DATASET?.magias || []).some(m => m.id === item.id)) TC.state.tab = "magias";
+        else if ((window.DATASET?.passivas || []).some(p => p.id === item.id)) TC.state.tab = "passivas";
+        else TC.state.tab = "aprendidas";
+      }
+      document.querySelectorAll("#tcOverlay .tc-tab").forEach(b => b.classList.remove("active"));
+      const tabName = (window.TC && TC.state) ? TC.state.tab : null;
+      if (tabName) {
+        const sel = `#tcOverlay .tc-tab[data-tab="${tabName}"]`;
+        const tabEl = document.querySelector(sel);
+        if (tabEl) tabEl.classList.add("active");
+      }
+    } catch(e) { /* silent */ }
+  }
+
+  // Sincroniza URL -> abre popup e mostra detalhe do item encontrado
+  function syncFromURL(){
+    const rawId = idFromURL();
+    if (!rawId) return;
+
+    const item = findItemByRawId(rawId);
+    if (!item) return;
+
+    setActiveTabForItem(item);
+    openPopup();
+    showDetailById(item.id);
+
+    // opcional: atualiza o hash para a forma codificada canônica
+    try { setHash(item.id); } catch(e) {}
+  }
+
+  // Listeners
+  window.addEventListener("DOMContentLoaded", syncFromURL);
+  window.addEventListener("hashchange", syncFromURL);
+
+  // Envolvendo o hideDetail existente para também limpar o hash
+  if (window.TC && typeof TC.hideDetail === "function") {
+    const _orig = TC.hideDetail.bind(TC);
+    TC.hideDetail = function(){
+      _orig();
+      clearHash();
+    };
+  } else if (typeof window.hideDetail === "function") {
+    const _orig = window.hideDetail.bind(window);
+    window.hideDetail = function(){
+      _orig();
+      clearHash();
+    };
   } else {
-    TC.state.tab = "aprendidas";
+    // fallback: define uma função global mínima
+    window.hideDetail = function(){
+      const d = document.getElementById("tcDetail");
+      if (d) d.style.display = "none";
+      clearHash();
+    };
   }
 
-  // Garante popup aberto e exibe o detalhe do item encontrado
-  TC.open();
-  TC.showDetail(item.id);
+  // Expondo algumas helpers caso queira usá-las manualmente
+  window.TCLinkSupport = { normalizeId, findItemByRawId, idFromURL, setHash, clearHash, syncFromURL };
+})();
 
-  // Força a aba ativa visualmente
-  document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
-  document.querySelector(`#tcOverlay .tc-tab[data-tab="${TC.state.tab}"]`)?.classList.add("active");
-}
 
-// Listeners
-window.addEventListener("DOMContentLoaded", syncFromURL);
-window.addEventListener("hashchange", syncFromURL);
 
-// --- Ajuste: garantir que o detalhe feche e limpe o hash corretamente
-const _hideDetail = TC.hideDetail?.bind(TC);
-TC.hideDetail = function(){
-  if (_hideDetail) _hideDetail();
-  clearHash();
-};
+  
   
   // API pública
   return { open, close, showDetail, hideDetail, toggleLearn };
@@ -2129,6 +2176,7 @@ TC.hideDetail = function(){
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

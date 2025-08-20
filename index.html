@@ -1869,7 +1869,12 @@ const TC = (() => {
    =========================== */
 
 function normalizeId(str){
-  return str ? str.trim().toLowerCase() : "";
+  if(!str) return "";
+  return String(str)
+    .normalize("NFD")                   // separa acentos
+    .replace(/[\u0300-\u036f]/g, "")    // remove acentos
+    .trim()
+    .toLowerCase();
 }
 
 function idFromURL(){
@@ -1887,7 +1892,8 @@ function idFromURL(){
 function setHash(id){
   const url = new URL(location.href);
   url.hash = `tc=${encodeURIComponent(id)}`;
-  history.replaceState(null, "", url);
+  // use url.href para garantir string
+  history.replaceState(null, "", url.href);
 }
 
 function clearHash(){
@@ -1897,28 +1903,43 @@ function clearHash(){
 }
 
 function openById(id){
+  if(!id) return;
   const allItems = [...DATASET.magias, ...DATASET.passivas];
   const norm = normalizeId(id);
-const item = allItems.find(x => 
-  normalizeId(x.id) === norm || normalizeId(x.nome) === norm
-);
-  if(!item) return;
 
-  // Decide a aba correta
-  if(DATASET.magias.some(m => m.id === item.id)){
-    TC.state.tab = "magias";
-  } else if(DATASET.passivas.some(p => p.id === item.id)){
-    TC.state.tab = "passivas";
-  } else {
-    TC.state.tab = "aprendidas";
+  // candidates: norm, underscores, without spaces (compatibilidade)
+  const candidates = [
+    norm,
+    norm.replace(/\s+/g, "_"),
+    norm.replace(/\s+/g, ""),
+    norm.replace(/_/g, "")
+  ];
+
+  const item = allItems.find(x =>
+    candidates.some(c => normalizeId(x.id) === c || normalizeId(x.nome) === c)
+  );
+
+  if(!item){
+    console.warn("TC: item não encontrado para id:", id);
+    return;
   }
 
-  TC.open();
-  TC.showDetail(item.id);
+  // Decide a aba correta (usando o id original do dataset)
+  if(DATASET.magias.some(m => m.id === item.id)){
+    state.tab = "magias";
+  } else if(DATASET.passivas.some(p => p.id === item.id)){
+    state.tab = "passivas";
+  } else {
+    state.tab = "aprendidas";
+  }
+
+  // Abra e mostre
+  open();
+  showDetail(item.id);
 
   // Marca a aba ativa
   document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
-  document.querySelector(`#tcOverlay .tc-tab[data-tab="${TC.state.tab}"]`)?.classList.add("active");
+  document.querySelector(`#tcOverlay .tc-tab[data-tab="${state.tab}"]`)?.classList.add("active");
 }
 
 function syncFromURL(){
@@ -1930,18 +1951,33 @@ function syncFromURL(){
 window.addEventListener("DOMContentLoaded", () => {
   syncFromURL();
 
-  // 🔑 Captura clique em qualquer link com #tc= ou ?tc=
+  // 🔑 Captura clique em qualquer link com #tc= ou #id ou ?tc=
   document.body.addEventListener("click", e => {
     const a = e.target.closest("a[href]");
     if (!a) return;
 
-    const url = new URL(a.href, location.href);
-    const tc = url.hash.startsWith("#tc=") ? url.hash.slice(4) : url.searchParams.get("tc");
+    try {
+      const url = new URL(a.href, location.href);
+      let tc = null;
 
-    if (tc) {
-      e.preventDefault();          // não recarrega a página
-      setHash(tc);                 // atualiza o hash da URL
-      openById(tc);                // abre na hora
+      // Prioriza hash: #tc=valor  ou #valor
+      if (url.hash) {
+        if (url.hash.startsWith("#tc=")) tc = url.hash.slice(4);
+        else tc = url.hash.replace(/^#/, "");
+      }
+
+      // fallback para query params
+      tc = tc || url.searchParams.get("tc") || url.searchParams.get("id") || url.searchParams.get("magia") || url.searchParams.get("passiva");
+
+      if (tc) {
+        e.preventDefault();          // não recarrega a página
+        tc = decodeURIComponent(tc);
+        setHash(tc);                 // atualiza o hash da URL
+        openById(tc);                // abre na hora
+      }
+    } catch (err) {
+      // Em caso de URL inválida, apenas ignore (não quebre tudo)
+      console.error("TC: erro ao processar link:", err);
     }
   });
 });
@@ -2139,6 +2175,7 @@ window.addEventListener("hashchange", syncFromURL);
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

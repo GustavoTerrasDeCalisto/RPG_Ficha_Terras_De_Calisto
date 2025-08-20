@@ -1857,6 +1857,8 @@ const TC = (() => {
   document.getElementById("tcBusca").addEventListener("input", e=>{
     state.busca = e.target.value; state.page=1; render();
   });
+
+
 /* ===========================
    SUPORTE A HYPERLINK
    #tc=<id>   ou   ?tc=<id>
@@ -1911,17 +1913,17 @@ function syncFromURL(){
   } else if(DATASET.passivas.some(p => p.id === item.id)){
     TC.state.tab = "passivas";
   } else {
-    TC.state.tab = "aprendidas"; // caso seja aprendido
+    TC.state.tab = "aprendidas"; // fallback
   }
 
-  // Abre popup e renderiza a aba certa
+  // Abre popup e renderiza detalhe
   TC.open();
   TC.showDetail(item.id);
 
   // Força a aba ativa visualmente
   document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
   document.querySelector(`#tcOverlay .tc-tab[data-tab="${TC.state.tab}"]`)?.classList.add("active");
-  }
+}
 
 // Abre direto pelo link ao carregar a página
 window.addEventListener("DOMContentLoaded", syncFromURL);
@@ -1930,12 +1932,13 @@ window.addEventListener("DOMContentLoaded", syncFromURL);
 window.addEventListener("hashchange", () => {
   const id = idFromURL();
   if (id){
-    if (document.getElementById("tcOverlay").style.display !== "flex") open();
-    showDetail(id);
+    TC.open();
+    TC.showDetail(id);
   } else {
-    hideDetail();
+    TC.hideDetail?.();
   }
 });
+  
   // API pública
   return { open, close, showDetail, hideDetail, toggleLearn };
 })();
@@ -2124,6 +2127,7 @@ window.addEventListener("hashchange", () => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

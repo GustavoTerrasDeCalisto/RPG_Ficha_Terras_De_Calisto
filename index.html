@@ -1860,63 +1860,68 @@ const TC = (() => {
 
 
 /* ===========================
-   SUPORTE A HYPERLINK
+   SUPORTE A HYPERLINK (robusto)
    #tc=<id>   ou   ?tc=<id>
    (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
    =========================== */
 
+// Normaliza para comparação: decodifica URI, tira espaços extras e baixa caixa
 function normalizeId(str){
-  // Remove espaços extras e transforma em minúsculas para comparação
-  return str ? str.trim().toLowerCase() : "";
+  if (!str) return "";
+  try { str = decodeURIComponent(str); } catch(e){}
+  return str.replace(/\s+/g, " ").trim().toLowerCase();
 }
 
+// Encontra o item do DATASET aceitando id codificado/sem codificar/variações
+function findItemByRawId(rawId){
+  const target = normalizeId(rawId);
+  const all = [...DATASET.magias, ...DATASET.passivas];
+  return all.find(x => normalizeId(x.id) === target) || null;
+}
+
+// Extrai o id cru da URL (sem decodificar aqui)
 function idFromURL(){
-  const h = window.location.hash.replace(/^#/, "");
+  const h  = window.location.hash.replace(/^#/, "");     // ex: "tc=m1" ou "m1"
   const qs = new URLSearchParams(window.location.search);
 
-  // Formatos aceitos:
-  // #tc=m1  |  #m1
-  // ?tc=m1  |  ?id=m1  |  ?magia=m1  |  ?passiva=m1
   let id = null;
-  if (h) {
-    id = h.startsWith("tc=") ? decodeURIComponent(h.slice(3)) : decodeURIComponent(h);
-  }
+  if (h) id = h.startsWith("tc=") ? h.slice(3) : h;
   id = id || qs.get("tc") || qs.get("id") || qs.get("magia") || qs.get("passiva");
   return id || null;
 }
 
+// Grava o hash no formato #tc=<id> usando encodeURIComponent
 function setHash(id){
-  // Não dispara 'hashchange', usa encodeURIComponent para espaços/acento
   const url = new URL(location.href);
   url.hash = `tc=${encodeURIComponent(id)}`;
   history.replaceState(null, "", url);
 }
 
+// Limpa o hash somente se for nosso formato
 function clearHash(){
-  // Só limpa se for nosso formato (#tc=...)
   if (location.hash.startsWith("#tc=")) {
     history.replaceState(null, "", location.pathname + location.search);
   }
 }
 
+// Abre direto do hash/query mostrando o DETALHE (não só a aba)
 function syncFromURL(){
-  const id = idFromURL();
-  if(!id) return;
+  const rawId = idFromURL();
+  if (!rawId) return;
 
-  const allItems = [...DATASET.magias, ...DATASET.passivas];
-  const item = allItems.find(x => normalizeId(x.id) === normalizeId(id));
-  if(!item) return;
+  const item = findItemByRawId(rawId);
+  if (!item) return;
 
-  // Decide a aba correta
+  // Decide a aba correta (mantém compatibilidade com tabs do TC)
   if(DATASET.magias.some(m => m.id === item.id)){
     TC.state.tab = "magias";
   } else if(DATASET.passivas.some(p => p.id === item.id)){
     TC.state.tab = "passivas";
   } else {
-    TC.state.tab = "aprendidas"; // fallback
+    TC.state.tab = "aprendidas";
   }
 
-  // Abre popup e renderiza detalhe
+  // Garante popup aberto e exibe o detalhe do item encontrado
   TC.open();
   TC.showDetail(item.id);
 
@@ -1925,19 +1930,16 @@ function syncFromURL(){
   document.querySelector(`#tcOverlay .tc-tab[data-tab="${TC.state.tab}"]`)?.classList.add("active");
 }
 
-// Abre direto pelo link ao carregar a página
+// Listeners
 window.addEventListener("DOMContentLoaded", syncFromURL);
+window.addEventListener("hashchange", syncFromURL);
 
-// Se o hash for alterado manualmente (#tc=...), sincroniza
-window.addEventListener("hashchange", () => {
-  const id = idFromURL();
-  if (id){
-    TC.open();
-    TC.showDetail(id);
-  } else {
-    TC.hideDetail?.();
-  }
-});
+// --- Ajuste: garantir que o detalhe feche e limpe o hash corretamente
+const _hideDetail = TC.hideDetail?.bind(TC);
+TC.hideDetail = function(){
+  if (_hideDetail) _hideDetail();
+  clearHash();
+};
   
   // API pública
   return { open, close, showDetail, hideDetail, toggleLearn };
@@ -2127,6 +2129,7 @@ window.addEventListener("hashchange", () => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

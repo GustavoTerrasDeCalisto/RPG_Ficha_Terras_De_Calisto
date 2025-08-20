@@ -1617,6 +1617,28 @@ const DATASET = {
   alcance: "6m",
   testeConjurador: "Conexão",
   testeAlvo: "Determinação"
+},{
+  id: "Reflexão de Eclipse",
+  nome: "Reflexão de Eclipse",
+  sub: "Eklipsens Refleksjon",
+  img: "", // coloque a URL da imagem aqui
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o alvo sofre <strong>1d10 de dano de Eclipse</strong> e recebe um bônus de <strong>+1d6 em ataques</strong> durante <strong>2 turnos</strong>. O clone pode atacar os aliados no próximo turno, obrigando-os a fazer um teste de <strong>Agilidade</strong> para não sofrerem dano.
+
+<strong>Condições durante o eclipse:</strong>
+<ul>
+  <li><strong>Invocação Sombria Adicional:</strong> Durante o eclipse, o conjurador pode criar um segundo clone reflexivo que ataca os inimigos por um turno adicional.</li>
+  <li><strong>Distorção de Percepção:</strong> Todos os alvos próximos ao clone têm dificuldade de foco, recebendo <strong>-1 em Conexão</strong> para resistir aos ataques do clone.</li>
+</ul>
+`,
+  duracao: "2 turnos",
+  tagLevel: "Aspirante do Crepúsculo",
+  tagLevelResposta: "Nível 1 – Aspirante do Crepúsculo",
+  alcance: "30m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
 }
   ],
   passivas: [
@@ -2082,6 +2104,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

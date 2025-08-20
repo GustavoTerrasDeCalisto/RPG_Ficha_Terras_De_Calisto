@@ -498,7 +498,7 @@ bonustitulo_3: "<p>🌑 <strong>Sombras do Infinito</strong></p>",
 bonusTexto_3: `
 <p>Nível 1: +1 em testes de <strong>Conexão</strong> para controlar magias do eclipse.</p>
 <p>Nível 3: <strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.</p>
-<p>Nível 5: <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=luz%20e%20sombra.-,Reflex%C3%A3o%20de%20Eclipse,-Eklipsens%20Refleksjon" target="_blank" rel="noopener noreferrer">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
+<p>Nível 5: <strong><a href="#tc=Reflexão de Eclipse">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
 <p>Nível 9: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=de%20Alvos%3A%20Agilidade-,Fragmento%20do%20Tempo,-Fragmentum%20Tempus" target="_blank" rel="noopener noreferrer">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
 <p>Nível 13: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20%E2%80%94-,Clone%20das%20Sombras,-Clonum%20Umbra" target="_blank" rel="noopener noreferrer">Clone das Sombras</a></strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
 <p>Nível 16: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=qualidade%20do%20item-,Ilus%C3%A3o%20Lunar,-Illusio%20Lunae" target="_blank" rel="noopener noreferrer">Ilusão Lunar</a></strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
@@ -5222,3 +5222,4 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+

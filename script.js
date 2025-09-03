@@ -1575,21 +1575,21 @@ bonusTexto_3: `
         "sanidadePorNivel": 0,
         "armaduraPorNivel": 1,
         "resistencia": "Sono",
-"bonusPass": `
+        "bonusPass": `
 Nível 0: Menos sanidade por nível e dobra os danos com magias.
 `,
 
 "bonustitulo_1": `<p>🎭<strong>Mestre das Brincadeiras</strong></p>`,
 "bonusTexto_1": `
 <p>Nível 1: <strong>Peguei Seu Nariz</strong> – Agarrar contra Agilidade. O alvo fica sem respirar até alguém pegar o nariz de volta (DT8). Todo turno recebe <strong>1d12 de Distorção</strong> e adiciona <strong>+1d20 ao dano</strong> que recebe por turno acumulado.</p>
-<p>Nível 2: <strong>Sumiu... Achou</strong> – Fica invisível até tirar a mão do rosto. Enquanto invisível, sofre <strong>–5m de movimento</strong> e não pode esquivar de habilidades em área. Libera uma magia de <strong>Maldição</strong> Nível 1 ou 2.</p>
-<p>Nível 3: <strong>Jo Ken Pô — Pedra</strong> – Conjura uma pedra de 2 metros sobre um inimigo. O alvo deve passar em um teste de Agilidade ou sofre <strong>2d12 de dano Esmagador</strong>.</p>
-<p>Nível 4: <strong>Jo Ken Pô — Papel</strong> – Surge uma parede de papel de 3 metros em área. É altamente inflamável e replica <strong>danos de Fogo</strong> duas vezes se o alvo estiver dentro da área. Libera uma magia de <strong>Aura</strong> Nível 2 ou 3.</p>
-<p>Nível 5: <strong>Jo Ken Pô — Tesoura</strong> – Movimento cortante com o braço. Objetos orgânicos sofrem <strong>3d12 de dano de Maldição</strong>. Objetos inorgânicos são divididos em dois.</p>
-<p>Nível 6: <strong>Vaca Amarela</strong> – Todos na área que falarem após a ativação devem fazer um teste de Determinação. Falhar causa <strong>6d12 de Maldição</strong>. Magias que exigem fala são desabilitadas por 2 turnos. Libera uma magia de <strong>Sono</strong> Nível 3 ou 4.</p>
-<p>Nível 7: <strong>Invocação da Loira do Banheiro</strong> – Invoca uma criatura maldita [No Link Selecione Ela](https://bestiario-terrasdecalisto.netlify.app/). Custo: <strong>23 de Sanidade</strong>.</p>
-<p>Nível 8: <strong>Salamê Minguê</strong> – Causa <strong>5d12 de Distorção</strong> em um alvo aleatório. O alvo pode transferir o dano para alguém a até 1 metro com um teste de Conexão. Libera uma magia de <strong>Fogo</strong> ou <strong>Tempestade</strong> de Nível 4.</p>
-<p>Nível 9: <strong>Batata Quente</strong> – Todo turno, uma batata surge na cabeça de um inimigo. Pode ser passada com um teste de Libertação. Todo alvo que recebe a batata faz um teste; se tirar menos que 8, ela explode causando <strong>2d20 de Fogo</strong> em área de 3m. A explosão causa mais <strong>4d4 de dano</strong> para cada vez que a batata foi passada.</p>
+<p>Nível 3: <strong>Sumiu... Achou</strong> – Fica invisível até tirar a mão do rosto. Enquanto invisível, sofre <strong>–5m de movimento</strong> e não pode esquivar de habilidades em área. Libera uma magia de <strong>Maldição</strong> Nível 1 ou 2.</p>
+<p>Nível 5: <strong>Jo Ken Pô — Pedra</strong> – Conjura uma pedra de 2 metros sobre um inimigo. O alvo deve passar em um teste de Agilidade ou sofre <strong>2d12 de dano Esmagador</strong>.</p>
+<p>Nível 9: <strong>Jo Ken Pô — Papel</strong> – Surge uma parede de papel de 3 metros em área. É altamente inflamável e replica <strong>danos de Fogo</strong> duas vezes se o alvo estiver dentro da área. Libera uma magia de <strong>Aura</strong> Nível 2 ou 3.</p>
+<p>Nível 13: <strong>Jo Ken Pô — Tesoura</strong> – Movimento cortante com o braço. Objetos orgânicos sofrem <strong>3d12 de dano de Maldição</strong>. Objetos inorgânicos são divididos em dois.</p>
+<p>Nível 16: <strong>Vaca Amarela</strong> – Todos na área que falarem após a ativação devem fazer um teste de Determinação. Falhar causa <strong>6d12 de Maldição</strong>. Magias que exigem fala são desabilitadas por 2 turnos. Libera uma magia de <strong>Sono</strong> Nível 3 ou 4.</p>
+<p>Nível 20: <strong>Invocação da Loira do Banheiro</strong> – Invoca uma criatura maldita [No Link Selecione Ela](https://bestiario-terrasdecalisto.netlify.app/). Custo: <strong>23 de Sanidade</strong>.</p>
+<p>Nível 22: <strong>Salamê Minguê</strong> – Causa <strong>5d12 de Distorção</strong> em um alvo aleatório. O alvo pode transferir o dano para alguém a até 1 metro com um teste de Conexão. Libera uma magia de <strong>Fogo</strong> ou <strong>Tempestade</strong> de Nível 4.</p>
+<p>Nível 25: <strong>Batata Quente</strong> – Todo turno, uma batata surge na cabeça de um inimigo. Pode ser passada com um teste de Libertação. Todo alvo que recebe a batata faz um teste; se tirar menos que 8, ela explode causando <strong>2d20 de Fogo</strong> em área de 3m. A explosão causa mais <strong>4d4 de dano</strong> para cada vez que a batata foi passada.</p>
 `,
 
 "bonustitulo_2": `<p>😵<strong>Mestre da Loucura</strong></p>`,
@@ -1597,14 +1597,14 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 <p>Nível 1: <strong>Loucura Velada</strong> – Quando sua sanidade zera, role 1d4:<br>
 1: falha — você fica perdido, incapaz de agir até recuperar a sanidade por tratamento ou teste futuro.<br>
 2-4: cura sanidade igual ao valor rolado.</p>
-<p>Nível 2: <strong>Imersão Mental</strong> – Você aprende uma magia de nível 1 do elemento Psicológico. Seus ataques com magias desse tipo de dano causam +1d8 de dano extra.</p>
-<p>Nível 3: <strong>Distorção da Realidade</strong> – Você escolhe duas magias: uma de nível 1 e outra de nível 2, dos elementos Distorção e Mental (à sua escolha). Seus ataques com magias desses elementos causam +1d6 de dano extra.</p>
-<p>Nível 4: <strong>Sanidade Fragmentada</strong> – Enquanto estiver com sanidade zero, o dano causado por suas magias é multiplicado por 2x. Além disso, você ganha 40 de vida temporária.</p>
-<p>Nível 5: <strong>Névoa Envolvente</strong> – Você escolhe duas magias: uma de nível 2 e outra de nível 3, do elemento Névoa. Seus ataques com magias desse tipo de dano causam +2d6 de dano extra.</p>
-<p>Nível 6: <strong>Sussurros do Sono</strong> – Você escolhe duas magias: uma de nível 2 e outra de nível 3, do elemento Sono. Seus ataques com magias desse tipo de dano causam +2d8 de dano extra.</p>
-<p>Nível 7: <strong>Ato Insano</strong> – Você pode realizar uma ação extra em seu turno. Essa ação pode ser usada para atacar, lançar magia ou se mover.</p>
-<p>Nível 8: <strong>Eclipse da Razão</strong> – Você escolhe três magias: uma de nível 3 e duas de nível 4, do elemento Eclipse. Seus ataques com magias desse tipo de dano causam +3d8 de dano extra.</p>
-<p>Nível 9: <strong>Mente Indestrutível</strong> – Você pode manter sua sanidade em zero sem que seu personagem seja eliminado. Sua mente vive no limite, dominando a loucura ao máximo. Além disso, conjura magias com custo de Especial reduzido pela metade.</p>
+<p>Nível 3: <strong>Imersão Mental</strong> – Você aprende uma magia de nível 1 do elemento Psicológico. Seus ataques com magias desse tipo de dano causam +1d8 de dano extra.</p>
+<p>Nível 5: <strong>Distorção da Realidade</strong> – Você escolhe duas magias: uma de nível 1 e outra de nível 2, dos elementos Distorção e Mental (à sua escolha). Seus ataques com magias desses elementos causam +1d6 de dano extra.</p>
+<p>Nível 9: <strong>Sanidade Fragmentada</strong> – Enquanto estiver com sanidade zero, o dano causado por suas magias é multiplicado por 2x. Além disso, você ganha 40 de vida temporária.</p>
+<p>Nível 13: <strong>Névoa Envolvente</strong> – Você escolhe duas magias: uma de nível 2 e outra de nível 3, do elemento Névoa. Seus ataques com magias desse tipo de dano causam +2d6 de dano extra.</p>
+<p>Nível 16: <strong>Sussurros do Sono</strong> – Você escolhe duas magias: uma de nível 2 e outra de nível 3, do elemento Sono. Seus ataques com magias desse tipo de dano causam +2d8 de dano extra.</p>
+<p>Nível 20: <strong>Ato Insano</strong> – Você pode realizar uma ação extra em seu turno. Essa ação pode ser usada para atacar, lançar magia ou se mover.</p>
+<p>Nível 22: <strong>Eclipse da Razão</strong> – Você escolhe três magias: uma de nível 3 e duas de nível 4, do elemento Eclipse. Seus ataques com magias desse tipo de dano causam +3d8 de dano extra.</p>
+<p>Nível 25: <strong>Mente Indestrutível</strong> – Você pode manter sua sanidade em zero sem que seu personagem seja eliminado. Sua mente vive no limite, dominando a loucura ao máximo. Além disso, conjura magias com custo de Especial reduzido pela metade.</p>
 `,
 
  "bonustitulo_3": "<p>🧠 <strong>Fragmentado</strong></p>",
@@ -1613,16 +1613,16 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
    
   </p>
 <p>Nível 1: <strong>A Criança Ingênua</strong> – Personalidade doce, usa magias de <strong>Sagrado (Luz)</strong> para cura e proteção. +2 em testes de <strong>Determinação</strong>.</p>
-<p>Nível 2: <strong>A Mulher Sedutora</strong> – Manipuladora com magias de <strong>Maldição</strong>. +2 em testes de <strong>Furtividade</strong> e manipulação social.</p>
-<p>Nível 3: <strong>O Senhor Agressivo</strong> – Raivoso e brutal, com magias de <strong>Sangue</strong>. +2 em testes de <strong>Brutalidade</strong> e dano físico.</p>
-<p>Nível 4: <strong>A Sábia Anciã</strong> – Calma e centrada, invoca magias de <strong>Alma</strong>. +2 em testes de <strong>Libertação</strong> e resistência mental.</p>
-<p>Nível 5: <strong>O Guerreiro Errante</strong> – Ágil e ofensivo, usa magias de <strong>Plasma</strong>. +2 em testes de <strong>Agilidade</strong> e +4 em testes com <strong>espadas</strong>.</p>
-<p>Nível 6: <strong>O Guardião Estoico</strong> – Defensivo e firme, usa magias de <strong>Tremor</strong>. +4 em testes com <strong>escudos</strong> e +2 em resistência física.</p>
-<p>Nível 7: <strong>A Curandeira Serena</strong> – Empática, usa magias de <strong>Aura</strong>. +2 em testes de <strong>Conexão</strong> e +1 em cura.</p>
-<p>Nível 8: <strong>O Arauto da Morte</strong> – Sombrio e fatalista, invoca magias de <strong>Morte</strong>. +4 em testes de <strong>Brutalidade</strong> e +2 em dano com magias de morte.</p>
-<p>Nível 9: <strong>O Mestre Fragmentado</strong> – Caótico e versátil, pode escolher magias dos grupos <strong>Laser, Alma, Escuridão, Plasma, Tremor, Aura, Maldição, Sagrado, Cinzas, Morte</strong>. +4 em testes com <strong>espadas</strong> e +2 em todos testes físicos e mágicos.</p>
+<p>Nível 3: <strong>A Mulher Sedutora</strong> – Manipuladora com magias de <strong>Maldição</strong>. +2 em testes de <strong>Furtividade</strong> e manipulação social.</p>
+<p>Nível 5: <strong>O Senhor Agressivo</strong> – Raivoso e brutal, com magias de <strong>Sangue</strong>. +2 em testes de <strong>Brutalidade</strong> e dano físico.</p>
+<p>Nível 9: <strong>A Sábia Anciã</strong> – Calma e centrada, invoca magias de <strong>Alma</strong>. +2 em testes de <strong>Libertação</strong> e resistência mental.</p>
+<p>Nível 13: <strong>O Guerreiro Errante</strong> – Ágil e ofensivo, usa magias de <strong>Plasma</strong>. +2 em testes de <strong>Agilidade</strong> e +4 em testes com <strong>espadas</strong>.</p>
+<p>Nível 16: <strong>O Guardião Estoico</strong> – Defensivo e firme, usa magias de <strong>Tremor</strong>. +4 em testes com <strong>escudos</strong> e +2 em resistência física.</p>
+<p>Nível 20: <strong>A Curandeira Serena</strong> – Empática, usa magias de <strong>Aura</strong>. +2 em testes de <strong>Conexão</strong> e +1 em cura.</p>
+<p>Nível 22: <strong>O Arauto da Morte</strong> – Sombrio e fatalista, invoca magias de <strong>Morte</strong>. +4 em testes de <strong>Brutalidade</strong> e +2 em dano com magias de morte.</p>
+<p>Nível 25: <strong>O Mestre Fragmentado</strong> – Caótico e versátil, pode escolher magias dos grupos <strong>Laser, Alma, Escuridão, Plasma, Tremor, Aura, Maldição, Sagrado, Cinzas, Morte</strong>. +4 em testes com <strong>espadas</strong> e +2 em todos testes físicos e mágicos.</p>
 `
-,        "movimento_pass": 4.5
+,       "movimento_pass": 4.5
       },
       "Mago": {
         "vidaPorNivel": 10,
@@ -5243,6 +5243,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

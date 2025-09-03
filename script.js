@@ -1522,7 +1522,28 @@ bonusTexto_3: `
       "sanidadePorNivel": 7,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
-      "bonusPass": "Passiva Mutação sem custo uma vez por dia.",
+"bonusPass": `Nível 0: <strong>Mutação</strong> sem custo <strong>1 vez por dia</strong>.`,
+
+"bonustitulo_1": `<p>🎭<strong>Mímico do Inexistente</strong></p>`,
+"bonusTexto_1": `
+<p><em>Um artista do vazio, que transforma a ilusão em realidade e manipula o invisível como se fosse palpável. O mundo é seu palco, e a plateia jamais percebe o truque.</em></p>
+
+<p><strong>Nível 1: Objeto Invisível</strong> – Pode <strong>transformar um objeto em invisível</strong>. Ele só pode ser detectado se o alvo realizar um <strong>teste de Observação 18+</strong>. Caso contrário, a invisibilidade dura <strong>8 turnos</strong> ou até o fim da cena. (<strong>Custo: 5 Especial</strong>).</p>
+<p><strong>Nível 3: Magia Invisível</strong> – Pode <strong>conjurar magias invisíveis</strong>. O alvo só saberá que algo foi conjurado se presenciar a ação. 
+<br>– Se <strong>viu a conjuração</strong>: acerto com <strong>DT 8</strong>. 
+<br>– Se <strong>não viu</strong>: acerto com <strong>DT 5</strong>. 
+<br>(Não funciona em <strong>magias de suporte/buffs</strong>). (<strong>Custo: +3 Especial</strong> por magia).</p>
+<p><strong>Nível 5: Potência Oculta</strong> – <strong>Magias invisíveis</strong> recebem <strong>+2 em testes</strong>.</p>
+<p><strong>Nível 9: Construção Invisível</strong> – Cria um <strong>objeto invisível e indetectável</strong> que pode <strong>obstruir passagens</strong>. O objeto possui <strong>55 de Vida</strong>. (<strong>Custo: 8 Especial</strong>).</p>
+<p><strong>Nível 13: Armamento Espectral</strong> – <strong>Armas invisíveis</strong> ganham <strong>+3m de alcance</strong>.</p>
+<p><strong>Nível 16: Barreira Indestrutível</strong> – Cria uma <strong>barreira invisível</strong> que o torna <strong>imune ao próximo golpe</strong>. Pode ser usada como <strong>reação</strong>. (<strong>Custo: 13 Especial</strong>).</p>
+<p><strong>Nível 20: Aura do Silêncio</strong> – Libera a magia <strong>Aura do Silêncio</strong>, afetando uma área de <strong>30m</strong> ao redor. <strong>Inimigos</strong> dentro da área <strong>não conseguem conjurar</strong> ou usar <strong>habilidades verbais</strong>. (<strong>Custo: 10 Especial</strong>).</p>
+<p><strong>Nível 22: Diplopia Binocular</strong> – Ganha a magia <strong>Diplopia Binocular</strong>, podendo conjurá-la <strong>1 vez por dia sem custo</strong>. Conjurações adicionais exigem <strong>7 Especial</strong>.</p>
+<p><strong>Nível 25: Materialização do Inexistente</strong> – Pode <strong>materializar objetos ou criaturas mimetizadas</strong>. 
+<br>– Só pode conjurar <strong>criaturas do elemento Desconhecido</strong>, exceto <strong>Raras ou Lendárias</strong>. 
+<br>– Essas criaturas possuem <strong>vontade própria</strong>, mas <strong>não atacam o Mímico</strong>. (<strong>Custo: 15 Especial</strong>). 
+<br>– Também pode criar <strong>objetos</strong> que são destruídos após <strong>5 golpes</strong>; se forem <strong>itens ou equipamentos</strong> que não possui, causam <strong>metade do dano</strong>. (<strong>Custo: 15 Especial</strong>).</p>
+`,
       "movimento_pass": 4.5
     },
     "Juíz": { 
@@ -5222,6 +5243,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

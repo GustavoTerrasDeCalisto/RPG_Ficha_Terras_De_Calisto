@@ -540,12 +540,15 @@
           <li>Uma <strong class="grad-text">Raça</strong></li>
           <li>Um <strong class="grad-text">Passado</strong></li>
           <li>Um <strong class="grad-text">Equipamento Inicial</strong></li>
-          <li><strong class="especial">3 Talentos Extras</strong> (além dos da Raça e Passado)</li>
+          <li><strong class="especial">+3 Talentos Extras</strong> (além dos que Raça e Passado concedem)</li>
           <li>Redistribui seus <strong class="grad-text">Atributos</strong></li>
 
-        <p>
-          O personagem começa com todos os atributos em <span class="bru">14</span>, representando o nível 0. Para iniciar, deve redistribuir esses pontos, com o <strong>mínimo de 8 por atributo</strong>.
-        </p>
+<p>
+  O personagem começa com todos os atributos em <span class="bru">14</span>, representando o nível 0.  
+  Para iniciar, redistribua esses pontos, garantindo no mínimo <strong>8 em cada atributo</strong>.  
+  Durante a redistribuição, o <strong>nível do personagem</strong> pode ser alterado; porém, se os pontos forem distribuídos corretamente, ele se manterá no nível inicial definido com o GM.
+</p>
+
         <p>
           <strong><span class="bru">Brutalidade</span>, <span class="agi">Agilidade</span> e <span class="det">Determinação</span></strong> afetam mais a <span class="pv">Vida (PV)</span>, enquanto <strong><span class="pre">Preservação</span>, <span class="lib">Libertação</span> e <span class="cnx">Conexão</span></strong> influenciam a <span class="san">Sanidade (SAN)</span>.
         </p>
@@ -591,13 +594,16 @@
           A rolagem de ações usa 1D20 + modificador de atributo contra uma <strong>Dificuldade Temporária (DT)</strong>, gerada por uma rolagem do oponente.
         </p>
         <h3>Exemplo de ataque</h3>
-        <p>
-          Para atacar, o jogador rola 1D20 + modificadores de ataque. Se o resultado for igual ou superior à <strong>DT</strong> do alvo, o ataque acerta.
-          O dano é determinado pelo tipo de arma ou magia usada, somando os modificadores adequados.
-        </p>
-        <p>
-          Exemplo: Uma espada pode causar 1D8 de dano + modificador de <strong class="bru">Brutalidade</strong>.
-        </p>
+<p>
+  Para atacar, o jogador rola <strong>1D20 + bônus de teste</strong> de ataque.  
+  Se o resultado for igual ou superior à <strong>DT</strong> do alvo, o ataque acerta.  
+  Ao acertar, o dano é determinado pelo tipo de arma ou magia usada, somando os <strong>bônus de dano</strong> adequados.
+</p>
+
+<p>
+  Exemplo: Uma espada pode causar <strong>1D8 de dano + bônus de dano de</strong> <span class="bru">Brutalidade</span>.
+</p>
+
 
         <img src="/imagens/batalha_combate.png" alt="Cena de batalha entre personagens e criaturas" style="width:100%; border-radius:10px;">
       </div>
@@ -608,15 +614,22 @@
           No combate, além da ação principal, o personagem pode reagir de formas específicas ao ataque inimigo:
         </p>
 <p>
-  <strong>Esquivar:</strong> Para evitar um ataque, role 1D20 + modificador do atributo indicado pela habilidade, magia ou passiva (pode ser qualquer um dos seis atributos). Se o resultado for maior que o valor do ataque inimigo, o personagem esquiva com sucesso e não sofre dano.
+  <strong>Esquivar:</strong> Para evitar um ataque, role <strong>1D20 + bônus de teste</strong> adequado ao atributo indicado pela habilidade, magia ou passiva (pode ser qualquer um dos seis atributos).  
+  Se o resultado for maior que o valor do ataque inimigo, o personagem esquiva com sucesso e não sofre dano.
 </p>
 
-        <p>
-          <strong>Defender:</strong> O personagem pode entrar em postura defensiva somando o valor da armadura mais os bônus de <em class="det">Determinação</em> e <em class="bru">Brutalidade</em>. Este valor é somado à defesa para resistir ao dano do inimigo, reduzindo o dano recebido.
-        </p>
-<p>
-  <strong>Contra-atacar:</strong> Caso o ataque inimigo não supere a armadura do personagem, ele pode usar sua reação para realizar um contra-ataque. Essa reação é gratuita e não consome sua ação do turno, permitindo atacar o inimigo imediatamente.
+
+      <p>
+  <strong>Defender:</strong> O personagem pode entrar em postura defensiva, somando o valor da armadura mais os <strong>bônus de teste</strong> de <em class="det">Determinação</em> e <em class="bru">Brutalidade</em>.  
+  Este valor é somado à defesa para resistir ao dano do inimigo, reduzindo o dano recebido.
 </p>
+
+<p>
+  <strong>Contra-atacar:</strong> O personagem pode declarar um contra-ataque como reação <strong>antes do inimigo rolar para acertar</strong>.  
+  Caso o ataque inimigo não supere a armadura do personagem (já considerando os bônus de teste de defesa), ele pode realizar um contra-ataque imediatamente.  
+  Esta reação é gratuita e não consome a ação do turno.
+</p>
+
 
       </div>
 
@@ -2191,4 +2204,5 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 

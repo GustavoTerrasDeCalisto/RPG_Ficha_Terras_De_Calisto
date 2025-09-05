@@ -2195,29 +2195,24 @@ const TC = (() => {
         
 <!-- Habilita mapa interativo -->
 <!-- Habilita mapa interativo -->
-<div id="mapa-interativo" style="width:100%;max-width:1000px;margin:auto;aspect-ratio:16/12;touch-action:none;">
+<!-- Habilita mapa interativo -->
+<div id="mapa-interativo" style="width:100%;max-width:1000px;margin:auto;aspect-ratio:16/12;overflow:hidden;">
   <iframe 
     src="https://mapa-terras-de-calisto.netlify.app/" 
     width="100%" 
     height="100%" 
-    style="border:none;border-radius:12px;" 
+    style="border:none;border-radius:12px;touch-action:none;" 
     allowfullscreen>
   </iframe>
 </div>
 
-<script>
-  const mapa = document.getElementById("mapa-interativo");
-
-  // Quando o dedo entra no mapa, bloqueia o scroll da página
-  mapa.addEventListener("touchstart", () => {
-    document.body.style.overflow = "hidden";
-  });
-
-  // Quando o dedo sai, libera o scroll da página de novo
-  mapa.addEventListener("touchend", () => {
-    document.body.style.overflow = "";
-  });
-</script>
+<style>
+  /* Impede que a página role quando o dedo está sobre o iframe */
+  #mapa-interativo {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
 <!-- isso aqui é responsável por espaço no final do site-->
         <div style="height:clamp(10px,2.5vw,20px);width:100%;" aria-hidden="true"></div>
 
@@ -2246,6 +2241,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -1757,7 +1757,24 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   alcance:"Visível",
   testeConjurador:"Agilidade",
   testeAlvo:"Percepção"
+},{
+  id:"p4",
+  nome:"Armadura Sobrenatural",
+  sub:"Superno Armis",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-27.png?w=768&h=768",
+  elemento:"Variável",
+  tipoDano:"Variável",
+  descricao:"Faz surgir uma armadura no seu alvo do elemento escolhido.",
+  positivo:"Cria em volta do alvo uma entre 4 armaduras:\n- Tipo 1 – Sangue Sagrado: sangue cristalizado com brilho sagrado.\n- Tipo 2 – Energia de Plasma: sombras incandescentes envolvendo o alvo.\n- Tipo 3 – Névoa Sombria: escudo de pele com névoa umbral cobrindo o corpo.\n- Tipo 4 – Revolta da Natureza: elementos da natureza alternando ao redor do corpo.\nO alvo recebe <strong>1D20 de armadura</strong> e pode gastar o custo de conjuração desta habilidade para trocar sua armadura para <strong>5D6</strong> e alterar o elemento.",
+  negativo:"Se for atingido por um elemento diferente da sua armadura, recebe <strong>dobro de dano extra</strong>. Apenas para os elementos Caos, Fé, Poder e Desconhecido. Se o dano for do mesmo elemento, mas diferente do escolhido, apenas não negará o dano. O valor tirado no dado é subtraído do dano recebido; se o alvo tiver resistência, receberá metade deste valor já subtraído.",
+  duracao:"Até o fim da cena ou fim do combate",
+  nivel:"5",
+  alcance:"Visível",
+  elementoArmadura:"1 – Fé: Sangue ou Sagrado\n2 – Poder: Plasma ou Laser\n3 – Desconhecido: Névoa ou Distorção\n4 – Caos: Fogo, Eletricidade, Tempestade ou Gelo",
+  testeConjurador:"Determinação",
+  testeAlvo:"Determinação"
 }
+
 
 
   ]
@@ -2327,6 +2344,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

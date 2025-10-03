@@ -1725,7 +1725,8 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
       alcance:"Visível",
       testeConjurador:"Sobrevivência",
       testeAlvo:"Agilidade"
-    },
+    }
+,
     {
       id:"p2",
       nome:"Pele de Gelo",
@@ -1741,7 +1742,22 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
       alcance:"Passiva",
       testeConjurador:"—",
       testeAlvo:"—"
-    }
+    },{
+  id:"p3",
+  nome:"Bêbado",
+  sub:"Ebrius",
+  img:"https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=800&auto=format&fit=crop",
+  elemento:"Caos",
+  tipoDano:"Ácido",
+  descricao:"O personagem consome algo alcoólico e assume uma postura desorientada, oscilando entre genialidade e descontrole. *Bebidas alcoólicas são proibidas para menores de 18 anos.🚫*",
+  positivo:"Recebe **+5 fixo em testes de Conexão**. Não pode ser **agarrado**. Ganha uma **armadura invisível** que protege contra acidentes e ataques físicos, **reduzindo o dano em 1D12**. O valor da redução é determinado na **primeira vez que for testado** e permanece até o fim do combate.",
+  negativo:"**Perde 5 metros de movimento**. Em **testes de Libertação**, só pode **tentar esquivar**. Recebe **1D6 de desvantagem em testes de Agilidade**.",
+  duracao:"Até o fim do combate ou cena",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Agilidade",
+  testeAlvo:"Percepção"
+}
   ]
 };
 // ===========================
@@ -2309,6 +2325,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

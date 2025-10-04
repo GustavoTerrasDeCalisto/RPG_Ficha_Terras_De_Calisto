@@ -1710,39 +1710,40 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
     }
   ],
   passivas: [
-    {
-      id:"p1",
-      nome:"Consumir",
-      sub:"Consumere",
-      img:"https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop",
-      elemento:"Fé",
-      tipoDano:"Sangue",
-      descricao:"Seu personagem fica faminto e se alimenta do alvo, curando um valor de vida ou sanidade.",
-      positivo:"Assume postura assassina e morde o alvo, tentando dilacerá-lo e consumir o valor do dano (opcional). Dano 1d12+1d4 (vida) e 1d6+1d4 (sanidade).",
-      negativo:"Dano e cura são acertos separados. Em falha, sofre metade do dano causado e pode ficar bêbado pelo gosto amargo do sangue.",
-      duracao:"Um turno",
-      nivel:"2",
-      alcance:"Visível",
-      testeConjurador:"Sobrevivência",
-      testeAlvo:"Agilidade"
-    }
+{
+  id:"p1",
+  nome:"Consumir",
+  sub:"Consumere",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/f1c4787c84ea8bb72ad3f8f3e77976ee8976e146_high.webp?w=768&h=768",
+  elemento:"Fé",
+  tipoDano:"Sangue",
+  descricao:`<p><strong>Seu personagem é tomado por uma fome insaciável</strong> e se alimenta do alvo, drenando sua essência vital. Ao fazê-lo, pode <em>curar um valor de Vida ou Sanidade</em>, conforme a natureza da presa.</p>`,
+  positivo:`<p><strong>Postura Assassina:</strong> O personagem avança e morde o alvo, tentando dilacerá-lo e consumir o valor do dano (opcional). Causa <strong>1d12 + 1d4</strong> de dano em <em>Vida</em> e <strong>1d6 + 1d4</strong> em <em>Sanidade</em>. Pode converter o dano causado em cura para si mesmo.</p>`,
+  negativo:`<p><strong>Falha:</strong> O dano e a cura são resolvidos separadamente. Em caso de erro, o conjurador sofre metade do dano causado e pode ficar <em>bêbado ou tonto</em> pelo gosto amargo do sangue.</p>`,
+  duracao:"Um turno",
+  nivel:"2",
+  alcance:"Visível",
+  testeConjurador:"Sobrevivência",
+  testeAlvo:"Agilidade"
+}
 ,
-    {
-      id:"p2",
-      nome:"Pele de Gelo",
-      sub:"Cutis Glacies",
-      img:"https://images.unsplash.com/photo-1483347756197-71ef80e95f73?q=80&w=800&auto=format&fit=crop",
-      elemento:"Poder",
-      tipoDano:"Gelo",
-      descricao:"Uma camada fria protege sua pele.",
-      positivo:"+2 DEF contra ataques físicos enquanto estiver ativo.",
-      negativo:"Recebe +1 de dano de Fogo.",
-      duracao:"Cena",
-      nivel:"1",
-      alcance:"Passiva",
-      testeConjurador:"—",
-      testeAlvo:"—"
-    },{
+{
+  id:"p2",
+  nome:"Alegria",
+  sub:"Beatitudo",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/a8c0678e4a46aef77c2dbb9a7c6fa0f68ac0bd6c_high.webp?w=768&h=768", 
+  elemento:"Fé",
+  tipoDano:"Sagrado",
+  descricao:`<p><strong>O personagem fica visivelmente mais contente</strong>, rindo de tudo que acontece. Seu sorriso se torna o traço mais marcante dessa bênção, permanecendo constantemente em seu rosto como se fosse impossível conter a felicidade.</p>`,
+  positivo:`<p><strong>Êxtase Contagiante:</strong> O personagem recebe <strong>+1d8</strong> em testes de <em>Conexão</em>. Além disso, qualquer criatura que presenciar alguém com essa passiva deve realizar um teste para determinar se será <em>contagiada pela alegria</em>. O personagem também ganha <strong>+5 de movimento</strong> enquanto o efeito durar.</p>`,
+  negativo:`<p><strong>Falha ou Excesso:</strong> Algo <em>Desconhecido</em> tenta consumir o personagem ao fim do combate. Ele deve realizar um teste de resistência: <strong>1d20 + bônus de (Preservação, Libertação ou Conexão + Sanidade Atual)</strong>. Em caso de falha, o personagem fica <strong>possuído por 1d4 dias</strong>.</p>`,
+  duracao:"Até o fim da cena ou 1d4 dias",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Conexão",
+  testeAlvo:"Conexão"
+}
+,{
   id:"p3",
   nome:"Bêbado",
   sub:"Ebrius",
@@ -1773,7 +1774,88 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   elementoArmadura:"1 – Fé: Sangue ou Sagrado\n2 – Poder: Plasma ou Laser\n3 – Desconhecido: Névoa ou Distorção\n4 – Caos: Fogo, Eletricidade, Tempestade ou Gelo",
   testeConjurador:"Determinação",
   testeAlvo:"Determinação"
+},{
+  id:"p5",
+  nome:"Sorriso Contemplativo",
+  sub:"Contemplativus Risus",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-25.png?w=768&h=768",
+  elemento:"Variável",
+  tipoDano:"Variável (Escuridão, Maldição, Névoa ou Tempestade)",
+  descricao:`<p><strong>Um sorriso macabro se forma no rosto do personagem</strong>, irradiando uma energia que distorce a percepção dos que o observam. Com esse gesto enigmático, o personagem escolhe um alvo e canaliza nele um poder sobrenatural que amplifica sua fúria e destruição.</p>`,
+  positivo:`<p><strong>Sopro do Observador:</strong> O personagem escolhe um alvo e aumenta o dano dele em <strong>+1d12</strong> de um dos seguintes tipos de dano à escolha: <em>Escuridão</em>, <em>Maldição</em>, <em>Névoa</em> ou <em>Tempestade</em>. Enquanto permanecer imóvel, mantendo o sorriso voltado ao alvo, a melhoria continua ativa.</p>
+  <p>Além disso, o personagem pode gastar mais <em>Especial</em> e conjurar novamente no próximo turno, pagando o custo de conjuração mais uma vez para adicionar outro <strong>+1d12</strong> ao dano do alvo.</p>`,
+  negativo:`<p><strong>Riso Paralizante:</strong> Ao ativar essa habilidade, o personagem torna-se imóvel — senta-se no chão, cruza os braços e ri em direção ao alvo, completamente vulnerável a ataques. O alcance máximo dessa habilidade é de <strong>16 metros</strong>.</p>`,
+  duracao:"Até o fim do combate ou até ser desativada",
+  nivel:"4",
+  alcance:"Visível",
+  testeConjurador:"Libertação",
+  testeAlvo:"Determinação"
+},{
+  id:"p6",
+  nome:"Emanar Energia",
+  sub:"Procedunt Navitas",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/emanar.webp?w=768&h=768",
+  elemento:"Poder",
+  tipoDano:"Aura",
+  descricao:`<p><strong>Sua energia começa a vazar do corpo</strong>, exalando uma presença sufocante e uma vontade assassina que distorce o ar ao redor. O chão vibra sob seus pés, e uma aura intensa se espalha, tornando impossível ignorar sua existência.</p>`,
+  positivo:`<p><strong>Presença Dominante:</strong> O personagem recebe <strong>+1d8</strong> em testes de <em>Intimidação</em>, <strong>+1d8</strong> de dano de <em>Aura</em> em ataques corpo a corpo e <strong>+1d4</strong> em testes de <em>Agarrar</em>. Sua energia bruta também pode <em>empurrar objetos próximos</em>, e sua <strong>Armadura</strong> é aumentada em <strong>+5 fixo</strong>.</p>`,
+  negativo:`<p><strong>Fúria Incontrolável:</strong> O personagem se torna incapaz de agir furtivamente e passa a ser facilmente irritável. Se for <em>provocado</em> por inimigos ou aliados, entra imediatamente em estado de <strong>Ódio</strong>. Além disso, sempre que realizar um teste, deve <strong>rolar os dados duas vezes e ficar com o pior resultado</strong>.</p>`,
+  duracao:"Até o fim da cena",
+  nivel:"4",
+  alcance:"Visível",
+  testeConjurador:"Intimidação",
+  testeAlvo:"Intuição"
+},{
+  id:"p7",
+  nome:"Ódio",
+  sub:"Odium",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/32d88826aabd8d02aaa302d31942f834abbf6545_high-1.webp?w=768&h=768",
+  elemento:"Poder",
+  tipoDano:"Distorção",
+  descricao:`<p><strong>Uma variação extrema da Raiva domina o personagem</strong> quando ele entra em fúria. Seus olhos tornam-se negros, a pele exala uma energia escura e a postura se torna animalesca. O autocontrole desaparece por completo, substituído por um instinto de destruição pura. Sua presença pode ser sentida a quase um quilômetro de distância, enquanto o ódio acumulado por toda a vida desperta em um único surto devastador.</p>`,
+  positivo:`<p><strong>Fúria Devastadora:</strong> Cada ataque corpo a corpo causa <strong>1d12 + 1d6</strong> de dano, refletindo o poder bruto e o descontrole total do personagem.</p>`,
+  negativo:`<p><strong>Descontrole Total:</strong> O personagem só pode realizar <em>ataques corpo a corpo</em>, mas o faz de maneira implacável, atacando <strong>duas vezes</strong> o alvo mais próximo — <em>seja ele aliado ou inimigo</em>.</p>`,
+  duracao:"Só acaba quando o personagem é derrubado",
+  nivel:"2",
+  alcance:"Visível",
+  testeConjurador:"Brutalidade",
+  testeAlvo:"Agilidade"
+},{
+  id:"p8",
+  nome:"Vingança",
+  sub:"Vindicta",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/2abfa416b623d5166b1913a4c444bb25febe4352_high.webp?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"Distorção",
+  descricao:`<p><strong>O personagem entra em um estado de alerta absoluto</strong>, com os olhos atentos e a respiração controlada. Sua postura se torna defensiva, mas impregnada por um instinto de retaliação sobrenatural — cada golpe recebido desperta uma resposta imediata e implacável.</p>`,
+  positivo:`<p><strong>Retribuição Imediata:</strong> Sempre que o personagem for atingido, ele devolve <strong>o mesmo dano recebido + 2d8</strong> de dano de <em>Distorção</em> ao agressor. Pode ser usada como <em>Reação</em>, exigindo um teste de <strong>Contra-ataque</strong>.</p>`,
+  negativo:`<p><strong>Imobilidade da Ira:</strong> Enquanto permanecer nesse estado, o personagem <strong>não pode se mover</strong>, tornando-se uma fortaleza estática de pura vingança.</p>`,
+  duracao:"Até decidir se mover ou até o fim do combate",
+  nivel:"2",
+  alcance:"Visível",
+  testeConjurador:"Percepção",
+  testeAlvo:"Agilidade"
+},{
+  id:"p9",
+  nome:"Medo Oculto",
+  sub:"Occulta Timor",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/515a5fa66786036a9c6faa70b23b173dea0d6c63_high.webp?w=768&h=768",
+  elemento:"Poder",
+  tipoDano:"Aura",
+  descricao:`<p><strong>Seus olhos passam a brilhar com um tom ameaçador</strong>, irradiando uma força que desperta o pavor mais profundo no coração do alvo. Uma presença invisível o sufoca, como se a própria morte o observasse de perto, silenciosa e inevitável.</p>`,
+  positivo:`<p><strong>Terror Espiritual:</strong> O alvo é afetado pela passiva <strong>PAVOR</strong> e evita o combate por <strong>1d6 turnos</strong>. O efeito se mantém até o <em>fim do combate</em>, fazendo com que o medo o paralise completamente diante do conjurador.</p>`,
+  negativo:`<p><strong>Medo Invertido:</strong> Se o teste falhar, o alvo vê apenas o conjurador na arena. Deve rolar <strong>1d6</strong> para determinar quantos turnos ficará <strong>focado exclusivamente em atacá-lo</strong>, tomado por uma obsessão destrutiva.</p>`,
+  duracao:"1d6 turnos",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Intimidação",
+  testeAlvo:"Libertação"
 }
+
+
+
+
+
 
 
 
@@ -2344,6 +2426,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

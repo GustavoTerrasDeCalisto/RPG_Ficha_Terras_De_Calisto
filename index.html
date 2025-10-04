@@ -1850,7 +1850,23 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   alcance:"Visível",
   testeConjurador:"Intimidação",
   testeAlvo:"Libertação"
+},{
+  id:"p10",
+  nome:"Preguiça",
+  sub:"Segnities",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/248c2c6b18ccad137aeb5b4e4a971ad51d366204_high.webp?w=768&h=768",
+  elemento:"Poder",
+  tipoDano:"Escuridão",
+  descricao:`<p><strong>O personagem se torna lento e relutante em agir</strong>, movendo-se com calma quase provocativa. Cada gesto parece carregado de peso, mas, paradoxalmente, essa apatia o protege — nada parece urgente, nada o abala.</p>`,
+  positivo:`<p><strong>Letargia Protetora:</strong> O personagem torna-se <strong>imune a testes de Conexão</strong>, pois sua preguiça supera qualquer tentativa de manipulação ou influência inimiga. Além disso, ele <em>atrasará sua jogada</em> para o final da fila e pode <strong>escolher seu maior dado de dano</strong>, somando <strong>metade do valor dos dados extras</strong> ao dano total, reduzindo a necessidade de múltiplas rolagens.</p>`,
+  negativo:`<p><strong>Sonolência Incontrolável:</strong> No início de cada turno, o personagem deve rolar <strong>1d20</strong>. Se o resultado for menor que o bônus de sua <em>Determinação</em>, ele <strong>adormece</strong> instantaneamente, perdendo o turno.</p>`,
+  duracao:"Até o fim da cena",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Determinação",
+  testeAlvo:"Determinação"
 }
+
 
 
 
@@ -2426,6 +2442,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

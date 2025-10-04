@@ -1865,7 +1865,119 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   alcance:"Visível",
   testeConjurador:"Determinação",
   testeAlvo:"Determinação"
-}
+},{
+  id:"p11",
+  nome:"Sonambulismo",
+  sub:"Somnus ambulans",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/7753a7f9f7a2e54472b8cf7c3f4d93ec21dc39f4_high.webp?w=768&h=768",
+  elemento:"Poder",
+  tipoDano:"Aura",
+  descricao:`<p><strong>O personagem anda dormindo</strong>, agindo e tomando decisões sem plena consciência, como se movesse entre o mundo dos sonhos e a realidade.</p>`,
+  positivo:`<p><strong>Movimento Sonambúlico:</strong> Ganha <strong>+1D6</strong> em rolagens de <em>Reação</em> ou <em>Agilidade</em>. Seus ataques não podem causar crítico, mas cada ataque causa <strong>+1D12</strong> de dano de <em>Aura</em>.</p>`,
+  negativo:`<p><strong>Ação Indecisa:</strong> Não pode realizar ataques elaborados. Sempre que for agir, o jogador deve escolher duas ações possíveis, narrar ambas para o mestre, e então jogar <em>cara ou coroa</em> para decidir qual será realizada. Quando acordar, o personagem entra automaticamente em estado de <strong>PAVOR</strong>.</p>`,
+  duracao:"Até o fim da cena",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Percepção",
+  testeAlvo:"Agilidade"
+},{
+  id:"p12",
+  nome:"Invadir a Mente",
+  sub:"Invadere mentem",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/9a7ae1816f115fcb465a167d88d7ed5ab756bc1c_high.webp?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"Psicológico",
+  descricao:`<p><strong>Você encara a alma do inimigo</strong> e tenta induzir um desejo ou vontade diretamente em sua mente, manipulando seus pensamentos de forma quase imperceptível.</p>`,
+  positivo:`<p><strong>Controle Mental:</strong> Escolha uma ação negativa (ex: atacar um aliado, se ajoelhar, fugir etc.) para o inimigo. Ele deve realizar um teste contra seu personagem (<strong>1d20</strong>). Se falhar, será obrigado a tentar realizar a ação durante sua rodada. Mesmo induzido, o inimigo ainda pode falhar ao executar a ação. Caso a ação seja realizada com sucesso, ele ganha <strong>+5</strong> em testes pelo restante do turno.</p>`,
+  negativo:`<p><strong>Resistência do Alvo:</strong> Se o inimigo resistir ao efeito, ele focará em você por <strong>1d6 rodadas</strong>, e ainda assim receberá <strong>+5</strong> em testes contra você durante esse período.</p>`,
+  duracao:"Até o fim do combate ou cena",
+  nivel:"4",
+  alcance:"Visível",
+  testeConjurador:"Preservação",
+  testeAlvo:"Identificar Magia"
+},{
+  id:"p13",
+  nome:"Pavor",
+  sub:"Formido",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/a9541e446b1f6fb1bc2a078afad1d02825d0b37f_high.webp?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"Mental",
+  descricao:`<p><strong>O personagem sente um medo profundo</strong>, chegando a temer até sua própria sombra. Esse estado pode ser autoinfligido ao reviver lembranças de traumas e medos antigos.</p>`,
+  positivo:`<p><strong>Alerta Amedrontado:</strong> Recebe <strong>1D6</strong> de bônus em ações de <em>Iniciativa</em> e <em>Observação</em>. O valor rolado permanece ativo até o <em>fim do combate ou da cena</em>.</p>`,
+  negativo:`<p><strong>Paralisia do Medo:</strong> Sempre que realizar uma rolagem, jogue <strong>dois dados</strong> e escolha o pior resultado.</p>`,
+  duracao:"Até o fim do combate",
+  nivel:"1",
+  alcance:"Visível",
+  testeConjurador:"Conexão",
+  testeAlvo:"Conexão"
+},{
+  id:"p14",
+  nome:"Raiva",
+  sub:"Ira",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/a57bc0e5da3e86c981def526dfd826e3212340c3_high.webp?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"–",
+  descricao:`<p><strong>O personagem entra em um estado de fúria descontrolada</strong>, descarregando sua raiva nas pessoas ao redor. Sua expressão se torna ameaçadora, dominada pelo ódio.</p>`,
+  positivo:`<p><strong>Fúria Agressiva:</strong> Recebe <strong>+1D8</strong> de dano físico extra em todos os ataques.</p>`,
+  negativo:`<p><strong>Descontrole Letal:</strong> Durante o combate, todas as ações devem ser ofensivas e causar dano. Ao declarar sua jogada, o jogador deve fazer <em>cara ou coroa</em> com o aliado mais próximo. Se vencer, o ataque segue normalmente; se perder, deve redirecionar o ataque para o aliado.</p>`,
+  duracao:"Até o fim do combate",
+  nivel:"1",
+  alcance:"Visível",
+  testeConjurador:"Conexão",
+  testeAlvo:"Conexão"
+},{
+  id:"p15",
+  nome:"Ansiedade",
+  sub:"Anxietatem",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/62bac6da3f0e757594c1698d75fa4a80ce246211_high.webp?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"Psicológico",
+  descricao:`<p><strong>O personagem fica visivelmente inquieto</strong>, com o coração acelerado, fala rápida e movimentos impacientes. Essa condição também pode ser induzida em outras pessoas.</p>`,
+  positivo:`<p><strong>Agilidade Nervosa:</strong> Adiciona <strong>+1D6</strong> em ações de <em>Agilidade</em>. O valor rolado é fixo e permanece até o fim do combate.</p>`,
+  negativo:`<p><strong>Ansiedade Paralisante:</strong> Sofre <strong>1D6</strong> de dano psicológico sempre que for sua vez de agir, até o fim do combate.</p>`,
+  duracao:"Até o fim do combate",
+  nivel:"1",
+  alcance:"Visível",
+  testeConjurador:"Conexão ou Agilidade",
+  testeAlvo:"Intuição"
+},{
+  id:"p16",
+  nome:"Inveja",
+  sub:"Invidia",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/429998cab768c561bc27d063b72afa6a64ffe749_high.webp?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"Mental",
+  descricao:`<p><strong>O personagem assume uma postura analítica e crítica</strong>, observando com atenção cada decisão de aliados e inimigos, desejando o que não possui.</p>`,
+  positivo:`<p><strong>Imitação Instantânea:</strong> Pode copiar um benefício ou magia que tenha sido conjurada anteriormente no combate, no exato momento da ativação desta passiva. O efeito copiado ocorre de forma imediata e <strong>não consome os recursos do efeito original</strong>.</p>`,
+  negativo:`<p><strong>Obstáculo Mental:</strong> Em testes de <em>Conexão</em>, deve rolar dois dados e escolher o pior resultado. Dados bônus ou adicionais para testes de Conexão não funcionam enquanto a passiva estiver ativa.</p>`,
+  duracao:"Positivo instantâneo; negativo até o fim do combate ou cena (efeitos não acumulam)",
+  nivel:"2",
+  alcance:"Visível",
+  testeConjurador:"Identificar Magia",
+  testeAlvo:"Conexão"
+},{
+  id:"p17",
+  nome:"Tristeza Oculta",
+  sub:"Occulta tristitia",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/4c01b7cdecaa62343d2979ce5bde7994df12dc8f_high.png?w=768&h=768",
+  elemento:"Desconhecido",
+  tipoDano:"Mental",
+  descricao:`<p><strong>Toda tristeza acumulada durante a jornada desperta de forma silenciosa</strong>, envolvendo o personagem em uma aura melancólica que transparece em seus olhos.</p>`,
+  positivo:`<p><strong>Aura de Percepção:</strong> O personagem ganha uma aura mágica ao redor dos olhos, permitindo enxergar as dores e fraquezas internas dos inimigos. Seu acerto crítico passa a ocorrer com rolagens de <strong>18 ou mais</strong>.</p>`,
+  negativo:`<p><strong>Desânimo Restritivo:</strong> Seu deslocamento é reduzido em <strong>5 metros</strong>. Em testes de <em>Conexão</em>, deve rolar dois dados e escolher o pior resultado, e dados bônus para Conexão não funcionam enquanto a passiva estiver ativa.</p>`,
+  duracao:"Até o fim da cena",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Intuição",
+  testeAlvo:"Conexão"
+},
+
+
+
+
+
+
+
 
 
 
@@ -2442,6 +2554,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -1685,6 +1685,78 @@ alcance: "Ilimitado (através do tempo)",
 testeConjurador: "Conexão",
 testeAlvo: "Libertação"
 },
+     {
+      id: "m4",
+      nome: "Reflexão de Eclipse",
+      sub: "Eklipsens Refleksjon",
+      img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/4fe807a14c95007000191d1e5ed588e0d965b75a_high.png",
+      elemento: "Desconhecido",
+      tipoDano: "Eclipse",
+      descricao: `
+O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o alvo sofre <strong>1d10 de dano de Eclipse</strong> e recebe um bônus de <strong>+1d6 em ataques</strong> durante <strong>2 turnos</strong>. O clone pode atacar os aliados no próximo turno, obrigando-os a fazer um teste de <strong>Agilidade</strong> para não sofrerem dano.
+
+<strong>Condições durante o eclipse:</strong>
+<ul>
+  <li><strong>Invocação Sombria Adicional:</strong> Durante o eclipse, o conjurador pode criar um segundo clone reflexivo que ataca os inimigos por um turno adicional.</li>
+  <li><strong>Distorção de Percepção:</strong> Todos os alvos próximos ao clone têm dificuldade de foco, recebendo <strong>-1 em Conexão</strong> para resistir aos ataques do clone.</li>
+</ul>
+`,
+      duracao: "2 turnos",
+      tagLevel: "Aspirante do Crepúsculo",
+      tagLevelResposta: "Nível 1 – Aspirante do Crepúsculo",
+      alcance: "30m",
+      testeConjurador: "Conexão",
+      testeAlvo: "Libertação"
+    }
+    ,
+    {
+  id: "m165",
+  nome: "Lâminas do Eclipse",
+  sub: "Eklipsens Klinger",
+  img: "/imagens/laminas_eclipse.png",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador imbuí suas espadas, cimitarras e foices com energia do eclipse, aumentando sua eficácia. Os ataques com armas cortantes recebem <strong>+2 de dano</strong>. Além disso, ao acertar um ataque, o conjurador pode escolher entre causar <strong>1d10</strong> de dano adicional de Eclipse ou deixar o alvo com desvantagem em seu próximo ataque.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Lâmina Dupla:</strong> As armas imbuídas duplicam-se temporariamente durante o ataque, atingindo dois alvos simultaneamente.<br>
+  <strong>• Escudo da Escuridão:</strong> O conjurador ganha um escudo de sombras que reduz o dano recebido em <strong>2d6</strong> por turno.<br>
+  `,
+  duracao: "3 turnos",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 2 – Tecelão da Penumbra",
+  alcance: "Toque",
+  testeConjurador: "Conexão",
+  testeAlvo: "—"
+},
+
+    {
+  id: "m172",
+  nome: "Clone das Sombras",
+  sub: "Clonum Umbra",
+  img: "/imagens/clone_sombras.png",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador convoca um clone sombrio que pode atacar os inimigos. No início de cada turno, o clone pode atacar aliados aleatórios, causando o dano da arma empunhada + <strong>2d6 de dano de Eclipse</strong>. Os aliados atacados podem fazer um teste de <strong>Agilidade</strong> para evitar o golpe. Se não houver alvos, o clone pode atacar o próprio conjurador.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Multiplicação Sombria:</strong> Durante um eclipse, surgem <strong>dois clones adicionais</strong> com metade do dano original.<br>
+  <strong>• Frenesi de Eclipse:</strong> Os clones recebem <strong>+1d4 em Agilidade</strong> e causam pavor entre os aliados do alvo, que recebem <strong>-1</strong> em ataques.<br>
+  <em>O clone sempre prioriza atacar com a arma em mãos e age de forma independente.</em><br>
+  `,
+  duracao: "4 turnos ou até sofrer 1d8 golpes",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 3 – Guardião da Meia-Noite",
+  alcance: "50m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Agilidade"
+}
+
+
+    
+    ,
     {
   id: "m167",
   nome: "Fragmento do Tempo",
@@ -1716,32 +1788,99 @@ testeAlvo: "Libertação"
   testeAlvo: "Conexão",
   testeDt: "10, 15, 20, 25, 30 define a qualidade do item"
 }
+,
+ {
+  id: "m168",
+  nome: "Ilusão Lunar",
+  sub: "Illusio Lunae",
+  img: "/imagens/ilusao_lunar.png",
+  elemento: "Desconhecido",
+  tipoDano: "Nenhum",
+  descricao: `
+  <p>O conjurador cria uma duplicação da lua no céu, causando um efeito de ilusão em uma área de 50m. Todos os inimigos nessa área devem fazer um teste de <strong>Libertação</strong>. Se falharem, ficam confusos, reduzindo seu movimento em <strong>5m</strong> e recebendo <strong>-1d4</strong> em todos os ataques por <strong>2 turnos</strong>.</p>
 
-    
-    ,
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Reflexo Duplicado:</strong> A duplicação da lua se torna uma miragem múltipla, desorientando ainda mais os inimigos, que perdem <strong>-2</strong> em todos os testes de Determinação.<br>
+  <strong>• Luz Ilusória:</strong> A ilusão confunde os sentidos, reduzindo a visibilidade dos alvos em <strong>10m</strong>, dificultando sua reação aos ataques do conjurador e aliados.<br>
+  `,
+  duracao: "2 turnos",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 5 – Oráculo das Sombras",
+  alcance: "30m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+,
+
     {
-      id: "m4",
-      nome: "Reflexão de Eclipse",
-      sub: "Eklipsens Refleksjon",
-      img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/4fe807a14c95007000191d1e5ed588e0d965b75a_high.png",
-      elemento: "Desconhecido",
-      tipoDano: "Eclipse",
-      descricao: `
-O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o alvo sofre <strong>1d10 de dano de Eclipse</strong> e recebe um bônus de <strong>+1d6 em ataques</strong> durante <strong>2 turnos</strong>. O clone pode atacar os aliados no próximo turno, obrigando-os a fazer um teste de <strong>Agilidade</strong> para não sofrerem dano.
+  id: "m169",
+  nome: "Dano do Eclipse",
+  sub: "Eklipseskade",
+  img: "/imagens/dano_eclipse.png",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador canaliza a energia do eclipse, causando <strong>3d12</strong> de dano ao alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o dano aumenta em <strong>+2d12</strong> e o alvo ganha o lado negativo de “Mutação”.</p>
 
-<strong>Condições durante o eclipse:</strong>
-<ul>
-  <li><strong>Invocação Sombria Adicional:</strong> Durante o eclipse, o conjurador pode criar um segundo clone reflexivo que ataca os inimigos por um turno adicional.</li>
-  <li><strong>Distorção de Percepção:</strong> Todos os alvos próximos ao clone têm dificuldade de foco, recebendo <strong>-1 em Conexão</strong> para resistir aos ataques do clone.</li>
-</ul>
-`,
-      duracao: "2 turnos",
-      tagLevel: "Aspirante do Crepúsculo",
-      tagLevelResposta: "Nível 1 – Aspirante do Crepúsculo",
-      alcance: "30m",
-      testeConjurador: "Conexão",
-      testeAlvo: "Libertação"
-    }
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Armadura Sombria:</strong> O conjurador ganha uma resistência temporária ao dano de Eclipse, absorvendo até <strong>3d10</strong> de dano de ataques.<br>
+  <strong>• Amplificação de Eclipse:</strong> Durante um eclipse, o dano aumenta em <strong>+3d6</strong> e causa uma desvantagem de <strong>-1d4</strong> em testes de Libertação para o alvo.<br>
+  `,
+  duracao: "Instantânea",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 6 – Vidente do Véu",
+  alcance: "15m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+,
+ {
+  id: "m170",
+  nome: "Mutação Sombria",
+  sub: "Mutatio Obscura",
+  img: "/imagens/mutacao_sombria.png",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>A magia causa uma transformação em um alvo, que deve fazer um teste de <strong>Conexão</strong>. Se falhar, ele sofre <strong>5d12</strong> de dano de Eclipse e se torna vulnerável a ataques do conjurador por <strong>1d6 turnos</strong>. O conjurador também ganha apenas o lado positivo de “Mutação”.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Mutação Melhorada:</strong> Durante o eclipse, o conjurador recebe um bônus positivo de “Mutação” permanente, concedendo <strong>+1 em Conexão</strong>.<br>
+  <strong>• Redução de Tamanho:</strong> O alvo encolhe temporariamente, reduzindo seu alcance de ataque pela metade e perdendo <strong>2 de Força</strong> por turno.<br>
+  <em>Cria um eclipse no céu automaticamente ao conjurar.</em><br>
+  `,
+  duracao: "Instantânea, 1d6 turnos",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 7 – Sábio do Oculto",
+  alcance: "20m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+}
+,
+    
+    {
+  id: "m171",
+  nome: "Cataclismo do Eclipse",
+  sub: "Cataclysmus Eclipse",
+  img: "/imagens/cataclismo_eclipse.png",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador provoca um cataclismo que reverbera pela terra, criando ondas de escuridão e destruição. Todos os alvos em um raio de <strong>200m</strong> devem fazer um teste de <strong>Libertação</strong>. Se falharem, sofrem <strong>8d10</strong> de dano de Eclipse e Sanidade. A mutação pode alterar a aparência de todos dentro da área sem custo, podendo adicionar traços únicos em cada um.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Onda de Eclipse:</strong> O alcance do cataclismo dobra para <strong>400m</strong>, causando <strong>+3d10</strong> de dano adicional de Eclipse.<br>
+  <strong>• Véu Sombrio:</strong> O conjurador pode escolher até <strong>três alvos</strong> e torná-los invisíveis temporariamente, confundindo os inimigos e permitindo ataques furtivos.<br>
+  <em>Cria um eclipse no céu automaticamente ao conjurar.</em><br>
+  `,
+  duracao: "Instantânea",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 8 – Arconte do Infinito",
+  alcance: "200m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+
   ],
   passivas: [
 {
@@ -2604,6 +2743,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -1686,6 +1686,40 @@ testeConjurador: "Conexão",
 testeAlvo: "Libertação"
 },
     {
+  id: "m167",
+  nome: "Fragmento do Tempo",
+  sub: "Fragmentum Tempus",
+  img: "/imagens/fragmentodotempo.png",
+  elemento: "Desconhecido",
+  tipoDano: "Nenhum",
+  descricao: `
+  <p>O conjurador busca um objeto do passado ou do futuro, fazendo com que um fragmento apareça ao seu redor. O objeto escolhido pode ter propriedades mágicas ou úteis, proporcionando um <strong>bônus de +3</strong> a uma habilidade relacionada ao objeto. O alvo deve fazer um teste de <strong>Conexão</strong> para resistir à atração do fragmento.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>1. Fluxo Temporal Amplificado:</strong> Permite que o conjurador traga até três objetos temporais do passado ou do futuro simultaneamente, cada um com bônus aleatórios.<br>
+  <strong>2. Congelamento do Momento:</strong> O tempo ao redor do alvo congela brevemente, e o alvo fica paralisado por um turno ou até que outro ataque o atinja.<br><br>
+
+  <strong>Exemplo de objetos Temporais e bônus:</strong><br>
+  <em>PARA OUTROS, FALAR COM MESTRE!!!</em><br><br>
+
+  <strong>Ponteiro de Calisto:</strong> Possui um traço de energia que acelera um movimento específico, permitindo uma ação extra em um único turno para quem o carrega.<br>
+  <strong>Relógio da Eternidade:</strong> Permite ao usuário prever o próximo ataque do alvo e reagir com mais agilidade (<strong>+3</strong> em testes de Agilidade por um turno).<br>
+  <strong>Areia das Eras:</strong> Quando usada em combate, desacelera o tempo para o alvo escolhido, reduzindo seus ataques por turno em <strong>1</strong>.<br>
+  <strong>Ampulheta do Recomeço:</strong> Gera uma área de influência em que o conjurador pode “reverter” uma ação recente, como um movimento ou um ataque fracassado, para um segundo intento.<br>
+  <strong>Bússola da Paradoxa:</strong> Aponta para um momento favorável no futuro imediato, concedendo <strong>+2</strong> em Determinação para o conjurador.<br>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 4 – Mestre do Eclipse",
+  alcance: "100m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão",
+  testeDt: "10, 15, 20, 25, 30 define a qualidade do item"
+}
+
+    
+    ,
+    {
       id: "m4",
       nome: "Reflexão de Eclipse",
       sub: "Eklipsens Refleksjon",
@@ -2570,6 +2604,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

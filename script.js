@@ -368,7 +368,7 @@ bonusTexto_2: `Nível 1: +1 em precisão à distância.
     "resistencia": "Mental",
 "movimento_pass": 2,
 "bonusPass": `
-<p>Nível 0: <strong>Passiva</strong> [Medo oculto](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Medo%20oculto,-Occulta%20timor) sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
+<p>Nível 0: <strong>Passiva</strong> <a href="#tc=p9">Medo oculto</a> sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
 `,
 
 bonustitulo_1: `<p>🧠<strong>Mentor Psíquico</strong></p>`,
@@ -466,7 +466,7 @@ bonusTexto_3: `
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
     "bonusPass": `
-<p>Nível 0: <strong>Passiva</strong> [Furtividade Sombria](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Conex%C3%A3o-,Furtividade%20sombria,-Furtim%20tenebris) — 1 vez no dia sem custo, +5 com <strong>Adagas</strong>.</p>
+<p>Nível 0: <strong>Passiva</strong> <a href="#tc=p18">Furtividade sombria</a> — 1 vez no dia sem custo, +5 com <strong>Adagas</strong>.</p>
 `,
 bonustitulo_1: "<p>🗡️ <strong>Assassinato Furtivo</strong></p>",
 bonusTexto_1: `
@@ -499,12 +499,12 @@ bonusTexto_3: `
 <p>Nível 1: +1 em testes de <strong>Conexão</strong> para controlar magias do eclipse.</p>
 <p>Nível 3: <strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.</p>
 <p>Nível 5: <strong><a href="#tc=m4">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
-<p>Nível 9: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=de%20Alvos%3A%20Agilidade-,Fragmento%20do%20Tempo,-Fragmentum%20Tempus" target="_blank" rel="noopener noreferrer">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
-<p>Nível 13: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20%E2%80%94-,Clone%20das%20Sombras,-Clonum%20Umbra" target="_blank" rel="noopener noreferrer">Clone das Sombras</a></strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
-<p>Nível 16: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=qualidade%20do%20item-,Ilus%C3%A3o%20Lunar,-Illusio%20Lunae" target="_blank" rel="noopener noreferrer">Ilusão Lunar</a></strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
-<p>Nível 20: <strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Muta%C3%A7%C3%A3o%20Sombria,-Mutatio%20Obscura" target="_blank" rel="noopener noreferrer">Mutação Sombria</a></strong> (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.</p>
+<p>Nível 9: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="#tc=m167">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
+<p>Nível 13: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="#tc=m172">Clone das Sombras</a> </strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
+<p>Nível 16: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="#tc=m168">Ilusão Lunar</a> </strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
+<p>Nível 20: <strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="#tc=m170">Mutação Sombria</a></strong> (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.</p>
 <p>Nível 22: <strong>Sombra da Noite</strong> — Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).</p>
-<p>Nível 25: <strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8. Libera a magia <strong><a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Cataclismo%20do%20Eclipse" target="_blank" rel="noopener noreferrer">Cataclismo do Eclipse</a></strong> (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.</p>
+<p>Nível 25: <strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8. Libera a magia <strong><a href="#tc=m171">Cataclismo do Eclipse</a></strong> (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.</p>
 `
 ,  "movimento_pass": 3
   },
@@ -5243,6 +5243,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

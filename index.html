@@ -1472,7 +1472,6 @@ Bonus por Níveis Do Personagem  </h3>
   min-width: 140px;
   flex: 1;
 }
-
 #tcOverlay .tc-content {
   background: #0f1724;
   padding: 16px;
@@ -1480,17 +1479,11 @@ Bonus por Níveis Do Personagem  </h3>
   max-height: calc(90vh - 114px);
 }
 
-/* grid fluido (web) */
+/* grid 2 colunas fixo */
 #tcOverlay .tc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
-}
-
-@media (max-width: 640px) {
-  #tcOverlay .tc-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-  #tcOverlay .tc-title { font-size: 18px; padding: 8px 14px; }
-  #tcOverlay .tc-detail-img { max-width: 160px; }
 }
 
 /* card compacto */
@@ -1520,7 +1513,10 @@ Bonus por Níveis Do Personagem  </h3>
   font-size: 15px;
   line-height: 1.2;
 }
-#tcOverlay .tc-meta { font-size: 12px; color: #b7c4e1; }
+#tcOverlay .tc-meta {
+  font-size: 12px;
+  color: #b7c4e1;
+}
 
 #tcOverlay .tc-pagination {
   display: flex;
@@ -1536,84 +1532,91 @@ Bonus por Níveis Do Personagem  </h3>
   padding: 8px 10px;
   cursor: pointer;
 }
-#tcOverlay .tc-page.active { background: #c0191f; }
+#tcOverlay .tc-page.active {
+  background: #c0191f;
+}
 
-/* ========================= */
-/*       POPUP DETALHE       */
-/* ========================= */
+/* ============================= */
+/*     DETALHE - VERTICAL WEB    */
+/* ============================= */
 #tcOverlay .tc-detail {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.66);
+  background: rgba(0, 0, 0, .66);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 10000;
 }
-
 #tcOverlay .tc-box {
   background: #ffffff;
   border-radius: 22px;
-  width: 92%;
-  max-width: 760px;
-  max-height: 88vh;
-  overflow: auto;
+  width: 100%;
+  max-width: 520px;        /* reduz largura para formato vertical */
+  max-height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   color: #1a1a1a;
-  transition: all .3s ease;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .45);
 }
-
-#tcOverlay .tc-box-head { padding: 18px 18px 0; }
+#tcOverlay .tc-box-head {
+  padding: 18px 18px 0;
+}
 #tcOverlay .tc-detail-img {
   width: 100%;
-  aspect-ratio: 1/1;
+  height: auto;
+  aspect-ratio: 4 / 5;     /* formato vertical da imagem */
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 22px 22px 0 0;
 }
 #tcOverlay .tc-title {
-  margin: 14px auto 6px;
+  margin: 12px auto 6px;
   text-align: center;
   background: #9b0b0f;
   color: #fff;
   border-radius: 999px;
-  padding: 10px 16px;
-  font-size: 22px;
+  padding: 8px 14px;
+  font-size: 20px;
   font-weight: 800;
   width: fit-content;
 }
 #tcOverlay .tc-sub {
-  margin: 0 auto 14px;
+  margin: 0 auto 12px;
   text-align: center;
   color: #9b0b0f;
   font-style: italic;
 }
-#tcOverlay .tc-section { padding: 0 18px 16px; }
-#tcOverlay .tc-h2 { margin: 10px 0 8px; font-size: 16px; color: #0f172a; }
-#tcOverlay .tc-desc { color: #222; line-height: 1.55; }
-
-#tcOverlay .tc-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+#tcOverlay .tc-section {
+  padding: 0 16px 16px;
+  line-height: 1.6;
 }
-#tcOverlay .tc-table th, 
-#tcOverlay .tc-table td {
-  border: 1px solid #e5e7eb;
-  padding: 10px;
-  text-align: left;
+#tcOverlay .tc-h2 {
+  margin: 10px 0 8px;
+  font-size: 16px;
+  color: #0f172a;
 }
-#tcOverlay .tc-table th {
-  background: #f4f6fb;
-  font-weight: 700;
-  color: #111827;
+#tcOverlay .tc-desc {
+  color: #222;
+  line-height: 1.55;
+  font-size: 15px;
 }
-
-#tcOverlay .tc-good { color: #16a34a; font-weight: 900; margin: 8px 0 4px; }
-#tcOverlay .tc-bad { color: #dc2626; font-weight: 900; margin: 14px 0 4px; }
-
+#tcOverlay .tc-good {
+  color: #16a34a;
+  font-weight: 900;
+  margin: 8px 0 4px;
+}
+#tcOverlay .tc-bad {
+  color: #dc2626;
+  font-weight: 900;
+  margin: 14px 0 4px;
+}
 #tcOverlay .tc-actions {
   display: flex;
-  gap: 8px;
-  padding: 0 18px 18px;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px 16px;
 }
 #tcOverlay .tc-btn {
   border: 0;
@@ -1622,16 +1625,38 @@ Bonus por Níveis Do Personagem  </h3>
   font-weight: 800;
   cursor: pointer;
 }
-#tcOverlay .tc-btn.primary { background: #c0191f; color: #fff; }
-#tcOverlay .tc-btn.ghost { background: #eef2ff; color: #0f172a; }
-
-@media (max-width:420px){
-  #tcOverlay .tc-title{font-size:18px}
+#tcOverlay .tc-btn.primary {
+  background: #c0191f;
+  color: #fff;
+}
+#tcOverlay .tc-btn.ghost {
+  background: #eef2ff;
+  color: #0f172a;
 }
 
-/* ========================= */
-/*     BOTÃO MAGIAS          */
-/* ========================= */
+/* Scrollbar suave */
+#tcOverlay .tc-box::-webkit-scrollbar {
+  width: 8px;
+}
+#tcOverlay .tc-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+/* MOBILE */
+@media (max-width:640px){
+  #tcOverlay .tc-box {
+    width: 92%;
+    max-width: none;
+    max-height: 88vh;
+  }
+  #tcOverlay .tc-title {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+}
+
+/* BOTÃO MAGIAS */
 .magias-btn {
   background-image: url('https://raw.githubusercontent.com/GustavoTerrasDeCalisto/RPG_Ficha_Terras_De_Calisto/master/imagens/BotaoMagias.png');
   background-size: contain;
@@ -1655,40 +1680,19 @@ Bonus por Níveis Do Personagem  </h3>
   filter: brightness(0.9);
 }
 
-/* ========================= */
-/*  AJUSTE PARA DESKTOP VIEW */
-/* ========================= */
-@media (min-width: 1024px) {
-  #tcOverlay .tc-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    max-width: 850px;
-    max-height: 80vh;
-    overflow: hidden;
-  }
-
-  #tcOverlay .tc-detail-img {
-    width: 50%;
-    height: auto;
-    border-radius: 22px 0 0 22px;
-    object-fit: cover;
-  }
-
-  #tcOverlay .tc-section {
-    flex: 1;
-    padding: 24px;
-    overflow-y: auto;
-    max-height: 80vh;
-  }
-
-  #tcOverlay .tc-title {
-    margin-top: 0;
-  }
+/* GRID FLUIDO */
+#tcOverlay .tc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+@media (max-width:640px){
+  #tcOverlay .tc-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  #tcOverlay .tc-title { font-size: 18px; padding: 8px 14px; }
+  #tcOverlay .tc-detail-img { max-width: 160px; }
 }
 </style>
+
 
 
 
@@ -2882,6 +2886,7 @@ const TC = (() => {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

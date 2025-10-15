@@ -1459,6 +1459,13 @@ Bonus por Níveis Do Personagem  </h3>
   padding: 8px 12px;
   cursor: pointer;
 }
+#tcOverlay .tc-box-head {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center;    /* opcional: centraliza horizontalmente */
+  justify-content: center;/* opcional: centraliza verticalmente */
+  gap: 6px;               /* espaço entre os itens */
+}
 
 /* Inputs */
 #tcOverlay .tc-select,
@@ -1612,7 +1619,7 @@ Bonus por Níveis Do Personagem  </h3>
 /*  (mantenha/ajuste o seu)    */
 /* =========================== */
 
-const DATASET = {
+ window.DATASET = {
   magias: [
     {
       id: "m1",
@@ -1677,7 +1684,7 @@ const DATASET = {
     id: "m166",
 nome: "Telefone Temporal",
 sub: "Tidsmessig Telefon",
-img: "/imagens/telefonetemporal.png",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2025/09/telefonetemporal-1.png?w=768&h=768",
 elemento: "Desconhecido",
 tipoDano: "Sono",
 descricao: `
@@ -2189,15 +2196,15 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
 
   ]
 };
-// ===========================
-//  LÓGICA DO UI  (corrigida)
-// ===========================
-const TC = (() => {
-  // LocalStorage com namespace por host+path para não conflitar com outros saves do seu site
+/* ===========================
+   LÓGICA DO UI  (corrigida) + CORES DINÂMICAS
+   =========================== */
+(() => {
+  // Namespace storage
   const STORAGE_NS = "tdc:grimorio";
   const LS_KEY = `${STORAGE_NS}:${location.host}${location.pathname}:ids`;
 
-  // Migração automática do chave antiga, se existir
+  // MIGRATE old key if present
   try {
     const legacy = localStorage.getItem("tc_grimorio_ids");
     if (legacy && !localStorage.getItem(LS_KEY)) {
@@ -2205,7 +2212,8 @@ const TC = (() => {
     }
   } catch (e) { /* ignore */ }
 
-  let state = {
+  // Initial state
+  const state = {
     tab: "magias",
     page: 1,
     perPage: 20,
@@ -2214,187 +2222,508 @@ const TC = (() => {
     busca: ""
   };
 
-  // Helpers LocalStorage
+  const resistenciaColors = {
+  elemento: {
+    "Fé": {
+      background: "linear-gradient(135deg, #D8902D, #DC143C)",
+      color: "white"
+    },
+    "Poder": {
+      background: "linear-gradient(135deg, #201d36, #8A2BE2)",
+      color: "white"
+    },
+    "Desconhecido": {
+      background: "linear-gradient(135deg, purple, #8A2BE2)",
+      color: "white"
+    },
+    "Caos": {
+      background: "linear-gradient(135deg, orange, green)",
+      color: "black"
+    }
+  },
+
+  tipoDano: {
+    // ❄️ Elementos e energias
+    "Gelo": { background: "#b7e1cd", color: "black" },
+    "Ácido": { background: "#38761d", color: "white" },
+    "Fogo": { background: "#ff9900", color: "white" },
+    "Água": { background: "#46bdc6", color: "black" },
+    "Eletricidade": { background: "#ffff00", color: "black" },
+    "Tempestade": { background: "#a4f4cf", color: "black" },
+    "Sangue": { background: "#980000", color: "white" },
+    "Luz": { background: "#ffe599", color: "black" },
+    "Maldição": { background: "#4c1130", color: "white" },
+    "Sagrado": { background: "#D8902D", color: "white" },
+    "Laser": { background: "#3cff92", color: "white" },
+    "Alma": { background: "#d5a6bd", color: "white" },
+    "Escuridão": { background: "black", color: "white" },
+    "Plasma": { background: "#c3dfb3", color: "#005e31" },
+    "Tremor": { background: "#311e5b", color: "#8eb8ff" },
+    "Aura": { background: "#b4a7d6", color: "black" },
+    "Psicológico": { background: "#c164f5", color: "black" },
+    "Mental": { background: "#281922", color: "white" },
+    "Distorção": { background: "#c27ba0", color: "white" },
+    "Névoa": { background: "#9fc5e8", color: "white" },
+    "Sono": { background: "#d9d2e9", color: "#666666" },
+
+    // ⚔️ Danos físicos
+    "Balístico": { background: "#434343", color: "black" },
+    "Perfurante": { background: "#d9d9d9", color: "black" },
+    "Cortante": { background: "#191818", color: "white" },
+    "Esmagante": { background: "#edfff6", color: "black" },
+
+    // ☠️ Especiais
+    "Cinzas": { background: "#B0BEC5", color: "#455A64" },
+    "Morte": { background: "#424242", color: "#D32F2F" },
+    "Eclipse": { background: "#212121", color: "#FFA000" },
+    "N/A": { background: "#f0f0f0", color: "#333333" }
+  }
+};
+
+
+  // Small color helpers
+  function hexToRgb(hex){
+    const h = hex.replace('#','');
+    const full = h.length === 3 ? h.split('').map(ch => ch+ch).join('') : h;
+    const bigint = parseInt(full, 16);
+    return { r: (bigint >> 16) & 255, g: (bigint >> 8) & 255, b: bigint & 255 };
+  }
+  function rgbToHex(r,g,b){
+    return '#' + [r,g,b].map(x => {
+      const s = Math.round(x).toString(16);
+      return s.length === 1 ? '0' + s : s;
+    }).join('');
+  }
+  function mixAlpha(hex, alpha){
+    const rgb = hexToRgb(hex);
+    const r = Math.round(rgb.r * (1-alpha) + 255 * alpha);
+    const g = Math.round(rgb.g * (1-alpha) + 255 * alpha);
+    const b = Math.round(rgb.b * (1-alpha) + 255 * alpha);
+    return rgbToHex(r,g,b);
+  }
+  function adjustColor(hex, amount){
+    const rgb = hexToRgb(hex);
+    const r = Math.min(255, Math.max(0, rgb.r + amount));
+    const g = Math.min(255, Math.max(0, rgb.g + amount));
+    const b = Math.min(255, Math.max(0, rgb.b + amount));
+    return rgbToHex(r,g,b);
+  }
+
+  function getColorsFor(it){
+    const tipo = it?.tipoDano || "";
+    const elem = it?.elemento || "";
+    const byDano = resistenciaColors.tipoDano[tipo];
+    const byElem = resistenciaColors.elemento[elem];
+    const fallback = { background: "#2f2f2f", color: "#fff" };
+    return byDano || byElem || fallback;
+  }
+
+  // LocalStorage helpers
   const getLearned = () => {
     try { return JSON.parse(localStorage.getItem(LS_KEY) || "[]"); }
     catch { return []; }
   };
-  const setLearned = (arr) => localStorage.setItem(LS_KEY, JSON.stringify(arr));
-  const isLearned  = (id) => getLearned().includes(id);
+  const setLearned = (arr) => {
+    try { localStorage.setItem(LS_KEY, JSON.stringify(arr)); }
+    catch(e){ console.warn("tc: erro ao salvar localStorage", e); }
+  };
+  const isLearned = (id) => getLearned().includes(id);
+
+  // Toggle learned
   const toggleLearn = (id) => {
     const cur = new Set(getLearned());
-    cur.has(id) ? cur.delete(id) : cur.add(id);
+    if (cur.has(id)) cur.delete(id); else cur.add(id);
     setLearned([...cur]);
-    render();           // atualiza listas
-    showDetailById(id); // mantém botão do detalhe sincronizado
+    render();           // atualiza grid / paginação
+    // atualiza detalhe se aberto
+    const detailBox = document.getElementById("tcDetailBox");
+    if (detailBox && detailBox.dataset?.currentId === id) {
+      // re-render detail to update button
+      showDetail(id);
+    }
   };
 
   // Open / Close
   function open(){
-    document.getElementById("tcOverlay").style.display = "flex";
+    const overlay = document.getElementById("tcOverlay");
+    if (!overlay) return;
+    overlay.style.display = "flex";
+    overlay.setAttribute("aria-hidden","false");
     mountFilters();
     render();
   }
   function close(){
-    document.getElementById("tcOverlay").style.display = "none";
+    const overlay = document.getElementById("tcOverlay");
+    if (!overlay) return;
+    overlay.style.display = "none";
+    overlay.setAttribute("aria-hidden","true");
     hideDetail();
   }
 
-  // Mount dynamic filter options
+  // Mount dynamic filter options (safe: checks existence of DATASET)
   function mountFilters(){
     const elSel = document.getElementById("tcFiltroElemento");
     const dnSel = document.getElementById("tcFiltroDano");
-    const all = [...DATASET.magias, ...DATASET.passivas];
+    if (!elSel || !dnSel) return;
+
+    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+    const all = [...magias, ...passivas];
 
     const elementos = Array.from(new Set(all.map(x=>x.elemento).filter(Boolean))).sort();
     const danos = Array.from(new Set(all.map(x=>x.tipoDano).filter(Boolean))).sort();
 
-    elSel.innerHTML = '<option value="">Elemento</option>' + elementos.map(v=>`<option>${v}</option>`).join('');
-    dnSel.innerHTML = '<option value="">Tipo de dano</option>' + danos.map(v=>`<option>${v}</option>`).join('');
+    // build options safely
+    elSel.innerHTML = '';
+    const opt0 = document.createElement('option'); opt0.value=''; opt0.textContent = 'Elemento';
+    elSel.appendChild(opt0);
+    elementos.forEach(v => {
+      const o = document.createElement('option'); o.value = v; o.textContent = v; elSel.appendChild(o);
+    });
+
+    dnSel.innerHTML = '';
+    const opt1 = document.createElement('option'); opt1.value=''; opt1.textContent = 'Tipo de dano';
+    dnSel.appendChild(opt1);
+    danos.forEach(v => {
+      const o = document.createElement('option'); o.value = v; o.textContent = v; dnSel.appendChild(o);
+    });
+
+    // apply current state values
+    elSel.value = state.elemento || "";
+    dnSel.value = state.dano || "";
   }
 
-  // Data source by tab
+  // Datasource by tab
   function currentList(){
-    if(state.tab === "magias") return DATASET.magias;
-    if(state.tab === "passivas") return DATASET.passivas;
+    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+
+    if (state.tab === "magias") return magias;
+    if (state.tab === "passivas") return passivas;
     // aprendidas
     const learned = new Set(getLearned());
-    return [...DATASET.magias, ...DATASET.passivas].filter(x=>learned.has(x.id));
+    return [...magias, ...passivas].filter(x=>learned.has(x.id));
   }
 
   // Filters
   function applyFilters(list){
-    const q = state.busca.toLowerCase();
+    const q = String(state.busca || "").toLowerCase().trim();
     return list.filter(it=>{
       if(state.elemento && it.elemento !== state.elemento) return false;
       if(state.dano && it.tipoDano !== state.dano) return false;
-      if(q && !it.nome.toLowerCase().includes(q)) return false;
+      if(q && !(String(it.nome || "").toLowerCase().includes(q))) return false;
       return true;
     });
   }
 
-  // Render grid & pagination
+  // Render grid & pagination (creates nodes safely)
   function render(){
     const grid = document.getElementById("tcGrid");
     const pag  = document.getElementById("tcPaginacao");
+    if (!grid || !pag) return;
 
     const base = currentList();
     const list = applyFilters(base);
     const totalPages = Math.max(1, Math.ceil(list.length / state.perPage));
-    if(state.page > totalPages) state.page = 1;
+    if (state.page > totalPages) state.page = 1;
 
-    const slice = list.slice((state.page-1)*state.perPage, state.page*state.perPage);
+    const start = (state.page - 1) * state.perPage;
+    const slice = list.slice(start, start + state.perPage);
 
-    grid.innerHTML = slice.map(it => `
-      <article class="tc-card" onclick="TC.showDetail('${it.id}')">
-        <img class="tc-img" src="${it.img || ''}" alt="">
-        <div class="tc-name">${it.nome}</div>
-        <div class="tc-meta">${it.tipoDano || '-'} • ${it.elemento || '-'}</div>
-      </article>
-    `).join("");
+    // clear grid
+    grid.innerHTML = '';
+
+    if (slice.length === 0) {
+      const empty = document.createElement('div');
+      empty.style.padding = '18px';
+      empty.style.color = '#dfe7ff';
+      empty.textContent = list.length === 0 ? 'Nenhum item encontrado.' : 'Nenhuma página disponível.';
+      grid.appendChild(empty);
+    } else {
+      // create cards
+      slice.forEach(it => {
+        const card = document.createElement('article');
+        card.className = 'tc-card';
+        card.tabIndex = 0;
+        card.dataset.itemId = it.id;
+
+        const img = document.createElement('img');
+        img.className = 'tc-img';
+        img.alt = it.nome || '';
+        img.src = it.img || '';
+        card.appendChild(img);
+
+        const name = document.createElement('div');
+        name.className = 'tc-name';
+        name.textContent = it.nome || '(sem nome)';
+        card.appendChild(name);
+
+        const meta = document.createElement('div');
+        meta.className = 'tc-meta';
+        meta.textContent = `${it.tipoDano || '-'} • ${it.elemento || '-'}`;
+        card.appendChild(meta);
+
+        // apply dynamic colors
+        applyStyleToCard(card, it);
+
+        grid.appendChild(card);
+      });
+    }
 
     // pagination
-    pag.innerHTML = "";
-    for(let i=1;i<=totalPages;i++){
-      const b = document.createElement("button");
-      b.className = "tc-page" + (i===state.page ? " active" : "");
-      b.textContent = i;
-      b.onclick = () => { state.page = i; render(); };
+    pag.innerHTML = '';
+    for (let i = 1; i <= totalPages; i++) {
+      const b = document.createElement('button');
+      b.className = 'tc-page' + (i === state.page ? ' active' : '');
+      b.textContent = String(i);
+      b.addEventListener('click', () => { state.page = i; render(); });
       pag.appendChild(b);
     }
 
     // tabs active state
-    document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
-    document.querySelector(`#tcOverlay .tc-tab[data-tab="${state.tab}"]`)?.classList.add("active");
+    document.querySelectorAll("#tcOverlay .tc-tab").forEach(b => b.classList.remove("active"));
+    const activeTabBtn = document.querySelector(`#tcOverlay .tc-tab[data-tab="${state.tab}"]`);
+    if (activeTabBtn) activeTabBtn.classList.add("active");
   }
+
+  // Styling function for cards (applies inline styles carefully)
+  function applyStyleToCard(cardEl, it) {
+  if (!cardEl || !it) return;
+  const c = getColorsFor(it);
+  const elemColor = resistenciaColors.elemento[it.elemento];
+  const danoColor = resistenciaColors.tipoDano[it.tipoDano];
+  
+  // o card usa o tipo de dano como base
+  cardEl.style.background = danoColor ? danoColor.background : c.background;
+  cardEl.style.color = danoColor ? danoColor.color : c.color;
+  cardEl.style.border = `1px solid ${adjustColor(cardEl.style.background, -12)}`;
+  cardEl.style.boxShadow = `0 2px 6px rgba(0,0,0,0.14)`;
+
+  const meta = cardEl.querySelector('.tc-meta');
+  if (meta) {
+    // se o elemento for um dos 4 especiais, usa o degradê dele
+    if (elemColor && ['Fé', 'Poder', 'Desconhecido', 'Caos'].includes(it.elemento)) {
+      meta.style.background = elemColor.background;
+      meta.style.color = elemColor.color;
+    } else {
+      // senão, usa o tipo de dano, só que com leve transparência
+      meta.style.background = mixAlpha(c.background, 0.15);
+      meta.style.color = c.color;
+    }
+
+    meta.style.padding = '6px 8px';
+    meta.style.borderRadius = '6px';
+    meta.style.display = 'inline-block';
+    meta.style.marginTop = '6px';
+  }
+}
+
 
   // DETAIL
   function showDetailById(id){
-    const it = [...DATASET.magias, ...DATASET.passivas].find(x=>x.id===id);
-    if(it) showDetail(id);
+    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+    const it = [...magias, ...passivas].find(x => x.id === id);
+    if (it) showDetail(id);
   }
+
   function showDetail(id){
-    const it = [...DATASET.magias, ...DATASET.passivas].find(x=>x.id===id);
-    if(!it) return;
+    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+    const it = [...magias, ...passivas].find(x => x.id === id);
+    if (!it) return;
 
-    const isPassiva = DATASET.passivas.some(p=>p.id===id);
+    const isPassiva = passivas.some(p => p.id === id);
     const box = document.getElementById("tcDetailBox");
+    if (!box) return;
+
+    // header/top
+    box.dataset.currentId = id; // marca qual item está sendo mostrado
+
+    // clear
+    box.innerHTML = '';
+
+    // head
+    const head = document.createElement('div');
+    head.className = 'tc-box-head';
+
+    const img = document.createElement('img');
+    img.className = 'tc-detail-img';
+    img.alt = it.nome || '';
+    img.src = it.img || '';
+    head.appendChild(img);
+
+    const title = document.createElement('div');
+    title.className = 'tc-title';
+    title.textContent = it.nome || '';
+    head.appendChild(title);
+
+    if (it.sub) {
+      const sub = document.createElement('div');
+      sub.className = 'tc-sub';
+      sub.textContent = it.sub;
+      head.appendChild(sub);
+    }
+
+    box.appendChild(head);
+
+    // main content
+    const section = document.createElement('div');
+    section.className = 'tc-section';
+
+    const h2 = document.createElement('div');
+    h2.className = 'tc-h2';
+    h2.textContent = isPassiva ? "Descrição" : "O que acontece quando usa?";
+    section.appendChild(h2);
+
+    const desc = document.createElement('div');
+    desc.className = 'tc-desc';
+    desc.innerHTML = String(it.descricao || "-"); // descrição do autor; se houver HTML, permanece
+    section.appendChild(desc);
+
+    // table
+    const table = document.createElement('table');
+    table.className = 'tc-table';
+
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>Duração</th>
+          <th>${isPassiva ? "Nível" : (it.tagLevel || "Nível")}</th>
+          <th>Alcance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>${it.duracao || "-"}</td>
+          <td>${isPassiva ? (it.nivel || "-") : (it.tagLevelResposta || it.nivel || "-")}</td>
+          <td>${it.alcance || "-"}</td>
+        </tr>
+      </tbody>
+    `;
+    section.appendChild(table);
+
+if (isPassiva) {
+  const pos = document.createElement('div');
+  pos.className = 'tc-good';
+  pos.textContent = 'Positivo';
+  section.appendChild(pos);
+
+  const posDesc = document.createElement('div');
+  posDesc.className = 'tc-desc';
+  // agora renderiza HTML, permitindo <strong>, <i>, <ul> etc.
+  posDesc.innerHTML = it.positivo || '-';
+  section.appendChild(posDesc);
+
+  const neg = document.createElement('div');
+  neg.className = 'tc-bad';
+  neg.textContent = 'Negativo';
+  section.appendChild(neg);
+
+  const negDesc = document.createElement('div');
+  negDesc.className = 'tc-desc';
+  negDesc.innerHTML = it.negativo || '-';
+  section.appendChild(negDesc);
+}
+
+
+    // info block
+    const infoH2 = document.createElement('div');
+    infoH2.className = 'tc-h2';
+    infoH2.textContent = 'Informações';
+    section.appendChild(infoH2);
+
+    const infoList = [
+      ['Tipo de dano:', it.tipoDano || '-'],
+      ['Elemento:', it.elemento || '-'],
+      ['Teste do conjurador:', it.testeConjurador || '-'],
+      ['Teste do Alvo:', it.testeAlvo || '-']
+    ];
+    infoList.forEach(([label, val]) => {
+      const d = document.createElement('div');
+      d.className = 'tc-desc';
+      d.innerHTML = `<b>${label}</b> ${val}`;
+      section.appendChild(d);
+    });
+
+    box.appendChild(section);
+
+    // actions
+    const actions = document.createElement('div');
+    actions.className = 'tc-actions';
+
     const learned = isLearned(id);
+    const btnLearn = document.createElement('button');
+    btnLearn.className = 'tc-btn primary';
+    btnLearn.textContent = learned ? "Remover do Grimório" : "Aprender";
+    btnLearn.addEventListener('click', () => {
+      toggleLearn(id);
+    });
+    actions.appendChild(btnLearn);
 
-    const top =
-      `<div class="tc-box-head">
-         <img class="tc-detail-img" src="${it.img||''}" alt="">
-         <div class="tc-title">${it.nome}</div>
-         ${it.sub ? `<div class="tc-sub">${it.sub}</div>` : ""}
-       </div>`;
+    const btnClose = document.createElement('button');
+    btnClose.className = 'tc-btn ghost';
+    btnClose.textContent = 'Fechar';
+    btnClose.addEventListener('click', hideDetail);
+    actions.appendChild(btnClose);
 
-   const main = `
-<div class="tc-section">
-  <div class="tc-h2">${isPassiva ? "Descrição" : "O que acontece quando usa?"}</div>
-  <div class="tc-desc">${it.descricao || ""}</div>
+    box.appendChild(actions);
 
-  <table class="tc-table" style="margin-top:14px">
-    <thead>
-      <tr>
-        <th>Duração</th>
-        <th>${isPassiva ? "Nível" : (it.tagLevel || "Nível")}</th>
-        <th>Alcance</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>${it.duracao || "-"}</td>
-        <td>${isPassiva ? it.nivel : (it.tagLevelResposta || it.nivel) || "-"}</td>
-        <td>${it.alcance || "-"}</td>
-      </tr>
-    </tbody>
-  </table>
+    // ===============================
+// APLICAÇÃO CORRETA DE CORES E LAYOUT
+// ===============================
+const colors = getColorsFor(it);
 
-  ${isPassiva ? `
-    <div class="tc-good">Positivo</div>
-    <div class="tc-desc">${it.positivo || "-"}</div>
-    <div class="tc-bad">Negativo</div>
-    <div class="tc-desc">${it.negativo || "-"}</div>
-  ` : ""}
+// layout vertical
+head.style.display = 'flex';
+head.style.flexDirection = 'column';
+head.style.alignItems = 'center';
+head.style.gap = '6px';
+head.style.padding = '12px';
+head.style.borderRadius = '8px';
+head.style.background = 'rgba(255, 255, 255, 0.04)'; // leve fundo neutro
 
-  <div class="tc-h2">Informações</div>
-  <div class="tc-desc"><b>Tipo de dano:</b> ${it.tipoDano || "-"}</div>
-  <div class="tc-desc"><b>Elemento:</b> ${it.elemento || "-"}</div>
-  <div class="tc-desc"><b>Teste do conjurador:</b> ${it.testeConjurador || "-"}</div>
-  <div class="tc-desc"><b>Teste do Alvo:</b> ${it.testeAlvo || "-"}</div>
-</div>`;
+// título colorido
+title.style.background = colors.background;
+title.style.color = colors.color;
+title.style.padding = '6px 10px';
+title.style.borderRadius = '6px';
+title.style.fontWeight = 'bold';
+title.style.textAlign = 'center';
+title.style.width = 'fit-content';
+title.style.maxWidth = '100%';
 
-    const actions =
-      `<div class="tc-actions">
-         <button class="tc-btn primary" onclick="TC.toggleLearn('${id}')">${learned ? "Remover do Grimório" : "Aprender"}</button>
-         <button class="tc-btn ghost" onclick="TC.hideDetail()">Fechar</button>
-       </div>`;
+// subtítulo harmonizado (mesmo tom de texto, sem fundo)
+const subEl = head.querySelector('.tc-sub');
+if (subEl) {
+  subEl.style.color = colors.color;
+  subEl.style.opacity = '0.85';
+}
 
-    box.innerHTML = top + main + actions;
-    document.getElementById("tcDetail").style.display = "flex";
+
+    // show detail overlay
+    const detail = document.getElementById("tcDetail");
+    if (detail) {
+      detail.style.display = 'flex';
+      detail.setAttribute('aria-hidden','false');
+    }
+
     setHash(id);
   }
+
   function hideDetail(){
-    document.getElementById("tcDetail").style.display = "none";
-    clearHash(); // <-- corrigido (era clearhash)
+    const detail = document.getElementById("tcDetail");
+    if (detail) {
+      detail.style.display = 'none';
+      detail.setAttribute('aria-hidden','true');
+    }
+    // remove hash only if it starts with tc=
+    clearHash();
   }
 
-  // Listeners (tabs + filtros + busca)
-  document.addEventListener("click", (e)=>{
-    const t = e.target.closest("#tcOverlay .tc-tab");
-    if(!t) return;
-    state.tab = t.dataset.tab; state.page = 1; render();
-  });
-  document.getElementById("tcFiltroElemento").addEventListener("change", e=>{ state.elemento = e.target.value; state.page=1; render(); });
-  document.getElementById("tcFiltroDano").addEventListener("change", e=>{ state.dano = e.target.value; state.page=1; render(); });
-  document.getElementById("tcBusca").addEventListener("input", e=>{ state.busca = e.target.value; state.page=1; render(); });
-
-  // ===========================
-  //   SUPORTE A HYPERLINK
-  //   #tc=<id>   ou   ?tc=<id>
-  //   (fallback: #<id>, ?id=<id>, ?magia=<id>, ?passiva=<id>)
-  // ===========================
-
+  // -----------------------
+  //  URL / hash helpers
+  // -----------------------
   function normalizeId(str){
     if(!str) return "";
     return String(str)
@@ -2417,20 +2746,27 @@ const TC = (() => {
   }
 
   function setHash(id){
-    const url = new URL(location.href);
-    url.hash = `tc=${encodeURIComponent(id)}`;
-    history.replaceState(null, "", url.href);
+    try {
+      const url = new URL(location.href);
+      url.hash = `tc=${encodeURIComponent(id)}`;
+      history.replaceState(null, "", url.href);
+    } catch(e) {
+      // fallback
+      location.hash = `tc=${encodeURIComponent(id)}`;
+    }
   }
 
   function clearHash(){
-    if (location.hash.startsWith("#tc=")) {
+    if (location.hash && location.hash.startsWith("#tc=")) {
       history.replaceState(null, "", location.pathname + location.search);
     }
   }
 
   function openById(id){
     if(!id) return;
-    const allItems = [...DATASET.magias, ...DATASET.passivas];
+    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+    const allItems = [...magias, ...passivas];
     const norm = normalizeId(id);
 
     const candidates = [
@@ -2449,19 +2785,16 @@ const TC = (() => {
       return;
     }
 
-    // Define aba correta
-    if(DATASET.magias.some(m => m.id === item.id)){
-      state.tab = "magias";
-    } else if(DATASET.passivas.some(p => p.id === item.id)){
-      state.tab = "passivas";
-    } else {
-      state.tab = "aprendidas";
-    }
+    // define aba correta
+    if (magias.some(m => m.id === item.id)) state.tab = "magias";
+    else if (passivas.some(p => p.id === item.id)) state.tab = "passivas";
+    else state.tab = "aprendidas";
 
     open();
     showDetail(item.id);
 
-    document.querySelectorAll("#tcOverlay .tc-tab").forEach(b=>b.classList.remove("active"));
+    // update UI tab state
+    document.querySelectorAll("#tcOverlay .tc-tab").forEach(b => b.classList.remove("active"));
     document.querySelector(`#tcOverlay .tc-tab[data-tab="${state.tab}"]`)?.classList.add("active");
   }
 
@@ -2470,46 +2803,122 @@ const TC = (() => {
     if (id) openById(id);
   }
 
-  // --- Inicialização ---
-  window.addEventListener("DOMContentLoaded", () => {
-    syncFromURL();
+  // -----------------------
+  //  EVENT LISTENERS INIT
+  // -----------------------
+  function initListeners() {
+    // open/close controls
+    const openBtn = document.getElementById("openTcButton");
+    if (openBtn) openBtn.addEventListener('click', open);
 
-    // Captura clique em qualquer link com #tc= ou #id ou ?tc=
-    document.body.addEventListener("click", e => {
-      const a = e.target.closest("a[href]");
+    const closeBtn = document.getElementById("tcCloseBtn");
+    if (closeBtn) closeBtn.addEventListener('click', close);
+
+    // tabs (delegation already used on document click below, but we'll support click here too)
+    document.querySelectorAll("#tcOverlay .tc-tab").forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        if (!tab) return;
+        state.tab = tab;
+        state.page = 1;
+        render();
+      });
+    });
+
+    // filters (safe: check element exists)
+    const elSel = document.getElementById("tcFiltroElemento");
+    const dnSel = document.getElementById("tcFiltroDano");
+    const busca = document.getElementById("tcBusca");
+
+    if (elSel) elSel.addEventListener('change', e => { state.elemento = e.target.value; state.page = 1; render(); });
+    if (dnSel) dnSel.addEventListener('change', e => { state.dano = e.target.value; state.page = 1; render(); });
+    if (busca) busca.addEventListener('input', e => { state.busca = e.target.value; state.page = 1; render(); });
+
+    // click on cards (delegation)
+    const grid = document.getElementById("tcGrid");
+    if (grid) {
+      grid.addEventListener('click', (e) => {
+        const card = e.target.closest('.tc-card');
+        if (!card) return;
+        const id = card.dataset.itemId;
+        if (id) showDetail(id);
+      });
+      // keyboard accessibility (enter on focused card)
+      grid.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const card = e.target.closest('.tc-card');
+          if (!card) return;
+          const id = card.dataset.itemId;
+          if (id) showDetail(id);
+        }
+      });
+    }
+
+    // clicks on links (body) to intercept #tc= or ?tc=
+    document.body.addEventListener('click', e => {
+      const a = e.target.closest('a[href]');
       if (!a) return;
-
       try {
         const url = new URL(a.href, location.href);
         let tc = null;
 
-        // Prioriza hash: #tc=valor  ou #valor
         if (url.hash) {
           if (url.hash.startsWith("#tc=")) tc = url.hash.slice(4);
           else tc = url.hash.replace(/^#/, "");
         }
-
-        // fallback para query params
         tc = tc || url.searchParams.get("tc") || url.searchParams.get("id") || url.searchParams.get("magia") || url.searchParams.get("passiva");
-
         if (tc) {
-          e.preventDefault();          // não recarrega a página
+          e.preventDefault();
           tc = decodeURIComponent(tc);
-          setHash(tc);                 // atualiza o hash da URL
-          openById(tc);                // abre na hora
+          setHash(tc);
+          openById(tc);
         }
       } catch (err) {
         console.error("TC: erro ao processar link:", err);
       }
     });
+
+    // close detail when clicking outside box
+    const detailOverlay = document.getElementById("tcDetail");
+    if (detailOverlay) {
+      detailOverlay.addEventListener('click', (e) => {
+        if (e.target === detailOverlay) hideDetail();
+      });
+    }
+
+    // hash change (back/forward)
+    window.addEventListener("hashchange", syncFromURL);
+  }
+
+  // Inicialização no DOMContentLoaded
+  window.addEventListener("DOMContentLoaded", () => {
+    // Ensure DATASET shape is present to avoid errors
+    if (!window.DATASET) {
+      window.DATASET = { magias: [], passivas: [] };
+    } else {
+      window.DATASET.magias = Array.isArray(window.DATASET.magias) ? window.DATASET.magias : [];
+      window.DATASET.passivas = Array.isArray(window.DATASET.passivas) ? window.DATASET.passivas : [];
+    }
+
+    initListeners();
+    syncFromURL();
+    // Pre-mount filters so selects are populated on first open
+    mountFilters();
   });
 
-  // Mudança manual no hash (voltar/avançar)
-  window.addEventListener("hashchange", syncFromURL);
+  // PUBLIC API
+  window.TC = {
+    open,
+    close,
+    showDetail: showDetailById,
+    hideDetail,
+    toggleLearn,
+    openById
+  };
 
-  // API pública
-  return { open, close, showDetail, hideDetail, toggleLearn, openById };
 })();
+
+
 </script>
 
 <!-- LINKS / BOTÕES PARA TESTE -->

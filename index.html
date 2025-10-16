@@ -1666,6 +1666,108 @@ Bonus por Níveis Do Personagem  </h3>
       testeConjurador: "Determinação",
       testeAlvo: "Agilidade"
     },
+    
+    {
+  id: "m4",
+  nome: "Símbolo de Sangue",
+  sub: "Sanguis Imperium",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/image.psd-3-1.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: `
+  <p>O conjurador faz surgir um símbolo carmesim sob o alvo, prendendo-o em um círculo de sangue que o paralisa completamente. Enquanto estiver dentro do símbolo, o sangue do alvo é drenado, causando <strong>2d8</strong> de dano de Sangue a cada turno.</p>
+  <p>O alvo pode gastar sua ação para tentar escapar do círculo. Após o símbolo ser liberado, o próximo ser que pisar sobre ele é curado — para cada turno em que o alvo original permaneceu preso, o curador recupera <strong>6d4</strong> de vida.</p>
+  `,
+  duracao: "Até conseguir sair",
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 3 – Portador do Sacrifício",
+  alcance: "3m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m5",
+  nome: "Conexão Santa",
+  sub: "Sanctum Nexum Sacrum",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/03b0ac838c83805627920055fa2fb741a0d91e1c_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: `
+  <p>O conjurador cria um fio de sangue entre si e o alvo, ligando suas existências em um laço sagrado. O alvo não pode se ocultar nem se afastar a mais de <strong>10m</strong> do conjurador, sendo constantemente sentido através da conexão.</p>
+  <p>Enquanto a ligação estiver ativa, o alvo sofre <strong>1d10 + 1d4</strong> de dano de Sangue a cada turno, e o conjurador recupera <strong>3x</strong> esse valor em vida. O alvo pode tentar resistir a cada turno como ação livre.</p>
+  `,
+  duracao: "Até conseguir sair",
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 3 – Portador do Sacrifício",
+  alcance: "10m",
+  testeConjurador: "Agilidade",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m6",
+  nome: "Órgãos Sombrios",
+  sub: "Tenebris Organa",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/a91e7210c7b71101e296f35eeb5005f252ad9993_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: `
+  <p>O conjurador consome órgãos de criaturas para obter vigor profano. Cada órgão traz um efeito específico:</p>
+  <ul>
+    <li><strong>Coração:</strong> Restaura 50% da vida.</li>
+    <li><strong>Cérebro:</strong> Restaura 70% da vida.</li>
+    <li><strong>Demais órgãos:</strong> Restaura 30% da vida.</li>
+  </ul>
+  <p>O órgão deve estar em bom estado; consumir tecidos danificados pode causar um <strong>Status Negativo</strong> (Raiva, Selvageria, Preguiça ou Embriaguez).</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 4 – Sanguinário Consagrado",
+  alcance: "1m",
+  testeConjurador: "Determinação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m7",
+  nome: "Bolhas de Sangue",
+  sub: "Sanguis Bulle",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-46.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: `
+  <p>O conjurador molda bolhas de sangue que podem ser usadas tanto ofensiva quanto defensivamente.</p>
+  <p><strong>Ofensivo:</strong> Ao lançar uma bolha em um inimigo, ela explode causando <strong>3d6</strong> de dano de Sangue e empurra o alvo <strong>1,5m</strong> para trás.</p>
+  <p><strong>Defensivo:</strong> Se usada em um aliado, a bolha absorve até <strong>2d10</strong> de dano recebido. Caso seja estourada por um inimigo, o alvo deve realizar um teste de Determinação; se falhar, sofre <strong>1d4</strong> de dano de Sangue por turno até o fim do próximo turno do conjurador.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 5 – Sacerdote do Fluxo Vital",
+  alcance: "6m",
+  testeConjurador: "Agilidade",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m8",
+  nome: "Vontade de Eldoria",
+  sub: "Eldoria Will",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/1-sangue-aleheio.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: `
+  <p>O conjurador invoca a bênção de <strong>Eldoria</strong>, o antigo deus do sangue, concedendo poder divino ao alvo escolhido. O abençoado recebe <strong>vantagem em todos os testes de Determinação</strong> e <strong>100 pontos de vida temporários</strong> por <strong>1d8 turnos</strong>.</p>
+  <p>Durante esse período, seus ataques corpo a corpo causam <strong>+6d10</strong> de dano adicional de Sangue, e ele recupera <strong>2d10</strong> de vida sempre que inflige dano a uma criatura. O alvo ganha <strong>imunidade a sangramento</strong> e <strong>resistência a dano de Sangue</strong>.</p>
+  <p><strong>Efeito Negativo:</strong> A presença do abençoado corrompe o ambiente: todas as criaturas em um raio de <strong>10m</strong> sofrem <strong>2d8</strong> de dano de Sangue no início de cada turno e têm sua velocidade reduzida em <strong>50%</strong>. Essas criaturas devem realizar um teste de Determinação a cada turno para evitar um efeito de sangramento (<strong>1d4</strong> de dano por turno).</p>
+  `,
+  duracao: "1d8 turnos",
+  tagLevel: "Hemomante",
+  tagLevelResposta: "Nível 6 – Arauto de Calisto",
+  alcance: "1m",
+  testeConjurador: "Determinação",
+  testeAlvo: "Determinação"
+}
+
+    
+    
+    ,
     {
       id: "m66",
       nome: "Olho do Desespero",
@@ -3163,6 +3265,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

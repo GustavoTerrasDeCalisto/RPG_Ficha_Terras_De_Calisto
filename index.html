@@ -1515,6 +1515,19 @@ Bonus por Níveis Do Personagem  </h3>
 #tcOverlay .tc-btn{border:0;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer}
 #tcOverlay .tc-btn.primary{background:#c0191f;color:#fff}
 #tcOverlay .tc-btn.ghost{background:#eef2ff;color:#0f172a}
+.tc-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.tc-nivel {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
 
 @media (max-width:420px){
   #tcOverlay .tc-title{font-size:18px}
@@ -1632,6 +1645,7 @@ Bonus por Níveis Do Personagem  </h3>
       duracao: "Gasta ação",
       tagLevel: "Hemomante",
       tagLevelResposta: "Nível 1 – Iniciado do Sangue",
+      nivel:"1",
       alcance: "5m",
       testeConjurador: "Determinação",
       testeAlvo: "Determinação"
@@ -1647,6 +1661,7 @@ Bonus por Níveis Do Personagem  </h3>
       duracao: "Gasta ação",
       tagLevel: "Hemomante",
       tagLevelResposta: "Nível 1 – Iniciado do Sangue",
+      nivel:"1",
       alcance: "7m",
       testeConjurador: "Determinação",
       testeAlvo: "Determinação"
@@ -1662,6 +1677,7 @@ Bonus por Níveis Do Personagem  </h3>
       duracao: "Gasta ação",
       tagLevel: "Hemomante",
       tagLevelResposta: "Nível 2 – Guardião Rubro",
+      nivel:"2",
       alcance: "2m",
       testeConjurador: "Determinação",
       testeAlvo: "Agilidade"
@@ -1681,6 +1697,7 @@ Bonus por Níveis Do Personagem  </h3>
   duracao: "Até conseguir sair",
   tagLevel: "Hemomante",
   tagLevelResposta: "Nível 3 – Portador do Sacrifício",
+  nivel:"3",
   alcance: "3m",
   testeConjurador: "Libertação",
   testeAlvo: "Determinação"
@@ -1699,6 +1716,7 @@ Bonus por Níveis Do Personagem  </h3>
   duracao: "Até conseguir sair",
   tagLevel: "Hemomante",
   tagLevelResposta: "Nível 3 – Portador do Sacrifício",
+  nivel:"3",
   alcance: "10m",
   testeConjurador: "Agilidade",
   testeAlvo: "Determinação"
@@ -1722,6 +1740,7 @@ Bonus por Níveis Do Personagem  </h3>
   duracao: "Gasta ação",
   tagLevel: "Hemomante",
   tagLevelResposta: "Nível 4 – Sanguinário Consagrado",
+  nivel:"4",
   alcance: "1m",
   testeConjurador: "Determinação",
   testeAlvo: "Determinação"
@@ -1741,6 +1760,7 @@ Bonus por Níveis Do Personagem  </h3>
   duracao: "Gasta ação",
   tagLevel: "Hemomante",
   tagLevelResposta: "Nível 5 – Sacerdote do Fluxo Vital",
+  nivel:"6",
   alcance: "6m",
   testeConjurador: "Agilidade",
   testeAlvo: "Determinação"
@@ -1760,6 +1780,7 @@ Bonus por Níveis Do Personagem  </h3>
   duracao: "1d8 turnos",
   tagLevel: "Hemomante",
   tagLevelResposta: "Nível 6 – Arauto de Calisto",
+  nivel:"6",
   alcance: "1m",
   testeConjurador: "Determinação",
   testeAlvo: "Determinação"
@@ -1779,6 +1800,7 @@ Bonus por Níveis Do Personagem  </h3>
       duracao: "Até ser quebrado",
       tagLevel: "Maldizente",
       tagLevelResposta: "Nível 1 – Aprendiz da Maldição",
+      nivel:"1",
       alcance: "6m",
       testeConjurador: "Conexão",
       testeAlvo: "Determinação"
@@ -1801,6 +1823,7 @@ Um telefone sobrenatural se materializa diante do conjurador, permitindo discar 
 duracao: "1d4 turnos",
 tagLevel: "Apanhador",
 tagLevelResposta: "Nível 5 – Profeta das Visões Oníricas",
+nivel:"5",
 alcance: "Ilimitado (através do tempo)",
 testeConjurador: "Conexão",
 testeAlvo: "Libertação"
@@ -1846,6 +1869,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "3 turnos",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 2 – Tecelão da Penumbra",
+  nivel:"2",
   alcance: "Toque",
   testeConjurador: "Conexão",
   testeAlvo: "—"
@@ -1869,6 +1893,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "4 turnos ou até sofrer 1d8 golpes",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 3 – Guardião da Meia-Noite",
+  nivel:"3",
   alcance: "50m",
   testeConjurador: "Conexão",
   testeAlvo: "Agilidade"
@@ -1903,6 +1928,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "Gasta ação",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 4 – Mestre do Eclipse",
+  nivel:"4",
   alcance: "100m",
   testeConjurador: "Conexão",
   testeAlvo: "Conexão",
@@ -1926,6 +1952,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "2 turnos",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 5 – Oráculo das Sombras",
+  nivel:"5",
   alcance: "30m",
   testeConjurador: "Conexão",
   testeAlvo: "Libertação"
@@ -1949,6 +1976,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "Instantânea",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 6 – Vidente do Véu",
+  nivel:"6",
   alcance: "15m",
   testeConjurador: "Conexão",
   testeAlvo: "Libertação"
@@ -1972,6 +2000,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "Instantânea, 1d6 turnos",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 7 – Sábio do Oculto",
+  nivel:"7",
   alcance: "20m",
   testeConjurador: "Conexão",
   testeAlvo: "Conexão"
@@ -1996,6 +2025,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   duracao: "Instantânea",
   tagLevel: "Lunares",
   tagLevelResposta: "Nível 8 – Arconte do Infinito",
+  nivel:"8",
   alcance: "200m",
   testeConjurador: "Conexão",
   testeAlvo: "Libertação"
@@ -2560,10 +2590,27 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
         name.textContent = it.nome || '(sem nome)';
         card.appendChild(name);
 
-        const meta = document.createElement('div');
-        meta.className = 'tc-meta';
-        meta.textContent = `${it.tipoDano || '-'} • ${it.elemento || '-'}`;
-        card.appendChild(meta);
+const meta = document.createElement('div');
+meta.className = 'tc-meta';
+
+// cria o span do nível
+const nivelSpan = document.createElement('span');
+nivelSpan.className = 'tc-nivel';
+nivelSpan.textContent = it.nivel ? `Nível ${it.nivel}` : '';
+nivelSpan.style.marginRight = '8px';
+nivelSpan.style.fontWeight = 'bold';
+nivelSpan.style.opacity = '0.9';
+
+// cria o span do tipo de dano + elemento
+const infoSpan = document.createElement('span');
+infoSpan.textContent = `${it.tipoDano || '-'} • ${it.elemento || '-'}`;
+
+// adiciona ambos dentro do meta
+meta.appendChild(nivelSpan);
+meta.appendChild(infoSpan);
+
+card.appendChild(meta);
+
 
         // apply dynamic colors
         applyStyleToCard(card, it);
@@ -3265,6 +3312,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

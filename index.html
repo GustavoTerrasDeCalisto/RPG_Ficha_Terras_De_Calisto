@@ -2402,7 +2402,351 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
   alcance:"Visível",
   testeConjurador:"Furtividade",
   testeAlvo:"Percepção"
+},{
+  id:"p19",
+  nome:"Controle Adestrado",
+  sub:"Docta Imperium",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/4c01b7cdecaa62343d2979ce5bde7994df12dc8f_high-2.png?w=768&h=768",
+  elemento:"Caos",
+  tipoDano:"Caos",
+  descricao:`<p><strong>A ligação entre o personagem e seu animal</strong> é colocada à prova. O uso dessa habilidade consome metade da ação de movimento e a ação livre do personagem.</p>`,
+  positivo:`<p><strong>Comando Instintivo:</strong> O mascote pode realizar uma ação livre conforme a vontade do dono, escolhendo entre <em>atacar</em>, <em>trazer um item</em>, <em>distrair um inimigo</em> ou <em>proteger o dono</em>. O sucesso depende de um teste definido pela dificuldade da cena e da ação escolhida. O dano do mascote varia conforme sua ficha e tamanho, mas ele não pode ser controlado como um personagem jogador.</p>`,
+  negativo:`<p><strong>Risco Compartilhado:</strong> Enquanto o mascote estiver em ação, pode ser contra-atacado. O uso dessa passiva consome metade da ação de movimento e a ação livre do personagem no turno em que for ativada.</p>`,
+  duracao:"Por turno",
+  nivel:"1",
+  alcance:"Visível",
+  testeConjurador:"Adestrar Animais",
+  testeAlvo:"Preservação"
+},
+{
+  id:"p20",
+  nome:"Selvageria",
+  sub:"Feritas",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/e3837ba90e1a849ae408bc80875feadc5a23d1ee_high.webp?w=768&h=768",
+  elemento:"Caos",
+  tipoDano:"Caos",
+  descricao:`<p><strong>O personagem age como um animal selvagem</strong>, guiado apenas pelo instinto de sobrevivência. Seus cabelos crescem e sua postura se torna feroz e primitiva.</p>`,
+  positivo:`<p><strong>Instinto Primitivo:</strong> Adquire a capacidade de criar ferramentas rústicas e acampamentos improvisados. Fora de combate, pode buscar alimentos com um teste de <strong>1d20</strong>, dificuldade definida pela cena. Durante o combate, armas improvisadas causam <strong>+1D12</strong> de dano extra.</p>`,
+  negativo:`<p><strong>Descontrole Instintivo:</strong> Em testes de <em>Preservação</em> e <em>Libertação</em>, deve rolar dois dados e considerar o pior resultado. Dados extras nesses testes não se aplicam.</p>`,
+  duracao:"Até o fim da cena",
+  nivel:"2",
+  alcance:"Visível",
+  testeConjurador:"Sobrevivência",
+  testeAlvo:"Libertação"
+},
+{
+  id:"p21",
+  nome:"Afogar",
+  sub:"Ad Paludem",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/af.png?w=768&h=768",
+  elemento:"Caos",
+  tipoDano:"Água, Sangue, Névoa ou Escuridão",
+  descricao:`<p><strong>Um golpe elemental sombrio</strong> que sufoca a essência do inimigo, drenando-lhe o fôlego e a alma.</p>`,
+  positivo:`<p><strong>Sufocamento Espiritual:</strong> O conjurador invoca forças sombrias que obstruem a respiração do alvo por uma rodada. O alvo rola <strong>1D12</strong> e sofre dano do elemento do conjurador.</p>`,
+  negativo:`<p><strong>Reversão Elemental:</strong> Se o alvo possuir o mesmo elemento do conjurador, é curado com o valor total do dano causado.</p>`,
+  duracao:"1 turno",
+  nivel:"3",
+  alcance:"Visível",
+  testeConjurador:"Preservação",
+  testeAlvo:"Determinação"
+},
+{
+  id:"p22",
+  nome:"Separar a Alma",
+  sub:"Separate Animam",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-26.png?w=768&h=768",
+  elemento:"Poder",
+  tipoDano:"Plasma",
+  descricao:`<p><strong>O personagem entra em projeção astral</strong>, separando sua alma do corpo e envolvendo-a por um dos quatro grandes elementos.</p>`,
+  positivo:`<p><strong>Projeção Elemental:</strong> A alma atravessa paredes e objetos, não sofre dano físico, e magias lançadas nessa forma recebem <strong>+1D10</strong> de dano de Plasma e <strong>+1D8</strong> em testes de acerto. Se um inimigo morrer por uma dessas magias, ela pode ser replicada automaticamente uma vez.</p>`,
+  negativo:`<p><strong>Corpo Vulnerável:</strong> O corpo físico permanece indefeso. Para retornar, o personagem deve passar em um teste de <em>Vontade</em> (<strong>1D20 + Libertação</strong> contra DT Sobrenatural). Se falhar, sofre <strong>3D12</strong> de dano do elemento da alma.</p>`,
+  duracao:"Até o fim da cena",
+  nivel:"5",
+  alcance:"Visível",
+  testeConjurador:"Libertação",
+  testeAlvo:"Preservação"
+},
+{
+  id:"p23",
+  nome:"Teleporte Repentino",
+  sub:"Subitus Ianuae",
+  img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/75d5a55a725a0a65add7d5dd90ddd9cf46de8cb3_high.webp?w=768&h=768",
+  elemento:"Variável",
+  tipoDano:"Variável",
+  descricao:`<p><strong>O personagem se torna pura energia elemental</strong> por um breve instante, atravessando o espaço de forma instantânea.</p>`,
+  positivo:`<p><strong>Movimento Instantâneo:</strong> Pode ser ativado como reação a um ataque, teleportando-se até <strong>6m</strong>. Se usado ofensivamente, causa <strong>1D6</strong> de dano elemental em respingo ao inimigo mais próximo.</p>`,
+  negativo:`<p><strong>Eco Sobrenatural:</strong> Após o uso, deve realizar um teste de <em>Libertação</em> (<strong>1D20 + bônus</strong> contra DT Sobrenatural). Em caso de falha, sofre um efeito colateral aleatório: <em>Ansiedade, Raiva, Bêbado</em> ou <em>Pavor</em>.</p>`,
+  duracao:"1 turno",
+  nivel:"5",
+  alcance:"6m",
+  testeConjurador:"Acrobacia",
+  testeAlvo:"Libertação"
+},
+   {
+  id: "p24",
+  nome: "Dilacera e Atacar",
+  sub: "Lacrimis et Impetus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/exemplo.webp",
+  elemento: "Fé",
+  tipoDano: "Sangue",
+  descricao: `<p>O personagem oferece parte de si ao Sobrenatural em troca de poder. Escolhendo um membro não vital, ele o amputa, criando um laço brutal com forças além da realidade.</p>`,
+  positivo: `<p><strong>Amputação Voluntária:</strong> O personagem amputa um membro não vital e cria um membro fantasma ligado ao seu Elemento. Ele rola <strong>1D20 + 1D12</strong> de dano elemental conforme o Elemento: Fé → Sangue, Caos → Eletricidade, Poder → Laser, Desconhecido → Distorção. Pode reconjurar gastando o dobro do ESPECIAL.</p>`,
+  negativo: `<p><strong>Custo Físico:</strong> Sofre dano imediato pela amputação (Pequeno: 1D10 | Médio: 1D12 | Grande: 1D20). Se não tratado, pode sofrer Hemorragia. O laço sobrenatural pode deixar marcas físicas ou mentais.</p>`,
+  duracao: "Até o fim do combate",
+  nivel: "6",
+  alcance: "Visível",
+  testeConjurador: "Determinação",
+  testeAlvo: "Determinação"
+},
+
+{
+  id: "p25",
+  nome: "Amaldiçoar",
+  sub: "Maledictio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/ea7394e98972bdc11bdb5a455f49e108f17d2545_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Maldição",
+  descricao: `<p>O personagem marca um alvo com inscrições vivas, selando um pacto silencioso entre fé e condenação.</p>`,
+  positivo: `<p><strong>Maldição Temporal:</strong> Teste de <em>Conexão</em> contra <em>Intuição</em>. Se bem-sucedido, o alvo fica congelado no tempo por <strong>1D6 turnos</strong> e, ao fim, recebe o dano em dobro, convertido em <strong>dano de Maldição</strong>.</p>`,
+  negativo: `<p><strong>Reversão Sombria:</strong> O conjurador deve manter contato visual e permanece vulnerável. Se o alvo morrer antes do retorno do dano, a maldição recai sobre o conjurador, causando <strong>17 de dano de Maldição por turno</strong> até o valor total ser atingido.</p>`,
+  duracao: "Até o dano duplicado ser aplicado ou quebrado",
+  nivel: "7",
+  alcance: "Visível",
+  testeConjurador: "Conexão",
+  testeAlvo: "Intuição"
+},
+
+{
+  id: "p26",
+  nome: "Mutação",
+  sub: "Mutatio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-34.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `<p>O personagem altera sua forma física conforme a própria vontade, moldando carne e ossos de modo antinatural.</p>`,
+  positivo: `<p><strong>Metamorfose Física:</strong> Muda tamanho, forma ou órgãos. Cada alteração concede bônus: Braços (+4 acerto), Rosto (+5 Enganação), Cabeça/membro extra (+4 Intimidação), Órgão vital interno (imunidade a críticos), Pernas (+5 deslocamento). Recebe +5 em Determinação por alteração ativa.</p>`,
+  negativo: `<p><strong>Colapso Corporal:</strong> Ao fim do combate, sofre <strong>20 de dano de Distorção</strong> por cada vez que foi atingido.</p>`,
+  duracao: "Até o fim da cena (pode desfazer a qualquer momento)",
+  nivel: "7",
+  alcance: "Visível",
+  testeConjurador: "Disfarces",
+  testeAlvo: "DT 12"
+},
+
+{
+  id: "p27",
+  nome: "Metamorfose",
+  sub: "Metamorphosis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/ca5ae8448a3abb8916c3b1c6782a0046e2b33834_high.webp?w=768&h=768",
+  elemento: "Caos",
+  tipoDano: "Caos",
+  descricao: `<p>O personagem assume a forma do animal de seu signo, revelando o espírito primordial que habita em si.</p>`,
+  positivo: `<p><strong>Forma Zodiacal:</strong> Transforma-se no animal do signo (ex: Áries – Onça, Touro – Elefante, etc.), ganhando <strong>+10 em Determinação</strong>.</p>`,
+  negativo: `<p><strong>Selvageria:</strong> Rola <strong>1D20</strong> contra o Sobrenatural. Em falha, entra em modo Selvagem. Após retornar, sofre <strong>20 de dano de Distorção</strong> por ataque recebido enquanto estava em fúria.</p>`,
+  duracao: "Até o fim da cena",
+  nivel: "7",
+  alcance: "Visível",
+  testeConjurador: "Adestrar Animais",
+  testeAlvo: "DT 12"
+},
+
+{
+  id: "p28",
+  nome: "Amplificar",
+  sub: "Amplificare",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-35.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `<p>O alvo é envolto por uma energia que amplifica o peso da existência sobre ele, iniciando uma lenta petrificação arcana.</p>`,
+  positivo: `<p><strong>Petrificação Progressiva:</strong> Teste de <em>Determinação</em> contra <em>Libertação</em>. Em falha, o alvo petrifica-se em 5 turnos; o conjurador pode controlar o corpo enquanto durar o efeito.</p>`,
+  negativo: `<p><strong>Rebote Arcano:</strong> Se o alvo resistir, o conjurador sofre <strong>2D20 de dano de Escuridão</strong>.</p>`,
+  duracao: "Até o fim da cena ou permanente",
+  nivel: "7",
+  alcance: "Visível",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+
+{
+  id: "p29",
+  nome: "Salvaguarda",
+  sub: "Tutela",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/6409e4251459cdc4a9c38934efa63c1e88df2d3a_high.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "—",
+  descricao: `<p>Um gesto instintivo de preservação, canalizando o poder da vida para proteger e restaurar aliados.</p>`,
+  positivo: `<p><strong>Reação de Cura:</strong> Até o fim do turno, ações de cura recebem +1D6 no teste de Cura e podem ser usadas como reação quando um aliado cair a 0 de vida. Se o teste exceder 20, cura +2D20 adicionais.</p>`,
+  negativo: `<p><strong>Imobilização:</strong> O conjurador não pode mover-se mais de 3m neste turno e, se a cura falhar, o alvo sofre Desvantagem.</p>`,
+  duracao: "Até o fim do turno",
+  nivel: "2",
+  alcance: "Visível",
+  testeConjurador: "Cura",
+  testeAlvo: "Determinação"
+},
+
+{
+  id: "p30",
+  nome: "Escudo Elemental",
+  sub: "Scutum Elementorum",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/52eeb0c0ebd1ea9053bd8dbf570763cb02669f4c_high.png?w=768&h=768",
+  elemento: "Variável",
+  tipoDano: "Defesa Elemental",
+  descricao: `<p>Uma armadura temporária se forma ao redor do conjurador, moldando-se ao elemento escolhido para resistir ao dano.</p>`,
+  positivo: `<p><strong>Defesa Adaptável:</strong> Escolha um elemento (ex: Fogo, Gelo, Luz, etc.). O escudo concede +1D10 em testes contra ataques desse tipo e reduz 10 de dano recebido por 3 turnos.</p>`,
+  negativo: `<p><strong>Ruptura Elemental:</strong> Se o escudo receber 20+ de dano do mesmo tipo, explode, causando <strong>1D8 de dano do elemento</strong> e tornando o usuário vulnerável (+1D6 de dano extra por 1 turno).</p>`,
+  duracao: "3 turnos",
+  nivel: "6",
+  alcance: "Pessoal",
+  testeConjurador: "Tática",
+  testeAlvo: "—"
+},
+
+{
+  id: "p31",
+  nome: "Luz Desvanecente",
+  sub: "Lucem",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/4a4f3bc1d64505465b6490070a9f4c002d744854_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Luz",
+  descricao: `<p>O personagem emite uma luz branda que ofusca inimigos, revelando intenções ocultas ao custo de se tornar um alvo mais fácil.</p>`,
+  positivo: `<p><strong>Clarão Revelador:</strong> Inimigos jogam dois dados em ataques e pegam o menor. O conjurador recebe +3 em Libertação para detectar mentiras e perigos.</p>`,
+  negativo: `<p><strong>Exposição:</strong> Torna-se vulnerável a ataques à distância, sofrendo +1D10 de dano adicional até o fim do combate.</p>`,
+  duracao: "2 turnos",
+  nivel: "3",
+  alcance: "9 metros",
+  testeConjurador: "Libertação",
+  testeAlvo: "Agilidade"
+},{
+  id: "p32",
+  nome: "Dança da Purificação",
+  sub: "Saltatio Purificationis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/financial-concepts-mortgage-fcm.gif?w=150&h=150",
+  elemento: "Fé ou Desconhecido",
+  tipoDano: "Nenhum (Psicológico ao conjurador) – Sagrado ou Psicológico",
+  descricao: `<p>O personagem executa uma dança graciosa, purificando o ambiente ao seu redor e dissipando influências malignas ou negativas.</p>`,
+  positivo: `<p><strong>Aura Purificadora:</strong> Remove maldições, venenos e efeitos negativos de aliados em um raio de 6m. Cada aliado recupera <strong>1D10</strong> de vida ao fim de cada turno. Se aliados e inimigos também dançarem no turno deles, recebem <strong>+1D10</strong> extra de cura.</p>`,
+  negativo: `<p><strong>Vulnerabilidade:</strong> O personagem não pode realizar outras ações além da dança. Se interrompido, sofre <strong>1D12</strong> de dano Psicológico devido à quebra abrupta da energia purificadora.</p>`,
+  duracao: "Enquanto estiver dançando",
+  nivel: "5",
+  alcance: "6 metros",
+  testeConjurador: "Atuação",
+  testeAlvo: "Nenhum"
+},
+
+{
+  id: "p33",
+  nome: "Réplica Imperfeita",
+  sub: "Imperfectum Effigies",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/294df31807b3b9d264891774f89f8b11b65fb5b6_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `<p>O personagem conjura uma réplica imperfeita de um item, duplicando-o com metade das propriedades do original.</p>`,
+  positivo: `<p><strong>Cópia Instável:</strong> Cria uma cópia de qualquer item em posse. A réplica possui metade do HP, dano e atributos do original, durando <strong>3 turnos</strong> antes de desaparecer.</p>`,
+  negativo: `<p><strong>Falha Material:</strong> O conjurador deve fazer um teste de Preservação a cada turno; se falhar, a réplica se desfaz e ele sofre <strong>1D4</strong> de dano de Névoa pela quebra do vínculo.</p>`,
+  duracao: "3 turnos",
+  nivel: "6",
+  alcance: "Toque",
+  testeConjurador: "Ofício",
+  testeAlvo: "Nenhum"
+},
+
+{
+  id: "p34",
+  nome: "Sombra da Distopia",
+  sub: "Umbra Dystopia",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/image.psd-1.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `<p>O personagem envolve a si mesmo e seus aliados em uma aura que distorce a realidade, enfraquecendo ataques inimigos e criando ilusões perturbadoras.</p>`,
+  positivo: `<p><strong>Distorção da Realidade:</strong> Inimigos dentro da área recebem <strong>-4</strong> em ataques e testes. Aliados ganham <strong>+4</strong> em esquiva à distância. Inimigos na área sofrem <strong>1D10</strong> de dano de Distorção por turno.</p>`,
+  negativo: `<p><strong>Instabilidade Mental:</strong> O conjurador deve testar Preservação a cada turno; falha causa <strong>1D12</strong> de dano de Distorção e <strong>-2</strong> temporário em ataques.</p>`,
+  duracao: "3 turnos",
+  nivel: "5",
+  alcance: "15 metros",
+  testeConjurador: "Intimidação",
+  testeAlvo: "Vigilância"
+},
+
+{
+  id: "p35",
+  nome: "Fruto do Destino",
+  sub: "Fructus Fatum",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/c2b4fruto.png?w=768&h=768",
+  elemento: "Variável",
+  tipoDano: "Variável (Eletricidade, Fogo, Gelo, Água, Ácido, Luz, Escuridão, Plasma, Névoa)",
+  descricao: `<p>O usuário consome um Fruto do Destino, transformando-se temporariamente em um dos elementos escolhidos e obtendo poderes únicos.</p>`,
+  positivo: `<p><strong>Transmutação Elemental:</strong> Escolha um elemento. O personagem torna-se imune a ele, causa <strong>+1D10</strong> de dano adicional e ganha <strong>+2</strong> em Determinação e Agilidade.</p>`,
+  negativo: `<p><strong>Exaustão Elemental:</strong> Após o término, perde <strong>1D10</strong> de vida e torna-se vulnerável ao mesmo elemento até o fim do combate.</p>`,
+  duracao: "3 turnos",
+  nivel: "4",
+  alcance: "Próprio",
+  testeConjurador: "Culinária",
+  testeAlvo: "Variável (dependendo do elemento)"
+},
+
+{
+  id: "p36",
+  nome: "Sabedoria Natural",
+  sub: "Sapientia Naturae",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/sannin.png?w=768&h=768",
+  elemento: "Caos",
+  tipoDano: "Caos",
+  descricao: `<p>O personagem entra em harmonia com a natureza, canalizando energia vital que amplia seus sentidos e poder espiritual, semelhante ao Modo Sábio.</p>`,
+  positivo: `<p><strong>Modo Sábio:</strong> Recebe <strong>2D12</strong> de vida temporária + bônus de Libertação, <strong>+4</strong> em testes de Libertação e Percepção, e resistência a dano de Caos.</p>`,
+  negativo: `<p><strong>Fragilidade Mental:</strong> Torna-se vulnerável a ataques psíquicos, recebendo <strong>+1D8</strong> de dano adicional de efeitos mentais.</p>`,
+  duracao: "4 turnos",
+  nivel: "4",
+  alcance: "Próprio",
+  testeConjurador: "Libertação",
+  testeAlvo: "Preservação"
+},
+
+{
+  id: "p37",
+  nome: "Aura Manifestada",
+  sub: "Manifestare Auram",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/a6904d0cb5087872e67be0f0ae1ca51e8bd0d445_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Aura ou Variável",
+  descricao: `<p>O personagem desperta e molda o fluxo de sua aura interior, manifestando-a em diferentes formas que representam seu domínio espiritual.</p>`,
+  positivo: `<p><strong>Fluxos da Aura:</strong> Escolha entre:</p>
+  <ul>
+    <li><strong>Fortalecimento:</strong> +4 dano físico e resistência (1D8).</li>
+    <li><strong>Emissão:</strong> +3 ataque à distância e <strong>+1D12</strong> de dano.</li>
+    <li><strong>Transformação:</strong> Converte dano em outro tipo com <strong>+3</strong> por ataque.</li>
+    <li><strong>Manipulação:</strong> Controla objetos ou pessoas (Teste de Conexão).</li>
+    <li><strong>Materialização:</strong> Cria arma ou escudo (1D10 dano ou resistência).</li>
+    <li><strong>Especialização:</strong> Aumenta um atributo à escolha em +5 temporariamente.</li>
+  </ul>`,
+  negativo: `<p><strong>Desgaste Vital:</strong> O personagem perde <strong>1D8</strong> de vida ao final de cada turno enquanto mantiver a aura ativa.</p>`,
+  duracao: "5 turnos",
+  nivel: "6",
+  alcance: "Toque",
+  testeConjurador: "Conexão ou Preservação",
+  testeAlvo: "Conexão"
+},
+
+{
+  id: "p38",
+  nome: "Fluxo da Vida",
+  sub: "Vitalum et Specter",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/stand.png?w=768&h=768",
+  elemento: "Desconhecido (Vitalum) / Poder (Specter)",
+  tipoDano: "Distorção (Vitalum) / Alma (Specter)",
+  descricao: `<p>O personagem manipula sua energia vital, escolhendo entre distorcer o ambiente (Vitalum) ou invocar um espírito guardião (Specter) para auxiliá-lo.</p>`,
+  positivo: `<p><strong>Vitalum:</strong> Cria aura distorcida que causa <strong>1D12 + 4</strong> de dano de Distorção e concede <strong>+4</strong> em Libertação por <strong>8 turnos</strong> ou <strong>1 cena</strong>.<br>
+  <strong>Specter:</strong> Invoca Espírito Guardião que causa <strong>1D10 + 6</strong> de dano de Alma. Dano sofrido pelo espírito é transferido pela metade ao usuário. Concede <strong>+3</strong> em Conexão.</p>`,
+  negativo: `<p><strong>Repercussão Vital:</strong> Ao término, sofre <strong>1D12</strong> de dano de Distorção (Vitalum) ou <strong>1D12</strong> de dano Psicológico (Specter).</p>`,
+  duracao: "8 turnos ou 1 cena",
+  nivel: "6",
+  alcance: "Corpo a corpo (Vitalum) / 10 metros (Specter)",
+  testeConjurador: "Libertação (Vitalum) / Conexão (Specter)",
+  testeAlvo: "Determinação (Vitalum) / Agilidade (Specter)"
 }
+
+
+
+
 
 
 
@@ -3414,6 +3758,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

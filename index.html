@@ -1777,7 +1777,7 @@ Bonus por Níveis Do Personagem  </h3>
     },
     
     {
-  id: "m4",
+  id: "m888",
   nome: "Símbolo de Sangue",
   sub: "Sanguis Imperium",
   img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/image.psd-3-1.png?w=768&h=768",
@@ -2014,7 +2014,109 @@ Bonus por Níveis Do Personagem  </h3>
       alcance: "6m",
       testeConjurador: "Conexão",
       testeAlvo: "Determinação"
-    },{
+    },
+    
+    {
+  id: "m67",
+  nome: "Marcas da Ignomínia",
+  sub: "Notae Ignominiae",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/marcas-da-ignominia.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sem Dano",
+  descricao: `
+  <p>O conjurador marca o alvo com uma <strong>tatuagem maldita</strong> que representa vergonha e desonra. Enquanto a marca estiver ativa, o alvo <strong>não pode usar habilidades que exijam concentração</strong> e sofre <strong>–2 em todos os testes de ataque</strong>.</p>
+  <p><strong>Para remover a maldição:</strong> o alvo deve <strong>confessar um erro ou pecado</strong> diante de um grupo de aliados e realizar um teste de <strong>Libertação (Dificuldade 15)</strong>.</p>
+  `,
+  duracao: "Até ser quebrado",
+  tagLevel: "Maldizente",
+  tagLevelResposta: "Nível 2 – Portador dos Presságios",
+  nivel: "2",
+  alcance: "8m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m68",
+  nome: "Eco da Dor",
+  sub: "Echo Doloris",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/eco-da-dor.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Maldição",
+  descricao: `
+  <p>O conjurador envolve o alvo em uma <strong>aura de sofrimento</strong> que amplifica sua dor. Enquanto a maldição estiver ativa, o alvo sofre <strong>1d10</strong> de dano ao final de cada turno e <strong>não pode se curar</strong> por nenhum meio.</p>
+  <p><strong>Para quebrar a maldição:</strong> o alvo deve <strong>causar dano a um inimigo</strong> e realizar um teste de <strong>Determinação (Dificuldade 15)</strong>.</p>
+  `,
+  duracao: "Até ser quebrado",
+  tagLevel: "Maldizente",
+  tagLevelResposta: "Nível 3 – Mestre dos Anátemas",
+  nivel: "3",
+  alcance: "10m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m69",
+  nome: "Levanta!",
+  sub: "Surgiteoooooo!!!",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/levanta.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Maldição",
+  descricao: `
+  <p>O conjurador profere palavras amaldiçoadas, fazendo um <strong>cadáver levantar-se</strong> sob sua vontade por até <strong>1 dia (24h)</strong>. O ser reanimado age com as condições <strong>Ódio</strong> e <strong>Sonambulismo</strong>, e sua ficha é controlada pelo conjurador.</p>
+  <p>O morto-vivo possui <strong>metade da vida original</strong> e segue as ordens do conjurador até ser destruído ou libertado.</p>
+  <p><strong>Efeito Negativo:</strong> além do custo inicial de Sanidade, o conjurador acumula <strong>+1 de custo de Sanidade</strong> a cada golpe recebido por seus servos. Todo o custo é pago integralmente quando a magia se desfaz.</p>
+  `,
+  duracao: "1 dia (24h) ou até ser quebrado",
+  tagLevel: "Maldizente",
+  tagLevelResposta: "Nível 4 – Profeta da Ruína",
+  nivel: "4",
+  alcance: "5m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m70",
+  nome: "Corrente da Agonia",
+  sub: "Catena Doloris",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/corrente-da-agonia.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Maldição",
+  descricao: `
+  <p>O alvo é envolvido por <strong>correntes espectrais</strong> que drenam sua força vital e espiritual. Enquanto estiver sob a maldição, o alvo tem sua <strong>velocidade reduzida pela metade</strong> e <strong>não pode usar magias, passivas ou habilidades</strong>.</p>
+  <p><strong>Para quebrar a maldição:</strong> o alvo deve <strong>derrotar um inimigo em combate</strong> e realizar um <strong>sacrifício de vida</strong>, perdendo <strong>4d12</strong> de Vida no processo.</p>
+  `,
+  duracao: "Até ser quebrado",
+  tagLevel: "Maldizente",
+  tagLevelResposta: "Nível 5 – Arauto dos Destinos Sombrios",
+  nivel: "5",
+  alcance: "12m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m71",
+  nome: "Devoração da Esperança",
+  sub: "Vorago Spes",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/devoracao-da-esperanca.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Maldição",
+  descricao: `
+  <p>O conjurador lança uma <strong>maldição final</strong> que consome toda a esperança do alvo, mergulhando-o em um <strong>abismo de desespero</strong>. Enquanto amaldiçoado, o alvo <strong>não pode realizar ações voluntárias</strong>, apenas mover-se lentamente com <strong>–5 de penalidade na velocidade</strong>.</p>
+  <p>O alvo não pode receber bônus, curas ou recuperar vida de qualquer forma. Todos os ataques contra ele possuem <strong>vantagem automática</strong>, e ele sofre <strong>3d6</strong> de dano de Maldição ao fim de cada turno.</p>
+  <p><strong>Para quebrar a maldição:</strong> o alvo deve <strong>sacrificar uma parte de sua alma</strong>, perdendo permanentemente <strong>1 ponto em um atributo principal</strong> (Brutalidade, Agilidade, Determinação, Preservação, Libertação ou Conexão), e realizar um teste de <strong>Libertação (Dificuldade 25)</strong>. Mesmo quebrada, a perda do atributo é definitiva.</p>
+  `,
+  duracao: "Até ser quebrado",
+  tagLevel: "Maldizente",
+  tagLevelResposta: "Nível 6 – Véu do Fim",
+  nivel: "6",
+  alcance: "20m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Determinação"
+}
+,
+    
+    
+    {
     id: "m166",
 nome: "Telefone Temporal",
 sub: "Tidsmessig Telefon",
@@ -3891,6 +3993,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

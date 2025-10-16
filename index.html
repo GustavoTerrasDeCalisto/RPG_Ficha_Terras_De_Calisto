@@ -1499,7 +1499,23 @@ Bonus por Níveis Do Personagem  </h3>
 #tcOverlay .tc-box-head{padding:18px 18px 0}
 #tcOverlay .tc-detail-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px}
 #tcOverlay .tc-title{margin:14px auto 6px;text-align:center;background:#9b0b0f;color:#fff;border-radius:999px;padding:10px 16px;font-size:22px;font-weight:800;width:fit-content}
-#tcOverlay .tc-sub{margin:0 auto 14px;text-align:center;color:#9b0b0f;font-style:italic}
+#tcOverlay .tc-sub {
+  margin: 0 auto 16px;
+  padding: 4px 12px;                     /* adiciona um respiro interno equilibrado */
+  text-align: center;
+  color: #9b0b0f !important;             /* mantém o tom vermelho-fé */
+  font-style: italic;
+  font-weight: 600;                      /* dá presença sem perder leveza */
+  background: #fff;                      /* garante fundo visível */
+  display: inline-block;
+  border-radius: 10px;                   /* bordas mais suaves */
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* leve profundidade para destacar */
+  letter-spacing: 0.3px;                 /* melhora legibilidade */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 #tcOverlay .tc-section{padding:0 18px 16px}
 #tcOverlay .tc-h2{margin:10px 0 8px;font-size:16px;color:#0f172a}
 #tcOverlay .tc-desc{color:#222;line-height:1.55}
@@ -4139,6 +4155,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

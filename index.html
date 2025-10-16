@@ -1528,6 +1528,80 @@ Bonus por Níveis Do Personagem  </h3>
   border-radius: 4px;
   font-size: 0.9em;
 }
+/* Cabeçalho e botão fechar ajustados */
+#tcOverlay .tc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #101926;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Tabs centralizadas e flexíveis */
+#tcOverlay .tc-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  flex: 1; /* ocupa o espaço entre bordas e botão fechar */
+}
+
+#tcOverlay .tc-tab {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #22324a;
+  color: #dfe7ff;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+#tcOverlay .tc-tab:hover {
+  background: #2d4567;
+}
+
+#tcOverlay .tc-tab.active {
+  background: #c0191f;
+  color: #fff;
+}
+
+/* Botão fechar fixo à direita */
+#tcOverlay .tc-close {
+  flex-shrink: 0;
+  border: none;
+  background: #2a3a53;
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+#tcOverlay .tc-close:hover {
+  background: #c0191f;
+}
+
+/* Responsivo: mobile */
+@media (max-width: 640px) {
+  #tcOverlay .tc-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  #tcOverlay .tc-close {
+    align-self: center;
+    margin-top: 6px;
+    width: 100%;
+  }
+}
 
 @media (max-width:420px){
   #tcOverlay .tc-title{font-size:18px}
@@ -1600,15 +1674,34 @@ Bonus por Níveis Do Personagem  </h3>
       <button class="tc-close" onclick="TC.close()">Fechar</button>
     </div>
 
-    <div class="tc-controls">
-      <select id="tcFiltroElemento" class="tc-select" title="Elemento">
-        <option value="">Elemento</option><!-- preenchido via JS -->
-      </select>
-      <select id="tcFiltroDano" class="tc-select" title="Tipo de dano">
-        <option value="">Tipo de dano</option><!-- preenchido via JS -->
-      </select>
-      <input id="tcBusca" class="tc-search" type="search" placeholder="Buscar por nome (opcional)">
-    </div>
+<div class="tc-controls">
+  <select id="tcFiltroElemento" class="tc-select" title="Elemento">
+    <option value="">Elemento</option><!-- preenchido via JS -->
+  </select>
+
+  <select id="tcFiltroDano" class="tc-select" title="Tipo de dano">
+    <option value="">Tipo de dano</option><!-- preenchido via JS -->
+  </select>
+
+  <!-- 🔹 NOVO FILTRO DE NÍVEL -->
+  <select id="tcFiltroNivel" class="tc-select" title="Nível">
+    <option value="">Todos os níveis</option>
+    <option value="1">Nível 1</option>
+    <option value="2">Nível 2</option>
+    <option value="3">Nível 3</option>
+    <option value="4">Nível 4</option>
+    <option value="5">Nível 5</option>
+    <option value="6">Nível 6</option>
+    <option value="7">Nível 7</option>
+    <option value="8">Nível 8</option>
+    <option value="9">Nível 9</option>
+    <option value="10">Nível 10</option>
+  </select>
+  <!-- 🔹 FIM DO NOVO FILTRO -->
+
+  <input id="tcBusca" class="tc-search" type="search" placeholder="Buscar por nome (opcional)">
+</div>
+
 
     <div id="tcList" class="tc-content">
       <div class="tc-grid" id="tcGrid"></div>
@@ -2352,6 +2445,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
     perPage: 20,
     elemento: "",
     dano: "",
+    nivel: '',
     busca: ""
   };
 
@@ -2538,16 +2632,18 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
     return [...magias, ...passivas].filter(x=>learned.has(x.id));
   }
 
-  // Filters
-  function applyFilters(list){
-    const q = String(state.busca || "").toLowerCase().trim();
-    return list.filter(it=>{
-      if(state.elemento && it.elemento !== state.elemento) return false;
-      if(state.dano && it.tipoDano !== state.dano) return false;
-      if(q && !(String(it.nome || "").toLowerCase().includes(q))) return false;
-      return true;
-    });
-  }
+// Filters
+function applyFilters(list) {
+  const q = String(state.busca || "").toLowerCase().trim();
+  return list.filter(it => {
+    if (state.elemento && it.elemento !== state.elemento) return false;
+    if (state.dano && it.tipoDano !== state.dano) return false;
+    if (state.nivel && String(it.nivel) !== String(state.nivel)) return false; // 🔹 novo filtro de nível
+    if (q && !(String(it.nome || "").toLowerCase().includes(q))) return false;
+    return true;
+  });
+}
+
 
   // Render grid & pagination (creates nodes safely)
   function render(){
@@ -2979,10 +3075,15 @@ if (subEl) {
     const elSel = document.getElementById("tcFiltroElemento");
     const dnSel = document.getElementById("tcFiltroDano");
     const busca = document.getElementById("tcBusca");
+    const nvSel = document.getElementById("tcFiltroNivel");
+
 
     if (elSel) elSel.addEventListener('change', e => { state.elemento = e.target.value; state.page = 1; render(); });
     if (dnSel) dnSel.addEventListener('change', e => { state.dano = e.target.value; state.page = 1; render(); });
     if (busca) busca.addEventListener('input', e => { state.busca = e.target.value; state.page = 1; render(); });
+    if (nvSel) nvSel.addEventListener('change', e => { state.nivel = e.target.value; state.page = 1; render(); });
+
+    
 
     // click on cards (delegation)
     const grid = document.getElementById("tcGrid");
@@ -3313,6 +3414,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -1678,50 +1678,49 @@ Bonus por Níveis Do Personagem  </h3>
 
 
 
-<button onclick="TC.open()" class="magias-btn"></button>
+<!-- BOTÃO PARA ABRIR O POPUP -->
+<button type="button" onclick="TC.open()" class="magias-btn"></button>
 
-
-  
 <!-- POPUP -->
 <div id="tcOverlay" aria-hidden="true">
   <div class="tc-popup" role="dialog" aria-modal="true">
+
     <div class="tc-header">
       <div class="tc-tabs">
-        <button class="tc-tab active" data-tab="magias">Magias</button>
-        <button class="tc-tab" data-tab="passivas">Passivas</button>
-        <button class="tc-tab" data-tab="aprendidas">Aprendidas</button>
+        <button type="button" class="tc-tab active" data-tab="magias">Magias</button>
+        <button type="button" class="tc-tab" data-tab="passivas">Passivas</button>
+        <button type="button" class="tc-tab" data-tab="aprendidas">Aprendidas</button>
       </div>
-      <button class="tc-close" onclick="TC.close()">Fechar</button>
+      <button type="button" class="tc-close" onclick="TC.close()">Fechar</button>
     </div>
 
-<div class="tc-controls">
-  <select id="tcFiltroElemento" class="tc-select" title="Elemento">
-    <option value="">Elemento</option><!-- preenchido via JS -->
-  </select>
+    <div class="tc-controls">
+      <select id="tcFiltroElemento" class="tc-select" title="Elemento">
+        <option value="">Elemento</option><!-- preenchido via JS -->
+      </select>
 
-  <select id="tcFiltroDano" class="tc-select" title="Tipo de dano">
-    <option value="">Tipo de dano</option><!-- preenchido via JS -->
-  </select>
+      <select id="tcFiltroDano" class="tc-select" title="Tipo de dano">
+        <option value="">Tipo de dano</option><!-- preenchido via JS -->
+      </select>
 
-  <!-- 🔹 NOVO FILTRO DE NÍVEL -->
-  <select id="tcFiltroNivel" class="tc-select" title="Nível">
-    <option value="">Todos os níveis</option>
-    <option value="1">Nível 1</option>
-    <option value="2">Nível 2</option>
-    <option value="3">Nível 3</option>
-    <option value="4">Nível 4</option>
-    <option value="5">Nível 5</option>
-    <option value="6">Nível 6</option>
-    <option value="7">Nível 7</option>
-    <option value="8">Nível 8</option>
-    <option value="9">Nível 9</option>
-    <option value="10">Nível 10</option>
-  </select>
-  <!-- 🔹 FIM DO NOVO FILTRO -->
+      <!-- 🔹 NOVO FILTRO DE NÍVEL -->
+      <select id="tcFiltroNivel" class="tc-select" title="Nível">
+        <option value="">Todos os níveis</option>
+        <option value="1">Nível 1</option>
+        <option value="2">Nível 2</option>
+        <option value="3">Nível 3</option>
+        <option value="4">Nível 4</option>
+        <option value="5">Nível 5</option>
+        <option value="6">Nível 6</option>
+        <option value="7">Nível 7</option>
+        <option value="8">Nível 8</option>
+        <option value="9">Nível 9</option>
+        <option value="10">Nível 10</option>
+      </select>
+      <!-- 🔹 FIM DO NOVO FILTRO -->
 
-  <input id="tcBusca" class="tc-search" type="search" placeholder="Buscar por nome (opcional)">
-</div>
-
+      <input id="tcBusca" class="tc-search" type="search" placeholder="Buscar por nome (opcional)">
+    </div>
 
     <div id="tcList" class="tc-content">
       <div class="tc-grid" id="tcGrid"></div>
@@ -1733,8 +1732,8 @@ Bonus por Níveis Do Personagem  </h3>
   <div id="tcDetail" class="tc-detail" onclick="event.target.id==='tcDetail'&&TC.hideDetail()">
     <div class="tc-box" id="tcDetailBox"></div>
   </div>
-  
 </div>
+
 
 
 <!-- SUBSTITUA APENAS O <script> ABAIXO. Deixe seu CSS/HTML e seu DATASET como já estão. -->

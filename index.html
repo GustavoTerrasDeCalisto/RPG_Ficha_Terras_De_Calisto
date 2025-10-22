@@ -1672,6 +1672,95 @@ Bonus por Níveis Do Personagem  </h3>
   }
 }
 
+/* =========================== */
+/* BORDA CARDGAME EXCLUSIVA DO POPUP */
+/* =========================== */
+#tcOverlay .tc-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #101a2b 0%, #18243d 100%);
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 12px rgba(255,255,255,0.05),
+              0 0 18px rgba(0,0,0,0.4);
+}
+
+/* Moldura brilhante estilo cardgame */
+#tcOverlay .tc-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg,
+    #ff2f2f 0%,
+    #ffb347 20%,
+    #fff 40%,
+    #c0191f 60%,
+    #ffb347 80%,
+    #ff2f2f 100%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: tcgBorderGlow 6s linear infinite;
+}
+
+/* Reflexo diagonal dinâmico */
+#tcOverlay .tc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.18), transparent 60%);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+#tcOverlay .tc-card:hover::before {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+/* Movimento sutil da borda */
+@keyframes tcgBorderGlow {
+  0% {
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  50% {
+    filter: hue-rotate(180deg) brightness(1.4);
+  }
+  100% {
+    filter: hue-rotate(360deg) brightness(1);
+  }
+}
+
+/* Efeito TCG de brilho animado */
+@keyframes tcgShine {
+  0% { background-position: 200% 0%; }
+  100% { background-position: -200% 0%; }
+}
+
+#tcOverlay .tc-card {
+  background-image: linear-gradient(120deg,
+    rgba(255,255,255,0.05) 0%,
+    rgba(192,25,31,0.1) 50%,
+    rgba(255,255,255,0.05) 100%);
+  background-size: 200% 200%;
+  animation: tcgShine 8s linear infinite;
+}
+
+#tcOverlay .tc-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow:
+    0 0 25px rgba(192, 25, 31, 0.5),
+    0 0 40px rgba(255, 255, 255, 0.15) inset;
+}
 
 </style>
 
@@ -4158,6 +4247,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

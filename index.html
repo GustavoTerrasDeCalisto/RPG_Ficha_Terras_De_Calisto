@@ -1673,8 +1673,10 @@ Bonus por Níveis Do Personagem  </h3>
 }
 
 /* =========================== */
-/* BORDA CARDGAME EXCLUSIVA DO POPUP */
+/* CARDGAME REFINADO — EFEITO DIAGONAL CLARO */
+/* Exclusivo para o popup #tcOverlay */
 /* =========================== */
+
 #tcOverlay .tc-card {
   position: relative;
   overflow: hidden;
@@ -1683,11 +1685,12 @@ Bonus por Níveis Do Personagem  </h3>
   border: 2px solid transparent;
   background-clip: padding-box;
   transition: all 0.3s ease;
-  box-shadow: inset 0 0 12px rgba(255,255,255,0.05),
-              0 0 18px rgba(0,0,0,0.4);
+  box-shadow:
+    inset 0 0 18px rgba(255, 255, 255, 0.08),
+    0 0 18px rgba(0, 0, 0, 0.5);
 }
 
-/* Moldura brilhante estilo cardgame */
+/* Borda metálica animada */
 #tcOverlay .tc-card::after {
   content: "";
   position: absolute;
@@ -1695,72 +1698,74 @@ Bonus por Níveis Do Personagem  </h3>
   border-radius: 16px;
   padding: 2px;
   background: linear-gradient(135deg,
-    #ff2f2f 0%,
-    #ffb347 20%,
-    #fff 40%,
-    #c0191f 60%,
-    #ffb347 80%,
+    #fff 0%,
+    #ffd580 20%,
+    #ff2f2f 40%,
+    #fff 60%,
+    #ffd580 80%,
     #ff2f2f 100%);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-  animation: tcgBorderGlow 6s linear infinite;
+  animation: tcgBorderGlow 8s linear infinite;
+  opacity: 0.9;
 }
 
-/* Reflexo diagonal dinâmico */
+/* Reflexo diagonal CLARO e visível */
 #tcOverlay .tc-card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(255,255,255,0.18), transparent 60%);
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  inset: -40%;
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  transform: translateX(-120%) rotate(10deg);
+  transition: transform 1.2s ease;
   pointer-events: none;
+  mix-blend-mode: screen;
 }
 
 #tcOverlay .tc-card:hover::before {
-  opacity: 1;
-  transform: translateX(100%);
+  transform: translateX(120%) rotate(10deg);
 }
 
-/* Movimento sutil da borda */
+/* Movimento cromático da borda */
 @keyframes tcgBorderGlow {
-  0% {
-    filter: hue-rotate(0deg) brightness(1);
-  }
-  50% {
-    filter: hue-rotate(180deg) brightness(1.4);
-  }
-  100% {
-    filter: hue-rotate(360deg) brightness(1);
-  }
+  0% { filter: hue-rotate(0deg) brightness(1.2); }
+  50% { filter: hue-rotate(180deg) brightness(1.6); }
+  100% { filter: hue-rotate(360deg) brightness(1.2); }
 }
 
-/* Efeito TCG de brilho animado */
+/* Animação de brilho sutil */
 @keyframes tcgShine {
   0% { background-position: 200% 0%; }
   100% { background-position: -200% 0%; }
 }
 
 #tcOverlay .tc-card {
-  background-image: linear-gradient(120deg,
-    rgba(255,255,255,0.05) 0%,
-    rgba(192,25,31,0.1) 50%,
-    rgba(255,255,255,0.05) 100%);
+  background-image: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.07) 0%,
+    rgba(192,25,31,0.15) 50%,
+    rgba(255,255,255,0.07) 100%
+  );
   background-size: 200% 200%;
-  animation: tcgShine 8s linear infinite;
+  animation: tcgShine 10s linear infinite;
 }
 
 #tcOverlay .tc-card:hover {
-  transform: translateY(-4px) scale(1.03);
+  transform: translateY(-4px) scale(1.04);
   box-shadow:
-    0 0 25px rgba(192, 25, 31, 0.5),
-    0 0 40px rgba(255, 255, 255, 0.15) inset;
+    0 0 28px rgba(255, 255, 255, 0.3),
+    0 0 40px rgba(192, 25, 31, 0.4);
 }
+
 
 </style>
 
@@ -4247,6 +4252,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

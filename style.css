@@ -2150,7 +2150,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px auto 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 340px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -2159,6 +2159,9 @@ a:active {
 /* Item visível */
 .equipped-item-container {
   position: relative;
+    top: -20px; /* desloca 5px para cima */
+z-index: 1; /* valores maiores ficam acima, menores ficam atrás */
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2173,9 +2176,9 @@ a:active {
   width: 100%;
   padding: 6px 10px;
 
-  /* 🔥 Substituído o fundo por imagem */
-  background-image: url('/imagens/BotaoMochila.png'); /* <-- coloque aqui o caminho correto */
-  background-size: cover; /* cobre todo o espaço */
+  /* 🔥 Fundo com imagem */
+  background-image: url('https://img.cdndsgni.com/preview/11010207.jpg'); /* caminho da imagem */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -2185,10 +2188,10 @@ a:active {
   transition: all 0.3s ease;
 }
 
-/* Efeito de hover */
+/* Hover — mesma imagem, só mais clara */
 .equipped-visible:hover {
-  filter: brightness(1.1);
-  transform: scale(1.01);
+  filter: brightness(1.25);
+  transform: scale(1.02);
 }
 
 /* Imagem do item */
@@ -2220,42 +2223,7 @@ a:active {
   color: #fff;
 }
 
-
-.equipped-visible:hover {
-  background: linear-gradient(145deg, #3a3a3a, #1c1c1c);
-  box-shadow: 0 0 8px rgba(255,255,255,0.1);
-}
-
-/* Imagem do item */
-.equipped-visible img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1.5px solid #555;
-  box-shadow: 0 0 4px rgba(255,255,255,0.1);
-  margin-right: 10px;
-}
-
-/* Informações básicas */
-.equipped-visible .item-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
-  color: #e8e8e8;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-/* Nome do item */
-.equipped-visible .item-info > div:first-child {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-/* Informações completas (escondidas) */
+/* Informações completas (hover expandido) */
 .equipped-hover-info {
   position: absolute;
   top: 110%;
@@ -2275,16 +2243,13 @@ a:active {
   z-index: 10;
 }
 
-/* Exibir em hover */
+/* Exibir infos no hover */
 .equipped-item-container:hover .equipped-hover-info {
   display: flex;
 }
 
 /* Responsivo */
 @media (max-width: 400px) {
-  #equippedItemSlot {
-    padding: 8px;
-  }
   .equipped-visible img {
     width: 42px;
     height: 42px;
@@ -3574,6 +3539,7 @@ h3 {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 
 

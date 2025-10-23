@@ -2177,7 +2177,7 @@ z-index: 1; /* valores maiores ficam acima, menores ficam atrás */
   padding: 6px 10px;
 
   /* 🔥 Fundo com imagem */
-  background-image: url('https://img.cdndsgni.com/preview/11010207.jpg'); /* caminho da imagem */
+  background-image: url('/imagens/Equipado.png'); /* caminho da imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3539,6 +3539,7 @@ h3 {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 
 

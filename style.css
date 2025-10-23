@@ -2200,6 +2200,7 @@ z-index: 1; /* valores maiores ficam acima, menores ficam atrás */
   height: 48px;
   object-fit: contain;
   border-radius: 6px;
+  background: #131111;
   border: 1.5px solid #555;
   box-shadow: 0 0 4px rgba(255,255,255,0.1);
   margin-right: 10px;
@@ -3539,6 +3540,7 @@ h3 {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 
 

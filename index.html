@@ -4065,7 +4065,9 @@ if (subEl) {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+     position: relative; /* ou relative, dependendo do caso */
 
+    z-index: 2!important; /* valores maiores ficam acima, menores ficam atrás */
     width: 200px;   /* ajuste conforme o tamanho real da imagem */
     height: 70px;
 
@@ -4250,6 +4252,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

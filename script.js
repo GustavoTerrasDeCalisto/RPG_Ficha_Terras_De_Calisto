@@ -4059,22 +4059,35 @@ function showItemDesc(item) {
     event.stopPropagation();
 
     if (equippedItemId === item.id) {
-      // Remover equipamento
-      equippedItemId = null;
-      equippedSlot.innerHTML = "";
-    } else {
-      // Equipar item com detalhes completos usando classes CSS
-      equippedItemId = item.id;
-      equippedSlot.innerHTML = `
+  // Remover equipamento
+  equippedItemId = null;
+  equippedSlot.innerHTML = "";
+} else {
+  // Equipar item com detalhes visuais e hover
+  equippedItemId = item.id;
+  equippedSlot.innerHTML = `
+    <div class="equipped-item-container">
+      <div class="equipped-visible">
         <img src="${item.img}" alt="${item.name}">
         <div class="item-info">
           <div>${item.name}</div>
-          <div>Dano Físico: ${item.damageType || 'N/A'}</div>
-          <div>Dano Elemental: ${item.elementalDamage || 'N/A'}</div>
-          <div>Tipo de Dano: ${item.damageDice || 'N/A'}</div>
+          <div>${item.damageType || 'Dano N/A'}</div>
         </div>
-      `;
-    }
+      </div>
+      <div class="equipped-hover-info">
+        <div>Dano Físico: ${item.damageType || 'N/A'}</div>
+        <div>Dano Elemental: ${item.elementalDamage || 'N/A'}</div>
+        <div>Tipo de Dano: ${item.damageDice || 'N/A'}</div>
+        <div>Alcance: ${item.range || 'N/A'}</div>
+        <div>Crítico: ${item.critical || 'N/A'}</div>
+        <div>Bônus ao Equipar: ${item.equipBonus || 'Nenhum'}</div>
+      </div>
+    </div>
+  `;
+}
+descPopup.classList.add('hidden');
+equipBtn.textContent = item.id === equippedItemId ? "Remover" : "Equipar";
+
     descPopup.classList.add('hidden');
   };
 
@@ -5254,6 +5267,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

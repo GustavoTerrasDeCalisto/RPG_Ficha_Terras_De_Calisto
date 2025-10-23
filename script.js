@@ -4930,26 +4930,37 @@ document.getElementById('confirm-load').addEventListener('click', () => {
           });
 // CHAMA ISSO PARA ATUALIZAR AS ESPECIALIZAÇÕES
 atualizarBonusDoPassado(characterData.past);
-      // Carregar os dados do item equipado
-      loadEquippedItem(characterData);
+          // Carregar os dados do item equipado
+loadEquippedItem(characterData);
 
-
-// ✅ ADICIONE ISSO AQUI
+// ✅ CORREÇÃO AQUI
 equippedItemId = characterData.equippedItemId || null;
+
 if (equippedItemId) {
   const equippedItem = items.find(item => item.id === equippedItemId);
   if (equippedItem) {
     equippedSlot.innerHTML = `
-      <img src="${equippedItem.img}" alt="${equippedItem.name}">
-      <div class="item-info">
-        <div>${equippedItem.name}</div>
-        <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
-        <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
-        <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
+      <div class="equipped-item-container">
+        <div class="equipped-visible">
+          <img src="${equippedItem.img}" alt="${equippedItem.name}">
+          <div class="item-info">
+            <div>${equippedItem.name}</div>
+            <div>${equippedItem.damageType || 'Dano N/A'}</div>
+          </div>
+        </div>
+        <div class="equipped-hover-info">
+          <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
+          <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
+          <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
+          <div>Alcance: ${equippedItem.range || 'N/A'}</div>
+          <div>Crítico: ${equippedItem.critical || 'N/A'}</div>
+          <div>Bônus ao Equipar: ${equippedItem.equipBonus || 'Nenhum'}</div>
+        </div>
       </div>
     `;
   }
 }
+
 // Call updateStats to display loaded values
 updateStats();
       }
@@ -5243,6 +5254,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

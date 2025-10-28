@@ -548,13 +548,13 @@ bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
 bonusTexto_3: `
 <p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.</p>
 <p>Nível 3: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
-<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma [magia de nível 2](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
+<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 2</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
 <p>Nível 9: <strong>Escudo Espiritual</strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
-<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma [magia de nível 3](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e aumenta a duração das magias em 1 turno.</p>
+<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 3</a> e aumenta a duração das magias em 1 turno.</p>
 <p>Nível 16: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
-<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma [magia de nível 4](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +2 em percepção para detectar entidades invisíveis.</p>
-<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma [magia de nível 5](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
-<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma [magia de nível 6](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e uma ação completa extra por 7 de especial.</p>
+<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 4</a> e +2 em percepção para detectar entidades invisíveis.</p>
+<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 5</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
+<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 6</a> e uma ação completa extra por 7 de especial.</p>
 `, "movimento_pass": 3
   },
     "Atirador": { 
@@ -563,7 +563,13 @@ bonusTexto_3: `
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
       "bonusPass": `
-<p><strong>Nível 0:</strong> +2 em dados de acerto com armas à distância. Pode [Mirar](https://terrasdecalistoficha.wordpress.com/como-jogar/#:~:text=para%20se%20levantar.-,Mirar,-%3A%20O%20personagem%20est%C3%A1) sem lado negativo uma vez por combate.</p>
+<p><strong>Nível 0:</strong> +2 em dados de acerto com armas à distância. Pode <details onmouseover="this.open = true" onmouseout="this.open = false">
+  <summary>Mirar</summary>
+  <p>O personagem está mirando para garantir vantagem. <br>
+  <strong>Efeito:</strong> Mira por um turno para jogar duas vezes o dado de acerto e escolher o melhor resultado. 
+  Mira gasta uma <strong>ação</strong> e o personagem só pode se mover <strong>antes de mirar</strong>.</p>
+</details>
+ sem lado negativo uma vez por combate.</p>
 `,
 
 bonustitulo_1: "<p>🔫 <strong>Pistoleiro</strong></p>",
@@ -5267,6 +5273,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

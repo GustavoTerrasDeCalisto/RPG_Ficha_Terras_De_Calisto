@@ -3184,6 +3184,163 @@ Bonus por Níveis Do Personagem  </h3>
   testeAlvo: "Determinação"
 }
 ,
+{
+  id: "m116",
+  nome: "Abalo Sutil",
+  sub: "Sutilis Tremor",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/420cdfbae3c8ee1565be1102be787ba6aeba4477_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p>Um leve tremor se irrompe sob os pés do alvo, fazendo com que ele perca o equilíbrio.</p>
+  <p>O alvo sofre <strong>2d6 de dano de Tremor</strong> e deve realizar um teste de <strong>Determinação</strong>. Se falhar, fica <strong>Paralisado</strong> por <strong>1d4 turnos</strong>.</p>
+   <details>
+  <summary>Paralisado</summary>
+  <p>O personagem está imobilizado. Fica sem ação de movimento e ação principal. Pode tentar sair da paralisia gastando uma <strong>ação livre</strong> a cada turno.</p>
+  </details>
+  <details>`,
+  duracao: "Gasta ação",
+  tagLevel: "Discípulo da Força",
+  tagLevelResposta: "Nível 1 – Discípulo da Força",
+  nivel: "1",
+  alcance: "6m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
+{
+  id: "m117",
+  nome: "Pressão",
+  sub: "Pressura",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/743c90e10d5ca7fbcb51c884b54143b852959f71_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p>O alvo é comprimido de dentro para fora por uma <strong>força invisível</strong>, causando <strong>1d12 de dano de Tremor</strong>.</p>
+  <p>Além disso, o alvo deve fazer um teste de <strong>Libertação</strong> para evitar ser afetado pela passiva <strong>Tristeza Oculta</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Protetor da Força",
+  tagLevelResposta: "Nível 2 – Protetor da Força",
+  nivel: "2",
+  alcance: "3m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
+{
+  id: "m118",
+  nome: "Tremor Abissal",
+  sub: "Abissalis Tremor",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-52.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p>Uma onda de energia desce do céu, criando uma <strong>explosão que atinge o solo</strong> e reverbera em direção ao alvo.</p>
+  <p>O alvo sofre <strong>4d8 de dano de Tremor</strong> e deve fazer um teste de <strong>Libertação</strong>. Se falhar, fica em estado de <strong>Caído</strong>, reduzindo seu movimento pela metade e seu dano em -4 por <strong>1d4 turnos</strong>.</p>
+  <details>
+  <summary>Caído</summary>
+  <p>O personagem está no chão. Tem <strong>+2 em acertos</strong> em dados de <strong>MIRAR</strong> e precisa gastar a <strong>ação de movimento</strong> para se levantar.</p>
+</details>
+`,
+  duracao: "Gasta ação",
+  tagLevel: "Mestre do Movimento",
+  tagLevelResposta: "Nível 3 – Mestre do Movimento",
+  nivel: "3",
+  alcance: "10m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
+{
+  id: "m119",
+  nome: "Tremor Voraz",
+  sub: "Vorax Tremor",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/94c891aa6d3ac1323cdefc88a9e9a8f6391821b7_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p>Uma poderosa onda de energia irrompe do chão, abrindo <strong>fendas que absorvem a força vital</strong> do alvo.</p>
+  <p>O alvo sofre <strong>5d10 de dano de Tremor</strong> e deve realizar um teste de <strong>Determinação</strong>. Se falhar, torna-se <strong>Vulnerável</strong> ao próximo ataque físico e sofre <strong>1d6 de dano de Tremor adicional</strong> em sua próxima ação devido à dor.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Senhor das Forças",
+  tagLevelResposta: "Nível 4 – Senhor das Forças",
+  nivel: "4",
+  alcance: "12m (5m de raio)",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
+{
+  id: "m120",
+  nome: "Cataclismo",
+  sub: "Cataclysmus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/68aa1c9cbc9bf6303038bd0071452f4bb116ade7_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p>Uma <strong>força titânica</strong> irrompe sob o alvo, provocando uma erupção devastadora de rochas e detritos em um raio de 3m.</p>
+  <p>O alvo e todos os que estiverem nessa área sofrem <strong>8d8 de dano de Tremor</strong>. Se falharem no teste de <strong>Libertação</strong>, ficam <strong>Paralisados</strong> por <strong>1d4 turnos</strong> e marcados pela energia do cataclismo, reduzindo mobilidade e ataque pela metade até o fim do combate ou por <strong>30 minutos</strong>.</p>
+   <details>
+  <summary>Paralisado</summary>
+  <p>O personagem está imobilizado. Fica sem ação de movimento e ação principal. Pode tentar sair da paralisia gastando uma <strong>ação livre</strong> a cada turno.</p>
+  </details>
+  <details>`,
+  duracao: "Gasta ação (dura até o final do combate ou 30 min de cena)",
+  tagLevel: "Portador do Controle",
+  tagLevelResposta: "Nível 5 – Portador do Controle",
+  nivel: "5",
+  alcance: "15m (3m de raio)",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
+{
+  id: "m121",
+  nome: "Apocalipse Terreno",
+  sub: "Apocalypsis Terrae",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/9c57f2676432ac4f1a0790ee5662ac2a437ffb28_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p>Uma <strong>onda colossal de energia</strong> irrompe da terra, devastando tudo ao redor. O alvo sofre <strong>10d12 de dano de Tremor</strong>.</p>
+  <p>Todos os inimigos em um raio de <strong>6m</strong> devem realizar um teste de <strong>Determinação</strong>. Se falharem, ficam <strong>grudados magneticamente</strong>, sofrendo <strong>2d6 de dano de Tremor adicional</strong> sempre que objetos de pedra ou metal se moverem em sua direção por <strong>1 dia</strong>.</p>
+  <p>Para se libertar, o alvo deve fazer um teste de <strong>Brutalidade</strong>. A cada falha, perde <strong>-1 de movimento</strong> para cada objeto grudado até conseguir se soltar.</p>
+  `,
+  duracao: "Gasta ação, até que o alvo consiga se libertar",
+  tagLevel: "Os Conectados",
+  tagLevelResposta: "Nível 6 – Os Conectados",
+  nivel: "6",
+  alcance: "18m (6m de raio)",
+  testeConjurador: "Libertação",
+  testeAlvo: "Libertação / Brutalidade (objeto)"
+}
+,
+{
+  id: "m122",
+  nome: "Céu Tormentoso",
+  sub: "Caelum Turbidum",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-23.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Tremor",
+  descricao: `
+  <p><strong>Sons de tremores ecoam nos céus</strong>, fazendo com que os alvos sintam seus corpos rangerem.</p>
+  <p>Os alvos devem fazer um teste de <strong>Determinação</strong> contra a <strong>Libertação</strong> do conjurador. Se falharem, um osso é exposto, sofrem <strong>12d12 de dano</strong> e ficam <strong>Debilitados</strong>.</p>
+  <details>
+  <summary>Debilitado</summary>
+  <p>O personagem está debilitado. <strong>Não pode realizar ações livres</strong> e seu <strong>movimento é reduzido para 2m</strong>. O status só pode ser removido com <strong>tratamento longo</strong> ou <strong>magia</strong>.</p>
+</details>
+`,
+  duracao: "Gasta ação",
+  tagLevel: "Guardião do Tremor",
+  tagLevelResposta: "Nível 7 – Guardião do Tremor",
+  nivel: "7",
+  alcance: "30m (área de 50m)",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
 
 
     
@@ -5065,6 +5222,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -514,7 +514,7 @@ bonusTexto_3: `
     "armaduraPorNivel": 1,
     "resistencia": "Alma",
 "bonusPass": `
-<p>Nível 0: +1d12 em <strong>magias de Alma</strong> e a magia [Poltergeist](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Poltergeist,-Overnaturlig%20bes%C3%B8kende) pode ser usada em dois objetos por vez.</p>
+<p>Nível 0: +1d12 em <strong>magias de Alma</strong> e a magia [Poltergeist](https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93) pode ser usada em dois objetos por vez.</p>
 `,
 
 bonustitulo_1: "<p>👤 <strong>Perseguidor Sombrio</strong></p>",
@@ -5267,6 +5267,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

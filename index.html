@@ -2521,7 +2521,7 @@ Bonus por Níveis Do Personagem  </h3>
   tipoDano: "Morte",
   descricao: `
   <p>O conjurador invoca <strong>ecos distantes das almas</strong> que descansam, fazendo o alvo ouvir lamentos e vozes do além, enchendo-o de terror e confusão.</p>
-  <p><strong>Efeito:</strong> O alvo sofre <strong>3d8 de dano de Morte</strong> e deve fazer um teste de Brutalidade. Se falhar, fica <strong>atordoado</strong> por 1d4 turnos, incapaz de agir.</p>
+  <p><strong>Efeito:</strong> O alvo sofre <strong>3d8 de dano de Morte</strong> e deve fazer um teste de Brutalidade. Se falhar, fica <strong>Confuso</strong> por 1d4 turnos, incapaz de agir.</p>
   <p><strong>Atração da Atenção:</strong> Se o alvo morrer pela magia, libera uma onda que atrai todos os seres vivos em 50m. Cada um deve passar em um teste de Conexão ou será compelido a atacar o conjurador ou seus aliados por 1d4 turnos.</p>
   <p><em>Confuso:</em> O personagem está desorientado, incapaz de focar em suas ações. Role 1d4:<br>
   1: Tenta atacar um aliado.<br>
@@ -2630,13 +2630,13 @@ Bonus por Níveis Do Personagem  </h3>
   <p><strong>Ressurreição como Zumbis:</strong> O conjurador pode gastar <strong>1 ponto de Sanidade</strong> e realizar um teste de Libertação para trazer corpos de volta como <strong>zumbis controlados</strong> por 5 turnos.</p>
   <details>
   <summary>Regras Detalhadas</summary>
-  <ul>
-    <li>O corpo deve estar intacto.</li>
-    <li>Gasta 1 ponto de Sanidade.</li>
-    <li>O teste de Libertação deve ter sucesso.</li>
-    <li>O zumbi segue ordens do conjurador e tem ¼ da vida original.</li>
-    <li>Ao atingir 0 de vida ou após 5 turnos, se desintegra em poeira.</li>
-  </ul>
+
+    <p>O corpo deve estar intacto.</p>
+    <p>Gasta 1 ponto de Sanidade.</p>
+    <p>O teste de Libertação deve ter sucesso.</p>
+    <p>O zumbi segue ordens do conjurador e tem ¼ da vida original.</p>
+    <p>Ao atingir 0 de vida ou após 5 turnos, se desintegra em poeira.</p>
+
   </details>
   `,
   duracao: "Instantânea, 5 turnos",
@@ -3615,7 +3615,7 @@ O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve
 
     // ☠️ Especiais
     "Cinzas": { background: "#B0BEC5", color: "#455A64" },
-    "Morte": { background: "#424242", color: "#D32F2F" },
+    "Morte": { background: "#424242", color: "#d586ff" },
     "Eclipse": { background: "#212121", color: "#FFA000" },
     "N/A": { background: "#f0f0f0", color: "#333333" }
   }
@@ -4528,6 +4528,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

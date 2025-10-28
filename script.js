@@ -546,7 +546,7 @@ bonusTexto_2: `
 
 bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
 bonusTexto_3: `
-<p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma [magia de nível 1](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hiearquias%20de%20Guardi%C3%B5es) e +1 em testes de resistência contra efeitos espirituais.</p>
+<p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()" class="magias-btn">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.</p>
 <p>Nível 3: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
 <p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma [magia de nível 2](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es) e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
 <p>Nível 9: <strong>Escudo Espiritual</strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
@@ -5267,6 +5267,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

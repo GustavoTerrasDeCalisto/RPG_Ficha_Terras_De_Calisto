@@ -546,15 +546,15 @@ bonusTexto_2: `
 
 bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
 bonusTexto_3: `
-<p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.</p>
+<p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.</p>
 <p>Nível 3: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
-<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 2</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
+<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 2</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
 <p>Nível 9: <strong>Escudo Espiritual</strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
-<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 3</a> e aumenta a duração das magias em 1 turno.</p>
+<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 31</a> e aumenta a duração das magias em 1 turno.</p>
 <p>Nível 16: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
-<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 4</a> e +2 em percepção para detectar entidades invisíveis.</p>
-<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 5</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
-<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma <a href="javascript:void(0)" onclick="TC.open()">magia de nível 6</a> e uma ação completa extra por 7 de especial.</p>
+<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 4</a> e +2 em percepção para detectar entidades invisíveis.</p>
+<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 5</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
+<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 6</a> e uma ação completa extra por 7 de especial.</p>
 `, "movimento_pass": 3
   },
     "Atirador": { 
@@ -563,13 +563,18 @@ bonusTexto_3: `
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
       "bonusPass": `
-<p><strong>Nível 0:</strong> +2 em dados de acerto com armas à distância. Pode <details onmouseover="this.open = true" onmouseout="this.open = false">
-  <summary>Mirar</summary>
-  <p>O personagem está mirando para garantir vantagem. <br>
-  <strong>Efeito:</strong> Mira por um turno para jogar duas vezes o dado de acerto e escolher o melhor resultado. 
-  Mira gasta uma <strong>ação</strong> e o personagem só pode se mover <strong>antes de mirar</strong>.</p>
+<p><strong>Nível 0:</strong> +2 nos dados de acerto com armas à distância. Pode usar <strong>Mirar</strong> sem penalidade uma vez por combate.</p>
+
+<details>
+  <summary><strong>Mirar</strong></summary>
+  <p>
+    O personagem se concentra para garantir vantagem em seu disparo.<br>
+    <strong>Efeito:</strong> O personagem mira por um turno para rolar o dado de acerto duas vezes e escolher o melhor resultado.<br>
+    Mirar consome uma <strong>ação</strong> e o personagem só pode se mover <strong>antes de mirar</strong>.
+  </p>
 </details>
- sem lado negativo uma vez por combate.</p>
+
+
 `,
 
 bonustitulo_1: "<p>🔫 <strong>Pistoleiro</strong></p>",
@@ -601,8 +606,8 @@ bonusTexto_2: `
 bonustitulo_3: "<p>💥 <strong>Inimigo da Bala</strong></p>",
 bonusTexto_3: `
 <p><strong>Nível 1:</strong> <strong>Pancada Letal</strong> – Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 de especial por uso)</p>
-<p><strong>Nível 3:</strong> <strong>Defesa da Arma</strong> – Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) e libera a magia [Flecha de Luz](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=antes%20de%20conjurar.-,Flecha%20de%20Luz,-Sagitta%20Lux)</p>
-<p><strong>Nível 5:</strong> <strong>Bônus de Especial</strong> – Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) e libera a passiva [Teleporte Repentino](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Preserva%C3%A7%C3%A3o-,Teleporte%20repentino,-Subitus%20Ianuae)</p>
+<p><strong>Nível 3:</strong> <strong>Defesa da Arma</strong> – Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) e libera a magia [Flecha de Luz](https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m98)</p>
+<p><strong>Nível 5:</strong> <strong>Bônus de Especial</strong> – Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) e libera a passiva [Teleporte Repentino](https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23)</p>
 <p><strong>Nível 9:</strong> <strong>Controle do Combate</strong> – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)</p>
 <p><strong>Nível 13:</strong> <strong>Quebra-Defesa</strong> – Golpe que ignora defesa física e causa +1d6 de dano. (3 de especial por uso)</p>
 <p><strong>Nível 16:</strong> <strong>Fúria Contida</strong> – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)</p>
@@ -5273,6 +5278,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

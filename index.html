@@ -2913,6 +2913,272 @@ Bonus por Níveis Do Personagem  </h3>
   testeAlvo: "Determinação"
 }
 ,
+{
+  id: "m104",
+  nome: "Sombras Ofuscantes",
+  sub: "Umbra Obscurare",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-50.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `
+  <p>Sombras densas e envolventes emergem ao redor do corpo do conjurador, obscurecendo sua silhueta e aumentando sua resistência.</p>
+  <p>Enquanto permanecer dentro de áreas sombreadas, o conjurador recebe <strong>1d4 de armadura temporária</strong> a cada turno.</p>
+  <p>Essa proteção se acumula até o fim da magia, mas se dissipa caso ele saia das sombras.</p>
+  <p>Qualquer inimigo que tentar atacá-lo corpo a corpo sofre <strong>1d6 de penalidade</strong> em testes de ataques físicos devido à dificuldade em enxergar o alvo.</p>
+  `,
+  duracao: "1d4 turnos (dentro das sombras)",
+  tagLevel: "Aprendiz das Sombras",
+  tagLevelResposta: "Nível 1 – Aprendiz das Sombras",
+  nivel: "1",
+  alcance: "8m",
+  testeConjurador: "Agilidade",
+  testeAlvo: "Determinação (se tentar atacar corpo a corpo)"
+}
+,
+{
+  id: "m105",
+  nome: "Tentáculos Sombrios",
+  sub: "Tenebrae Tentamenta",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/image.psd-5.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `
+  <p>Surgem <strong>tentáculos de luminescência sombria</strong> em torno do corpo do conjurador.</p>
+  <p>O conjurador pode criar até <strong>9 tentáculos</strong>, sendo que cada um causa <strong>1d12 de dano de Escuridão</strong>.</p>
+  <p>Para cada tentáculo criado, é gasto o custo de conjuração da magia.</p>
+  <p>Os tentáculos atacam o mesmo alvo do conjurador em combate corpo a corpo e podem ser destruídos se forem atingidos.</p>
+  <p>Duram até o fim do combate, caso não sejam destruídos.</p>
+  `,
+  duracao: "Até serem acertados ou fim do combate",
+  tagLevel: "Mestre da Penumbra",
+  tagLevelResposta: "Nível 2 – Mestre da Penumbra",
+  nivel: "2",
+  alcance: "1m",
+  testeConjurador: "Brutalidade",
+  testeAlvo: "Agilidade"
+}
+,
+{
+  id: "m106",
+  nome: "Possessão de Luz",
+  sub: "Possessio Lucis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/4190893d213d85139dba5a7a5b5adb3fcb68343b_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `
+  <p>Escolha um alvo e controle-o por um turno, antecipando sua jogada para próxima da sua.</p>
+  <p>Permite usar a passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p12" target="_blank">Invadir Mente</a> sem custo de passiva.</p>
+  <p>Durante <strong>1d8 turnos</strong>, o alvo não consegue enxergar o conjurador e tem sua iniciativa alterada para logo após a dele.</p>
+  `,
+  duracao: "Gasta ação, 1d8 turnos",
+  tagLevel: "Guardião da Noite",
+  tagLevelResposta: "Nível 3 – Guardião da Noite",
+  nivel: "3",
+  alcance: "4m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Libertação"
+}
+,
+{
+  id: "m107",
+  nome: "Conhecimento Eterno",
+  sub: "Ewiges Wissen",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/leitura-avancada.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `
+  <p>Ao conjurar esta magia, o alvo é inundado por um <strong>fluxo de conhecimento profundo e proibido</strong>, revelando segredos antigos e misteriosos.</p>
+  <p>O alvo ganha <strong>+10 em testes de Preservação e Libertação</strong>, mas deve realizar um <strong>teste de Libertação</strong> antes.</p>
+  <p>Se falhar, é <strong>sobrecarregado pelo excesso de informações</strong> e desenvolve <strong>Medo Oculto</strong> — um medo subconsciente de verdades que agora conhece, mas não compreende totalmente.</p>
+  <p>O medo se manifesta como hesitação, paranoia ou reclusão, levando o alvo a evitar confrontos até o efeito cessar.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Profeta do Eclipse",
+  tagLevelResposta: "Nível 4 – Profeta do Eclipse",
+  nivel: "4",
+  alcance: "14m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Libertação"
+}
+,
+{
+  id: "m108",
+  nome: "Mente Aberta",
+  sub: "Open Mind",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/3-poder-da-mente.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `
+  <p>Ao abrir a mente do alvo, o conjurador altera <strong>verdades profundas estabelecidas na alma</strong>.</p>
+  <p>Sem causar dano direto, pode <strong>mudar permanentemente as percepções do alvo</strong>, transformando aliados em inimigos ou vice-versa.</p>
+  <p>O efeito é duradouro e só pode ser revertido por uma magia poderosa como <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m13" target="_blank">Limpar</a>.</p>
+  <p>Se o alvo falhar no <strong>teste de Libertação</strong>, suas convicções e percepções são alteradas de forma irreversível, transformando-o para sempre.</p>
+  `,
+  duracao: "Permanente (até ser curado)",
+  tagLevel: "Arauto das Trevas",
+  tagLevelResposta: "Nível 5 – Arauto das Trevas",
+  nivel: "5",
+  alcance: "14m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Libertação"
+}
+,
+{
+  id: "m109",
+  nome: "Tocado por Mornning",
+  sub: "Spilt av Emporium",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/3-toque-das-sombras.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Escuridão",
+  descricao: `
+  <p>O conjurador se conecta ao poder de <strong>Mornning</strong>, o controlador das almas, e pode manipular os espíritos em um raio de <strong>30m</strong>.</p>
+  <p>Ele domina os espíritos, forçando-os a lutar ao seu lado ou cumprir suas ordens.</p>
+  <p>Ao absorver a essência de almas derrotadas, restaura <strong>2d12 de vida</strong> a cada criatura que morre nas proximidades.</p>
+  <p>Inimigos afetados sofrem <strong>4d8 de dano psíquico por turno</strong> e devem passar em um <strong>teste de Libertação</strong> para não serem dominados e atacarem seus próprios aliados por <strong>1d6 turnos</strong>.</p>
+  <p>Todas as almas de criaturas que morreram em um raio de <strong>1km</strong> são atraídas para proteger o conjurador. Golpes direcionados a ele são <strong>redirecionados</strong> para essas almas.</p>
+  <p>Cada alma que recebe dano desaparece, e quando todas forem destruídas, o efeito protetor termina. Criaturas derrotadas antes disso geram novas almas que se unem à defesa do conjurador.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Sombra Absoluta",
+  tagLevelResposta: "Nível 6 – Sombra Absoluta",
+  nivel: "6",
+  alcance: "14m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Libertação"
+}
+,
+{
+  id: "m110",
+  nome: "Orbe Negro",
+  sub: "Nigrum Orbem",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/s.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Plasma",
+  descricao: `
+  <p>Cria uma <strong>esfera negra com luzes azuis</strong> nas mãos do conjurador, que é lançada contra o inimigo. Caso acerte, o alvo sofre <strong>1d10 + 1d8 de dano de Plasma</strong> e é <strong>empurrado</strong> alguns metros para trás.</p>
+  <p>Se o alvo estiver agarrando ou sendo agarrado, a conexão se quebra imediatamente, forçando ambos a se separarem.</p>
+  `,
+  duracao: "Instantâneo",
+  tagLevel: "Iniciado da Manifestação Plasma",
+  tagLevelResposta: "Nível 1 – Iniciado da Manifestação Plasma",
+  nivel: "1",
+  alcance: "9m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Agilidade"
+}
+,
+{
+  id: "m111",
+  nome: "Mão Fantasma",
+  sub: "Spiritus Manus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-45.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Plasma",
+  descricao: `
+  <p>O conjurador cria uma <strong>mão fantasmagórica</strong> que surge de seu pulso e pode agir independentemente. Ela é posicionada dentro de 3m do conjurador e entra automaticamente no final da iniciativa.</p>
+  <p>A mão pode <strong>manipular objetos, abrir portas, guardar ou pegar itens</strong>, ou até <strong>atacar causando 1d6 de dano de Plasma</strong>.</p>
+  <p>Pode se mover até <strong>9m por turno</strong> e permanece ativa por <strong>30 minutos</strong> ou até receber <strong>1d4 golpes</strong> (definidos com um teste ao conjurar).</p>
+  `,
+  duracao: "30min ou até 1d4 golpes",
+  tagLevel: "Tecelão das Chamas Irreais",
+  tagLevelResposta: "Nível 2 – Tecelão das Chamas Irreais",
+  nivel: "2",
+  alcance: "9m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Agilidade"
+}
+,
+{
+  id: "m112",
+  nome: "Pulso de Plasma",
+  sub: "Plasmae Pulsus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/asdsdsdads.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Plasma",
+  descricao: `
+  <p>O conjurador emite uma <strong>onda de choque plasmática</strong> em 5m ao seu redor, atingindo todos os inimigos na área. Cada alvo sofre <strong>2d10 de dano de Plasma</strong> e é <strong>Paralisado</strong> por 1 turno.</p>
+  <details>
+  <summary>Paralisado</summary>
+  <p>O personagem está imobilizado. Fica sem ação de movimento e ação principal. Pode tentar sair da paralisia gastando uma <strong>ação livre</strong> a cada turno.</p>
+  </details>
+  <p>Durante a emissão do pulso, objetos soltos flutuam brevemente no ar, antes de caírem novamente ao chão.</p>
+  `,
+  duracao: "Instantâneo",
+  tagLevel: "Dominador das Aparições",
+  tagLevelResposta: "Nível 3 – Dominador das Aparições",
+  nivel: "3",
+  alcance: "5m (área)",
+  testeConjurador: "Determinação",
+  testeAlvo: "Agilidade"
+}
+,
+{
+  id: "m113",
+  nome: "Tormenta de Plasma",
+  sub: "Plasmae Tempestas",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/705a5c677af6bcc93670d228bbc21b3435af56da_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Plasma",
+  descricao: `
+  <p>O conjurador invoca uma <strong>tempestade de plasma</strong> em uma área de 6m de raio. Nuvens etéreas liberam <strong>raios de energia fantasmagórica</strong> sobre os inimigos, causando <strong>3d12 de dano de Plasma por turno</strong> durante <strong>1d4 turnos</strong>.</p>
+  <p>Durante a tormenta, conjurações inimigas se tornam instáveis — todos os testes de conjuração sofrem <strong>-2 de penalidade</strong>.</p>
+  `,
+  duracao: "1d4 turnos",
+  tagLevel: "Guardião da Existência Superior",
+  tagLevelResposta: "Nível 4 – Guardião da Existência Superior",
+  nivel: "4",
+  alcance: "12m (área de 6m de raio)",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+}
+,
+{
+  id: "m114",
+  nome: "Vórtice Fantasmagórico",
+  sub: "Plasmae Vorticem",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/6ed8ebd127e10315a592d2e1b55dedb9199cdf2d_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Plasma",
+  descricao: `
+  <p>Uma <strong>coluna de plasma fantasmagórico</strong> surge do chão, criando um vórtice que suga inimigos próximos para o centro.</p>
+  <p>Todos os alvos em um raio de 8m sofrem <strong>4d12 de dano de Plasma</strong> e ficam <strong>Paralisados</strong> por <strong>1d4 turnos</strong>, presos na força gravitacional do vórtice.</p>
+  <details>
+  <summary>Paralisado</summary>
+  <p>O personagem está imobilizado. Fica sem ação de movimento e ação principal. Pode tentar sair da paralisia gastando uma <strong>ação livre</strong> a cada turno.</p>
+  </details>
+  <p>Para escapar, o alvo deve realizar um <strong>teste de Agilidade (Dificuldade 18)</strong>. Durante o efeito, o espaço é distorcido, cegando os inimigos na área.</p>
+  `,
+  duracao: "1d4 turnos",
+  tagLevel: "Profeta do Outro Mundo",
+  tagLevelResposta: "Nível 5 – Profeta do Outro Mundo",
+  nivel: "5",
+  alcance: "16m (área de 8m de raio)",
+  testeConjurador: "Nenhum",
+  testeAlvo: "Agilidade"
+}
+,
+{
+  id: "m115",
+  nome: "Implosão Estelar de Plasma",
+  sub: "Stellarum Implosio Plasmae",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-49-1-1.png?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Plasma",
+  descricao: `
+  <p>O conjurador canaliza uma <strong>quantidade massiva de energia plasmática</strong>, criando um ponto de gravidade intensa que implode após 1 turno.</p>
+  <p>Todos os inimigos dentro de <strong>10m</strong> são puxados para o centro, sofrendo <strong>5d12 de dano de Plasma</strong> e sendo arremessados a <strong>15m</strong> de distância, recebendo <strong>2d10 de dano adicional</strong> por impacto.</p>
+  <p>Após a implosão, o local sofre uma <strong>distorção na realidade</strong>, tornando impossível conjurar magias por <strong>1 turno</strong>.</p>
+  `,
+  duracao: "1 turno (carregamento)",
+  tagLevel: "Transcendido",
+  tagLevelResposta: "Nível 6 – Transcendido",
+  nivel: "6",
+  alcance: "20m (área de 10m de raio)",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+}
+,
+
 
     
     
@@ -4793,6 +5059,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -2375,6 +2375,280 @@ Bonus por Níveis Do Personagem  </h3>
   testeAlvo: "Determinação"
 }
 ,
+{
+  id: "m79",
+  nome: "Toque de Cura",
+  sub: "Tactus Sanationis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/aaaaassdsdsd.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Nenhum (cura)",
+  descricao: `
+  <p>Ao tocar suavemente o alvo, um <strong>brilho suave e caloroso</strong> envolve a área afetada, fechando feridas e restaurando sua vitalidade.</p>
+  <p>O conjurador cura <strong>1d10 de vida</strong> do alvo com um simples toque. Ideal para curar pequenas feridas ou estabilizar um aliado à beira da morte.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Iniciado da Fé Sagrada",
+  tagLevelResposta: "Nível 1 – Iniciado da Fé Sagrada",
+  nivel: "1",
+  alcance: "Toque",
+  testeConjurador: "Libertação",
+  testeAlvo: "Nenhum"
+},
+{
+  id: "m80",
+  nome: "Proteção Divina",
+  sub: "Divina Praesidium",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/accccc-sagrado.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Nenhum (proteção)",
+  descricao: `
+  <p>Uma <strong>barreira de luz divina</strong> envolve o alvo, fornecendo proteção temporária contra danos físicos.</p>
+  <p>Por <strong>2 turnos</strong>, o alvo ganha resistência a ataques físicos, reduzindo qualquer dano recebido pela metade e recebendo <strong>+2 em testes de resistência</strong> contra efeitos mágicos.</p>
+  `,
+  duracao: "2 turnos",
+  tagLevel: "Protetor do Sacrário",
+  tagLevelResposta: "Nível 2 – Protetor do Sacrário",
+  nivel: "2",
+  alcance: "8m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Nenhum"
+},
+{
+  id: "m81",
+  nome: "Sacrifício de Vida",
+  sub: "Vitae Sacrificium",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/image.psd-6.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sagrado",
+  descricao: `
+  <p>O conjurador <strong>oferece parte de sua vida</strong> para curar um aliado. Seu sangue flui até o alvo e sela suas feridas.</p>
+  <p>O conjurador sofre <strong>10% de sua vida máxima</strong> como dano e cura o alvo em <strong>3x esse valor</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Sacerdote Consagrado",
+  tagLevelResposta: "Nível 3 – Sacerdote Consagrado",
+  nivel: "3",
+  alcance: "4m",
+  testeConjurador: "Brutalidade",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m82",
+  nome: "Céu Santo",
+  sub: "Caelum Sanctus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/7e7f87baafb74af109bd99e835550a40537eb4b6_high.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sagrado",
+  descricao: `
+  <p>Uma <strong>luz divina dos céus</strong> cobre o alvo, tornando-o um farol de esperança e resistência.</p>
+  <p>Por <strong>3 turnos</strong>, o alvo recebe metade do dano. Ao fim, todo o dano absorvido é convertido em <strong>cura em área</strong>, podendo dividir entre até <strong>5 aliados em um raio de 3m</strong>.</p>
+  `,
+  duracao: "3 turnos de negação",
+  tagLevel: "Vigilante Celestial",
+  tagLevelResposta: "Nível 4 – Vigilante Celestial",
+  nivel: "4",
+  alcance: "14m",
+  testeConjurador: "Determinação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m83",
+  nome: "Levitação da Serenidade",
+  sub: "Ramybės Levitacija",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/levitacao.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Nenhum (situação)",
+  descricao: `
+  <p>O alvo é elevado a <strong>3 metros do chão</strong>, flutuando em serenidade. Enquanto levitando, não pode atacar nem se defender normalmente.</p>
+  <p>Deve passar em um <strong>teste de Determinação</strong> para resistir à calma profunda que o impede de agir no turno seguinte. O efeito se encerra se o alvo sofrer <strong>dano psíquico</strong> ou for dissipado.</p>
+  `,
+  duracao: "1d6 turnos",
+  tagLevel: "Arcanjo Guardião",
+  tagLevelResposta: "Nível 5 – Arcanjo Guardião",
+  nivel: "5",
+  alcance: "14m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m84",
+  nome: "Zelote Fanático",
+  sub: "Faithful Zealot Invoke",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image-1.png?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Sagrado",
+  descricao: `
+  <p>Transforma o alvo em um <strong>Zelote Fanático</strong>, um ser que encarna sua fé de forma devastadora.</p>
+  <p>O Zelote recebe <strong>+4 em ataques e dano</strong>, e seus golpes corpo a corpo causam <strong>3d10 de dano Sagrado</strong>.</p>
+  <p>Alvos que falham em um <strong>teste de Conexão</strong> entram em <strong>Pavor</strong> ou tornam-se fanáticos, atacando qualquer um fora da fé.</p>
+  <p>Para reverter o efeito, é necessário um <strong>ritual de purificação</strong> que destrua todos os símbolos corrompidos e invoque uma divindade benevolente.</p>
+  `,
+  duracao: "Permanente (até ser curado)",
+  tagLevel: "Avatar da Divindade",
+  tagLevelResposta: "Nível 6 – Avatar da Divindade",
+  nivel: "6",
+  alcance: "Toque",
+  testeConjurador: "Libertação",
+  testeAlvo: "Conexão"
+}
+,
+{
+  id: "m85",
+  nome: "Toque do Cadáver",
+  sub: "Kroppens Berøring",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/76ee040d547c7de1e047e600aca75b8d2d908051_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>O conjurador toca o alvo, infundindo uma fração da <strong>essência da morte</strong>. O alvo sente um frio penetrante e deve realizar um teste de Determinação.</p>
+  <p><strong>Efeito:</strong> Causa <strong>1d8 de dano de Morte</strong>. Se o alvo falhar no teste, sofre <strong>desvantagem no próximo ataque</strong>.</p>
+  <p><strong>Ressurreição Controlável:</strong> Se um alvo morrer devido a uma magia de necromancia, ele pode retornar à vida como um <strong>servo controlável</strong> por 3 turnos. Durante esse tempo, o conjurador comanda suas ações. Após o fim, o alvo morre novamente, a menos que seja ressuscitado por magia superior.</p>
+  `,
+  duracao: "Instantânea, 3 turnos",
+  tagLevel: "Aprendiz da Morte",
+  tagLevelResposta: "Nível 1 – Aprendiz da Morte",
+  nivel: "1",
+  alcance: "Contato",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m86",
+  nome: "Sussurros da Sepultura",
+  sub: "Gravens Hviskinger",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/1688e48dd369cd100cb683a453161563f99f0af8_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>O conjurador invoca <strong>ecos distantes das almas</strong> que descansam, fazendo o alvo ouvir lamentos e vozes do além, enchendo-o de terror e confusão.</p>
+  <p><strong>Efeito:</strong> O alvo sofre <strong>3d8 de dano de Morte</strong> e deve fazer um teste de Brutalidade. Se falhar, fica <strong>atordoado</strong> por 1d4 turnos, incapaz de agir.</p>
+  <p><strong>Atração da Atenção:</strong> Se o alvo morrer pela magia, libera uma onda que atrai todos os seres vivos em 50m. Cada um deve passar em um teste de Conexão ou será compelido a atacar o conjurador ou seus aliados por 1d4 turnos.</p>
+  <p><em>Confuso:</em> O personagem está desorientado, incapaz de focar em suas ações. Role 1d4:<br>
+  1: Tenta atacar um aliado.<br>
+  2: Perde a ação.<br>
+  3: Erra qualquer ação de precisão.<br>
+  4: Age normalmente.</p>
+  `,
+  duracao: "Instantânea, 1d4 turnos",
+  tagLevel: "Portador da Morte",
+  tagLevelResposta: "Nível 2 – Portador da Morte",
+  nivel: "2",
+  alcance: "15m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Brutalidade"
+},
+{
+  id: "m87",
+  nome: "Chama do Limiar",
+  sub: "Grensen Flamme",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/3c2e371501b2ab4119d5780d9c6ffde5df9de872_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>Conjura <strong>chamas escuras</strong> que consomem a vitalidade do alvo, trazendo-o à beira da morte.</p>
+  <p><strong>Efeito:</strong> Causa <strong>3d10 de dano de Morte</strong>. Se o alvo estiver com 50% ou menos da vida, recebe um adicional de <strong>1d10</strong>.</p>
+  <p><strong>Chamas Congelantes:</strong> Quando um alvo morre, chamas congelantes surgem e atingem inimigos em 10m. Eles devem fazer um teste de Agilidade. Se falharem, sofrem <strong>4d6 de dano de Gelo</strong> e ficam lentos, perdendo 1 turno de ação.</p>
+  `,
+  duracao: "Instantânea, 1 turno",
+  tagLevel: "Mestre da Morte",
+  tagLevelResposta: "Nível 3 – Mestre da Morte",
+  nivel: "3",
+  alcance: "20m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Agilidade"
+},
+{
+  id: "m88",
+  nome: "Chamados do Túmulo",
+  sub: "Gravenes Tilkallinger",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/c025cd3d591fdef96eb0bb3ccfd8db6af22d24c6_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>Invoca os <strong>espíritos de antigos guerreiros</strong> que atacam o alvo com desespero e dor.</p>
+  <p><strong>Efeito:</strong> O alvo sofre <strong>4d10 de dano de Morte</strong> e deve passar em um teste de Determinação. Se falhar, fica <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p13" target="_blank"><strong>amedrontado (pavor)</strong></a> por 1d6 turnos, incapaz de se aproximar do conjurador.</p>
+  <p><strong>Surgimento de Criaturas:</strong> O corpo do alvo morto se transforma em energia que invoca <a href="https://bestiario-terrasdecalisto.netlify.app/?criatura=Antigos%20Esquecidos" target="_blank"><strong>1d4 Antigos Esquecidos</strong></a> em um raio de 10m. As criaturas obedecem ao conjurador por 3 turnos.</p>
+  `,
+  duracao: "Instantânea, 1d6 turnos ou 3 turnos",
+  tagLevel: "Profeta da Morte",
+  tagLevelResposta: "Nível 4 – Profeta da Morte",
+  nivel: "4",
+  alcance: "25m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m89",
+  nome: "Ira da Morte",
+  sub: "Mørkets Vrede",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/e4032fb485a010fa8659bf6451c2e5cfb3e4e1a2_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>Convoca uma <strong>tempestade de sombras</strong> que drena a energia vital do alvo.</p>
+  <p><strong>Efeito:</strong> O alvo sofre <strong>6d12 de dano de Morte</strong> e deve fazer um teste de Libertação. Se falhar, ficará <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p11" target="_blank"><strong>sonâmbulo</strong></a> por 1d4 turnos.</p>
+  <p><strong>Custo de Morte:</strong> Ao matar um alvo, o conjurador deve fazer um teste de Determinação. Se falhar, sofre <strong>1d8 de dano de Sanidade</strong> devido ao impacto emocional.</p>
+  `,
+  duracao: "Instantânea, 1d4 turnos",
+  tagLevel: "Arauto da Morte",
+  tagLevelResposta: "Nível 5 – Arauto da Morte",
+  nivel: "5",
+  alcance: "30m",
+  testeConjurador: "Brutalidade",
+  testeAlvo: "Libertação"
+},
+{
+  id: "m90",
+  nome: "Fogo Eterno do Inferno",
+  sub: "Eternal Hellfire",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/d5af8fd03e0e8d307ad9f7447a1675ee8b373049_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>Invoca <strong>chamas necromânticas</strong> que queimam a alma do alvo e ecoam pela eternidade.</p>
+  <p><strong>Efeito:</strong> O alvo sofre <strong>4d20 de dano de Morte</strong>. O conjurador pode escolher múltiplos alvos (até seu nível). Cada um deve passar em um teste de Determinação ou sofrer <strong>+2d20 de dano</strong> no próximo turno.</p>
+  <p><strong>Explosão de Gelo:</strong> Quando um alvo morre, uma onda de frio causa <strong>2d6 de dano de Gelo</strong> em 30m. Alvos que falharem no teste de Agilidade ficam <strong>congelados</strong> por 1 turno.</p>
+  `,
+  duracao: "Instantânea, 1 turno",
+  tagLevel: "Legado da Morte",
+  tagLevelResposta: "Nível 6 – Legado da Morte",
+  nivel: "6",
+  alcance: "25m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação ou Agilidade"
+},
+{
+  id: "m91",
+  nome: "Apocalipse das Sombras",
+  sub: "Apokalypse av Mørket",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/20abee2b7919b58b4e372aa5f484c98c9653a430_high.webp?w=768&h=768",
+  elemento: "Fé",
+  tipoDano: "Morte",
+  descricao: `
+  <p>Invoca uma <strong>onda apocalíptica de energia necromântica</strong> que ameaça consumir o mundo.</p>
+  <p><strong>Efeito:</strong> Todos os seres vivos em 50m sofrem <strong>10d20 de dano de Morte</strong> e devem passar em um teste de Brutalidade. Se falharem, suas <strong>almas são aprisionadas</strong> nas sombras, impossibilitadas de ressuscitar sem uma magia lendária.</p>
+  <p><strong>Ressurreição como Zumbis:</strong> O conjurador pode gastar <strong>1 ponto de Sanidade</strong> e realizar um teste de Libertação para trazer corpos de volta como <strong>zumbis controlados</strong> por 5 turnos.</p>
+  <details>
+  <summary>Regras Detalhadas</summary>
+  <ul>
+    <li>O corpo deve estar intacto.</li>
+    <li>Gasta 1 ponto de Sanidade.</li>
+    <li>O teste de Libertação deve ter sucesso.</li>
+    <li>O zumbi segue ordens do conjurador e tem ¼ da vida original.</li>
+    <li>Ao atingir 0 de vida ou após 5 turnos, se desintegra em poeira.</li>
+  </ul>
+  </details>
+  `,
+  duracao: "Instantânea, 5 turnos",
+  tagLevel: "Tormentos da Morte",
+  tagLevelResposta: "Nível 7 – Tormentos da Morte",
+  nivel: "7",
+  alcance: "12m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Brutalidade"
+}
+,
+
     
     
     {
@@ -4254,6 +4528,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -548,13 +548,13 @@ bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
 bonusTexto_3: `
 <p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.</p>
 <p>Nível 3: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
-<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 2</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
+<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 2 de alma</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
 <p>Nível 9: <strong>Escudo Espiritual</strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
-<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 31</a> e aumenta a duração das magias em 1 turno.</p>
+<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 3 de alma</a> e aumenta a duração das magias em 1 turno.</p>
 <p>Nível 16: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
-<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 4</a> e +2 em percepção para detectar entidades invisíveis.</p>
-<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 5</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
-<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 6</a> e uma ação completa extra por 7 de especial.</p>
+<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 4 de alma</a> e +2 em percepção para detectar entidades invisíveis.</p>
+<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 5 de alma</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
+<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 6 de alma</a> e uma ação completa extra por 7 de especial.</p>
 `, "movimento_pass": 3
   },
     "Atirador": { 
@@ -5278,6 +5278,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -2147,7 +2147,34 @@ btnMod.addEventListener("click", () => {
   btnMod.classList.toggle("ativo");
 });
 
-// Função principal de rolagem de dados
+// 🎞️ GIFs possíveis — coloque quantos quiser
+const diceGifUrls = [
+  "https://i.gifer.com/GLoa.gif",
+  "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif",
+  "https://media0.giphy.com/media/NnafYvjXZK9j2/giphy.gif",
+  "https://observer.com/wp-content/uploads/sites/2/2013/01/roll-dice.gif?quality=80",
+  "https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyem9jNW1iZGJzZXMyNHpiZTA4YXN0Njh6ZnM5cm0weWFpeWpqcGphNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12GTpOhQKfKlPi/200w.gif"
+];
+
+// Função auxiliar para sortear e tocar o GIF
+function playRandomGif(id = "diceGif", urls = diceGifUrls, hideDelay = 50) {
+  const gif = document.getElementById(id);
+  if (!gif || urls.length === 0) return;
+
+  const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+  gif.style.display = "none";
+  gif.src = "";
+
+  setTimeout(() => {
+    gif.src = randomUrl;
+    gif.style.display = "block";
+  }, hideDelay);
+}
+
+// -------------------------------------------
+// 🎲 Função principal de rolagem de dados
+// -------------------------------------------
 function rollDice() {
   const input = document.getElementById("diceInput").value.trim();
   const gif = document.getElementById("diceGif");
@@ -2200,20 +2227,16 @@ function rollDice() {
     }
   }
 
-  // Resetar e reiniciar gif
-  gif.style.display = "none";
-  gif.src = "";
-  setTimeout(() => {
-    gif.src =
-      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif";
-    gif.style.display = "block";
-  }, 50);
+  // ▶️ Chama a função de GIF aleatório
+  playRandomGif("diceGif");
 
   document.getElementById("diceOverlay").innerText = `Total: ${total}`;
   document.getElementById("detailedResults").innerHTML = detailed;
 }
 
+// -------------------------------------------
 // 🎯 Resetar e limitar perícias
+// -------------------------------------------
 document.getElementById("resetSkillsButton")?.addEventListener("click", () => {
   document.querySelectorAll(".pericia button").forEach((btn) => (btn.innerText = "0"));
 });
@@ -2228,7 +2251,9 @@ function toggleSkill(button) {
   button.innerText = button.innerText === "+2" ? "0" : "+2";
 }
 
+// -------------------------------------------
 // 🎲 Rolagem automática de d20 + bônus de teste
+// -------------------------------------------
 document.querySelectorAll(".roll-attr-dice").forEach(btn => {
   btn.addEventListener("click", () => {
     const attr = btn.getAttribute("data-attr"); // ex: 'for', 'des', etc.
@@ -2238,7 +2263,6 @@ document.querySelectorAll(".roll-attr-dice").forEach(btn => {
     const d20 = Math.floor(Math.random() * 20) + 1;
     const total = d20 + bonus;
 
-    // Mapeamento dos atributos antigos para novos nomes
     const attrMap = {
       for: "BRU",
       des: "AGI",
@@ -2248,10 +2272,8 @@ document.querySelectorAll(".roll-attr-dice").forEach(btn => {
       car: "CNX"
     };
 
-    // Substitui pelo nome novo, mantendo fallback para caso o atributo não esteja no mapa
     const attrName = attrMap[attr] || attr.toUpperCase();
 
-    // Exibir resultado no popup existente
     const detailed = `
       <strong>${attrName}</strong><br>
       Rolagem: d20 = ${d20}<br>
@@ -2259,13 +2281,8 @@ document.querySelectorAll(".roll-attr-dice").forEach(btn => {
       <strong>Total:</strong> ${total}
     `;
 
-    const gif = document.getElementById("diceGif");
-    gif.style.display = "none";
-    gif.src = "";
-    setTimeout(() => {
-      gif.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif";
-      gif.style.display = "block";
-    }, 50);
+    // ▶️ Também usa o GIF aleatório
+    playRandomGif("diceGif");
 
     document.getElementById("diceOverlay").innerText = `Total: ${total}`;
     document.getElementById("detailedResults").innerHTML = detailed;
@@ -5323,6 +5340,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -319,8 +319,8 @@ const raceData = {
 
 const pastData = {
   "Aldeão": {
-    "vidaPorNivel": 12,
-    "sanidadePorNivel": 4,
+    "vidaPorNivel": 6,
+    "sanidadePorNivel": 2,
     "armaduraPorNivel": 1,
     "resistencia": "Sagrado",
 "movimento_pass": 2,
@@ -362,8 +362,8 @@ bonusTexto_2: `Nível 1: +1 em precisão à distância.
     
   },
   "Arauto": { // Cavaleiro adicionado como exemplo
-    "vidaPorNivel": 10,
-    "sanidadePorNivel": 6,
+    "vidaPorNivel": 5,
+    "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Mental",
 "movimento_pass": 2,
@@ -412,8 +412,8 @@ bonusTexto_3: `
 
 },
   "Arqueiro": { // Mago adicionado como exemplo
-    "vidaPorNivel": 11,
-    "sanidadePorNivel": 5,
+    "vidaPorNivel": 6,
+    "sanidadePorNivel": 2,
     "armaduraPorNivel": 1,
     "resistencia": "Maldição",
     "bonusPass": `
@@ -461,8 +461,8 @@ bonusTexto_3: `
     "movimento_pass": 2
   },
   "Assassino": { // Mago adicionado como exemplo
-    "vidaPorNivel": 13,
-    "sanidadePorNivel": 3,
+    "vidaPorNivel": 7,
+    "sanidadePorNivel": 1,
     "armaduraPorNivel": 1,
     "resistencia": "Escuridão",
     "bonusPass": `
@@ -509,8 +509,8 @@ bonusTexto_3: `
 ,  "movimento_pass": 3
   },
   "Assombração": { // Assombração adicionado como exemplo
-    "vidaPorNivel": 11,
-    "sanidadePorNivel": 5,
+    "vidaPorNivel": 5,
+    "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Alma",
 "bonusPass": `
@@ -558,8 +558,8 @@ bonusTexto_3: `
 `, "movimento_pass": 3
   },
     "Atirador": { 
-      "vidaPorNivel": 13,
-      "sanidadePorNivel": 3,
+      "vidaPorNivel": 7,
+      "sanidadePorNivel": 1,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
       "bonusPass": `
@@ -617,8 +617,8 @@ bonusTexto_3: `
 `, "movimento_pass": 4
     },
     "Barão": { 
-      "vidaPorNivel": 14,
-      "sanidadePorNivel": 2,
+      "vidaPorNivel": 7,
+      "sanidadePorNivel": 1,
       "armaduraPorNivel": 1,
       "resistencia": "Ácido",
       "bonusPass": `
@@ -666,7 +666,7 @@ bonusTexto_3: `
 ,  "movimento_pass": 4.5
     },
     "Bárbaro": { 
-      "vidaPorNivel": 15,
+      "vidaPorNivel": 7,
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Fogo",
@@ -713,8 +713,8 @@ bonusTexto_3: `
      "movimento_pass": 4
     },
     "Bardo": { 
-      "vidaPorNivel": 9,
-      "sanidadePorNivel": 7,
+      "vidaPorNivel": 4,
+      "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
       "resistencia": "Luz",
   "bonusPass": `
@@ -763,8 +763,8 @@ bonusTexto_3: `
      "movimento_pass": 3.5
     },
     "Bruxo": { 
-      "vidaPorNivel": 9,
-      "sanidadePorNivel": 7,
+      "vidaPorNivel": 4,
+      "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
       "resistencia": "Escuridão",
   "bonusPass": `
@@ -813,8 +813,8 @@ bonusTexto_3: `
    "movimento_pass": 3.5
     },
     "Carpinteiro": { 
-      "vidaPorNivel": 13,
-      "sanidadePorNivel": 3,
+      "vidaPorNivel": 7,
+      "sanidadePorNivel": 1,
       "armaduraPorNivel": 1,
       "resistencia": "Tempestade",
      "bonusPass": `
@@ -862,8 +862,8 @@ bonusTexto_3: `
 ,   "movimento_pass": 3.5
     },
     "Catador": { 
-      "vidaPorNivel": 8,
-      "sanidadePorNivel": 8,
+      "vidaPorNivel": 4,
+      "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
      "bonusPass": `
@@ -911,7 +911,7 @@ bonusTexto_3: `
 ,      "movimento_pass": 3.5
     },
     "Colosso": { 
-      "vidaPorNivel": 16,
+      "vidaPorNivel": 8,
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 4,
       "resistencia": "Esmagante",
@@ -957,8 +957,8 @@ bonusTexto_3: `
 ,     "movimento_pass": 3.5
     },
     "Conjurador": { 
-      "vidaPorNivel": 10,
-      "sanidadePorNivel": 6,
+      "vidaPorNivel": 5,
+      "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Distorção",
      "bonusPass": `
@@ -1003,8 +1003,8 @@ bonusTexto_3: `
 ,    "movimento_pass": 4.5
     },
     "Costeiro": { 
-      "vidaPorNivel": 12,
-      "sanidadePorNivel": 4,
+      "vidaPorNivel": 6,
+      "sanidadePorNivel": 2,
       "armaduraPorNivel": 3,
       "resistencia": "Água",
       "bonusPass": `
@@ -1049,7 +1049,7 @@ bonusTexto_3: `
 ,      "movimento_pass": 4.5
     },
     "Criatura": { 
-      "vidaPorNivel": 15,
+      "vidaPorNivel": 7,
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 4,
       "resistencia": "Gelo",
@@ -1095,8 +1095,8 @@ bonusTexto_3: `
 , "movimento_pass": 4.5
     },
     "Duelista": { 
-      "vidaPorNivel": 14,
-      "sanidadePorNivel": 2,
+      "vidaPorNivel": 7,
+      "sanidadePorNivel": 1,
       "armaduraPorNivel": 1,
       "resistencia": "Perfurante",
     "bonusPass": `
@@ -1141,7 +1141,7 @@ bonusTexto_3: `
      "movimento_pass": 4
     },
     "Escudeiro": { 
-      "vidaPorNivel": 15,
+      "vidaPorNivel": 7,
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 3,
       "resistencia": "Esmagante",
@@ -1187,7 +1187,7 @@ bonusTexto_3: `
   "movimento_pass": 3.5
     },
     "Especialista": { 
-      "vidaPorNivel": 16,
+      "vidaPorNivel": 8,
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 1,
       "resistencia": "Fogo",
@@ -1234,8 +1234,8 @@ Nível 25:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha 
       "movimento_pass": 4.5
     },
     "Espectro": { 
-      "vidaPorNivel": 10,
-      "sanidadePorNivel": 6,
+      "vidaPorNivel": 5,
+      "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
      "bonusPass": `
@@ -1284,8 +1284,8 @@ Nível 25:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha 
       "movimento_pass": 4.5
     },
     "Espiritualista": { 
-      "vidaPorNivel": 11,
-      "sanidadePorNivel": 5,
+      "vidaPorNivel": 5,
+      "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Aura",
       "bonusPass": `
@@ -1334,7 +1334,7 @@ Nível 25: Emissário da Eternidade – Quando Specter for ativado, pode gastar 
       "movimento_pass": 4
     },
     "Fera": { 
-      "vidaPorNivel": 16,
+      "vidaPorNivel": 8,
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 3,
       "resistencia": "Eclipse",
@@ -1385,8 +1385,8 @@ Nível 25: Glutão da Carnificina – Uma vez por combate, pode gastar 6 de Espe
       "movimento_pass": 4.5
     },
     "Ferreiro": { 
-      "vidaPorNivel": 13,
-      "sanidadePorNivel": 3,
+      "vidaPorNivel": 7,
+      "sanidadePorNivel": 1,
       "armaduraPorNivel": 2,
       "resistencia": "Fogo",
       "bonusPass": `
@@ -1456,8 +1456,8 @@ Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turn
       "movimento_pass": 3.5
     },
     "Forasteiro": { 
-      "vidaPorNivel": 12,
-      "sanidadePorNivel": 4,
+      "vidaPorNivel": 6,
+      "sanidadePorNivel": 2,
       "armaduraPorNivel": 1,
       "resistencia": "Laser",
 "bonusPass": `
@@ -1505,32 +1505,32 @@ bonusTexto_3: `
       "movimento_pass": 4
     },
     "Glacinata": { 
-      "vidaPorNivel": 14,
-      "sanidadePorNivel": 2,
+      "vidaPorNivel": 7,
+      "sanidadePorNivel": 1,
       "armaduraPorNivel": 1,
       "resistencia": "Gelo",
       "bonusPass": "+1d12 em magias de Gelo e Força Gélida com modificador de atributo de Brutalidade.",
       "movimento_pass": 3.5
     },
     "Guerreiro": { 
-      "vidaPorNivel": 13,
-      "sanidadePorNivel": 3,
+      "vidaPorNivel": 6,
+      "sanidadePorNivel": 2,
       "armaduraPorNivel": 3,
       "resistencia": "Balístico",
       "bonusPass": "+5 de dano em armas corpo a corpo.",
       "movimento_pass": 4
     },
     "Hemomantico": { 
-      "vidaPorNivel": 10,
-      "sanidadePorNivel": 6,
+      "vidaPorNivel": 5,
+      "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Sangue",
       "bonusPass": "Magias de sangue causam Hemorragia no inimigo por 2 turnos.",
       "movimento_pass": 4.5
     },
     "Imitador": { 
-      "vidaPorNivel": 9,
-      "sanidadePorNivel": 7,
+      "vidaPorNivel": 4,
+      "sanidadePorNivel": 4,
       "armaduraPorNivel": 1,
       "resistencia": "Alma",
 "bonusPass": `Nível 0: <strong>Mutação</strong> sem custo <strong>1 vez por dia</strong>.`,
@@ -1558,31 +1558,31 @@ bonusTexto_3: `
       "movimento_pass": 4.5
     },
     "Juíz": { 
-      "vidaPorNivel": 11,
-      "sanidadePorNivel": 5,
+      "vidaPorNivel": 5,
+      "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Cortante",
       "bonusPass": "Julga o desempenho de um ALVO, ele recebe 1d20 de dano caso tire menos que 10 em um teste, uma vez por luta.",
       "movimento_pass": 3.5
     },
       "Lacaio": {
-        "vidaPorNivel": 14,
-        "sanidadePorNivel": 2,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 2,
         "resistencia": "Eletricidade",
         "bonusPass": "Passiva Vingança sem custo uma vez por dia.",
         "movimento_pass": 4
       },
       "Ladrão": {
-        "vidaPorNivel": 13,
-        "sanidadePorNivel": 3,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Laser",
         "bonusPass": "+4 em furtividade, +2 roubar, tem vantagem em testes de ladinagem e agilidade.",
         "movimento_pass": 4.5
       },
       "Louco": {
-        "vidaPorNivel": 16,
+        "vidaPorNivel": 8,
         "sanidadePorNivel": 0,
         "armaduraPorNivel": 1,
         "resistencia": "Sono",
@@ -1636,8 +1636,8 @@ Nível 0: Menos sanidade por nível e dobra os danos com magias.
 ,       "movimento_pass": 4.5
       },
       "Mago": {
-        "vidaPorNivel": 10,
-        "sanidadePorNivel": 6,
+        "vidaPorNivel": 5,
+        "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Eletricidade",
        bonusPass: `
@@ -1686,15 +1686,15 @@ bonusTexto_3: `
         "movimento_pass": 3.5
       },
       "Malabarista": {
-        "vidaPorNivel": 12,
-        "sanidadePorNivel": 4,
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Tremor",
         "bonusPass": "+5 em testes de arremesso e +2 em testes com acrobacia.",
         "movimento_pass": 4.5
       },
       "Marinheiro": {
-        "vidaPorNivel": 15,
+        "vidaPorNivel": 7,
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Tremor",
@@ -1702,8 +1702,8 @@ bonusTexto_3: `
         "movimento_pass": 3.5
       },
       "Masoquista": {
-        "vidaPorNivel": 13,
-        "sanidadePorNivel": 3,
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Sangue",
       "bonusPass": `
@@ -1734,55 +1734,55 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
         "movimento_pass": 4.5
       },
       "Médico": {
-        "vidaPorNivel": 12,
-        "sanidadePorNivel": 4,
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Sagrado",
         "bonusPass": "+5 em testes de medicina, -1h para tratar feridas, vantagem em Curas.",
         "movimento_pass": 3.5
       },
       "Mendigo": {
-        "vidaPorNivel": 12,
-        "sanidadePorNivel": 4,
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 3,
         "resistencia": "Névoa",
         "bonusPass": "Pode usar a passiva Selvageria sem custo.",
         "movimento_pass": 4.5
       },
       "Monge": {
-        "vidaPorNivel": 10,
-        "sanidadePorNivel": 6,
+        "vidaPorNivel": 5,
+        "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Luz",
         "bonusPass": "+1d10 com bastões e a magia Sombra animal sem custo uma vez por dia.",
         "movimento_pass": 4.5
       },
       "Naturalista": {
-        "vidaPorNivel": 9,
-        "sanidadePorNivel": 7,
+        "vidaPorNivel": 4,
+        "sanidadePorNivel": 4,
         "armaduraPorNivel": 1,
         "resistencia": "Água",
         "bonusPass": "+1d6 de dano com Magia Vinhas mágicas e +2 em testes de Preservação.",
         "movimento_pass": 4.5
       },
       "Nobre": {
-        "vidaPorNivel": 11,
-        "sanidadePorNivel": 5,
+        "vidaPorNivel": 5,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 2,
         "resistencia": "Luz",
         "bonusPass": "+1d20 em curas descansando.",
         "movimento_pass": 3.5
       },
       "Perseguidor": {
-        "vidaPorNivel": 12,
-        "sanidadePorNivel": 4,
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Ácido",
         "bonusPass": "+5 em furtividade e Pressão sem custo uma vez por dia.",
         "movimento_pass": 5.5
       },
       "Pervertido": {
-        "vidaPorNivel": 16,
+        "vidaPorNivel": 8,
         "sanidadePorNivel": 0,
         "armaduraPorNivel": 1,
         "resistencia": "Sagrado",
@@ -1790,39 +1790,39 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
         "movimento_pass": 4
       },
       "Pescador": {
-        "vidaPorNivel": 14,
-        "sanidadePorNivel": 2,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Água",
         "bonusPass": "Magias de água causa 2d8 extras.",
         "movimento_pass": 3.5
       },
       "Pirata": {
-        "vidaPorNivel": 11,
-        "sanidadePorNivel": 5,
+        "vidaPorNivel": 6,
+        "sanidadePorNivel": 2,
         "armaduraPorNivel": 1,
         "resistencia": "Água",
         "bonusPass": "+5 em dados de investigação, +1d8 em danos com pistolas e rapieiras.",
         "movimento_pass": 4
       },
       "Prefeito": {
-        "vidaPorNivel": 10,
-        "sanidadePorNivel": 6,
+        "vidaPorNivel": 5,
+        "sanidadePorNivel": 3,
         "armaduraPorNivel": 1,
         "resistencia": "Psicológico",
         "bonusPass": "+10 em testes de diplomacia e +5 em intimidação.",
         "movimento_pass": 3.5
       },
       "Prisioneiro": {
-        "vidaPorNivel": 14,
-        "sanidadePorNivel": 2,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
         "bonusPass": "+2d6 agarrando, +2 em testes de agarrar, +2d8 com ataque usando algemas.",
         "movimento_pass": 3.5
       },
       "Profanado": {
-        "vidaPorNivel": 15,
+        "vidaPorNivel": 7,
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 2,
         "resistencia": "Escuridão",
@@ -1830,32 +1830,32 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
         "movimento_pass": 3.5
       },
       "Protetor": {
-        "vidaPorNivel": 10,
-        "sanidadePorNivel": 6,
+        "vidaPorNivel": 5,
+        "sanidadePorNivel": 3,
         "armaduraPorNivel": 2,
         "resistencia": "Alma",
         "bonusPass": "Magia Mestre das passivas sem custo uma vez por dia.",
         "movimento_pass": 4.5
       },
       "Pugilista": {
-        "vidaPorNivel": 14,
-        "sanidadePorNivel": 2,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 2,
         "resistencia": "Esmagante",
         "bonusPass": "+1d12 desarmado, +1d8 com manoplas e tem a passiva Salvaguarda sem custo uma vez por dia.",
         "movimento_pass": 4
       },
       "Revivido": {
-        "vidaPorNivel": 6,
-        "sanidadePorNivel": 10,
+        "vidaPorNivel": 3,
+        "sanidadePorNivel": 5,
         "armaduraPorNivel": 1,
         "resistencia": "Maldição",
         "bonusPass": "A magia Órgãos sombrios sem custo uma vez por combate, +2 em curas.",
         "movimento_pass": 3.5
       },
       "Samurai": {
-        "vidaPorNivel": 14,
-        "sanidadePorNivel": 2,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
         "bonusPass": `
@@ -1905,31 +1905,32 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
       
       },
       "Sacerdote": {
-        "vidaPorNivel": 14,
-        "sanidadePorNivel": 2,
+        "vidaPorNivel": 7,
+        "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Fogo",
         "bonusPass": "Magias Benção antiga e Conexão santa sem custo uma vez ao dia.",
         "movimento_pass": 3.5
-      },"Soberano": {
-    "vidaPorNivel": 8,
-    "sanidadePorNivel": 8,
+      },
+  "Soberano": {
+    "vidaPorNivel": 4,
+    "sanidadePorNivel": 4,
     "armaduraPorNivel": 1,
     "resistencia": "Psicológico",
     "bonusPass": "Magia Diplopia binocular Sem custo uma vez por dia e cria 2 cópias.",
     "movimento_pass": 4
   },
   "Taverneiro": {
-    "vidaPorNivel": 13,
-    "sanidadePorNivel": 3,
+    "vidaPorNivel": 6,
+    "sanidadePorNivel": 2,
     "armaduraPorNivel": 1,
     "resistencia": "Balístico",
     "bonusPass": "+2 em testes de Libertação, +2 em testes de Conexão.",
     "movimento_pass": 3.5
   },
   "Tormentalista": {
-    "vidaPorNivel": 10,
-    "sanidadePorNivel": 6,
+    "vidaPorNivel": 5,
+    "sanidadePorNivel": 3,
     "armaduraPorNivel": 1,
     "resistencia": "Tempestade",
     "bonusPass": "+1d12 em magias de Tempestade e elas usam o atributo de Brutalidade e personagem pode voar.",
@@ -5322,6 +5323,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

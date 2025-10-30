@@ -6550,156 +6550,195 @@ card.appendChild(meta);
   }
 }
 
-
-  // DETAIL
-  function showDetailById(id){
-    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
-    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
-    const it = [...magias, ...passivas].find(x => x.id === id);
-    if (it) showDetail(id);
-  }
-
-  function showDetail(id){
-    const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
-    const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
-    const it = [...magias, ...passivas].find(x => x.id === id);
-    if (!it) return;
-
-    const isPassiva = passivas.some(p => p.id === id);
-    const box = document.getElementById("tcDetailBox");
-    if (!box) return;
-
-    // header/top
-    box.dataset.currentId = id; // marca qual item está sendo mostrado
-
-    // clear
-    box.innerHTML = '';
-
-    // head
-    const head = document.createElement('div');
-    head.className = 'tc-box-head';
-
-    const img = document.createElement('img');
-    img.className = 'tc-detail-img';
-    img.alt = it.nome || '';
-    img.src = it.img || '';
-    head.appendChild(img);
-
-    const title = document.createElement('div');
-    title.className = 'tc-title';
-    title.textContent = it.nome || '';
-    head.appendChild(title);
-
-    if (it.sub) {
-      const sub = document.createElement('div');
-      sub.className = 'tc-sub';
-      sub.textContent = it.sub;
-      head.appendChild(sub);
-    }
-
-    box.appendChild(head);
-
-    // main content
-    const section = document.createElement('div');
-    section.className = 'tc-section';
-
-    const h2 = document.createElement('div');
-    h2.className = 'tc-h2';
-    h2.textContent = isPassiva ? "Descrição" : "O que acontece quando usa?";
-    section.appendChild(h2);
-
-    const desc = document.createElement('div');
-    desc.className = 'tc-desc';
-    desc.innerHTML = String(it.descricao || "-"); // descrição do autor; se houver HTML, permanece
-    section.appendChild(desc);
-
-    // table
-    const table = document.createElement('table');
-    table.className = 'tc-table';
-
-    table.innerHTML = `
-      <thead>
-        <tr>
-          <th>Duração</th>
-          <th>${isPassiva ? "Nível" : (it.tagLevel || "Nível")}</th>
-          <th>Alcance</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>${it.duracao || "-"}</td>
-          <td>${isPassiva ? (it.nivel || "-") : (it.tagLevelResposta || it.nivel || "-")}</td>
-          <td>${it.alcance || "-"}</td>
-        </tr>
-      </tbody>
-    `;
-    section.appendChild(table);
-
-if (isPassiva) {
-  const pos = document.createElement('div');
-  pos.className = 'tc-good';
-  pos.textContent = 'Positivo';
-  section.appendChild(pos);
-
-  const posDesc = document.createElement('div');
-  posDesc.className = 'tc-desc';
-  // agora renderiza HTML, permitindo <strong>, <i>, <ul> etc.
-  posDesc.innerHTML = it.positivo || '-';
-  section.appendChild(posDesc);
-
-  const neg = document.createElement('div');
-  neg.className = 'tc-bad';
-  neg.textContent = 'Negativo';
-  section.appendChild(neg);
-
-  const negDesc = document.createElement('div');
-  negDesc.className = 'tc-desc';
-  negDesc.innerHTML = it.negativo || '-';
-  section.appendChild(negDesc);
+// DETAIL
+function showDetailById(id) {
+  const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+  const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+  const it = [...magias, ...passivas].find(x => x.id === id);
+  if (it) showDetail(id);
 }
 
+function showDetail(id) {
+  const magias = (window.DATASET && Array.isArray(window.DATASET.magias)) ? window.DATASET.magias : [];
+  const passivas = (window.DATASET && Array.isArray(window.DATASET.passivas)) ? window.DATASET.passivas : [];
+  const it = [...magias, ...passivas].find(x => x.id === id);
+  if (!it) return;
 
-    // info block
-    const infoH2 = document.createElement('div');
-    infoH2.className = 'tc-h2';
-    infoH2.textContent = 'Informações';
-    section.appendChild(infoH2);
+  const isPassiva = passivas.some(p => p.id === id);
+  const box = document.getElementById("tcDetailBox");
+  if (!box) return;
 
-    const infoList = [
-      ['Tipo de dano:', it.tipoDano || '-'],
-      ['Elemento:', it.elemento || '-'],
-      ['Teste do conjurador:', it.testeConjurador || '-'],
-      ['Teste do Alvo:', it.testeAlvo || '-']
-    ];
-    infoList.forEach(([label, val]) => {
-      const d = document.createElement('div');
-      d.className = 'tc-desc';
-      d.innerHTML = `<b>${label}</b> ${val}`;
-      section.appendChild(d);
-    });
+  box.dataset.currentId = id;
+  box.innerHTML = '';
 
-    box.appendChild(section);
+  // Cabeçalho
+  const head = document.createElement('div');
+  head.className = 'tc-box-head';
 
-    // actions
-    const actions = document.createElement('div');
-    actions.className = 'tc-actions';
+  const img = document.createElement('img');
+  img.className = 'tc-detail-img';
+  img.alt = it.nome || '';
+  img.src = it.img || '';
+  head.appendChild(img);
 
-    const learned = isLearned(id);
-    const btnLearn = document.createElement('button');
-    btnLearn.className = 'tc-btn primary';
-    btnLearn.textContent = learned ? "Remover do Grimório" : "Aprender";
-    btnLearn.addEventListener('click', () => {
-      toggleLearn(id);
-    });
-    actions.appendChild(btnLearn);
+  const title = document.createElement('div');
+  title.className = 'tc-title';
+  title.textContent = it.nome || '';
+  head.appendChild(title);
 
-    const btnClose = document.createElement('button');
-    btnClose.className = 'tc-btn ghost';
-    btnClose.textContent = 'Fechar';
-    btnClose.addEventListener('click', hideDetail);
-    actions.appendChild(btnClose);
+  if (it.sub) {
+    const sub = document.createElement('div');
+    sub.className = 'tc-sub';
+    sub.textContent = it.sub;
+    head.appendChild(sub);
+  }
 
-    box.appendChild(actions);
+  box.appendChild(head);
+
+  // Seção principal
+  const section = document.createElement('div');
+  section.className = 'tc-section';
+
+  const h2 = document.createElement('div');
+  h2.className = 'tc-h2';
+  h2.textContent = isPassiva ? "Descrição" : "O que acontece quando usa?";
+  section.appendChild(h2);
+
+  const desc = document.createElement('div');
+  desc.className = 'tc-desc';
+  desc.innerHTML = String(it.descricao || "-");
+  section.appendChild(desc);
+
+  // Tabela de informações básicas
+  const table = document.createElement('table');
+  table.className = 'tc-table';
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Duração</th>
+        <th>${isPassiva ? "Nível" : (it.tagLevel || "Nível")}</th>
+        <th>Alcance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>${it.duracao || "-"}</td>
+        <td>${isPassiva ? (it.nivel || "-") : (it.tagLevelResposta || it.nivel || "-")}</td>
+        <td>${it.alcance || "-"}</td>
+      </tr>
+    </tbody>
+  `;
+  section.appendChild(table);
+
+  // Passivas (Positivo/Negativo)
+  if (isPassiva) {
+    const pos = document.createElement('div');
+    pos.className = 'tc-good';
+    pos.textContent = 'Positivo';
+    section.appendChild(pos);
+
+    const posDesc = document.createElement('div');
+    posDesc.className = 'tc-desc';
+    posDesc.innerHTML = it.positivo || '-';
+    section.appendChild(posDesc);
+
+    const neg = document.createElement('div');
+    neg.className = 'tc-bad';
+    neg.textContent = 'Negativo';
+    section.appendChild(neg);
+
+    const negDesc = document.createElement('div');
+    negDesc.className = 'tc-desc';
+    negDesc.innerHTML = it.negativo || '-';
+    section.appendChild(negDesc);
+  }
+
+  // =====================
+  // CÁLCULO DE CUSTO
+  // =====================
+  const custosMagia = {
+    1: 3, 2: 8, 3: 16, 4: 24, 5: 34,
+    6: 46, 7: 56, 8: 64, 9: 78
+  };
+
+  const custosPassiva = {
+    1: { san: 1, esp: 2 },
+    2: { san: 1, esp: 4 },
+    3: { san: 2, esp: 6 },
+    4: { san: 2, esp: 8 },
+    5: { san: 3, esp: 10 },
+    6: { san: 3, esp: 12 },
+    7: { san: 4, esp: 14 },
+    8: { san: 4, esp: 16 },
+    9: { san: 5, esp: 18 },
+    10: { san: 5, esp: 20 },
+    11: { san: 6, esp: 22 },
+    12: { san: 6, esp: 24 }
+  };
+
+  const nivelAtual = parseInt(it.nivel) || 1;
+  const custoBox = document.createElement('div');
+  custoBox.className = 'tc-costbox';
+  custoBox.style.marginTop = '14px';
+  custoBox.style.padding = '8px 10px';
+  custoBox.style.borderRadius = '6px';
+  custoBox.style.background = 'rgba(255,255,255,0.05)';
+  custoBox.style.fontSize = '14px';
+  custoBox.style.lineHeight = '1.5';
+
+  if (isPassiva) {
+    const custo = custosPassiva[nivelAtual] || { san: '-', esp: '-' };
+    custoBox.innerHTML = `<b>Custo:</b> ${custo.san} Sanidade / ${custo.esp} Especial`;
+  } else {
+    const custo = custosMagia[nivelAtual] || '-';
+    custoBox.innerHTML = `<b>Custo de Conjuração:</b> ${custo} Sanidade`;
+  }
+
+  section.appendChild(custoBox);
+  // =====================
+
+  // Bloco de informações adicionais
+  const infoH2 = document.createElement('div');
+  infoH2.className = 'tc-h2';
+  infoH2.textContent = 'Informações';
+  section.appendChild(infoH2);
+
+  const infoList = [
+    ['Tipo de dano:', it.tipoDano || '-'],
+    ['Elemento:', it.elemento || '-'],
+    ['Teste do conjurador:', it.testeConjurador || '-'],
+    ['Teste do Alvo:', it.testeAlvo || '-']
+  ];
+  infoList.forEach(([label, val]) => {
+    const d = document.createElement('div');
+    d.className = 'tc-desc';
+    d.innerHTML = `<b>${label}</b> ${val}`;
+    section.appendChild(d);
+  });
+
+  box.appendChild(section);
+
+  // Ações (botões)
+  const actions = document.createElement('div');
+  actions.className = 'tc-actions';
+
+  const learned = isLearned(id);
+  const btnLearn = document.createElement('button');
+  btnLearn.className = 'tc-btn primary';
+  btnLearn.textContent = learned ? "Remover do Grimório" : "Aprender";
+  btnLearn.addEventListener('click', () => {
+    toggleLearn(id);
+  });
+  actions.appendChild(btnLearn);
+
+  const btnClose = document.createElement('button');
+  btnClose.className = 'tc-btn ghost';
+  btnClose.textContent = 'Fechar';
+  btnClose.addEventListener('click', hideDetail);
+  actions.appendChild(btnClose);
+
+  box.appendChild(actions);
+
 
     // ===============================
 // APLICAÇÃO CORRETA DE CORES E LAYOUT
@@ -7265,6 +7304,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

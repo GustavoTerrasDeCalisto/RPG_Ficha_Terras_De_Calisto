@@ -2666,6 +2666,212 @@ Bonus por Níveis Do Personagem  </h3>
   testeConjurador: "Libertação",
   testeAlvo: "Brutalidade"
 }
+
+
+     ,   {
+      id: "m4",
+      nome: "Reflexão de Eclipse",
+      sub: "Eklipsens Refleksjon",
+      img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/4fe807a14c95007000191d1e5ed588e0d965b75a_high.png",
+      elemento: "Desconhecido",
+      tipoDano: "Eclipse",
+      descricao: `
+O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o alvo sofre <strong>1d10 de dano de Eclipse</strong> e recebe um bônus de <strong>+1d6 em ataques</strong> durante <strong>2 turnos</strong>. O clone pode atacar os aliados no próximo turno, obrigando-os a fazer um teste de <strong>Agilidade</strong> para não sofrerem dano.
+
+<strong>Condições durante o eclipse:</strong>
+<ul>
+  <li><strong>Invocação Sombria Adicional:</strong> Durante o eclipse, o conjurador pode criar um segundo clone reflexivo que ataca os inimigos por um turno adicional.</li>
+  <li><strong>Distorção de Percepção:</strong> Todos os alvos próximos ao clone têm dificuldade de foco, recebendo <strong>-1 em Conexão</strong> para resistir aos ataques do clone.</li>
+</ul>
+`,
+      duracao: "2 turnos",
+      tagLevel: "Aspirante do Crepúsculo",
+      tagLevelResposta: "Nível 1 – Aspirante do Crepúsculo",
+       nivel:"1",
+      alcance: "30m",
+      testeConjurador: "Conexão",
+      testeAlvo: "Libertação"
+    }
+    ,
+    {
+  id: "m165",
+  nome: "Lâminas do Eclipse",
+  sub: "Eklipsens Klinger",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/ed4d7bbcd227eec5b900e31a45b636c71433a9c1_high.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador imbuí suas espadas, cimitarras e foices com energia do eclipse, aumentando sua eficácia. Os ataques com armas cortantes recebem <strong>+2 de dano</strong>. Além disso, ao acertar um ataque, o conjurador pode escolher entre causar <strong>1d10</strong> de dano adicional de Eclipse ou deixar o alvo com desvantagem em seu próximo ataque.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Lâmina Dupla:</strong> As armas imbuídas duplicam-se temporariamente durante o ataque, atingindo dois alvos simultaneamente.<br>
+  <strong>• Escudo da Escuridão:</strong> O conjurador ganha um escudo de sombras que reduz o dano recebido em <strong>2d6</strong> por turno.<br>
+  `,
+  duracao: "3 turnos",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 2 – Tecelão da Penumbra",
+  nivel:"2",
+  alcance: "Toque",
+  testeConjurador: "Conexão",
+  testeAlvo: "—"
+},
+
+    {
+  id: "m172",
+  nome: "Clone das Sombras",
+  sub: "Clonum Umbra",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/cb56164b7c6f8e1a4f70a84d85d309e61d809b84_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador convoca um clone sombrio que pode atacar os inimigos. No início de cada turno, o clone pode atacar aliados aleatórios, causando o dano da arma empunhada + <strong>2d6 de dano de Eclipse</strong>. Os aliados atacados podem fazer um teste de <strong>Agilidade</strong> para evitar o golpe. Se não houver alvos, o clone pode atacar o próprio conjurador.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Multiplicação Sombria:</strong> Durante um eclipse, surgem <strong>dois clones adicionais</strong> com metade do dano original.<br>
+  <strong>• Frenesi de Eclipse:</strong> Os clones recebem <strong>+1d4 em Agilidade</strong> e causam pavor entre os aliados do alvo, que recebem <strong>-1</strong> em ataques.<br>
+  <em>O clone sempre prioriza atacar com a arma em mãos e age de forma independente.</em><br>
+  `,
+  duracao: "4 turnos ou até sofrer 1d8 golpes",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 3 – Guardião da Meia-Noite",
+  nivel:"3",
+  alcance: "50m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Agilidade"
+}
+
+
+    
+    ,
+    {
+  id: "m167",
+  nome: "Fragmento do Tempo",
+  sub: "Fragmentum Tempus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/b4a36f19fa6869978aa29d1f6dabfdf67548093a_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador busca um objeto do passado ou do futuro, fazendo com que um fragmento apareça ao seu redor. O objeto escolhido pode ter propriedades mágicas ou úteis, proporcionando um <strong>bônus de +3</strong> a uma habilidade relacionada ao objeto. O alvo deve fazer um teste de <strong>Conexão</strong> para resistir à atração do fragmento.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>1. Fluxo Temporal Amplificado:</strong> Permite que o conjurador traga até três objetos temporais do passado ou do futuro simultaneamente, cada um com bônus aleatórios.<br>
+  <strong>2. Congelamento do Momento:</strong> O tempo ao redor do alvo congela brevemente, e o alvo fica paralisado por um turno ou até que outro ataque o atinja.<br><br>
+
+  <strong>Exemplo de objetos Temporais e bônus:</strong><br>
+  <em>PARA OUTROS, FALAR COM MESTRE!!!</em><br><br>
+
+  <strong>Ponteiro de Calisto:</strong> Possui um traço de energia que acelera um movimento específico, permitindo uma ação extra em um único turno para quem o carrega.<br>
+  <strong>Relógio da Eternidade:</strong> Permite ao usuário prever o próximo ataque do alvo e reagir com mais agilidade (<strong>+3</strong> em testes de Agilidade por um turno).<br>
+  <strong>Areia das Eras:</strong> Quando usada em combate, desacelera o tempo para o alvo escolhido, reduzindo seus ataques por turno em <strong>1</strong>.<br>
+  <strong>Ampulheta do Recomeço:</strong> Gera uma área de influência em que o conjurador pode “reverter” uma ação recente, como um movimento ou um ataque fracassado, para um segundo intento.<br>
+  <strong>Bússola da Paradoxa:</strong> Aponta para um momento favorável no futuro imediato, concedendo <strong>+2</strong> em Determinação para o conjurador.<br>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 4 – Mestre do Eclipse",
+  nivel:"4",
+  alcance: "100m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão",
+  testeDt: "10, 15, 20, 25, 30 define a qualidade do item"
+}
+,
+ {
+  id: "m168",
+  nome: "Ilusão Lunar",
+  sub: "Illusio Lunae",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/5719ee14f89ab3f8dc5a2c5aea697dfaf292524d_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador cria uma duplicação da lua no céu, causando um efeito de ilusão em uma área de 50m. Todos os inimigos nessa área devem fazer um teste de <strong>Libertação</strong>. Se falharem, ficam confusos, reduzindo seu movimento em <strong>5m</strong> e recebendo <strong>-1d4</strong> em todos os ataques por <strong>2 turnos</strong>.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Reflexo Duplicado:</strong> A duplicação da lua se torna uma miragem múltipla, desorientando ainda mais os inimigos, que perdem <strong>-2</strong> em todos os testes de Determinação.<br>
+  <strong>• Luz Ilusória:</strong> A ilusão confunde os sentidos, reduzindo a visibilidade dos alvos em <strong>10m</strong>, dificultando sua reação aos ataques do conjurador e aliados.<br>
+  `,
+  duracao: "2 turnos",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 5 – Oráculo das Sombras",
+  nivel:"5",
+  alcance: "30m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+,
+
+    {
+  id: "m169",
+  nome: "Dano do Eclipse",
+  sub: "Eklipseskade",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/29cb86e267a96b8a93a8a5e27ea2c863ff911f06_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador canaliza a energia do eclipse, causando <strong>3d12</strong> de dano ao alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o dano aumenta em <strong>+2d12</strong> e o alvo ganha o lado negativo de “Mutação”.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Armadura Sombria:</strong> O conjurador ganha uma resistência temporária ao dano de Eclipse, absorvendo até <strong>3d10</strong> de dano de ataques.<br>
+  <strong>• Amplificação de Eclipse:</strong> Durante um eclipse, o dano aumenta em <strong>+3d6</strong> e causa uma desvantagem de <strong>-1d4</strong> em testes de Libertação para o alvo.<br>
+  `,
+  duracao: "Instantânea",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 6 – Vidente do Véu",
+  nivel:"6",
+  alcance: "15m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+,
+ {
+  id: "m170",
+  nome: "Mutação Sombria",
+  sub: "Mutatio Obscura",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/45b8e4fe971fb2ac776d04bf14e0401628d7236d_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>A magia causa uma transformação em um alvo, que deve fazer um teste de <strong>Conexão</strong>. Se falhar, ele sofre <strong>5d12</strong> de dano de Eclipse e se torna vulnerável a ataques do conjurador por <strong>1d6 turnos</strong>. O conjurador também ganha apenas o lado positivo de “Mutação”.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Mutação Melhorada:</strong> Durante o eclipse, o conjurador recebe um bônus positivo de “Mutação” permanente, concedendo <strong>+1 em Conexão</strong>.<br>
+  <strong>• Redução de Tamanho:</strong> O alvo encolhe temporariamente, reduzindo seu alcance de ataque pela metade e perdendo <strong>2 de Força</strong> por turno.<br>
+  <em>Cria um eclipse no céu automaticamente ao conjurar.</em><br>
+  `,
+  duracao: "Instantânea, 1d6 turnos",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 7 – Sábio do Oculto",
+  nivel:"7",
+  alcance: "20m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+}
+,
+    
+    {
+  id: "m171",
+  nome: "Cataclismo do Eclipse",
+  sub: "Cataclysmus Eclipse",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/7b2765874d33197e7303f605e2dfd57f65287eab_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Eclipse",
+  descricao: `
+  <p>O conjurador provoca um cataclismo que reverbera pela terra, criando ondas de escuridão e destruição. Todos os alvos em um raio de <strong>200m</strong> devem fazer um teste de <strong>Libertação</strong>. Se falharem, sofrem <strong>8d10</strong> de dano de Eclipse e Sanidade. A mutação pode alterar a aparência de todos dentro da área sem custo, podendo adicionar traços únicos em cada um.</p>
+
+  <strong>Condições durante o eclipse:</strong><br>
+  <strong>• Onda de Eclipse:</strong> O alcance do cataclismo dobra para <strong>400m</strong>, causando <strong>+3d10</strong> de dano adicional de Eclipse.<br>
+  <strong>• Véu Sombrio:</strong> O conjurador pode escolher até <strong>três alvos</strong> e torná-los invisíveis temporariamente, confundindo os inimigos e permitindo ataques furtivos.<br>
+  <em>Cria um eclipse no céu automaticamente ao conjurar.</em><br>
+  `,
+  duracao: "Instantânea",
+  tagLevel: "Lunares",
+  tagLevelResposta: "Nível 8 – Arconte do Infinito",
+  nivel:"8",
+  alcance: "200m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+
 ,
 
 {
@@ -3359,9 +3565,883 @@ Bonus por Níveis Do Personagem  </h3>
   testeAlvo: "Determinação"
 }
 ,
+,
+{
+  id: "m123",
+  nome: "Aura de Atração",
+  sub: "Atrahere aura",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/74f8a8e378d770ba04748d28c00bfc3ed9c39cfe_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Uma aura vibrante envolve o alvo</strong>, atraindo objetos metálicos próximos.</p>
+  <p>Todos os objetos metálicos em um raio de 3m do alvo são puxados em sua direção, causando <strong>2d10 de dano</strong>. O alvo também ganha um <strong>bônus em testes de Conexão</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Iniciado do Fluxo Vital",
+  tagLevelResposta: "Nível 1 – Iniciado do Fluxo Vital",
+  nivel: "1",
+  alcance: "10m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m124",
+  nome: "Aura do Silêncio",
+  sub: "Silentium aura",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/silencio.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Uma aura densa emana do conjurador</strong>, silenciando tudo ao redor.</p>
+  <p>Inimigos dentro de um raio de 5m <strong>não conseguem emitir sons</strong>, sendo incapazes de gritar ou usar habilidades que exijam verbalização.</p>
+  <p>O conjurador recebe <strong>+3 em testes de Intimidação</strong>.</p>
+  `,
+  duracao: "Gasta ação, dura 3 turnos",
+  tagLevel: "Tecelão de Energias",
+  tagLevelResposta: "Nível 2 – Tecelão de Energias",
+  nivel: "2",
+  alcance: "5m (raio)",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+},
+{
+  id: "m125",
+  nome: "Aura de Proteção",
+  sub: "Protegere aura",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/conju.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Uma aura luminosa envolve o alvo</strong>, formando um escudo de luz que absorve parte do dano.</p>
+  <p>O alvo ganha <strong>resistência a um tipo de dano à sua escolha</strong> e um <strong>bônus em testes de Atletismo</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Guardião da Luz Etérea",
+  tagLevelResposta: "Nível 3 – Guardião da Luz Etérea",
+  nivel: "3",
+  alcance: "Toque",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m126",
+  nome: "Aura da Revelação",
+  sub: "Revelatio aura",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/34614a0206e366ccb3ea10111930062410139be3_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Uma aura cintilante revela a verdadeira natureza dos seres ao redor</strong>.</p>
+  <p>Todos os inimigos em um raio de 4m devem realizar um <strong>teste de Determinação</strong>. Se falharem, suas fraquezas ficam expostas, garantindo <strong>acertos críticos</strong> contra o alvo.</p>
+  <p>Para que outros personagens possam se beneficiar, devem <strong>vocalizar a fraqueza em voz alta</strong>. A aura dura 30 minutos ou até o alvo proteger sua fraqueza.</p>
+  <p>O conjurador recebe <strong>+3 em ataques contra esses inimigos</strong> e <strong>+3 em testes de Conhecimento</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Profeta dos Espectros",
+  tagLevelResposta: "Nível 4 – Profeta dos Espectros",
+  nivel: "4",
+  alcance: "4m (raio)",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m127",
+  nome: "Aura da Eternidade",
+  sub: "Aura aeternitatis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/4d2c17dcb0b1d87f22187dff0e27201cd5ab253f_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Conjura uma aura dourada ao redor de um objeto</strong>, tornando-o indestrutível por um período de tempo.</p>
+  <p>O objeto não pode ser danificado por ataques físicos ou mágicos enquanto a aura estiver ativa. Ideal para <strong>proteger itens valiosos ou armas em combate intenso</strong>.</p>
+  `,
+  duracao: "Gasta ação, dura 10 minutos",
+  tagLevel: "Arauto das Correntes Invisíveis",
+  tagLevelResposta: "Nível 5 – Arauto das Correntes Invisíveis",
+  nivel: "5",
+  alcance: "Toque",
+  testeConjurador: "Libertação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m128",
+  nome: "Duplicação Efêmera",
+  sub: "Duplicatio ephemera",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/bb146393b35e2d233ab0e1faf8d32c046fcff82d_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Conjura uma aura que duplica qualquer objeto tocado</strong>.</p>
+  <p>As cópias são perfeitas, mas se desfazem em poeira mágica ao serem tocadas ou usadas.</p>
+  <p>Útil para <strong>distrair inimigos</strong> ou <strong>criar falsificações mágicas</strong> em combate ou cena.</p>
+  `,
+  duracao: "Gasta ação, duração até ser tocado",
+  tagLevel: "Manifestação da Presença Oculta",
+  tagLevelResposta: "Nível 6 – Manifestação da Presença Oculta",
+  nivel: "6",
+  alcance: "Toque",
+  testeConjurador: "Preservação",
+  testeAlvo: "Nenhum"
+},
+{
+  id: "m129",
+  nome: "Luminescência",
+  sub: "Luminence",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/c1495b9575e676dea1ac916f72422a9cf5582fdd_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Cria uma aura negra em sua arma</strong> que amplia o dano.</p>
+  <p>Escolha a cor da aura, ela envolve seu equipamento. Nos <strong>dois próximos acertos</strong>, almas tentam corromper o alvo, causando <strong>4d12 de dano de Aura</strong>.</p>
+  `,
+  duracao: "Gasta ação, dois próximos acertos",
+  tagLevel: "Eco do Poder Interno",
+  tagLevelResposta: "Nível 7 – Eco do Poder Interno",
+  nivel: "7",
+  alcance: "2m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Nenhum"
+},
+{
+  id: "m130",
+  nome: "Ilusão Aural",
+  sub: "Ilusão Aural",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/uuuuuuuuuuuuuuuuuauuu.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Conjura uma falsa aura</strong> em um objeto ou criatura, criando a ilusão de poder extraordinário.</p>
+  <p>O alvo parece envolto em energia intensa, enganando inimigos e forçando-os a se concentrarem nele. O efeito é <strong>totalmente ilusório</strong>.</p>
+  `,
+  duracao: "Gasta ação, dura 10 minutos ou até ser desmascarada",
+  tagLevel: "Vigilante das Sombras Luminosas",
+  tagLevelResposta: "Nível 8 – Vigilante das Sombras Luminosas",
+  nivel: "8",
+  alcance: "10m",
+  testeConjurador: "Libertação",
+  testeAlvo: "Intuição (para desmascarar a ilusão)"
+},
+{
+  id: "m131",
+  nome: "Aura de Retaliação",
+  sub: "Aura retaliare",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/c71eaf3b21985d6b0b0d80bfcd53987450d7e2c9_high.webp?w=768&h=768",
+  elemento: "Poder",
+  tipoDano: "Aura",
+  descricao: `
+  <p><strong>Conjura uma poderosa aura nos punhos</strong>.</p>
+  <p>No próximo ataque, se acertar o alvo, este recebe um <strong>escudo indestrutível por 1 turno</strong>. Todo dano sofrido é refletido em uma <strong>área de 6m ao redor</strong>.</p>
+  <p>O conjurador pode <strong>reposicionar a área de acerto</strong> durante a duração da magia.</p>
+  `,
+  duracao: "Gasta ação, 1 turno",
+  tagLevel: "Sussurradores dos Caminhos Ocultos",
+  tagLevelResposta: "Nível 9 – Sussurradores dos Caminhos Ocultos",
+  nivel: "9",
+  alcance: "Toque",
+  testeConjurador: "Libertação",
+  testeAlvo: "Agilidade (para evitar o efeito de retaliação)"
+}
+,
+{
+  id: "m132",
+  nome: "Sonhos Forçados",
+  sub: "Coactus somnia",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/d57b6f68a831a4b811b2db92e675c306f757b853_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Psicológico",
+  descricao: `
+  <p><strong>O conjurador lança um miasma de suas mãos em direção à cabeça do alvo</strong>. Ao ser atingido, o alvo sente uma dor de cabeça momentânea ao lembrar de seus sonhos mais assombrosos.</p>
+  <p>O alvo sofre <strong>1d10 de dano Psicológico</strong> e tem a chance de ficar com a passiva <strong>Pavor</strong>. Caso esteja apavorado, recebe <strong>1d6 de dano na Sanidade</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Explorador Psíquico",
+  tagLevelResposta: "Nível 1 – Explorador Psíquico",
+  nivel: "1",
+  alcance: "9m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m133",
+  nome: "Punho Platônico",
+  sub: "Platonicus pugnus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-30-1.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Psicológico",
+  descricao: `
+  <p><strong>Elementos sobrenaturais podem ser moldados por você</strong>, e seu punho é envolto por uma graciosidade única.</p>
+  <p>O conjurador deve encostar no alvo, causando <strong>1d10 de dano Psicológico</strong>. Pode gastar <strong>1 ponto de Especial</strong> para tentar uma <strong>acrobacia</strong> e causar dano extra: <strong>1d6 de dano na Sanidade</strong> e o alvo fica <strong>Paralisado</strong>.</p>
+  <p><em>O teste de acrobacia é separado.</em></p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Explorador Psíquico",
+  tagLevelResposta: "Nível 1 – Explorador Psíquico",
+  nivel: "1",
+  alcance: "1m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+},
+{
+  id: "m134",
+  nome: "Penumbra Psíquica",
+  sub: "Umbra Mentalis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/674bf6904f535311a8f315f3a6c0a5aa84a82d27_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Psicológico",
+  descricao: `
+  <p><strong>O conjurador invoca uma aura opressiva de escuridão psíquica</strong> que se espalha por um raio de 10m, afetando todos os inimigos na área.</p>
+  <p>Os alvos sentem isolamento e pavor, tendo dificuldade em executar habilidades complexas. Todos devem fazer um <strong>teste de Conexão</strong> contra o conjurador.</p>
+  <ul>
+    <li><strong>Falha:</strong> Sofrem <strong>4d8 de dano Psíquico</strong> e ficam <strong>Desorientados</strong> por <strong>1d4 turnos</strong>. Enquanto desorientados, não podem usar magias, ataques especiais ou manobras táticas.</li>
+    <li><strong>Cooperação Punida:</strong> Tentar coordenar ações com aliados causa <strong>1d6 de dano na Sanidade</strong>.</li>
+    <li><strong>Tentativa de Ação:</strong> Usar habilidades enquanto desorientado causa <strong>1d6 de dano na Sanidade</strong> por tentativa.</li>
+    <li><strong>Sucesso:</strong> Sofre metade do dano (2d8) e não fica desorientado, mas não pode recuperar Sanidade ou pontos mentais até o fim do combate.</li>
+  </ul>
+  `,
+  duracao: "Fim do combate ou cena",
+  tagLevel: "Mestre da Consciência",
+  tagLevelResposta: "Nível 2 – Mestre da Consciência",
+  nivel: "2",
+  alcance: "10m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m135",
+  nome: "Explosão da Mente Sem Limites",
+  sub: "Mentalis Explosio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/487ec138f2795cb3d8e59bc869360699aae6b4e3_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Psicológico",
+  descricao: `
+  <p><strong>O conjurador cria uma poderosa explosão psíquica</strong> que invade as mentes de todos os inimigos em um raio de 20m, forçando-os a confrontar seus medos mais profundos.</p>
+  <ul>
+    <li><strong>Falha:</strong> Sofrem <strong>5d10 de dano Psíquico</strong> e ficam <strong>Confusos</strong> por <strong>1d4 turnos</strong>, atacando aleatoriamente aliados ou inimigos.</li>
+    <li><strong>Dano Mental:</strong> Cada ataque realizado enquanto confuso causa <strong>1d8 de dano na Sanidade</strong>.</li>
+    <li><strong>Vulnerabilidade:</strong> Alvos confusos recebem <strong>+2d6 de dano Psíquico</strong> de qualquer fonte até o fim da cena.</li>
+    <li><strong>Tentativa de Ação:</strong> Atacar ou defender enquanto confuso causa <strong>1d8 de dano na Sanidade</strong> por tentativa.</li>
+    <li><strong>Sucesso:</strong> Sofrem metade do dano (2d10) e não ficam confusos, mas têm <strong>desvantagem em testes mentais</strong> até o fim da cena.</li>
+  </ul>
+  `,
+  duracao: "Fim do combate ou cena",
+  tagLevel: "Vidente dos Mistérios",
+  tagLevelResposta: "Nível 3 – Vidente dos Mistérios",
+  nivel: "3",
+  alcance: "20m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+},
+{
+  id: "m136",
+  nome: "Diplopia Binocular",
+  sub: "Diplopia binocular",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/c2b4diblopia-binocular.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Psicológico",
+  descricao: `
+  <p><strong>Cria uma cópia idêntica sua</strong> que imita seus movimentos e ataques.</p>
+  <p>O clone permanece até o fim do combate ou cena, tenta reproduzir suas jogadas e causa <strong>metade do seu dano</strong> no mesmo alvo.</p>
+  `,
+  duracao: "Fim do combate ou cena",
+  tagLevel: "Arauto do Inconsciente",
+  tagLevelResposta: "Nível 4 – Arauto do Inconsciente",
+  nivel: "4",
+  alcance: "1m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m137",
+  nome: "Aberração Onírica",
+  sub: "Dream Aberration Invoke",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/4-sono-desconhecido.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Psicológico",
+  descricao: `
+  <p><strong>Transforma o alvo em uma Aberração Onírica</strong>, uma criatura que mistura realidade e pesadelo.</p>
+  <ul>
+    <li><strong>Ataques:</strong> Causa <strong>7d6 de dano Psíquico</strong> à distância.</li>
+    <li><strong>Passiva – Invadir a Mente:</strong> Cria ilusões e confusão em inimigos. Todos em um raio de <strong>20m</strong> devem realizar um teste de <strong>Libertação</strong> ou sofrer <strong>Confusão Onírica</strong> por <strong>1d4 turnos</strong>.</li>
+    <li><strong>Distorção Temporal:</strong> Reduz a velocidade das criaturas em um raio de 15m pela metade.</li>
+    <li><strong>Contaminação:</strong> Alvos afetados devem realizar <strong>teste de Libertação a cada turno</strong> ou entram em <strong>Sonambulismo</strong>, podendo colapsar mentalmente.</li>
+    <li><strong>Propagação:</strong> Caso a transformação não seja revertida, alvos próximos podem se tornar novas Aberrações Oníricas, unindo o mundo real e o dos sonhos.</li>
+  </ul>
+  <details>
+  <summary><strong>Como Curar</strong></summary>
+  <p>Leve o alvo ao <strong>mundo dos sonhos</strong> e confronte seu pesadelo interior em uma jornada onírica. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>. Para curar apenas um alvo, utilize a magia <strong>Limpar</strong>.</p>
+  </details>
+  `,
+  duracao: "Permanente (até ser curado)",
+  tagLevel: "Profeta da Mente Sem Limites",
+  tagLevelResposta: "Nível 5 – Profeta da Mente Sem Limites",
+  nivel: "5",
+  alcance: "20m (raio)",
+  testeConjurador: "Preservação",
+  testeAlvo: "Libertação"
+}
+,
+{
+  id: "m138",
+  nome: "Drenar Essência",
+  sub: "Exhaurire essentia",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/ss.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Mental",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador encara fixamente o inimigo, liberando uma força mental intimidadora que suga sua energia vital. A essência do alvo é drenada e convertida em força para o conjurador.</p>
+  <ul>
+    <li>O alvo sofre <strong>1d12 de dano Mental</strong> na Sanidade.</li>
+    <li>O conjurador recupera <strong>metade do valor causado</strong> em <strong>Sanidade ou Vida</strong>.</li>
+  </ul>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Conjurador da Sinapse",
+  tagLevelResposta: "Nível 1 – Conjurador da Sinapse",
+  nivel: "1",
+  alcance: "2m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+}
+,
+{
+  id: "m139",
+  nome: "Pavor Silencioso",
+  sub: "Silentium Timor",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/fe4fa1d0f66d3486f673418fed8d54a5d98567a5_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Mental",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador silencia completamente a mente do alvo, mergulhando-o em um vazio mental onde até os próprios pensamentos desaparecem.</p>
+  <ul>
+    <li>O alvo deve realizar um <strong>teste de Conexão</strong> ou perder <strong>2d6 de Sanidade</strong>.</li>
+    <li>Se tentar atacar ou lançar magias sob o efeito, sofre <strong>2d12 de dano Mental adicional</strong>.</li>
+  </ul>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Senhor do Pensamento",
+  tagLevelResposta: "Nível 2 – Senhor do Pensamento",
+  nivel: "2",
+  alcance: "6m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+}
+,
+{
+  id: "m140",
+  nome: "Labirinto Mental",
+  sub: "Mentis Labyrinthus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/e1f8521d1631948f3989101a4746918d12055039_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Mental",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador cria um <strong>labirinto psíquico</strong> dentro da mente do alvo, prendendo seus pensamentos em um ciclo interminável de confusão e desespero.</p>
+  <ul>
+    <li>O alvo deve realizar um <strong>teste de Conexão</strong> para escapar.</li>
+    <li>Enquanto preso, o alvo perde <strong>3d8 de Sanidade por turno</strong>.</li>
+    <li>O alvo fica <strong>incapaz de tomar decisões estratégicas</strong>.</li>
+  </ul>
+  `,
+  duracao: "Até escapar",
+  tagLevel: "Sábio da Cognição",
+  tagLevelResposta: "Nível 3 – Sábio da Cognição",
+  nivel: "3",
+  alcance: "10m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+}
+,
+{
+  id: "m141",
+  nome: "Dimensão Secreta",
+  sub: "Secretum dimensio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/35cb15ae5344069821a95f937fd6cf728539d4d6_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Mental",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador arrasta o alvo para uma <strong>dimensão de medo puro</strong>, um reflexo distorcido dos piores pesadelos do mundo.</p>
+  <ul>
+    <li>O alvo sofre <strong>4d6 de dano Mental</strong> e recebe a condição <strong>Apavorado</strong>.</li>
+    <li>Durante seu turno, o alvo pode tentar escapar com um <strong>teste de Conexão</strong> contra o conjurador.</li>
+    <li>Se decidir lutar dentro da dimensão, sofre <strong>-1d6 em qualquer teste de acerto</strong>.</li>
+  </ul>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Arquiteto da Lógica",
+  tagLevelResposta: "Nível 4 – Arquiteto da Lógica",
+  nivel: "4",
+  alcance: "5m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+}
+,
+{
+  id: "m142",
+  nome: "Tempo Turvo",
+  sub: "Bewölktes Wetter",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/tempo-turvo.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Mental",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador altera o próprio <strong>fluxo do tempo</strong> em uma vasta região, gerando distorções imprevisíveis que afetam tudo ao redor.</p>
+  <ul>
+    <li>A área afetada é de até <strong>200km</strong>.</li>
+    <li>O tempo pode <strong>acelerar, retardar ou se fragmentar</strong>, causando envelhecimento, rejuvenescimento ou mutações físicas.</li>
+    <li>O alvo principal deve realizar um <strong>teste de Conexão</strong> ou sofrer <strong>Mutação</strong> ou ficar preso em um <strong>ciclo temporal repetitivo</strong>.</li>
+  </ul>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Vidente do Pensamento Coletivo",
+  tagLevelResposta: "Nível 5 – Vidente do Pensamento Coletivo",
+  nivel: "5",
+  alcance: "200km",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+,
+{
+  id: "m143",
+  nome: "Mente Derretida",
+  sub: "Mens liquefacta",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/4b5020e3b229e7123f3f9f0aaceb6de63c58a2ce_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O alvo sofre dano intenso na cabeça e tem sua mente invadida, sendo forçado a encarar seu pior medo. Ele sofre <strong>2d8 de dano à sanidade</strong> e <strong>1d8 de dano de Distorção</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Explorador da Realidade Quebrada",
+  tagLevelResposta: "Nível 1 – Explorador da Realidade Quebrada",
+  nivel: "1",
+  alcance: "5m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m144",
+  nome: "Membros Extras",
+  sub: "Ekstra medlemmer",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/a559182ed054cac8317ba6500086208937be3bec_high.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O alvo cria membros fantasmas que atacam por conta própria, causando caos e dor. Esses membros o agridem todo turno até o fim do combate.</p>
+  <ul>
+    <li><strong>Alvos pequenos:</strong> 1d12</li>
+    <li><strong>Alvos médios:</strong> 1d10 + 1d8</li>
+    <li><strong>Alvos grandes:</strong> 1d20 + 1d8</li>
+  </ul>
+  <p>(Se o tamanho for diferente, o alvo sofre o próprio dano de ataque.)</p>
+  `,
+  duracao: "Até o fim do combate",
+  tagLevel: "Tecelão de Anomalias",
+  tagLevelResposta: "Nível 2 – Tecelão de Anomalias",
+  nivel: "2",
+  alcance: "7m",
+  testeConjurador: "Brutalidade",
+  testeAlvo: "Agilidade"
+},
+{
+  id: "m145",
+  nome: "Desmanchar",
+  sub: "Dismantle",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/1cb07e0738e8213c2ea6e903a475a5789e8e0e05_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>Um calor distorcido percorre o ar em direção ao inimigo. Se o golpe for certeiro, o conjurador escolhe uma parte do corpo do alvo para derreter:</p>
+  <ul>
+    <li><strong>Mãos:</strong> O alvo é desarmado e sofre 8d4 de dano de Distorção.</li>
+    <li><strong>Pernas:</strong> O alvo cai e precisa gastar o próximo turno para se levantar, sofrendo 6d8 de dano de Distorção.</li>
+  </ul>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Mestre da Distância",
+  tagLevelResposta: "Nível 3 – Mestre da Distância",
+  nivel: "3",
+  alcance: "8m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m146",
+  nome: "Contorcionismo Abissal",
+  sub: "Corpus Abissus",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/9bf3dc7c717c5cf14e0e5069050e024abefe8e87_high-1.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O alvo tem o corpo distorcido de forma grotesca, crescendo tentáculos, garras e membros extras que atacam indiscriminadamente.</p>
+  <p>Todas as criaturas em um raio de <strong>3m</strong>, incluindo o próprio alvo, sofrem <strong>2d6 de dano físico</strong> por turno. O efeito dura <strong>1d4 turnos</strong> ou até o alvo passar em um teste de Conexão para retomar o controle.</p>
+  `,
+  duracao: "1d4 turnos ou cena",
+  tagLevel: "Arauto das Fendas",
+  tagLevelResposta: "Nível 4 – Arauto das Fendas",
+  nivel: "4",
+  alcance: "5m",
+  testeConjurador: "Brutalidade",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m147",
+  nome: "Distorção da Essência",
+  sub: "Essentia Disruptum",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/aa7f3d8a86f0e23b28ed82849a94e675191abafb_high-1.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O alvo tem sua alma parcialmente separada do corpo, criando uma entidade distorcida de energia pura que ataca aliados e inimigos em um raio de <strong>6m</strong>.</p>
+  <p>A entidade causa <strong>4d6 de dano de Distorção</strong> a todos na área e dura <strong>6 turnos</strong>. Ao final de cada turno, o alvo original sofre <strong>2d6 de dano à sanidade</strong>.</p>
+  <p>Se o alvo morrer, a entidade torna-se hostil ao conjurador e só desaparece após sofrer <strong>1d20 golpes</strong>.</p>
+  `,
+  duracao: "6 turnos ou cena",
+  tagLevel: "Guardião do Espaço Fragmentado",
+  tagLevelResposta: "Nível 5 – Guardião do Espaço Fragmentado",
+  nivel: "5",
+  alcance: "8m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+},
+{
+  id: "m148",
+  nome: "Ruptura Material",
+  sub: "Materia Corrumpere",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/a559182ed054cac8317ba6500086208937be3bec_high-1.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador distorce um objeto inanimado, transformando-o em uma criatura viva e grotesca por <strong>8 turnos</strong>.</p>
+  <p>A criatura ataca o alvo mais próximo, causando <strong>2d10 de dano de Distorção</strong> por ataque, possui entre <strong>50 e 150 de vida</strong> e resistência a danos de Maldição e Luz.</p>
+  <p>Após 5 turnos, retorna à forma original.</p>
+  `,
+  duracao: "8 turnos ou cena",
+  tagLevel: "Conjurador do Infinito",
+  tagLevelResposta: "Nível 6 – Conjurador do Infinito",
+  nivel: "6",
+  alcance: "Toque",
+  testeConjurador: "Brutalidade",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m149",
+  nome: "Chamado das Lendas",
+  sub: "Rosae Fictum",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/2be3a69ce277e3f578c3ff063f39fafd6010c15d_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Distorção",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>A realidade se distorce ao redor do alvo, materializando uma criatura mítica envolta em rosas negras e espinhos.</p>
+  <p>A criatura ataca todos em um raio de <strong>12m</strong>, causando <strong>5d8 de dano de Distorção por turno</strong>.</p>
+  <p>O campo se enche de rosas que reduzem o movimento em <strong>5m</strong> e causam <strong>1d6 de dano perfurante</strong> a quem atravessar.</p>
+  <p>A criatura dura <strong>10 turnos</strong>, reflete metade de todo dano recebido e, ao desaparecer, causa uma explosão de pétalas afiadas que infligem <strong>3d6 de dano de Distorção</strong> a todos na área.</p>
+  `,
+  duracao: "10 turnos ou cena",
+  tagLevel: "Alquimista de Roos Bloem",
+  tagLevelResposta: "Nível 7 – Alquimista de Roos Bloem",
+  nivel: "7",
+  alcance: "12m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+}
+{
+  id: "m150",
+  nome: "Névoa Sussurrante",
+  sub: "Nebulosa susurrat",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/f6a016b4305a55c9466d957c102de90e1bfac1b2_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>Uma neblina suave surge ao redor do alvo, sussurrando palavras que distraem a mente.</p>
+  <p>O alvo sofre <strong>1d8 de dano de Névoa</strong> e, enquanto estiver na área, tem <strong>-2 em testes de percepção</strong>.</p>
+  `,
+  duracao: "Até o fim do combate ou 10 minutos",
+  tagLevel: "Iniciado da Névoa",
+  tagLevelResposta: "Nível 1 – Iniciado da Névoa",
+  nivel: "1",
+  alcance: "5m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m151",
+  nome: "Corrente das Brumas",
+  sub: "Fluxus nebulae",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/80192b523ff9fe434e1488dd39f34614b7e48eb8_high-1.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador invoca correntes de neblina que prendem o alvo em um lugar, limitando seu movimento.</p>
+  <p>O alvo sofre <strong>2d8 de dano de Névoa</strong> e deve passar em um teste de <strong>Libertação</strong> para escapar, ou ficará preso por até <strong>2 turnos</strong>.</p>
+  `,
+  duracao: "2 turnos ou até ser quebrado",
+  tagLevel: "Tecelão da Bruma",
+  tagLevelResposta: "Nível 2 – Tecelão da Bruma",
+  nivel: "2",
+  alcance: "7m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Libertação"
+},
+{
+  id: "m152",
+  nome: "Espinhos de Névoa",
+  sub: "Nubila Thorns",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/038a41a4b22c11e5adb247d94d36e64a9941ba64_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>Cria espinhos por todo o corpo do alvo. Os espinhos duram apenas o período da conjuração, causando <strong>6d6 de dano de Névoa</strong> e, no próximo turno, <strong>1d6 adicional</strong>.</p>
+  `,
+  duracao: "Gasta ação",
+  tagLevel: "Mestre da Nebulosidade",
+  tagLevelResposta: "Nível 3 – Mestre da Nebulosidade",
+  nivel: "3",
+  alcance: "4m",
+  testeConjurador: "Agilidade",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m153",
+  nome: "Neblina Aprisionadora",
+  sub: "Nebulosa susurrat",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/bfd687af6ff232fa0e5aa255b86c95242ebde224_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>A névoa se condensa ao redor do alvo (5m), criando uma prisão nebulosa que desorienta e sufoca.</p>
+  <p>O alvo recebe <strong>3d12 de dano de Névoa</strong> e fica com <strong>-4 em todos os testes de ataque e defesa</strong> enquanto preso.</p>
+  <p>A cada turno preso, o alvo sofre <strong>1d6 de dano de sanidade</strong>. Um teste de <strong>Determinação</strong> bem-sucedido pode quebrar a prisão.</p>
+  `,
+  duracao: "3 turnos ou até ser quebrada",
+  tagLevel: "Senhor dos Véus",
+  tagLevelResposta: "Nível 4 – Senhor dos Véus",
+  nivel: "4",
+  alcance: "10m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m154",
+  nome: "Falsa Criatura",
+  sub: "Creatura fallax",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/d62503b77f472690f22fb216bdf17f4886af6209_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa + Elemental (variável)",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador invoca uma criatura de névoa que assume a forma de um dos elementos: <strong>Gelo, Ácido, Fogo, Água, Eletricidade ou Tempestade</strong>.</p>
+  <p>A criatura causa <strong>3d8 de dano de Névoa</strong> e <strong>2d6 de dano adicional</strong> do elemento escolhido.</p>
+  <p>Se derrotada, explode em névoa, causando <strong>1d8 de dano de Névoa</strong> em um raio de 5m.</p>
+  `,
+  duracao: "Até ser destruída ou dispersada",
+  tagLevel: "Profeta do Crepúsculo",
+  tagLevelResposta: "Nível 5 – Profeta do Crepúsculo",
+  nivel: "5",
+  alcance: "15m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Determinação"
+},
+{
+  id: "m155",
+  nome: "Véu de Ilusão",
+  sub: "Velum illusio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-53.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>Cria uma cópia nebulosa idêntica ao alvo, conectada mentalmente ao conjurador.</p>
+  <p>Quando o conjurador decide, a cópia explode, criando uma cortina de névoa de <strong>15m</strong> que causa <strong>3d10 de dano de Névoa</strong> e aplica a condição <strong>Confuso</strong>.</p>
+  <p>O conjurador paga o custo de sanidade apenas quando o clone desaparece, e sofre <strong>+2 de sanidade</strong> a cada turno ou 10 minutos ativo.</p>
+  `,
+  duracao: "Até ser destruído ou explodido",
+  tagLevel: "Guardião da Neblina Ancestral",
+  tagLevelResposta: "Nível 6 – Guardião da Neblina Ancestral",
+  nivel: "6",
+  alcance: "10m",
+  testeConjurador: "Preservação",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m156",
+  nome: "Céu das Névoas",
+  sub: "Caelum nubium",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/235df420d2d0c9cad81a0321def8a61ce0e82108_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>Faz surgir uma névoa negra no céu (ou teto), cobrindo uma área circular de <strong>5m</strong>.</p>
+  <p>Todos na área são sugados para o centro e devem resistir com <strong>Conexão</strong> a cada turno para evitar serem puxados.</p>
+  <p>Se falharem, recebem <strong>2d12 de dano de Névoa</strong> e <strong>2d8 de dano de sanidade</strong>.</p>
+  `,
+  duracao: "Gasta ação, e fica ativo por 1d6 turnos",
+  tagLevel: "Místico da Névoa Profunda",
+  tagLevelResposta: "Nível 7 – Místico da Névoa Profunda",
+  nivel: "7",
+  alcance: "14m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+},
+{
+  id: "m157",
+  nome: "Névoa Sombria",
+  sub: "Calisgo dyster tåke",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/65262a848cd03db53e15962d3d53ad4ee988c398_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Névoa",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador libera uma densa névoa azul que envolve o corpo do alvo como um manto sufocante. A névoa penetra em cada poro e cobre os olhos do alvo com sombras, dificultando sua visão e desorientando-o.</p>
+  <p>A pressão fria e opressiva da névoa causa <strong>4d8 + 1d10 de dano de Névoa</strong>, e seu toque gélido invade a mente do alvo, causando ilusões perturbadoras que deixam sua mente confusa.</p>
+  <p>O alvo pode tentar recuperar a lucidez através de um teste de <strong>Determinação</strong> em cada um de seus turnos, lutando para dissipar as sombras que cegam e confundem seus sentidos.</p>
+ <details>
+  <summary><strong>Efeito Adicional:</strong></summary>
+  <p>Uma vez que a névoa toca o alvo, uma sombra misteriosa se prende a ele, seguindo-o à espreita. Essa entidade é um vulto indistinto que o alvo percebe apenas de relance, como uma figura à margem de sua visão — nunca tem certeza se realmente a viu.</p>
+  <p>Esse efeito é <strong>permanente até ser desfeito</strong>. Em momentos de extrema vulnerabilidade, como quando o alvo estiver caído ou à beira da morte, a sombra revela sua verdadeira forma e ataca, drenando sua energia vital com um golpe de <strong>1d20 de dano de Névoa</strong>. Se a sombra causar um <strong>golpe crítico</strong>, seu dano é multiplicado por <strong>x3</strong>.</p>
+  <p>Para se livrar dessa maldição, o alvo deve encontrar um <strong>ancião das artes da Névoa</strong> e realizar um <strong>rito de passagem</strong> que separa corpo e alma da criatura. Caso falhe, a sombra continuará a persegui-lo eternamente.</p>
+  <p>Se a sombra executar o alvo em seu ataque final, ela desaparece — porém todos os presentes devem realizar um teste de <strong>Determinação</strong>. Aqueles que falharem entram em <strong>estado de Pavor</strong> e sofrem <strong>1d20 de dano à sanidade</strong>, sentindo a presença sombria se afastar enquanto suas mentes são marcadas pelo terror.</p>
+</details>
 
+  `,
+  duracao: "Até o alvo superar a condição Confuso e se livrar da sombra",
+  tagLevel: "Sombra do Desconhecido",
+  tagLevelResposta: "Nível 8 – Sombra do Desconhecido",
+  nivel: "8",
+  alcance: "10m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+}{
+  id: "m158",
+  nome: "Sonho Frágil",
+  sub: "Verus infirma somnia",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-55.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Sono",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador lança uma aura de sono frágil sobre o alvo, fazendo-o sentir uma sonolência irresistível. O alvo deve realizar um teste de <strong>Determinação</strong> para resistir à magia, e se falhar, cairá em um sono leve por 1 turno, onde suas defesas ficam comprometidas.</p>
+  <p>Enquanto dorme, o alvo sofre <strong>2d6 de dano de Sono</strong>. Se o alvo for atacado enquanto dorme, ele desperta, mas sofre uma penalidade de <strong>-2 em suas próximas ações</strong> devido à desorientação.</p>
 
-    
+  <details>
+    <summary><strong>Efeito adicional:</strong></summary>
+    <p>Se o alvo estiver dormindo quando a magia for conjurada ou adormecer após o uso, sofre <strong>1d6 de dano adicional de Sono</strong> e suas resistências não funcionam por mais 1 turno.</p>
+    <p>Se estiver em <strong>sonambulismo</strong>, falha automaticamente no teste de Determinação e cai em um sono profundo por <strong>2 turnos</strong>, sofrendo <strong>3d6 de dano de Sono</strong> enquanto incapacitado.</p>
+    <p>Se estiver em <strong>estado de preguiça</strong>, sofre <strong>-2 em todos os testes de defesa</strong> e, ao acordar, deve realizar um novo teste de Determinação para evitar cair novamente em um sono leve.</p>
+  </details>
+  `,
+  duracao: "1 turno",
+  tagLevel: "Aspirante dos Sonhos",
+  tagLevelResposta: "Nível 1 – Aspirante dos Sonhos",
+  nivel: "1",
+  alcance: "8m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+
+{
+  id: "m159",
+  nome: "Paralisia Onírica",
+  sub: "Somnus immobilis",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/asasass.png?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Sono",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador canaliza uma energia poderosa que imobiliza o alvo em um estado entre o sono e a vigília. O alvo fica completamente imóvel por <strong>2d4 turnos</strong>, incapaz de agir, mas consciente de tudo ao redor.</p>
+  <p>Durante esse tempo, o alvo sente o peso de uma criatura invisível pressionando seu peito, causando <strong>3d8 de dano de Sono por turno</strong>. Para escapar, o alvo pode tentar um teste de <strong>Determinação</strong> no final de cada turno.</p>
+
+  <details>
+    <summary><strong>Efeito adicional:</strong></summary>
+    <p>Após o término da paralisia, o alvo sofre uma penalidade de <strong>-3 em movimento</strong> por 2 turnos.</p>
+    <p>Se o alvo estiver em <strong>preguiça</strong>, sofre <strong>-4 em testes de movimento</strong> e fica incapacitado por mais 1 turno após a magia.</p>
+    <p>Se estiver <strong>dormindo</strong>, não é afetado, mas ao acordar sofre <strong>3d8 de dano de Sono</strong>.</p>
+    <p>Se estiver em <strong>sonambulismo</strong>, torna-se imune à paralisia, mas deve fazer um teste de Determinação para evitar ser surpreendido e sofrer <strong>2d8 de dano adicional</strong> ao despertar.</p>
+  </details>
+  `,
+  duracao: "2d4 turnos",
+  tagLevel: "Tecelão de Devaneios",
+  tagLevelResposta: "Nível 2 – Tecelão de Devaneios",
+  nivel: "2",
+  alcance: "10m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+
+{
+  id: "m160",
+  nome: "Pesadelo Sombrio",
+  sub: "Somni rector",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/748abec0b147088bcf6de54fa06efa4f1818acf6_high-1.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Sono",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador invoca um pesadelo terrível que arrasta o alvo para o reino dos sonhos sombrios. O alvo revive seus piores medos, ficando incapacitado por <strong>3d4 turnos</strong> e sofrendo <strong>4d10 de dano de Sono</strong>.</p>
+  <p>No final do efeito, o alvo deve realizar um teste de <strong>Determinação</strong>. Se falhar, permanece <strong>Paralisado</strong> por mais <strong>1d4 turnos</strong>.</p>
+
+  <details>
+    <summary><strong>Efeito adicional:</strong></summary>
+    <p>Se o alvo não escapar do pesadelo, uma <strong>sombra persistente</strong> o seguirá, causando <strong>1d6 de dano de Sono</strong> por turno até ser derrotado (requer <strong>1d12 acertos</strong> para desaparecer).</p>
+    <p>Se o alvo estiver <strong>dormindo</strong> ou adormecer após o uso, o dano adicional aumenta para <strong>6d10</strong> e o tempo de incapacidade aumenta em <strong>1d4 turnos</strong>.</p>
+  </details>
+  `,
+  duracao: "3d4 turnos",
+  tagLevel: "Guardião dos Subconscientes",
+  tagLevelResposta: "Nível 3 – Guardião dos Subconscientes",
+  nivel: "3",
+  alcance: "12m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Determinação"
+},
+
+{
+  id: "m161",
+  nome: "Sonhos Reais",
+  sub: "Verus somnia",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/b8e5e4f25ef84ac9ca0f70358858cfd59c55e426_high.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Sono",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O alvo se contorce de dor, sua mente é invadida por ilusões e pesadelos que tomam forma no campo de batalha. O conjurador rola <strong>1d4</strong> e, dependendo do resultado, um inimigo extra é criado, focando apenas o alvo.</p>
+  <p>No impacto, o alvo sofre <strong>3d10 de dano de Sono + 4d8 de Sanidade</strong>. As assombrações duram <strong>1d10 turnos</strong> ou desaparecem após receber <strong>1d6 acertos</strong>.</p>
+
+  <details>
+    <summary><strong>Detalhes do Efeito:</strong></summary>
+    <p>As criaturas surgem de acordo com os medos do alvo. O Mestre pode escolher ou criar a criatura com base no pesadelo descrito.</p>
+    <ul>
+      <li>1 – Criatura de Desconhecido</li>
+      <li>2 – Criatura de Caos</li>
+      <li>3 – Criatura de Fé</li>
+      <li>4 – Criatura de Poder</li>
+    </ul>
+  </details>
+  `,
+  duracao: "1d10 turnos ou 1d6 acertos",
+  tagLevel: "Senhor do Sono Eterno",
+  tagLevelResposta: "Nível 4 – Senhor do Sono Eterno",
+  nivel: "4",
+  alcance: "4m",
+  testeConjurador: "Conexão",
+  testeAlvo: "Conexão"
+},
+
     
     {
     id: "m166",
@@ -3387,210 +4467,54 @@ alcance: "Ilimitado (através do tempo)",
 testeConjurador: "Conexão",
 testeAlvo: "Libertação"
 },
-     {
-      id: "m4",
-      nome: "Reflexão de Eclipse",
-      sub: "Eklipsens Refleksjon",
-      img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/4fe807a14c95007000191d1e5ed588e0d965b75a_high.png",
-      elemento: "Desconhecido",
-      tipoDano: "Eclipse",
-      descricao: `
-O conjurador cria uma imagem reflexiva de si mesmo que ataca o alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o alvo sofre <strong>1d10 de dano de Eclipse</strong> e recebe um bônus de <strong>+1d6 em ataques</strong> durante <strong>2 turnos</strong>. O clone pode atacar os aliados no próximo turno, obrigando-os a fazer um teste de <strong>Agilidade</strong> para não sofrerem dano.
-
-<strong>Condições durante o eclipse:</strong>
-<ul>
-  <li><strong>Invocação Sombria Adicional:</strong> Durante o eclipse, o conjurador pode criar um segundo clone reflexivo que ataca os inimigos por um turno adicional.</li>
-  <li><strong>Distorção de Percepção:</strong> Todos os alvos próximos ao clone têm dificuldade de foco, recebendo <strong>-1 em Conexão</strong> para resistir aos ataques do clone.</li>
-</ul>
-`,
-      duracao: "2 turnos",
-      tagLevel: "Aspirante do Crepúsculo",
-      tagLevelResposta: "Nível 1 – Aspirante do Crepúsculo",
-       nivel:"1",
-      alcance: "30m",
-      testeConjurador: "Conexão",
-      testeAlvo: "Libertação"
-    }
-    ,
-    {
-  id: "m165",
-  nome: "Lâminas do Eclipse",
-  sub: "Eklipsens Klinger",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/ed4d7bbcd227eec5b900e31a45b636c71433a9c1_high.png?w=768&h=768",
+{
+  id: "m162",
+  nome: "Dimensão dos Sonhos",
+  sub: "Somnium dimensio",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/4-portas-dimencionais.webp?w=768&h=768",
   elemento: "Desconhecido",
-  tipoDano: "Eclipse",
+  tipoDano: "—",
   descricao: `
-  <p>O conjurador imbuí suas espadas, cimitarras e foices com energia do eclipse, aumentando sua eficácia. Os ataques com armas cortantes recebem <strong>+2 de dano</strong>. Além disso, ao acertar um ataque, o conjurador pode escolher entre causar <strong>1d10</strong> de dano adicional de Eclipse ou deixar o alvo com desvantagem em seu próximo ataque.</p>
-
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>• Lâmina Dupla:</strong> As armas imbuídas duplicam-se temporariamente durante o ataque, atingindo dois alvos simultaneamente.<br>
-  <strong>• Escudo da Escuridão:</strong> O conjurador ganha um escudo de sombras que reduz o dano recebido em <strong>2d6</strong> por turno.<br>
-  `,
-  duracao: "3 turnos",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 2 – Tecelão da Penumbra",
-  nivel:"2",
-  alcance: "Toque",
-  testeConjurador: "Conexão",
-  testeAlvo: "—"
-},
-
-    {
-  id: "m172",
-  nome: "Clone das Sombras",
-  sub: "Clonum Umbra",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/cb56164b7c6f8e1a4f70a84d85d309e61d809b84_high.webp?w=768&h=768",
-  elemento: "Desconhecido",
-  tipoDano: "Eclipse",
-  descricao: `
-  <p>O conjurador convoca um clone sombrio que pode atacar os inimigos. No início de cada turno, o clone pode atacar aliados aleatórios, causando o dano da arma empunhada + <strong>2d6 de dano de Eclipse</strong>. Os aliados atacados podem fazer um teste de <strong>Agilidade</strong> para evitar o golpe. Se não houver alvos, o clone pode atacar o próprio conjurador.</p>
-
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>• Multiplicação Sombria:</strong> Durante um eclipse, surgem <strong>dois clones adicionais</strong> com metade do dano original.<br>
-  <strong>• Frenesi de Eclipse:</strong> Os clones recebem <strong>+1d4 em Agilidade</strong> e causam pavor entre os aliados do alvo, que recebem <strong>-1</strong> em ataques.<br>
-  <em>O clone sempre prioriza atacar com a arma em mãos e age de forma independente.</em><br>
-  `,
-  duracao: "4 turnos ou até sofrer 1d8 golpes",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 3 – Guardião da Meia-Noite",
-  nivel:"3",
-  alcance: "50m",
-  testeConjurador: "Conexão",
-  testeAlvo: "Agilidade"
-}
-
-
-    
-    ,
-    {
-  id: "m167",
-  nome: "Fragmento do Tempo",
-  sub: "Fragmentum Tempus",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/b4a36f19fa6869978aa29d1f6dabfdf67548093a_high.webp?w=768&h=768",
-  elemento: "Desconhecido",
-  tipoDano: "Eclipse",
-  descricao: `
-  <p>O conjurador busca um objeto do passado ou do futuro, fazendo com que um fragmento apareça ao seu redor. O objeto escolhido pode ter propriedades mágicas ou úteis, proporcionando um <strong>bônus de +3</strong> a uma habilidade relacionada ao objeto. O alvo deve fazer um teste de <strong>Conexão</strong> para resistir à atração do fragmento.</p>
-
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>1. Fluxo Temporal Amplificado:</strong> Permite que o conjurador traga até três objetos temporais do passado ou do futuro simultaneamente, cada um com bônus aleatórios.<br>
-  <strong>2. Congelamento do Momento:</strong> O tempo ao redor do alvo congela brevemente, e o alvo fica paralisado por um turno ou até que outro ataque o atinja.<br><br>
-
-  <strong>Exemplo de objetos Temporais e bônus:</strong><br>
-  <em>PARA OUTROS, FALAR COM MESTRE!!!</em><br><br>
-
-  <strong>Ponteiro de Calisto:</strong> Possui um traço de energia que acelera um movimento específico, permitindo uma ação extra em um único turno para quem o carrega.<br>
-  <strong>Relógio da Eternidade:</strong> Permite ao usuário prever o próximo ataque do alvo e reagir com mais agilidade (<strong>+3</strong> em testes de Agilidade por um turno).<br>
-  <strong>Areia das Eras:</strong> Quando usada em combate, desacelera o tempo para o alvo escolhido, reduzindo seus ataques por turno em <strong>1</strong>.<br>
-  <strong>Ampulheta do Recomeço:</strong> Gera uma área de influência em que o conjurador pode “reverter” uma ação recente, como um movimento ou um ataque fracassado, para um segundo intento.<br>
-  <strong>Bússola da Paradoxa:</strong> Aponta para um momento favorável no futuro imediato, concedendo <strong>+2</strong> em Determinação para o conjurador.<br>
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador abre um portal para a Dimensão dos Sonhos, uma realidade onde espaço e tempo se distorcem. Permite viajar instantaneamente até <strong>450 km</strong> de distância.</p>
+  <p>Dentro da dimensão, criaturas enfrentam <strong>distorções temporais</strong> e <strong>ilusões mutáveis</strong> que confundem percepção e realidade. Qualquer criatura que tentar seguir deve realizar um teste de <strong>Libertação</strong> para não se perder nas distorções.</p>
   `,
   duracao: "Gasta ação",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 4 – Mestre do Eclipse",
-  nivel:"4",
-  alcance: "100m",
+  tagLevel: "Profeta das Visões Oníricas",
+  tagLevelResposta: "Nível 5 – Profeta das Visões Oníricas",
+  nivel: "5",
+  alcance: "450 km",
   testeConjurador: "Conexão",
-  testeAlvo: "Conexão",
-  testeDt: "10, 15, 20, 25, 30 define a qualidade do item"
-}
-,
- {
-  id: "m168",
-  nome: "Ilusão Lunar",
-  sub: "Illusio Lunae",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/5719ee14f89ab3f8dc5a2c5aea697dfaf292524d_high.webp?w=768&h=768",
-  elemento: "Desconhecido",
-  tipoDano: "Eclipse",
-  descricao: `
-  <p>O conjurador cria uma duplicação da lua no céu, causando um efeito de ilusão em uma área de 50m. Todos os inimigos nessa área devem fazer um teste de <strong>Libertação</strong>. Se falharem, ficam confusos, reduzindo seu movimento em <strong>5m</strong> e recebendo <strong>-1d4</strong> em todos os ataques por <strong>2 turnos</strong>.</p>
+  testeAlvo: "Libertação"
+},
 
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>• Reflexo Duplicado:</strong> A duplicação da lua se torna uma miragem múltipla, desorientando ainda mais os inimigos, que perdem <strong>-2</strong> em todos os testes de Determinação.<br>
-  <strong>• Luz Ilusória:</strong> A ilusão confunde os sentidos, reduzindo a visibilidade dos alvos em <strong>10m</strong>, dificultando sua reação aos ataques do conjurador e aliados.<br>
+{
+  id: "m163",
+  nome: "Encontro com Morpheus",
+  sub: "Møte med Enkoni",
+  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/4-dimensao-dos-sonhos.webp?w=768&h=768",
+  elemento: "Desconhecido",
+  tipoDano: "Sono",
+  descricao: `
+  <p><strong>O que acontece quando usa?</strong></p>
+  <p>O conjurador abre um portal para o reino dos sonhos e conversa com Morpheus, o guardião dos sonhos. Durante o encontro, pode moldar a realidade, distorcendo o espaço e o tempo em um raio de <strong>40 metros</strong>.</p>
+  <p>Inimigos devem realizar testes de <strong>Libertação</strong> a cada turno para não ficarem presos em um ciclo de sonhos ilusórios, sofrendo <strong>3d12 de dano de Sono</strong> por turno enquanto estiverem presos.</p>
+
+  <details>
+    <summary><strong>Efeito adicional:</strong></summary>
+    <p>O conjurador pode se teletransportar para junto de Morpheus durante o combate e alterar um aspecto fundamental da realidade uma vez por combate.</p>
+    <p><strong>Exemplos de alteração:</strong> impedir inimigos de atacar por 1 turno, mudar o terreno, ou garantir acertos críticos automáticos para aliados.</p>
+  </details>
   `,
-  duracao: "2 turnos",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 5 – Oráculo das Sombras",
-  nivel:"5",
-  alcance: "30m",
+  duracao: "Gasta ação",
+  tagLevel: "Apanhador dos Pesadelos",
+  tagLevelResposta: "Nível 6 – Apanhador dos Pesadelos",
+  nivel: "6",
+  alcance: "–",
   testeConjurador: "Conexão",
   testeAlvo: "Libertação"
 }
-,
-
-    {
-  id: "m169",
-  nome: "Dano do Eclipse",
-  sub: "Eklipseskade",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/29cb86e267a96b8a93a8a5e27ea2c863ff911f06_high.webp?w=768&h=768",
-  elemento: "Desconhecido",
-  tipoDano: "Eclipse",
-  descricao: `
-  <p>O conjurador canaliza a energia do eclipse, causando <strong>3d12</strong> de dano ao alvo. O alvo deve fazer um teste de <strong>Libertação</strong>. Se falhar, o dano aumenta em <strong>+2d12</strong> e o alvo ganha o lado negativo de “Mutação”.</p>
-
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>• Armadura Sombria:</strong> O conjurador ganha uma resistência temporária ao dano de Eclipse, absorvendo até <strong>3d10</strong> de dano de ataques.<br>
-  <strong>• Amplificação de Eclipse:</strong> Durante um eclipse, o dano aumenta em <strong>+3d6</strong> e causa uma desvantagem de <strong>-1d4</strong> em testes de Libertação para o alvo.<br>
-  `,
-  duracao: "Instantânea",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 6 – Vidente do Véu",
-  nivel:"6",
-  alcance: "15m",
-  testeConjurador: "Conexão",
-  testeAlvo: "Libertação"
-}
-,
- {
-  id: "m170",
-  nome: "Mutação Sombria",
-  sub: "Mutatio Obscura",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/45b8e4fe971fb2ac776d04bf14e0401628d7236d_high.webp?w=768&h=768",
-  elemento: "Desconhecido",
-  tipoDano: "Eclipse",
-  descricao: `
-  <p>A magia causa uma transformação em um alvo, que deve fazer um teste de <strong>Conexão</strong>. Se falhar, ele sofre <strong>5d12</strong> de dano de Eclipse e se torna vulnerável a ataques do conjurador por <strong>1d6 turnos</strong>. O conjurador também ganha apenas o lado positivo de “Mutação”.</p>
-
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>• Mutação Melhorada:</strong> Durante o eclipse, o conjurador recebe um bônus positivo de “Mutação” permanente, concedendo <strong>+1 em Conexão</strong>.<br>
-  <strong>• Redução de Tamanho:</strong> O alvo encolhe temporariamente, reduzindo seu alcance de ataque pela metade e perdendo <strong>2 de Força</strong> por turno.<br>
-  <em>Cria um eclipse no céu automaticamente ao conjurar.</em><br>
-  `,
-  duracao: "Instantânea, 1d6 turnos",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 7 – Sábio do Oculto",
-  nivel:"7",
-  alcance: "20m",
-  testeConjurador: "Conexão",
-  testeAlvo: "Conexão"
-}
-,
-    
-    {
-  id: "m171",
-  nome: "Cataclismo do Eclipse",
-  sub: "Cataclysmus Eclipse",
-  img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/7b2765874d33197e7303f605e2dfd57f65287eab_high.webp?w=768&h=768",
-  elemento: "Desconhecido",
-  tipoDano: "Eclipse",
-  descricao: `
-  <p>O conjurador provoca um cataclismo que reverbera pela terra, criando ondas de escuridão e destruição. Todos os alvos em um raio de <strong>200m</strong> devem fazer um teste de <strong>Libertação</strong>. Se falharem, sofrem <strong>8d10</strong> de dano de Eclipse e Sanidade. A mutação pode alterar a aparência de todos dentro da área sem custo, podendo adicionar traços únicos em cada um.</p>
-
-  <strong>Condições durante o eclipse:</strong><br>
-  <strong>• Onda de Eclipse:</strong> O alcance do cataclismo dobra para <strong>400m</strong>, causando <strong>+3d10</strong> de dano adicional de Eclipse.<br>
-  <strong>• Véu Sombrio:</strong> O conjurador pode escolher até <strong>três alvos</strong> e torná-los invisíveis temporariamente, confundindo os inimigos e permitindo ataques furtivos.<br>
-  <em>Cria um eclipse no céu automaticamente ao conjurar.</em><br>
-  `,
-  duracao: "Instantânea",
-  tagLevel: "Lunares",
-  tagLevelResposta: "Nível 8 – Arconte do Infinito",
-  nivel:"8",
-  alcance: "200m",
-  testeConjurador: "Conexão",
-  testeAlvo: "Libertação"
-}
-
+ 
   ],
   passivas: [
 {
@@ -5305,6 +6229,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -5138,60 +5138,98 @@ if (subEl) {
   </div>
 </div>
   
-          <div class="form-row">
-            <div class="form-group2">
-              <label for="for">Brutalidade:</label>
-              <input type="number" id="for" name="for" min="8" max="99" value="14" required>
-              <div class="bonus-group">
-                <span>Bônus de Teste: <span id="for-bonus-test">0</span></span>
-                <span>Bônus de Dano: <span id="for-bonus-damage">0</span></span>
-              </div>
-            </div>
-            <div class="form-group2">
-              <label for="des">Agilidade:</label>
-              <input type="number" id="des" name="des" min="8" max="99" value="14" required>
-              <div class="bonus-group">
-                <span>Bônus de Teste: <span id="des-bonus-test">0</span></span>
-                <span>Bônus de Dano: <span id="des-bonus-damage">0</span></span>
-              </div>
-            </div>
-            <div class="form-group2">
-              <label for="con">Determinação:</label>
-              <input type="number" id="con" name="con" min="8" max="99" value="14" required>
-              <div class="bonus-group">
-                <span>Bônus de Teste: <span id="con-bonus-test">0</span></span>
-                <span>Bônus de Dano: <span id="con-bonus-damage">0</span></span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="form-row">
-            <div class="form-group2">
-              <label for="int">Preservação:</label>
-              <input type="number" id="int" name="int" min="8" max="99" value="14" required>
-              <div class="bonus-group">
-                <span>Bônus de Teste: <span id="int-bonus-test">0</span></span>
-                <span>Bônus de Dano: <span id="int-bonus-damage">0</span></span>
-              </div>
-            </div>
-            <div class="form-group2">
-              <label for="sab">Libertação:</label>
-              <input type="number" id="sab" name="sab" min="8" max="99" value="14" required>
-              <div class="bonus-group">
-                <span>Bônus de Teste: <span id="sab-bonus-test">0</span></span>
-                <span>Bônus de Dano: <span id="sab-bonus-damage">0</span></span>
-              </div>
-            </div>
-            <div class="form-group2">
-              <label for="car">Conexão:</label>
-              <input type="number" id="car" name="car" min="8" max="99" value="14" required>
-              <div class="bonus-group">
-                <span>Bônus de Teste: <span id="car-bonus-test">0</span></span>
-                <span>Bônus de Dano: <span id="car-bonus-damage">0</span></span>
-              </div>
-            </div>
-          </div>
-  
+<div class="form-row">
+  <div class="form-group2">
+    <label for="for">Brutalidade:</label>
+    <div class="input-with-dice">
+      <input type="number" id="for" name="for" min="8" max="99" value="14" required>
+      <button class="roll-attr-dice" data-attr="for">🎲</button>
+    </div>
+    <div class="bonus-group">
+      <span>Bônus de Teste: <span id="for-bonus-test">0</span></span>
+      <span>Bônus de Dano: <span id="for-bonus-damage">0</span></span>
+    </div>
+  </div>
+
+  <div class="form-group2">
+    <label for="des">Agilidade:</label>
+    <div class="input-with-dice">
+      <input type="number" id="des" name="des" min="8" max="99" value="14" required>
+      <button class="roll-attr-dice" data-attr="des">🎲</button>
+    </div>
+    <div class="bonus-group">
+      <span>Bônus de Teste: <span id="des-bonus-test">0</span></span>
+      <span>Bônus de Dano: <span id="des-bonus-damage">0</span></span>
+    </div>
+  </div>
+
+  <div class="form-group2">
+    <label for="con">Determinação:</label>
+    <div class="input-with-dice">
+      <input type="number" id="con" name="con" min="8" max="99" value="14" required>
+      <button class="roll-attr-dice" data-attr="con">🎲</button>
+    </div>
+    <div class="bonus-group">
+      <span>Bônus de Teste: <span id="con-bonus-test">0</span></span>
+      <span>Bônus de Dano: <span id="con-bonus-damage">0</span></span>
+    </div>
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="form-group2">
+    <label for="int">Preservação:</label>
+    <div class="input-with-dice">
+      <input type="number" id="int" name="int" min="8" max="99" value="14" required>
+      <button class="roll-attr-dice" data-attr="int">🎲</button>
+    </div>
+    <div class="bonus-group">
+      <span>Bônus de Teste: <span id="int-bonus-test">0</span></span>
+      <span>Bônus de Dano: <span id="int-bonus-damage">0</span></span>
+    </div>
+  </div>
+
+  <div class="form-group2">
+    <label for="sab">Libertação:</label>
+    <div class="input-with-dice">
+      <input type="number" id="sab" name="sab" min="8" max="99" value="14" required>
+      <button class="roll-attr-dice" data-attr="sab">🎲</button>
+    </div>
+    <div class="bonus-group">
+      <span>Bônus de Teste: <span id="sab-bonus-test">0</span></span>
+      <span>Bônus de Dano: <span id="sab-bonus-damage">0</span></span>
+    </div>
+  </div>
+
+  <div class="form-group2">
+    <label for="car">Conexão:</label>
+    <div class="input-with-dice">
+      <input type="number" id="car" name="car" min="8" max="99" value="14" required>
+      <button class="roll-attr-dice" data-attr="car">🎲</button>
+    </div>
+    <div class="bonus-group">
+      <span>Bônus de Teste: <span id="car-bonus-test">0</span></span>
+      <span>Bônus de Dano: <span id="car-bonus-damage">0</span></span>
+    </div>
+  </div>
+</div>
+
+  <style>
+
+    .roll-attr-dice {
+  margin-left: 5px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.roll-attr-dice:hover {
+  transform: scale(1.2);
+}
+
+  </style>
           <div class="ButonsSave">
             <form id="character-form">
                 <div class="button-group">
@@ -5267,6 +5305,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

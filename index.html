@@ -5065,39 +5065,40 @@ if (subEl) {
   <div id="equippedItemSlot"></div>
 </div>
 <!-- Botão para abrir o popup -->
-<button id="openPopup" class="botao-rolagem">Abrir Rolagem de Dano</button>
+<button id="openPopup" class="rolagem-btn"></button>
 <style>
-  .botao-rolagem {
-  background-image: url('/imagens/RolarDados.png'); /* Caminho da imagem do botão */
-  background-size: cover;
+  /* Botão de Rolagem */
+.rolagem-btn {
+  background-image: url('imagens/RolarDados.png'); /* caminho da nova imagem */
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  
+
+  position: relative;
+  z-index: 2 !important;
+
+  width: 250px;   /* ajuste conforme o tamanho do botão RolarDados.png */
+  height: 80px;
+
   border: none;
-  width: 420px;         /* ajuste conforme o tamanho do seu botão */
-  height: 140px;        /* ajuste conforme o tamanho da imagem */
-  color: #f3e0b0;       /* cor parecida com o texto da imagem */
-  font-family: 'Cinzel', serif; /* fonte com estilo medieval */
-  font-size: 36px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px #000;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.1s ease, filter 0.1s ease;
+  background-color: transparent;
+
+  transition: filter 0.2s ease, transform 0.1s ease;
 }
 
-.botao-rolagem:hover {
-  transform: scale(1.05);
+.rolagem-btn:hover {
   filter: brightness(1.1);
+  transform: scale(1.02);
 }
 
-.botao-rolagem:active {
-  transform: scale(0.98);
+.rolagem-btn:active {
   filter: brightness(0.9);
+  transform: scale(0.98);
 }
+
 </style>
 <!-- Popup -->
 <div id="dicePopup" class="popup">
@@ -5255,6 +5256,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

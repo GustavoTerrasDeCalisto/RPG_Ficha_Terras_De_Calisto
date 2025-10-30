@@ -5173,6 +5173,336 @@ alcance: "1m",
 testeConjurador: "Preservação",
 testeAlvo: "Determinação"
 }
+{
+id: "m218",
+nome: "Dominação da Água",
+sub: "Aquae dominationis",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/chicotes-de-agua.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Água",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Líquidos rodeiam o corpo do conjurador e são lançados contra o inimigo. O líquido aquece no ar, e caso acerte, o alvo tem seu movimento reduzido em <strong>5m</strong> e sofre <strong>1d10 de dano de Água</strong>. Pode deixar os alvos <strong>Molhados</strong>.</p>
+`,
+duracao: "Gasta ação",
+tagLevel: "Hidrocinese",
+tagLevelResposta: "Nível 1 – Iniciado da Maré",
+nivel: "1",
+alcance: "6m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m219",
+nome: "Forma da Água",
+sub: "Aquae creatura",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/a-forma-da-agua.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Água",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador cria um ser marinho inteiramente feito de água que se lança contra o alvo, envolvendo-o e atacando por <strong>1d4 turnos</strong>. Esse ser causa <strong>3d8 de dano de Água</strong> a cada turno, podendo deixar o alvo <strong>Molhado</strong> e restringindo seus movimentos — o alvo não consegue se mover nem esquivar de ataques à distância enquanto estiver preso.</p>
+`,
+duracao: "1d4 turnos",
+tagLevel: "Hidrocinese",
+tagLevelResposta: "Nível 2 – Tecelão das Correntes",
+nivel: "2",
+alcance: "10m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m220",
+nome: "Cura das Profundezas",
+sub: "Aquae sanitatem",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/bc7a9f569921d54f4e17671d80b2dbe7bcc7be36_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Água",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador gera uma forma de água purificadora que flui em direção ao alvo, penetrando ferimentos e estabilizando-o. Cura <strong>2d12 de vida</strong> e concede <strong>20 pontos de vida temporária</strong> por 10 turnos. Pode deixar o alvo <strong>Molhado</strong>.</p>
+`,
+duracao: "Uso imediato (vida temporária 10 turnos)",
+tagLevel: "Hidrocinese",
+tagLevelResposta: "Nível 3 – Senhor dos Rios",
+nivel: "3",
+alcance: "8m",
+testeConjurador: "Conexão",
+testeAlvo: "—"
+},
+
+{
+id: "m221",
+nome: "Terror Marítimo",
+sub: "Trombae minima",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/terror-maritimico.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Água",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador puxa água das profundezas, criando mini trombas d’água em uma área de <strong>50m</strong>. Os inimigos devem realizar testes de <strong>Agilidade</strong> a cada turno para evitar serem puxados ao centro, onde sofrem <strong>4d10 de dano de Água</strong>. Pode deixar os alvos <strong>Molhados</strong>.</p>
+`,
+duracao: "3 turnos",
+tagLevel: "Hidrocinese",
+tagLevelResposta: "Nível 4 – Guardião dos Oceanos",
+nivel: "4",
+alcance: "50m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m222",
+nome: "Fúria do Mar",
+sub: "Furiae maris",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/mostro-do-mar.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Água",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Uma poderosa onda ergue-se inundando até <strong>200km²</strong>. Seis entidades aquáticas são convocadas, cada uma com <strong>250 PV</strong> e <strong>DT 5</strong>. Elas causam <strong>3d12 de dano de Água</strong> em área de 5m e devem ser derrotadas em até 7 dias, ou um dilúvio apocalíptico cobre a região.</p>
+<p>Barcos devem realizar testes de <strong>Agilidade</strong> a cada turno para não naufragar. Pode deixar os alvos <strong>Molhados</strong>.</p>
+`,
+duracao: "7 dias (ou até serem derrotadas)",
+tagLevel: "Hidrocinese",
+tagLevelResposta: "Nível 5 – Profeta das Profundezas",
+nivel: "5",
+alcance: "200km²",
+testeConjurador: "Conexão",
+testeAlvo: "Brutalidade"
+},
+{
+id: "m223",
+nome: "Ventos Finais",
+sub: "Venti finales",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/e7ce74b18858fb673c9efc109110b25cd3e4c996_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador invoca ventos poderosos que cobrem o campo de batalha. Todos os ataques à distância recebem <strong>-3</strong> em acerto, e todos os alvos sofrem <strong>2d8 de dano de Tempestade</strong>.</p>
+<p><strong>Em montaria:</strong> os ventos seguem o movimento do conjurador, tornando o deslocamento ainda mais difícil para inimigos.</p>
+`,
+duracao: "4 turnos",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 1 – Aspirante da Brisa",
+nivel: "1",
+alcance: "30m (raio)",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m224",
+nome: "Navegador das Tempestades",
+sub: "Navigatore tempestatum",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/7d563fa36f50aa9cab0e2fd4bd6edb7f36a9a0ad_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador controla tempestades, podendo abrir ou cessá-las, além de manipular águas turbulentas para criar caminhos seguros.</p>
+<p><strong>Em montaria:</strong> permite mover-se sobre a água, navegando diretamente sobre ondas violentas.</p>
+`,
+duracao: "3 turnos ou 1h de cena",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 2 – Guardião dos Ventos",
+nivel: "2",
+alcance: "14m",
+testeConjurador: "Preservação (DT 12)",
+testeAlvo: "Nenhum"
+},
+
+{
+id: "m225",
+nome: "Fúria Contida",
+sub: "Furiae contentae",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-63.png?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador acumula energia por até <strong>3 turnos</strong> e então libera uma explosão que causa <strong>3d10 de dano de Tempestade</strong> em um raio de 15m, deixando os alvos <strong>Execrados</strong>.</p>
+<p><strong>Em montaria:</strong> o conjurador precisa percorrer 24m para canalizar, podendo conjurar antes dos 3 turnos.</p>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Execrado</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está sob uma maldição que interfere nas suas capacidades.</li>
+    <li><strong>Efeito:</strong> Todos os testes de habilidades sofrem uma penalidade de -3 até a maldição ser removida. Efeitos curativos e regenerativos são reduzidos à metade.</li>
+  </ul>
+</details>
+`,
+duracao: "3 turnos (ou até finalização)",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 3 – Tecelão de Furacões",
+nivel: "3",
+alcance: "15m (raio)",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m226",
+nome: "Tormenta Opressora",
+sub: "Tormenta oppressora",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/5efab9a17c673a1cdc333ff56af184a6601459c0_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Um enorme turbilhão no céu torna os alvos leves, prejudicando seus movimentos. Durante <strong>1d10 turnos</strong>, os afetados devem realizar testes de <strong>Determinação ou Agilidade</strong> ou sofrem <strong>3d8 de dano de Tempestade</strong> e ficam <strong>Vulneráveis a quedas</strong>.</p>
+<p><strong>Em montaria:</strong> o conjurador pode mover o turbilhão conforme se desloca, ampliando seus efeitos.</p>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Execrado</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está sob uma maldição que interfere nas suas capacidades.</li>
+    <li><strong>Efeito:</strong> Todos os testes de habilidades sofrem uma penalidade de -3 até a maldição ser removida. Efeitos curativos e regenerativos são reduzidos à metade.</li>
+  </ul>
+</details>
+`,
+duracao: "1d10 turnos",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 4 – Mestre dos Ciclones",
+nivel: "4",
+alcance: "18m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação ou Agilidade"
+},
+
+{
+id: "m227",
+nome: "Distúrbio Natural",
+sub: "Perturbatio naturalis",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/925711495a771bf813c1e2fc56371dbc6381c22c_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador forma uma esfera destrutiva de ventos, trovões ou fogo e a lança, causando <strong>5d12 de dano</strong> do tipo escolhido. Alvos atingidos ficam <strong>Execrados</strong> por 2 turnos.</p>
+<p><strong>Em montaria:</strong> o movimento aumenta a precisão do lançamento (<strong>+3 no teste</strong>).</p>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Execrado</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está sob uma maldição que interfere nas suas capacidades.</li>
+    <li><strong>Efeito:</strong> Todos os testes de habilidades sofrem uma penalidade de -3 até a maldição ser removida. Efeitos curativos e regenerativos são reduzidos à metade.</li>
+  </ul>
+</details>
+`,
+duracao: "Imediato",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 5 – Profeta das Tempestades",
+nivel: "5",
+alcance: "16m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m228",
+nome: "Tempestade da Natureza",
+sub: "Naturae tempestas",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/f74b72cd6ead68ee26f92fa609dfbde9fd083eb6_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Uma nuvem negra surge, atingindo uma área de <strong>10m</strong>. Os alvos devem rolar <strong>1d20 de Esquiva</strong> contra a dificuldade do conjurador. Os atingidos são movidos para o centro do combate e sofrem diferentes efeitos:</p>
+<ul>
+<li><strong>Pedras:</strong> 6d4 de dano e Dorme.</li>
+<li><strong>Trovões:</strong> 2d12 e <strong>Paralisia</strong> por 1 turno.</li>
+<li><strong>Granizo:</strong> 4d8 e <strong>Hemorragia</strong>.</li>
+</ul>
+<p><strong>Em montaria:</strong> o efeito dura 1 turno extra e o conjurador pode mover o turbilhão junto à montaria.</p>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Paralisado</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está imobilizado.</li>
+    <li><strong>Efeito:</strong> Fica sem ação de movimento e ação principal. Pode tentar sair da paralisia gastando uma ação livre a cada turno.</li>
+  </ul>
+</details>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Hemorragia</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem sofre de hemorragia.</li>
+    <li><strong>Efeito:</strong> Recebe 1d6 de dano por turno. Se estiver <strong>MORRENDO</strong>, deve estancar o sangramento antes de tratar o status de morte.</li>
+  </ul>
+</details>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Dormindo</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está adormecido.</li>
+    <li><strong>Efeito:</strong> Fica vulnerável a ataques. Deve rolar um dado de cara ou coroa; se acordar, entra no modo <strong>PAVOR</strong>. Se atacado, pode entrar no modo <strong>SONAMBULISMO</strong>.</li>
+  </ul>
+</details>
+
+`,
+duracao: "Gasta ação (2 turnos)",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 6 – Avatar da Tempestade",
+nivel: "6",
+alcance: "12m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+}
+,
+{
+id: "m229",
+nome: "Céu Escuro",
+sub: "Caelum tenebris",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/5e05f90ca919e4b16c75bde90b55911084d79e2d_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Tempestade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Cria uma nuvem negra sobre o alvo e invoca uma tempestade. O conjurador escolhe o tipo:</p>
+<ul>
+<li><strong>Granizo:</strong> 5d10 e <strong>Congelamento</strong>.</li>
+<li><strong>Pedras:</strong> 3d20 e <strong>Hemorragia</strong>.</li>
+<li><strong>Trovões:</strong> 4d12, ricocheteando a 3m (2d8 por alvo extra) e <strong>Paralisia</strong> por 1 turno.</li>
+</ul>
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Congelando</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está congelado.</li>
+    <li><strong>Efeito:</strong> Reduz o movimento em 2 e sofre 2 de dano por turno até se esquentar.</li>
+  </ul>
+</details>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Hemorragia</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem sofre de hemorragia.</li>
+    <li><strong>Efeito:</strong> Recebe 1d6 de dano por turno. Se estiver <strong>MORRENDO</strong>, deve estancar o sangramento antes de tratar o status de morte.</li>
+  </ul>
+</details>
+
+<details style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <summary><strong>Condição — Paralisado</strong></summary>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está imobilizado.</li>
+    <li><strong>Efeito:</strong> Fica sem ação de movimento e ação principal. Pode tentar sair da paralisia gastando uma ação livre a cada turno.</li>
+  </ul>
+</details>
+
+
+<p><strong>Em montaria:</strong> o efeito dura 1 turno extra e o turbilhão pode ser movido junto ao conjurador.</p>
+`,
+duracao: "Gasta ação",
+tagLevel: "Tormentalista",
+tagLevelResposta: "Nível 7 – Senhor das Correntes Aéreas",
+nivel: "7",
+alcance: "14m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+}
 
 
 
@@ -6894,6 +7224,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

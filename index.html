@@ -4549,11 +4549,11 @@ descricao: `
 <p>Para cada animal além do primeiro, o custo de sanidade aumenta: <strong>+1</strong> para cada pequeno, <strong>+2</strong> para médio e <strong>+3</strong> para grande.</p>
 
 <p><strong>Animais que podem surgir:</strong></p>
-<ul>
+
 <li><strong>Pequenos:</strong> Vida 20 | 1d4 para fugir | Dano 1d12 Caos | Dano Massivo ≥ 15</li>
 <li><strong>Médios:</strong> Vida 35 | 1d6 para fugir | Dano 2d12 Caos | Dano Massivo ≥ 20</li>
 <li><strong>Grandes:</strong> Vida 45 | 1d10 para fugir | Dano 3d12 Caos | Dano Massivo ≥ 25</li>
-</ul>
+
 
 <p><strong>Comportamento:</strong> Os animais permanecem na batalha por <strong>1d6 turnos</strong>, atacando os alvos designados. Sofrendo dano massivo, fogem instantaneamente; caso contrário, lutam por um turno adicional antes de decidir fugir.</p>
 
@@ -4597,13 +4597,13 @@ descricao: `
 <p><strong>O que acontece quando usa?</strong></p>
 <p>O personagem se torna um só com a natureza por alguns segundos e pode escolher um dos elementos para atacar seu inimigo:</p>
 
-<ul>
+
 <li><strong>Fogo:</strong> Explosão em área de 3m causando <strong>2d8</strong> e chance de <em>QUEIMAR</em>.</li>
 <li><strong>Terra:</strong> Braços de pedra seguram o alvo, causando <strong>1d12 + 1d6</strong>. O alvo deve se libertar para se mover novamente.</li>
 <li><strong>Ar:</strong> Impulsiona o conjurador até o alvo, permitindo um ataque corpo a corpo com <strong>+1d10</strong> de dano adicional.</li>
 <li><strong>Trovão:</strong> Descarga causa <strong>3d10</strong>; pode ser reconjurada no próximo turno (metade do custo, <strong>2d8</strong> de dano).</li>
 <li><strong>Água:</strong> Manipula líquidos para congelar (<strong>4d6</strong>), evaporar (<strong>2d12 + 1d4</strong>) ou chicotear (<strong>1d20 + 1d4</strong>).</li>
-</ul>
+
 `,
 duracao: "Gasta uma ação",
 tagLevel: "Naturalista",
@@ -4625,16 +4625,21 @@ descricao: `
 <p>Transforma o alvo em um pequeno e ágil esquilo (Sciuridae). O alvo perde todas as habilidades anteriores e ganha as estatísticas do animal abaixo. Deve passar em um teste de <strong>Determinação</strong> para manter a consciência — se falhar, age por instinto.</p>
 
 <p><strong>Vida Sciuridae:</strong></p>
-<ul>
-<li>Vida: 50 | San: 20 | Esp: 0</li>
-<li>Armadura: 1 | Movimento: 10m</li>
-<li>BRU: 1 (+0) | AGI: 40 (+9 / +6 dano)</li>
-<li>DET: 1 (+0) | PRE: 1 (+0) | LIB: 1 (+0)</li>
-<li>CNX: 99 (+24 / +8 dano)</li>
-</ul>
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <div>Vida: 50 | San: 20 | Esp: 0</div>
+  <div>Armadura: 1 | Movimento: 10m</div>
+  <div>BRU: 1 (+0)</div>
+  <div>AGI: 40 (+9 / +6 dano)</div>
+  <div>DET: 1 (+0)</div>
+  <div>PRE: 1 (+0)</div>
+  <div>LIB: 1 (+0)</div>
+  <div>CNX: 99 (+24 / +8 dano)</div>
+</div>
 
 <p>A magia termina automaticamente quando o tempo se esgota ou ao ser dissipada/purificada.</p>
 `,
+
 duracao: "1d12 turnos",
 tagLevel: "Naturalista",
 tagLevelResposta: "Nível 5 – Senhor dos Desastres Naturais",
@@ -6386,6 +6391,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

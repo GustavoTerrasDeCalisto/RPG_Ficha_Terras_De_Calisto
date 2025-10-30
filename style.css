@@ -1776,7 +1776,29 @@ a:active {
     padding: 9px 0;
   }
 }
+#dicePopup h1 {
+  font-size: 2rem;
+  color: #f8f8f8;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
 
+#dicePopup h2 {
+  font-size: 1.5rem;
+  color: #e2e2e2;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+#dicePopup h3 {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
 /* ============================
    VARIÁVEIS GLOBAIS (FÁCIL TEMA)
    ============================ */
@@ -3540,6 +3562,7 @@ h3 {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 
 

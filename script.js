@@ -2153,7 +2153,7 @@ const diceGifUrls = [
   "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif",
   "https://media0.giphy.com/media/NnafYvjXZK9j2/giphy.gif",
   "https://observer.com/wp-content/uploads/sites/2/2013/01/roll-dice.gif?quality=80",
-  "https://media.tenor.com/Zx4EYt-kXmMAAAAM/nat20.gif",
+  "https://media.tenor.com/izm3CkQjl9EAAAAM/dark-souls-roll.gif",
   "https://media.tenor.com/akss-JznKWcAAAAM/neymar-roll.gif"
 ];
 
@@ -5341,6 +5341,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

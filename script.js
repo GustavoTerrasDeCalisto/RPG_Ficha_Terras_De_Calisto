@@ -2227,6 +2227,37 @@ function toggleSkill(button) {
   button.innerText = button.innerText === "+2" ? "0" : "+2";
 }
 
+// 🎲 Rolagem automática de d20 + bônus de teste
+document.querySelectorAll(".roll-attr-dice").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const attr = btn.getAttribute("data-attr"); // ex: 'for', 'des', etc.
+    const bonusSpan = document.getElementById(`${attr}-bonus-test`);
+    const bonus = parseInt(bonusSpan?.textContent || "0");
+
+    const d20 = Math.floor(Math.random() * 20) + 1;
+    const total = d20 + bonus;
+
+    // exibir resultado no popup existente
+    const detailed = `
+      <strong>${attr.toUpperCase()}</strong><br>
+      Rolagem: d20 = ${d20}<br>
+      Bônus de Teste: ${bonus >= 0 ? "+" : ""}${bonus}<br>
+      <strong>Total:</strong> ${total}
+    `;
+
+    const gif = document.getElementById("diceGif");
+    gif.style.display = "none";
+    gif.src = "";
+    setTimeout(() => {
+      gif.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZiMjE1dG1iOXZhbTExdWoyY3h4cG8zNGk1Yndjbjh1emZldm13MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lcySndwSDLxC4eOU86/giphy.gif";
+      gif.style.display = "block";
+    }, 50);
+
+    document.getElementById("diceOverlay").innerText = `Total: ${total}`;
+    document.getElementById("detailedResults").innerHTML = detailed;
+    document.getElementById("dicePopup").style.display = "flex";
+  });
+});
 
   
 const chessPopup = document.getElementById("chessTutorialPopup");
@@ -5278,6 +5309,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

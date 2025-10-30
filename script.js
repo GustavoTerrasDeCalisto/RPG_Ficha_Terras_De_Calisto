@@ -13,9 +13,9 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Arcos e bestas.",
     "vidaPorNivel": {
-      "for": 3,
-      "des": 6,
-      "con": 5
+      "for": 2,
+      "des": 3,
+      "con": 4
     },
     "sanidadePorNivel": {
       "int": 4,
@@ -37,13 +37,13 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "1 talento extra à sua escolha livre.",
     "vidaPorNivel": {
-      "for": 6,
-      "des": 5,
-      "con": 5
+      "for": 5,
+      "des": 4,
+      "con": 3
     },
     "sanidadePorNivel": {
       "int": 2,
-      "sab": 2,
+      "sab": 1,
       "car": 2
     },
     "especialPorNivel": 5
@@ -61,13 +61,13 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Katanas.",  
     "vidaPorNivel": {
-      "for": 5,
-      "des": 7,
-      "con": 5
+      "for": 3,
+      "des": 6,
+      "con": 4
     },
     "sanidadePorNivel": {
       "int": 1,
-      "sab": 3,
+      "sab": 2,
       "car": 1
     },
     "especialPorNivel": 5
@@ -86,12 +86,12 @@ const raceData = {
     "TalentoDisponivel": "Escudos ou Espadas.",  
     "vidaPorNivel": {
       "for": 7,
-      "des": 3,
-      "con": 5
+      "des": 2,
+      "con": 4
     },
     "sanidadePorNivel": {
-      "int": 2,
-      "sab": 2,
+      "int": 1,
+      "sab": 1,
       "car": 2
     },
     "especialPorNivel": 5
@@ -109,14 +109,14 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Machados e martelos.",  
     "vidaPorNivel": {
-      "for": 4,
-      "des": 4,
-      "con": 9
+      "for": 2,
+      "des": 2,
+      "con": 7
     },
     "sanidadePorNivel": {
       "int": 1,
       "sab": 1,
-      "car": 3
+      "car": 4
     },
     "especialPorNivel": 5
   }
@@ -134,14 +134,14 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Lanças e Armas com Haste.",  
     "vidaPorNivel": {
-      "for": 3,
+      "for": 1,
       "des": 4,
       "con": 6
     },
     "sanidadePorNivel": {
       "int": 1,
-      "sab": 4,
-      "car": 4
+      "sab": 2,
+      "car": 3
     },
     "especialPorNivel": 5
   }
@@ -159,13 +159,13 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas.",  
     "vidaPorNivel": {
-      "for": 3,
+      "for": 1,
       "des": 4,
-      "con": 6
+      "con": 4
     },
     "sanidadePorNivel": {
-      "int": 2,
-      "sab": 5,
+      "int": 4,
+      "sab": 2,
       "car": 2
     },
     "especialPorNivel": 5
@@ -184,13 +184,13 @@ const raceData = {
     "TalentoDisponivel": "Lanças e Armas com Haste.",  
     "vidaPorNivel": {
       "for": 4,
-      "des": 3,
-      "con": 6
+      "des": 1,
+      "con": 3
     },
     "sanidadePorNivel": {
       "int": 2,
-      "sab": 2,
-      "car": 5
+      "sab": 5,
+      "car": 2
     },
     "especialPorNivel": 5
   }
@@ -208,13 +208,13 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas e Intimidação.",  
     "vidaPorNivel": {
-      "for": 5,
-      "des": 4,
-      "con": 5
+      "for": 3,
+      "des": 2,
+      "con": 3
     },
     "sanidadePorNivel": {
       "int": 2,
-      "sab": 4,
+      "sab": 5,
       "car": 2
     },
     "especialPorNivel": 5
@@ -233,12 +233,12 @@ const raceData = {
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Sobrevivência.",  
     "vidaPorNivel": {
-      "for": 5,
-      "des": 4,
-      "con": 8
+      "for": 3,
+      "des": 2,
+      "con": 6
     },
     "sanidadePorNivel": {
-      "int": 1,
+      "int": 2,
       "sab": 1,
       "car": 3
     },
@@ -5323,6 +5323,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

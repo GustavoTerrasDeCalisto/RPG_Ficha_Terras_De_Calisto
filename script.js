@@ -2237,9 +2237,22 @@ document.querySelectorAll(".roll-attr-dice").forEach(btn => {
     const d20 = Math.floor(Math.random() * 20) + 1;
     const total = d20 + bonus;
 
-    // exibir resultado no popup existente
+    // Mapeamento dos atributos antigos para novos nomes
+    const attrMap = {
+      for: "BRU",
+      des: "AGI",
+      con: "DET",
+      int: "PRE",
+      sab: "LIB",
+      car: "CNX"
+    };
+
+    // Substitui pelo nome novo, mantendo fallback para caso o atributo não esteja no mapa
+    const attrName = attrMap[attr] || attr.toUpperCase();
+
+    // Exibir resultado no popup existente
     const detailed = `
-      <strong>${attr.toUpperCase()}</strong><br>
+      <strong>${attrName}</strong><br>
       Rolagem: d20 = ${d20}<br>
       Bônus de Teste: ${bonus >= 0 ? "+" : ""}${bonus}<br>
       <strong>Total:</strong> ${total}
@@ -5309,6 +5322,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

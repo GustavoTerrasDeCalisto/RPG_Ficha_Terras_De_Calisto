@@ -1775,8 +1775,25 @@ Bonus por Níveis Do Personagem  </h3>
 
 
 
-<!-- BOTÃO PARA ABRIR O POPUP -->
-<button type="button" onclick="TC.open()" class="magias-btn"></button>
+<div class="painel-botoes">
+  <button type="button" onclick="TC.open()" class="magias-btn"></button>
+  <button id="openPopup" class="rolagem-btn"></button>
+  <button id="openItemPopup" class="mochila-btn"></button>
+
+  <div id="equippedItemDisplay">
+    <div id="equippedItemSlot"></div>
+  </div>
+</div>
+<style>
+  .painel-botoes {
+  display: flex;
+  flex-direction: column; /* deixa os itens em coluna (vertical) */
+  align-items: center;    /* centraliza horizontalmente */
+  justify-content: center;/* centraliza verticalmente */
+  gap: 10px;              /* espaçamento entre os elementos */
+}
+
+</style>
 
 <!-- POPUP -->
 <div id="tcOverlay" aria-hidden="true">
@@ -5027,7 +5044,7 @@ if (subEl) {
 </script>
 
           
-<button id="openItemPopup" class="mochila-btn"></button>
+
 
 
 <style>
@@ -5059,13 +5076,7 @@ if (subEl) {
     transform: scale(0.98);
   }
 </style>
-<!-- Visual do item equipado -->
-<!-- Visual do item equipado -->
-<div id="equippedItemDisplay">
-  <div id="equippedItemSlot"></div>
-</div>
-<!-- Botão para abrir o popup -->
-<button id="openPopup" class="rolagem-btn"></button>
+
 <style>
   /* Botão de Rolagem */
 .rolagem-btn {
@@ -5256,6 +5267,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

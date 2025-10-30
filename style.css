@@ -985,6 +985,7 @@ label {
   display: block; /* Faz com que o label ocupe toda a largura */
   margin-bottom: 4px; /* Espaço abaixo do label */
   font-weight: 600; /* Aumenta a espessura do texto */
+font-size: 0.85rem;
   color: #ff3e3e; /* Cor do texto */
 }
 
@@ -3562,6 +3563,7 @@ h3 {
   border-color: #27ae60 !important;
   color: white !important;
 }
+
 
 
 

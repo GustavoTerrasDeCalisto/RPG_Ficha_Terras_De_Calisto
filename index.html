@@ -4270,7 +4270,7 @@ testeAlvo: "Libertação"
   sub: "Somnium dimensio",
   img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/08/4-portas-dimencionais.webp?w=768&h=768",
   elemento: "Desconhecido",
-  tipoDano: "—",
+  tipoDano: "Sono",
   descricao: `
   <p><strong>O que acontece quando usa?</strong></p>
   <p>O conjurador abre um portal para a Dimensão dos Sonhos, uma realidade onde espaço e tempo se distorcem. Permite viajar instantaneamente até <strong>450 km</strong> de distância.</p>
@@ -4672,7 +4672,510 @@ nivel: "6",
 alcance: "Toque",
 testeConjurador: "Determinação",
 testeAlvo: "Determinação"
+},{
+id: "m196",
+nome: "Lançar Orbe de Fogo",
+sub: "Ignem Globum Launch",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/b65baf2422a083ab7e074eda4f2470c36c237e87_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Fogo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você molda os elementos da natureza e cria uma esfera flamejante em sua mão. Ao arremessá-la, causa <strong>1d10 de dano de fogo</strong> ao alvo. Caso o inimigo falhe em seu teste, ele fica <strong>Queimando</strong>.</p>
+`,
+duracao: "Gasta ação",
+tagLevel: "Incendiário",
+tagLevelResposta: "Nível 1 – Iniciado do Fogo",
+nivel: "1",
+alcance: "6m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m197",
+nome: "Fogo Vivo",
+sub: "Ignis Vivus",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/b658200ee84ab50d3065a90660e2e454aec9c6b2_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Fogo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Cinco chamas flutuam ao redor de sua cabeça e atacam automaticamente os inimigos mais próximos. Cada chama causa <strong>1d12 de dano de fogo</strong> e exige um teste de esquiva independente para cada uma.</p>
+<p>As chamas permanecem por <strong>5 turnos</strong>, orbitando o conjurador e queimando tudo ao redor.</p>
+`,
+duracao: "5 turnos",
+tagLevel: "Incendiário",
+tagLevelResposta: "Nível 2 – Dominador das Chamas",
+nivel: "2",
+alcance: "1m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m198",
+nome: "Coluna Infernal",
+sub: "Ignis Columna",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-57.png?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Fogo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Uma poderosa coluna de fogo irrompe do solo em um ponto escolhido, atingindo uma área de <strong>2m de largura</strong> e entre <strong>3 a 10m de comprimento</strong>, com <strong>3m de altura</strong>.</p>
+<p>Todos os alvos na área sofrem <strong>2d10 de dano de fogo</strong>. Alvos que falharem no teste ficam em <strong>Queimadura Intensa</strong>, sofrendo <strong>1d6 de dano de fogo por 1d4 turnos</strong>.</p>
+`,
+duracao: "Instantâneo (queimadura 1d4 turnos)",
+tagLevel: "Incendiário",
+tagLevelResposta: "Nível 3 – Mestre da Incandescência",
+nivel: "3",
+alcance: "12m (área de 2m × 3–10m × 3m)",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m199",
+nome: "Amorfia do Fogo",
+sub: "Ignis Cordis",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/image.psd-58.png?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Fogo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador invoca uma <strong>criatura flamejante distorcida</strong>, com forma de um coração de fogo pulsante. A cada batida, ela causa <strong>1d8 de dano de fogo em área (3m)</strong>.</p>
+<p>Na terceira batida, a criatura implode, causando <strong>10d8 de dano de fogo</strong> a todas as criaturas em um raio de <strong>14m</strong>.</p>
+<p>Ela pode se mover até <strong>15m</strong> de distância do conjurador. Criaturas a até <strong>12m</strong> devem realizar um teste de <strong>Conexão</strong> por turno; falhar faz com que avancem em direção à criatura.</p>
+`,
+duracao: "Até a explosão (3 turnos)",
+tagLevel: "Incendiário",
+tagLevelResposta: "Nível 4 – Profeta da Fúria Flamejante",
+nivel: "4",
+alcance: "15m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m200",
+nome: "Incandescência Primordial",
+sub: "Ignis Aeternum",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/5f085b8e47ebd76ed1340c728f1423d81849a65d_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Fogo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador se funde com o <strong>fogo primordial</strong>, tornando-se uma entidade de puro caos flamejante. Ganha <strong>resistência a todos os danos físicos</strong> e aumenta sua vida em <strong>50%</strong> por <strong>1d6 turnos</strong>.</p>
+<p>Durante essa forma, seus ataques corpo a corpo causam <strong>4d12 de dano de fogo</strong>. Inimigos que falharem no teste sofrem <strong>Queimadura Intensa</strong>, recebendo <strong>2d8 de dano de fogo por 1d4 turnos</strong>.</p>
+<p>Enquanto estiver transformado, o conjurador é <strong>imune a fogo</strong>. Ataques físicos contra ele causam automaticamente <strong>1d10 de dano de fogo</strong> ao atacante.</p>
+`,
+duracao: "1d6 turnos",
+tagLevel: "Incendiário",
+tagLevelResposta: "Nível 5 – Avatar da Fúria Eterna",
+nivel: "5",
+alcance: "Toque (ao atacar)",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+    {
+id: "m201",
+nome: "Força Gélida",
+sub: "Frigus Force",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/8de460b5a3729c560e85e67c1a8204173e860445_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Gelo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você molda os elementos da natureza e cria uma <strong>brisa gélida</strong> em sua mão. Ventos congelantes envolvem sua palma, exigindo contato direto com o alvo para causar <strong>1d8 de dano de gelo</strong>.</p>
+<p>Você pode gastar <strong>1 ponto de Especial</strong> para tentar uma <strong>acrobacia</strong> a fim de intensificar o golpe. Se obtiver sucesso no teste de Acrobacia, causa <strong>+1d6 de dano extra</strong> e o alvo fica <strong>Congelado</strong>. O teste de acrobacia é realizado separadamente.</p>
+`,
+duracao: "Gasta ação",
+tagLevel: "Cryomante",
+tagLevelResposta: "Nível 1 – Iniciado da Geada",
+nivel: "1",
+alcance: "1m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m202",
+nome: "Névoa Gélida",
+sub: "Frigus Nebula",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/0ef6644085effd129e815ac03ec8d3836908fd86_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Gelo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você invoca uma <strong>névoa fria</strong> que se espalha pelo campo de batalha, cobrindo o solo com uma camada escorregadia de gelo.</p>
+<p>Inimigos que atravessarem essa área têm seu movimento reduzido pela metade e devem realizar um teste de <strong>Agilidade</strong> para evitar escorregar e cair. Aqueles que falharem <strong>ficam Caídos</strong> e <strong>perdem sua ação de movimento</strong> no próximo turno.</p>
+
+<div style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <p><strong>Condição — Caído:</strong></p>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está no chão.</li>
+    <li>Efeito: Possui <strong>+2 em acertos</strong> em Dados de <strong>MIRAR</strong>.</li>
+    <li>Precisa gastar sua <strong>ação de movimento</strong> para se levantar.</li>
+  </ul>
+</div>
+`,
+
+duracao: "2 turnos",
+tagLevel: "Cryomante",
+tagLevelResposta: "Nível 2 – Discípulo do Gelo",
+nivel: "2",
+alcance: "6m de raio (ao redor do conjurador)",
+testeConjurador: "Conexão",
+testeAlvo: "Agilidade (movimentação afetada)"
+},
+
+{
+id: "m203",
+nome: "Barreira Gélida",
+sub: "Frigus Vallum",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/c501cb21a6bb69d1761c867e267217301dbe0ca3_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Gelo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você ergue uma <strong>parede maciça de gelo</strong> à sua frente, bloqueando ataques e a visão inimiga. A barreira possui <strong>30 pontos de vida</strong> e permanece até ser destruída ou até o fim da duração.</p>
+<p>Alternativamente, você pode moldar a barreira em <strong>ondas ou espinhos de gelo</strong>, empurrando inimigos para trás e causando <strong>1d10 de dano de gelo</strong>. Alvos podem resistir ao empurrão com um teste de <strong>Brutalidade</strong>.</p>
+`,
+duracao: "Até ser destruída ou 1d6 turnos",
+tagLevel: "Cryomante",
+tagLevelResposta: "Nível 3 – Tecelão da Neve",
+nivel: "3",
+alcance: "3m de largura × 2m de altura",
+testeConjurador: "Preservação (para moldar)",
+testeAlvo: "Brutalidade (para resistir ao empurrão)"
+},
+
+{
+id: "m204",
+nome: "Sopro Congelante",
+sub: "Frigus Halitus",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/69c7b6ba98ed3e75cf97a25bb182ce800fc8ff18_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Gelo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você libera uma <strong>rajada de vento congelante</strong> em linha reta de até <strong>6 metros</strong>, atingindo todos os inimigos nesse trajeto. Alvos devem realizar um teste de <strong>Agilidade</strong> ou serão <strong>Congelados</strong> instantaneamente, ficando imóveis por <strong>1 turno</strong>.</p>
+<p>Enquanto congeladas, as criaturas sofrem <strong>2d8 de dano de gelo adicional</strong> ao serem atingidas, pois o gelo se estilhaça com o impacto, intensificando o ferimento.</p>
+`,
+duracao: "1 turno de congelamento (até o gelo quebrar)",
+tagLevel: "Cryomante",
+tagLevelResposta: "Nível 4 – Arauto da Tempestade de Gelo",
+nivel: "4",
+alcance: "6m (linha reta)",
+testeConjurador: "Conexão",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m205",
+nome: "Frieza Primordial",
+sub: "Frigus Persona",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/bb2be51c7a3ab58ee59213c9fb13a1f8fdbf0b6f_high-1.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Gelo",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador se transforma em uma <strong>entidade gélida</strong>, encarnando o frio primordial. Durante essa forma, ganha <strong>resistência a todos os tipos de dano</strong> e sua vida aumenta em <strong>50%</strong> por <strong>1d6 turnos</strong>.</p>
+<p>Em sua nova forma, pode liberar <strong>ondas de frio intenso</strong> em uma área de <strong>20m</strong>, causando <strong>4d12 de dano de gelo</strong> e reduzindo a <strong>velocidade</strong> dos inimigos pela metade por <strong>1d4 turnos</strong>. Alvos que falharem no teste de Agilidade também ficam <strong>Congelados</strong> por 1 turno.</p>
+<p>Enquanto mantiver essa forma, o conjurador pode <strong>voar até 15m</strong> do chão e qualquer ataque físico desferido contra ele causa automaticamente <strong>1d8 de dano de gelo</strong> ao atacante.</p>
+`,
+duracao: "1d6 turnos",
+tagLevel: "Cryomante",
+tagLevelResposta: "Nível 5 – Avatar do Inverno",
+nivel: "5",
+alcance: "20m (área de efeito)",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade (congelamento, dano)"
+},{
+id: "m206",
+nome: "Vinhas Mágicas",
+sub: "Magia Vineis",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/image.psd-4.png?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Do chão, <strong>vinhas e raízes</strong> emergem e se enrolam ao redor do inimigo, restringindo seus movimentos. Enquanto estiver preso, o alvo <strong>perde a ação de movimento</strong> e sofre <strong>1d10 + 1d6 de dano ácido</strong> por turno.</p>
+<p>O efeito persiste até o alvo conseguir se libertar das vinhas.</p>
+`,
+duracao: "Até conseguir sair",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 1 – Aspirante da Corrosão",
+nivel: "1",
+alcance: "5m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m207",
+nome: "Cuspe Ácido",
+sub: "Acidum Veru",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/4b9fb8d3331c7977fd1a35449102bf2eeeb2bfdf_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você lança uma <strong>cusparada ácida</strong> no inimigo, causando <strong>5d4 de dano ácido</strong>.</p>
+<p>Se desejar, pode gastar <strong>2 pontos de Especial</strong> para lançar várias cuspidas consecutivas, causando <strong>10d4 de dano ácido</strong> no total.</p>
+`,
+duracao: "Gasta ação",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 2 – Portador das Gotas Ácidas",
+nivel: "2",
+alcance: "6m",
+testeConjurador: "Agilidade",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m208",
+nome: "Cogumelos Tóxicos",
+sub: "Fungos Toxicus",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/06/image.psd-7.png?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você acelera o crescimento de <strong>fungos ácidos</strong> sobre o corpo do alvo, corroendo e dominando seus movimentos. O alvo sofre <strong>1d10 + 1d8 de dano ácido</strong> e é afetado pela passiva <strong>Sonambulismo</strong>.</p>
+<p>Enquanto sob esse efeito, o alvo age de forma confusa e descontrolada, podendo tentar sair do sonambulismo em uma de suas ações, realizando um teste de <strong>Determinação</strong>.</p>
+`,
+duracao: "Gasta ação",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 3 – Mestre da Dissolução",
+nivel: "3",
+alcance: "4m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m209",
+nome: "Pólen Alucinógeno",
+sub: "Acidum Visio",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/511d99dd0fa18fdf28ed75ce520213aea6aa5527_high-1.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você libera uma <strong>nuvem de pólen ácido alucinógeno</strong> que cobre uma área de 10 metros de raio. Alvos dentro da nuvem devem fazer um teste de <strong>Determinação</strong> para evitar inalar o pólen.</p>
+<p>Quem falhar começa a <strong>alucinar</strong> e fica sob o efeito de <strong>Confuso</strong>, além de sofrer <strong>1d6 de dano ácido por turno</strong> enquanto permanecer na área.</p>
+<p>Os afetados percebem o tempo de forma distorcida, realizando ações com 1 turno de atraso.</p>
+`,
+duracao: "1d6 turnos",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 4 – Guardião das Substâncias Tóxicas",
+nivel: "4",
+alcance: "8m",
+testeConjurador: "Conexão",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m210",
+nome: "Lagoa Corrosiva",
+sub: "Acidum Lacus",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/bf420a42742416f26a7fe9bcfa1bcab4f8bf58f9_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você transforma o solo ao redor em uma <strong>poça de ácido corrosivo</strong> que cobre uma área de 12 metros de raio.</p>
+<p>Qualquer criatura que entrar ou permanecer na área sofre <strong>3d8 de dano ácido por turno</strong> e tem sua <strong>mobilidade reduzida em 50%</strong> devido à corrosão.</p>
+<p>Se o alvo for atingido diretamente pela poça, fica <strong>Envenenado</strong>, sofrendo 4 de dano por turno até ser curado por <strong>remédio ou magia</strong>.</p>
+`,
+duracao: "1d4 + 2 turnos",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 5 – Arauto da Decadência",
+nivel: "5",
+alcance: "10m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m211",
+nome: "Esporos Intoxicantes",
+sub: "Acidum Sporae",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/faec3bd7283c0cb8044b2532e17461ebb9fe0972_high.webp?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você libera <strong>esporos ácidos intoxicantes</strong> em um raio de 8 metros. Alvos na área devem fazer um teste de <strong>Determinação</strong> ou ficam <strong>Intoxicados</strong> por <strong>1d4 turnos</strong>.</p>
+<p>Enquanto intoxicados, sofrem <strong>2d6 de dano ácido por turno</strong> e a condição <strong>Debilitado</strong>, reduzindo sua mobilidade e força de ataque.</p>
+<p>Os afetados sentem <strong>náuseas</strong> e devem fazer um teste de Determinação (Dt 10) a cada turno. Se falharem, vomitam e sofrem <strong>Borborigmo</strong> — percepção distorcida do mundo. Se não se alimentarem em 1d4 turnos, perdem <strong>3d20 de vida por turno</strong> até se recuperarem.</p>
+<div style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <p><strong>Condição — Borborigmo:</strong></p>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>A barriga do personagem ronca intensamente, indicando fome.</li>
+    <li><strong>Efeito:</strong> A percepção do mundo fica alterada e a barriga continua roncando.</li>
+    <li>O personagem tem <strong>1d4 turnos</strong> para comer; se não comer, perde <strong>3d20 de vida por turno</strong> até se alimentar.</li>
+  </ul>
+</div>
+`,
+duracao: "1d4 turnos",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 6 – Senhor da Ruína Ácida",
+nivel: "6",
+alcance: "6m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m212",
+nome: "A Bolha Assassina",
+sub: "Bulla Vorax",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/design-sem-nome.gif?w=768&h=768",
+elemento: "Caos",
+tipoDano: "Ácido",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>Você cria uma <a href="https://bestiario-terrasdecalisto.netlify.app/?criatura=A%20Bolha" target="_blank" rel="noopener noreferrer"><strong>Bolha Viva de Ácido Corrosivo</strong></a> com 50 pontos de vida base, que persegue os inimigos.</p>
+<p>A bolha causa <strong>5d12 de dano ácido</strong> por turno a qualquer criatura tocada.</p>
+<p>Cada vez que a bolha mata uma criatura, ela <strong>cresce 1 metro de diâmetro</strong>, aumenta sua vida máxima em <strong>+20</strong> e se cura em <strong>1d10 + 1d8</strong>.</p>
+<p>Se não for destruída, pode continuar crescendo indefinidamente — uma ameaça capaz de <strong>consumir cidades inteiras</strong>.</p>
+`,
+duracao: "Até ser destruída",
+tagLevel: "Alquímico",
+tagLevelResposta: "Nível 7 – Alquimista da Corrosão",
+nivel: "7",
+alcance: "15m",
+testeConjurador: "Preservação",
+testeAlvo: "Agilidade"
 }
+{
+id: "m213",
+nome: "Toque Elétrico",
+sub: "Electrica Tactus",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/lightning-hand.webp",
+elemento: "Caos",
+tipoDano: "Eletricidade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador canaliza eletricidade em suas mãos, criando uma descarga que só é liberada ao toque. Ao encostar no alvo, causa <strong>1d8 de dano de Eletricidade</strong>.</p>
+<p>Pode gastar <strong>1 Especial</strong> para tentar um golpe acrobático, realizando um teste separado de Acrobacia. Se acertar, causa <strong>+1d8 de dano adicional</strong>.</p>
+<p><em>Status Relevantes:</em> Se o alvo estiver <strong>Molhado</strong>, sofre <strong>Crítico (dano dobrado)</strong> devido à vulnerabilidade à eletricidade.</p>
+
+<div style="margin-top: 10px; background: #1e1e1e; color: #fff; padding: 6px; border-radius: 8px; font-size: 0.9rem;">
+  <p><strong>Condição — Molhado:</strong></p>
+  <ul style="margin: 0; padding-left: 16px;">
+    <li>O personagem está com roupas molhadas.</li>
+    <li><strong>Efeito:</strong> Fica vulnerável a golpes de <strong>Gelo</strong> e <strong>Eletricidade</strong>.</li>
+    <li>Se acertado por esses elementos, sofre <strong>Crítico (dobro de dano)</strong>.</li>
+  </ul>
+</div>`,
+duracao: "Gasta ação",
+tagLevel: "Voltromante",
+tagLevelResposta: "Nível 1 – Discípulo da Faísca",
+nivel: "1",
+alcance: "1m",
+testeConjurador: "Agilidade",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m214",
+nome: "Pássaro Trovão",
+sub: "Electrica Avis",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/thunder-bird.webp",
+elemento: "Caos",
+tipoDano: "Eletricidade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador invoca um <strong>pássaro elétrico</strong> que ataca o alvo por <strong>3 turnos</strong>, causando <strong>2d6 de dano elétrico por turno</strong>.</p>
+<p>Se o alvo estiver <strong>Paralisado</strong>, o dano aumenta em <strong>+1d6</strong> por turno.</p>
+<p>Se estiver <strong>Molhado</strong>, o alvo se torna <strong>Vulnerável</strong>, sofrendo <strong>o dobro do dano de Eletricidade</strong> durante os ataques do pássaro.</p>
+<p>O pássaro desaparece ao final do 3º turno.</p>
+`,
+duracao: "3 turnos",
+tagLevel: "Voltromante",
+tagLevelResposta: "Nível 2 – Tecelão de Raios",
+nivel: "2",
+alcance: "10m",
+testeConjurador: "Agilidade",
+testeAlvo: "Determinação"
+},
+
+{
+id: "m215",
+nome: "Trovão Divino",
+sub: "Electrica Fulgur",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/divine-thunder.webp",
+elemento: "Caos",
+tipoDano: "Eletricidade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador invoca um trovão que <strong>desce do céu</strong>, atingindo o alvo com <strong>4d8 de dano elétrico</strong>.</p>
+<p>Inimigos a até <strong>3 metros</strong> do impacto recebem <strong>metade do dano</strong>.</p>
+<p>Se o alvo principal estiver <strong>Paralisado</strong>, sofre <strong>+2d6 de dano adicional</strong>.</p>
+<p>Se estiver <strong>Molhado</strong>, todos os alvos afetados tornam-se <strong>Vulneráveis</strong> por 1 turno, recebendo <strong>dano dobrado de Eletricidade</strong>.</p>
+`,
+duracao: "Instantâneo",
+tagLevel: "Voltromante",
+tagLevelResposta: "Nível 3 – Senhor dos Trovões",
+nivel: "3",
+alcance: "20m",
+testeConjurador: "Agilidade",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m216",
+nome: "Surto Relâmpago",
+sub: "Surgere Electrica",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/lightning-dash.webp",
+elemento: "Caos",
+tipoDano: "Eletricidade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador canaliza eletricidade em seu corpo, permitindo realizar <strong>teletransportes curtos de até 5m</strong> em qualquer direção, inclusive locais altos.</p>
+<p>Durante o movimento, causa <strong>1d6 de dano elétrico</strong> a qualquer inimigo tocado. Se o alvo estiver <strong>Molhado</strong>, ele fica <strong>Paralisado</strong> automaticamente.</p>
+<p>Enquanto o efeito durar, o conjurador ganha <strong>+10m de movimento por turno</strong> e <strong>1 ação completa extra</strong>.</p>
+<p>O efeito custa <strong>+2 Especial</strong> e dura <strong>5 turnos</strong>.</p>
+`,
+duracao: "5 turnos",
+tagLevel: "Voltromante",
+tagLevelResposta: "Nível 4 – Guardião da Tempestade Elétrica",
+nivel: "4",
+alcance: "Pessoal",
+testeConjurador: "Conexão",
+testeAlvo: "Agilidade"
+},
+
+{
+id: "m217",
+nome: "Retorno de Thorville",
+sub: "Thor’s Return",
+img: "https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/10/thor-summon.webp",
+elemento: "Caos",
+tipoDano: "Eletricidade",
+descricao: `
+<p><strong>O que acontece quando usa?</strong></p>
+<p>O conjurador invoca <a href="https://bestiario-terrasdecalisto.netlify.app/?criatura=Donar%20-%20O%20Retorno%20de%20Thorville" target="_blank" rel="noopener noreferrer"><strong>Donar</strong></a>, uma entidade divina vinda de Asgard, dos 5 Céus Eternos.</p>
+<p>Donar surge com um trovão ensurdecedor audível a <strong>10 km de distância</strong>. A luz de sua chegada causa <strong>cegueira</strong> (−10 em testes de reação e ação por <strong>1d4 turnos</strong>) em criaturas num raio de <strong>30 metros</strong> e inflige <strong>2d10 de dano elétrico</strong>.</p>
+<p>Donar luta ao lado do invocador por <strong>1d12 turnos</strong> ou até o fim da cena. Ele possui as passivas 
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p4" target="_blank" rel="noopener noreferrer"><strong>Armadura Sobrenatural</strong></a> e 
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3" target="_blank" rel="noopener noreferrer"><strong>Bêbado</strong></a> ativas durante todo o combate.</p>
+<p>Donar é uma entidade consciente e considera o invocador parte de sua família. Suas ações são decididas pelo mestre, mas ele pode ouvir e reagir a sugestões.</p>
+`,
+duracao: "1d12 turnos ou até o fim da cena",
+tagLevel: "Voltromante",
+tagLevelResposta: "Nível 5 – Avatar do Relâmpago",
+nivel: "5",
+alcance: "1m",
+testeConjurador: "Preservação",
+testeAlvo: "Determinação"
+}
+
+
+
 
 
  
@@ -6391,6 +6894,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

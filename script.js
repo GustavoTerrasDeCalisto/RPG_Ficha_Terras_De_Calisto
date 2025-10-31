@@ -3871,14 +3871,14 @@ const items = [
   {
     "id": "lasanhaCogumelos",
     "name": "Lasanha de Cogumelos",
-    "desc": "Prato reconfortante das tavernas montanhosas de Calisto. Feito com massa artesanal e cogumelos salteados, melhora o descanso e restaura profundamente o corpo.",
+    "desc": "Prato reconfortante das tavernas montanhosas de Calisto. Feito com massa artesanal e cogumelos salteados, melhora o descanso e restaura profundamente o corpo. Resistência a Sangramento por 1 descanso",
     "img": "imagens/Comidas/lasanhaCogumelos.png",
     "damageType": "cura 2d12",
     "elementalDamage": "–",
     "damageDice": "Caos",
     "range": "–",
     "critical": "19 - Cura adicional(+1d12)",
-    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "equipBonus": "-",
     "TipoItem": "Alimento"
   },
   {
@@ -3897,27 +3897,27 @@ const items = [
   {
     "id": "macarraoCobraFrita",
     "name": "Macarrão com Cobra Frita",
-    "desc": "Prato exótico das tavernas do deserto de Calisto. Pode causar desconforto se mal digerido, mas oferece regeneração poderosa durante o descanso.",
+    "desc": "Prato exótico das tavernas do deserto de Calisto. Pode causar desconforto se mal digerido, mas oferece regeneração poderosa durante o descanso. Resistência a Maldição por 1 descanso.",
     "img": "imagens/Comidas/macarraoCobraFrita.png",
     "damageType": "cura 3d12 - risco de dano 1d6",
     "elementalDamage": "Ácido",
     "damageDice": "Caos",
     "range": "–",
     "critical": "18 - Cura total e resistência a Maldição",
-    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "equipBonus": "-",
     "TipoItem": "Alimento"
   },
   {
     "id": "sopaToxica",
     "name": "Sopa Tóxica com Molho Rosado e Carne Meia Crua",
-    "desc": "Servida em bares experimentais de Calisto. Altamente potente, mas arriscada. Pode regenerar profundamente o corpo ou causar efeitos colaterais.",
+    "desc": "Servida em bares experimentais de Calisto. Altamente potente, mas arriscada. Pode regenerar profundamente o corpo ou causar efeitos colaterais. Resistência a Maldição por 2 descansos.",
     "img": "imagens/Comidas/sopaToxica.png",
     "damageType": "cura 4d10 - risco de dano 2d6",
     "elementalDamage": "Ácido",
     "damageDice": "Caos",
     "range": "–",
     "critical": "17 - Cura total e resistência a Maldição",
-    "equipBonus": "Resistência a Maldição por 2 descansos",
+    "equipBonus": "-",
     "TipoItem": "Alimento"
   },
   {
@@ -3949,14 +3949,14 @@ const items = [
   {
     "id": "peixeRecheadoMilho",
     "name": "Peixe Recheado com Ovos e Feijão e Espiga de Milho ao Molho",
-    "desc": "Prato cerimonial das vilas costeiras. Recheado com ingredientes nutritivos, acelera a regeneração natural durante o descanso.",
+    "desc": "Prato cerimonial das vilas costeiras. Recheado com ingredientes nutritivos, acelera a regeneração natural durante o descanso. Resistência a Veneno por 1 descanso.",
     "img": "imagens/Comidas/peixeRecheadoMilho.png",
     "damageType": "cura 2d20",
     "elementalDamage": "–",
     "damageDice": "Caos",
     "range": "–",
     "critical": "18 - Cura adicional(+1d20)",
-    "equipBonus": "Resistência a Veneno por 1 descanso",
+    "equipBonus": "-",
     "TipoItem": "Alimento"
   },
   {
@@ -3975,14 +3975,14 @@ const items = [
   {
     "id": "frutasInventadas",
     "name": "Frutas, Maçãs e Variados",
-    "desc": "Mistura vibrante de frutas típicas e exóticas das florestas de Calisto. Servidas em feiras e mercados, restauram energia e protegem contra maldições.",
+    "desc": "Mistura vibrante de frutas típicas e exóticas das florestas de Calisto. Servidas em feiras e mercados, restauram energia e protegem contra maldições. Resistência a Sono por 1 descanso.",
     "img": "imagens/Comidas/frutasInventadas.png",
     "damageType": "cura 2d12",
     "elementalDamage": "–",
     "damageDice": "Caos",
     "range": "–",
     "critical": "20 - Cura adicional(+1d12) e resistência a Maldição",
-    "equipBonus": "Resistência a Sono por 1 descanso",
+    "equipBonus": "-",
     "TipoItem": "Alimento"
   }
   
@@ -5461,6 +5461,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

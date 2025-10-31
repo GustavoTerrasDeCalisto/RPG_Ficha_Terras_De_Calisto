@@ -3956,7 +3956,7 @@ const items = [
     "damageDice": "Caos",
     "range": "–",
     "critical": "18 - Cura adicional(+1d20)",
-    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "equipBonus": "Resistência a Veneno por 1 descanso",
     "TipoItem": "Alimento"
   },
   {
@@ -3974,7 +3974,7 @@ const items = [
   },
   {
     "id": "frutasInventadas",
-    "name": "Frutas, Maçãs e Frutas Inventadas",
+    "name": "Frutas, Maçãs e Variados",
     "desc": "Mistura vibrante de frutas típicas e exóticas das florestas de Calisto. Servidas em feiras e mercados, restauram energia e protegem contra maldições.",
     "img": "imagens/Comidas/frutasInventadas.png",
     "damageType": "cura 2d12",
@@ -3982,7 +3982,7 @@ const items = [
     "damageDice": "Caos",
     "range": "–",
     "critical": "20 - Cura adicional(+1d12) e resistência a Maldição",
-    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "equipBonus": "Resistência a Sono por 1 descanso",
     "TipoItem": "Alimento"
   }
   
@@ -5461,6 +5461,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -3566,6 +3566,16 @@ h3 {
 
 
 
+.item-tag.alimento {
+  background-color: #f4c430; /* cor dourada suave */
+  color: #3a2f00;            /* marrom escuro para contraste */
+  border: 1px solid #d4a017;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  box-shadow: 0 0 4px rgba(244, 196, 48, 0.5);
+}
 
 
 

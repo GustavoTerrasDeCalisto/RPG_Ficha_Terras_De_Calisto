@@ -3867,7 +3867,124 @@ const items = [
     "equipBonus": "1 tiro normal, 2 tiros com desvantagem",
     "TipoItem": "Distância,Arma"
   }
-
+,
+  {
+    "id": "lasanhaCogumelos",
+    "name": "Lasanha de Cogumelos",
+    "desc": "Prato reconfortante das tavernas montanhosas de Calisto. Feito com massa artesanal e cogumelos salteados, melhora o descanso e restaura profundamente o corpo.",
+    "img": "imagens/Comidas/lasanhaCogumelos.png",
+    "damageType": "cura 2d12",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "19 - Cura adicional(+1d12)",
+    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "feijaoArrozEnsopado",
+    "name": "Feijão Preto ao Molho com Arroz Ensopado",
+    "desc": "Servido em tavernas costeiras, esse prato fortalece viajantes e pescadores. Ideal para restaurar energia após longas jornadas.",
+    "img": "imagens/Comidas/feijaoArrozEnsopado.png",
+    "damageType": "cura 1d20",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "20 - Cura adicional(+1d10)",
+    "equipBonus": "-",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "macarraoCobraFrita",
+    "name": "Macarrão com Cobra Frita",
+    "desc": "Prato exótico das tavernas do deserto de Calisto. Pode causar desconforto se mal digerido, mas oferece regeneração poderosa durante o descanso.",
+    "img": "imagens/Comidas/macarraoCobraFrita.png",
+    "damageType": "cura 3d12 - risco de dano 1d6",
+    "elementalDamage": "Ácido",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "18 - Cura total e resistência a Maldição",
+    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "sopaToxica",
+    "name": "Sopa Tóxica com Molho Rosado e Carne Meia Crua",
+    "desc": "Servida em bares experimentais de Calisto. Altamente potente, mas arriscada. Pode regenerar profundamente o corpo ou causar efeitos colaterais.",
+    "img": "imagens/Comidas/sopaToxica.png",
+    "damageType": "cura 4d10 - risco de dano 2d6",
+    "elementalDamage": "Ácido",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "17 - Cura total e resistência a Maldição",
+    "equipBonus": "Resistência a Maldição por 2 descansos",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "bananaPeixeOvos",
+    "name": "Banana Frita com Ovos e Peixe ao Molho Branco",
+    "desc": "Prato típico das praias de Calisto. Fortalece o corpo e melhora o sono profundo, ideal para recuperação muscular.",
+    "img": "imagens/Comidas/bananaPeixeOvos.png",
+    "damageType": "cura 2d10",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "20 - Cura adicional(+1d10)",
+    "equipBonus": "-",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "cervejaCarneAssada",
+    "name": "Copo Medieval de Cerveja e Carne Assada",
+    "desc": "Banquete rústico das tavernas de Calisto. A carne fortalece, a cerveja relaxa. Ideal para recuperação física e mental.",
+    "img": "imagens/Comidas/cervejaCarneAssada.png",
+    "damageType": "cura 3d10",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "19 - Cura adicional(+1d12)",
+    "equipBonus": "-",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "peixeRecheadoMilho",
+    "name": "Peixe Recheado com Ovos e Feijão e Espiga de Milho ao Molho",
+    "desc": "Prato cerimonial das vilas costeiras. Recheado com ingredientes nutritivos, acelera a regeneração natural durante o descanso.",
+    "img": "imagens/Comidas/peixeRecheadoMilho.png",
+    "damageType": "cura 2d20",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "18 - Cura adicional(+1d20)",
+    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "paoSeco",
+    "name": "Pão Seco",
+    "desc": "Alimento básico das regiões áridas. Simples, mas eficaz para recuperação leve durante o descanso.",
+    "img": "imagens/Comidas/paoSeco.png",
+    "damageType": "cura 1d10",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "20 - Cura adicional(+1d6)",
+    "equipBonus": "-",
+    "TipoItem": "Alimento"
+  },
+  {
+    "id": "frutasInventadas",
+    "name": "Frutas, Maçãs e Frutas Inventadas",
+    "desc": "Mistura vibrante de frutas típicas e exóticas das florestas de Calisto. Servidas em feiras e mercados, restauram energia e protegem contra maldições.",
+    "img": "imagens/Comidas/frutasInventadas.png",
+    "damageType": "cura 2d12",
+    "elementalDamage": "–",
+    "damageDice": "Caos",
+    "range": "–",
+    "critical": "20 - Cura adicional(+1d12) e resistência a Maldição",
+    "equipBonus": "Resistência a Maldição por 1 descanso",
+    "TipoItem": "Alimento"
+  }
   
   
   
@@ -4063,6 +4180,9 @@ function createItemCard(item) {
         break;
       case "medieval":
         tag.classList.add("medieval");
+        break;
+        case "alimento":
+        tag.classList.add("alimento");
         break;
       default:
         tag.classList.add("default");
@@ -5341,6 +5461,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

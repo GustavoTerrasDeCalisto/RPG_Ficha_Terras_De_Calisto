@@ -793,8 +793,7 @@
           <strong>Exemplo:</strong> Com 300 XP, o personagem ganha 3 pontos de nível para distribuir entre os atributos como desejar (por exemplo, +1 em <span class="bru">Brutalidade</span>, +1 em <span class="agi">Agilidade</span> e +1 em <span class="det">Determinação</span>).
         </p>
         <img src="/imagens/evolucao_nivel.png" alt="Evolução do personagem com XP e atributos" style="width:100%; border-radius:10px;">
-
-
+      </div>
   
 <div class="tutorial-section">
  <h2>8. Mecânicas de Influência por Afiliação</h2>
@@ -944,7 +943,7 @@ p {
   background: linear-gradient(135deg, #1976d2, #42a5f5);
   color: #fff;
   text-shadow: 0 0 4px rgba(255,255,255,0.3);
-  border-left: 4px solid #1976d2; /* combinar com azul principal */
+  border-left: 4px solid #0d47a1; /* azul mais escuro para contraste */
   padding-left: 10px;
   border-radius: 8px;
 }
@@ -7427,7 +7426,7 @@ if (subEl) {
   <div class="form-group2">
     <label for="for" class="bru">Brutalidade:</label>
     <div class="input-with-dice">
-      <input type="number" id="for" name="for" class="bru" min="8" max="99" value="14" required>
+      <input type="number" id="for" name="for" min="8" max="99" value="14" required>
       <button class="roll-attr-dice" data-attr="for">🎲</button>
     </div>
     <div class="bonus-group">
@@ -7439,7 +7438,7 @@ if (subEl) {
   <div class="form-group2">
     <label for="des" class="agi">Agilidade:</label>
     <div class="input-with-dice">
-      <input type="number" id="des" name="des" class="agi" min="8" max="99" value="14" required>
+      <input type="number" id="des" name="des"  min="8" max="99" value="14" required>
       <button class="roll-attr-dice" data-attr="des">🎲</button>
     </div>
     <div class="bonus-group">
@@ -7451,7 +7450,7 @@ if (subEl) {
   <div class="form-group2">
     <label for="con" class="det">Determinação:</label>
     <div class="input-with-dice">
-      <input type="number" id="con" name="con" class="det" min="8" max="99" value="14" required>
+      <input type="number" id="con" name="con"  min="8" max="99" value="14" required>
       <button class="roll-attr-dice" data-attr="con">🎲</button>
     </div>
     <div class="bonus-group">
@@ -7465,7 +7464,7 @@ if (subEl) {
   <div class="form-group2">
     <label for="int" class="pre">Preservação:</label>
     <div class="input-with-dice">
-      <input type="number" id="int" name="int" class="pre" min="8" max="99" value="14" required>
+      <input type="number" id="int" name="int"  min="8" max="99" value="14" required>
       <button class="roll-attr-dice" data-attr="int">🎲</button>
     </div>
     <div class="bonus-group">
@@ -7477,7 +7476,7 @@ if (subEl) {
   <div class="form-group2">
     <label for="sab" class="lib">Libertação:</label>
     <div class="input-with-dice">
-      <input type="number" id="sab" name="sab" class="lib" min="8" max="99" value="14" required>
+      <input type="number" id="sab" name="sab"  min="8" max="99" value="14" required>
       <button class="roll-attr-dice" data-attr="sab">🎲</button>
     </div>
     <div class="bonus-group">
@@ -7489,7 +7488,7 @@ if (subEl) {
   <div class="form-group2">
     <label for="car" class="cnx">Conexão:</label>
     <div class="input-with-dice">
-      <input type="number" id="car" name="car" class="cnx" min="8" max="99" value="14" required>
+      <input type="number" id="car" name="car"  min="8" max="99" value="14" required>
       <button class="roll-attr-dice" data-attr="car">🎲</button>
     </div>
     <div class="bonus-group">
@@ -7591,6 +7590,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

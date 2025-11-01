@@ -225,7 +225,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s, transform 0.2s;
-  z-index: 1001; /* Garantir que fique acima do popup */
+  z-index: 100001; /* Garantir que fique acima do popup */
 }
 
 #closeTutorial:hover {
@@ -3609,6 +3609,7 @@ h3 {
   font-size: 0.85rem;
   box-shadow: 0 0 4px rgba(244, 196, 48, 0.5);
 }
+
 
 
 

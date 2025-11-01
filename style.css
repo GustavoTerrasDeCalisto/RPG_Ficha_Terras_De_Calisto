@@ -211,7 +211,7 @@ header {
 #closeTutorial {
   position: absolute; /* Fixa no canto do popup */
   top: 15px;
-  right: 15px;
+  left: 15px; /* Alterado de right para left */
   background-color: #ff4d4d; /* Vermelho suave */
   color: white;
   border: none;
@@ -225,7 +225,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s, transform 0.2s;
-  z-index: 100001; /* Garantir que fique acima do popup */
+  z-index: 1001; /* Garantir que fique acima do popup */
 }
 
 #closeTutorial:hover {
@@ -244,7 +244,7 @@ header {
     height: 35px;
     font-size: 20px;
     top: 10px;
-    right: 10px;
+    left: 10px; /* Também alterado para left */
   }
 }
 
@@ -3609,6 +3609,7 @@ h3 {
   font-size: 0.85rem;
   box-shadow: 0 0 4px rgba(244, 196, 48, 0.5);
 }
+
 
 
 

@@ -207,6 +207,46 @@ header {
   display: block;         /* Não usar flex aqui */
   gap: 0;                 /* Flex gap não é necessário */
 }
+/* Botão de fechar do tutorial */
+#closeTutorial {
+  position: absolute; /* Fixa no canto do popup */
+  top: 15px;
+  right: 15px;
+  background-color: #ff4d4d; /* Vermelho suave */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Botão circular */
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s;
+  z-index: 1001; /* Garantir que fique acima do popup */
+}
+
+#closeTutorial:hover {
+  background-color: #ff1a1a; /* Vermelho mais intenso ao passar o mouse */
+  transform: scale(1.1); /* Leve zoom */
+}
+
+#closeTutorial:active {
+  transform: scale(0.95); /* Leve efeito de clique */
+}
+
+/* Ajuste mobile */
+@media (max-width: 600px) {
+  #closeTutorial {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }
+}
 
 .close {
   display: block;
@@ -3569,6 +3609,7 @@ h3 {
   font-size: 0.85rem;
   box-shadow: 0 0 4px rgba(244, 196, 48, 0.5);
 }
+
 
 
 

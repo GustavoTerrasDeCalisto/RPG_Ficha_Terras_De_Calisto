@@ -908,22 +908,24 @@ p {
 }
 
 @media (max-width: 768px) {
+  .form-group2 {
+    position: relative; /* referência para label absolute */
+    min-height: 40px;  /* ajuste conforme necessário */
+  }
+
   label.bru,
   label.agi,
   label.pre,
   label.det,
   label.lib,
   label.cnx {
-    position: absolute;   /* Sai do fluxo */
-    top: -2px;            /* Sobe 2px acima */
-    left: 50%;            /* Centro horizontal */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-  }
-
-  .form-group2 {
-    position: relative;   /* Referência para o label absoluto */
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
+
 
 /* --------------------------
    Atributos físicos
@@ -7589,6 +7591,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

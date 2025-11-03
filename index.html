@@ -2049,6 +2049,7 @@ Bonus por Níveis Do Personagem  </h3>
 
 
 <div class="painel-botoes">
+  <button type="button" id="open-notes" class="notes-btn">📝 Bloco de Notas</button>
   <button type="button" onclick="TC.open()" class="magias-btn"></button>
   <button id="openPopup" class="rolagem-btn"></button>
   <button id="openItemPopup" class="mochila-btn"></button>
@@ -2057,6 +2058,7 @@ Bonus por Níveis Do Personagem  </h3>
     <div id="equippedItemSlot"></div>
   </div>
 </div>
+        
 <style>
   .painel-botoes {
   display: flex;
@@ -7409,7 +7411,92 @@ if (subEl) {
     </div>
   </div>
 </div>
-  
+    <!-- ============================ -->
+<!-- BLOCO DE NOTAS -->
+<!-- ============================ -->
+
+<div id="notes-overlay" class="notes-overlay" style="display: none;">
+  <div class="notes-container">
+    <h3>🧾 Bloco de Notas do Personagem</h3>
+    <textarea id="notes-textarea" placeholder="Digite suas anotações aqui..."></textarea>
+    <div class="notes-buttons">
+      <button id="close-notes">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.notes-btn {
+  background-color: #3ea3ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.notes-btn:hover {
+  background-color: #00ccff;
+}
+
+.notes-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.notes-container {
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  color: #ddd;
+  box-shadow: 0 0 20px #000;
+}
+
+.notes-container h3 {
+  margin-bottom: 10px;
+  color: #3ea3ff;
+  text-align: center;
+}
+
+#notes-textarea {
+  width: 100%;
+  height: 300px;
+  background: #0b0b0b;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #eee;
+  padding: 10px;
+  font-family: "Consolas", monospace;
+  resize: vertical;
+}
+
+.notes-buttons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.notes-buttons button {
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #ddd;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.notes-buttons button:hover {
+  background: #333;
+}
+</style>
+
 <div class="form-row">
   <div class="form-group2">
     <label for="for" class="bru">Brutalidade:</label>
@@ -7505,23 +7592,59 @@ if (subEl) {
   </style>
           <div class="ButonsSave">
             <form id="character-form">
-                <div class="button-group">
-                    <button type="submit">Salvar Personagem</button>
-                    <button type="button" id="load-character">Carregar Personagem</button>
-                </div>
-                <!--<div class="button-group">
-                    <button type="button" id="download-character">Salvar Personagem</button>
-                    <input type="file" id="upload-character" accept=".json" style="display: none;">
-                    <button type="button" id="load-file-character">Carregar Personagem de Arquivo</button>
-                </div> -->
-            </form>
-        
-            <div id="character-select-section" style="display: none;">
-                <span id="close-select-section" class="close-button">X</span>
-                <h2>Escolha seu Personagem</h2>
-                <select id="character-select"></select>
-                <button type="button" id="confirm-load">Carregar</button>
-            </div>
+                <!-- ============================ -->
+<!-- BOTÕES PRINCIPAIS -->
+<!-- ============================ -->
+<div class="button-group">
+  <button type="button" id="save-character">Salvar Personagem</button>
+  <button type="button" id="load-character">Carregar Personagem</button>
+</div>
+
+<!-- ============================ -->
+<!-- SEÇÃO DE SELEÇÃO VISUAL -->
+<!-- ============================ -->
+<div id="character-select-section" style="display: none;">
+  <h3>🧙 Escolha seu personagem salvo</h3>
+  <div id="character-list" class="character-list"></div>
+  <button id="confirm-load" style="margin-top:10px;">Carregar Selecionado</button>
+  <button id="cancel-load" style="margin-top:10px;">Cancelar</button>
+</div>
+
+<style>
+  .character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .character-card {
+    background: #111;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 12px;
+    color: #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .character-card:hover {
+    border-color: #3ea3ff;
+    background: #1a1a1a;
+  }
+  .character-card.selected {
+    border-color: #00ccff;
+    background: #1c2833;
+    box-shadow: 0 0 10px #00ccff55;
+  }
+  .character-card h4 {
+    color: #3ea3ff;
+    margin-bottom: 5px;
+  }
+  .character-card small {
+    display: block;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+</style>
         </div>
 
         <div id="save-message" style="display: none;"></div>
@@ -7578,6 +7701,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

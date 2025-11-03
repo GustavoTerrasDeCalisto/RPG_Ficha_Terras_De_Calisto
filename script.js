@@ -4995,192 +4995,241 @@ function updatePastImage() {
   }
 }
 
+// ============================
+// BLOCO DE NOTAS (LOCAL DO JOGADOR)
+// ============================
+const notesButton = document.getElementById('open-notes');
+const notesOverlay = document.getElementById('notes-overlay');
+const notesTextarea = document.getElementById('notes-textarea');
+const closeNotesButton = document.getElementById('close-notes');
+
+let currentNotes = ""; // Mantém texto atual do bloco
+
+// Abrir bloco de notas
+notesButton.addEventListener('click', () => {
+  notesOverlay.style.display = 'flex';
+  notesTextarea.value = currentNotes || "";
+  notesTextarea.focus();
+});
+
+// Fechar bloco de notas
+closeNotesButton.addEventListener('click', () => {
+  currentNotes = notesTextarea.value; // guarda localmente
+  notesOverlay.style.display = 'none';
+});
+
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
-document.addEventListener('DOMContentLoaded', () => { 
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('character-form');
-  
-  // Verifique se o listener já foi adicionado
-  if (!form._hasListener) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault(); // Impede o envio do formulário e recarregamento da página
+  const saveButton = document.getElementById('save-character');
+  const loadButton = document.getElementById('load-character');
+  const confirmButton = document.getElementById('confirm-load');
+  const cancelButton = document.getElementById('cancel-load');
+  const listContainer = document.getElementById('character-list');
+  const section = document.getElementById('character-select-section');
+  let selectedCharacterIndex = null;
 
-      // Coleta os valores dos campos do formulário
-      const name = document.getElementById('char-name').value;
-      const race = document.getElementById('race').value;
-      const past = document.getElementById('past').value;
-      const forLevel = parseInt(document.getElementById('for').value, 10);
-      const desLevel = parseInt(document.getElementById('des').value, 10);
-      const conLevel = parseInt(document.getElementById('con').value, 10);
-      const intLevel = parseInt(document.getElementById('int').value, 10);
-      const sabLevel = parseInt(document.getElementById('sab').value, 10);
-      const carLevel = parseInt(document.getElementById('car').value, 10);
+  // 🛑 Impede que qualquer botão dentro do form recarregue a página
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+  });
 
-      // Coleta as habilidades do personagem
-      const skills = {};
-      document.querySelectorAll('.pericia').forEach((skillElement) => {
-        const skillName = skillElement.getAttribute('data-name');
-        const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
-        skills[skillName] = skillValue;
-      });
+  // ============================
+  // SALVAMENTO — APENAS NO BOTÃO
+  // ============================
+  saveButton.addEventListener('click', (event) => {
+    event.preventDefault(); // segurança extra
 
-      // Salva os dados do personagem
-      let characterCount = localStorage.getItem('characterCount') ? parseInt(localStorage.getItem('characterCount'), 10) : 0;
-      characterCount++; // Incrementa a contagem de personagens
-      localStorage.setItem('characterCount', characterCount);
+    const name = document.getElementById('char-name').value.trim();
+    const race = document.getElementById('race').value;
+    const past = document.getElementById('past').value;
 
-      // Salva os dados no localStorage
-      localStorage.setItem(`characterData${characterCount}`, JSON.stringify({
-        name: name,
-        race: race,
-        past: past,
-        for: forLevel,
-        des: desLevel,
-        con: conLevel,
-        int: intLevel,
-        sab: sabLevel,
-        car: carLevel,
-        skills: skills,
+    if (!name) {
+      alert('⚠️ Dê um nome ao personagem antes de salvar.');
+      return;
+    }
 
-        life: 100,
-        sanity: 100,
-        special: 0,
-        armor: 0,
-        movement: 0,
-        level: 1,
-  // ✅ Aqui salva o item equipado
-  equippedItemId: equippedItemId      }));
+    const forLevel = parseInt(document.getElementById('for').value, 10);
+    const desLevel = parseInt(document.getElementById('des').value, 10);
+    const conLevel = parseInt(document.getElementById('con').value, 10);
+    const intLevel = parseInt(document.getElementById('int').value, 10);
+    const sabLevel = parseInt(document.getElementById('sab').value, 10);
+    const carLevel = parseInt(document.getElementById('car').value, 10);
 
-      // Atualiza a visualização do personagem
-      document.getElementById('char-name-view').textContent = name;
-      document.getElementById('char-race-view').textContent = race;
-      document.getElementById('char-past-view').textContent = past;
-
-      updateStats();
-
-      // Exibe a mensagem de sucesso
-      const saveMessage = document.getElementById('save-message');
-      if (saveMessage) {
-        saveMessage.textContent = 'Personagem salvo!';
-        saveMessage.style.display = 'block';
-        setTimeout(() => {
-          saveMessage.style.display = 'none';
-        }, 5000);
-      }
+    const skills = {};
+    document.querySelectorAll('.pericia').forEach((skillElement) => {
+      const skillName = skillElement.getAttribute('data-name');
+      const skillValue = parseInt(skillElement.querySelector('button').innerText, 10);
+      skills[skillName] = skillValue;
     });
 
-    // Marca que o listener foi adicionado para evitar múltiplas adições
-    form._hasListener = true;
-  }
-});
+    let characterCount = localStorage.getItem('characterCount')
+      ? parseInt(localStorage.getItem('characterCount'), 10)
+      : 0;
+    characterCount++;
+    localStorage.setItem('characterCount', characterCount);
 
-// Function to load characters from local storage
-document.getElementById('load-character').addEventListener('click', () => {
-  const characterSelect = document.getElementById('character-select');
-  characterSelect.innerHTML = ''; // Clear existing options
+    localStorage.setItem(`characterData${characterCount}`, JSON.stringify({
+      name, race, past,
+      for: forLevel, des: desLevel, con: conLevel, int: intLevel, sab: sabLevel, car: carLevel,
+      skills,
+      life: 100, sanity: 100, special: 0, armor: 0, movement: 0, level: 1,
+      equippedItemId: equippedItemId,
+      notes: currentNotes // 🧾 <--- adiciona o texto do bloco de notas
 
-  let characterCount = parseInt(localStorage.getItem('characterCount'), 10);
-  for (let i = 1; i <= characterCount; i++) {
-      const characterData = JSON.parse(localStorage.getItem(`characterData${i}`));
-      if (characterData) {
-          const option = document.createElement('option');
-          option.value = i;
-          option.textContent = characterData.name;
-          characterSelect.appendChild(option);
+    }));
+
+    document.getElementById('char-name-view').textContent = name;
+    document.getElementById('char-race-view').textContent = race;
+    document.getElementById('char-past-view').textContent = past;
+    updateStats();
+
+    const saveMessage = document.getElementById('save-message');
+    if (saveMessage) {
+      saveMessage.textContent = '✅ Personagem salvo com sucesso!';
+      saveMessage.style.display = 'block';
+      setTimeout(() => saveMessage.style.display = 'none', 4000);
+    }
+  });
+
+  // ============================
+  // CARREGAMENTO VISUAL
+  // ============================
+  loadButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    listContainer.innerHTML = '';
+    selectedCharacterIndex = null;
+
+    const characterCount = parseInt(localStorage.getItem('characterCount'), 10) || 0;
+    let hasNamedCharacter = false;
+
+    for (let i = 1; i <= characterCount; i++) {
+      const data = JSON.parse(localStorage.getItem(`characterData${i}`));
+      if (data && data.name && data.name.trim() !== '') {
+        hasNamedCharacter = true;
+
+        const card = document.createElement('div');
+        card.classList.add('character-card');
+        card.innerHTML = `
+          <h4>${data.name}</h4>
+          <small>Raça: ${data.race || '-'}</small>
+          <small>Passado: ${data.past || '-'}</small>
+          <small>Nível: ${data.level || 1}</small>
+        `;
+
+        card.addEventListener('click', () => {
+          document.querySelectorAll('.character-card').forEach(c => c.classList.remove('selected'));
+          card.classList.add('selected');
+          selectedCharacterIndex = i;
+        });
+
+        listContainer.appendChild(card);
       }
+    }
+
+    if (!hasNamedCharacter) {
+      listContainer.innerHTML = '<p style="color:#aaa;">Nenhum personagem nomeado salvo.</p>';
+    }
+
+    section.style.display = 'block';
+  });
+
+  cancelButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    section.style.display = 'none';
+  });
+
+  confirmButton.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  if (!selectedCharacterIndex) {
+    alert('Selecione um personagem para carregar.');
+    return;
   }
 
-  document.getElementById('character-select-section').style.display = 'block';
-});
+  const characterData = JSON.parse(localStorage.getItem(`characterData${selectedCharacterIndex}`));
+  if (!characterData) return;
 
-// Event listener for character selection
-document.getElementById('confirm-load').addEventListener('click', () => {
-  const characterSelect = document.getElementById('character-select');
-  const selectedIndex = characterSelect.value;
+  // ============================
+  // CARREGA OS DADOS BÁSICOS
+  // ============================
+  document.getElementById('char-name').value = characterData.name;
+  document.getElementById('race').value = characterData.race;
+  document.getElementById('past').value = characterData.past;
+  document.getElementById('for').value = characterData.for;
+  document.getElementById('des').value = characterData.des;
+  document.getElementById('con').value = characterData.con;
+  document.getElementById('int').value = characterData.int;
+  document.getElementById('sab').value = characterData.sab;
+  document.getElementById('car').value = characterData.car;
 
-  if (selectedIndex) {
-      const characterData = JSON.parse(localStorage.getItem(`characterData${selectedIndex}`));
-      if (characterData) {
-          // Update character view section with loaded data
-          document.getElementById('char-name-view').textContent = characterData.name;
-          document.getElementById('char-race-view').textContent = characterData.race;
-          document.getElementById('char-past-view').textContent = characterData.past;
+  document.getElementById('char-name-view').textContent = characterData.name;
+  document.getElementById('char-race-view').textContent = characterData.race;
+  document.getElementById('char-past-view').textContent = characterData.past;
+  document.getElementById('life-view').textContent = characterData.life;
+  document.getElementById('sanity-view').textContent = characterData.sanity;
+  document.getElementById('special-view').textContent = characterData.special;
+  document.getElementById('armor-view').textContent = characterData.armor;
+  document.getElementById('movement-view').textContent = characterData.movement;
+  document.getElementById('level-view').textContent = characterData.level;
 
-          // Update input fields with loaded stats
-          document.getElementById('char-name').value = characterData.name;
-          document.getElementById('race').value = characterData.race;
-          document.getElementById('past').value = characterData.past;
-          document.getElementById('for').value = characterData.for;
-          document.getElementById('des').value = characterData.des;
-          document.getElementById('con').value = characterData.con;
-          document.getElementById('int').value = characterData.int;
-          document.getElementById('sab').value = characterData.sab;
-          document.getElementById('car').value = characterData.car;
+  // ============================
+  // CARREGA AS PERÍCIAS
+  // ============================
+  Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
+    const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
+    if (skillElement) skillElement.innerText = skillValue;
+  });
 
-          // Load additional stats
-          document.getElementById('life-view').textContent = characterData.life;
-          document.getElementById('sanity-view').textContent = characterData.sanity;
-          document.getElementById('special-view').textContent = characterData.special;
-          document.getElementById('armor-view').textContent = characterData.armor;
-          document.getElementById('movement-view').textContent = characterData.movement;
-          document.getElementById('level-view').textContent = characterData.level;
+  atualizarBonusDoPassado(characterData.past);
+  loadEquippedItem(characterData);
+  equippedItemId = characterData.equippedItemId || null;
 
-          Object.entries(characterData.skills).forEach(([skillName, skillValue]) => {
-            const skillElement = document.querySelector(`.pericia[data-name="${skillName}"] button`);
-            if (skillElement) {
-                skillElement.innerText = skillValue;
-            }
-          });
-// CHAMA ISSO PARA ATUALIZAR AS ESPECIALIZAÇÕES
-atualizarBonusDoPassado(characterData.past);
-          // Carregar os dados do item equipado
-loadEquippedItem(characterData);
+  // ============================
+  // CARREGA BLOCO DE NOTAS 🧾
+  // ============================
+  currentNotes = characterData.notes || "";
+  notesTextarea.value = currentNotes; // garante que aparece na tela quando abrir o bloco
 
-// ✅ CORREÇÃO AQUI
-equippedItemId = characterData.equippedItemId || null;
-
-if (equippedItemId) {
-  const equippedItem = items.find(item => item.id === equippedItemId);
-  if (equippedItem) {
-    equippedSlot.innerHTML = `
-      <div class="equipped-item-container">
-        <div class="equipped-visible">
-          <img src="${equippedItem.img}" alt="${equippedItem.name}">
-          <div class="item-info">
-            <div>${equippedItem.name}</div>
-            <div>${equippedItem.damageType || 'Dano N/A'}</div>
+  // ============================
+  // ITENS EQUIPADOS
+  // ============================
+  if (equippedItemId) {
+    const equippedItem = items.find(item => item.id === equippedItemId);
+    if (equippedItem) {
+      equippedSlot.innerHTML = `
+        <div class="equipped-item-container">
+          <div class="equipped-visible">
+            <img src="${equippedItem.img}" alt="${equippedItem.name}">
+            <div class="item-info">
+              <div>${equippedItem.name}</div>
+              <div>${equippedItem.damageType || 'Dano N/A'}</div>
+            </div>
+          </div>
+          <div class="equipped-hover-info">
+            <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
+            <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
+            <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
+            <div>Alcance: ${equippedItem.range || 'N/A'}</div>
+            <div>Crítico: ${equippedItem.critical || 'N/A'}</div>
+            <div>Bônus ao Equipar: ${equippedItem.equipBonus || 'Nenhum'}</div>
           </div>
         </div>
-        <div class="equipped-hover-info">
-          <div>Dano Físico: ${equippedItem.damageType || 'N/A'}</div>
-          <div>Dano Elemental: ${equippedItem.elementalDamage || 'N/A'}</div>
-          <div>Tipo de Dano: ${equippedItem.damageDice || 'N/A'}</div>
-          <div>Alcance: ${equippedItem.range || 'N/A'}</div>
-          <div>Crítico: ${equippedItem.critical || 'N/A'}</div>
-          <div>Bônus ao Equipar: ${equippedItem.equipBonus || 'Nenhum'}</div>
-        </div>
-      </div>
-    `;
+      `;
+    }
   }
-}
 
-// Call updateStats to display loaded values
-updateStats();
-      }
-
-      document.getElementById('character-select-section').style.display = 'none';
-  }
+  updateStats();
+  section.style.display = 'none';
 });
 
-
-
-
-
-
+});
 
 
 // Event listener for loading character
@@ -5461,6 +5510,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

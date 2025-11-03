@@ -5078,7 +5078,8 @@ document.addEventListener('DOMContentLoaded', () => {
       name, race, past,
       for: forLevel, des: desLevel, con: conLevel, int: intLevel, sab: sabLevel, car: carLevel,
       skills,
-      life: 100, sanity: 100, special: 0, armor: 0, movement: 0, level: 1,
+      life: 100, sanity: 100, special: 0, armor: 0, movement: 0,   level: parseInt(document.getElementById('level-view').textContent, 10) || 1, // ✅ pega valor atual
+
       equippedItemId: equippedItemId,
       notes: currentNotes // 🧾 <--- adiciona o texto do bloco de notas
 
@@ -5089,12 +5090,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('char-past-view').textContent = past;
     updateStats();
 
-    const saveMessage = document.getElementById('save-message');
-    if (saveMessage) {
-      saveMessage.textContent = '✅ Personagem salvo com sucesso!';
-      saveMessage.style.display = 'block';
-      setTimeout(() => saveMessage.style.display = 'none', 4000);
-    }
+// Mostrar aviso de salvamento flutuante
+const saveAlert = document.getElementById('save-alert');
+if (saveAlert) {
+  saveAlert.classList.add('show');
+  setTimeout(() => saveAlert.classList.remove('show'), 2500);
+}
+
   });
 
   // ============================
@@ -5230,6 +5232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 });
+
 
 
 // Event listener for loading character
@@ -5510,6 +5513,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

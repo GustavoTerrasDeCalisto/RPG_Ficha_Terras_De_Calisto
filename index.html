@@ -7590,13 +7590,15 @@ if (subEl) {
 }
 
   </style>
-          <div class="ButonsSave">
+        <div class="ButonsSave">
             <form id="character-form">
-                <!-- ============================ -->
+              <!-- ============================ -->
 <!-- BOTÕES PRINCIPAIS -->
 <!-- ============================ -->
 <div class="button-group">
+
   <button type="button" id="save-character">Salvar Personagem</button>
+
   <button type="button" id="load-character">Carregar Personagem</button>
 </div>
 
@@ -7646,6 +7648,36 @@ if (subEl) {
   }
 </style>
         </div>
+<!-- Alerta flutuante (pode ficar fora do form) -->
+<div id="save-alert" class="save-alert" aria-live="polite">💾 Personagem salvo com sucesso!</div>
+
+<!-- ====== CSS: colocar no seu arquivo CSS (ou dentro de <style>) ====== -->
+<style>
+  .save-alert {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #00ccff, #0077ff);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 0 15px #00ccff88;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.35s cubic-bezier(.2,.9,.2,1);
+    z-index: 9999;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.5));
+  }
+
+  .save-alert.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+</style>
 
         <div id="save-message" style="display: none;"></div>
 
@@ -7701,6 +7733,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

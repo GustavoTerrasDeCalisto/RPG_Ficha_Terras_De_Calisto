@@ -2049,7 +2049,7 @@ Bonus por Níveis Do Personagem  </h3>
 
 
 <div class="painel-botoes">
-  <button type="button" id="open-notes" class="notes-btn">📝 Bloco de Notas</button>
+<button type="button" id="open-notes" class="notes-btn"></button>
   <button type="button" onclick="TC.open()" class="magias-btn"></button>
   <button id="openPopup" class="rolagem-btn"></button>
   <button id="openItemPopup" class="mochila-btn"></button>
@@ -2060,6 +2060,44 @@ Bonus por Níveis Do Personagem  </h3>
 </div>
         
 <style>
+  .notes-btn {
+  background-image: url('/imagens/BotaoNotas.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 220px;   /* ajuste conforme o tamanho real da imagem */
+  height: 70px;
+
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.1s ease, filter 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* cor do texto se a imagem não cobrir tudo */
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black; /* melhora a leitura sobre o fundo */
+}
+
+.notes-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.notes-btn:active {
+  transform: scale(0.95);
+  filter: brightness(0.9);
+}
+.notes-btn {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
   .painel-botoes {
   display: flex;
   flex-direction: column; /* deixa os itens em coluna (vertical) */
@@ -7733,6 +7771,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

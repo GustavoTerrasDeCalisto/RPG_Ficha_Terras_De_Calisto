@@ -1161,30 +1161,49 @@ p {
     
     <!-- Seção da esquerda -->
 <div id="left-section">
-  <div class="status-externo">
-    <div class="status-bar">
-      <div id="life-fill" class="fill"></div>
-      <div id="life-temp-fill" class="temp-fill"></div> <!-- Barra Temporária -->
-      <span id="life-view">0 / 0</span>
-    </div>
+<div class="status-externo">
+  <label class="status-label">❤️ Vida</label>
+  <div class="status-bar">
+    <div id="life-fill" class="fill"></div>
+    <div id="life-temp-fill" class="temp-fill"></div>
+    <span id="life-view" class="status-text">0 / 0</span>
   </div>
-  
-  <div class="status-externo">
-    <div class="status-bar">
-      <div id="sanity-fill" class="fill"></div>
-      <div id="sanity-temp-fill" class="temp-fill"></div> <!-- Barra Temporária -->
-      <span id="sanity-view">0 / 0</span>
-    </div>
+</div>
+
+<div class="status-externo">
+  <label class="status-label">🧠 Sanidade</label>
+  <div class="status-bar">
+    <div id="sanity-fill" class="fill"></div>
+    <div id="sanity-temp-fill" class="temp-fill"></div>
+    <span id="sanity-view" class="status-text">0 / 0</span>
   </div>
-  
-  <div class="status-externo">
-    <div class="status-bar">
-      <div id="special-fill" class="fill"></div>
-      <div id="special-temp-fill" class="temp-fill"></div> <!-- Barra Temporária -->
-      <span id="special-view">0 / 0</span>
-    </div>
+</div>
+
+<div class="status-externo">
+  <label class="status-label">✨ Especial</label>
+  <div class="status-bar">
+    <div id="special-fill" class="fill"></div>
+    <div id="special-temp-fill" class="temp-fill"></div>
+    <span id="special-view" class="status-text">0 / 0</span>
   </div>
-  
+</div>
+
+<style>
+.status-externo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important; /* Espaço entre o nome e a barra */
+}
+
+.status-label {
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  color: #111 !important;
+  width: 85px !important;
+  text-align: right !important;
+  flex-shrink: 0 !important;
+}
+</style>
 
 
 
@@ -7769,6 +7788,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

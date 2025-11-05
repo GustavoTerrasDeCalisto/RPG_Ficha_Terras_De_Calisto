@@ -6003,7 +6003,7 @@ testeAlvo: "Agilidade"
   tipoDano:"Distorção",
   descricao:`<p><strong>O personagem entra em um estado de alerta absoluto</strong>, com os olhos atentos e a respiração controlada. Sua postura se torna defensiva, mas impregnada por um instinto de retaliação sobrenatural — cada golpe recebido desperta uma resposta imediata e implacável.</p>`,
   positivo:`<p><strong>Retribuição Imediata:</strong> Sempre que o personagem for atingido, ele devolve <strong>o mesmo dano recebido + 2d8</strong> de dano de <em>Distorção</em> ao agressor. Pode ser usada como <em>Reação</em>, exigindo um teste de <strong>Contra-ataque</strong>.</p>`,
-  negativo:`<p><strong>Imobilidade da Ira:</strong> Enquanto permanecer nesse estado, o personagem <strong>não pode se mover</strong>, tornando-se uma fortaleza estática de pura vingança.</p>`,
+  negativo: `<p><strong>Imobilidade da Ira:</strong> Enquanto permanecer nesse estado, o personagem <strong>não pode usar a ação de movimento para alterar sua posição</strong>, tornando-se uma fortaleza estática de pura vingança.</p>`,
   duracao:"Até decidir se mover ou até o fim do combate",
   nivel:"2",
   alcance:"Visível",
@@ -6214,15 +6214,21 @@ testeAlvo: "Agilidade"
   img:"https://terrasdecalistoficha.wordpress.com/wp-content/uploads/2024/07/image.psd-26.png?w=768&h=768",
   elemento:"Poder",
   tipoDano:"Plasma",
-  descricao:`<p><strong>O personagem entra em projeção astral</strong>, separando sua alma do corpo e envolvendo-a por um dos quatro grandes elementos.</p>`,
-  positivo:`<p><strong>Projeção Elemental:</strong> A alma atravessa paredes e objetos, não sofre dano físico, e magias lançadas nessa forma recebem <strong>+1D10</strong> de dano de Plasma e <strong>+1D8</strong> em testes de acerto. Se um inimigo morrer por uma dessas magias, ela pode ser replicada automaticamente uma vez.</p>`,
-  negativo:`<p><strong>Corpo Vulnerável:</strong> O corpo físico permanece indefeso. Para retornar, o personagem deve passar em um teste de <em>Vontade</em> (<strong>1D20 + Libertação</strong> contra DT Sobrenatural). Se falhar, sofre <strong>3D12</strong> de dano do elemento da alma.</p>`,
+  descricao:`<p><strong>O personagem entra em um estado de projeção astral</strong>, permanecendo imóvel enquanto sua alma se separa do corpo, envolta por um dos quatro grandes elementos: <strong>Fé</strong>, <strong>Caos</strong>, <strong>Desconhecido</strong> ou <strong>Poder</strong>.</p>`,
+  positivo:`<p><strong>Projeção Elemental:</strong> A alma se desliga do corpo e pode atravessar paredes, objetos físicos e barreiras comuns, explorando locais inacessíveis.</p>
+  <p>Durante esse estado, o personagem não sofre dano físico direto e a alma é envolta por um dos quatro elementos (à escolha do jogador ou conforme a afinidade do personagem).</p>
+  <p>Todas as magias lançadas nessa forma recebem <strong>+1D10</strong> de dano do tipo <strong>Plasma</strong> e <strong>+1D8</strong> nos testes de acerto.</p>
+  <p>Se um inimigo morrer por uma dessas magias, o personagem pode replicar automaticamente essa magia em outro alvo visível, uma única vez.</p>`,
+  negativo:`<p><strong>Corpo Vulnerável:</strong> O corpo físico permanece vulnerável e indefeso enquanto a alma está separada.</p>
+  <p>Para encerrar voluntariamente a forma, o personagem deve passar em um teste de <em>Vontade</em> (<strong>1D20 + bônus de Libertação</strong> contra a <strong>DT Sobrenatural</strong>, definida pelo mestre).</p>
+  <p>Se falhar, sofre <strong>3D12</strong> de dano do elemento atual da alma, pois o Sobrenatural percebe sua presença e tenta aprisioná-la.</p>`,
   duracao:"Até o fim da cena",
   nivel:"5",
   alcance:"Visível",
   testeConjurador:"Libertação",
   testeAlvo:"Preservação"
 },
+
 {
   id:"p23",
   nome:"Teleporte Repentino",
@@ -7788,6 +7794,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

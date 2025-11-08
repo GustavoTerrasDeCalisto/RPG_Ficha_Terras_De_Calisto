@@ -1,3 +1,4 @@
+
 // Dados de butos das raças (Exemplo: Raça Alfo, Passado Aldeão)
 const raceData = {
   "Elfo": {
@@ -319,970 +320,1152 @@ const raceData = {
 
 const pastData = {
   "Aldeão": {
-    "vidaPorNivel": 6,
-    "sanidadePorNivel": 2,
-    "armaduraPorNivel": 1,
-    "resistencia": "Sagrado",
-"movimento_pass": 2,
-"bonusPass":`
-Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</strong>
-`,
-bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>
-`,
-    bonusTexto_1: `<p>Nível 1: +1d4 de dano com ferramentas improvisadas.</p>
-<p>Nível 3: +1 em testes de Brutalidade.</p>
-<p>Nível 5: +1 em testes de Sobrevivência.</p>
-<p>Nível 9: +2 em ataques corpo a corpo com ferramentas ou armas simples.</p>
-<p>Nível 13: <strong>Golpe Improvável</strong> - Dano extra de +1d6 ao atacar em condições desfavoráveis.</p>
-<p>Nível 16: +1d6 de dano com armas cortantes ou perfurantes.</p>
-<p>Nível 20: <strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.</p>
-<p>Nível 22: +1d8 de dano com armas pesadas.</p>
-<p>Nível 25: <strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de ial por ativação, uma vez por combate)</p>`,
-bonustitulo_2: "<p>♟️<strong>Estrategista</strong></p>",
-bonusTexto_2: `Nível 1: +1 em precisão à distância.
-<p>Nível 3: +2 em testes de Agilidade.</p>
-<p>Nível 5: <strong>Observador</strong> - +1 em testes de percepção em situações de combate ou exploração.</p>
-<p>Nível 9: +1 em iniciativas e bônus de evasão contra ataques mágicos.</p>
-<p>Nível 13: <strong>Estratégia Rápida</strong> - +1 em testes de comando e bônus em ações táticas.</p>
-<p>Nível 16: +1d8 de dano em ataques com projéteis.</p>
-<p>Nível 20: <strong>Alvo Improvável</strong> - Você recebe +2 de bônus na armadura contra inimigos que ainda não sofreram dano.</p>
-<p>Nível 22: <strong>Tático Experiente</strong> - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.</p>
-<p>Nível 25: <strong>Plano de Batalha</strong> - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.</p>`
+    vidaPorNivel: 6,
+    sanidadePorNivel: 2,
+    armaduraPorNivel: 1,
+    resistencia: "Sagrado",
+    movimento_pass: 2,
+
+    bonusPass: `
+    Nível 0: +2 em testes de Conexão, +5 em testes de <strong>Sobrevivência.</strong>
+    `,
+
+    // ===============================
+    // 🗡️ COMBATENTE
+    // ===============================
+    bonustitulo_1: `<p>🗡️<strong>Combatente</strong></p>`,
+
+    bonusTexto1N1: `+1d4 de dano com ferramentas improvisadas.`,
+    bonusTexto1N3: `+1 em testes de Brutalidade.`,
+    bonusTexto1N5: `+1 em testes de Sobrevivência.`,
+    bonusTexto1N9: `+2 em ataques corpo a corpo com ferramentas ou armas simples.`,
+    bonusTexto1N13: `<strong>Golpe Improvável</strong> - Dano extra de +1d6 ao atacar em condições desfavoráveis.`,
+    bonusTexto1N16: `+1d6 de dano com armas cortantes ou perfurantes.`,
+    bonusTexto1N20: `<strong>Combate Resiliente</strong> - +2 em testes de resistência contra Hemorragia e Paralisado.`,
+    bonusTexto1N22: `+1d8 de dano com armas pesadas.`,
+    bonusTexto1N25: `<strong>Frenesi Berserker</strong> - Quando atinge 0 HP, pode realizar um ataque adicional sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido. (5 de ial por ativação, uma vez por combate)`,
+
+    // ===============================
+    // ♟️ ESTRATEGISTA
+    // ===============================
+    bonustitulo_2: `<p>♟️<strong>Estrategista</strong></p>`,
+
+    bonusTexto2N1: `+1 em precisão à distância.`,
+    bonusTexto2N3: `+2 em testes de Agilidade.`,
+    bonusTexto2N5: `<strong>Observador</strong> - +1 em testes de percepção em situações de combate ou exploração.`,
+    bonusTexto2N9: `+1 em iniciativas e bônus de evasão contra ataques mágicos.`,
+    bonusTexto2N13: `<strong>Estratégia Rápida</strong> - +1 em testes de comando e bônus em ações táticas.`,
+    bonusTexto2N16: `+1d8 de dano em ataques com projéteis.`,
+    bonusTexto2N20: `<strong>Alvo Improvável</strong> - Você recebe +2 de bônus na armadura contra inimigos que ainda não sofreram dano.`,
+    bonusTexto2N22: `<strong>Tático Experiente</strong> - Pode dar um bônus de +2 em testes de iniciativa para um aliado por dia.`,
+    bonusTexto2N25: `<strong>Plano de Batalha</strong> - Uma vez por combate, pode usar uma ação para aumentar o dano de todos os aliados em +1d6.`,
+
+    // ===============================
+    // 🧙‍♂️ CONJURADOR
+    // ===============================
+    bonustitulo_3: `<p>🧙‍♂️<strong>Conjurador</strong></p>`,
+
+    bonusTexto3N1: `+1 em Conexão.`,
+    bonusTexto3N3: `+1d6 de cura/dano com feitiços simples.`,
+    bonusTexto3N5: `Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.`,
+    bonusTexto3N9: `<strong>Magias de nível 1, 2 e 3</strong> - Consegue conjurar magias pequenas sem consumir recursos extras.`,
+    bonusTexto3N13: `+1 em testes de Conjuração ao invocar elementos.`,
+    bonusTexto3N16: `Ganha uma magia de nível 3 a 4 do grupo elemental escolhido.`,
+    bonusTexto3N20: `<strong>Magia Avançada</strong> - Ganha uma magia de nível 5 a 6 do grupo elemental escolhido.`,
+    bonusTexto3N22: `<strong>Custo Mínimo</strong> - Reduz o custo de uma magia por dia em 1 ponto de sanidade.`,
+    bonusTexto3N25: `<strong>Mestre Elemental</strong> - Ganha uma magia de nível 7 a 9 do grupo elemental escolhido e pode conjurá-la uma vez por dia sem custo.`
+  }
 ,
-    bonustitulo_3: "<p>🧙‍♂️<strong>Conjurador</strong></p>",
-    bonusTexto_3: `<p>Nível 1: +1 em Conexão.</p>
-<p>Nível 3: +1d6 de cura/dano com feitiços simples.</p>
-<p>Nível 5: Ganha uma magia de nível 1 a 2 de um grupo elemental de sua escolha.</p>
-<p>Nível 9: <strong>Magias de nível 1, 2 e 3</strong> - Consegue conjurar magias pequenas sem consumir recursos extras.</p>
-<p>Nível 13: +1 em testes de Conjuração ao invocar elementos.</p>
-<p>Nível 16: Ganha uma magia de nível 3 a 4 do grupo elemental escolhido.</p>
-<p>Nível 20: <strong>Magia Avançada</strong> - Ganha uma magia de nível 5 a 6 do grupo elemental escolhido.</p>
-<p>Nível 22: <strong>Custo Mínimo</strong> - Reduz o custo de uma magia por dia em 1 ponto de sanidade.</p>
-<p>Nível 25: <strong>Mestre Elemental</strong> - Ganha uma magia de nível 7 a 9 do grupo elemental escolhido e pode conjurá-la uma vez por dia sem custo.</p>`,
-    
-  },
-  "Arauto": { // Cavaleiro adicionado como exemplo
-    "vidaPorNivel": 5,
-    "sanidadePorNivel": 3,
-    "armaduraPorNivel": 1,
-    "resistencia": "Mental",
-"movimento_pass": 2,
-"bonusPass": `
-<p>Nível 0: <strong>Passiva</strong> <a href="#tc=p9">Medo oculto</a> sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
-`,
 
-bonustitulo_1: `<p>🧠<strong>Mentor Psíquico</strong></p>`,
-bonusTexto_1: `
-<p>Nível 1: +1 em testes de dano <strong>Mental</strong>.</p>
-<p>Nível 3: Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra <strong>Mental</strong>.</p>
-<p>Nível 5: +1d4 em ataques que envolvam <strong>manipulação mental</strong> ou <strong>ilusão</strong>.</p>
-<p>Nível 9: +2 em testes de <strong>persuasão</strong> e <strong>intimidar</strong>.</p>
-<p>Nível 13: <strong>Leitura de Mentes</strong> — Detecta medos ou intenções de um alvo, uma vez por combate.</p>
-<p>Nível 16: +1d6 de dano em <strong>ataques psíquicos</strong>.</p>
-<p>Nível 20: <strong>Reflexos Psíquicos</strong> — +2 em resistência contra <strong>Confusão</strong> e <strong>Paralisado</strong>.</p>
-<p>Nível 22: <strong>Manipulação Mental Avançada</strong> — +1d8 de dano em feitiços mentais.</p>
-<p>Nível 25: <strong>Mestre da Psique</strong> — Uma vez por combate, força um inimigo a testar contra <strong>medo</strong> ou <strong>confusão</strong>, com penalidade de -1d6.</p>
-`,
+  "Arauto": {
+  vidaPorNivel: 5,
+  sanidadePorNivel: 3,
+  armaduraPorNivel: 1,
+  resistencia: "Mental",
+  movimento_pass: 2,
 
-bonustitulo_2: `<p>🎩<strong>Ilusionista</strong></p>`,
-bonusTexto_2: `
-<p>Nível 1: +1 em testes de <strong>Enganação</strong> e <strong>Diplomacia</strong>.</p>
-<p>Nível 3: +2 em testes de <strong>Agilidade</strong> para manobras evasivas.</p>
-<p>Nível 5: <strong>Criação de Imagens</strong> — Cria ilusões simples que confundem inimigos, uma vez por combate.</p>
-<p>Nível 9: +2 em <strong>iniciativa</strong> ao usar ilusões.</p>
-<p>Nível 13: <strong>Desorientação</strong> — Aplica <strong>Confuso</strong> por 1d4 turnos em vez de dano direto.</p>
-<p>Nível 16: +1d8 de dano com <strong>ilusões</strong> ou manipulação mental.</p>
-<p>Nível 20: <strong>Engano Impecável</strong> — Enquanto <strong>invisível</strong> ou <strong>disfarçado</strong>, inimigos sofrem -1d6 contra você.</p>
-<p>Nível 22: <strong>Reflexo Ilusório</strong> — Evita um ataque usando uma ilusão de si mesmo, uma vez por combate.</p>
-<p>Nível 25: <strong>Ilusão Suprema</strong> — Cria uma ilusão gigantesca. Inimigos ficam <strong>Cegos</strong> por 1d6 turnos.</p>
-`,
+  bonusPass: `
+  <p>Nível 0: <strong>Passiva</strong> <a href="#tc=p9">Medo oculto</a> sem custo uma vez por dia e personagem pode <strong>voar</strong>.</p>
+  `,
 
-bonustitulo_3: `<p>🔮<strong>Vidente</strong></p>`,
-bonusTexto_3: `
-<p>Nível 1: +1 em testes de <strong>Percepção</strong> e <strong>Intuição</strong>.</p>
-<p>Nível 3: Visão futura de 1d4 turnos, antecipando ações e eventos.</p>
-<p>Nível 5: <strong>Visão Psíquica</strong> — Detecta sentimentos, intenções e mentiras facilmente.</p>
-<p>Nível 9: +2 em resistência contra <strong>Cegueira</strong> e <strong>Paralisado</strong>.</p>
-<p>Nível 13: <strong>Clarividência</strong> — Percebe eventos distantes, uma vez por combate.</p>
-<p>Nível 16: +1d6 de dano em ataques que exploram <strong>fraquezas mentais</strong> ou espirituais.</p>
-<p>Nível 20: <strong>Perspectiva Expandida</strong> — Conjura feitiço de Clarividência em uma área de 30 metros.</p>
-<p>Nível 22: <strong>Visão Total</strong> — Visualiza todos os inimigos em combate.</p>
-<p>Nível 25: <strong>Futuro Imediato</strong> — Antecipação de movimento inimigo para bloquear ou desviar um ataque, uma vez por combate.</p>
-`
+  // ===============================
+  // 🧠 MENTOR PSÍQUICO
+  // ===============================
+  bonustitulo_1: `<p>🧠<strong>Mentor Psíquico</strong></p>`,
 
+  bonusTexto1N1: `+1 em testes de dano <strong>Mental</strong>.`,
+  bonusTexto1N3: `Aumenta a resistência mental de aliados próximos. +1 em testes de resistência contra <strong>Mental</strong>.`,
+  bonusTexto1N5: `+1d4 em ataques que envolvam <strong>manipulação mental</strong> ou <strong>ilusão</strong>.`,
+  bonusTexto1N9: `+2 em testes de <strong>persuasão</strong> e <strong>intimidar</strong>.`,
+  bonusTexto1N13: `<strong>Leitura de Mentes</strong> — Detecta medos ou intenções de um alvo, uma vez por combate.`,
+  bonusTexto1N16: `+1d6 de dano em <strong>ataques psíquicos</strong>.`,
+  bonusTexto1N20: `<strong>Reflexos Psíquicos</strong> — +2 em resistência contra <strong>Confusão</strong> e <strong>Paralisado</strong>.`,
+  bonusTexto1N22: `<strong>Manipulação Mental Avançada</strong> — +1d8 de dano em feitiços mentais.`,
+  bonusTexto1N25: `<strong>Mestre da Psique</strong> — Uma vez por combate, força um inimigo a testar contra <strong>medo</strong> ou <strong>confusão</strong>, com penalidade de -1d6.`,
+
+  // ===============================
+  // 🎩 ILUSIONISTA
+  // ===============================
+  bonustitulo_2: `<p>🎩<strong>Ilusionista</strong></p>`,
+
+  bonusTexto2N1: `+1 em testes de <strong>Enganação</strong> e <strong>Diplomacia</strong>.`,
+  bonusTexto2N3: `+2 em testes de <strong>Agilidade</strong> para manobras evasivas.`,
+  bonusTexto2N5: `<strong>Criação de Imagens</strong> — Cria ilusões simples que confundem inimigos, uma vez por combate.`,
+  bonusTexto2N9: `+2 em <strong>iniciativa</strong> ao usar ilusões.`,
+  bonusTexto2N13: `<strong>Desorientação</strong> — Aplica <strong>Confuso</strong> por 1d4 turnos em vez de dano direto.`,
+  bonusTexto2N16: `+1d8 de dano com <strong>ilusões</strong> ou manipulação mental.`,
+  bonusTexto2N20: `<strong>Engano Impecável</strong> — Enquanto <strong>invisível</strong> ou <strong>disfarçado</strong>, inimigos sofrem -1d6 contra você.`,
+  bonusTexto2N22: `<strong>Reflexo Ilusório</strong> — Evita um ataque usando uma ilusão de si mesmo, uma vez por combate.`,
+  bonusTexto2N25: `<strong>Ilusão Suprema</strong> — Cria uma ilusão gigantesca. Inimigos ficam <strong>Cegos</strong> por 1d6 turnos.`,
+
+  // ===============================
+  // 🔮 VIDENTE
+  // ===============================
+  bonustitulo_3: `<p>🔮<strong>Vidente</strong></p>`,
+
+  bonusTexto3N1: `+1 em testes de <strong>Percepção</strong> e <strong>Intuição</strong>.`,
+  bonusTexto3N3: `Visão futura de 1d4 turnos, antecipando ações e eventos.`,
+  bonusTexto3N5: `<strong>Visão Psíquica</strong> — Detecta sentimentos, intenções e mentiras facilmente.`,
+  bonusTexto3N9: `+2 em resistência contra <strong>Cegueira</strong> e <strong>Paralisado</strong>.`,
+  bonusTexto3N13: `<strong>Clarividência</strong> — Percebe eventos distantes, uma vez por combate.`,
+  bonusTexto3N16: `+1d6 de dano em ataques que exploram <strong>fraquezas mentais</strong> ou espirituais.`,
+  bonusTexto3N20: `<strong>Perspectiva Expandida</strong> — Conjura feitiço de Clarividência em uma área de 30 metros.`,
+  bonusTexto3N22: `<strong>Visão Total</strong> — Visualiza todos os inimigos em combate.`,
+  bonusTexto3N25: `<strong>Futuro Imediato</strong> — Antecipação de movimento inimigo para bloquear ou desviar um ataque, uma vez por combate.`
 },
-  "Arqueiro": { // Mago adicionado como exemplo
-    "vidaPorNivel": 6,
-    "sanidadePorNivel": 2,
-    "armaduraPorNivel": 1,
-    "resistencia": "Maldição",
-    "bonusPass": `
-<p>Nível 0: +5 em dados de dano com <strong>funda</strong>, <strong>arcos</strong> e <strong>bestas</strong>.</p>
-`,
-bonustitulo_1: "<p>🏹 <strong>Caçador Preciso</strong></p>",
-bonusTexto_1: `
-<p>Nível 1: +1 em testes de <strong>Percepção</strong> para rastreamento.</p>
-<p>Nível 3: Aumenta o alcance efetivo de ataques à distância em +10 metros.</p>
-<p>Nível 5: <strong>Flecha Envenenada</strong> — Envenena a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.</p>
-<p>Nível 9: +2 em testes de <strong>furtividade</strong> para emboscadas.</p>
-<p>Nível 13: <strong>Disparo Cirúrgico</strong> — Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.</p>
-<p>Nível 16: +1d8 de dano em ataques que visam partes específicas do corpo.</p>
-<p>Nível 20: <strong>Resistência do Caçador</strong> — +2 em testes de resistência contra <strong>Veneno</strong> e <strong>Hemorragia</strong>.</p>
-<p>Nível 22: <strong>Mestre da Emboscada</strong> — Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.</p>
-<p>Nível 25: <strong>Flecha Mortal</strong> — Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.</p>
-`,
+"Arqueiro": {
+  vidaPorNivel: 6,
+  sanidadePorNivel: 2,
+  armaduraPorNivel: 1,
+  resistencia: "Maldição",
+  movimento_pass: 2,
 
-bonustitulo_2: "<p>🎯 <strong>Atirador de Elite</strong></p>",
-bonusTexto_2: `
-<p>Nível 1: +1 em <strong>precisão</strong> ao usar <strong>arcos</strong> e <strong>bestas</strong>.</p>
-<p>Nível 3: +2 em testes de <strong>Agilidade</strong> para esquivas rápidas.</p>
-<p>Nível 5: <strong>Disparo Perfurante</strong> — Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.</p>
-<p>Nível 9: +2 em <strong>iniciativas</strong> ao utilizar armas à distância.</p>
-<p>Nível 13: <strong>Tiro Rápido</strong> — Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.</p>
-<p>Nível 16: +1d8 de dano adicional em ataques consecutivos no mesmo alvo.</p>
-<p>Nível 20: <strong>Alvo Escorregadio</strong> — Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o <strong>Arqueiro</strong>.</p>
-<p>Nível 22: <strong>Instinto de Sobrevivência</strong> — Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.</p>
-<p>Nível 25: <strong>Disparo Destruidor</strong> — Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.</p>
-`,
+  bonusPass: `
+  <p>Nível 0: +5 em dados de dano com <strong>funda</strong>, <strong>arcos</strong> e <strong>bestas</strong>.</p>
+  `,
 
-bonustitulo_3: "<p>🌌 <strong>Explorador das Sombras</strong></p>",
-bonusTexto_3: `
-<p>Nível 1: +1 em <strong>Furtividade</strong> e <strong>Movimentação</strong> em terrenos variados.</p>
-<p>Nível 3: +2 em testes de <strong>Sobrevivência</strong> para explorar áreas desconhecidas.</p>
-<p>Nível 5: <strong>Caminho Oculto</strong> — Permite ao grupo avançar sem deixar rastros, uma vez por dia.</p>
-<p>Nível 9: +2 em testes de resistência contra <strong>Confusão</strong> e <strong>Cegueira</strong>.</p>
-<p>Nível 13: <strong>Flecha da Escuridão</strong> — Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.</p>
-<p>Nível 16: +1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.</p>
-<p>Nível 20: <strong>Emboscada Letal</strong> — Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.</p>
-<p>Nível 22: <strong>Vantagem na Escuridão</strong> — Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.</p>
-<p>Nível 25: <strong>Ataque Sombrio</strong> — Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.</p>
-`
+  // ===============================
+  // 🏹 CAÇADOR PRECISO
+  // ===============================
+  bonustitulo_1: `<p>🏹 <strong>Caçador Preciso</strong></p>`,
+
+  bonusTexto1N1: `+1 em testes de <strong>Percepção</strong> para rastreamento.`,
+  bonusTexto1N3: `Aumenta o alcance efetivo de ataques à distância em +10 metros.`,
+  bonusTexto1N5: `<strong>Flecha Envenenada</strong> — Envenena a flecha para causar dano adicional de +1d4 por turno durante 3 turnos.`,
+  bonusTexto1N9: `+2 em testes de <strong>Furtividade</strong> para emboscadas.`,
+  bonusTexto1N13: `<strong>Disparo Cirúrgico</strong> — Ignora 2 pontos de armadura ao atingir um ponto fraco do inimigo.`,
+  bonusTexto1N16: `+1d8 de dano em ataques que visam partes específicas do corpo.`,
+  bonusTexto1N20: `<strong>Resistência do Caçador</strong> — +2 em testes de resistência contra <strong>Veneno</strong> e <strong>Hemorragia</strong>.`,
+  bonusTexto1N22: `<strong>Mestre da Emboscada</strong> — Surpreende o inimigo, garantindo +1d10 de dano em ataques iniciais.`,
+  bonusTexto1N25: `<strong>Flecha Mortal</strong> — Uma vez por combate, realiza um disparo que causa +2d10 de dano, perfurando a armadura do alvo.`,
+
+  // ===============================
+  // 🎯 ATIRADOR DE ELITE
+  // ===============================
+  bonustitulo_2: `<p>🎯 <strong>Atirador de Elite</strong></p>`,
+
+  bonusTexto2N1: `+1 em <strong>precisão</strong> ao usar <strong>arcos</strong> e <strong>bestas</strong>.`,
+  bonusTexto2N3: `+2 em testes de <strong>Agilidade</strong> para esquivas rápidas.`,
+  bonusTexto2N5: `<strong>Disparo Perfurante</strong> — Atira uma flecha que atravessa até 2 inimigos alinhados, causando dano completo em ambos.`,
+  bonusTexto2N9: `+2 em <strong>iniciativas</strong> ao utilizar armas à distância.`,
+  bonusTexto2N13: `<strong>Tiro Rápido</strong> — Realiza dois disparos rápidos em um turno, com dano de +1d6 em cada.`,
+  bonusTexto2N16: `+1d8 de dano adicional em ataques consecutivos no mesmo alvo.`,
+  bonusTexto2N20: `<strong>Alvo Escorregadio</strong> — Inimigos a uma distância maior que 20 metros sofrem -1d6 em ataques contra o <strong>Arqueiro</strong>.`,
+  bonusTexto2N22: `<strong>Instinto de Sobrevivência</strong> — Uma vez por dia, consegue escapar de uma situação de perigo iminente sem precisar de teste.`,
+  bonusTexto2N25: `<strong>Disparo Destruidor</strong> — Uma vez por combate, realiza um disparo poderoso que causa +2d12 de dano, ignorando defesas do inimigo.`,
+
+  // ===============================
+  // 🌌 EXPLORADOR DAS SOMBRAS
+  // ===============================
+  bonustitulo_3: `<p>🌌 <strong>Explorador das Sombras</strong></p>`,
+
+  bonusTexto3N1: `+1 em <strong>Furtividade</strong> e <strong>Movimentação</strong> em terrenos variados.`,
+  bonusTexto3N3: `+2 em testes de <strong>Sobrevivência</strong> para explorar áreas desconhecidas.`,
+  bonusTexto3N5: `<strong>Caminho Oculto</strong> — Permite ao grupo avançar sem deixar rastros, uma vez por dia.`,
+  bonusTexto3N9: `+2 em testes de resistência contra <strong>Confusão</strong> e <strong>Cegueira</strong>.`,
+  bonusTexto3N13: `<strong>Flecha da Escuridão</strong> — Atira uma flecha que reduz a visão do alvo, aplicando penalidade de -1d4 em ataques do inimigo.`,
+  bonusTexto3N16: `+1d6 de dano ao atacar a partir de uma posição oculta ou durante a noite.`,
+  bonusTexto3N20: `<strong>Emboscada Letal</strong> — Garante um bônus de +1d10 em ataques que peguem o inimigo de surpresa.`,
+  bonusTexto3N22: `<strong>Vantagem na Escuridão</strong> — Durante combates em locais escuros, ganha um bônus de +2 em esquiva e precisão.`,
+  bonusTexto3N25: `<strong>Ataque Sombrio</strong> — Uma vez por combate, pode se teleportar silenciosamente para uma posição favorável e realizar um ataque com dano adicional de +2d10.`
+}
+,"Assassino": {
+  vidaPorNivel: 7,
+  sanidadePorNivel: 1,
+  armaduraPorNivel: 1,
+  resistencia: "Escuridão",
+  movimento_pass: 3,
+
+  bonusPass: `
+  <p>Nível 0: <strong>Passiva</strong> <a href="#tc=p18">Furtividade Sombria</a> — 1 vez ao dia sem custo, +5 com <strong>Adagas</strong>.</p>
+  `,
+
+  // ===============================
+  // 🗡️ ASSASSINATO FURTIVO
+  // ===============================
+  bonustitulo_1: `<p>🗡️ <strong>Assassinato Furtivo</strong></p>`,
+
+  bonusTexto1N1: `+1 em <strong>Furtividade</strong> para emboscadas.`,
+  bonusTexto1N3: `+1 em testes de <strong>Agilidade</strong> para aproximações silenciosas.`,
+  bonusTexto1N5: `<strong>Golpe Fatal</strong> — Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.`,
+  bonusTexto1N9: `+2 em ataques com <strong>Adagas</strong> contra alvos desprevenidos.`,
+  bonusTexto1N13: `<strong>Execução Impecável</strong> — Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.`,
+  bonusTexto1N16: `+1d6 de dano ao atacar inimigos que ainda não agiram no combate.`,
+  bonusTexto1N20: `<strong>Resiliência das Sombras</strong> — +2 em testes de resistência contra <strong>Envenenamento</strong> e <strong>Paralisia</strong>.`,
+  bonusTexto1N22: `<strong>Mestre da Furtividade</strong> — Permite ficar completamente invisível por até um turno.`,
+  bonusTexto1N25: `<strong>Assassinato Silencioso</strong> — Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.`,
+
+  // ===============================
+  // ⛩️ SHURIKINS MORTAIS
+  // ===============================
+  bonustitulo_2: `<p>⛩️ <strong>Shurikins Mortais</strong></p>`,
+
+  bonusTexto2N1: `+1 em <strong>Precisão</strong> ao usar <strong>Shurikins</strong> e armas arremessáveis.`,
+  bonusTexto2N3: `+2 em testes de <strong>Agilidade</strong> para esquivas e deslocamento rápido.`,
+  bonusTexto2N5: `<strong>Projétil Rápido</strong> — Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.`,
+  bonusTexto2N9: `+1d6 de dano em ataques arremessados com precisão aprimorada.`,
+  bonusTexto2N13: `<strong>Tiro Preciso</strong> — Realiza um disparo que ignora defesas naturais do alvo.`,
+  bonusTexto2N16: `+1d8 de dano extra em ataques sucessivos contra o mesmo alvo.`,
+  bonusTexto2N20: `<strong>Desvio Ágil</strong> — +2 em testes de esquiva contra projéteis inimigos.`,
+  bonusTexto2N22: `<strong>Projéteis Penetrantes</strong> — Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.`,
+  bonusTexto2N25: `<strong>Dança das Lâminas</strong> — Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.`,
+
+  // ===============================
+  // 🌑 SOMBRAS DO INFINITO
+  // ===============================
+  bonustitulo_3: `<p>🌑 <strong>Sombras do Infinito</strong></p>`,
+
+  bonusTexto3N1: `+1 em testes de <strong>Conexão</strong> para controlar magias do <strong>Eclipse</strong>.`,
+  bonusTexto3N3: `<strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.`,
+  bonusTexto3N5: `<strong><a href="#tc=m4">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.`,
+  bonusTexto3N9: `+1 em testes com feitiços de eclipse. Libera a magia <strong><a href="#tc=m167">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar o tempo ao redor, dificultando ataques inimigos.`,
+  bonusTexto3N13: `<strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="#tc=m172">Clone das Sombras</a></strong> (nível 3).`,
+  bonusTexto3N16: `<strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="#tc=m168">Ilusão Lunar</a></strong> (nível 5).`,
+  bonusTexto3N20: `<strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="#tc=m170">Mutação Sombria</a></strong> (nível 7).`,
+  bonusTexto3N22: `<strong>Sombra da Noite</strong> — Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 contra testes de percepção de alvos).`,
+  bonusTexto3N25: `<strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os ataques eclipse em +2d8. Libera a magia <strong><a href="#tc=m171">Cataclismo do Eclipse</a></strong> (nível 8).`
+}
+, "Assombração": {
+  vidaPorNivel: 5,
+  sanidadePorNivel: 3,
+  armaduraPorNivel: 1,
+  resistencia: "Alma",
+  movimento_pass: 3,
+
+  bonusPass: `
+  <p>Nível 0: +1d12 em <strong>magias de Alma</strong> e a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93">Poltergeist</a> pode ser usada em dois objetos por vez.</p>
+  `,
+
+  // ===============================
+  // 👤 PERSEGUIDOR SOMBRIO
+  // ===============================
+  bonustitulo_1: `<p>👤 <strong>Perseguidor Sombrio</strong></p>`,
+
+  bonusTexto1N1: `<strong>Sombras Vorazes</strong> — Executa uma investida, esquivando de todos os ataques até o fim do turno. (2 especial)`,
+  bonusTexto1N3: `<strong>Golpe Oculto</strong> — Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano. (3 especial)`,
+  bonusTexto1N5: `<strong>Manto das Trevas</strong> — Torna-se invisível em locais escuros por um turno. (2 especial)`,
+  bonusTexto1N9: `<strong>Velocidade Espiritual</strong> — Movimenta-se duas vezes no mesmo turno, escapando de emboscadas. (3 especial)`,
+  bonusTexto1N13: `<strong>Reflexo Sombrio</strong> — Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano. (4 especial)`,
+  bonusTexto1N16: `<strong>Golpe do Abismo</strong> — Executa um ataque de sombra que ignora armadura e causa +2d8 de dano. (5 especial)`,
+  bonusTexto1N20: `<strong>Sombra Penetrante</strong> — Reduz o custo de sanidade para <strong>magias de Alma</strong> pela metade.`,
+  bonusTexto1N22: `<strong>Força Noturna</strong> — Aumenta o dano em +1d6 para ataques físicos e <strong>magias de Alma</strong>.`,
+  bonusTexto1N25: `<strong>Sombra Aniquiladora</strong> — Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos. (6 especial)`,
+
+  // ===============================
+  // 🛠️ ARTESÃO ESPIRITUAL
+  // ===============================
+  bonustitulo_2: `<p>🛠️ <strong>Artesão Espiritual</strong></p>`,
+
+  bonusTexto2N1: `<strong>Energia Espiritual</strong> — Armazena uma alma, conferindo +1 de dano ou +1 em resistência. (Passivo)`,
+  bonusTexto2N3: `<strong>Lâmina Viva</strong> — Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 especial)`,
+  bonusTexto2N5: `<strong>Alma Guardiã</strong> — Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)`,
+  bonusTexto2N9: `<strong>Vínculo Espiritual</strong> — Torna o equipamento mais resiliente, +2 em resistência à deterioração. (Passivo)`,
+  bonusTexto2N13: `<strong>Conexão Profunda</strong> — Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 especial)`,
+  bonusTexto2N16: `<strong>Escudo da Alma</strong> — Libera uma barreira espiritual que reduz o dano recebido pela metade por um turno. (4 especial, 1x por combate)`,
+  bonusTexto2N20: `<strong>Chama da Vingança</strong> — Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 especial)`,
+  bonusTexto2N22: `<strong>Força Espiritual</strong> — Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)`,
+  bonusTexto2N25: `<strong>Guardião das Almas</strong> — Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 especial, 1x por combate)`,
+
+  // ===============================
+  // 🕊️ ESPIRITUALISTA DA ORDEM
+  // ===============================
+  bonustitulo_3: `<p>🕊️ <strong>Espiritualista da Ordem</strong></p>`,
+
+  bonusTexto3N1: `<strong>Iniciado Espiritual</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.`,
+  bonusTexto3N3: `<strong>Espírito Reforçado</strong> — Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.`,
+  bonusTexto3N5: `<strong>Protetor da Essência</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 2 de Alma</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.`,
+  bonusTexto3N9: `<strong>Escudo Espiritual</strong> — Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.`,
+  bonusTexto3N13: `<strong>Tecelão da Alma</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 3 de Alma</a> e aumenta a duração das magias em 1 turno.`,
+  bonusTexto3N16: `<strong>Voz do Além</strong> — Permite identificar a presença de espíritos em até 20 metros.`,
+  bonusTexto3N20: `<strong>Profeta da Eternidade</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 4 de Alma</a> e +2 em percepção para detectar entidades invisíveis.`,
+  bonusTexto3N22: `<strong>Eco Espiritual</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 5 de Alma</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.`,
+  bonusTexto3N25: `<strong>Guardião Eterno</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 6 de Alma</a> e uma ação completa extra por 7 de especial.`
+}
+, "Atirador": {
+  vidaPorNivel: 7,
+  sanidadePorNivel: 1,
+  armaduraPorNivel: 1,
+  resistencia: "Laser",
+  movimento_pass: 4,
+
+  bonusPass: `
+  <p><strong>Nível 0:</strong> +2 nos dados de acerto com armas à distância. Pode usar <strong>Mirar</strong> sem penalidade uma vez por combate.</p>
+  <details>
+    <summary><strong>Mirar</strong></summary>
+    <p>
+      O personagem se concentra para garantir vantagem em seu disparo.<br>
+      <strong>Efeito:</strong> O personagem mira por um turno para rolar o dado de acerto duas vezes e escolher o melhor resultado.<br>
+      Mirar consome uma <strong>ação</strong> e o personagem só pode se mover <strong>antes de mirar</strong>.
+    </p>
+  </details>
+  `,
+
+  // ===============================
+  // 🔫 PISTOLEIRO
+  // ===============================
+  bonustitulo_1: `<p>🔫 <strong>Pistoleiro</strong></p>`,
+
+  bonusTexto1N1: `<strong>Mão Ágil</strong> — Permite sacar e guardar armas com rapidez, ganhando +1 em precisão ao atirar com duas armas. (1 especial)`,
+  bonusTexto1N3: `<strong>Tiro Duplo</strong> — Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 especial)`,
+  bonusTexto1N5: `<strong>Ponto Cego</strong> — Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 especial)`,
+  bonusTexto1N9: `<strong>Reflexos Rápidos</strong> — Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)`,
+  bonusTexto1N13: `<strong>Bala Certeira</strong> — Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 especial)`,
+  bonusTexto1N16: `<strong>Velocidade da Bala</strong> — Pode realizar um tiro extra sem penalidade. (3 especial)`,
+  bonusTexto1N20: `<strong>Destemido</strong> — Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)`,
+  bonusTexto1N22: `<strong>Impacto Devastador</strong> — Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 especial)`,
+  bonusTexto1N25: `<strong>Fúria do Pistoleiro</strong> — Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 especial, 1x por combate)`,
+
+  // ===============================
+  // 🚨 FORA DA LEI
+  // ===============================
+  bonustitulo_2: `<p>🚨 <strong>Fora da Lei</strong></p>`,
+
+  bonusTexto2N1: `<strong>Infâmia</strong> — Ganha +1 em testes de intimidação contra NPCs e inimigos. (1 especial)`,
+  bonusTexto2N3: `<strong>Procurado</strong> — Para cada estrela no cartaz de procurado, recebe +1 em esquiva (máx. 5). (Passivo)`,
+  bonusTexto2N5: `<strong>Tiro Ameaçador</strong> — Disparo que assusta o alvo, causando -1d4 nos próximos ataques dele. (2 especial)`,
+  bonusTexto2N9: `<strong>Sangue Frio</strong> — Ganha +2 em resistência contra efeitos de medo. (Passivo)`,
+  bonusTexto2N13: `<strong>Fama Implacável</strong> — Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 especial, 1x por combate)`,
+  bonusTexto2N16: `<strong>Presença Intimidadora</strong> — Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem. (Passivo)`,
+  bonusTexto2N20: `<strong>Desprezo Mortal</strong> — Disparo que ignora armadura, causando +2d6 de dano adicional. (4 especial)`,
+  bonusTexto2N22: `<strong>Terror do Oeste</strong> — Inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)`,
+  bonusTexto2N25: `<strong>Lenda Viva</strong> — Ataques causam +2d10 de dano a alvos que falharem em resistir ao medo. (5 especial, 1x por combate)`,
+
+  // ===============================
+  // 💥 INIMIGO DA BALA
+  // ===============================
+  bonustitulo_3: `<p>💥 <strong>Inimigo da Bala</strong></p>`,
+
+  bonusTexto3N1: `<strong>Pancada Letal</strong> — Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 especial)`,
+  bonusTexto3N3: `<strong>Defesa da Arma</strong> — Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) Libera a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m98">Flecha de Luz</a>.`,
+  bonusTexto3N5: `<strong>Bônus de Especial</strong> — Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) Libera a passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23">Teleporte Repentino</a>.`,
+  bonusTexto3N9: `<strong>Controle do Combate</strong> — Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)`,
+  bonusTexto3N13: `<strong>Quebra-Defesa</strong> — Golpe que ignora defesa física e causa +1d6 de dano. (3 especial)`,
+  bonusTexto3N16: `<strong>Fúria Contida</strong> — Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)`,
+  bonusTexto3N20: `<strong>Impacto Brutal</strong> — Ataque corpo a corpo que causa +2d6 de dano e derruba o inimigo. (4 especial)`,
+  bonusTexto3N22: `<strong>Dominância do Combate</strong> — Ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)`,
+  bonusTexto3N25: `<strong>Força da Calma</strong> — Executa ataque devastador com +2d10 de dano, disponível após três turnos sem disparar. (5 especial, 1x por combate)`
+}
 ,
-    "movimento_pass": 2
-  },
-  "Assassino": { // Mago adicionado como exemplo
-    "vidaPorNivel": 7,
-    "sanidadePorNivel": 1,
-    "armaduraPorNivel": 1,
-    "resistencia": "Escuridão",
-    "bonusPass": `
-<p>Nível 0: <strong>Passiva</strong> <a href="#tc=p18">Furtividade sombria</a> — 1 vez no dia sem custo, +5 com <strong>Adagas</strong>.</p>
-`,
-bonustitulo_1: "<p>🗡️ <strong>Assassinato Furtivo</strong></p>",
-bonusTexto_1: `
-<p>Nível 1: +1 em <strong>Furtividade</strong> para emboscadas.</p>
-<p>Nível 3: +1 em testes de <strong>Agilidade</strong> para aproximações silenciosas.</p>
-<p>Nível 5: <strong>Golpe Fatal</strong> — Executa um ataque furtivo causando +1d6 de dano extra ao atingir um ponto fraco.</p>
-<p>Nível 9: +2 em ataques com <strong>adagas</strong> contra alvos desprevenidos.</p>
-<p>Nível 13: <strong>Execução Impecável</strong> — Um ataque crítico com adagas concede um bônus de +1d8 de dano adicional.</p>
-<p>Nível 16: +1d6 de dano ao atacar inimigos que ainda não agiram no combate.</p>
-<p>Nível 20: <strong>Resiliência das Sombras</strong> — +2 em testes de resistência contra <strong>envenenamento</strong> e <strong>paralisia</strong>.</p>
-<p>Nível 22: <strong>Mestre da Furtividade</strong> — Permite ficar completamente invisível por até um turno.</p>
-<p>Nível 25: <strong>Assassinato Silencioso</strong> — Um golpe furtivo garante +2d10 de dano e ignora a armadura do alvo.</p>
-`,
+"Barão": {
+  vidaPorNivel: 7,
+  sanidadePorNivel: 1,
+  armaduraPorNivel: 1,
+  resistencia: "Ácido",
+  movimento_pass: 4.5,
 
-bonustitulo_2: "<p>⛩️ <strong>Shurikins Mortais</strong></p>",
-bonusTexto_2: `
-<p>Nível 1: +1 em precisão ao usar <strong>shurikins</strong> e armas arremessáveis.</p>
-<p>Nível 3: +2 em testes de <strong>Agilidade</strong> para esquivas e deslocamento rápido.</p>
-<p>Nível 5: <strong>Projétil Rápido</strong> — Lança duas shurikins de uma vez, cada uma com +1d4 de dano adicional.</p>
-<p>Nível 9: +1d6 de dano em ataques arremessados com precisão aprimorada.</p>
-<p>Nível 13: <strong>Tiro Preciso</strong> — Realiza um disparo que ignora defesas naturais do alvo.</p>
-<p>Nível 16: +1d8 de dano extra em ataques sucessivos contra o mesmo alvo.</p>
-<p>Nível 20: <strong>Desvio Ágil</strong> — +2 em testes de esquiva contra projéteis inimigos.</p>
-<p>Nível 22: <strong>Projéteis Penetrantes</strong> — Shurikins atravessam até dois alvos alinhados, aplicando dano total em ambos.</p>
-<p>Nível 25: <strong>Dança das Lâminas</strong> — Lança várias shurikins ao redor, causando +2d10 de dano a todos os inimigos próximos.</p>
-`,
+  bonusPass: `
+  <p><strong>Nível 0:</strong> +1 para todas as rolagens de dados. Libera e pode usar a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m207" target="_blank"><strong>Cuspe Ácido</strong></a> sem custo uma vez por dia.</p>
+  `,
 
-bonustitulo_3: "<p>🌑 <strong>Sombras do Infinito</strong></p>",
-bonusTexto_3: `
-<p>Nível 1: +1 em testes de <strong>Conexão</strong> para controlar magias do eclipse.</p>
-<p>Nível 3: <strong>Véu das Sombras</strong> — Envolve-se em sombras, ganhando +2 em <strong>Furtividade</strong> por um turno.</p>
-<p>Nível 5: <strong><a href="#tc=m4">Reflexão de Eclipse</a></strong> — Libera a magia Reflexão de Eclipse (nível 1), que permite criar uma duplicata temporária para distração.</p>
-<p>Nível 9: +1 em testes com feitiços de eclipse. Libera a magia <strong><a href="#tc=m167">Fragmento do Tempo</a></strong> (nível 4), permitindo manipular sombras para alterar levemente o tempo ao seu redor, dificultando ataques inimigos.</p>
-<p>Nível 13: <strong>Espelho Sombrio</strong> — Cria uma réplica feita de sombras, que reduz o dano recebido em 50% por um turno. Libera a magia <strong><a href="#tc=m172">Clone das Sombras</a> </strong> (nível 3), criando uma sombra com aparência e movimentos similares ao usuário, confundindo inimigos.</p>
-<p>Nível 16: <strong>Dano do Eclipse</strong> — Aumenta o dano de eclipse em +1d6 ao atacar em áreas escuras. Libera a magia <strong><a href="#tc=m168">Ilusão Lunar</a> </strong> (nível 5), que cria ilusões feitas de sombras para confundir e distrair adversários.</p>
-<p>Nível 20: <strong>Olhos nas Sombras</strong> — Permite ver através de sombras, evitando ataques furtivos. Libera a magia <strong><a href="#tc=m170">Mutação Sombria</a></strong> (nível 7), que transforma parte de sua sombra em uma extensão física, capaz de atacar ou distrair inimigos.</p>
-<p>Nível 22: <strong>Sombra da Noite</strong> — Torna-se indetectável em áreas escuras por até dois turnos, podendo atacar sem revelar a posição (+8 em teste contra percepção de alvos, nas sombras).</p>
-<p>Nível 25: <strong>Senhor do Eclipse</strong> — Conjura uma aura sombria que reduz a visão dos inimigos e aumenta o dano de todos os seus ataques eclipse em +2d8. Libera a magia <strong><a href="#tc=m171">Cataclismo do Eclipse</a></strong> (nível 8), que conjura um ataque devastador feito de pura energia de eclipse, causando dano massivo a um grupo de inimigos.</p>
-`
-,  "movimento_pass": 3
-  },
-  "Assombração": { // Assombração adicionado como exemplo
-    "vidaPorNivel": 5,
-    "sanidadePorNivel": 3,
-    "armaduraPorNivel": 1,
-    "resistencia": "Alma",
-"bonusPass": `
-<p>Nível 0: +1d12 em <strong>magias de Alma</strong> e a magia [Poltergeist](https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93) pode ser usada em dois objetos por vez.</p>
-`,
+  // ===============================
+  // 🧪 MANIPULAÇÃO ÁCIDA
+  // ===============================
+  bonustitulo_1: `<p>🧪 <strong>Manipulação Ácida</strong></p>`,
 
-bonustitulo_1: "<p>👤 <strong>Perseguidor Sombrio</strong></p>",
-bonusTexto_1: `
-<p>Nível 1: <strong>Sombras Vorazes</strong> (custo: 2 especial) – Executa uma investida, esquivando de todos os ataques até o fim do turno.</p>
-<p>Nível 3: <strong>Golpe Oculto</strong> (custo: 3 especial) – Ataque de precisão que ignora defesa do inimigo, causando +1d6 de dano.</p>
-<p>Nível 5: <strong>Manto das Trevas</strong> (custo: 2 especial) – Torna-se invisível em locais escuros por um turno.</p>
-<p>Nível 9: <strong>Velocidade Espiritual</strong> (custo: 3 especial) – Movimenta-se duas vezes no mesmo turno, escapando de emboscadas.</p>
-<p>Nível 13: <strong>Reflexo Sombrio</strong> (custo: 4 especial) – Ao esquivar de um ataque, realiza um contra-ataque com +1d8 de dano.</p>
-<p>Nível 16: <strong>Golpe do Abismo</strong> (custo: 5 especial) – Executa um ataque de sombra que ignora armadura e causa +2d8 de dano.</p>
-<p>Nível 20: <strong>Sombra Penetrante</strong> – Reduz o custo de sanidade para <strong>magias de Alma</strong> pela metade.</p>
-<p>Nível 22: <strong>Força Noturna</strong> – Aumenta o dano em +1d6 para ataques físicos e <strong>magias de Alma</strong>.</p>
-<p>Nível 25: <strong>Sombra Aniquiladora</strong> (custo: 6 especial) – Torna-se incorpóreo por dois turnos, causando +2d10 de dano de Alma ignorando defesa, enquanto é imune a ataques físicos.</p>
-`,
+  bonusTexto1N1: `+1 em testes de <strong>Enganação</strong> ao influenciar outros.`,
+  bonusTexto1N3: `<strong>Insidioso</strong> — +1 em testes de <strong>Agilidade</strong> para ações furtivas ou subversivas.`,
+  bonusTexto1N5: `<strong>Mestre da Dissolução</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 1 de Ácido</a>.`,
+  bonusTexto1N9: `<strong>Controle Ácido</strong> — +2 em testes de <strong>Intimidação</strong> ao demonstrar poder ácido em combate.`,
+  bonusTexto1N13: `<strong>Comando Persuasivo</strong> — Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)`,
+  bonusTexto1N16: `<strong>Senhor do Veneno</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 2 de Ácido</a>.`,
+  bonusTexto1N20: `<strong>Olhar Corrosivo</strong> — Inimigos próximos sofrem -1 em resistência mental.`,
+  bonusTexto1N22: `<strong>Manipulador Implacável</strong> — +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.`,
+  bonusTexto1N25: `<strong>Barão do Subjugamento</strong> — Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)`,
 
-bonustitulo_2: "<p>🛠️ <strong>Artesão Espiritual</strong></p>",
-bonusTexto_2: `
-<p>Cada nível de aprimoramento infunde habilidades únicas nos equipamentos, permitindo maior poder ao custo de especial. Duração máxima de aprimoramento: uma cena ou 1h.</p>
-<p>Nível 1: <strong>Energia Espiritual</strong> – Armazena uma alma, conferindo +1 de dano ou +1 em resistência. (Sem custo de especial)</p>
-<p>Nível 3: <strong>Lâmina Viva</strong> – Brilho fantasmagórico que causa +1d4 de dano adicional em criaturas espirituais. (2 de especial por uso)</p>
-<p>Nível 5: <strong>Alma Guardiã</strong> – Reduz em 1 o custo de sanidade para habilidades enquanto o equipamento está em uso. (Passivo)</p>
-<p>Nível 9: <strong>Vínculo Espiritual</strong> – Torna o equipamento mais resiliente, +2 em resistência à deterioração. (Sem custo de especial)</p>
-<p>Nível 13: <strong>Conexão Profunda</strong> – Concede +1d6 de dano com o equipamento, aprimorado por almas mais fortes. (3 de especial por uso)</p>
-<p>Nível 16: <strong>Escudo da Alma</strong> – Libera uma barreira espiritual que reduz o dano recebido pela metade por um turno. (4 de especial, 1 vez por combate)</>
-<p>Nível 20: <strong>Chama da Vingança</strong> – Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 de especial por uso)</p>
-<p>Nível 22: <strong>Força Espiritual</strong> – Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)</p>
-<p>Nível 25: <strong>Guardião das Almas</strong> – Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 de especial por ativação, 1 vez por combate)</p>
-`,
+  // ===============================
+  // 💀 CORRUPTO
+  // ===============================
+  bonustitulo_2: `<p>💀 <strong>Corrupto</strong></p>`,
 
-bonustitulo_3: "<p>🕊️ <strong>Espiritualista da Ordem</strong></p>",
-bonusTexto_3: `
-<p>Nível 1: <strong>Iniciado Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.</p>
-<p>Nível 3: <strong>Espírito Reforçado</strong> – Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.</p>
-<p>Nível 5: <strong>Protetor da Essência</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 2 de alma</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.</p>
-<p>Nível 9: <strong>Escudo Espiritual</strong> – Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.</p>
-<p>Nível 13: <strong>Tecelão da Alma</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 3 de alma</a> e aumenta a duração das magias em 1 turno.</p>
-<p>Nível 16: <strong>Voz do Além</strong> – Permite ao jogador identificar a presença de espíritos em até 20 metros.</p>
-<p>Nível 20: <strong>Profeta da Eternidade</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 4 de alma</a> e +2 em percepção para detectar entidades invisíveis.</p>
-<p>Nível 22: <strong>Eco Espiritual</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 5 de alma</a> e metade do custo de sanidade para <strong>magias de Alma</strong>.</p>
-<p>Nível 25: <strong>Guardião Eterno</strong> – Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 6 de alma</a> e uma ação completa extra por 7 de especial.</p>
-`, "movimento_pass": 3
-  },
-    "Atirador": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 1,
-      "resistencia": "Laser",
-      "bonusPass": `
-<p><strong>Nível 0:</strong> +2 nos dados de acerto com armas à distância. Pode usar <strong>Mirar</strong> sem penalidade uma vez por combate.</p>
+  bonusTexto2N1: `+1 em testes de <strong>Intimidação</strong> ao causar medo através do poder corrosivo.`,
+  bonusTexto2N3: `<strong>Sopro Ácido</strong> — Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)`,
+  bonusTexto2N5: `<strong>Mestre da Dissolução</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 1 de Ácido</a>.`,
+  bonusTexto2N9: `<strong>Aura da Corrosão</strong> — Inimigos próximos recebem -1 em resistência ao ácido.`,
+  bonusTexto2N13: `<strong>Maldição Ácida</strong> — Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa +1d6 de dano ácido adicional. (Custo: 3 de especial)`,
+  bonusTexto2N16: `<strong>Senhor da Ruína Ácida</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 2 de Ácido</a>.`,
+  bonusTexto2N20: `<strong>Decadência Profunda</strong> — Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)`,
+  bonusTexto2N22: `<strong>Desolador Corrosivo</strong> — +2 de dano ácido contra alvos debilitados.`,
+  bonusTexto2N25: `<strong>Propagador da Degradação</strong> — Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)`,
 
-<details>
-  <summary><strong>Mirar</strong></summary>
-  <p>
-    O personagem se concentra para garantir vantagem em seu disparo.<br>
-    <strong>Efeito:</strong> O personagem mira por um turno para rolar o dado de acerto duas vezes e escolher o melhor resultado.<br>
-    Mirar consome uma <strong>ação</strong> e o personagem só pode se mover <strong>antes de mirar</strong>.
-  </p>
-</details>
+  // ===============================
+  // 🦠 ADEPTOS DA CORROSÃO
+  // ===============================
+  bonustitulo_3: `<p>🦠 <strong>Adepto da Corrosão</strong></p>`,
 
+  bonusTexto3N1: `+1d4 em vida ao sofrer dano ácido, aproveitando o poder da corrosão para fortalecimento.`,
+  bonusTexto3N3: `<strong>Pele Resistente</strong> — +2 em resistência contra venenos e ácidos.`,
+  bonusTexto3N5: `<strong>Mestre da Dissolução</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 1 de Ácido</a>.`,
+  bonusTexto3N9: `<strong>Fluxo Ácido</strong> — Ao receber cura mágica, regenera +1d6 adicional.`,
+  bonusTexto3N13: `<strong>Ciclo da Corrosão</strong> — +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)`,
+  bonusTexto3N16: `<strong>Senhor da Ruína Ácida</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 2 de Ácido</a>.`,
+  bonusTexto3N20: `<strong>Conexão Corrosiva</strong> — Cura 1d4 ao infligir dano ácido.`,
+  bonusTexto3N22: `<strong>Poder da Dissolução</strong> — Magias de ácido causam +1d8 de dano adicional.`,
+  bonusTexto3N25: `<strong>Guardião da Corrosão Suprema</strong> — Libera uma magia à escolha de <a href="javascript:TC && TC.open && TC.open()">nível 3 de Ácido</a> sem custo de Sanidade, uma vez por combate. (Custo: 6 de especial para zerar o custo dessa magia)`
+}
+,"Bárbaro": {
+  vidaPorNivel: 7,
+  sanidadePorNivel: 1,
+  armaduraPorNivel: 3,
+  resistencia: "Fogo",
+  movimento_pass: 4,
 
-`,
+  bonusPass: `
+  <p>Nível 0: +2 em <strong>curas recebidas</strong> e +5 de <strong>dano</strong> com <strong>Machados</strong> e <strong>Martelos</strong>.</p>
+  `,
 
-bonustitulo_1: "<p>🔫 <strong>Pistoleiro</strong></p>",
-bonusTexto_1: `
-<p><strong>Nível 1:</strong> <strong>Mão Ágil</strong> – Permite sacar e guardar armas com rapidez, ganhando +1 em precisão ao atirar com duas armas. (1 de especial por uso)</p>
-<p><strong>Nível 3:</strong> <strong>Tiro Duplo</strong> – Dispara duas armas simultaneamente, cada uma com +1d4 de dano. (2 de especial por uso)</p>
-<p><strong>Nível 5:</strong> <strong>Ponto Cego</strong> – Causa +1d6 de dano extra ao acertar o alvo de surpresa. (2 de especial por uso)</p>
-<p><strong>Nível 9:</strong> <strong>Reflexos Rápidos</strong> – Ganha +1 em esquivas enquanto empunha duas armas. (Passivo)</p>
-<p><strong>Nível 13:</strong> <strong>Bala Certeira</strong> – Dispara uma bala que ignora armadura e causa +1d8 de dano adicional. (3 de especial por uso)</p>
-<p><strong>Nível 16:</strong> <strong>Velocidade da Bala</strong> – Pode realizar um tiro extra sem penalidade. (3 de especial por uso)</p>
-<p><strong>Nível 20:</strong> <strong>Destemido</strong> – Recebe +2 em testes de intimidação enquanto empunha duas armas. (Passivo)</p>
-<p><strong>Nível 22:</strong> <strong>Impacto Devastador</strong> – Dispara um tiro com +2d6 de dano que derruba o alvo se ele falhar em um teste de resistência. (4 de especial por uso)</p>
-<p><strong>Nível 25:</strong> <strong>Fúria do Pistoleiro</strong> – Lança uma barragem de balas, acertando todos os inimigos ao alcance com +1d10 de dano adicional. (5 de especial por ativação, 1 vez por combate)</p>
-`,
+  // ===============================
+  // 😡 BERSERKER
+  // ===============================
+  bonustitulo_1: `<p>😡 <strong>Berserker</strong></p>`,
 
-bonustitulo_2: "<p>🚨 <strong>Fora da Lei</strong></p>",
-bonusTexto_2: `
-<p><strong>Nível 1:</strong> <strong>Infâmia</strong> – Ganha +1 em testes de intimidação contra NPCs e inimigos. (1 de especial por uso)</p>
-<p><strong>Nível 3:</strong> <strong>Procurado</strong> – Para cada estrela no cartaz de procurado, recebe +1 em esquiva (máx. 5). (Passivo)</p>
-<p><strong>Nível 5:</strong> <strong>Tiro Ameaçador</strong> – Disparo que assusta o alvo, causando -1d4 nos próximos ataques dele. (2 de especial por uso)</p>
-<p><strong>Nível 9:</strong> <strong>Sangue Frio</strong> – Ganha +2 em resistência contra efeitos de medo. (Passivo)</p>
-<p><strong>Nível 13:</strong> <strong>Fama Implacável</strong> – Todos os inimigos ao alcance sofrem -1 em ataques contra você. (3 de especial por ativação, 1 vez por combate)</p>
-<p><strong>Nível 16:</strong> <strong>Presença Intimidadora</strong> – Concede +1 em dano a cada inimigo que esteja intimidado ou em desvantagem. (Passivo)</p>
-<p><strong>Nível 20:</strong> <strong>Desprezo Mortal</strong> – Disparo que ignora armadura, causando +2d6 de dano adicional. (4 de especial por uso)</p>
-<p><strong>Nível 22:</strong> <strong>Terror do Oeste</strong> – Inimigos ao redor recebem -2 em precisão enquanto estiver em combate. (Passivo)</p>
-<p><strong>Nível 25:</strong> <strong>Lenda Viva</strong> – Ataques causam +2d10 de dano a alvos que falharem em resistir ao medo. (5 de especial por ativação, 1 vez por combate)</p>
-`,
+  bonusTexto1N1: `<strong>Instinto Selvagem</strong> — +1d4 de dano com ataques desarmados ou armas improvisadas em corpo a corpo. Libera a passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p7"><strong>Ódio</strong></a>.`,
+  bonusTexto1N3: `<strong>Força Primordial</strong> — +2 em testes de força física para quebrar ou arrancar objetos.`,
+  bonusTexto1N5: `<strong>Resistência Implacável</strong> — +1 em testes contra venenos e cansaço.`,
+  bonusTexto1N9: `<strong>Rugido de Guerra</strong> — Grito impõe -1 em testes dos inimigos próximos por 1 turno. (Custo: 2 de especial)`,
+  bonusTexto1N13: `<strong>Golpe Devastador</strong> — +1d6 de dano extra se HP estiver abaixo de 50%. (Custo: 3 de especial)`,
+  bonusTexto1N16: `<strong>Fúria Cortante</strong> — +1d6 de dano ao usar armas de corte em fúria.`,
+  bonusTexto1N20: `<strong>Espírito da Batalha</strong> — +2 em resistência contra Lentidão e Paralisia ao lutar com múltiplos inimigos.`,
+  bonusTexto1N22: `<strong>Destruição Imparável</strong> — +1d8 de dano em críticos com armas pesadas.`,
+  bonusTexto1N25: `<strong>Frenesi Berserker</strong> — Ao atingir 0 HP, ganha 1 ataque extra sem custo e recupera +1d6 HP a cada ataque bem-sucedido. (Custo: 5 de especial, 1x por combate)`,
 
-bonustitulo_3: "<p>💥 <strong>Inimigo da Bala</strong></p>",
-bonusTexto_3: `
-<p><strong>Nível 1:</strong> <strong>Pancada Letal</strong> – Usa a arma como bastão, causando +1d4 de dano corpo a corpo. (1 de especial por uso)</p>
-<p><strong>Nível 3:</strong> <strong>Defesa da Arma</strong> – Ganha +1 em resistência ao evitar disparos por mais de um turno. (Passivo) e libera a magia [Flecha de Luz](https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m98)</p>
-<p><strong>Nível 5:</strong> <strong>Bônus de Especial</strong> – Regenera 1 ponto de especial a cada turno sem disparar. (Passivo) e libera a passiva [Teleporte Repentino](https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23)</p>
-<p><strong>Nível 9:</strong> <strong>Controle do Combate</strong> – Recebe +1 em testes de esquiva enquanto estiver em combate corpo a corpo. (Passivo)</p>
-<p><strong>Nível 13:</strong> <strong>Quebra-Defesa</strong> – Golpe que ignora defesa física e causa +1d6 de dano. (3 de especial por uso)</p>
-<p><strong>Nível 16:</strong> <strong>Fúria Contida</strong> – Recebe +2 em resistência se não tiver disparado desde o início do combate. (Passivo)</p>
-<p><strong>Nível 20:</strong> <strong>Impacto Brutal</strong> – Ataque corpo a corpo que causa +2d6 de dano e derruba o inimigo. (4 de especial por uso)</p>
-<p><strong>Nível 22:</strong> <strong>Dominância do Combate</strong> – Ataques corpo a corpo causam +1d6 adicional enquanto evita disparos. (Passivo)</p>
-<p><strong>Nível 25:</strong> <strong>Força da Calma</strong> – Executa ataque devastador com +2d10 de dano, disponível após três turnos sem disparar. (5 de especial por ativação, 1 vez por combate)</p>
-`, "movimento_pass": 4
-    },
-    "Barão": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 1,
-      "resistencia": "Ácido",
-      "bonusPass": `
-<p><strong>Nível 0:</strong> +1 para todas as rolagens de dados. Libera e pode usar a Magia [Cuspe Ácido](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Cuspe%20%C3%A1cido-,Acidum%20veru,-O%20que%20acontece) sem custo uma vez por dia.</p>
-`,
+  // ===============================
+  // 🪓 MESTRE DOS MACHADOS
+  // ===============================
+  bonustitulo_2: `<p>🪓 <strong>Mestre dos Machados</strong></p>`,
 
-bonustitulo_1: "<p>🧪 <strong>Manipulação Ácida</strong></p>",
-bonusTexto_1: `
-<p><strong>Nível 1:</strong> +1 em testes de Enganação ao influenciar outros.</p>
-<p><strong>Nível 3:</strong> <strong>Insidioso</strong> – +1 em testes de Agilidade para ações furtivas ou subversivas.</p>
-<p><strong>Nível 5:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 9:</strong> <strong>Controle Ácido</strong> – +2 em Intimidação ao demonstrar poder ácido em combate.</p>
-<p><strong>Nível 13:</strong> <strong>Comando Persuasivo</strong> – Pode influenciar um inimigo com uma sugestão corrosiva que o faça hesitar em atacar por um turno. (Custo: 3 de especial)</p>
-<p><strong>Nível 16:</strong> <strong>Senhor do Veneno</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 20:</strong> <strong>Olhar Corrosivo</strong> – Inimigos próximos sofrem -1 em resistência mental.</p>
-<p><strong>Nível 22:</strong> <strong>Manipulador Implacável</strong> – +3 em testes de manipulação contra inimigos afetados por venenos ou efeitos ácidos.</p>
-<p><strong>Nível 25:</strong> <strong>Barão do Subjugamento</strong> – Pode forçar um inimigo a realizar uma ação de sua escolha uma vez por combate. (Custo: 5 de especial)</p>
-`,
+  bonusTexto2N1: `<strong>Precisão Brutal</strong> — +1d4 de dano ao usar machados contra alvos lentos ou fixos.`,
+  bonusTexto2N3: `<strong>Braços de Ferro</strong> — +1 em testes com armas pesadas, mesmo em combate prolongado.`,
+  bonusTexto2N5: `<strong>Agilidade com Peso</strong> — +1 em Agilidade ao usar armas pesadas.`,
+  bonusTexto2N9: `<strong>Machado Veloz</strong> — +2 em ataques consecutivos com machado no mesmo alvo.`,
+  bonusTexto2N13: `<strong>Corte Rachador</strong> — Reduz defesa do inimigo em 1 por 2 turnos. (Custo: 2 de especial)`,
+  bonusTexto2N16: `<strong>Lâmina Impiedosa</strong> — +1d8 de dano crítico com machado mirando em pontos vulneráveis.`,
+  bonusTexto2N20: `<strong>Mestre de Impacto</strong> — +2 em resistência a recuo em ataques corpo a corpo com machado.`,
+  bonusTexto2N22: `<strong>Golpe Fatal</strong> — Críticos causam sangramento extra de +1d10. (Custo: 4 de especial)`,
+  bonusTexto2N25: `<strong>Executador de Batalha</strong> — 1 ataque extra com machado por combate com +2d8 de dano. (Custo: 5 de especial)`,
 
-bonustitulo_2: "<p>💀 <strong>Corrupto</strong></p>",
-bonusTexto_2: `
-<p><strong>Nível 1:</strong> +1 em testes de Intimidação ao causar medo através do poder corrosivo.</p>
-<p><strong>Nível 3:</strong> <strong>Sopro Ácido</strong> – Reduz em 1 a defesa de um alvo por um turno. (Custo: 2 de especial)</p>
-<p><strong>Nível 5:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 9:</strong> <strong>Aura da Corrosão</strong> – Inimigos próximos recebem -1 em resistência ao ácido.</p>
-<p><strong>Nível 13:</strong> <strong>Maldição Ácida</strong> – Um ataque bem-sucedido contra um inimigo com vida abaixo de 50% causa +1d6 de dano ácido adicional. (Custo: 3 de especial)</p>
-<p><strong>Nível 16:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 20:</strong> <strong>Decadência Profunda</strong> – Ataques ácidos aplicam o efeito “Corrosão”, causando +1d4 de dano contínuo no próximo turno. (Custo: 2 de especial)</p>
-<p><strong>Nível 22:</strong> <strong>Desolador Corrosivo</strong> – +2 de dano ácido contra alvos debilitados.</p>
-<p><strong>Nível 25:</strong> <strong>Propagador da Degradação</strong> – Todos os inimigos em um raio de 5 metros recebem -2 em resistência. (Custo: 5 de especial)</p>
-`,
+  // ===============================
+  // ✨ CAMINHO PURITANO
+  // ===============================
+  bonustitulo_3: `<p>✨ <strong>Caminho Puritano</strong></p>`,
 
-bonustitulo_3: "<p>🦠 <strong>Adepto da Corrosão</strong></p>",
-bonusTexto_3: `
-<p><strong>Nível 1:</strong> +1d4 em vida ao sofrer dano ácido, aproveitando o poder da corrosão para fortalecimento.</p>
-<p><strong>Nível 3:</strong> <strong>Pele Resistente</strong> – +2 em resistência contra venenos e ácidos.</p>
-<p><strong>Nível 5:</strong> <strong>Mestre da Dissolução</strong> – Libera uma magia de nível 1 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 9:</strong> <strong>Fluxo Ácido</strong> – Ao receber cura mágica, regenera +1d6 adicional.</p>
-<p><strong>Nível 13:</strong> <strong>Ciclo da Corrosão</strong> – +1d6 de dano ácido adicional em ataques corpo a corpo. (Custo: 3 de especial)</p>
-<p><strong>Nível 16:</strong> <strong>Senhor da Ruína Ácida</strong> – Libera uma magia de nível 2 à escolha na [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula).</p>
-<p><strong>Nível 20:</strong> <strong>Conexão Corrosiva</strong> – Cura 1d4 ao infligir dano ácido.</p>
-<p><strong>Nível 22:</strong> <strong>Poder da Dissolução</strong> – Magias de ácido causam +1d8 de dano adicional.</p>
-<p><strong>Nível 25:</strong> <strong>Guardião da Corrosão Suprema</strong> – Libera uma magia de nível 3 da [Cúpula da Corrosão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81cido%20%E2%80%93%20C%C3%BApula%20da%20Corros%C3%A3o,-Hierarquias%20de%20C%C3%BApula) sem custo de especial, uma vez por combate. (Custo: 6 de especial para reativar em outro combate)</p>
-`
-,  "movimento_pass": 4.5
-    },
-    "Bárbaro": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 3,
-      "resistencia": "Fogo",
-  "bonusPass": `
-<p><strong>Nível 0:</strong> +2 em curas recebidas, +5 de dano com Machados e Martelos.</p>
-`,
-  "bonustitulo_1": `<p>😡<strong>Berserker</strong></p>`,
-  "bonusTexto_1": `
-<p><strong>Nível 1:</strong> Instinto Selvagem – +1d4 de dano com ataques desarmados ou armas improvisadas em corpo a corpo (Passivo). Libera a passiva <strong>[Ódio](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Intui%C3%A7%C3%A3o-,%C3%93dio,-Odium)</strong>.</p>
-<p><strong>Nível 3:</strong> Força Primordial – +2 em testes de força física para quebrar ou arrancar objetos (Passivo).</p>
-<p><strong>Nível 5:</strong> Resistência Implacável – +1 em testes contra venenos e cansaço (Passivo).</p>
-<p><strong>Nível 9:</strong> Rugido de Guerra – Grito impõe -1 em testes dos inimigos próximos por 1 turno (2 de especial por uso).</p>
-<p><strong>Nível 13:</strong> Golpe Devastador – +1d6 de dano extra se HP &lt; 50% (3 de especial por uso).</p>
-<p><strong>Nível 16:</strong> Fúria Cortante – +1d6 de dano ao usar armas de corte em fúria (Passivo).</p>
-<p><strong>Nível 20:</strong> Espírito da Batalha – +2 em resistência contra Lentidão e Paralisia ao lutar com múltiplos inimigos (Passivo).</p>
-<p><strong>Nível 22:</strong> Destruição Imparável – +1d8 de dano em críticos com armas pesadas (Passivo).</p>
-<p><strong>Nível 25:</strong> Frenesi Berserker – Ao atingir 0 HP, ganha 1 ataque extra sem custo de ação e recupera +1d6 HP a cada ataque bem-sucedido (5 de especial por ativação, 1x por combate).</p>
-`,
-  "bonustitulo_2": `<p>🪓<strong>Mestre dos Machados</strong></p>`,
-  "bonusTexto_2": `
-<p><strong>Nível 1:</strong> Precisão Brutal – +1d4 de dano ao usar machados contra alvos lentos ou fixos (Passivo).</p>
-<p><strong>Nível 3:</strong> Braços de Ferro – +1 em testes com armas pesadas, mesmo em combate prolongado (Passivo).</p>
-<p><strong>Nível 5:</strong> Agilidade com Peso – +1 em Agilidade com armas pesadas (Passivo).</p>
-<p><strong>Nível 9:</strong> Machado Veloz – +2 em ataques consecutivos com machado no mesmo alvo (Passivo).</p>
-<p><strong>Nível 13:</strong> Corte Rachador – Reduz defesa do inimigo em 1 por 2 turnos (2 de especial por uso).</p>
-<p><strong>Nível 16:</strong> Lâmina Impiedosa – +1d8 de dano crítico com machado mirando em pontos vulneráveis (Passivo).</p>
-<p><strong>Nível 20:</strong> Mestre de Impacto – +2 em resistência a recuo em ataques corpo a corpo com machado (Passivo).</p>
-<p><strong>Nível 22:</strong> Golpe Fatal – Críticos causam sangramento extra de +1d10 (4 de especial por uso).</p>
-<p><strong>Nível 25:</strong> Executador de Batalha – 1 ataque extra com machado por combate com +2d8 de dano (5 de especial por ativação).</p>
-`,
-  "bonustitulo_3": `<p>✨<strong>Caminho Puritano</strong></p>`,
-  "bonusTexto_3": `
-<p><strong>Nível 1:</strong> Vitalidade Curativa – Recupera +1d4 de vida após combates mantendo integridade do grupo (Passivo).</p>
-<p><strong>Nível 3:</strong> Resiliência Sagrada – +1 em primeiros socorros para si e aliados próximos (Passivo).</p>
-<p><strong>Nível 5:</strong> Fonte de Cura – Cura recebida aumenta em +1d4 (Passivo).</p>
-<p><strong>Nível 9:</strong> Proteção Natural – +2 em resistência mágica ao curar aliados (Passivo).</p>
-<p><strong>Nível 13:</strong> Mão Restauradora – Cura instantânea de +1d6 (3 de especial por uso).</p>
-<p><strong>Nível 16:</strong> Energia Salvadora – Regenera +1d8 de vida por turno ao lado de aliados feridos (Passivo).</p>
-<p><strong>Nível 20:</strong> Guardião de Batalha – +2 em resistência contra maldição e veneno ao proteger ou curar aliados (Passivo).</p>
-<p><strong>Nível 22:</strong> Reforço de Vida – Cura de +1d10 em ação de suporte (4 de especial por uso).</p>
-<p><strong>Nível 25:</strong> Guardião Puritano – Cura em área de +2d8 em todos os aliados próximos (5 de especial por ativação, 1x por combate).</p>
-`
+  bonusTexto3N1: `<strong>Vitalidade Curativa</strong> — Recupera +1d4 de vida após combates mantendo integridade do grupo.`,
+  bonusTexto3N3: `<strong>Resiliência Sagrada</strong> — +1 em primeiros socorros para si e aliados próximos.`,
+  bonusTexto3N5: `<strong>Fonte de Cura</strong> — Cura recebida aumenta em +1d4.`,
+  bonusTexto3N9: `<strong>Proteção Natural</strong> — +2 em resistência mágica ao curar aliados.`,
+  bonusTexto3N13: `<strong>Mão Restauradora</strong> — Cura instantânea de +1d6. (Custo: 3 de especial)`,
+  bonusTexto3N16: `<strong>Energia Salvadora</strong> — Regenera +1d8 de vida por turno ao lado de aliados feridos.`,
+  bonusTexto3N20: `<strong>Guardião de Batalha</strong> — +2 em resistência contra maldição e veneno ao proteger ou curar aliados.`,
+  bonusTexto3N22: `<strong>Reforço de Vida</strong> — Cura de +1d10 em ação de suporte. (Custo: 4 de especial)`,
+  bonusTexto3N25: `<strong>Guardião Puritano</strong> — Cura em área de +2d8 em todos os aliados próximos. (Custo: 5 de especial, 1x por combate)`
+}
 ,
-     "movimento_pass": 4
-    },
-    "Bardo": { 
-      "vidaPorNivel": 4,
-      "sanidadePorNivel": 4,
-      "armaduraPorNivel": 1,
-      "resistencia": "Luz",
-  "bonusPass": `
-<p><strong>Nível 0:</strong> +2 em qualquer rolagem de dados em Conexão e +2 em Diplomacia.</p>
-`,
-  "bonustitulo_1": `<p>💃<strong>Mestre da Dança</strong></p>`,
-  "bonusTexto_1": `
-<p><em>"O Mestre da Dança usa sua habilidade com a música para curar, purificar e confundir os inimigos enquanto mantém sua presença dinâmica em combate. A dança é acompanhada pelo som de seu instrumento que, magicamente, levita e toca por conta própria."</em></p>
-<p><strong>Nível 1:</strong> [Dança da Purificação](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Dan%C3%A7a%20da%20Purifica%C3%A7%C3%A3o) – Remove condições negativas de aliados próximos (1x por dia, sem custo).</p>
-<p><strong>Nível 3:</strong> Movimentos Encantados – +1 em esquiva e resistência a ataques à distância enquanto dança (Passivo).</p>
-<p><strong>Nível 5:</strong> Toque da Harmonia – Restaura +1d4 de vida ou sanidade a aliados próximos (2 de especial por uso).</p>
-<p><strong>Nível 9:</strong> Encanto das Melodias – +2 em testes de Conexão ao usar dança para ganhar confiança (Passivo).</p>
-<p><strong>Nível 13:</strong> Ritmo Desorientador – Reduz testes de precisão inimigos em -1 por 3 turnos (3 de especial por uso).</p>
-<p><strong>Nível 16:</strong> Harmonia Fluida – Cura +1d6 por turno para aliados se dançar por 2+ turnos (Passivo).</p>
-<p><strong>Nível 20:</strong> Explosão Melódica – +1d8 de dano em área via onda sonora (3 de especial por uso).</p>
-<p><strong>Nível 22:</strong> Aura de Cura – Aliados ganham +2 em resistência a condições enquanto dança (Passivo).</p>
-<p><strong>Nível 25:</strong> Apoteose da Dança – Remove condições de aliados, reduz armadura inimiga em -2 e faz armas grudarem no chão enquanto dança (5 de especial, 1x por combate).</p>
-`,
-  "bonustitulo_2": `<p>🎶<strong>Guerreiro Musical</strong></p>`,
-  "bonusTexto_2": `
-<p><em>"O Guerreiro Musical usa a música para inspirar a si mesmo e aos seus aliados, enquanto luta com armas e instrumentos. Ele se destaca ao utilizar sua música como arma e se aprimorar para o combate."</em></p>
-<p><strong>Nível 1:</strong> Golpe Harmônico – +1d4 de dano com instrumento como arma (Passivo).</p>
-<p><strong>Nível 3:</strong> Ritmo de Batalha – +1 em testes de precisão com arco ou besta (Passivo).</p>
-<p><strong>Nível 5:</strong> Melodia de Inspiração – Concede +1 de precisão a aliados por 1 turno (2 de especial por uso).</p>
-<p><strong>Nível 9:</strong> Som Impenetrável – +1 em resistência a ataques mentais e mágicos ao tocar (Passivo).</p>
-<p><strong>Nível 13:</strong> Crescendo Devastador – +1d6 de dano e atordoa inimigo por 1 turno (3 de especial por uso).</p>
-<p><strong>Nível 16:</strong> Canto da Armadura – +2 em resistência física ao tocar melodia protetora (Passivo).</p>
-<p><strong>Nível 20:</strong> Corda Rasgante – +2d6 de dano e reduz defesa do alvo em -1 (4 de especial por uso).</p>
-<p><strong>Nível 22:</strong> Hino de Guerra – Aliados recebem +2 em resistência a condições por 2 turnos (Passivo).</p>
-<p><strong>Nível 25:</strong> Concerto de Vitória – +3d8 de dano de Luz em todos os inimigos próximos (5 de especial, 1x por combate).</p>
-`,
-  "bonustitulo_3": `<p>💤<strong>Apanhador de Sonhos</strong></p>`,
-  "bonusTexto_3": `
-<p><em>"O Apanhador de Sonhos é iniciado nas Hierarquias dos Cultos dos Apanhadores, conectando-se ao mundo espiritual e manipulando sonhos e pesadelos para apoiar aliados e afetar inimigos."</em></p>
-<p><strong>Nível 1:</strong> Aspirante dos Sonhos – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-2) e +1d4 com bestas.</p>
-<p><strong>Nível 3:</strong> Tecelão de Devaneios – Libera 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-2) e -1 de custo de sanidade ao afetar mentes.</p>
-<p><strong>Nível 5:</strong> Guardião dos Subconscientes – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-3) e aliados próximos ganham +1 em resistência mental.</p>
-<p><strong>Nível 9:</strong> Senhor do Sono Eterno – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-4) e cria névoa de sonolência (1x por combate).</p>
-<p><strong>Nível 13:</strong> Profeta das Visões Oníricas – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-4), +1 em esquiva e pode prever ataques iminentes.</p>
-<p><strong>Nível 16:</strong> Apanhador dos Pesadelos – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-4), drena 1d6 de sanidade e converte em energia especial.</p>
-<p><strong>Nível 20:</strong> Guardião do Mundo Onírico – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-5) e +2 em percepção contra ilusões e invisibilidade.</p>
-<p><strong>Nível 22:</strong> Mestre dos Devaneios – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 1-5) e reduz pela metade o custo de magias de sonho/pesadelo.</p>
-<p><strong>Nível 25:</strong> Guardião Eterno dos Sonhos – Ganha 1 [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos,-Hierarquias%20de%20Culto) (nível 6) e pode realizar ação completa extra (7 de especial, 1x por combate).</p>
-`
+   "Bardo": {
+  vidaPorNivel: 4,
+  sanidadePorNivel: 4,
+  armaduraPorNivel: 1,
+  resistencia: "Luz",
+  movimento_pass: 3.5,
+
+  bonusPass: `
+  <p><strong>Nível 0:</strong> +2 em qualquer rolagem de <strong>Conexão</strong> e +2 em <strong>Diplomacia</strong>.</p>
+  `,
+
+  // ===============================
+  // 💃 MESTRE DA DANÇA
+  // ===============================
+  bonustitulo_1: `<p>💃 <strong>Mestre da Dança</strong></p>`,
+
+  bonusTexto1N1: `<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p32"><strong>Dança da Purificação</strong></a> — Remove condições negativas de aliados próximos. (1x por dia, sem custo)`,
+  bonusTexto1N3: `<strong>Movimentos Encantados</strong> — +1 em esquiva e resistência a ataques à distância enquanto dança. (Passivo)`,
+  bonusTexto1N5: `<strong>Toque da Harmonia</strong> — Restaura +1d4 de vida ou sanidade a aliados próximos. (Custo: 2 de especial)`,
+  bonusTexto1N9: `<strong>Encanto das Melodias</strong> — +2 em testes de Conexão ao usar dança para ganhar confiança. (Passivo)`,
+  bonusTexto1N13: `<strong>Ritmo Desorientador</strong> — Reduz testes de precisão inimigos em -1 por 3 turnos. (Custo: 3 de especial)`,
+  bonusTexto1N16: `<strong>Harmonia Fluida</strong> — Cura +1d6 por turno para aliados se dançar por 2+ turnos. (Passivo)`,
+  bonusTexto1N20: `<strong>Explosão Melódica</strong> — +1d8 de dano em área via onda sonora. (Custo: 3 de especial)`,
+  bonusTexto1N22: `<strong>Aura de Cura</strong> — Aliados ganham +2 em resistência a condições enquanto dança. (Passivo)`,
+  bonusTexto1N25: `<strong>Apoteose da Dança</strong> — Remove condições de aliados, reduz armadura inimiga em -2 e faz armas grudarem no chão enquanto dança. (Custo: 5 de especial, 1x por combate)`,
+
+  // ===============================
+  // 🎶 GUERREIRO MUSICAL
+  // ===============================
+  bonustitulo_2: `<p>🎶 <strong>Guerreiro Musical</strong></p>`,
+
+  bonusTexto2N1: `<strong>Golpe Harmônico</strong> — +1d4 de dano com instrumento usado como arma. (Passivo)`,
+  bonusTexto2N3: `<strong>Ritmo de Batalha</strong> — +1 em testes de precisão com arco ou besta. (Passivo)`,
+  bonusTexto2N5: `<strong>Melodia de Inspiração</strong> — Concede +1 de precisão a aliados por 1 turno. (Custo: 2 de especial)`,
+  bonusTexto2N9: `<strong>Som Impenetrável</strong> — +1 em resistência a ataques mentais e mágicos ao tocar. (Passivo)`,
+  bonusTexto2N13: `<strong>Crescendo Devastador</strong> — +1d6 de dano e atordoa inimigo por 1 turno. (Custo: 3 de especial)`,
+  bonusTexto2N16: `<strong>Canto da Armadura</strong> — +2 em resistência física ao tocar melodia protetora. (Passivo)`,
+  bonusTexto2N20: `<strong>Corda Rasgante</strong> — +2d6 de dano e reduz defesa do alvo em -1. (Custo: 4 de especial)`,
+  bonusTexto2N22: `<strong>Hino de Guerra</strong> — Aliados recebem +2 em resistência a condições por 2 turnos. (Passivo)`,
+  bonusTexto2N25: `<strong>Concerto de Vitória</strong> — +3d8 de dano de Luz em todos os inimigos próximos. (Custo: 5 de especial, 1x por combate)`,
+
+  // ===============================
+  // 💤 APANHADOR DE SONHOS
+  // ===============================
+  bonustitulo_3: `<p>💤 <strong>Apanhador de Sonhos</strong></p>`,
+
+  bonusTexto3N1: `<strong>Aspirante dos Sonhos</strong> — Ganha 1 <a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Sono%20%E2%80%93%20Culto%20dos%20apanhadores%20de%20sonhos"><strong>magia</strong></a> (nível 1–2) e +1d4 com bestas.`,
+  bonusTexto3N3: `<strong>Tecelão de Devaneios</strong> — Libera 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–2) e -1 de custo de sanidade ao afetar mentes.`,
+  bonusTexto3N5: `<strong>Guardião dos Subconscientes</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–3) e aliados próximos ganham +1 em resistência mental.`,
+  bonusTexto3N9: `<strong>Senhor do Sono Eterno</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–4) e cria névoa de sonolência. (1x por combate)`,
+  bonusTexto3N13: `<strong>Profeta das Visões Oníricas</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–4), +1 em esquiva e pode prever ataques iminentes.`,
+  bonusTexto3N16: `<strong>Apanhador dos Pesadelos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–4), drena 1d6 de sanidade e converte em energia especial.`,
+  bonusTexto3N20: `<strong>Guardião do Mundo Onírico</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–5) e +2 em percepção contra ilusões e invisibilidade.`,
+  bonusTexto3N22: `<strong>Mestre dos Devaneios</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–5) e reduz pela metade o custo de magias de sonho/pesadelo.`,
+  bonusTexto3N25: `<strong>Guardião Eterno dos Sonhos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 6) e pode realizar uma ação completa extra. (Custo: 7 de especial, 1x por combate)`
+}
 ,
-     "movimento_pass": 3.5
-    },
     "Bruxo": { 
-      "vidaPorNivel": 4,
-      "sanidadePorNivel": 4,
-      "armaduraPorNivel": 1,
-      "resistencia": "Escuridão",
-  "bonusPass": `
-<p><strong>Nível 0:</strong> Magias de atributo <strong>Libertação</strong> custam metade.</p>
-`,
-  "bonustitulo_1": `<p>🔮<strong>Umbromante</strong></p>`,
-  "bonusTexto_1": `
-<p><em>"Especializado em magia de Escuridão, com Hierarquias dos Filhos de Eldoria."</em></p>
-<p><strong>Nível 1:</strong> Aprendiz das Sombras – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 1 de Escuridão e +1 em Identificar Magia.</p>
-<p><strong>Nível 3:</strong> Mestre da Penumbra – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 2 de Escuridão e +1 contra dano de Escuridão.</p>
-<p><strong>Nível 5:</strong> Guardião da Noite – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 2 e ataque extra de Escuridão (3 de especial).</p>
-<p><strong>Nível 9:</strong> Profeta do Eclipse – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 3 e <strong>Libertação das Sombras</strong>: metade do custo de sanidade para 1 magia (1x por combate).</p>
-<p><strong>Nível 13:</strong> Arauto das Trevas – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 4 e +2 de dano com Escuridão.</p>
-<p><strong>Nível 16:</strong> Sombra Absoluta – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 4 e +2 em movimento no escuro. Pode causar <strong>Borborigmo</strong> por 1d4 turnos (1x por combate).</p>
-<p><strong>Nível 20:</strong> Senhor das Sombras Eternas – +2 em Identificar Magia e escudo sombrio que absorve até 1d8 de dano (1x por turno).</p>
-<p><strong>Nível 22:</strong> Guardião das Trevas Profundas – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 5 e ação completa de Escuridão causa <strong>Confusão</strong> em inimigos.</p>
-<p><strong>Nível 25:</strong> Profeta da Sombra Suprema – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos) de nível 6 e ação completa extra (8 de Sanidade).</p>
-`,
-  "bonustitulo_2": `<p>💀<strong>Maldizente</strong></p>`,
-  "bonusTexto_2": `
-<p><em>"Especializado em maldições, com foco em fé e controle espiritual."</em></p>
-<p><strong>Nível 1:</strong> Aprendiz da Maldição – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 1 de Maldição e passiva <strong>[Amaldiçoar](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Amaldi%C3%A7oar,-Maledictio)</strong>.</p>
-<p><strong>Nível 3:</strong> Portador dos Presságios – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 1 e +1 em dano com Maldição.</p>
-<p><strong>Nível 5:</strong> Mestre dos Anátemas – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 2 e +1 em testes de Conexão.</p>
-<p><strong>Nível 9:</strong> Profeta da Ruína – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 3 e <strong>Libertação da Maldição</strong>: metade do custo de sanidade 1x por combate.</p>
-<p><strong>Nível 13:</strong> Arauto dos Destinos Sombrios – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 3 e +2 de dano em Maldição.</p>
-<p><strong>Nível 16:</strong> Véu do Fim – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 4 e véu sombrio que concede +2 contra dano físico.</p>
-<p><strong>Nível 20:</strong> Mestre da Profecia Desoladora – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 4 e pode reduzir dano mágico inimigo em 1d12 (3 de especial).</p>
-<p><strong>Nível 22:</strong> Guardião dos Destinos Perdidos – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 5, +2 em Conexão e +1d8 de dano com Maldição.</p>
-<p><strong>Nível 25:</strong> Profeta dos Pesadelos Eternos – [Magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Maldi%C3%A7%C3%A3o%20%E2%80%93%20Sussurros%20de%20Desespero,-Hierarquias%20de%20Sussurros) de nível 6 e <strong>Amaldiçoar</strong> inimigo extra (7 de especial). Alvo afetado tem desvantagem para remover maldição.</p>
-`,
-  "bonustitulo_3": `<p>🌟<strong>Duelista de Varinhas</strong></p>`,
-  "bonusTexto_3": `
-<p><em>"Especializado em duelos de varinhas, escolhendo uma varinha no nível 1 que concede bônus únicos."</em></p>
-<p><strong>Nível 1:</strong> Duelista das Varinhas – Escolhe varinha: Fé (Determinação +1), Poder (Libertação +1), Desconhecido (Conexão +1), Caos (Preservação +1). Ganha +1 em combate com varinhas e pode conjurar com elas.</p>
-<p><strong>Nível 3:</strong> Mago Duelista – Ataque de varinha causa 2d10 de plasma (2 de especial) e +1 de dano com plasma.</p>
-<p><strong>Nível 5:</strong> Mestre da Varinha – +2 em dano de plasma, +1 em Esquiva e libera 2 magias de [plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Plasma%20%E2%80%93%20Conclave%20da%20Conex%C3%A3o%20Irreal,-Hierarquias%20de%20Conclave) nível 1–2.</p>
-<p><strong>Nível 9:</strong> Guerreiro das Bruxarias – Ataque extra com varinha (4 de especial) e +1 contra magia do Desconhecido.</p>
-<p><strong>Nível 13:</strong> Arauto das Bruxarias – +2 em ataques de plasma, reduz custo de sanidade de magias de duelo e ganha 2 magias de plasma nível 3–4.</p>
-<p><strong>Nível 16:</strong> Guardião Arcano das Varinhas – Defesa arcana reduz 1d8 de dano (2 de especial).</p>
-<p><strong>Nível 20:</strong> Profeta do Plasma Arcano – +1 em dano com plasma e +2 em Conexão em combates com varinhas.</p>
-<p><strong>Nível 22:</strong> Guardião do Poder Arcano – Libera 2 magias de [plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Plasma%20%E2%80%93%20Conclave%20da%20Conex%C3%A3o%20Irreal,-Hierarquias%20de%20Conclave) (nível 1–6) e pode fazer 2 ataques com varinha na mesma ação (6 de especial).</p>
-<p><strong>Nível 25:</strong> Mestre Supremo das Varinhas – +3 em ataques de plasma e ataque final que rebate entre inimigos num raio de 10m (8 de especial).</p>
-`
+  vidaPorNivel: 4,
+  sanidadePorNivel: 4,
+  armaduraPorNivel: 1,
+  resistencia: "Escuridão",
+  movimento_pass: 3.5,
+
+  bonusPass: `
+  <p><strong>Nível 0:</strong> Magias de atributo <strong>Libertação</strong> custam metade.</p>
+  `,
+
+  // ===============================
+  // 🔮 UMBROMANTE
+  // ===============================
+  bonustitulo_1: `<p>🔮 <strong>Umbromante</strong></p>`,
+
+  bonusTexto1N1: `<strong>Aprendiz das Sombras</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia</a> de nível 1 de Escuridão e +1 em Identificar Magia.`,
+  bonusTexto1N3: `<strong>Mestre da Penumbra</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia</a> de nível 2 de Escuridão e +1 contra dano de Escuridão.`,
+  bonusTexto1N5: `<strong>Guardião da Noite</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Escuridão</a> de nível 2 e ataque extra de Escuridão (3 de especial).`,
+  bonusTexto1N9: `<strong>Profeta do Eclipse</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Escuridão</a> de nível 3 e <strong>Libertação das Sombras</strong>: metade do custo de sanidade em 1 magia (1x por combate).`,
+  bonusTexto1N13: `<strong>Arauto das Trevas</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Escuridão</a> de nível 4 e +2 de dano com Escuridão.`,
+  bonusTexto1N16: `<strong>Sombra Absoluta</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Escuridão</a> de nível 4 e +2 em movimento no escuro. Pode causar <strong>Borborigmo</strong> por 1d4 turnos (1x por combate).`,
+  bonusTexto1N20: `<strong>Senhor das Sombras Eternas</strong> — +2 em Identificar Magia e escudo sombrio que absorve até 1d8 de dano (1x por turno).`,
+  bonusTexto1N22: `<strong>Guardião das Trevas Profundas</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Escuridão</a> de nível 5 e ação completa de Escuridão causa <strong>Confusão</strong> em inimigos.`,
+  bonusTexto1N25: `<strong>Profeta da Sombra Suprema</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Escuridão</a> de nível 6 e ação completa extra (8 de Sanidade).`,
+
+  // ===============================
+  // 💀 MALDIZENTE
+  // ===============================
+  bonustitulo_2: `<p>💀 <strong>Maldizente</strong></p>`,
+
+  bonusTexto2N1: `<strong>Aprendiz da Maldição</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia</a> de nível 1 e passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p25"><strong>Amaldiçoar</strong></a>.`,
+  bonusTexto2N3: `<strong>Portador dos Presságios</strong> — Magia de nível 1 e +1 em dano com Maldição.`,
+  bonusTexto2N5: `<strong>Mestre dos Anátemas</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 2 e +1 em testes de Conexão.`,
+  bonusTexto2N9: `<strong>Profeta da Ruína</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 3 e <strong>Libertação da Maldição</strong>: metade do custo de sanidade (1x por combate).`,
+  bonusTexto2N13: `<strong>Arauto dos Destinos Sombrios</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 3 e +2 de dano em Maldição.`,
+  bonusTexto2N16: `<strong>Véu do Fim</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 4 e véu sombrio que concede +2 contra dano físico.`,
+  bonusTexto2N20: `<strong>Mestre da Profecia Desoladora</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 4 e pode reduzir dano mágico inimigo em 1d12 (3 de especial).`,
+  bonusTexto2N22: `<strong>Guardião dos Destinos Perdidos</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 5, +2 em Conexão e +1d8 de dano com Maldição.`,
+  bonusTexto2N25: `<strong>Profeta dos Pesadelos Eternos</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 6 e <strong>Amaldiçoar</strong> inimigo extra (7 de especial). Alvo afetado tem desvantagem para remover maldição.`,
+
+  // ===============================
+  // 🌟 DUELISTA DE VARINHAS
+  // ===============================
+  bonustitulo_3: `<p>🌟 <strong>Duelista de Varinhas</strong></p>`,
+
+  bonusTexto3N1: `<strong>Duelista das Varinhas</strong> — Escolhe varinha: Fé (+1 Determinação), Poder (+1 Libertação), Desconhecido (+1 Conexão), Caos (+1 Preservação). Ganha +1 em combate com varinhas e pode conjurar com elas.`,
+  bonusTexto3N3: `<strong>Mago Duelista</strong> — Ataque de varinha causa 2d10 de plasma (2 de especial) e +1 de dano com plasma.`,
+  bonusTexto3N5: `<strong>Mestre da Varinha</strong> — +2 em dano de plasma, +1 em Esquiva e libera 2 magias de <a href="javascript:TC && TC.open && TC.open()">Plasma</a> (nível 1–2).`,
+  bonusTexto3N9: `<strong>Guerreiro das Bruxarias</strong> — Ataque extra com varinha (4 de especial) e +1 contra magia do Desconhecido.`,
+  bonusTexto3N13: `<strong>Arauto das Bruxarias</strong> — +2 em ataques de plasma, reduz custo de sanidade de magias de duelo e ganha 2 magias de plasma (nível 3–4).`,
+  bonusTexto3N16: `<strong>Guardião Arcano das Varinhas</strong> — Defesa arcana reduz 1d8 de dano (2 de especial).`,
+  bonusTexto3N20: `<strong>Profeta do Plasma Arcano</strong> — +1 em dano com plasma e +2 em Conexão em combates com varinhas.`,
+  bonusTexto3N22: `<strong>Guardião do Poder Arcano</strong> — Libera 2 magias de <a href="javascript:TC && TC.open && TC.open()">Plasma</a> (nível 1–6) e pode fazer 2 ataques com varinha na mesma ação (6 de especial).`,
+  bonusTexto3N25: `<strong>Mestre Supremo das Varinhas</strong> — +3 em ataques de plasma e ataque final que rebate entre inimigos num raio de 10m (8 de especial).`
+}
 ,
-   "movimento_pass": 3.5
-    },
-    "Carpinteiro": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 1,
-      "resistencia": "Tempestade",
-     "bonusPass": `
-<p><strong>Nível 0:</strong> Uma ação livre extra por turno.</p>
-`,
-"bonustitulo_1": `<p>⚒️<strong>Construtor Improvisado</strong></p>`,
-"bonusTexto_1": `
-<p><em>"O Carpinteiro usa troncos, cadeiras e outros objetos de madeira como armas improvisadas, utilizando habilidades de combate bruto e improvisação."</em></p>
-<p><strong>Nível 1:</strong> Martelada Bruta – +1d4 de dano corpo a corpo com madeira (1 de especial).</p>
-<p><strong>Nível 3:</strong> Bloco de Proteção – +1 em resistência ao usar madeira como escudo (Passivo).</p>
-<p><strong>Nível 5:</strong> Força Adaptável – Regenera 1 de especial após dois turnos com objetos improvisados (Passivo).</p>
-<p><strong>Nível 9:</strong> Perícia com Improviso – +1 em ataques com armas improvisadas (Passivo).</p>
-<p><strong>Nível 13:</strong> Golpe Demolidor – +1d6 de dano que ignora defesa (3 de especial).</p>
-<p><strong>Nível 16:</strong> Resistência Férrea – +2 em resistência física se usar objeto improvisado desde o início (Passivo).</p>
-<p><strong>Nível 20:</strong> Explosão de Impacto – +2d6 de dano e chance de atordoar (4 de especial).</p>
-<p><strong>Nível 22:</strong> Maestria em Improviso – +1d6 de dano adicional com improvisos e bônus contra ataques à distância (Passivo).</p>
-<p><strong>Nível 25:</strong> Golpe Devastador – +2d10 de dano após 3 turnos sem usar habilidades (5 de especial, 1x por combate).</p>
-`,
-"bonustitulo_2": `<p>👷‍♂️<strong>Artesão de Barricadas</strong></p>`,
-"bonusTexto_2": `
-<p><em>"O Carpinteiro constrói barricadas e armadilhas de madeira para criar obstruções e distrações, dominando o campo de batalha com construções rápidas."</em></p>
-<p><strong>Nível 1:</strong> Mini Barricada – Concede +1 em defesa para aliados por um turno (Sem custo).</p>
-<p><strong>Nível 3:</strong> Parede de Madeira – Bloqueia passagem por 2 turnos (2 de especial).</p>
-<p><strong>Nível 5:</strong> Prendedor Ágil – +1 em esquiva para aliados próximos ao travar objetos leves (Passivo).</p>
-<p><strong>Nível 9:</strong> Barreira Resistente – Barricadas duram +1 turno (Passivo).</p>
-<p><strong>Nível 13:</strong> Armadilha Surpresa – +1d6 de dano ao inimigo que atravessa (3 de especial).</p>
-<p><strong>Nível 16:</strong> Cobertura Completa – Reduz metade do dano para quem estiver atrás da barreira (4 de especial, 1x por combate).</p>
-<p><strong>Nível 20:</strong> Estratégia de Distração – Atrai inimigos com objeto de madeira por 1 turno (2 de especial).</p>
-<p><strong>Nível 22:</strong> Mestre das Barricadas – Pode construir 2 barricadas simultaneamente (Passivo).</p>
-<p><strong>Nível 25:</strong> Catapulta Improvisada – Lança objetos com +2d10 de dano à distância (5 de especial, 1x por combate).</p>
-`,
-"bonustitulo_3": `<p>🪓<strong>Guerreiro de Machado</strong></p>`,
-"bonusTexto_3": `
-<p><em>"O Carpinteiro luta com machados, tornando-se quase tão habilidoso quanto o Mestre dos Machados, com seu próprio estilo de combate implacável."</em></p>
-<p><strong>Nível 1:</strong> Corte Preciso – +1d4 de dano adicional com machado (Passivo).</p>
-<p><strong>Nível 3:</strong> Fúria do Lenhador – +1 em resistência com golpes rápidos usando machado (Passivo).</p>
-<p><strong>Nível 5:</strong> Machado Veloz – +1 em Agilidade ao usar machado (Passivo).</p>
-<p><strong>Nível 9:</strong> Ataque Sequencial – +2 de dano ao atingir o mesmo alvo repetidamente (Passivo).</p>
-<p><strong>Nível 13:</strong> Machado Partidor – Reduz armadura do alvo em -1 por 2 turnos (2 de especial).</p>
-<p><strong>Nível 16:</strong> Golpe Devastador – +1d8 de dano crítico com machado (Passivo).</p>
-<p><strong>Nível 20:</strong> Equilíbrio de Aço – +2 em resistência a recuos com machado (Passivo).</p>
-<p><strong>Nível 22:</strong> Hemorragia Fatal – Crítico com machado causa +1d10 de dano contínuo (4 de especial).</p>
-<p><strong>Nível 25:</strong> Mestre do Machado – Ataque extra com +2d8 de dano (5 de especial, 1x por combate).</p>
-`
-,   "movimento_pass": 3.5
-    },
-    "Catador": { 
-      "vidaPorNivel": 4,
-      "sanidadePorNivel": 4,
-      "armaduraPorNivel": 1,
-      "resistencia": "Alma",
-     "bonusPass": `
-<p><strong>Nível 0:</strong> Cada órgão adiciona +1 invocação extra. Magia <strong>[LEVANTA](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Levanta!,-Surgiteoooooo!!!)</strong> sem custo uma vez por dia.</p>
-`,
-"bonustitulo_1": `<p>⚰️<strong>Necromante</strong></p>`,
-"bonusTexto_1": `
-<p><em>"Especialista em manipulação de mortos e absorção de poder de cadáveres."</em></p>
-<p><strong>Nível 1:</strong> Eco dos Mortos – Cada órgão coletado concede +1 em resistência a medo e intimidação. Magia <strong>[LEVANTA](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Levanta!,-Surgiteoooooo!!!)</strong> 2x/dia sem custo. +2 de movimento em terrenos com corpos.</p>
-<p><strong>Nível 3:</strong> Alimento das Sombras – Absorver um cadáver recupera 1d4 de sanidade (até 3x por dia).</p>
-<p><strong>Nível 5:</strong> Aura Cadavérica – Reduz o dano recebido em 2 por inimigo morto próximo (4 de especial, dura até o fim do combate).</p>
-<p><strong>Nível 9:</strong> Colecionador de Almas Perdidas – Armazena essência por 1d10 turnos, recebe -2 de dano contra sangue e luz.</p>
-<p><strong>Nível 13:</strong> Devorador de Essências – Drena 1d20 de sanidade de um cadáver e aplica a si ou a um aliado (1x por combate).</p>
-<p><strong>Nível 16:</strong> Aura de Terror – +3 em intimidação passiva com inimigos abaixo de metade de vida. Aplica <strong>desvantagem</strong> em ataques corpo a corpo contra você (2 de especial).</p>
-<p><strong>Nível 20:</strong> Fortificação Cadavérica – Habilidade única “Muralha de Ossos”: reduz dano à distância em 2d8 por 3 turnos (6 de sanidade).</p>
-<p><strong>Nível 22:</strong> Ceifeiro dos Defuntos – Habilidade única “Sangue Morto”: drena vitalidade de cadáver e recupera 2d20 de vida (6 de sanidade).</p>
-<p><strong>Nível 25:</strong> Guardião da Sombra Eterna – Habilidade única “Escudo Profano”: absorve metade do dano por um turno e transforma em +1d10 de ataque no turno seguinte (12 de sanidade).</p>
-`,
-"bonustitulo_2": `<p>🏺<strong>Colecionador</strong></p>`,
-"bonusTexto_2": `
-<p><em>"Especializado em colecionar e manipular itens sagrados, com habilidades de levitação e aura de proteção."</em></p>
-<p><strong>Nível 1:</strong> Coleção Sagrada – Marca até <strong>2</strong> itens “sagrados” com aura rosa. Ganham vantagem em Agilidade e levitam até você. +4 de dano de Aura.</p>
-<p><strong>Nível 3:</strong> Guardião dos Tesouros – +1 em Ofício. Habilidade "<strong>[Réplica Imperfeita](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Nenhum-,R%C3%A9plica%20Imperfeita,-Imperfectum%20Effigies)</strong>" permite copiar itens em posse.</p>
-<p><strong>Nível 5:</strong> Mestre dos Artefatos – <strong>Terceiro</strong> slot sagrado. +1d4 de dano em ataques com os itens.</p>
-<p><strong>Nível 9:</strong> Saqueador Experiente – +2 em Ofício. "Roubo Sombrio": rouba item de inimigo distraído (6 de especial).</p>
-<p><strong>Nível 13:</strong> Guardião de Relíquias Antigas – +1 de armadura por item ativo da coleção sagrada.</p>
-<p><strong>Nível 16:</strong> Santuário dos Artefatos Perdidos – +3 de dano com itens sagrados e +1 em Agilidade ao manipulá-los.</p>
-<p><strong>Nível 20:</strong> Levitação Perfeita – “Chamada dos Artefatos”: atrai todos os itens num raio de 15m (5 de sanidade).</p>
-<p><strong>Nível 22:</strong> Guardião Supremo dos Tesouros – “Proteção Sagrada”: reduz dano recebido em 2d8 com item sagrado ativo (8 de sanidade).</p>
-<p><strong>Nível 25:</strong> Senhor da Coleção Sagrada – “Roubo Fantasmagórico”: rouba 1 item mágico do inimigo temporariamente (10 de sanidade).</p>
-`,
-"bonustitulo_3": `<p>🩸<strong>Sanguinário</strong></p>`,
-"bonusTexto_3": `
-<p><em>"Especialista em combate corpo a corpo, utilizando partes do corpo como armas e habilidades de destruição visceral."</em></p>
-<p><strong>Nível 1:</strong> Guerreiro de Ossos – Cada órgão coletado dá +1 em ataques corpo a corpo. Passiva: "<strong>[Dilacera e Atacar](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Dilacera%20e%20atacar,-Lacrimis%20et%20impetus)</strong>".</p>
-<p><strong>Nível 3:</strong> Punhos Macabros – +1 em Preservação e +1d4 de dano com partes do corpo.</p>
-<p><strong>Nível 5:</strong> Mestre dos Ossos – Magia “<strong>[Órgãos Sombrios](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,%C3%93rg%C3%A3os%20sombrios,-Tenebris%20organa)</strong>”. Aumenta dano físico em +2 (1x por combate, 3 de sanidade).</p>
-<p><strong>Nível 9:</strong> Destruidor de Corpos – +2 de dano e +1 em resistência a cada ataque com partes corporais.</p>
-<p><strong>Nível 13:</strong> Arauto da Carne Profana – +2 em Preservação e +1 em Defesa ao atacar com partes corporais.</p>
-<p><strong>Nível 16:</strong> Ceifador dos Mortos-Vivos – +1d6 de dano com órgãos e imunidade a paralisia.</p>
-<p><strong>Nível 20:</strong> Impacto Demolidor – “Esmagamento Cadavérico”: +3d8 de dano e ignora armadura (6 de sanidade).</p>
-<p><strong>Nível 22:</strong> Guerreiro das Sombras Corpóreas – “Fúria dos Ossos”: +1d12 de dano corpo a corpo por 1 turno.</p>
-<p><strong>Nível 25:</strong> Avatar da Destruição Cadavérica – “Desmembramento Fatal”: ataque devastador com sangramento de 2d10 por 3 turnos (2 de especial).</p>
-`
-,      "movimento_pass": 3.5
-    },
-    "Colosso": { 
-      "vidaPorNivel": 8,
-      "sanidadePorNivel": 0,
-      "armaduraPorNivel": 4,
-      "resistencia": "Esmagante",
-     "bonusPass": `
-<p><strong>Nível 0:</strong> Passiva <strong>[Armadura Sobrenatural](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Armadura%20sobrenatural)</strong> sem custo uma vez por dia.</p>
-`,
-"bonustitulo_1": `<p>🦾<strong>Guardião de Ferro</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Nível 1:</strong> Resiliência do Colosso – Resistência contra dano cortante e +1 de armadura.</p>
-<p><strong>Nível 3:</strong> Pele de Pedra – Reduz dano de esmagamento em 2.</p>
-<p><strong>Nível 5:</strong> Barreira Implacável – “Defesa Absoluta”: bloqueia totalmente o próximo ataque (4 de especial).</p>
-<p><strong>Nível 9:</strong> Fortificação Permanente – +1 de armadura ao permanecer parado por 1 turno.</p>
-<p><strong>Nível 13:</strong> Muralha do Colosso – “Defesa Profunda”: redireciona 1d12 de dano para proteger aliados (6 de especial).</p>
-<p><strong>Nível 16:</strong> Resiliência Sobrenatural – Resistência permanente a perfuração ao usar armadura pesada.</p>
-<p><strong>Nível 20:</strong> Aegis Sagrada – “Escudo Final”: absorve até 2d12 de dano (8 de especial).</p>
-<p><strong>Nível 22:</strong> Muralha de Aço Vivo – Bloqueia ataques contra aliados 1x por turno e ganha +2 em armadura ao bloquear.</p>
-<p><strong>Nível 25:</strong> Guardião Inquebrável – “Proteção Ancestral”: nega o dano de um ataque e reflete 1d10 de volta (12 de especial).</p>
-`,
-"bonustitulo_2": `<p>💪<strong>Dominador</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Nível 1:</strong> Força Inigualável – +2 em Brutalidade e agarrões; cada sucesso gera 1 especial temporário.</p>
-<p><strong>Nível 3:</strong> Domínio de Impacto – +2 de dano esmagante ao empurrar ou agarrar.</p>
-<p><strong>Nível 5:</strong> Investida Destruidora – “Investida do Colosso”: empurra inimigo 5m e causa 1d4 (4 de especial).</p>
-<p><strong>Nível 9:</strong> Agarrão Sobrenatural – +2 em Brutalidade ao manter inimigo agarrado.</p>
-<p><strong>Nível 13:</strong> Golpe Desestabilizador – “Confusão Brutal”: causa confusão por 1 turno (2 de especial).</p>
-<p><strong>Nível 16:</strong> Presença Imponente – +3 de dano ao empurrar ou arrastar oponentes.</p>
-<p><strong>Nível 20:</strong> Força dos Antigos – “Força Ancestral”: +4 em Brutalidade e arrasta inimigo 5m (8 de especial).</p>
-<p><strong>Nível 22:</strong> Poder de Controle Total – Ao empurrar um inimigo, realiza um ataque adicional no mesmo turno.</p>
-<p><strong>Nível 25:</strong> Sufocamento Final – “Agarre Inescapável”: imobiliza e causa 3d12 de dano (12 de especial).</p>
-`,
-"bonustitulo_3": `<p>👑<strong>Vingança ao Rei</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Nível 1:</strong> Postura de Vingança – +2 de armadura ao bloquear corpo a corpo. Passiva “[Vingança](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Vingan%C3%A7a,-Vindicta)” 1x por combate.</p>
-<p><strong>Nível 3:</strong> Retaliação Agressiva – +2 de dano em resposta a ataques recebidos.</p>
-<p><strong>Nível 5:</strong> Escudo Defensivo – “Escudo Contra Golpes”: bloqueia ataque e revida com ataque completo (8 de especial).</p>
-<p><strong>Nível 9:</strong> Firmeza Sobrenatural – +3 em Brutalidade contra empurrões e agarrões.</p>
-<p><strong>Nível 13:</strong> Contragolpe Devastador – “Destruição Reflexa”: causa o dobro do dano em resposta a ataque falho (12 de especial).</p>
-<p><strong>Nível 16:</strong> Reflexo de Ferro – +4 de dano em contra-ataques corpo a corpo.</p>
-<p><strong>Nível 20:</strong> Braço da Retaliação – “Justiça Implacável”: bloqueia e devolve ataque poderoso (13 de especial).</p>
-<p><strong>Nível 22:</strong> Reflexo Sobrenatural – Usa bônus de Agilidade em contra-ataques e pode revidar a cada vez que for atacado.</p>
-<p><strong>Nível 25:</strong> Golpe de Vingança Suprema – “Juízo do Colosso”: 4d10 de dano extra no contra-ataque e derruba o inimigo (18 de especial).</p>
-`
-,     "movimento_pass": 3.5
-    },
-    "Conjurador": { 
-      "vidaPorNivel": 5,
-      "sanidadePorNivel": 3,
-      "armaduraPorNivel": 1,
-      "resistencia": "Distorção",
-     "bonusPass": `
-<p><strong>Nível 0:</strong> <strong>Passivas</strong> e <strong>Magias</strong> têm custo reduzido baseado em 1d6, válido por combate.</p>
-`,
-"bonustitulo_1": `<p>⚔️<strong>Espadachim Arcano</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Nível 1:</strong> <strong>Lampejo Arcano</strong> – Conjura magia pela espada. +2 em ataques corpo a corpo ao canalizar.</p>
-<p><strong>Nível 3:</strong> <strong>Corte Espectral</strong> – “[Aura Manifestada](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Preserva%C3%A7%C3%A3o-,Aura%20Manifestada,-Manifestare%20Auram)” + investida de 6m com 3d6 de dano e derruba (3 de especial).</p>
-<p><strong>Nível 5:</strong> <strong>Discípulo do Raio Fendido</strong> – Aprende 2 magias nível 1–2 do tipo <strong>[Laser](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Laser%20%E2%80%93%20Disc%C3%ADpulos%20do%20Raio%20Fendido,-Hierarquias%20de%20Disc%C3%ADpulos)</strong>; +1 em Conexão com espada.</p>
-<p><strong>Nível 9:</strong> <strong>Plasma Pulsante</strong> – Corte com 2d8 adicionais de <strong>Plasma</strong> por 2 turnos (3 de especial).</p>
-<p><strong>Nível 13:</strong> <strong>Golpe Espiritual</strong> – Reduz 3 de armadura no acerto (4 de especial).</p>
-<p><strong>Nível 16:</strong> <strong>Manifesto dos Sentinelas Invisíveis</strong> – Aprende 2 magias nível 2–3 do tipo <strong>[Aura](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Aura%20%E2%80%93%20Manifesto%20dos%20Sentinelas%20Invis%C3%ADveis,-Hierarquias%20de%20Manifesto)</strong>, pode conjurar 1 delas 1x/dia sem custo.</p>
-<p><strong>Nível 20:</strong> <strong>Lâmina da Extinção</strong> – Aprende 2 magias nível 3–4 do tipo <strong>[Plasma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Plasma%20%E2%80%93%20Conclave%20da%20Conex%C3%A3o%20Irreal,-Hierarquias%20de%20Conclave)</strong>, +2 em Conexão com espada.</p>
-<p><strong>Nível 22:</strong> <strong>Corte da Condenação</strong> – Aprende 2 magias nível 4–5 do tipo <strong>[Morte](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Morte%20%E2%80%93%20Culto%20da%20Morte,-Hierarquias%20de%20Culto)</strong>, golpe final causa 2d10 e impede cura por 1 turno.</p>
-<p><strong>Nível 25:</strong> <strong>Assalto Arcano</strong> – Aprende 1 magia nível 6 (<strong>Plasma</strong>, <strong>Laser</strong>, <strong>Aura</strong> ou <strong>Morte</strong>), realiza 3 ataques com +1d12 de dano mágico.</p>
-`,
-"bonustitulo_2": `<p>👻<strong>Invocador das Sombras</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Nível 1:</strong> <strong>Sombras Profundas</strong> – +2 em Conexão e Libertação para magias de <strong>Escuridão</strong> ou <strong>Alma</strong>.</p>
-<p><strong>Nível 3:</strong> <strong>Véu da Distopia</strong> – Passiva “[Sombra da Distopia](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Nenhum-,Sombra%20da%20Distopia,-Umbra%20Dystopia)” para ocultação em baixa luz.</p>
-<p><strong>Nível 5:</strong> <strong>Golpe da Alma Perdida</strong> – Ataque causa +4d6 de dano <strong>Alma</strong> (2 de especial).</p>
-<p><strong>Nível 9:</strong> <strong>Chamado das Trevas</strong> – +2 em Conexão e Libertação para <strong>Escuridão</strong>.</p>
-<p><strong>Nível 13:</strong> <strong>Laço Obscuro</strong> – Reduz armadura do alvo em 2 por 2 turnos (3 de especial).</p>
-<p><strong>Nível 16:</strong> <strong>Passagem Oculta</strong> – Intangível por 2 turnos, imune a dano físico (6 de especial).</p>
-<p><strong>Nível 20:</strong> <strong>Maestria Sombria</strong> – Ganha 3 magias nível 1–4 de <strong>[Escuridão](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Escurid%C3%A3o%20%E2%80%93%20Filhos%20de%20Eldoria,-Hierarquias%20dos%20Filhos)</strong> ou <strong>[Alma](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=Poder-,Alma%20%E2%80%93%20Ordem%20dos%20Guardi%C3%B5es%20da%20Ess%C3%AAncia,-Hierarquias%20de%20Guardi%C3%B5es)</strong> (1x/dia, sem custo).</p>
-<p><strong>Nível 22:</strong> <strong>Profundezas da Alma</strong> – Absorve +3d6 de sanidade com habilidades de <strong>Alma</strong> ou <strong>Escuridão</strong> (passivo).</p>
-<p><strong>Nível 25:</strong> <strong>Avanço da Penumbra</strong> – Véu sombrio: +4d8 de armadura por 10 turnos e Pavor em inimigos (1x por combate).</p>
-`,
-"bonustitulo_3": `<p>🌪️<strong>Conjuração Caótica</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Nível 1:</strong> <strong>Estudo Elemental</strong> – +2 em magias de nível 1–2 dos elementos: <strong>[Fogo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Fogo%20%E2%80%93%20Chamas%20Eternas,-Hierarquias%20de%20Chamas)</strong>, <strong>[Gelo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Gelo,-%E2%80%93%20Punhos%20de%20Inverno)</strong>, <strong>[Água](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua,-%E2%80%93%20Mestres%20da%20Correnteza)</strong>, <strong>[Eletricidade](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Eletricidade%20%E2%80%93%20Seguidores%20de%20Thorvill,-Hierarquias%20de%20Seguidores)</strong>.</p>
-<p><strong>Nível 3:</strong> <strong>Chama Persistente</strong> – Rajada causa 2d8 de dano de <strong>Fogo</strong> por 2 turnos (6 de especial).</p>
-<p><strong>Nível 5:</strong> <strong>Toque Gélido</strong> – Aura de <strong>Gelo</strong> reduz movimento inimigo por 1 turno.</p>
-<p><strong>Nível 9:</strong> <strong>Tempestade Condutora</strong> – Tempestade causa 1d12 de dano de <strong>Eletricidade</strong> em área (4 de especial).</p>
-<p><strong>Nível 13:</strong> <strong>Escudo Caótico</strong> – <strong>Água</strong> protege contra dano de Caos por 2 turnos.</p>
-<p><strong>Nível 16:</strong> <strong>Maestria Elemental</strong> – Ganha 3 magias nível 1–4 de <strong>[Fogo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Fogo%20%E2%80%93%20Chamas%20Eternas,-Hierarquias%20de%20Chamas)</strong>, <strong>[Gelo](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Gelo,-%E2%80%93%20Punhos%20de%20Inverno)</strong>, <strong>[Água](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua,-%E2%80%93%20Mestres%20da%20Correnteza)</strong>, ou <strong>[Eletricidade](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Eletricidade%20%E2%80%93%20Seguidores%20de%20Thorvill,-Hierarquias%20de%20Seguidores)</strong> (1x/dia sem custo).</p>
-<p><strong>Nível 20:</strong> <strong>Vórtice de Gelo</strong> – Empurra inimigos 3m e causa 3d8 de <strong>Gelo</strong> (3 de especial).</p>
-<p><strong>Nível 22:</strong> <strong>Caos Elemental</strong> – Magias de dano ganham +1d8 adicional de <strong>Fogo</strong>, <strong>Gelo</strong>, <strong>Água</strong>, ou <strong>Eletricidade</strong>.</p>
-<p><strong>Nível 25:</strong> <strong>Mestre Elemental</strong> – Libera 4 magias de nível 1–5 dos [elementos](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,Caos,-Ordem%20do%20Caos) e pode usar uma 1x/dia sem custo.</p>
-`
-,    "movimento_pass": 4.5
-    },
-    "Costeiro": { 
-      "vidaPorNivel": 6,
-      "sanidadePorNivel": 2,
-      "armaduraPorNivel": 3,
-      "resistencia": "Água",
-      "bonusPass": `
-<p><strong>Nível 0:</strong> +1d6 com porretes ou katanas, +2 de armadura e não pode ser Desarmado.</p>
-`,
-"bonustitulo_1": `<p>🌊<strong>Marés Cortantes</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Nível 1:</strong> Toque das Ondas – +1 em ataque com katana; +1d4 de dano de água (1 de especial).</p>
-<p><strong>Nível 3:</strong> Redemoinho Fluido – Ao acertar dois ataques consecutivos, +1 no próximo ataque.</p>
-<p><strong>Nível 5:</strong> Fúria das Marés – Adiciona +1d8 de dano de água em arma por dois turnos (2 de especial).</p>
-<p><strong>Nível 9:</strong> Correnteza Precisa – +1 em Esquiva e +2 em ataques com katana ao usar dano de água.</p>
-<p><strong>Nível 13:</strong> Maré Inquebrável – Reduz o dano recebido em metade por 1 turno (3 de especial).</p>
-<p><strong>Nível 16:</strong> Pressão Submersa – Ataques com katana causam Debilitado se o alvo não tiver resistência à água.</p>
-<p><strong>Nível 20:</strong> Ritmo da Maré – Ao acertar três ataques consecutivos, realiza 1 ataque adicional (passivo).</p>
-<p><strong>Nível 22:</strong> Corte Torrencial – Aumenta o dano de água em +1d12 por três turnos (3 de especial).</p>
-<p><strong>Nível 25:</strong> Último Suspiro da Correnteza – Ação extra com +4d10 de dano de água (1x por combate).</p>
-`,
-"bonustitulo_2": `<p>🌀<strong>Força das Marés</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Nível 1:</strong> Golpe Contundente – +3 em ataque com porrete e +1d4 de dano esmagante (1 de especial).</p>
-<p><strong>Nível 3:</strong> Ataque de Oportunidade – Reação contra inimigo que sai do alcance. +2 em acerto; inimigo faz teste de agilidade.</p>
-<p><strong>Nível 5:</strong> Vingança das Ondas – Adiciona +1d12 de dano esmagante em reações (2 de especial).</p>
-<p><strong>Nível 9:</strong> Rastro de Destroços – Ao atingir inimigo em movimento, recebe +5 de dano esmagante por dois turnos.</p>
-<p><strong>Nível 13:</strong> Defesa das Marés – Golpe de reação que causa +3d8 de dano esmagador ao inimigo que não atacou (3 de especial).</p>
-<p><strong>Nível 16:</strong> Investida da Correnteza – Ação adicional com 4d8 de dano esmagante e deixa o alvo Caído (5 de especial, teste de agilidade).</p>
-<p><strong>Nível 20:</strong> Muralha Intransponível – Se ignorado por mais de um inimigo, ganha +2 de armadura e +2 de dano de água em reações.</p>
-<p><strong>Nível 22:</strong> Impacto das Profundezas – Ao derrubar um inimigo, recebe um ataque livre extra.</p>
-<p><strong>Nível 25:</strong> Força Brutal da Maré – Ação completa extra + 1 ataque reativo com +3d10 de dano (1x por combate).</p>
-`,
-"bonustitulo_3": `<p>💧<strong>Correnteza Mística – Hidromante</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Nível 1:</strong> Iniciado da Maré – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 1</strong>.</p>
-<p><strong>Nível 3:</strong> Tecelão das Correntes – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 2</strong> e +1 em Preservação com magias de água.</p>
-<p><strong>Nível 5:</strong> Senhor dos Rios – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 3</strong> e recupera 2 de sanidade ao acertar ataque aquático.</p>
-<p><strong>Nível 9:</strong> Guardião dos Oceanos – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 4</strong> e adiciona +1d8 de dano de água em magias (2 de sanidade).</p>
-<p><strong>Nível 13:</strong> Profeta das Profundezas – Ganha a [magia](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=top%20da%20p%C3%A1gina-,%C3%81gua%20%E2%80%93%20Mestres%20da%20Correnteza,-Hierarquias%20de%20Mestres) <strong>Água Nível 5</strong> e +2 em armadura por 5 turnos ao conjurar.</p>
-<p><strong>Nível 16:</strong> Aura da Hidrocinese – +3 de dano com magias e -2 de sanidade no custo por 3 turnos (6 de especial).</p>
-<p><strong>Nível 20:</strong> Chamada do Abismo – Recupera +1d12 de sanidade ao fim do combate se usou magia de água.</p>
-<p><strong>Nível 22:</strong> Guardião das Marés – Ao conjurar magia de água, recebe -2 de dano de ataques elementais (fé, desconhecido, poder) por 2 turnos.</p>
-<p><strong>Nível 25:</strong> Mestre da Correnteza – Duas vezes por combate, lança uma <strong>Magia de Água até Nível 5</strong> sem custo de sanidade.</p>
-`
-,      "movimento_pass": 4.5
-    },
-    "Criatura": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 4,
-      "resistencia": "Gelo",
-   "bonusPass": `
-<p><strong>Nível 0:</strong> Passiva <strong>[Pavor](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Alvo%3A%C2%A0Identificar%20Magia-,Pavor,-Formido)</strong> com custo removido uma vez por dia ou sem efeito colateral.</p>
-`,
-"bonustitulo_1": `<p>🦍<strong>Fúria Primordial</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Nível 1:</strong> Golpe Selvagem – +1 em Brutalidade e +2 de dano corpo a corpo (1 de especial).</p>
-<p><strong>Nível 3:</strong> Investida Brutal – Após ataque bem-sucedido, teste de Brutalidade concede ataque adicional (2 de especial).</p>
-<p><strong>Nível 5:</strong> Fúria Incontrolável – +1d6 de dano bruto corpo a corpo quando com menos de metade da vida.</p>
-<p><strong>Nível 9:</strong> Resiliência Selvagem – Reduz metade do dano de um ataque (3 de especial, 1x por combate).</p>
-<p><strong>Nível 13:</strong> Ira Devastadora – Ganha a passiva <strong>[Raiva](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Conex%C3%A3o-,Raiva,-Ira)</strong>, ativável 2x por dia sem custo.</p>
-<p><strong>Nível 16:</strong> Força Descomunal – +3 em Brutalidade e +1d10 em críticos.</p>
-<p><strong>Nível 20:</strong> Estouro de Poder – Executa dois ataques extras em uma ação completa (5 de especial, 1x por combate).</p>
-<p><strong>Nível 22:</strong> Predador Incansável – Ao derrotar inimigo, recupera 2 de especial e ganha ação de movimento grátis.</p>
-<p><strong>Nível 25:</strong> Carnificina Absoluta – Gira e atinge todos a 2m com 3d10 de dano bruto (7 de especial, 1x por combate).</p>
-`,
-"bonustitulo_2": `<p>🐉<strong>Cauda Letal</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Nível 1:</strong> Chicote Natural – +1 em Brutalidade. Cauda causa 1d12+1d6 de dano (1 de especial, corpo a corpo).</p>
-<p><strong>Nível 3:</strong> Presença Intimidadora – Ataques com cauda reduzem precisão do alvo em -1.</p>
-<p><strong>Nível 5:</strong> Golpe Estonteante – Ataque com cauda impede movimento do alvo por 1 turno (3 de especial).</p>
-<p><strong>Nível 9:</strong> Barreira Instintiva – Reduz metade do dano recebido ao bloquear com cauda (2 de especial por bloqueio).</p>
-<p><strong>Nível 13:</strong> Círculo de Espinhos – Ataque em área com a cauda em 3m, causando +1d8 (4 de especial).</p>
-<p><strong>Nível 16:</strong> Reflexos Predatórios – Ao evitar um ataque, revida automaticamente com cauda (3 de especial).</p>
-<p><strong>Nível 20:</strong> Flagelo Impiedoso – Ataque em área com cauda causa 2d8 de dano e empurra 3m (5 de especial, 1x por combate).</p>
-<p><strong>Nível 22:</strong> Cauda Sombria – +2 em Furtividade e +1d10 em ataques furtivos com cauda.</p>
-<p><strong>Nível 25:</strong> Destruição Implacável – Cone de 6m com 3d10 de dano e derrubada dos alvos (7 de especial).</p>
-`,
-"bonustitulo_3": `<p>🦊<strong>Ágil e Predatório</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Nível 1:</strong> Movimentos Ágeis – +2 em Furtividade e Acrobacia.</p>
-<p><strong>Nível 3:</strong> Instinto Selvagem – Ganha a passiva <strong>[Consumir](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Eletricidade%20e%20Tempestade.-,Consumir,-Consumere)</strong>, ativável sem custo 1x por combate.</p>
-<p><strong>Nível 5:</strong> Golpe Preciso – Ataques furtivos causam +1d6 adicional contra inimigos desatentos (1 de especial).</p>
-<p><strong>Nível 9:</strong> Velocidade Predatória – Ganha ação de movimento adicional (2 de especial).</p>
-<p><strong>Nível 13:</strong> Fúria Controlada – Ganha a passiva <strong>[Raiva](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Conex%C3%A3o-,Raiva,-Ira)</strong>.</p>
-<p><strong>Nível 16:</strong> Predador das Sombras – +3 em Furtividade; ataques furtivos ignoram resistências (3 de especial).</p>
-<p><strong>Nível 20:</strong> Vantagem Natural – Ao passar em teste de Acrobacia ou Furtividade, ganha ataque livre (1x por turno).</p>
-<p><strong>Nível 22:</strong> Caçador das Profundezas – +3 em Enganação e Intimidação contra inimigos solitários.</p>
-<p><strong>Nível 25:</strong> Golpe Impecável – Primeiro acerto contra inimigo isolado é crítico automático com +3d12 de dano (5 de especial, 1x por combate).</p>
-`
-, "movimento_pass": 4.5
-    },
-    "Duelista": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 1,
-      "resistencia": "Perfurante",
-    "bonusPass": `
-<p><strong>Nível 0:</strong> +1d10 de dano contra alvos isolados (sem ninguém próximo de 10m) e +4 em testes de Furtividade.</p>
-`,
-"bonustitulo_1": `<p>🗡️<strong>Espadachim Solitário</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Nível 1:</strong> Foco do Duelista – +2 de dano e +1 em testes de ataque contra inimigos isolados.</p>
-<p><strong>Nível 3:</strong> Estocada Perfeita – 1x por turno, +1d6 de dano ao atingir alvo isolado com rapiera.</p>
-<p><strong>Nível 5:</strong> Resistência da Solidão – Sem aliados/inimigos por perto, +2 em armadura contra ataques diretos.</p>
-<p><strong>Nível 9:</strong> Rapidez Refinada – Ação de ataque adicional contra inimigo isolado (1x por combate).</p>
-<p><strong>Nível 13:</strong> Precisão Mortal – Críticos com rapiera causam +2d8 em alvos isolados.</p>
-<p><strong>Nível 16:</strong> Arte do Duelista – +3 em Acrobacia enfrentando inimigos isolados.</p>
-<p><strong>Nível 20:</strong> Supremacia Solitária – Ignora 5 de armadura de inimigo único.</p>
-<p><strong>Nível 22:</strong> Dança das Lâminas – Dois ataques extras contra isolado (4 especial, 1x por combate).</p>
-<p><strong>Nível 25:</strong> Corte Final – Ataque mortal com +4d10 e ignora armadura (5 especial, 1x por combate).</p>
-`,
-"bonustitulo_2": `<p>⚔️<strong>Convite ao Duelo</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Nível 1:</strong> Marca do Duelo – Marca 1 alvo (1 especial); +2 em ataque e +3 de dano de Escuridão contra ele.</p>
-<p><strong>Nível 3:</strong> Bravura Crescente – Cada inimigo vencido no duelo: +1 permanente em testes de ataque.</p>
-<p><strong>Nível 5:</strong> Defesa do Desafiante – Reduz em metade o dano recebido no duelo (2 especial).</p>
-<p><strong>Nível 9:</strong> Golpe Honrado – +1d8 de dano em críticos contra alvo do duelo.</p>
-<p><strong>Nível 13:</strong> Vontade Invencível – Enquanto invicto: +2 em todos os testes de resistência.</p>
-<p><strong>Nível 16:</strong> Provocação Mortal – Pode chamar 1 segundo alvo para duelo (3 especial).</p>
-<p><strong>Nível 20:</strong> Maestria do Desafio – Ignora 6 de armadura de marcados e <strong>Libera [Vingança](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Agilidade-,Vingan%C3%A7a,-Vindicta)</strong>.</p>
-<p><strong>Nível 22:</strong> Corte Vitorioso – Derrotando um duelista: +3 especial e 1 ação de movimento extra.</p>
-<p><strong>Nível 25:</strong> Campeão Invicto – Enquanto invicto: +4 em ataque e resistência. Pode causar +6d10 (1x por combate).</p>
-`,
-"bonustitulo_3": `<p>🕶️<strong>Assassino Furtivo</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Nível 1:</strong> Silêncio Mortal – +2 em Furtividade e +1d4 em ataques furtivos contra isolados.</p>
-<p><strong>Nível 3:</strong> Predador Sutil – Ao eliminar alvo isolado furtivamente, recupera 2 especial.</p>
-<p><strong>Nível 5:</strong> Movimentos Sombrios – +2 em Acrobacia e ganha ação de movimento furtiva extra.</p>
-<p><strong>Nível 9:</strong> Lâmina Oculta – Adagas furtivas causam +1d6 em alvos isolados.</p>
-<p><strong>Nível 13:</strong> Instinto de Sobrevivência – Sozinho, recebe +2 em Agilidade.</p>
-<p><strong>Nível 16:</strong> Golpe Preciso – Ignora metade da armadura em ataques furtivos.</p>
-<p><strong>Nível 20:</strong> Mestre da Sombra – Ataca e se move furtivamente contra alvo isolado (2 especial).</p>
-<p><strong>Nível 22:</strong> Execução Silenciosa – Crítico automático contra isolado (4 especial, 1x por combate).</p>
-<p><strong>Nível 25:</strong> Fim das Sombras – Ataque mortal com +6d8 em isolado. Movimento sem ser detectado por 1 turno (5 especial).</p>
-`,
-     "movimento_pass": 4
-    },
-    "Escudeiro": { 
-      "vidaPorNivel": 7,
-      "sanidadePorNivel": 1,
-      "armaduraPorNivel": 3,
-      "resistencia": "Esmagante",
-      "bonusPass": `
-<p><strong>Nível 0:</strong> +4 de dano com escudo, passiva <strong>[Emanar Energia](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Emanar%20energia,-Procedunt%20navitas)</strong> sem negativo e sem custo 1x por dia.</p>
-`,
-"bonustitulo_1": `<p>🛡️<strong>Bastião Imóvel</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Nível 1:</strong> Muralha de Ferro – +2 de armadura com escudo. Libera a passiva <strong>[Sonambulismo](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Sonambulismo,-Somnus%20ambulans)</strong>, permitindo bloquear até dormindo e reduzindo o dano pela metade.</p>
-<p><strong>Nível 3:</strong> Postura Inabalável – Resistência a dano <strong>esmagante</strong> e cortante enquanto em defesa.</p>
-<p><strong>Nível 5:</strong> Libera a magia <strong>[Aura de Proteção](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Liberta%C3%A7%C3%A3o-,Aura%20de%20Prote%C3%A7%C3%A3o,-Protegere%20aura)</strong>, utilizável sem custo 1x por dia.</p>
-<p><strong>Nível 9:</strong> Barreira Crescente – Acumula +1 de armadura a cada turno bloqueando (máximo +3).</p>
-<p><strong>Nível 13:</strong> Escudo Resiliente – Pode anular o dano de 1 ataque por combate.</p>
-<p><strong>Nível 16:</strong> Defesa Elemental – Resistência contra dano de Fé, Desconhecido, Poder ou Caos (6 de especial).</p>
-<p><strong>Nível 20:</strong> Fortaleza Imóvel – Reduz pela metade o dano de todos os ataques recebidos no turno (8 de especial).</p>
-<p><strong>Nível 22:</strong> Bônus de Persistência – Após 2 turnos consecutivos bloqueando, recebe +2 em testes contra ataque.</p>
-<p><strong>Nível 25:</strong> Sentinela Inquebrável – Imune a 1 ataque por combate e reflete metade do dano ao inimigo.</p>
-`,
-"bonustitulo_2": `<p>👐<strong>Guardião dos Fracos</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Nível 1:</strong> Proteção Aliada – Redireciona até 1d8 de dano de um aliado segurando escudo. Libera passiva <strong>Inveja</strong>: ao ver aliados sofrerem dano, ganha +2 de especial por turno.</p>
-<p><strong>Nível 3:</strong> Escudo Coletivo – +1 de armadura por aliado próximo (máximo +4).</p>
-<p><strong>Nível 5:</strong> Libera <strong>[Aura de Retaliação](https://terrasdecalistoficha.wordpress.com/magias/#:~:text=desmascarar%20a%20ilus%C3%A3o)-,Aura%20de%20Retalia%C3%A7%C3%A3o,-Aura%20retaliare)</strong> – conjurável 1x a cada 2 dias por 8 de especial (ou custo normal via sanidade).</p>
-<p><strong>Nível 9:</strong> Presença Inspiradora – Aliados a 5m ganham +2 em esquiva enquanto você estiver vivo.</p>
-<p><strong>Nível 13:</strong> Barreira Protetora – Cria barreira que anula até 2d8 de dano em aliados (5 de especial).</p>
-<p><strong>Nível 16:</strong> Guarda Impecável – Bloqueia ataques a aliados sem penalidade (1x por combate).</p>
-<p><strong>Nível 20:</strong> Escudo Vingador – Bloqueia ataque a aliado e devolve 2d12 de dano (10 de especial).</p>
-<p><strong>Nível 22:</strong> Vínculo de Proteção – Aliado recebe metade da sua armadura como bônus por 1 turno (8 de especial, ação livre na reação).</p>
-<p><strong>Nível 25:</strong> Defensor Supremo – Protege todos os aliados em raio de 10m por 1 turno completo (1x por combate).</p>
-`,
-"bonustitulo_3": `<p>⚔️<strong>Combatente do Escudo</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Nível 1:</strong> Golpe com Escudo – +1d6 de dano esmagante. Libera passiva <strong>[Escudo Elemental](https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=do%20Alvo%3A%C2%A0Determina%C3%A7%C3%A3o-,Escudo%20Elemental,-Scutum%20Elementorum)</strong>, causando 1d6 de dano elemental aleatório em ataques com escudo.</p>
-<p><strong>Nível 3:</strong> Impacto Devastador – +2 de dano com escudo em combate corpo a corpo.</p>
-<p><strong>Nível 5:</strong> Marcas das Cinzas – Enfraquece inimigo, reduzindo armadura em -2 por 2 turnos (8 de especial).</p>
-<p><strong>Nível 9:</strong> Força do Escudo – +2 em testes de Brutalidade ao usar escudo como arma principal.</p>
-<p><strong>Nível 13:</strong> Carga do Colosso – Investida com escudo causa 2d8 e empurra 3m (6 de especial).</p>
-<p><strong>Nível 16:</strong> Defesa Ofensiva – +1 de armadura enquanto ataca com o escudo.</p>
-<p><strong>Nível 20:</strong> Impacto Elemental – Causa +3d12 de dano com o poder elemental do escudo (10 de especial).</p>
-<p><strong>Nível 22:</strong> Pressão Incessante – Ganha 1 ataque adicional por turno ao usar o escudo como arma principal.</p>
-<p><strong>Nível 25:</strong> Campeão do Escudo – “Investida Final”: série de ataques com escudo causa 4d10 de dano e aplica condição <strong>[Confuso](https://terrasdecalistoficha.wordpress.com/como-jogar/#:~:text=metade%20do%20movimento.-,Confuso,-%3A%20O%20personagem)</strong> por 1 turno (15 de especial).</p>
-`,
-  "movimento_pass": 3.5
-    },
-    "Especialista": { 
-      "vidaPorNivel": 8,
-      "sanidadePorNivel": 0,
-      "armaduraPorNivel": 1,
-      "resistencia": "Fogo",
-      "bonusPass": `
-Nível 0: Tem Vantagem com Passivas.
+    "Carpinteiro": {
+  "vidaPorNivel": 7,
+  "sanidadePorNivel": 1,
+  "armaduraPorNivel": 1,
+  "resistencia": "Tempestade",
+  "movimento_pass": 3.5,
 
-🧠Especialista em passivas
-“Para escolher quais as passivas, deve sempre falar com o mestre“
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> Uma ação livre extra por turno.</p>
+  `,
 
-Nível 1:Passiva Inicial – Ganha uma passiva aleatória relacionada ao seu estilo de combate. Além disso, aumenta em +1 todos os testes de resistência.
-Nível 3:Passiva Desbloqueada 1 – Desbloqueia uma passiva adicional. A cada dois turnos, ganha +1 de armadura temporária.
-Nível 5:Passiva Desbloqueada 2 – Desbloqueia mais uma passiva. Além disso, ganha uma ação extra de movimento por combate.
-Nível 9:Passiva Desbloqueada 3 e 4 – Ganha duas passivas adicionais. Além disso, ganha +2 em testes de resistência dano mental.
-Nível 13:Passiva Desbloqueada 5 – Ganha uma nova passiva, focada em resistência ou evasão. Além disso, aumenta em +1 turno a duração de todas as passivas que afetam a armadura.
-Nível 16:Passiva Desbloqueada 6 e 7 – Desbloqueia mais duas passivas, incluindo uma passiva de cura ou regeneração. Além disso, pode usar uma ação extra de ataque uma vez por combate.
-Nível 20:Passiva Desbloqueada 8 e 9 – Ganha duas passivas adicionais. Todas as passivas que aumentam armadura temporária têm seu efeito aumentado em 1d4.
-Nível 22:Passiva Desbloqueada 10 e 11 – Desbloqueia duas passivas, com foco em aumento de poder ofensivo e armadura. Ganho de +1d6 de dano em todas as ações de dano.
-Nível 25:Passiva Desbloqueada 12 – Desbloqueia a última passiva. Além disso, ganha uma ação bônus única por combate que pode ser utilizada para ativar qualquer passiva sem custo adicional.
+  // ===============================
+  // ⚒️ CONSTRUTOR IMPROVISADO
+  // ===============================
+  bonustitulo_1: `<p>⚒️ <strong>Construtor Improvisado</strong></p>`,
+  bonusTexto1N1: `<strong>Martelada Bruta</strong> — +1d4 de dano corpo a corpo com madeira (1 de especial).`,
+  bonusTexto1N3: `<strong>Bloco de Proteção</strong> — +1 em resistência ao usar madeira como escudo (Passivo).`,
+  bonusTexto1N5: `<strong>Força Adaptável</strong> — Regenera 1 de especial após dois turnos com objetos improvisados (Passivo).`,
+  bonusTexto1N9: `<strong>Perícia com Improviso</strong> — +1 em ataques com armas improvisadas (Passivo).`,
+  bonusTexto1N13: `<strong>Golpe Demolidor</strong> — +1d6 de dano que ignora defesa (3 de especial).`,
+  bonusTexto1N16: `<strong>Resistência Férrea</strong> — +2 em resistência física se usar objeto improvisado desde o início (Passivo).`,
+  bonusTexto1N20: `<strong>Explosão de Impacto</strong> — +2d6 de dano e chance de atordoar (4 de especial).`,
+  bonusTexto1N22: `<strong>Maestria em Improviso</strong> — +1d6 de dano adicional com improvisos e bônus contra ataques à distância (Passivo).`,
+  bonusTexto1N25: `<strong>Golpe Devastador</strong> — +2d10 de dano após 3 turnos sem usar habilidades (5 de especial, 1x por combate).`,
 
-🌪️Especialista do Caos
-Ordem do caos: “é os estudiosos do elemento da natureza.”
-O elemento Caos: ” é a própria representação pura da ordem e do caos, contendo varias magias de tipos diferentes.“
+  // ===============================
+  // 👷‍♂️ ARTESÃO DE BARRICADAS
+  // ===============================
+  bonustitulo_2: `<p>👷‍♂️ <strong>Artesão de Barricadas</strong></p>`,
+  bonusTexto2N1: `<strong>Mini Barricada</strong> — Concede +1 em defesa para aliados por um turno (Sem custo).`,
+  bonusTexto2N3: `<strong>Parede de Madeira</strong> — Bloqueia passagem por 2 turnos (2 de especial).`,
+  bonusTexto2N5: `<strong>Prendedor Ágil</strong> — +1 em esquiva para aliados próximos ao travar objetos leves (Passivo).`,
+  bonusTexto2N9: `<strong>Barreira Resistente</strong> — Barricadas duram +1 turno (Passivo).`,
+  bonusTexto2N13: `<strong>Armadilha Surpresa</strong> — +1d6 de dano ao inimigo que atravessa (3 de especial).`,
+  bonusTexto2N16: `<strong>Cobertura Completa</strong> — Reduz metade do dano para quem estiver atrás da barreira (4 de especial, 1x por combate).`,
+  bonusTexto2N20: `<strong>Estratégia de Distração</strong> — Atrai inimigos com objeto de madeira por 1 turno (2 de especial).`,
+  bonusTexto2N22: `<strong>Mestre das Barricadas</strong> — Pode construir 2 barricadas simultaneamente (Passivo).`,
+  bonusTexto2N25: `<strong>Catapulta Improvisada</strong> — Lança objetos com +2d10 de dano à distância (5 de especial, 1x por combate).`,
 
-Nível 1: +2 em Testes de Preservação – Aumenta a resistência ao caos.
-Nível 3: +1d8 de dano em magias de Caos de nível 1 e 2 – libera uma magia de caos de nível 1 a 2.
-Nível 5: Ganha uma magia de Ordem do Caos de nível 1 a 3 ou Escolha uma magia de nível 1 ou 3 do elemento Caos para aprender.
-Nível 9: Magias de Ordem do Caos de nível 1, 2 e 3 de sem consumir sanidade, uma vez por dia.
-Nível 13: +1 em Testes de Preservação ao usar magias de Caos – ganha +1 em armadura temporária contra dano Mental e Psicológico ao conjurar magias de Caos.
-Nível 16: Ganha uma magia de Ordem do Caos de nível 3 a 4 – Escolha uma magia de nível 3 ou 4 do elemento Caos para aprender.
-Nível 20: Magia Avançada de Caos – Ganha uma magia de nível 5 ou 6 do elemento Caos para aprender e conjurar uma vez por dia sem custo de sanidade.
-Nível 22: Custo Mínimo – Reduz o custo de uma magia de Caos por dia para 1 ponto de sanidade.
-Nível 25: Mestre Elemental do Caos – Ganha uma magia de nível 6 de Caos e pode conjurá-la uma vez por dia sem custo de sanidade.
+  // ===============================
+  // 🪓 GUERREIRO DE MACHADO
+  // ===============================
+  bonustitulo_3: `<p>🪓 <strong>Guerreiro de Machado</strong></p>`,
+  bonusTexto3N1: `<strong>Corte Preciso</strong> — +1d4 de dano adicional com machado (Passivo).`,
+  bonusTexto3N3: `<strong>Fúria do Lenhador</strong> — +1 em resistência com golpes rápidos usando machado (Passivo).`,
+  bonusTexto3N5: `<strong>Machado Veloz</strong> — +1 em Agilidade ao usar machado (Passivo).`,
+  bonusTexto3N9: `<strong>Ataque Sequencial</strong> — +2 de dano ao atingir o mesmo alvo repetidamente (Passivo).`,
+  bonusTexto3N13: `<strong>Machado Partidor</strong> — Reduz armadura do alvo em -1 por 2 turnos (2 de especial).`,
+  bonusTexto3N16: `<strong>Golpe Devastador</strong> — +1d8 de dano crítico com machado (Passivo).`,
+  bonusTexto3N20: `<strong>Equilíbrio de Aço</strong> — +2 em resistência a recuos com machado (Passivo).`,
+  bonusTexto3N22: `<strong>Hemorragia Fatal</strong> — Crítico com machado causa +1d10 de dano contínuo (4 de especial).`,
+  bonusTexto3N25: `<strong>Mestre do Machado</strong> — Ataque extra com +2d8 de dano (5 de especial, 1x por combate).`
+}
+,
+    "Catador": {
+  "vidaPorNivel": 4,
+  "sanidadePorNivel": 4,
+  "armaduraPorNivel": 1,
+  "resistencia": "Alma",
+  "movimento_pass": 3.5,
 
-⚙️Mestre dos equipamentos
-Nível 1:Talento de Armas – Espadas – Desbloqueia o uso de espadas e adagas. Ganha +2 de dano com ataques corpo a corpo usando essas armas.
-Nível 3:Talento de Armas – Machados e Martelos – Desbloqueia o uso de machados e martelos. Ganha +1 de dano extra em ataques com essas armas.
-Nível 5:Talento de Armas – Lanças e Armas com Haste – Desbloqueia o uso de lanças e alabardas. Ganha +1 de alcance e +1 de dano com essas armas.
-Nível 9:Talento de Armas – Arcos e Bestas – Desbloqueia o uso de arcos e bestas. Pode realizar ataques à distância com +1d4 de dano adicional.
-Nível 13:Talento de Armas – Katanas – Desbloqueia o uso de katanas e nagamakis. Recebe +2 de dano com essas armas e pode realizar um ataque adicional por turno.
-Nível 16:Talento de Armas – Fundas e Estilingues – Desbloqueia o uso de fundas e estilingues. Ganha a capacidade de atingir alvos distantes com +1d6 de dano extra.
-Nível 20:Talento de Armas – Armas Exóticas e Diversas – Desbloqueia o uso de nunchakus e shurikens. Ganha +2 de dano e bônus em acrobacia ao usar essas armas.
-Nível 22:Talento de Armas – Armas de Cerco – Desbloqueia o uso de catapultas e balistas. Ganha bônus de dano em ataques de área com armas de cerco (custo: 4 especial).
-Nível 25:Talento de Armas – Escudos – Desbloqueia o uso de escudos e ganha bônus de +1 em armadura. Pode usar um escudo como ataque corpo a corpo (custo: 2 especial).`,
-      "movimento_pass": 4.5
-    },
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> Cada órgão adiciona +1 invocação extra. Magia <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m69">LEVANTA</a></strong> sem custo uma vez por dia.</p>
+  `,
+
+  // ===============================
+  // ⚰️ NECROMANTE
+  // ===============================
+  bonustitulo_1: `<p>⚰️ <strong>Necromante</strong></p>`,
+
+  bonusTexto1N1: `<strong>Eco dos Mortos</strong> — Cada órgão coletado concede +1 em resistência a medo e intimidação. Magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m69">LEVANTA</a> 2x/dia sem custo. +2 de movimento em terrenos com corpos.`,
+  bonusTexto1N3: `<strong>Alimento das Sombras</strong> — Absorver um cadáver recupera 1d4 de sanidade (até 3x por dia).`,
+  bonusTexto1N5: `<strong>Aura Cadavérica</strong> — Reduz o dano recebido em 2 por inimigo morto próximo (4 de especial, dura até o fim do combate).`,
+  bonusTexto1N9: `<strong>Colecionador de Almas Perdidas</strong> — Armazena essência por 1d10 turnos, recebe -2 de dano contra sangue e luz.`,
+  bonusTexto1N13: `<strong>Devorador de Essências</strong> — Drena 1d20 de sanidade de um cadáver e aplica a si ou a um aliado (1x por combate).`,
+  bonusTexto1N16: `<strong>Aura de Terror</strong> — +3 em intimidação passiva com inimigos abaixo de metade de vida. Aplica <strong>desvantagem</strong> em ataques corpo a corpo contra você (2 de especial).`,
+  bonusTexto1N20: `<strong>Fortificação Cadavérica</strong> — Habilidade única “Muralha de Ossos”: reduz dano à distância em 2d8 por 3 turnos (6 de sanidade).`,
+  bonusTexto1N22: `<strong>Ceifeiro dos Defuntos</strong> — Habilidade única “Sangue Morto”: drena vitalidade de cadáver e recupera 2d20 de vida (6 de sanidade).`,
+  bonusTexto1N25: `<strong>Guardião da Sombra Eterna</strong> — Habilidade única “Escudo Profano”: absorve metade do dano por um turno e transforma em +1d10 de ataque no turno seguinte (12 de sanidade).`,
+
+  // ===============================
+  // 🏺 COLECIONADOR
+  // ===============================
+  bonustitulo_2: `<p>🏺 <strong>Colecionador</strong></p>`,
+
+  bonusTexto2N1: `<strong>Coleção Sagrada</strong> — Marca até 2 itens “sagrados” com aura rosa. Ganham vantagem em Agilidade e levitam até você. +4 de dano de Aura.`,
+  bonusTexto2N3: `<strong>Guardião dos Tesouros</strong> — +1 em Ofício. Habilidade <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p33"><strong>Réplica Imperfeita</strong></a> permite copiar itens em posse.`,
+  bonusTexto2N5: `<strong>Mestre dos Artefatos</strong> — Terceiro slot sagrado. +1d4 de dano em ataques com os itens.`,
+  bonusTexto2N9: `<strong>Saqueador Experiente</strong> — +2 em Ofício. “Roubo Sombrio”: rouba item de inimigo distraído (6 de especial).`,
+  bonusTexto2N13: `<strong>Guardião de Relíquias Antigas</strong> — +1 de armadura por item ativo da coleção sagrada.`,
+  bonusTexto2N16: `<strong>Santuário dos Artefatos Perdidos</strong> — +3 de dano com itens sagrados e +1 em Agilidade ao manipulá-los.`,
+  bonusTexto2N20: `<strong>Levitação Perfeita</strong> — “Chamada dos Artefatos”: atrai todos os itens num raio de 15m (5 de sanidade).`,
+  bonusTexto2N22: `<strong>Guardião Supremo dos Tesouros</strong> — “Proteção Sagrada”: reduz dano recebido em 2d8 com item sagrado ativo (8 de sanidade).`,
+  bonusTexto2N25: `<strong>Senhor da Coleção Sagrada</strong> — “Roubo Fantasmagórico”: rouba 1 item mágico do inimigo temporariamente (10 de sanidade).`,
+
+  // ===============================
+  // 🩸 SANGUINÁRIO
+  // ===============================
+  bonustitulo_3: `<p>🩸 <strong>Sanguinário</strong></p>`,
+
+  bonusTexto3N1: `<strong>Guerreiro de Ossos</strong> — Cada órgão coletado dá +1 em ataques corpo a corpo. Passiva: <a href=https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Dilacera%20e%20atacar><strong>Dilacera e Atacar</strong></a>.`,
+  bonusTexto3N3: `<strong>Punhos Macabros</strong> — +1 em Preservação e +1d4 de dano com partes do corpo.`,
+  bonusTexto3N5: `<strong>Mestre dos Ossos</strong> — Magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m6"><strong>Órgãos Sombrios</strong></a>. Aumenta dano físico em +2 (1x por combate, 3 de sanidade).`,
+  bonusTexto3N9: `<strong>Destruidor de Corpos</strong> — +2 de dano e +1 em resistência a cada ataque com partes corporais.`,
+  bonusTexto3N13: `<strong>Arauto da Carne Profana</strong> — +2 em Preservação e +1 em Defesa ao atacar com partes corporais.`,
+  bonusTexto3N16: `<strong>Ceifador dos Mortos-Vivos</strong> — +1d6 de dano com órgãos e imunidade a paralisia.`,
+  bonusTexto3N20: `<strong>Impacto Demolidor</strong> — “Esmagamento Cadavérico”: +3d8 de dano e ignora armadura (6 de sanidade).`,
+  bonusTexto3N22: `<strong>Guerreiro das Sombras Corpóreas</strong> — “Fúria dos Ossos”: +1d12 de dano corpo a corpo por 1 turno.`,
+  bonusTexto3N25: `<strong>Avatar da Destruição Cadavérica</strong> — “Desmembramento Fatal”: ataque devastador com sangramento de 2d10 por 3 turnos (2 de especial).`
+}
+,
+   "Colosso": {
+  "vidaPorNivel": 8,
+  "sanidadePorNivel": 0,
+  "armaduraPorNivel": 4,
+  "resistencia": "Esmagante",
+  "movimento_pass": 3.5,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> Passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p4">Armadura Sobrenatural</a></strong> sem custo uma vez por dia.</p>
+  `,
+
+  // ===============================
+  // 🦾 GUARDIÃO DE FERRO
+  // ===============================
+  bonustitulo_1: `<p>🦾 <strong>Guardião de Ferro</strong></p>`,
+
+  bonusTexto1N1: `<strong>Resiliência do Colosso</strong> — Resistência contra dano cortante e +1 de armadura.`,
+  bonusTexto1N3: `<strong>Pele de Pedra</strong> — Reduz dano de esmagamento em 2.`,
+  bonusTexto1N5: `<strong>Barreira Implacável</strong> — “Defesa Absoluta”: bloqueia totalmente o próximo ataque (4 de especial).`,
+  bonusTexto1N9: `<strong>Fortificação Permanente</strong> — +1 de armadura ao permanecer parado por 1 turno.`,
+  bonusTexto1N13: `<strong>Muralha do Colosso</strong> — “Defesa Profunda”: redireciona 1d12 de dano para proteger aliados (6 de especial).`,
+  bonusTexto1N16: `<strong>Resiliência Sobrenatural</strong> — Resistência permanente a perfuração ao usar armadura pesada.`,
+  bonusTexto1N20: `<strong>Aegis Sagrada</strong> — “Escudo Final”: absorve até 2d12 de dano (8 de especial).`,
+  bonusTexto1N22: `<strong>Muralha de Aço Vivo</strong> — Bloqueia ataques contra aliados 1x por turno e ganha +2 em armadura ao bloquear.`,
+  bonusTexto1N25: `<strong>Guardião Inquebrável</strong> — “Proteção Ancestral”: nega o dano de um ataque e reflete 1d10 de volta (12 de especial).`,
+
+  // ===============================
+  // 💪 DOMINADOR
+  // ===============================
+  bonustitulo_2: `<p>💪 <strong>Dominador</strong></p>`,
+
+  bonusTexto2N1: `<strong>Força Inigualável</strong> — +2 em Brutalidade e agarrões; cada sucesso gera 1 especial temporário.`,
+  bonusTexto2N3: `<strong>Domínio de Impacto</strong> — +2 de dano esmagante ao empurrar ou agarrar.`,
+  bonusTexto2N5: `<strong>Investida Destruidora</strong> — “Investida do Colosso”: empurra inimigo 5m e causa 1d4 (4 de especial).`,
+  bonusTexto2N9: `<strong>Agarrão Sobrenatural</strong> — +2 em Brutalidade ao manter inimigo agarrado.`,
+  bonusTexto2N13: `<strong>Golpe Desestabilizador</strong> — “Confusão Brutal”: causa confusão por 1 turno (2 de especial).`,
+  bonusTexto2N16: `<strong>Presença Imponente</strong> — +3 de dano ao empurrar ou arrastar oponentes.`,
+  bonusTexto2N20: `<strong>Força dos Antigos</strong> — “Força Ancestral”: +4 em Brutalidade e arrasta inimigo 5m (8 de especial).`,
+  bonusTexto2N22: `<strong>Poder de Controle Total</strong> — Ao empurrar um inimigo, realiza um ataque adicional no mesmo turno.`,
+  bonusTexto2N25: `<strong>Sufocamento Final</strong> — “Agarre Inescapável”: imobiliza e causa 3d12 de dano (12 de especial).`,
+
+  // ===============================
+  // 👑 VINGANÇA AO REI
+  // ===============================
+  bonustitulo_3: `<p>👑 <strong>Vingança ao Rei</strong></p>`,
+
+  bonusTexto3N1: `<strong>Postura de Vingança</strong> — +2 de armadura ao bloquear corpo a corpo. Passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p8"><strong>Vingança</strong></a> 1x por combate.`,
+  bonusTexto3N3: `<strong>Retaliação Agressiva</strong> — +2 de dano em resposta a ataques recebidos.`,
+  bonusTexto3N5: `<strong>Escudo Defensivo</strong> — “Escudo Contra Golpes”: bloqueia ataque e revida com ataque completo (8 de especial).`,
+  bonusTexto3N9: `<strong>Firmeza Sobrenatural</strong> — +3 em Brutalidade contra empurrões e agarrões.`,
+  bonusTexto3N13: `<strong>Contragolpe Devastador</strong> — “Destruição Reflexa”: causa o dobro do dano em resposta a ataque falho (12 de especial).`,
+  bonusTexto3N16: `<strong>Reflexo de Ferro</strong> — +4 de dano em contra-ataques corpo a corpo.`,
+  bonusTexto3N20: `<strong>Braço da Retaliação</strong> — “Justiça Implacável”: bloqueia e devolve ataque poderoso (13 de especial).`,
+  bonusTexto3N22: `<strong>Reflexo Sobrenatural</strong> — Usa bônus de Agilidade em contra-ataques e pode revidar a cada vez que for atacado.`,
+  bonusTexto3N25: `<strong>Golpe de Vingança Suprema</strong> — “Juízo do Colosso”: 4d10 de dano extra no contra-ataque e derruba o inimigo (18 de especial).`
+}
+,"Conjurador": { 
+  "vidaPorNivel": 5,
+  "sanidadePorNivel": 3,
+  "armaduraPorNivel": 1,
+  "resistencia": "Distorção",
+  "movimento_pass": 4.5,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> <strong>Passivas</strong> e <strong>Magias</strong> têm custo reduzido baseado em 1d6, válido por combate.</p>
+  `,
+
+  // ===============================
+  // ⚔️ ESPADACHIM ARCANO
+  // ===============================
+  bonustitulo_1: `<p>⚔️ <strong>Espadachim Arcano</strong></p>`,
+
+  bonusTexto1N1: `<strong>Lampejo Arcano</strong> — Conjura magia pela espada. +2 em ataques corpo a corpo ao canalizar.`,
+  bonusTexto1N3: `<strong>Corte Espectral</strong> — <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p37"><strong>Aura Manifestada</strong></a> + investida de 6m com 3d6 de dano e derruba (3 de especial).`,
+  bonusTexto1N5: `<strong>Discípulo do Raio Fendido</strong> — Aprende 2 magias nível 1–2 do tipo <a href="javascript:TC && TC.open && TC.open()">Laser</a>; +1 em Conexão com espada.`,
+  bonusTexto1N9: `<strong>Plasma Pulsante</strong> — Corte com 2d8 adicionais de <strong>Plasma</strong> por 2 turnos (3 de especial).`,
+  bonusTexto1N13: `<strong>Golpe Espiritual</strong> — Reduz 3 de armadura no acerto (4 de especial).`,
+  bonusTexto1N16: `<strong>Manifesto dos Sentinelas Invisíveis</strong> — Aprende 2 magias nível 2–3 do tipo <a href="javascript:TC && TC.open && TC.open()">Aura</a>, pode conjurar 1 delas 1x/dia sem custo.`,
+  bonusTexto1N20: `<strong>Lâmina da Extinção</strong> — Aprende 2 magias nível 3–4 do tipo <a href="javascript:TC && TC.open && TC.open()">Plasma</a>, +2 em Conexão com espada.`,
+  bonusTexto1N22: `<strong>Corte da Condenação</strong> — Aprende 2 magias nível 4–5 do tipo <a href="javascript:TC && TC.open && TC.open()">Morte</a>; golpe final causa 2d10 e impede cura por 1 turno.`,
+  bonusTexto1N25: `<strong>Assalto Arcano</strong> — Aprende 1 <a href="javascript:TC && TC.open && TC.open()">Magia</a> nível 6 (<strong>Plasma</strong>, <strong>Laser</strong>, <strong>Aura</strong> ou <strong>Morte</strong>); realiza 3 ataques com +1d12 de dano mágico.`,
+
+  // ===============================
+  // 👻 INVOCADOR DAS SOMBRAS
+  // ===============================
+  bonustitulo_2: `<p>👻 <strong>Invocador das Sombras</strong></p>`,
+
+  bonusTexto2N1: `<strong>Sombras Profundas</strong> — +2 em Conexão e Libertação para magias de <strong>Escuridão</strong> ou <strong>Alma</strong>.`,
+  bonusTexto2N3: `<strong>Véu da Distopia</strong> — Passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p34"><strong>Sombra da Distopia</strong></a> para ocultação em baixa luz.`,
+  bonusTexto2N5: `<strong>Golpe da Alma Perdida</strong> — Ataque causa +4d6 de dano <strong>Alma</strong> (2 de especial).`,
+  bonusTexto2N9: `<strong>Chamado das Trevas</strong> — +2 em Conexão e Libertação para <strong>Escuridão</strong>.`,
+  bonusTexto2N13: `<strong>Laço Obscuro</strong> — Reduz armadura do alvo em 2 por 2 turnos (3 de especial).`,
+  bonusTexto2N16: `<strong>Passagem Oculta</strong> — Intangível por 2 turnos, imune a dano físico (6 de especial).`,
+  bonusTexto2N20: `<strong>Maestria Sombria</strong> — Ganha 3 <a href="javascript:TC && TC.open && TC.open()">magias</a> nível 1–4 de <strong>Escuridão</strong> ou <strong>Alma</strong> (1x/dia, sem custo).`,
+  bonusTexto2N22: `<strong>Profundezas da Alma</strong> — Absorve +3d6 de sanidade com habilidades de <strong>Alma</strong> ou <strong>Escuridão</strong> (passivo).`,
+  bonusTexto2N25: `<strong>Avanço da Penumbra</strong> — Véu sombrio: +4d8 de armadura por 10 turnos e Pavor em inimigos (1x por combate).`,
+
+  // ===============================
+  // 🌪️ CONJURAÇÃO CAÓTICA
+  // ===============================
+  bonustitulo_3: `<p>🌪️ <strong>Conjuração Caótica</strong></p>`,
+
+  bonusTexto3N1: `<strong>Estudo Elemental</strong> — +2 em <a href="javascript:TC && TC.open && TC.open()">magias</a> de nível 1–2 dos elementos <strong>Fogo</strong>, <strong>Gelo</strong>, <strong>Água</strong> e <strong>Eletricidade</strong>.`,
+  bonusTexto3N3: `<strong>Chama Persistente</strong> — Rajada causa 2d8 de dano de <strong>Fogo</strong> por 2 turnos (6 de especial).`,
+  bonusTexto3N5: `<strong>Toque Gélido</strong> — Aura de <strong>Gelo</strong> reduz pela metade o movimento inimigo por 1 turno.`,
+  bonusTexto3N9: `<strong>Tempestade Condutora</strong> — Tempestade causa 1d12 de dano de <strong>Eletricidade</strong> em área (4 de especial).`,
+  bonusTexto3N13: `<strong>Escudo Caótico</strong> — <strong>Água</strong> protege contra dano de Caos por 2 turnos.`,
+  bonusTexto3N16: `<strong>Maestria Elemental</strong> — Ganha 3 <a href="javascript:TC && TC.open && TC.open()">magias</a> nível 1–4 de <strong>Fogo</strong>, <strong>Gelo</strong>, <strong>Água</strong> ou <strong>Eletricidade</strong> (1x/dia sem custo).`,
+  bonusTexto3N20: `<strong>Vórtice de Gelo</strong> — Empurra inimigos 3m e causa 3d8 de <strong>Gelo</strong> (3 de especial).`,
+  bonusTexto3N22: `<strong>Caos Elemental</strong> — Magias de dano ganham +1d8 adicional de <strong>Fogo</strong>, <strong>Gelo</strong>, <strong>Água</strong> ou <strong>Eletricidade</strong>.`,
+  bonusTexto3N25: `<strong>Mestre Elemental</strong> — Libera 4 <a href="javascript:TC && TC.open && TC.open()">magias</a> de nível 1–5 dos <strong>elementos</strong> e pode usar uma 1x/dia sem custo.`
+}
+,"Costeiro": { 
+  "vidaPorNivel": 6,
+  "sanidadePorNivel": 2,
+  "armaduraPorNivel": 3,
+  "resistencia": "Água",
+  "movimento_pass": 4.5,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> +1d6 com <strong>porretes</strong> ou <strong>katanas</strong>, +2 de <strong>armadura</strong> e não pode ser <strong>Desarmado</strong>.</p>
+  `,
+
+  // ===============================
+  // 🌊 MARÉS CORTANTES
+  // ===============================
+  bonustitulo_1: `<p>🌊 <strong>Marés Cortantes</strong></p>`,
+
+  bonusTexto1N1: `<strong>Toque das Ondas</strong> — +1 em ataque com <strong>katana</strong>; +1d4 de <strong>dano de água</strong> (1 de especial).`,
+  bonusTexto1N3: `<strong>Redemoinho Fluido</strong> — Ao acertar dois ataques consecutivos, +1 no próximo ataque.`,
+  bonusTexto1N5: `<strong>Fúria das Marés</strong> — Adiciona +1d8 de <strong>dano de água</strong> em arma por dois turnos (2 de especial).`,
+  bonusTexto1N9: `<strong>Correnteza Precisa</strong> — +1 em <strong>Esquiva</strong> e +2 em ataques com katana ao usar <strong>dano de água</strong>.`,
+  bonusTexto1N13: `<strong>Maré Inquebrável</strong> — Reduz o dano recebido pela metade por 1 turno (3 de especial).`,
+  bonusTexto1N16: `<strong>Pressão Submersa</strong> — Ataques com <strong>katana</strong> causam <strong>Debilitado</strong> se o alvo não tiver resistência à <strong>água</strong>.`,
+  bonusTexto1N20: `<strong>Ritmo da Maré</strong> — Ao acertar três ataques consecutivos, realiza 1 ataque adicional (passivo).`,
+  bonusTexto1N22: `<strong>Corte Torrencial</strong> — Aumenta o <strong>dano de água</strong> em +1d12 por três turnos (3 de especial).`,
+  bonusTexto1N25: `<strong>Último Suspiro da Correnteza</strong> — Ação extra com +4d10 de <strong>dano de água</strong> (1x por combate).`,
+
+  // ===============================
+  // 🌀 FORÇA DAS MARÉS
+  // ===============================
+  bonustitulo_2: `<p>🌀 <strong>Força das Marés</strong></p>`,
+
+  bonusTexto2N1: `<strong>Golpe Contundente</strong> — +3 em ataque com <strong>porrete</strong> e +1d4 de <strong>dano esmagante</strong> (1 de especial).`,
+  bonusTexto2N3: `<strong>Ataque de Oportunidade</strong> — Reação contra inimigo que sai do alcance. +2 em acerto; inimigo faz teste de <strong>agilidade</strong>.`,
+  bonusTexto2N5: `<strong>Vingança das Ondas</strong> — Adiciona +1d12 de <strong>dano esmagante</strong> em reações (2 de especial).`,
+  bonusTexto2N9: `<strong>Rastro de Destroços</strong> — Ao atingir inimigo em movimento, recebe +5 de <strong>dano esmagante</strong> por dois turnos.`,
+  bonusTexto2N13: `<strong>Defesa das Marés</strong> — Golpe de reação que causa +3d8 de <strong>dano esmagador</strong> ao inimigo que não atacou (3 de especial).`,
+  bonusTexto2N16: `<strong>Investida da Correnteza</strong> — Ação adicional com 4d8 de <strong>dano esmagante</strong> e deixa o alvo <strong>Caído</strong> (5 de especial, teste de agilidade).`,
+  bonusTexto2N20: `<strong>Muralha Intransponível</strong> — Se ignorado por mais de um inimigo, ganha +2 de <strong>armadura</strong> e +2 de <strong>dano de água</strong> em reações.`,
+  bonusTexto2N22: `<strong>Impacto das Profundezas</strong> — Ao derrubar um inimigo, recebe um ataque livre extra.`,
+  bonusTexto2N25: `<strong>Força Brutal da Maré</strong> — Ação completa extra + 1 ataque reativo com +3d10 de <strong>dano</strong> (1x por combate).`,
+
+  // ===============================
+  // 💧 CORRENTEZA MÍSTICA – HIDROMANTE
+  // ===============================
+  bonustitulo_3: `<p>💧 <strong>Correnteza Mística – Hidromante</strong></p>`,
+
+  bonusTexto3N1: `<strong>Iniciado da Maré</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">Magia</a> Água Nível 1.`,
+  bonusTexto3N3: `<strong>Tecelão das Correntes</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">Magia</a> Água Nível 2 e +1 em <strong>Preservação</strong> com magias de água.`,
+  bonusTexto3N5: `<strong>Senhor dos Rios</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">Magia</a> Água Nível 3 e recupera 2 de <strong>sanidade</strong> ao acertar ataque aquático.`,
+  bonusTexto3N9: `<strong>Guardião dos Oceanos</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">Magia</a> Água Nível 4</strong></a> e adiciona +1d8 de <strong>dano de água</strong> em magias (2 de sanidade).`,
+  bonusTexto3N13: `<strong>Profeta das Profundezas</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">Magia</a> Água Nível 5 e +2 em <strong>armadura</strong> por 5 turnos ao conjurar.`,
+  bonusTexto3N16: `<strong>Aura da Hidrocinese</strong> — +3 de <strong>dano</strong> com magias e -2 de <strong>sanidade</strong> no custo por 3 turnos (6 de especial).`,
+  bonusTexto3N20: `<strong>Chamada do Abismo</strong> — Recupera +1d12 de <strong>sanidade</strong> ao fim do combate se usou magia de água.`,
+  bonusTexto3N22: `<strong>Guardião das Marés</strong> — Ao conjurar <strong>magia de água</strong>, recebe -2 de <strong>dano de ataques elementais</strong> (fé, desconhecido, poder) por 2 turnos.`,
+  bonusTexto3N25: `<strong>Mestre da Correnteza</strong> — Duas vezes por combate, lança uma <strong>Magia de Água até Nível 5</strong> sem custo de sanidade.`
+},"Criatura": { 
+  "vidaPorNivel": 7,
+  "sanidadePorNivel": 1,
+  "armaduraPorNivel": 4,
+  "resistencia": "Gelo",
+  "movimento_pass": 4.5,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> Passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p13">Pavor</a></strong> com custo removido uma vez por dia ou sem efeito colateral.</p>
+  `,
+
+  // ===============================
+  // 🦍 FÚRIA PRIMORDIAL
+  // ===============================
+  bonustitulo_1: `<p>🦍 <strong>Fúria Primordial</strong></p>`,
+
+  bonusTexto1N1: `<strong>Golpe Selvagem</strong> — +1 em <strong>Brutalidade</strong> e +2 de dano corpo a corpo (1 de especial).`,
+  bonusTexto1N3: `<strong>Investida Brutal</strong> — Após ataque bem-sucedido, teste de <strong>Brutalidade</strong> concede ataque adicional (2 de especial).`,
+  bonusTexto1N5: `<strong>Fúria Incontrolável</strong> — +1d6 de dano bruto corpo a corpo quando com menos de metade da vida.`,
+  bonusTexto1N9: `<strong>Resiliência Selvagem</strong> — Reduz metade do dano de um ataque (3 de especial, 1x por combate).`,
+  bonusTexto1N13: `<strong>Ira Devastadora</strong> — Ganha a passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p14">Raiva</a></strong>, ativável 2x por dia sem custo.`,
+  bonusTexto1N16: `<strong>Força Descomunal</strong> — +3 em <strong>Brutalidade</strong> e +1d10 em críticos.`,
+  bonusTexto1N20: `<strong>Estouro de Poder</strong> — Executa dois ataques extras em uma ação completa (5 de especial, 1x por combate).`,
+  bonusTexto1N22: `<strong>Predador Incansável</strong> — Ao derrotar inimigo, recupera 2 de especial e ganha ação de movimento grátis.`,
+  bonusTexto1N25: `<strong>Carnificina Absoluta</strong> — Gira e atinge todos a 2m com 3d10 de dano bruto (7 de especial, 1x por combate).`,
+
+  // ===============================
+  // 🐉 CAUDA LETAL
+  // ===============================
+  bonustitulo_2: `<p>🐉 <strong>Cauda Letal</strong></p>`,
+
+  bonusTexto2N1: `<strong>Chicote Natural</strong> — +1 em <strong>Brutalidade</strong>. Cauda causa 1d12+1d6 de dano (1 de especial, corpo a corpo).`,
+  bonusTexto2N3: `<strong>Presença Intimidadora</strong> — Ataques com cauda reduzem precisão do alvo em -1.`,
+  bonusTexto2N5: `<strong>Golpe Estonteante</strong> — Ataque com cauda impede movimento do alvo por 1 turno (3 de especial).`,
+  bonusTexto2N9: `<strong>Barreira Instintiva</strong> — Reduz metade do dano recebido ao bloquear com cauda (2 de especial por bloqueio).`,
+  bonusTexto2N13: `<strong>Círculo de Espinhos</strong> — Ataque em área com a cauda em 3m, causando +1d8 (4 de especial).`,
+  bonusTexto2N16: `<strong>Reflexos Predatórios</strong> — Ao evitar um ataque, revida automaticamente com cauda (3 de especial).`,
+  bonusTexto2N20: `<strong>Flagelo Impiedoso</strong> — Ataque em área com cauda causa 2d8 de dano e empurra 3m (5 de especial, 1x por combate).`,
+  bonusTexto2N22: `<strong>Cauda Sombria</strong> — +2 em <strong>Furtividade</strong> e +1d10 em ataques furtivos com cauda.`,
+  bonusTexto2N25: `<strong>Destruição Implacável</strong> — Cone de 6m com 3d10 de dano e derrubada dos alvos (7 de especial).`,
+
+  // ===============================
+  // 🦊 ÁGIL E PREDATÓRIO
+  // ===============================
+  bonustitulo_3: `<p>🦊 <strong>Ágil e Predatório</strong></p>`,
+
+  bonusTexto3N1: `<strong>Movimentos Ágeis</strong> — +2 em <strong>Furtividade</strong> e <strong>Acrobacia</strong>.`,
+  bonusTexto3N3: `<strong>Instinto Selvagem</strong> — Ganha a passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p1">Consumir</a></strong>, ativável sem custo 1x por combate.`,
+  bonusTexto3N5: `<strong>Golpe Preciso</strong> — Ataques furtivos causam +1d6 adicional contra inimigos desatentos (1 de especial).`,
+  bonusTexto3N9: `<strong>Velocidade Predatória</strong> — Ganha ação de movimento adicional (2 de especial).`,
+  bonusTexto3N13: `<strong>Fúria Controlada</strong> — Ganha a passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p14">Raiva</a></strong>.`,
+  bonusTexto3N16: `<strong>Predador das Sombras</strong> — +3 em <strong>Furtividade</strong>; ataques furtivos ignoram resistências (3 de especial).`,
+  bonusTexto3N20: `<strong>Vantagem Natural</strong> — Ao passar em teste de <strong>Acrobacia</strong> ou <strong>Furtividade</strong>, ganha ataque livre (1x por turno).`,
+  bonusTexto3N22: `<strong>Caçador das Profundezas</strong> — +3 em <strong>Enganação</strong> e <strong>Intimidação</strong> contra inimigos solitários.`,
+  bonusTexto3N25: `<strong>Golpe Impecável</strong> — Primeiro acerto contra inimigo isolado é crítico automático com +3d12 de dano (5 de especial, 1x por combate).`
+}
+
+,"Duelista": { 
+  "vidaPorNivel": 7,
+  "sanidadePorNivel": 1,
+  "armaduraPorNivel": 1,
+  "resistencia": "Perfurante",
+  "movimento_pass": 4,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> +1d10 de <strong>dano</strong> contra <strong>alvos isolados</strong> (sem ninguém próximo de 10m) e +4 em <strong>testes de Furtividade</strong>.</p>
+  `,
+
+  // ===============================
+  // 🗡️ ESPADACHIM SOLITÁRIO
+  // ===============================
+  bonustitulo_1: `<p>🗡️ <strong>Espadachim Solitário</strong></p>`,
+
+  bonusTexto1N1: `<strong>Foco do Duelista</strong> — +2 de <strong>dano</strong> e +1 em <strong>testes de ataque</strong> contra <strong>inimigos isolados</strong>.`,
+  bonusTexto1N3: `<strong>Estocada Perfeita</strong> — 1x por turno, +1d6 de <strong>dano</strong> ao atingir <strong>alvo isolado</strong> com <strong>rapiera</strong>.`,
+  bonusTexto1N5: `<strong>Resistência da Solidão</strong> — Sem aliados/inimigos por perto, +2 em <strong>armadura</strong> contra ataques diretos.`,
+  bonusTexto1N9: `<strong>Rapidez Refinada</strong> — <strong>Ação de ataque adicional</strong> contra inimigo isolado (1x por combate).`,
+  bonusTexto1N13: `<strong>Precisão Mortal</strong> — <strong>Críticos</strong> com <strong>rapiera</strong> causam +2d8 em <strong>alvos isolados</strong>.`,
+  bonusTexto1N16: `<strong>Arte do Duelista</strong> — +3 em <strong>Acrobacia</strong> enfrentando <strong>inimigos isolados</strong>.`,
+  bonusTexto1N20: `<strong>Supremacia Solitária</strong> — Ignora 5 de <strong>armadura</strong> de <strong>inimigo único</strong>.`,
+  bonusTexto1N22: `<strong>Dança das Lâminas</strong> — Dois ataques extras contra <strong>isolado</strong> (4 <strong>especial</strong>, 1x por combate).`,
+  bonusTexto1N25: `<strong>Corte Final</strong> — <strong>Ataque mortal</strong> com +4d10 e ignora <strong>armadura</strong> (5 <strong>especial</strong>, 1x por combate).`,
+
+  // ===============================
+  // ⚔️ CONVITE AO DUELO
+  // ===============================
+  bonustitulo_2: `<p>⚔️ <strong>Convite ao Duelo</strong></p>`,
+
+  bonusTexto2N1: `<strong>Marca do Duelo</strong> — Marca 1 <strong>alvo</strong> (1 <strong>especial</strong>); +2 em <strong>ataque</strong> e +3 de <strong>dano de Escuridão</strong> contra ele.`,
+  bonusTexto2N3: `<strong>Bravura Crescente</strong> — Cada <strong>inimigo vencido</strong> no duelo concede +1 permanente em <strong>testes de ataque</strong>.`,
+  bonusTexto2N5: `<strong>Defesa do Desafiante</strong> — Reduz em metade o <strong>dano recebido</strong> no duelo (2 <strong>especial</strong>).`,
+  bonusTexto2N9: `<strong>Golpe Honrado</strong> — +1d8 de <strong>dano</strong> em <strong>críticos</strong> contra <strong>alvo do duelo</strong>.`,
+  bonusTexto2N13: `<strong>Vontade Invencível</strong> — Enquanto <strong>invicto</strong>: +2 em todos os <strong>testes de resistência</strong>.`,
+  bonusTexto2N16: `<strong>Provocação Mortal</strong> — Pode chamar 1 segundo <strong>alvo</strong> para duelo (3 <strong>especial</strong>).`,
+  bonusTexto2N20: `<strong>Maestria do Desafio</strong> — Ignora 6 de <strong>armadura</strong> de <strong>marcados</strong> e libera <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p8">Vingança</a></strong>.`,
+  bonusTexto2N22: `<strong>Corte Vitorioso</strong> — Ao derrotar um <strong>duelista</strong>: +3 <strong>especial</strong> e 1 <strong>ação de movimento</strong> extra.`,
+  bonusTexto2N25: `<strong>Campeão Invicto</strong> — Enquanto <strong>invicto</strong>: +4 em <strong>ataque</strong> e <strong>resistência</strong>. Pode causar +6d10 (1x por combate).`,
+
+  // ===============================
+  // 🕶️ ASSASSINO FURTIVO
+  // ===============================
+  bonustitulo_3: `<p>🕶️ <strong>Assassino Furtivo</strong></p>`,
+
+  bonusTexto3N1: `<strong>Silêncio Mortal</strong> — +2 em <strong>Furtividade</strong> e +1d4 em <strong>ataques furtivos</strong> contra <strong>isolados</strong>.`,
+  bonusTexto3N3: `<strong>Predador Sutil</strong> — Ao eliminar <strong>alvo isolado</strong> furtivamente, recupera 2 <strong>especial</strong>.`,
+  bonusTexto3N5: `<strong>Movimentos Sombrios</strong> — +2 em <strong>Acrobacia</strong> e ganha <strong>ação de movimento furtiva</strong> extra.`,
+  bonusTexto3N9: `<strong>Lâmina Oculta</strong> — <strong>Adagas furtivas</strong> causam +1d6 em <strong>alvos isolados</strong>.`,
+  bonusTexto3N13: `<strong>Instinto de Sobrevivência</strong> — Sozinho, recebe +2 em <strong>Agilidade</strong>.`,
+  bonusTexto3N16: `<strong>Golpe Preciso</strong> — Ignora metade da <strong>armadura</strong> em <strong>ataques furtivos</strong>.`,
+  bonusTexto3N20: `<strong>Mestre da Sombra</strong> — Ataca e se move furtivamente contra <strong>alvo isolado</strong> (2 <strong>especial</strong>).`,
+  bonusTexto3N22: `<strong>Execução Silenciosa</strong> — <strong>Crítico automático</strong> contra <strong>isolado</strong> (4 <strong>especial</strong>, 1x por combate).`,
+  bonusTexto3N25: `<strong>Fim das Sombras</strong> — <strong>Ataque mortal</strong> com +6d8 em <strong>isolado</strong>. Movimento sem ser detectado por 1 turno (5 <strong>especial</strong>).`
+}
+,"Escudeiro": { 
+  "vidaPorNivel": 7,
+  "sanidadePorNivel": 1,
+  "armaduraPorNivel": 3,
+  "resistencia": "Esmagante",
+  "movimento_pass": 3.5,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> +4 de dano com escudo. Passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p6">Emanar Energia</a></strong> sem negativo e sem custo 1x por dia.</p>
+  `,
+
+  // ===============================
+  // 🛡️ BASTIÃO IMÓVEL
+  // ===============================
+  bonustitulo_1: `<p>🛡️ <strong>Bastião Imóvel</strong></p>`,
+
+  bonusTexto1N1: `<strong>Muralha de Ferro</strong> — +2 de <strong>armadura</strong> com escudo. Libera a passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p11">Sonambulismo</a></strong>, permitindo bloquear até dormindo e reduzindo o dano pela metade.`,
+  bonusTexto1N3: `<strong>Postura Inabalável</strong> — Resistência a dano <strong>esmagante</strong> e cortante enquanto em defesa.`,
+  bonusTexto1N5: `<strong>Aura de Proteção</strong> — Libera a magia <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m125">Aura de Proteção</a></strong>, utilizável sem custo 1x por dia.`,
+  bonusTexto1N9: `<strong>Barreira Crescente</strong> — Acumula +1 de <strong>armadura</strong> a cada turno bloqueando (máximo +3).`,
+  bonusTexto1N13: `<strong>Escudo Resiliente</strong> — Pode anular o dano de 1 ataque por combate.`,
+  bonusTexto1N16: `<strong>Defesa Elemental</strong> — Resistência contra dano de <strong>Fé</strong>, <strong>Desconhecido</strong>, <strong>Poder</strong> ou <strong>Caos</strong> (6 de especial).`,
+  bonusTexto1N20: `<strong>Fortaleza Imóvel</strong> — Reduz pela metade o dano de todos os ataques recebidos no turno (8 de especial).`,
+  bonusTexto1N22: `<strong>Bônus de Persistência</strong> — Após 2 turnos consecutivos bloqueando, recebe +2 em testes contra ataque.`,
+  bonusTexto1N25: `<strong>Sentinela Inquebrável</strong> — Imune a 1 ataque por combate e reflete metade do dano ao inimigo.`,
+
+  // ===============================
+  // 👐 GUARDIÃO DOS FRACOS
+  // ===============================
+  bonustitulo_2: `<p>👐 <strong>Guardião dos Fracos</strong></p>`,
+
+  bonusTexto2N1: `<strong>Proteção Aliada</strong> — Redireciona até 1d8 de dano de um aliado. Libera passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p16">Inveja</a></strong>: ao ver aliados sofrerem dano, ganha +2 de especial por turno.`,
+  bonusTexto2N3: `<strong>Escudo Coletivo</strong> — +1 de <strong>armadura</strong> por aliado próximo (máximo +4).`,
+  bonusTexto2N5: `<strong>Aura de Retaliação</strong> — Libera <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m131">Aura de Retaliação</a></strong>, conjurável 1x a cada 2 dias por 8 de especial (ou custo normal via sanidade).`,
+  bonusTexto2N9: `<strong>Presença Inspiradora</strong> — Aliados a 5m ganham +2 em esquiva enquanto você estiver vivo.`,
+  bonusTexto2N13: `<strong>Barreira Protetora</strong> — Cria barreira que anula até 2d8 de dano em aliados (5 de especial).`,
+  bonusTexto2N16: `<strong>Guarda Impecável</strong> — Bloqueia ataques a aliados sem penalidade (1x por combate).`,
+  bonusTexto2N20: `<strong>Escudo Vingador</strong> — Bloqueia ataque a aliado e devolve 2d12 de dano (10 de especial).`,
+  bonusTexto2N22: `<strong>Vínculo de Proteção</strong> — Aliado recebe metade da sua <strong>armadura</strong> como bônus por 1 turno (8 de especial, ação livre na reação).`,
+  bonusTexto2N25: `<strong>Defensor Supremo</strong> — Protege todos os aliados em raio de 10m por 1 turno completo (1x por combate).`,
+
+  // ===============================
+  // ⚔️ COMBATENTE DO ESCUDO
+  // ===============================
+  bonustitulo_3: `<p>⚔️ <strong>Combatente do Escudo</strong></p>`,
+
+  bonusTexto3N1: `<strong>Golpe com Escudo</strong> — +1d6 de <strong>dano esmagante</strong>. Libera passiva <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p30">Escudo Elemental</a></strong>, causando 1d6 de dano elemental aleatório em ataques com escudo.`,
+  bonusTexto3N3: `<strong>Impacto Devastador</strong> — +2 de <strong>dano</strong> com escudo em combate corpo a corpo.`,
+  bonusTexto3N5: `<strong>Marcas das Cinzas</strong> — Enfraquece inimigo, reduzindo <strong>armadura</strong> em -2 por 2 turnos (8 de especial).`,
+  bonusTexto3N9: `<strong>Força do Escudo</strong> — +2 em testes de <strong>Brutalidade</strong> ao usar escudo como arma principal.`,
+  bonusTexto3N13: `<strong>Carga do Colosso</strong> — Investida com escudo causa 2d8 e empurra 3m (6 de especial).`,
+  bonusTexto3N16: `<strong>Defesa Ofensiva</strong> — +1 de <strong>armadura</strong> enquanto ataca com o escudo.`,
+  bonusTexto3N20: `<strong>Impacto Elemental</strong> — Causa +3d12 de <strong>dano elemental</strong> com o poder do escudo (10 de especial).`,
+  bonusTexto3N22: `<strong>Pressão Incessante</strong> — Ganha 1 ataque adicional por turno ao usar o escudo como arma principal.`,
+  bonusTexto3N25: `<strong>Campeão do Escudo</strong> — “Investida Final”: série de ataques com escudo causa 4d10 de dano e aplica condição <strong>Confuso</strong> por 1 turno (15 de especial, 1x por combate).
+  <details>
+  <summary><strong>Condição — Confuso</strong></summary>
+
+  <p style="margin: 0 0 8px 0;">O personagem está desorientado, incapaz de focar em suas ações.</p>
+  <p style="margin: 0 0 4px 0;"><strong>Efeito:</strong> Ao realizar uma ação, o personagem deve rolar 1d4:</p>
+  <p style="margin: 0 0 2px 16px;">1: Tenta atacar um aliado.</p>
+  <p style="margin: 0 0 2px 16px;">2: Perde a ação por completo.</p>
+  <p style="margin: 0 0 2px 16px;">3: Erra qualquer ação de precisão.</p>
+  <p style="margin: 0 0 2px 16px;">4: Age normalmente.</p>
+</details>
+`
+},
+"Especialista": { 
+  "vidaPorNivel": 8,
+  "sanidadePorNivel": 0,
+  "armaduraPorNivel": 1,
+  "resistencia": "Fogo",
+  "movimento_pass": 4.5,
+
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> Tem <strong>Vantagem</strong> com <strong>Passivas</strong>.</p>
+  <p>🧠 <strong>Especialista em Passivas</strong><br>“Para escolher quais as passivas, deve sempre falar com o mestre.”</p>
+  `,
+
+  //- =============================== -->
+  // 🧩 MESTRE DAS PASSIVAS -->
+  // =============================== -->
+  bonustitulo_1: `<p>🧩 <strong>Mestre das Passivas</strong></p>`,
+
+  bonusTexto1N1: `<strong>Passiva Inicial</strong> — Ganha uma passiva aleatória relacionada ao estilo de combate. Além disso, +1 em todos os testes de <strong>Resistência</strong>.`,
+  bonusTexto1N3: `<strong>Passiva Desbloqueada 1</strong> — Desbloqueia uma passiva adicional. A cada dois turnos, ganha +1 de <strong>Armadura Temporária</strong>.`,
+  bonusTexto1N5: `<strong>Passiva Desbloqueada 2</strong> — Ganha mais uma passiva. Além disso, ganha uma <strong>Ação Extra de Movimento</strong> por combate.`,
+  bonusTexto1N9: `<strong>Passiva Desbloqueada 3 e 4</strong> — Ganha duas passivas adicionais. Além disso, +2 em <strong>Resistência</strong> contra <strong>Dano Mental</strong>.`,
+  bonusTexto1N13: `<strong>Passiva Desbloqueada 5</strong> — Ganha uma passiva focada em <strong>Resistência</strong> ou <strong>Evasão</strong>. Além disso, +1 turno de duração em todas as passivas que afetam <strong>Armadura</strong>.`,
+  bonusTexto1N16: `<strong>Passiva Desbloqueada 6 e 7</strong> — Ganha duas novas passivas, incluindo uma de <strong>Cura</strong> ou <strong>Regeneração</strong>. Pode usar uma <strong>Ação Extra de Ataque</strong> uma vez por combate.`,
+  bonusTexto1N20: `<strong>Passiva Desbloqueada 8 e 9</strong> — Ganha duas passivas adicionais. Todas as passivas que aumentam <strong>Armadura Temporária</strong> têm seu efeito aumentado em <strong>1d4</strong>.`,
+  bonusTexto1N22: `<strong>Passiva Desbloqueada 10 e 11</strong> — Duas passivas com foco em <strong>Poder Ofensivo</strong> e <strong>Armadura</strong>. Ganha +1d6 de dano em todas as ações de dano.`,
+  bonusTexto1N25: `<strong>Passiva Desbloqueada 12</strong> — Desbloqueia a última passiva. Ganha uma <strong>Ação Bônus Única</strong> por combate para ativar qualquer passiva sem custo.`,
+
+  //<!-- =============================== -->
+  // 🌪️ ESPECIALISTA DO CAOS -->
+  //<!-- =============================== -->
+  bonustitulo_2: `<p>🌪️ <strong>Especialista do Caos</strong></p>`,
+
+  bonusTexto2N1: `<strong>+2 em Testes de Preservação</strong> — Aumenta a resistência ao <strong>Caos</strong>.`,
+  bonusTexto2N3: `<strong>+1d8 de dano</strong> em magias de <a href="javascript:TC && TC.open && TC.open()">Caos</a> de nível 1 e 2 — Libera uma magia de <strong>Caos</strong> de nível 1 ou 2.`,
+  bonusTexto2N5: `Ganha uma magia de <strong>Ordem do Caos</strong> (nível 1 a 3) ou escolha uma magia do elemento <a href="javascript:TC && TC.open && TC.open()">Caos</a> para aprender.`,
+  bonusTexto2N9: `Pode usar magias de <strong><a href="javascript:TC && TC.open && TC.open()">Caos</a></strong> de níveis 1–3 sem consumir sanidade uma vez por dia.`,
+  bonusTexto2N13: `<strong>+1 em Testes de Preservação</strong> ao usar magias de <a href="javascript:TC && TC.open && TC.open()">Caos</a>. Ganha +1 de <strong>Armadura Temporária</strong> contra <strong>Dano Mental</strong> e <strong>Psicológico</strong> ao conjurar.`,
+  bonusTexto2N16: `Ganha uma magia de <strong>Ordem do Caos</strong> (nível 3–4) ou escolha uma magia do elemento <a href="javascript:TC && TC.open && TC.open()">Caos</a> para aprender.`,
+  bonusTexto2N20: `<strong>Magia Avançada de Caos</strong> — Aprende uma magia de nível 5 ou 6 de <a href="javascript:TC && TC.open && TC.open()">Caos</a> e pode conjurá-la 1x/dia sem custo de sanidade.`,
+  bonusTexto2N22: `<strong>Custo Mínimo</strong> — Reduz o custo de uma magia de <a href="javascript:TC && TC.open && TC.open()">Caos</a> por dia para apenas 1 ponto de sanidade.`,
+  bonusTexto2N25: `<strong>Mestre Elemental do Caos</strong> — Ganha uma magia de nível 6 de <a href="javascript:TC && TC.open && TC.open()">Caos</a> e pode conjurá-la 1x/dia sem custo.`,
+
+  //<!-- =============================== -->
+  //<!-- ⚙️ MESTRE DOS EQUIPAMENTOS -->
+  //<!-- =============================== -->
+  bonustitulo_3: `<p>⚙️ <strong>Mestre dos Equipamentos</strong></p>`,
+
+  bonusTexto3N1: `<strong>Talento de Armas – Espadas</strong> — Desbloqueia o uso de <strong>Espadas</strong> e <strong>Adagas</strong>. +2 de dano com ataques corpo a corpo usando essas armas.`,
+  bonusTexto3N3: `<strong>Talento de Armas – Machados e Martelos</strong> — Desbloqueia o uso dessas armas e ganha +1 de dano extra com elas.`,
+  bonusTexto3N5: `<strong>Talento de Armas – Lanças e Hastes</strong> — +1 de alcance e +1 de dano com <strong>Lanças</strong> e <strong>Alabardas</strong>.`,
+  bonusTexto3N9: `<strong>Talento de Armas – Arcos e Bestas</strong> — Pode realizar ataques à distância com +1d4 de dano adicional.`,
+  bonusTexto3N13: `<strong>Talento de Armas – Katanas</strong> — Desbloqueia o uso de <strong>Katanas</strong> e <strong>Nagamakis</strong>. +2 de dano e 1 ataque adicional por turno.`,
+  bonusTexto3N16: `<strong>Talento de Armas – Fundas e Estilingues</strong> — Ganha a capacidade de atingir alvos distantes com +1d6 de dano.`,
+  bonusTexto3N20: `<strong>Talento de Armas – Armas Exóticas</strong> — Pode usar <strong>Nunchakus</strong> e <strong>Shurikens</strong>. +2 de dano e bônus em <strong>Acrobacia</strong>.`,
+  bonusTexto3N22: `<strong>Talento de Armas – Armas de Cerco</strong> — Usa <strong>Catapultas</strong> e <strong>Balistas</strong>. Ganha bônus em dano de área (custo: 4 especial).`,
+  bonusTexto3N25: `<strong>Talento de Armas – Escudos</strong> — Desbloqueia o uso de <strong>Escudos</strong> e ganha +1 de <strong>Armadura</strong>. Pode atacar com escudo (custo: 2 especial).`
+}
+,
     "Espectro": { 
-      "vidaPorNivel": 5,
-      "sanidadePorNivel": 3,
-      "armaduraPorNivel": 1,
-      "resistencia": "Laser",
-     "bonusPass": `
-<p><strong>Nível 0:</strong> +1d12 em danos de Plasma, a magia <strong>Orbe Negro</strong> atinge inimigos em até 5m do alvo principal e o personagem pode voar.</p>
-`,
-"bonustitulo_1": `<p>👻<strong>Assombração Relâmpago</strong></p>`,
-"bonusTexto_1": `
-<p><strong>Passiva Exclusiva:</strong> <strong>Teleporte Repentino</strong> – Pode se teleportar 1x por combate sem custo.</p>
-<p><strong>Nível 1:</strong> Desaparecimento Sombrio – Após teleporte, +2 em esquiva até o próximo turno.</p>
-<p><strong>Nível 3:</strong> Surto Espectral – Ao mover mais de 6m, +1d6 de dano <strong>Laser</strong> no próximo ataque.</p>
-<p><strong>Nível 5:</strong> Escapar da Realidade – Teleporta-se para evitar totalmente um ataque (4 de especial).</p>
-<p><strong>Nível 9:</strong> Passo da Fenda – O primeiro teleporte do combate não consome ação.</p>
-<p><strong>Nível 13:</strong> Reflexos Sombrios – Ao esquivar de um ataque, teleporta até 2m (gratuito).</p>
-<p><strong>Nível 16:</strong> Evasão Instantânea – Evita ataques em área com teleporte (6 de especial).</p>
-<p><strong>Nível 20:</strong> Golpe Relâmpago – Pode atacar ao final de um teleporte (1x por turno).</p>
-<p><strong>Nível 22:</strong> Sombra Imparável – Teleporte livre para lugar visto nos últimos 2 turnos (8 de especial).</p>
-<p><strong>Nível 25:</strong> Devorador do Espaço – Após teleporte, o próximo ataque recebe +2d12 de dano <strong>Laser</strong>.</p>
-`,
-"bonustitulo_2": `<p>🌌<strong>Espírito Desvinculado</strong></p>`,
-"bonusTexto_2": `
-<p><strong>Passiva Exclusiva:</strong> <strong>Separar a Alma</strong> – Pode agir separado do corpo, imune a estados negativos por 1 turno (1x por combate sem custo).</p>
-<p><strong>Nível 1:</strong> Presença Etérea – +2 em Libertação enquanto “Separar a Alma” estiver ativa.</p>
-<p><strong>Nível 3:</strong> Essência Restauradora – Regenera 1d6 de sanidade no fim do turno em forma espiritual.</p>
-<p><strong>Nível 5:</strong> Toque do Além – +1d8 de dano <strong>Plasma</strong> em corpo a corpo durante forma espiritual.</p>
-<p><strong>Nível 9:</strong> Véu do Espectro – Fica intangível por 1 turno (6 de especial).</p>
-<p><strong>Nível 13:</strong> Chamado do Vazio – Ao atingir inimigo em forma espiritual, ganha +2 de especial.</p>
-<p><strong>Nível 16:</strong> Dualidade Sombria – Troca entre corpo e alma 1x por turno sem custo de ação.</p>
-<p><strong>Nível 20:</strong> Distorção da Alma – Entra e sai da forma espiritual após ataque (8 de especial).</p>
-<p><strong>Nível 22:</strong> Ressurgência Fantasma – Recupera +6 de sanidade ao atingir inimigo na forma espiritual.</p>
-<p><strong>Nível 25:</strong> Manifestação Completa – Ao retornar ao corpo, libera explosão de 3d12 de dano <strong>Plasma</strong> em 5m.</p>
-`,
-"bonustitulo_3": `<p>🔮<strong>Feixe Espectral</strong></p>`,
-"bonusTexto_3": `
-<p><strong>Passiva Exclusiva:</strong> <strong>Sinergia de Plasma</strong> – Magias de <strong>Plasma</strong> ganham +1d6 de dano extra (2 de especial).</p>
-<p><strong>Nível 1:</strong> Carga Instável – Ganha uma magia de nível 1 do tipo <strong>Plasma</strong>.</p>
-<p><strong>Nível 3:</strong> Emissão Energética – Ao lançar magia de <strong>Plasma</strong>, causa +1d4 de dano extra.</p>
-<p><strong>Nível 5:</strong> Rajada Crescente – Ganha uma magia de nível 2 do tipo <strong>Plasma</strong>.</p>
-<p><strong>Nível 9:</strong> Sobrecarga Conectada – Ao acertar com magia de <strong>Plasma</strong>, ganha +1 de especial.</p>
-<p><strong>Nível 13:</strong> Explosão Radiante – Ganha uma magia de nível 3 do tipo <strong>Plasma</strong>.</p>
-<p><strong>Nível 16:</strong> Liberação Instável – Adiciona +1d10 de dano em magia de <strong>Plasma</strong> (5 de especial).</p>
-<p><strong>Nível 20:</strong> Descarga Destrutiva – Ganha uma magia de nível 4 do tipo <strong>Plasma</strong>.</p>
-<p><strong>Nível 22:</strong> Pulso Volátil – Ao conjurar magia de <strong>Plasma</strong>, realiza ataque adicional com -2 de dano e ganha magia de nível 5.</p>
-<p><strong>Nível 25:</strong> Estouro Final – Ganha uma magia de nível 6 de <strong>Plasma</strong> e pode conjurá-la sem custo de sanidade 1x por combate.</p>
-`,
+  "vidaPorNivel": 5,
+  "sanidadePorNivel": 3,
+  "armaduraPorNivel": 1,
+  "resistencia": "Laser",
+  "movimento_pass": 4.5,
 
-      "movimento_pass": 4.5
-    },
+  "bonusPass": `
+  <p><strong>Nível 0:</strong> +1d12 em danos de <strong>Plasma</strong>, a magia <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m110">Orbe Negro</a></strong> atinge inimigos em até 5m do alvo principal e o personagem pode voar.</p>
+  `,
+
+  // =============================== -->
+  // 👻 ASSOMBRAÇÃO RELÂMPAGO -->
+  // =============================== -->
+  bonustitulo_1: `<p>👻 <strong>Assombração Relâmpago</strong></p>`,
+
+  bonusTexto1N1: `<strong>Passiva Exclusiva:</strong> <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23">Teleporte Repentino</a></strong> — Pode se teleportar 1x por combate sem custo.`,
+  bonusTexto1N3: `<strong>Desaparecimento Sombrio</strong> — Após teleporte, +2 em esquiva até o próximo turno.`,
+  bonusTexto1N5: `<strong>Surto Espectral</strong> — Ao mover mais de 6m, +1d6 de dano <strong>Laser</strong> no próximo ataque.`,
+  bonusTexto1N9: `<strong>Escapar da Realidade</strong> — Teleporta-se para evitar totalmente um ataque (4 de especial).`,
+  bonusTexto1N13: `<strong>Passo da Fenda</strong> — O primeiro teleporte do combate não consome ação.`,
+  bonusTexto1N16: `<strong>Reflexos Sombrios</strong> — Ao esquivar de um ataque, teleporta até 2m (gratuito).`,
+  bonusTexto1N20: `<strong>Evasão Instantânea</strong> — Evita ataques em área com teleporte (6 de especial).`,
+  bonusTexto1N22: `<strong>Golpe Relâmpago</strong> — Pode atacar ao final de um teleporte (1x por turno).`,
+  bonusTexto1N25: `<strong>Sombra Imparável</strong> — Teleporte livre para lugar visto nos últimos 2 turnos (8 de especial).<br><strong>Devorador do Espaço</strong> — Após teleporte, o próximo ataque recebe +2d12 de dano <strong>Laser</strong>.`,
+
+  // =============================== -->
+  // 🌌 ESPÍRITO DESVINCULADO -->
+  // =============================== -->
+  bonustitulo_2: `<p>🌌 <strong>Espírito Desvinculado</strong></p>`,
+
+  bonusTexto2N1: `<strong>Passiva Exclusiva:</strong> <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p22">Separar a Alma</a></strong> — Pode agir separado do corpo, imune a estados negativos por 1 turno (1x por combate sem custo).`,
+  bonusTexto2N3: `<strong>Presença Etérea</strong> — +2 em Libertação enquanto “Separar a Alma” estiver ativa.`,
+  bonusTexto2N5: `<strong>Essência Restauradora</strong> — Regenera 1d6 de sanidade no fim do turno em forma espiritual.`,
+  bonusTexto2N9: `<strong>Toque do Além</strong> — +1d8 de dano <strong>Plasma</strong> em corpo a corpo durante forma espiritual.`,
+  bonusTexto2N13: `<strong>Véu do Espectro</strong> — Fica intangível por 1 turno (6 de especial).`,
+  bonusTexto2N16: `<strong>Chamado do Vazio</strong> — Ao atingir inimigo em forma espiritual, ganha +2 de especial.`,
+  bonusTexto2N20: `<strong>Dualidade Sombria</strong> — Troca entre corpo e alma 1x por turno sem custo de ação.`,
+  bonusTexto2N22: `<strong>Distorção da Alma</strong> — Entra e sai da forma espiritual após ataque (8 de especial).`,
+  bonusTexto2N25: `<strong>Ressurgência Fantasma</strong> — Recupera +6 de sanidade ao atingir inimigo na forma espiritual.<br><strong>Manifestação Completa</strong> — Ao retornar ao corpo, libera explosão de 3d12 de dano <strong>Plasma</strong> em 5m.`,
+
+  // =============================== -->
+  // 🔮 FEIXE ESPECTRAL -->
+  // =============================== -->
+  bonustitulo_3: `<p>🔮 <strong>Feixe Espectral</strong></p>`,
+
+  bonusTexto3N1: `<strong>Passiva Exclusiva:</strong> <strong>Sinergia de Plasma</strong> — Magias de <strong><a href="javascript:TC && TC.open && TC.open()">Plasma</a></strong> ganham +1d6 de dano extra (2 de especial).`,
+  bonusTexto3N3: `<strong>Carga Instável</strong> — Ganha uma magia de nível 1 do tipo <strong><a href="javascript:TC && TC.open && TC.open()">Plasma</a></strong>.`,
+  bonusTexto3N5: `<strong>Emissão Energética</strong> — Ao lançar magia de <strong>Plasma</strong>, causa +1d4 de dano extra.`,
+  bonusTexto3N9: `<strong>Rajada Crescente</strong> — Ganha uma magia de nível 2 do tipo <strong><a href="javascript:TC && TC.open && TC.open()">Plasma</a></strong>.`,
+  bonusTexto3N13: `<strong>Sobrecarga Conectada</strong> — Ao acertar com magia de <strong>Plasma</strong>, ganha +1 de especial.`,
+  bonusTexto3N16: `<strong>Explosão Radiante</strong> — Ganha uma magia de nível 3 do tipo <strong><a href="javascript:TC && TC.open && TC.open()">Plasma</a></strong>.`,
+  bonusTexto3N20: `<strong>Liberação Instável</strong> — Adiciona +1d10 de dano em magia de <strong>Plasma</strong> (5 de especial).`,
+  bonusTexto3N22: `<strong>Descarga Destrutiva</strong> — Ganha uma magia de nível 4 do tipo <strong><a href="javascript:TC && TC.open && TC.open()">Plasma</a></strong>.`,
+  bonusTexto3N25: `<strong>Pulso Volátil</strong> — Ao conjurar magia de <strong>Plasma</strong>, realiza ataque adicional com -2 de dano e ganha magia de nível 5.<br><strong>Estouro Final</strong> — Ganha uma magia de nível 6 de <strong>Plasma</strong> e pode conjurá-la sem custo de sanidade 1x por combate.`
+}
+,
     "Espiritualista": { 
       "vidaPorNivel": 5,
       "sanidadePorNivel": 3,
@@ -1942,18 +2125,15 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
 
 
 
-
-
-
-
-
-
+let nivelPersonagemSelecionado = null;
+let nivelHabilidadeEscolhida = null;
 
 function carregarEspecializacoes(pastData) {
   const container = document.getElementById("especializacoesContainer");
   container.innerHTML = '';
 
   for (const [nomePassado, dados] of Object.entries(pastData)) {
+
     const bloco = document.createElement('div');
     bloco.className = 'passado-bloco';
 
@@ -1962,43 +2142,92 @@ function carregarEspecializacoes(pastData) {
     titulo.textContent = nomePassado;
     bloco.appendChild(titulo);
 
-    for (let i = 1; i <= 3; i++) {
-      const tituloKey = `bonustitulo_${i}`;
-      const textoKey = `bonusTexto_${i}`;
-      const id = nomePassado.replace(/\s+/g, "_") + i; // evita espaço em id
+    for (let esp = 1; esp <= 3; esp++) {
+      const tituloKey = `bonustitulo_${esp}`;
+      if (!dados[tituloKey]) continue;
 
-      const sub = document.createElement('div');
-      sub.className = 'bonus-subsection';
+      const h4 = document.createElement('div');
+      h4.className = 'especializacao-opcao';
+      h4.innerHTML = dados[tituloKey];
+      h4.onclick = () => selecionarEspecializacaoNova(nomePassado, esp);
 
-      const h4 = document.createElement('h4');
-      h4.innerHTML = dados[tituloKey] || `Especialização ${i}`;
-      h4.id = `esp_tituloBonus${id}`;
-      h4.setAttribute('onclick', `alternarTextoBonusPopup('${id}')`);
-
-      const textoDiv = document.createElement('div');
-      textoDiv.className = 'bonus-texto';
-      textoDiv.id = `esp_textoBonus${id}`;
-      textoDiv.style.display = 'none';
-      textoDiv.innerHTML = formatBonusText(dados[textoKey] || '', 'bonus' + i);
-
-      sub.appendChild(h4);
-      sub.appendChild(textoDiv);
-      bloco.appendChild(sub);
+      bloco.appendChild(h4);
     }
 
     container.appendChild(bloco);
   }
 }
+function selecionarEspecializacaoNova(passado, num) {
+  const dados = pastData[passado];
+  const titulo = dados[`bonustitulo_${num}`];
 
-let podeAbrirPopup = false;
+  const nivel = Number(nivelEscolhidoPopup);
+  const escolhaNivel = Number(escolhaEscolhidaPopup);
 
-function abrirPopupEspecializacoes() {
-  if (!podeAbrirPopup) {
-    console.warn("🔒 Tentativa de abrir popup bloqueada.");
+  // ✅ Garante que os níveis existam
+  if (!nivel || !escolhaNivel) {
+    console.warn("Nível inválido ao salvar especialização:", { nivel, escolhaNivel });
     return;
   }
 
-  console.log("✅ Popup aberto corretamente via botão.");
+  // ✅ Salva corretamente a especialização associada a este nível
+  chosenBonuses[`especializacaoNivel${nivel}`] = { passado, num, titulo, escolhaNivel };
+  console.log(`Especialização salva no nível ${nivel}:`, chosenBonuses);
+
+  // === Atualiza visual ===
+  const destino = document.getElementById(`resultadoEspecializacaoNivel${nivel}`);
+  const descricaoOriginal = document.querySelector(`#nivel${nivel}Texto .descricao-nivel${nivel}`);
+  if (!destino || !descricaoOriginal) return;
+
+  descricaoOriginal.style.display = "none";
+  destino.style.display = "block";
+
+  const niveisRef = [1, 3, 5, 9, 13, 16, 20, 22, 25];
+  const nivelMaisProximo = [...niveisRef].reverse().find(n => n <= escolhaNivel);
+
+  let textoFinal = `
+    <div class="resultado-especializacao">
+      <p class="nivel-label"><strong>Nível ${nivel}:</strong></p>
+      <div class="resultado-conteudo">
+        <h3 class="resultado-titulo">${titulo}</h3>
+        <hr class="resultado-divisor">
+  `;
+
+  if (nivelMaisProximo) {
+    const key = `bonusTexto${num}N${nivelMaisProximo}`;
+    textoFinal += `<p><strong>Habilidade de Nível ${nivelMaisProximo}:</strong> ${dados[key] || '(sem bônus)'}</p>`;
+  } else {
+    textoFinal += `<p>Sem bônus disponível neste nível.</p>`;
+  }
+
+  textoFinal += `</div></div>`;
+  destino.innerHTML = textoFinal;
+
+  fecharPopupEspecializacoes();
+}
+
+
+// ==============================
+// EVENTOS DE INTERFACE
+// ==============================
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById("popupOverlay").addEventListener("click", (event) => {
+    const popup = document.getElementById("popupEspecializacoes");
+    if (!popup.contains(event.target)) fecharPopupEspecializacoes();
+  });
+
+  document.querySelectorAll(".botao-abrir-especializacoes").forEach(botao => {
+  botao.addEventListener("click", (e) => {
+    const btn = e.currentTarget;
+    nivelEscolhidoPopup = parseInt(btn.dataset.nivelPersonagem, 10);
+    escolhaEscolhidaPopup = parseInt(btn.dataset.escolhaNivel, 10);
+    abrirPopupEspecializacoes();
+  });
+});
+
+});
+
+function abrirPopupEspecializacoes() {
   document.getElementById("popupOverlay").style.display = "block";
   document.getElementById("popupEspecializacoes").style.display = "block";
   carregarEspecializacoes(pastData);
@@ -2008,58 +2237,6 @@ function fecharPopupEspecializacoes() {
   document.getElementById("popupOverlay").style.display = "none";
   document.getElementById("popupEspecializacoes").style.display = "none";
 }
-
-function abrirSecaoBonusPassado() {
-  const el = document.getElementById("textoBonus4");
-  if (el) {
-    el.style.display = "block";
-  } else {
-    console.warn("Elemento #textoBonus4 não encontrado ao tentar abrir bônus.");
-  }
-}
-
-function alternarTextoBonus(id) {
-  const el = document.getElementById("textoBonus" + id);
-  if (el) {
-    el.style.display = el.style.display === "none" ? "block" : "none";
-  }
-}
-
-function alternarTextoBonusPopup(id) {
-  const el = document.getElementById("esp_textoBonus" + id);
-  if (el) {
-    el.style.display = el.style.display === "none" ? "block" : "none";
-  }
-}
-
-// Tudo dentro do DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-  // Fecha popup se clicar fora
-  document.getElementById("popupOverlay").addEventListener("click", (event) => {
-    const popup = document.getElementById("popupEspecializacoes");
-    if (!popup.contains(event.target)) {
-      fecharPopupEspecializacoes();
-    }
-  });
-
-  // Aqui! pega TODOS os botões com a classe e adiciona evento de clique
-  const botoes = document.querySelectorAll(".botao-abrir-especializacoes");
-  botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-      podeAbrirPopup = true;
-      abrirPopupEspecializacoes();
-      podeAbrirPopup = false;
-    });
-  });
-});
-
-
-
-
-
-
-
-
 
 
 
@@ -5018,10 +5195,130 @@ closeNotesButton.addEventListener('click', () => {
   notesOverlay.style.display = 'none';
 });
 
+
+
+
+
+
+// Ativar seleção dos botões de bônus
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("bonus-btn")) {
+    const nivel = event.target.getAttribute("data-nivel");
+    const escolha = event.target.getAttribute("data-escolha");
+
+    escolherBonus(nivel, escolha); // chama sua função ✅
+
+    // Visual de botão selecionado
+    document.querySelectorAll(`.bonus-btn[data-nivel="${nivel}"]`)
+      .forEach(btn => btn.classList.remove("selected-bonus"));
+
+    event.target.classList.add("selected-bonus");
+  }
+});
+
+
+// Event listener for loading character
+// ... (We'll add this back later when we work on loading)
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".especializacao-card")) {
+    const selecionada = e.target.closest(".especializacao-card");
+    const cards = document.querySelectorAll(".especializacao-card");
+
+    cards.forEach(c => c.classList.remove("selecionada"));
+    selecionada.classList.add("selecionada");
+
+    // Aqui você pode chamar sua função existente:
+    const id = selecionada.dataset.especializacao;
+    alternarTextoBonus(id);
+  }
+});
+
+// Event listener for closing the character selection section
+// ... (We'll add this back later when we work on loading)
+function getDadosDoPassado() {
+  const passadoSelecionado = document.getElementById("past")?.value;
+
+  if (!passadoSelecionado || !pastData[passadoSelecionado]) {
+    console.warn("Passado não encontrado ou não selecionado:", passadoSelecionado);
+    return null;
+  }
+
+  return pastData[passadoSelecionado];
+}
+
+function aplicarEspecializacao(id) {
+  const dadosRaciais = getDadosDoPassado();
+  if (!dadosRaciais) return; // impede erro se passado não selecionado
+
+  const prefixo = `bonusTexto${id}`;
+
+  const niveis = {
+    1: `${prefixo}N1`,
+    3: `${prefixo}N3`,
+    5: `${prefixo}N5`,
+    9: `${prefixo}N9`,
+    13: `${prefixo}N13`,
+    16: `${prefixo}N16`,
+    20: `${prefixo}N20`,
+    22: `${prefixo}N22`,
+    25: `${prefixo}N25`
+  };
+
+  Object.entries(niveis).forEach(([nivel, chave]) => {
+    const campo = document.querySelector(`#nivel${nivel} .nivel-texto`);
+    if (campo) campo.innerHTML = dadosRaciais[chave] ?? "(sem bônus definido)";
+  });
+}
+
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".especializacao-card");
+  if (!btn) return;
+
+  const id = btn.dataset.especializacao;
+  document.querySelectorAll(".especializacao-card").forEach(c => c.classList.remove("selecionada"));
+  btn.classList.add("selecionada");
+
+  aplicarEspecializacao(id);
+  alternarTextoBonus(id);
+    // ✅ Salvar no objeto de bônus principal
+  chosenBonuses["especializacaoPrincipal"] = id;
+});
+
+
 // Event listener for form submission (Create Character)
+  let chosenBonuses = {}; // Ex: {1: "armaFavorita", 2: "agilidade", 4: "resistenciaFogo"}
+
+
+
+
+
+
+
+  // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
-// Event listener for form submission (Create Character)
-// Event listener for form submission (Create Character)
+function escolherBonus(nivel, escolha) {
+  chosenBonuses[nivel] = escolha;
+  console.log("Escolhas salvas:", chosenBonuses);
+}
+function aplicarBonusesSalvos() {
+  Object.entries(chosenBonuses).forEach(([nivel, escolha]) => {
+
+    if (nivel == 1 && escolha == "armaFavorita") {
+      // exemplo → +2 dano arma favorita
+      // aqui você aplica seu efeito interno ou atualiza o personagem
+    }
+
+    if (nivel == 1 && escolha == "armadura") {
+      characterData.armor += 2;
+    }
+
+    // etc...
+  });
+
+  updateStats();
+}
+
 // Event listener for form submission (Create Character)
 // Event listener for form submission (Create Character)
 document.addEventListener('DOMContentLoaded', () => {
@@ -5081,7 +5378,11 @@ document.addEventListener('DOMContentLoaded', () => {
       life: 100, sanity: 100, special: 0, armor: 0, movement: 0,   level: parseInt(document.getElementById('level-view').textContent, 10) || 1, // ✅ pega valor atual
 
       equippedItemId: equippedItemId,
-      notes: currentNotes // 🧾 <--- adiciona o texto do bloco de notas
+      notes: currentNotes, // 🧾 <--- adiciona o texto do bloco de notas
+      chosenBonuses: chosenBonuses // ✅ <<<<< AQUI
+
+
+
 
     }));
 
@@ -5194,10 +5495,81 @@ if (saveAlert) {
   equippedItemId = characterData.equippedItemId || null;
 
   // ============================
-  // CARREGA BLOCO DE NOTAS 🧾
-  // ============================
-  currentNotes = characterData.notes || "";
-  notesTextarea.value = currentNotes; // garante que aparece na tela quando abrir o bloco
+// CARREGA BLOCO DE NOTAS 🧾
+// ============================
+currentNotes = characterData.notes || "";
+notesTextarea.value = currentNotes;
+chosenBonuses = characterData.chosenBonuses || {};
+console.log("Bônus por nível carregados:", chosenBonuses);
+
+// ✅ Recarrega escolhas de especializações adicionais por nível
+const niveisComEspecializacaoExtra = [7, 8, 11, 15, 17, 19, 21, 23, 27, 28, 29];
+
+niveisComEspecializacaoExtra.forEach(nivel => {
+  const saved = chosenBonuses[`especializacaoNivel${nivel}`];
+  if (!saved) return;
+
+  const { passado, num, titulo } = saved;
+  const dados = pastData[passado];
+  if (!dados) return;
+
+  const destino = document.getElementById(`resultadoEspecializacaoNivel${nivel}`);
+  const descricaoOriginal = document.querySelector(`#nivel${nivel}Texto .descricao-nivel${nivel}`);
+  if (!destino || !descricaoOriginal) return;
+
+  // Oculta o texto padrão e exibe o resultado salvo
+  descricaoOriginal.style.display = "none";
+  destino.style.display = "block";
+
+  // === EXIBE O BLOCO ALINHADO ===
+  let textoFinal = `
+    <div class="resultado-especializacao">
+      <p class="nivel-label"><strong>Nível ${nivel}:</strong></p>
+      <div class="resultado-conteudo">
+        <h3 class="resultado-titulo">${titulo}</h3>
+        <hr class="resultado-divisor">
+  `;
+
+  // Lista dos marcos de nível
+  const niveis = [1, 3, 5, 9, 13, 16, 20, 22, 25];
+
+  // Acha o nível mais próximo (igual ou menor)
+const nivelMaisProximo = [...niveis].reverse().find(n => n <= saved.escolhaNivel);
+
+  if (nivelMaisProximo) {
+    const key = `bonusTexto${num}N${nivelMaisProximo}`;
+    if (dados[key]) {
+      textoFinal += `<p><strong>Habilidade de Nível ${nivelMaisProximo}:</strong> ${dados[key]}</p>`;
+    } else {
+      textoFinal += `<p>Sem bônus específico para o nível ${nivelMaisProximo}.</p>`;
+    }
+  } else {
+    textoFinal += `<p>Sem bônus disponível neste nível.</p>`;
+  }
+
+  textoFinal += `
+      </div>
+    </div>
+  `;
+
+  destino.innerHTML = textoFinal;
+});
+
+
+
+  // ✅ Recarrega a especialização principal escolhida
+if (chosenBonuses.especializacaoPrincipal) {
+  const id = chosenBonuses.especializacaoPrincipal;
+
+  const card = document.querySelector(`.especializacao-card[data-especializacao="${id}"]`);
+  if (card) {
+    document.querySelectorAll(".especializacao-card").forEach(c => c.classList.remove("selecionada"));
+    card.classList.add("selecionada");
+  }
+
+  aplicarEspecializacao(id);
+}
+
 
   // ============================
   // ITENS EQUIPADOS
@@ -5226,20 +5598,17 @@ if (saveAlert) {
       `;
     }
   }
-
+// Depois de carregar chosenBonuses:
+Object.entries(chosenBonuses).forEach(([nivel, escolha]) => {
+  const btn = document.querySelector(`.bonus-btn[data-nivel="${nivel}"][data-escolha="${escolha}"]`);
+  if (btn) btn.classList.add("selected-bonus");
+});
   updateStats();
   section.style.display = 'none';
 });
 
 });
 
-
-
-// Event listener for loading character
-// ... (We'll add this back later when we work on loading)
-
-// Event listener for closing the character selection section
-// ... (We'll add this back later when we work on loading)
 
 // Event listener for confirming load
 // ... (We'll add this back later when we work on loading)

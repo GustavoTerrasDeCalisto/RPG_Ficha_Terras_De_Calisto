@@ -3613,6 +3613,44 @@ h3 {
 
 
 
+.bonus-escolhas {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.bonus-escolhas li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.bonus-btn {
+  background: linear-gradient(135deg, #2b2f3a, #3e4554);
+  border: 1px solid #6a6f7f;
+  color: #e9ecf1;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.bonus-btn:hover {
+  border-color: #c8a95f;
+  box-shadow: 0 0 8px #c8a95f75;
+  transform: translateY(-1px);
+}
+
+.selected-bonus {
+  background: linear-gradient(135deg, #6c4f1e, #b3904b);
+  border-color: #e2c67c;
+  box-shadow: 0 0 12px #e2c67caa;
+  color: #fff;
+  transform: scale(1.05);
+}
 
 
 

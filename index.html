@@ -1388,34 +1388,147 @@ Bonus por Níveis Do Personagem  </h3>
   <div class="bonusTexto4 bonus-texto" id="textoBonus4" style="display:none;">
     
 <p class="bonus4-paragraph"><strong>Nível 1:</strong> Escolha sua <strong class="gold-gradient">Especialização principal</strong>. Essa escolha define suas habilidades únicas principais e o caminho que seu personagem seguirá.</p>
- <p class="bonus4-paragraph"> Além disso, escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">+2 de dano com sua <strong>arma favorita</strong> (não pode ser trocada depois)</li>
-      <li class="bonus4-list-item">+2 em <strong>Armadura</strong></li>
-      <li class="bonus4-list-item">Libera uma <strong>Magia</strong> (nível 1)</li>
-    </ul>
-
     <h4>Escolha sua especialização principal</h4>
-<p>Sua especialização principal não pode ser mudada.</p>
-<section>
+<p class="bonus4-paragraph" id="nivel1">
+   <span class="nivel-texto">Sua especialização principal não pode ser mudada.</span>
+</p>
 
-    <div class="bonus-subsection">
-      <h3 class="bonusTexto1 especializacao_titulo1" onclick="alternarTextoBonus(1)" id="tituloBonus1"></h3>
-      <div class="bonusTexto1 bonus-texto" id="textoBonus1" style="display:none;"></div>
-    </div>
 
-    <div class="bonus-subsection">
-      <h3 class="especializacao_titulo2" onclick="alternarTextoBonus(2)" id="tituloBonus2"></h3>
-      <div class="bonusTexto2 bonus-texto" id="textoBonus2" style="display:none;"></div>
-    </div>
+<section class="especializacoes-grid-principal">
 
-    <div class="bonus-subsection">
-      <h3 class="especializacao_titulo3" onclick="alternarTextoBonus(3)" id="tituloBonus3"></h3>
-      <div class="bonusTexto3 bonus-texto" id="textoBonus3" style="display:none;"></div>
-    </div>
+  <button class="especializacao-card" data-especializacao="1">
+    <h3 id="tituloBonus1"></h3>
+  </button>
 
-  
+  <button class="especializacao-card" data-especializacao="2">
+    <h3 id="tituloBonus2"></h3>
+  </button>
+
+  <button class="especializacao-card" data-especializacao="3">
+    <h3 id="tituloBonus3"></h3>
+  </button>
+
 </section>
+
+<!-- Painéis de descrição quando abrir -->
+<div id="textoBonus1" class="bonus-texto" style="display:none;"></div>
+<div id="textoBonus2" class="bonus-texto" style="display:none;"></div>
+<div id="textoBonus3" class="bonus-texto" style="display:none;"></div>
+<style>
+#tituloBonus1,
+#tituloBonus2,
+#tituloBonus3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.especializacoes-grid-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 22px 0;
+}
+.nivel-texto {
+  font-size: 15px;          /* aumenta o tamanho */
+
+}
+
+
+/* Cartões */
+.especializacao-card {
+  background: linear-gradient(145deg, #1e2633, #151b24);
+  border: 2px solid #304158;
+  padding: 14px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left; /* ← fica mais elegante para texto */
+  color: #d8dfe8;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Título dentro */
+.especializacao-card h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Hover */
+.especializacao-card:hover {
+  background: #2a364b;
+  border-color: #8eb6ff;
+  transform: translateY(-2px);
+}
+
+/* Selecionada */
+.especializacao-card.selecionada {
+  border-color: #ffda6b;
+  background: linear-gradient(145deg, #3e2c0f, #261b08);
+  color: #ffecb4;
+  box-shadow: 0 0 12px #ffdb6a77;
+}
+
+/* Opcional: ícone indicador */
+.especializacao-card.selecionada::after {
+  content: "★";
+  color: #ffda6b;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+/* Para o texto interno de instrução */
+.bonus4-paragraph .nivel-texto {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Quando a especialização for selecionada, você pode ativar essa classe via JS */
+.bonus4-paragraph.selecionado {
+  border-left-color: #ffda6b;
+  background: linear-gradient(135deg, #3b2b13, #1e160b);
+  color: #ffe7b6;
+}
+
+/* Pequeno brilho ao passar o mouse (opcional) */
+.bonus4-paragraph:hover {
+  border-left-color: #8eb6ff;
+}
+/* Responsivo */
+@media (max-width: 700px) {
+  .especializacoes-grid-principal {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+</style>
+
+<p class="bonus4-paragraph"> Além disso, escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li>
+    <button class="bonus-btn" data-nivel="1" data-escolha="armaFavorita">
+      Concede +2 de dano fixo com sua arma favorita.
+    </button>
+  </li>
+  <li>
+    <button class="bonus-btn" data-nivel="1" data-escolha="armadura">
+      Aumenta sua Armadura em +2.
+    </button>
+  </li>
+  <li>
+    <button class="bonus-btn" data-nivel="1" data-escolha="magia1">
+Desbloqueia uma magia de nível 1.    </button>
+  </li>
+</ul>
+
+
+
     
 <div id="popupOverlay" class="popup-overlay" style="display: none;"></div>
 
@@ -1428,135 +1541,380 @@ Bonus por Níveis Do Personagem  </h3>
     <!-- Conteúdo JS -->
   </div>
 </div>
+<style>
+.especializacao-opcao {
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  background: #2a3344;
+  border: 1px solid #495b76;
+  cursor: pointer;
+  transition: 0.25s;
+  color: #fff;
+}
 
-    <p class="bonus4-paragraph"><strong>Nível 2:</strong> Escolha um atributo entre <strong>Brutalidade, Agilidade, Determinação, Preservação, Libertação ou Conexão</strong>. Você recebe <strong>+2 em testes</strong> com o atributo escolhido.</p>
-<p class="bonus4-paragraph"><strong>Nível 3:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
+.especializacao-opcao:hover {
+  background: #3a4760;
+  border-color: #8ab8ff;
+  transform: translateY(-2px);
+}
 
-    <p class="bonus4-paragraph"><strong>Nível 4:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">+2 em <strong>Armadura</strong></li>
-      <li class="bonus4-list-item">+2 em <strong>Esquiva</strong></li>
-      <li class="bonus4-list-item"><strong>Resistência</strong> a um tipo de dano</li>
-    </ul>
-<p class="bonus4-paragraph">
-  <strong>Nível 5:</strong>
-  <strong class="gold-gradient">Especialização principal</strong>
+.nivel-texto {
+  display: block;
+  max-width: 100%;
+  font-family: 'Roboto Mono', monospace; /* Robótica e quadrada */
+  font-size: 14px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f0f0f0;
+  border: 1px solid #888;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+
+
+
+</style>
+
+   <p class="bonus4-paragraph"><strong>Nível 2:</strong> Escolha um atributo. Você recebe <strong>+2 em testes</strong> com o atributo escolhido.</p>
+
+<div class="atributos-grid">
+  <button class="bonus-btn" data-nivel="2" data-escolha="Brutalidade">Brutalidade</button>
+  <button class="bonus-btn" data-nivel="2" data-escolha="Agilidade">Agilidade</button>
+  <button class="bonus-btn" data-nivel="2" data-escolha="Determinação">Determinação</button>
+  <button class="bonus-btn" data-nivel="2" data-escolha="Preservação">Preservação</button>
+  <button class="bonus-btn" data-nivel="2" data-escolha="Libertação">Libertação</button>
+  <button class="bonus-btn" data-nivel="2" data-escolha="Conexão">Conexão</button>
+</div>
+
+<!-- NÍVEIS QUE RECEBEM A ESPECIALIZAÇÃO PRINCIPAL -->
+<p class="bonus4-paragraph" id="nivel3">
+  <strong>Nível 3:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p>
+ <!-- NÍVEL 4 -->
+<p class="bonus4-paragraph"><strong>Nível 4:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="4" data-escolha="armadura4">+2 Armadura</button></li>
+  <li><button class="bonus-btn" data-nivel="4" data-escolha="esquiva4">+2 Esquiva</button></li>
+  <li><button class="bonus-btn" data-nivel="4" data-escolha="resistencia4">Resistência a um tipo de dano</button></li>
+</ul>
+<p class="bonus4-paragraph" id="nivel5">
+  <strong>Nível 5:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p>   
+<!-- NÍVEL 6 -->
+<p class="bonus4-paragraph"><strong>Nível 6:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="6" data-escolha="dano6">+1d6 na arma favorita</button></li>
+  <li><button class="bonus-btn" data-nivel="6" data-escolha="passiva6">Ganha uma Passiva (1–3)</button></li>
+  <li><button class="bonus-btn" data-nivel="6" data-escolha="magia6">Libera uma Magia (1–3)</button></li>
+</ul>
+
+
+<!-- Nível 7 -->
+<div id="nivel7Texto">
+  <p class="bonus4-paragraph descricao-nivel7">
+    <strong>Nível 7:</strong> Escolha uma habilidade de nível 1 de
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
+
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel7" style="display:none;"></div>
+
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="7"
+          data-escolha-nivel="1">
+    Ver Todas as Especializações
+  </button>
+</div>
+
+
+<!-- Nível 8 -->
+<div id="nivel8Texto">
+  <p class="bonus4-paragraph descricao-nivel8">
+    <strong>Nível 8:</strong> Escolha uma habilidade de nível 3 de
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
+
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel8" style="display:none;"></div>
+
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="8"
+          data-escolha-nivel="3">
+    Ver Todas as Especializações
+  </button>
+</div>
+<style>
+.resultado-especializacao {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 8px !important;
+  flex-wrap: nowrap !important;
+}
+
+.resultado-especializacao .nivel-label {
+  flex-shrink: 0 !important;
+  min-width: 95px !important;
+  font-weight: bold !important;
+  color: #3f2b7f !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.resultado-conteudo {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.resultado-titulo {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #3f2b7f !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.resultado-divisor {
+  border: 0 !important;
+  border-bottom: 1px solid #aaa !important;
+  margin: 6px 0 10px !important;
+}
+
+
+</style>
+
+
+<p class="bonus4-paragraph" id="nivel9">
+  <strong>Nível 9:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p>   <p class="bonus4-paragraph">
+  <strong>Nível 10:</strong> Escolha sua <strong>Vocação:</strong> Fé, Poder, Desconhecido ou Caos. 
+  Ganha <strong>+2 para resistir a danos</strong> do elemento escolhido.
+</p>
+
+<div class="atributos-grid">
+  <button class="bonus-btn" data-nivel="10" data-escolha="Fé">Fé</button>
+  <button class="bonus-btn" data-nivel="10" data-escolha="Poder">Poder</button>
+  <button class="bonus-btn" data-nivel="10" data-escolha="Desconhecido">Desconhecido</button>
+  <button class="bonus-btn" data-nivel="10" data-escolha="Caos">Caos</button>
+</div>
+<!-- Nível 11 -->
+<div id="nivel11Texto">
+  <p class="bonus4-paragraph descricao-nivel11">
+    <strong>Nível 11:</strong> Escolha uma habilidade de nível 5 de 
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
+
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel11" style="display:none;"></div>
+
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="11"
+          data-escolha-nivel="5">
+    Ver Todas as Especializações
+  </button>
+</div>
+
+
+<p class="bonus4-paragraph"><strong>Nível 12:</strong> Despertar da Raça — Escolha uma das opções:</p>
+
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="12" data-escolha="talentosRaciais">+2 em Testes com Talentos Raciais</button></li>
+  <li><button class="bonus-btn" data-nivel="12" data-escolha="passivasRaciais">+2 em Testes com Passivas Raciais</button></li>
+</ul>
+
+<p id="resultado-nivel12" class="bonus4-resultado"></p>
+<p class="bonus4-paragraph" id="nivel13">
+  <strong>Nível 13:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p><p class="bonus4-paragraph"><strong>Nível 14:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="14" data-escolha="magia14">Libera Magia (2–4)</button></li>
+  <li><button class="bonus-btn" data-nivel="14" data-escolha="defesa14">+2 Armadura / Esquiva / Resistência</button></li>
+  <li><button class="bonus-btn" data-nivel="14" data-escolha="acao14">Ganha +1 Ação por turno</button></li>
+</ul>
+
+<!-- Nível 15 -->
+<!-- Nível 15 --> <div id="nivel15Texto"> <p class="bonus4-paragraph descricao-nivel15"> <strong>Nível 15:</strong> Escolha uma habilidade de nível 9 de outra <span class="prismatic2">especialização</span> (única), de qualquer passado. </p> <!-- Aqui aparece o resultado da escolha --> <div id="resultadoEspecializacaoNivel15" style="display:none;"></div> <button class="botao-abrir-especializacoes prismatic2" data-nivel-personagem="15" data-escolha-nivel="9"> Ver Todas as Especializações </button> </div>
+
+
+<p class="bonus4-paragraph" id="nivel16">
+  <strong>Nível 16:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
 </p>    
-    <p class="bonus4-paragraph"><strong>Nível 6:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">+1d6 de dano com sua <strong>arma favorita</strong> (não pode ser trocada depois)</li>
-      <li class="bonus4-list-item">Ganha uma <strong>Passiva</strong> (nível 1 a 3)</li>
-      <li class="bonus4-list-item">Libera uma <strong>Magia</strong> (nível 1 a 3)</li>
-    </ul>
+<!-- Nível 17 -->
+<div id="nivel17Texto">
+  <p class="bonus4-paragraph descricao-nivel17">
+    <strong>Nível 17:</strong> Escolha uma habilidade de nível 13 de 
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
 
-    <p class="bonus4-paragraph"><strong>Nível 7:</strong> Escolha uma habilidade de nível 1 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel17" style="display:none;"></div>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="17"
+          data-escolha-nivel="13">
+    Ver Todas as Especializações
+  </button>
+</div>
 
-    <p class="bonus4-paragraph"><strong>Nível 8:</strong> Escolha uma habilidade de nível 3 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
-    
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
 
-<p class="bonus4-paragraph"><strong>Nível 9:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
-    <p class="bonus4-paragraph"><strong>Nível 10:</strong> Escolha sua <strong>Vocação:</strong> Fé, Poder, Desconhecido ou Caos. Ganha <strong>2 resistências</strong> a tipos de dano ligados ao elemento escolhido.</p>
+<!-- NÍVEL 18 -->
+<p class="bonus4-paragraph"><strong>Nível 18:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="18" data-escolha="armadura18">+2 Armadura</button></li>
+  <li><button class="bonus-btn" data-nivel="18" data-escolha="esquiva18">+2 Esquiva</button></li>
+  <li><button class="bonus-btn" data-nivel="18" data-escolha="resistencia18">Resistência a um tipo de dano</button></li>
+</ul>
+    <!-- Nível 19 -->
+<div id="nivel19Texto">
+  <p class="bonus4-paragraph descricao-nivel19">
+    <strong>Nível 19:</strong> Escolha uma habilidade de nível 16 de 
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
 
-    <p class="bonus4-paragraph"><strong>Nível 11:</strong> Escolha uma habilidade de nível 5 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel19" style="display:none;"></div>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="19"
+          data-escolha-nivel="16">
+    Ver Todas as Especializações
+  </button>
+</div>
 
-    <p class="bonus4-paragraph"><strong>Nível 12:</strong> <strong>Despertar da Raça.</strong> Recebe +2 em testes com <strong>Talentos ou Passivas raciais</strong>.</p>
-<p class="bonus4-paragraph"><strong>Nível 13:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
-    <p class="bonus4-paragraph"><strong>Nível 14:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">Libera uma <strong>Magia</strong> (nível 2 a 4)</li>
-      <li class="bonus4-list-item">+2 em <strong>Armadura, Esquiva</strong> ou <strong>Resistência</strong> a um tipo de dano</li>
-      <li class="bonus4-list-item">Ganha +1 por turno (<strong>Ataque Extra</strong>, Ação Completa ou Ação de Movimento)</li>
-    </ul>
 
-    <p class="bonus4-paragraph"><strong>Nível 15:</strong> Escolha uma habilidade de nível 9 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
-    
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+<p class="bonus4-paragraph" id="nivel20">
+  <strong>Nível 20:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p>    <!-- Nível 21 -->
+<div id="nivel21Texto">
+  <p class="bonus4-paragraph descricao-nivel21">
+    <strong>Nível 21:</strong> Escolha uma habilidade de nível 
+    <strong>20</strong> de outra 
+    <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
 
-<p class="bonus4-paragraph"><strong>Nível 16:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
-    <p class="bonus4-paragraph"><strong>Nível 17:</strong> Escolha uma habilidade de nível 13 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel21" style="display:none;"></div>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+  <!-- Botão para abrir o popup de especializações -->
+  <button 
+    class="botao-abrir-especializacoes prismatic2"
+    data-nivel-personagem="21"
+    data-escolha-nivel="20">
+    Ver Todas as Especializações
+  </button>
+</div>
 
-    <p class="bonus4-paragraph"><strong>Nível 18:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">+2 em <strong>Armadura</strong></li>
-      <li class="bonus4-list-item">+2 em <strong>Esquiva</strong></li>
-      <li class="bonus4-list-item"><strong>Resistência</strong> a um tipo de dano</li>
-    </ul>
 
-    <p class="bonus4-paragraph"><strong>Nível 19:</strong> Escolha uma habilidade de nível 16 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
-    
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+<p class="bonus4-paragraph" id="nivel22">
+  <strong>Nível 22:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p>    
+<!-- Nível 23 -->
+<div id="nivel23Texto">
+  <p class="bonus4-paragraph descricao-nivel23">
+    <strong>Nível 23:</strong> Escolha uma habilidade de nível 22 de
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
 
-<p class="bonus4-paragraph"><strong>Nível 20:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
-    <p class="bonus4-paragraph"><strong>Nível 21:</strong> Escolha uma habilidade de nível 20 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
-    
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel23" style="display:none;"></div>
 
-<p class="bonus4-paragraph"><strong>Nível 22:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
-    <p class="bonus4-paragraph"><strong>Nível 23:</strong> Escolha uma habilidade de nível 22 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="23"
+          data-escolha-nivel="22">
+    Ver Todas as Especializações
+  </button>
+</div>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
 
-    <p class="bonus4-paragraph"><strong>Nível 24:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">Ganha uma <strong>Passiva</strong> (nível 3 a 7)</li>
-      <li class="bonus4-list-item">+1d6 de dano com sua <strong>arma favorita</strong> (não pode ser trocada depois)</li>
-      <li class="bonus4-list-item"><strong>Resistência</strong> a um novo tipo de dano</li>
-    </ul>
-<p class="bonus4-paragraph"><strong>Nível 25:</strong> <strong class="gold-gradient">Especialização principal</strong></p>
-    <p class="bonus4-paragraph"><strong>Nível 26:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">1 <strong>Ataque Extra</strong> por turno</li>
-      <li class="bonus4-list-item">1 Magia nova (nível 4–5)</li>
-      <li class="bonus4-list-item">+1d12 de dano com <strong>arma favorita</strong></li>
-    </ul>
+<!-- NÍVEL 24 -->
+<p class="bonus4-paragraph"><strong>Nível 24:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="24" data-escolha="passiva24">Ganha Passiva (3–7)</button></li>
+  <li><button class="bonus-btn" data-nivel="24" data-escolha="dano24">+1d6 na arma favorita</button></li>
+  <li><button class="bonus-btn" data-nivel="24" data-escolha="resistencia24">Nova Resistência</button></li>
+</ul>
+<p class="bonus4-paragraph" id="nivel25">
+  <strong>Nível 25:</strong> <span class="nivel-texto">Selecione uma especialização acima</span>
+</p><!-- NÍVEL 26 -->
+<p class="bonus4-paragraph"><strong>Nível 26:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="26" data-escolha="ataque26">+1 Ataque Extra</button></li>
+  <li><button class="bonus-btn" data-nivel="26" data-escolha="magia26">Magia nova (4–5)</button></li>
+  <li><button class="bonus-btn" data-nivel="26" data-escolha="dano26">+1d12 na arma favorita</button></li>
+</ul>
 
-    <p class="bonus4-paragraph"><strong>Nível 27:</strong> Escolha uma habilidade de nível 25 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+    <!-- Nível 27 -->
+<div id="nivel27Texto">
+  <p class="bonus4-paragraph descricao-nivel27">
+    <strong>Nível 27:</strong> Escolha uma habilidade de nível 25 de
+    outra <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel27" style="display:none;"></div>
 
-    <p class="bonus4-paragraph"><strong>Nível 28:</strong> Escolha uma habilidade de nível 1, 3, 5 ou 9 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="27"
+          data-escolha-nivel="25">
+    Ver Todas as Especializações
+  </button>
+</div>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+<!-- Nível 28 -->
+<div id="nivel28Texto">
+  <p class="bonus4-paragraph descricao-nivel28">
+    <strong>Nível 28:</strong> Escolha uma habilidade de nível 
+    <strong>1</strong> de outra 
+    <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
 
-    <p class="bonus4-paragraph"><strong>Nível 29:</strong> Escolha uma habilidade de nível 13, 16, 20 ou 22 de    <strong>
-    outra <span class="prismatic2">especialização</span> (única), de qualquer passado</strong>.</p>
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel28" style="display:none;"></div>
 
-<!-- Botão que abre o popup -->
-<button class="botao-abrir-especializacoes prismatic2">Ver Todas as Especializações</button>
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="28"
+          data-escolha-nivel="1">
+    Ver Todas as Especializações de Nível 1
+  </button>
+</div>
 
-    <p class="bonus4-paragraph"><strong>Nível 30:</strong> Escolha uma entre 3 opções:</p>
-    <ul class="bonus4-paragraph">
-      <li class="bonus4-list-item">1 <strong>Ataque Extra</strong> por turno</li>
-      <li class="bonus4-list-item">1 Magia nova (nível 5–9)</li>
-      <li class="bonus4-list-item">+1d20 de dano com <strong>arma favorita</strong></li>
-    </ul>
+<!-- Nível 29 -->
+<div id="nivel29Texto">
+  <p class="bonus4-paragraph descricao-nivel29">
+    <strong>Nível 29:</strong> Escolha uma habilidade de nível 
+    <strong>25</strong> de outra 
+    <span class="prismatic2">especialização</span> (única), de qualquer passado.
+  </p>
+
+  <!-- Aqui aparece o resultado da escolha -->
+  <div id="resultadoEspecializacaoNivel29" style="display:none;"></div>
+
+  <button class="botao-abrir-especializacoes prismatic2"
+          data-nivel-personagem="29"
+          data-escolha-nivel="25">
+    Ver Todas as Especializações de Nível 25
+  </button>
+</div>
+
+
+<!-- NÍVEL 30 -->
+<p class="bonus4-paragraph"><strong>Nível 30:</strong> Escolha uma entre 3 opções:</p>
+<ul class="bonus4-opcoes">
+  <li><button class="bonus-btn" data-nivel="30" data-escolha="ataque30">+1 Ataque Extra</button></li>
+  <li><button class="bonus-btn" data-nivel="30" data-escolha="magia30">Magia nova (5–9)</button></li>
+  <li><button class="bonus-btn" data-nivel="30" data-escolha="dano30">+1d20 na arma favorita</button></li>
+</ul>
 
   </div>
 </div>

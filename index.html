@@ -1356,9 +1356,7 @@ p {
             <!-- outros conteúdos -->
             <div class="bonus-container">
     <h2 class="resistencia-index">Resistência: N/A</h2> 
-
-<div class="bonus-subsection">
-  <h3 class="especializacao_titulo5" onclick="alternarTextoBonus(5)" id="tituloBonus5">Bonus de Raça</h3>
+ <h3 class="especializacao_titulo5" onclick="alternarTextoBonus(5)" id="tituloBonus5">Bonus de Raça</h3>
   <div class="bonusTexto5 bonus-texto" id="textoBonus5" style="display:block;">
 
 <h4 class="Bonus-race-tex">
@@ -1381,24 +1379,21 @@ p {
   <span class="valor-bonus" onclick="TC && TC.open && TC.open()">N/A</span>
 </h4>
 <style>
-
-/* ----------------------- */
-/* Texto base dos bônus    */
-/* ----------------------- */
+/* Base dos textos */
 .bonus-texto h4 {
-  margin: 2px 0;
+  margin: 3px 0;
   font-size: 13px;
   font-weight: 500;
-  color: #1d1d1d;
+  color: #242424;
 }
 
-/* Valor que muda dinamicamente */
+/* Valor destacado */
 .bonus-texto .valor-bonus {
   font-weight: 600;
   color: #d15d00;
 }
 
-/* Link de ajuda */
+/* Link de referência (ajuda) */
 .bonus-texto .link-info {
   margin-left: 4px;
   font-size: 11px;
@@ -1409,20 +1404,21 @@ p {
   text-decoration: underline;
 }
 
-/* ----------------------- */
-/* DETAILS EXCLUSIVO DO BÔNUS DE RAÇA */
-/* ----------------------- */
-.bonus-subsection details {
+/* -------------------------- */
+/* DETAILS Exclusivos do bloco */
+/* -------------------------- */
+.bonus-texto details {
   background: #f6f8fc;
   border: 1px solid #cdd9ff;
   border-radius: 6px;
   padding: 6px 8px;
   margin: 6px 0;
   transition: 0.18s ease;
+  cursor: pointer;
 }
 
-/* Summary (linha clicável) */
-.bonus-subsection details summary {
+/* Linha do summary */
+.bonus-texto details summary {
   list-style: none;
   font-size: 13px;
   font-weight: 600;
@@ -1430,46 +1426,41 @@ p {
   display: flex;
   align-items: center;
   gap: 6px;
-  cursor: pointer;
-  padding: 2px 0;
 }
 
 /* Remove seta padrão */
-.bonus-subsection details summary::-webkit-details-marker {
+.bonus-texto details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Seta personalizada */
-.bonus-subsection details summary::before {
+/* Seta custom */
+.bonus-texto details summary::before {
   content: "►";
   font-size: 10px;
   color: #2a3f72;
   transition: transform 0.18s ease;
 }
 
-/* Abriu = seta gira */
-.bonus-subsection details[open] summary::before {
+/* Abriu → seta gira */
+.bonus-texto details[open] summary::before {
   transform: rotate(90deg);
 }
 
 /* Conteúdo interno */
-.bonus-subsection details > *:not(summary) {
+.bonus-texto details > *:not(summary) {
   margin-top: 6px;
   font-size: 12px;
   color: #2d2d2d;
   line-height: 1.4;
 }
 
-/* Hover discreto */
-.bonus-subsection details:hover {
+/* Hover suave */
+.bonus-texto details:hover {
   border-color: #9fb4ff;
   background: #eef3ff;
 }
 
 </style>
-
-
-  </div>
 </div>
 
 
@@ -1483,7 +1474,7 @@ p {
      <div id="textoBonusPassado" class="bonus-passado-section"></div>
 
 
-<div class="bonus-subsection">
+
   <h3 class="especializacao_titulo4" onclick="alternarTextoBonus(4)" id="tituloBonus4">
 Bonus por Níveis Do Personagem  </h3>
   <div class="bonusTexto4 bonus-texto" id="textoBonus4" style="display:none;">
@@ -2018,7 +2009,7 @@ Desbloqueia uma magia de nível 1.    </button>
 </ul>
 
   </div>
-</div>
+
 
 
               
@@ -8253,6 +8244,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

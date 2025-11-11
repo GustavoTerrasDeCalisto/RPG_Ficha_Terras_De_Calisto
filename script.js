@@ -9,10 +9,17 @@ const raceData = {
     "especialBase": 0,
     "armaduraBase": 1,
     "movimentoBase": 5,
-    "bonusRace": "Pode usar Mirar e no mesmo turno atacar uma vez por combate",
-    "PassivaDisponivel": "Emanar energia uma vez no dia sem custo.",
+    "bonusRace": `Pode usar <strong>Mirar</strong> e no mesmo turno atacar uma vez por combate sem custo.  <details>
+    <summary><strong>Mirar</strong></summary>
+    <p>
+      O personagem se concentra para garantir vantagem em seu disparo.<br>
+      <strong>Efeito:</strong> O personagem mira por um turno para rolar o dado de acerto duas vezes e escolher o melhor resultado.<br>
+      Mirar consome uma <strong>ação</strong> e o personagem só pode se mover <strong>antes de mirar</strong>.
+    </p>
+  </details>`,
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p6">Emanar Energia</a></strong> uma vez no dia sem custo.`,
     "MagiaDisponivel": "-",
-    "TalentoDisponivel": "Arcos e bestas.",
+    "TalentoDisponivel": "Liberado - <strong>Arcos e bestas.</strong>",
     "vidaPorNivel": {
       "for": 2,
       "des": 3,
@@ -34,9 +41,9 @@ const raceData = {
     "armaduraBase": 1,
     "movimentoBase": 5,
     "bonusRace": "-",
-    "PassivaDisponivel": "Controle adestrado sem custo uma vez por dia e tem vantagem.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p19">Controle adestrado</a></strong> sem custo uma vez por dia e tem vantagem.`,
     "MagiaDisponivel": "-",
-    "TalentoDisponivel": "1 talento extra à sua escolha livre.",
+    "TalentoDisponivel": "<strong>1 talento extra</strong> à sua escolha livre.",
     "vidaPorNivel": {
       "for": 5,
       "des": 4,
@@ -57,10 +64,19 @@ const raceData = {
     "especialBase": 10,
     "armaduraBase": 1,
     "movimentoBase": 6,
-    "bonusRace": "Eles podem Voar, manter o voo requer concentração, sofre -8 em danos de fogo.",
-    "PassivaDisponivel": "Vingança sem custo duas vezes por combate.",
+    "bonusRace": `Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>fogo</strong>.
+    <details>
+  <summary><strong>Voar</strong></summary>
+  <p>
+    O personagem está no ar, seja planando ou sustentando voo ativo.<br><br>
+    <strong>Efeito:</strong> Manter o voo exige <strong>concentração</strong> contínua. Enquanto estiver voando, ataques e reações sofrem <strong>desvantagem</strong> devido à instabilidade no ar.<br>
+    Alterar a altura do voo durante o turno consome <strong>metade do movimento</strong>.
+  </p>
+</details>
+`,
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p8">Vingança</a></strong> sem custo duas vezes por combate.`,
     "MagiaDisponivel": "-",
-    "TalentoDisponivel": "Katanas.",  
+    "TalentoDisponivel": "<strong>Katanas.</strong>",  
     "vidaPorNivel": {
       "for": 3,
       "des": 6,
@@ -82,7 +98,7 @@ const raceData = {
     "armaduraBase": 2,
     "movimentoBase": 4,
     "bonusRace": "-",
-    "PassivaDisponivel": "Metamorfose duas vezes ao dia sem custo.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p27">Metamorfose</a></strong> duas vezes ao dia <strong>sem custo.</strong>`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Escudos ou Espadas.",  
     "vidaPorNivel": {
@@ -105,8 +121,8 @@ const raceData = {
     "especialBase": 7,
     "armaduraBase": 1,
     "movimentoBase": 3,
-    "bonusRace": "Tem o critico corpo a corpo maior, ao inves de ser 2x fica 3x.",
-    "PassivaDisponivel": "Bêbado ou Alegria duas vezes por dia sem custo com vantagem.",
+    "bonusRace": "Crítico <strong>Corpo a Corpo:</strong> +1 no multiplicador de dano crítico.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3">Bêbado</a></strong> ou <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p2">Alegria</a></strong> duas vezes por dia <strong>sem custo com vantagem.</strong>`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Machados e martelos.",  
     "vidaPorNivel": {
@@ -130,8 +146,17 @@ const raceData = {
     "especialBase": 6,
     "armaduraBase": 0,
     "movimentoBase": 6,
-    "bonusRace": "Eles podem Voar, manter o voo requer concentração. Sofre -8 em danos de Luz.",
-    "PassivaDisponivel": "Sorriso Contemplativo uma vez no dia sem custo por combate.",
+    "bonusRace": `Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>Luz</strong>.
+    <details>
+  <summary><strong>Voar</strong></summary>
+  <p>
+    O personagem está no ar, seja planando ou sustentando voo ativo.<br><br>
+    <strong>Efeito:</strong> Manter o voo exige <strong>concentração</strong> contínua. Enquanto estiver voando, ataques e reações sofrem <strong>desvantagem</strong> devido à instabilidade no ar.<br>
+    Alterar a altura do voo durante o turno consome <strong>metade do movimento</strong>.
+  </p>
+</details>
+`,
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p5">Sorriso Contemplativo</a></strong> uma vez no dia sem custo por combate.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Lanças e Armas com Haste.",  
     "vidaPorNivel": {
@@ -156,7 +181,7 @@ const raceData = {
     "armaduraBase": 0,
     "movimentoBase": 5,
     "bonusRace": "Conseguem respirar embaixo de água e nadar o dobro do seu movimento.",
-    "PassivaDisponivel": "Salvaguarda uma vez ao dia sem custo e com vantagem.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p29">Salvaguarda</a></strong> uma vez ao dia sem custo e com vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas.",  
     "vidaPorNivel": {
@@ -180,7 +205,7 @@ const raceData = {
     "armaduraBase": 0,
     "movimentoBase": 4.5,
     "bonusRace": "Conseguem respirar embaixo de água e nadar o dobro do seu movimento.",
-    "PassivaDisponivel": "Afogar uma vez por combate sem custo e tem vantagem.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p21">Afogar</a></strong> uma vez por combate sem custo e tem vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Lanças e Armas com Haste.",  
     "vidaPorNivel": {
@@ -205,7 +230,7 @@ const raceData = {
     "armaduraBase": 2,
     "movimentoBase": 6.5,
     "bonusRace": "-",
-    "PassivaDisponivel": "Medo oculto uma vez no dia sem custo por combate.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p6">Medo oculto</a></strong> uma vez no dia sem custo por combate.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas e Intimidação.",  
     "vidaPorNivel": {
@@ -230,7 +255,7 @@ const raceData = {
     "armaduraBase": 3,
     "movimentoBase": 4,
     "bonusRace": "-",
-    "PassivaDisponivel": "Selvageria duas vezes ao dia sem custo e tem vantagem.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p20">Selvageria</a></strong> duas vezes ao dia sem custo e tem vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Sobrevivência.",  
     "vidaPorNivel": {
@@ -255,7 +280,7 @@ const raceData = {
     "armaduraBase": 1,
     "movimentoBase": 6,
     "bonusRace": "-",
-    "PassivaDisponivel": "Furtividade sombria uma vez no dia sem custo.",
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p18">Furtividade sombria</a></strong> uma vez no dia sem custo.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Fundas e Estilingues.",  
     "vidaPorNivel": {
@@ -5882,6 +5907,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

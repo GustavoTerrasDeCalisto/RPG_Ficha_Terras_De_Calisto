@@ -1360,14 +1360,118 @@ p {
 <div class="bonus-subsection">
   <h3 class="especializacao_titulo5" onclick="alternarTextoBonus(5)" id="tituloBonus5">Bonus de Raça</h3>
   <div class="bonusTexto5 bonus-texto" id="textoBonus5" style="display:block;">
+
+<h4 class="Bonus-race-tex">
+  Bônus de Raça:
+  <span class="valor-bonus">N/A</span>
+  <a href="https://terrasdecalistoficha.wordpress.com/como-jogar/" target="_blank" class="link-info">(?)</a>
+</h4>
+  
           <h4 class="Bonus-talento-tex" onclick="toggleMenu()">Talento: N/A</h4>
 
-    <h4 class="Bonus-race-tex" onclick="window.open('https://terrasdecalistoficha.wordpress.com/como-jogar/', '_blank')">Bônus de Raça: N/A</h4>
-    <h4 class="Bonus-passiva-tex" onclick="TC && TC.open && TC.open()">Passiva: N/A</h4>
-    <h4 class="Bonus-magia-tex" onclick="TC && TC.open && TC.open()">Magia: N/A</h4>
+
+
+<h4 class="Bonus-passiva-tex">
+  Passiva:
+  <span class="valor-bonus" onclick="TC && TC.open && TC.open()">N/A</span>
+</h4>
+
+<h4 class="Bonus-magia-tex">
+  Magia:
+  <span class="valor-bonus" onclick="TC && TC.open && TC.open()">N/A</span>
+</h4>
+<style>
+
+/* ----------------------- */
+/* Texto base dos bônus    */
+/* ----------------------- */
+.bonus-texto h4 {
+  margin: 2px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1d1d1d;
+}
+
+/* Valor que muda dinamicamente */
+.bonus-texto .valor-bonus {
+  font-weight: 600;
+  color: #d15d00;
+}
+
+/* Link de ajuda */
+.bonus-texto .link-info {
+  margin-left: 4px;
+  font-size: 11px;
+  color: #007acc;
+  text-decoration: none;
+}
+.bonus-texto .link-info:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------- */
+/* DETAILS EXCLUSIVO DO BÔNUS DE RAÇA */
+/* ----------------------- */
+.bonus-subsection details {
+  background: #f6f8fc;
+  border: 1px solid #cdd9ff;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 6px 0;
+  transition: 0.18s ease;
+}
+
+/* Summary (linha clicável) */
+.bonus-subsection details summary {
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2a3f72;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+/* Remove seta padrão */
+.bonus-subsection details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Seta personalizada */
+.bonus-subsection details summary::before {
+  content: "►";
+  font-size: 10px;
+  color: #2a3f72;
+  transition: transform 0.18s ease;
+}
+
+/* Abriu = seta gira */
+.bonus-subsection details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Conteúdo interno */
+.bonus-subsection details > *:not(summary) {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #2d2d2d;
+  line-height: 1.4;
+}
+
+/* Hover discreto */
+.bonus-subsection details:hover {
+  border-color: #9fb4ff;
+  background: #eef3ff;
+}
+
+</style>
+
 
   </div>
 </div>
+
 
 
 
@@ -8149,6 +8253,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

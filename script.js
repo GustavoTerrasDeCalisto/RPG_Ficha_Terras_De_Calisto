@@ -609,7 +609,7 @@ const pastData = {
   bonusTexto2N16: `<strong>Escudo da Alma</strong> — Libera uma barreira espiritual que reduz o dano recebido pela metade por um turno. (4 especial, 1x por combate)`,
   bonusTexto2N20: `<strong>Chama da Vingança</strong> — Retalia com +1d8 de dano ao receber ataques, drenando energia de inimigos próximos. (2 especial)`,
   bonusTexto2N22: `<strong>Força Espiritual</strong> — Permite armazenar uma segunda alma no equipamento, acumulando ambos os bônus. (Passivo)`,
-  bonusTexto2N25: `<strong>Guardião das Almas</strong> — Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a defesa dos inimigos por dois turnos. (5 especial, 1x por combate)`,
+  bonusTexto2N25: `<strong>Guardião das Almas</strong> — Ativa uma aura espiritual, aumentando o dano em +2d10 e reduzindo a armadura dos inimigos pela metade por dois turnos. (5 especial, 1x por combate)`,
 
   // ===============================
   // 🕊️ ESPIRITUALISTA DA ORDEM
@@ -5914,6 +5914,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

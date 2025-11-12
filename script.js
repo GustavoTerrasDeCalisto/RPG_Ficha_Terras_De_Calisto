@@ -1496,51 +1496,58 @@ const pastData = {
       "sanidadePorNivel": 3,
       "armaduraPorNivel": 1,
       "resistencia": "Aura",
+      "movimento_pass": 4,
+
       "bonusPass": `
-      
-Nivel 0: Magia Possessão de Luz Sem custo uma vez por dia.
+      <p><strong>Nível 0:</strong> Magia <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m106">Possessão de Luz</a></strong> sem custo, 1x por dia.</p>
+      `,
 
-💀Discípulo do Abismo
-Focado em Libertação, dano extra com Escuridão, aprendizado progressivo de magias, e um estilo de jogo que premia a paciência, concedendo Armadura Extra ao ficar sem atacar.
+      // =============================== -->
+      // 💀 DISCÍPULO DO ABISMO -->
+      // =============================== -->
+      bonustitulo_1: `<p>💀 <strong>Discípulo do Abismo</strong></p>`,
 
-Nível 1: Pele Sombria – Sempre que passar um turno sem atacar, ganha +2 de Armadura até o próximo turno. Esse efeito pode acumular até +6.
-Nível 3: Marcas do Vazio – Se estiver com pelo menos +4 de Armadura Extra devido a Pele Sombria, seu próximo ataque causa +2d6 de dano de Escuridão.
-Nível 5: Conhecimento Proibido – Ganha 1 magia de nível 1 a 3 do tipo Escuridão ou Aura (pode escolher apenas uma por vez).
-Nível 9: Guardião do Abismo – Se passar dois turnos sem atacar, pode gastar uma Ação Completa para receber +5 de Armadura Extra por três turnos.
-Nível 13:.Despertar das Sombras – Pode consumir toda sua Armadura Extra para causar +2d10 de dano de Escuridão no próximo ataque.
-Nível 16: Caminho da Aniquilação – Escolha 1 magia de nível 3 a 5 do tipo Escuridão ou Aura (pode escolher apenas uma por vez).
-Nível 20: Fardo Sombrio – Se estiver com pelo menos +6 de Armadura Extra, seu primeiro ataque que acertar um alvo ignora 10 de Armadura do alvo e é CRÍTICO
-Nível 22: Existência Abissal – Ganha Resistência a Escuridão e pode ignorar os primeiros 20 de dano do tipo Distorção.
-Nível 25: Avatar do Vazio – Se começar um turno com +6 ou mais de Armadura Extra, pode gastar uma Ação Completa para ativar um estado onde seus ataques ignoram toda a Armadura do alvo por 2 turnos e ganha +1d12 de dano de Aura.
+      bonusTexto1N1: `<strong>Pele Sombria</strong> — Sempre que passar um turno sem atacar, ganha +2 de Armadura até o próximo turno (acumula até +6).`,
+      bonusTexto1N3: `<strong>Marcas do Vazio</strong> — Se estiver com pelo menos +4 de Armadura Extra, próximo ataque causa +2d6 de dano <strong>Escuridão</strong>.`,
+      bonusTexto1N5: `<strong>Conhecimento Proibido</strong> — Ganha 1 <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de nível 1 a 3 do tipo <strong>Escuridão</strong> ou <strong>Aura</strong> (apenas uma por vez).`,
+      bonusTexto1N9: `<strong>Guardião do Abismo</strong> — Se passar 2 turnos sem atacar, pode gastar Ação Completa para receber +5 de Armadura Extra por 3 turnos.`,
+      bonusTexto1N13: `<strong>Despertar das Sombras</strong> — Consome toda Armadura Extra para causar +2d10 de dano <strong>Escuridão</strong> no próximo ataque.`,
+      bonusTexto1N16: `<strong>Caminho da Aniquilação</strong> — Escolha 1 <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de nível 3 a 5 do tipo <strong>Escuridão</strong> ou <strong>Aura</strong> (apenas uma por vez).`,
+      bonusTexto1N20: `<strong>Fardo Sombrio</strong> — Se estiver com +6 de Armadura Extra, primeiro ataque que acertar ignora 10 de Armadura e é <strong>CRÍTICO</strong>.`,
+      bonusTexto1N22: `<strong>Existência Abissal</strong> — Ganha Resistência a <strong>Escuridão</strong> e ignora os primeiros 20 de dano do tipo <strong>Distorção</strong>.`,
+      bonusTexto1N25: `<strong>Avatar do Vazio</strong> — Se começar turno com +6 ou mais de Armadura Extra, pode gastar Ação Completa para ignorar toda Armadura do alvo por 2 turnos e causar +1d12 de dano <strong>Aura</strong>.`,
 
-👊Punho Etéreo
-Focado em Plasma, ataques rápidos, coleta de almas, aprendizado progressivo de magias e ganho de Vida Temporária ao derrotar ou ferir inimigos.
+      // =============================== -->
+      // 👊 PUNHO ETÉREO -->
+      // =============================== -->
+      bonustitulo_2: `<p>👊 <strong>Punho Etéreo</strong></p>`,
 
-Nível 1: Absorção Espiritual – Sempre que acertar um ataque corpo a corpo, ganha 1d6 de Vida Temporária. Se derrotar um inimigo, ganha 10 de Vida Temporária.
-Nível 3: Impacto Etéreo – Se estiver com pelo menos 8 de Vida Temporária, seu próximo ataque causa +1d10 de dano de Plasma.
-Nível 5: Mestre do Fluxo – Ganha 1 magia de nível 1 a 3 do tipo Plasma ou Alma (pode escolher apenas uma por vez).
-Nível 9: Espírito Indomável – Pode gastar 2 de Especial para dobrar o ganho de Vida Temporária por dois turnos.
-Nível 13: Alma da Tempestade – Se estiver com pelo menos 12 de Vida Temporária, seu primeiro ataque em um turno recebe +3 em Acerto.
-Nível 16: Lótus dos Espíritos – Escolha 1 magia de nível 3 a 5 do tipo Plasma ou Alma (pode escolher apenas uma por vez).
-Nível 20: Pulso Vital – Ao recuperar Vida Temporária por Absorção Espiritual, pode consumir 3 de Especial para causar +3d8 de dano de Plasma no próximo ataque.
-Nível 22: Fonte de Energia – Sempre que atacar um inimigo com menos de 50% da vida máxima, ganha 1d20 de Vida Temporária.
-Nível 25: Espírito Ascendente – Se estiver com 20 ou mais de Vida Temporária, pode gastar uma Ação Completa para liberar uma explosão de Plasma, causando 7d12 de dano de Plasma a todos os inimigos em um raio de 5 metros.
+      bonusTexto2N1: `<strong>Absorção Espiritual</strong> — Ao acertar ataque corpo a corpo, ganha 1d6 de Vida Temporária. Se derrotar inimigo, ganha +10 de Vida Temporária.`,
+      bonusTexto2N3: `<strong>Impacto Etéreo</strong> — Se estiver com pelo menos 8 de Vida Temporária, próximo ataque causa +1d10 de dano <strong>Plasma</strong>.`,
+      bonusTexto2N5: `<strong>Mestre do Fluxo</strong> — Ganha 1 <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de nível 1 a 3 do tipo <strong>Plasma</strong> ou <strong>Alma</strong> (apenas uma por vez).`,
+      bonusTexto2N9: `<strong>Espírito Indomável</strong> — Pode gastar 2 de Especial para dobrar ganho de Vida Temporária por 2 turnos.`,
+      bonusTexto2N13: `<strong>Alma da Tempestade</strong> — Se estiver com pelo menos 12 de Vida Temporária, primeiro ataque do turno recebe +3 em Acerto.`,
+      bonusTexto2N16: `<strong>Lótus dos Espíritos</strong> — Escolha 1 <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de nível 3 a 5 do tipo <strong>Plasma</strong> ou <strong>Alma</strong> (apenas uma por vez).`,
+      bonusTexto2N20: `<strong>Pulso Vital</strong> — Ao recuperar Vida Temporária por Absorção Espiritual, pode gastar 3 de Especial para causar +3d8 de dano <strong>Plasma</strong> no próximo ataque.`,
+      bonusTexto2N22: `<strong>Fonte de Energia</strong> — Sempre que atacar inimigo com menos de 50% da vida máxima, ganha 1d20 de Vida Temporária.`,
+      bonusTexto2N25: `<strong>Espírito Ascendente</strong> — Se estiver com 20 ou mais de Vida Temporária, pode gastar Ação Completa para liberar explosão de 7d12 de dano <strong>Plasma</strong> em 5m.`,
 
-👻Arauto dos Espíritos
-Focado na passiva Fluxo da Vida (Specter), aumentando seu poder conforme sobe de nível, obtendo ação completa extra e bônus de dano com custo de ações livres e especiais.
+      // =============================== -->
+      // 👻 ARAUTO DOS ESPÍRITOS -->
+      // =============================== -->
+      bonustitulo_3: `<p>👻 <strong>Arauto dos Espíritos</strong></p>`,
 
-Nível 1: Chamado Espectral – +2 em testes de Conexão ao ativar Fluxo da Vida (Specter).
-Nível 3: Guardião Sombrio – Enquanto Specter estiver ativo, pode gastar 3 de Especial para fazer com que ele ataque duas vezes no turno.
-Nível 5: Alma Forjada – Pode ativar Specter sem gastar.
-Nível 9: Vínculo Inquebrável – Ganha Ação Completa Extra uma vez por combate enquanto Specter estiver ativo.
-Nível 13: Protetor Etéreo – Sempre que Specter atacar, pode gastar 2 de Especial para causar +1d6 de dano de Alma adicional.
-Nível 16: Espírito Devoto – Specter agora dura +2 turnos e pode atacar duas vezes em um turno consumindo apenas 1 de Especial.
-Nível 20: Presença Maldita – Uma vez por combate, pode ativar um segundo Specter ao custo dobrado de especial e mais 1D20 de dano Psicológico (Specter) ao término da duração.
-Nível 22: Aliança Sobrenatural – Sempre que Specter atacar, o usuário recupera 1d4 de sanidade.
-Nível 25: Emissário da Eternidade – Quando Specter for ativado, pode gastar 4 de Especial para aumentar seu dano para 2d12 + 8 de Alma e conceder +5 em Conexão por 8 turnos.
-`,
-      "movimento_pass": 4
-    },
+      bonusTexto3N1: `<strong>Chamado Espectral</strong> — +2 em testes de Conexão ao ativar <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p38">Fluxo da Vida</a></strong> (Specter)</strong>.`,
+      bonusTexto3N3: `<strong>Guardião Sombrio</strong> — Enquanto Specter estiver ativo, pode gastar 3 de Especial para fazê-lo atacar 2x no turno.`,
+      bonusTexto3N5: `<strong>Alma Forjada</strong> — Pode ativar <strong>Specter</strong> sem custo.`,
+      bonusTexto3N9: `<strong>Vínculo Inquebrável</strong> — Ganha Ação Completa Extra 1x por combate enquanto Specter estiver ativo.`,
+      bonusTexto3N13: `<strong>Protetor Etéreo</strong> — Sempre que <strong>Specter</strong> atacar, pode gastar 2 de Especial para causar +1d6 de dano <strong>Alma</strong>.`,
+      bonusTexto3N16: `<strong>Espírito Devoto</strong> — <strong>Specter</strong> dura +2 turnos e pode atacar 2x em um turno consumindo apenas 1 de Especial.`,
+      bonusTexto3N20: `<strong>Presença Maldita</strong> — 1x por combate, pode ativar segundo <strong>Specter</strong> ao custo dobrado de Especial. Ao término, causa +1d20 de dano <strong>Psicológico</strong>.`,
+      bonusTexto3N22: `<strong>Aliança Sobrenatural</strong> — Sempre que <strong>Specter</strong> atacar, usuário recupera 1d4 de sanidade.`,
+      bonusTexto3N25: `<strong>Emissário da Eternidade</strong> — Ao ativar <strong>Specter</strong>, pode gastar 4 de Especial para aumentar dano para 2d12+8 de <strong>Alma</strong> e conceder +5 em Conexão por 8 turnos.`
+    }
+,
     "Fera": { 
       "vidaPorNivel": 8,
       "sanidadePorNivel": 0,
@@ -5907,6 +5914,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

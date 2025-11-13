@@ -1553,123 +1553,115 @@ const pastData = {
       "sanidadePorNivel": 0,
       "armaduraPorNivel": 3,
       "resistencia": "Eclipse",
+      "movimento_pass": 4.5,
+
       "bonusPass": `
-      
-      Nivel 0: +5 em Atletismo e Adestrar animais.
-
-🌘Arauto do Eclipse
-Focado em dano de Eclipse, ações extras e ataques brutais.
-
-Nível 1: Sombras Cortantes – Seus ataques físicos e mágicos de Eclipse causam +1d8 de dano extra.
-Nível 3: Presságio Sombrio – Sempre que atingir um inimigo com dano de Eclipse, rola 1d6: se tirar 4 ou mais, ganha uma Ação de Movimento extra no turno seguinte.
-Nível 5: Presa Lunar – Pode gastar 3 de Especial para atacar duas vezes na mesma Ação de Ataque.
-Nível 9: Manto do Eclipse – Ganha +3 de Armadura Temporária se começar o turno sem atacar.
-Nível 13: Devastação Noturna – Se for o primeiro a atacar em um combate, causa +2d12 de dano Eclipse no primeiro golpe.
-Nível 16: Eclipse Vivo – Sempre que reduzir um inimigo a 0 de vida, recupera 1d8 de vida.
-Nível 20: Rajada Crepuscular – Pode gastar 4 de Especial para atacar todos os inimigos em um raio de 3 metros, com + 2d10 de dano Eclipse.
-Nível 22: Presságio Final – Se atingir um inimigo com menos de 30 de vida, o ataque causa dano dobrado.
-Nível 25: Cataclismo da Fera Sombria – Uma vez por combate, pode liberar uma onda de Eclipse em volta, causando 6d12 de dano Eclipse a inimigos próximos e ganhando +2 em todas as jogadas de ataque até o final da cena.
-
-🔮Artesão espiritual
-Transformação bestial à noite, ágil e furtivo de dia.
-
-Nível 1: Instinto Lunar – Durante o dia, ganha +2 em testes de Agilidade. Durante a noite, entra em Forma Bestial, ganhando +3 em testes de Brutalidade.
-Nível 3: Fúria da Lua – Se estiver na Forma Bestial, ataques corpo a corpo causam +1d6 de dano extra.
-Nível 5: Passos das Sombras – Durante o dia, pode gastar 2 de Especial para se mover sem ser detectado.
-Nível 9: Sangue da Noite – Durante a Forma Bestial, ganha Resistência a dano Físico (cortante, perfurante, esmagante).
-Nível 13: Devastação Lupina – Pode gastar 3 de Especial para atacar duas vezes seguidas quando está transformado.
-Nível 16: Presságio da Caçada – Durante a noite, pode farejar inimigos ocultos e detectar presas a até 30 metros.
-Nível 20: Golpe da Noite Eterna – Se atacar um inimigo sem que ele tenha agido no combate, o ataque causa +3d8 de dano.
-Nível 22: Forma Selvagem Aprimorada – Durante a noite, recebe +4 de Armadura e +4 de Movimento enquanto transformado.
-Nível 25: Fera Primordial – Durante a Forma Bestial, ataques corpo a corpo causam +2d12 de dano e ignoram 6 de armadura.
-
-🐺Tirano Carniceiro
-Passiva/Habilidade de Consumir aprimorada, regeneração e resistência.
-
-Nível 1: Fome Voraz – Sempre que usar Consumir, o dano causado é aumentado em +1d6.
-Nível 3: Devorador de Dor – Sempre que consumir Sanidade, o alvo fica com -1 em testes de Conexão até o final do combate.
-Nível 5: Voracidade Crescente – Sempre que reduzir um inimigo a 0 de vida, recupera 1d12 de Vida.
-Nível 9: Sangue Predador – Se estiver com menos da metade da vida máxima, ganha +2 em Brutalidade e Resistência a Sangue.
-Nível 13: Mastigar a Alma – Se usar Consumir contra um inimigo com menos de 22 de vida, o ataque automaticamente causa dano máximo.
-Nível 16: Predador Incansável – Se causar dano com Consumir, pode gastar 3 de Especial para realizar um ataque extra.
-Nível 20: Regeneração Maldita – Sempre que consumir Vida de um inimigo, recupera +1d6 de Vida Temporária.
-Nível 22: Devorador Supremo – Se derrotar um inimigo com Consumir, recebe um bônus de +2 em todas as rolagens de ataque até o fim do combate.
-Nível 25: Glutão da Carnificina – Uma vez por combate, pode gastar 6 de Especial para atacar todos os inimigos próximos, causando 4d12 de dano Sangue e absorvendo metade do dano como Vida Temporária.
-      
+      <p><strong>Nível 0:</strong> +5 em <strong>Atletismo</strong> e <strong>Adestrar Animais</strong>.</p>
       `,
-      "movimento_pass": 4.5
-    },
+
+      // =============================== -->
+      // 🌘 ARAUTO DO ECLIPSE -->
+      // =============================== -->
+      bonustitulo_1: `<p>🌘 <strong>Arauto do Eclipse</strong></p>`,
+
+      bonusTexto1N1: `<strong>Sombras Cortantes</strong> — Ataques físicos e mágicos de <strong>Eclipse</strong> causam +1d8 de dano extra.`,
+      bonusTexto1N3: `<strong>Presságio Sombrio</strong> — Ao causar dano de <strong>Eclipse</strong>, rola 1d6: em 4+, ganha Ação de Movimento extra no próximo turno.`,
+      bonusTexto1N5: `<strong>Presa Lunar</strong> — Pode gastar 3 de Especial para atacar 2x na mesma Ação de Ataque.`,
+      bonusTexto1N9: `<strong>Manto do Eclipse</strong> — Ganha +3 de Armadura Temporária se começar o turno sem atacar.`,
+      bonusTexto1N13: `<strong>Devastação Noturna</strong> — Se for o primeiro a atacar no combate, causa +2d12 de dano <strong>Eclipse</strong> no primeiro golpe.`,
+      bonusTexto1N16: `<strong>Eclipse Vivo</strong> — Ao reduzir inimigo a 0 de vida, recupera 1d8 de vida.`,
+      bonusTexto1N20: `<strong>Rajada Crepuscular</strong> — Pode gastar 4 de Especial para atacar todos inimigos em 3m, causando +2d10 de dano <strong>Eclipse</strong>.`,
+      bonusTexto1N22: `<strong>Presságio Final</strong> — Se atingir inimigo com menos de 30 de vida, ataque causa dano dobrado.`,
+      bonusTexto1N25: `<strong>Cataclismo da Fera Sombria</strong> — 1x por combate, libera onda de <strong>Eclipse</strong> causando 6d12 de dano em inimigos próximos e ganha +2 em todas jogadas de ataque até o fim da cena.`,
+
+      // =============================== -->
+      // 🔮 ARTESÃO ESPIRITUAL -->
+      // =============================== -->
+      bonustitulo_2: `<p>🔮 <strong>Artesão Espiritual</strong></p>`,
+
+      bonusTexto2N1: `<strong>Instinto Lunar</strong> — De dia: +2 em Agilidade. À noite: Forma Bestial, +3 em Brutalidade.`,
+      bonusTexto2N3: `<strong>Fúria da Lua</strong> — Na Forma Bestial, ataques corpo a corpo causam +1d6 de dano extra.`,
+      bonusTexto2N5: `<strong>Passos das Sombras</strong> — De dia, pode gastar 2 de Especial para mover-se sem ser detectado.`,
+      bonusTexto2N9: `<strong>Sangue da Noite</strong> — Na Forma Bestial, ganha Resistência a dano físico (cortante, perfurante, esmagante).`,
+      bonusTexto2N13: `<strong>Devastação Lupina</strong> — Pode gastar 3 de Especial para atacar 2x seguidas quando transformado.`,
+      bonusTexto2N16: `<strong>Presságio da Caçada</strong> — À noite, pode farejar inimigos ocultos e detectar presas até 30m.`,
+      bonusTexto2N20: `<strong>Golpe da Noite Eterna</strong> — Se atacar inimigo antes dele agir, causa +3d8 de dano.`,
+      bonusTexto2N22: `<strong>Forma Selvagem Aprimorada</strong> — À noite, recebe +4 de Armadura e +4 de Movimento enquanto transformado.`,
+      bonusTexto2N25: `<strong>Fera Primordial</strong> — Na Forma Bestial, ataques corpo a corpo causam +2d12 de dano e ignoram 6 de Armadura.`,
+
+      // =============================== -->
+      // 🐺 TIRANO CARNICEIRO -->
+      // =============================== -->
+      bonustitulo_3: `<p>🐺 <strong>Tirano Carniceiro</strong></p>`,
+
+      bonusTexto3N1: `<strong>Fome Voraz</strong> — Sempre que usar <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p1">Consumir</a></strong>, dano causado aumenta em +1d6.`,
+      bonusTexto3N3: `<strong>Devorador de Dor</strong> — Ao consumir Sanidade, alvo recebe -1 em testes de Conexão até fim do combate.`,
+      bonusTexto3N5: `<strong>Voracidade Crescente</strong> — Ao reduzir inimigo a 0 de vida, recupera 1d12 de Vida.`,
+      bonusTexto3N9: `<strong>Sangue Predador</strong> — Se estiver com menos da metade da vida máxima, ganha +2 em Brutalidade e Resistência a <strong>Sangue</strong>.`,
+      bonusTexto3N13: `<strong>Mastigar a Alma</strong> — Se usar <strong>Consumir</strong> contra inimigo com menos de 22 de vida, ataque causa dano máximo.`,
+      bonusTexto3N16: `<strong>Predador Incansável</strong> — Ao causar dano com <strong>Consumir</strong>, pode gastar 3 de Especial para realizar ataque extra.`,
+      bonusTexto3N20: `<strong>Regeneração Maldita</strong> — Ao consumir Vida de inimigo, recupera +1d6 de Vida Temporária.`,
+      bonusTexto3N22: `<strong>Devorador Supremo</strong> — Se derrotar inimigo com <strong>Consumir</strong>, recebe +2 em todas rolagens de ataque até fim do combate.`,
+      bonusTexto3N25: `<strong>Glutão da Carnificina</strong> — 1x por combate, pode gastar 6 de Especial para atacar todos inimigos próximos, causando 4d12 de dano <strong>Sangue</strong> e absorvendo metade como Vida Temporária.`
+    }
+,
     "Ferreiro": { 
       "vidaPorNivel": 7,
       "sanidadePorNivel": 1,
       "armaduraPorNivel": 2,
       "resistencia": "Fogo",
+      "movimento_pass": 3.5,
+
       "bonusPass": `
- Nivel 0: Vantagem em testes de Ofício.
- 
- 🔨Mestre do Encantamento
- Especializado na criação de armas e armaduras com poder elemental, canalizando a essência dos materiais e elementos através do ofício. Negocie com mestre efeitos diferentes na hora da Forja.
+      <p><strong>Nível 0:</strong> Vantagem em testes de <strong>Ofício</strong>.</p>
+      `,
 
-Nível 1: Forjador das Chamas – Pode imbuir armas forjadas com o elemento Fogo, causando +1d4 de dano flamejante por 3 turnos. Alvos atingidos devem passar em um teste de Determinação ou sofrer queimaduras persistentes. Recebe +1 em testes de Ofício.
-Nível 3: Artesão do Gelo – Aprende a imbuir suas armas com o elemento Gelo. O inimigo atingido deve passar em um teste de Preservação ou ficará congelado por 1 turno, perdendo sua ação principal. Armas forjadas causam +1 de dano fixo.
-Nível 5: Moldador da Corrosão – Adiciona o elemento Ácido às suas criações. Inimigos atingidos por armas ácidas recebem 1d4 de dano por 2 turnos, a menos que passem em um teste de Determinação. +1 em testes para reparar ou modificar armamentos.
-Nível 9: Engenheiro da Água Viva – Pode forjar equipamentos com o elemento Água, que reduzem o deslocamento do inimigo em 4 metros por 2 turnos. O alvo pode resistir com um teste de Agilidade. +1 em testes para criar armaduras com efeitos adicionais.
-Nível 13: Senhor do Trovão – Ganha acesso ao elemento Eletricidade. Armas forjadas causam 1d6 extra contra alvos metálicos ou molhados. Alvos devem passar em um teste de Libertação ou ficam atordoados por 1 turno. Ganha +1 em ataques com armas criadas por si.
-Nível 16: Ferreiro da Tempestade – Imbuir com o elemento Tempestade permite empurrar o alvo 2 metros a cada golpe. Teste de Brutalidade evita o empurrão. Além disso, escudos criados por você oferecem +1 de armadura contra ataques à distância.
-Nível 20: Arquimestre do Abismo – Forja com o dano de Aura, podendo aplicar “Medo Oculto” por 1 turno se o alvo falhar em um teste de Intimidação. Ganha +1 em testes de Percepção e Intimidação com equipamentos próprios.
-Nível 22: Metalurgista do Caos Primordial – Consegue forjar com o elemento Caos, criando armas imprevisíveis: o jogador rola 1d4 a cada golpe para aplicar efeitos aleatórios (fogo, gelo, ácido ou eletricidade). Recebe +2 em Ofício.
-Nível 25: Lenda das Forjas Eternas – Pode imbuir até dois elementos diferentes em uma única arma criada. O dano extra de cada elemento é rolado separadamente. Uma vez por combate, pode criar uma arma temporária com 3 elementos que dura 3 turnos. Recebe +2 em testes de Preservação.
+      // =============================== -->
+      // 🔨 MESTRE DO ENCANTAMENTO -->
+      // =============================== -->
+      bonustitulo_1: `<p>🔨 <strong>Mestre do Encantamento</strong></p>`,
 
-🔥Metalurgia do Fogo
+      bonusTexto1N1: `<strong>Forjador das Chamas</strong> — Imbuir armas com <strong>Fogo</strong>, causando +1d4 de dano de <strong>Fogo</strong> por 3 turnos. Alvos devem passar em Determinação ou sofrem queimaduras persistentes. +1 em Ofício.`,
+      bonusTexto1N3: `<strong>Artesão do Gelo</strong> — Imbuir armas com <strong>Gelo</strong>. Alvo deve passar em Preservação ou fica congelado por 1 turno. Armas causam +1 de dano fixo.`,
+      bonusTexto1N5: `<strong>Moldador da Corrosão</strong> — Adiciona <strong>Ácido</strong> às criações. Inimigos sofrem 1d4 de dano por 2 turnos, salvo em Determinação. +1 em testes de reparo.`,
+      bonusTexto1N9: `<strong>Engenheiro da Água Viva</strong> — Forja com <strong>Água</strong>, reduzindo deslocamento do inimigo em 4m por 2 turnos (teste de Agilidade). +1 em criação de armaduras.`,
+      bonusTexto1N13: `<strong>Senhor do Trovão</strong> — Acesso ao elemento <strong>Eletricidade</strong>. Armas causam +1d6 extra contra alvos metálicos/molhados. Alvos devem passar em Libertação ou ficam atordoados. +1 em ataques com armas próprias.`,
+      bonusTexto1N16: `<strong>Ferreiro da Tempestade</strong> — Imbuir com <strong>Tempestade</strong> empurra alvo 2m por golpe (teste de Brutalidade evita). Escudos criados oferecem +1 de Armadura contra ataques à distância.`,
+      bonusTexto1N20: `<strong>Arquimestre do Abismo</strong> — Forja com <strong>Aura</strong>, aplicando <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p9">Medo oculto</a></strong> por 1 turno se alvo falhar em Intimidação. +1 em Percepção e Intimidação com equipamentos próprios.`,
+      bonusTexto1N22: `<strong>Metalurgista do Caos Primordial</strong> — Forja com <strong>Caos</strong>, armas imprevisíveis: rola 1d4 para efeitos aleatórios (fogo, gelo, ácido, eletricidade). +2 em Ofício.`,
+      bonusTexto1N25: `<strong>Lenda das Forjas Eternas</strong> — Pode imbuir até 2 elementos em uma arma. Uma vez por combate, cria arma temporária com 3 elementos por 3 turnos. +2 em Preservação.`,
 
-Nível 1: Fagulha da Criação
-Ganha +2 em testes de Ofício ao lidar com metais. (Passivo – baseado em Preservação)
-Nível 3: Mãos Flamejantes
-Uma vez por turno, adiciona +1d6 de dano de fogo (Caos) ao ataque com arma criada. (Passivo – dano baseado em Brutalidade)
-Nível 5: Magia: Chama Persistente
-Ganha acesso a uma magia de fogo de nível 1 ao desbloquear este nível. (Teste de conjuração por Preservação)
-Nível 9: Escudo de Brasas
-Quando sofre dano corpo a corpo, o inimigo sofre 1d8 de dano de fogo (Caos). (Passivo – ativação por Determinação)
-Nível 13: Magia: Fornalha Ardente
-Ganha acesso a uma magia de fogo de nível 2 ao desbloquear este nível. (Teste de conjuração por Preservação)
-Nível 16: Controle Térmico
-Pode fundir duas peças metálicas instantaneamente, até mesmo durante o combate. (Passivo – usa Preservação)
-Nível 20: Arma Incandescente
-Infundi uma arma por 3 turnos para ela causar +2d8 de dano de fogo (Caos). (Custo: 3 de especial – ativação por Preservação ou Brutalidade)
-Nível 22: Magia: Pilar de Fogo
-Ganha acesso a uma magia de fogo de nível 3 ao desbloquear este nível. (Teste de conjuração por Preservação)
-Nível 25: Fusão Ígnea
-Transforma qualquer arma metálica em uma versão flamejante permanente com +1d10 de dano de fogo (Caos). (Custo: 5 de especial – requer Preservação e Brutalidade)
+      // =============================== -->
+      // 🔥 METALURGIA DO FOGO -->
+      // =============================== -->
+      bonustitulo_2: `<p>🔥 <strong>Metalurgia do Fogo</strong></p>`,
 
-🌀Copiador do Metal
+      bonusTexto2N1: `<strong>Fagulha da Criação</strong> — +2 em Ofício ao lidar com metais (Preservação).`,
+      bonusTexto2N3: `<strong>Mãos Flamejantes</strong> — 1x por turno, adiciona +1d6 de dano <strong>Fogo (Caos)</strong> ao ataque com arma criada (Brutalidade).`,
+      bonusTexto2N5: `<strong>Magia: Chama Persistente</strong> — Ganha <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de <strong>Fogo</strong> nível 1.`,
+      bonusTexto2N9: `<strong>Escudo de Brasas</strong> — Ao sofrer dano corpo a corpo, inimigo sofre 1d8 de dano <strong>Fogo (Caos)</strong> (Determinação).`,
+      bonusTexto2N13: `<strong>Magia: Fornalha Ardente</strong> — Ganha <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de <strong>Fogo</strong> nível 2.`,
+      bonusTexto2N16: `<strong>Controle Térmico</strong> — Pode fundir duas peças metálicas instantaneamente, até em combate (Preservação).`,
+      bonusTexto2N20: `<strong>Arma Incandescente</strong> — Infunde arma por 3 turnos, causando +2d8 de dano <strong>Fogo (Caos)</strong> (custo: 3 de Especial).`,
+      bonusTexto2N22: `<strong>Magia: Pilar de Fogo</strong> — Ganha <strong><a href="javascript:TC && TC.open && TC.open()">magia</a></strong> de <strong>Fogo</strong> nível 3.`,
+      bonusTexto2N25: `<strong>Fusão Ígnea</strong> — Transforma arma metálica em versão flamejante permanente com +1d10 de dano <strong>Fogo (Caos)</strong> (custo: 5 de Especial).`,
 
-Nível 1: Duplicador Ágil
-Pode usar a passiva Réplica Imperfeita como ação bônus sem custo uma vez por combate. (Passivo – teste de ativação com Conexão)
-Nível 3: Duplo Fantasma
-Pode manter duas réplicas ativas ao mesmo tempo. (Custo: 3 de especial – depende de Conexão e Preservação)
-Nível 5: Refino da Réplica
-Réplicas criadas causam 1d8 de dano extra ao atingir o mesmo inimigo que o original atingiu no turno anterior. (Passivo – dano baseado em Brutalidade ou Agilidade da réplica)
-Nível 9: Eco de Precisão
-Ganha +1 em testes de acerto ao usar réplicas. (Passivo – utiliza Agilidade)
-Nível 13: Especialista em Cópias
-Ganha +2 em testes de Ofício ao tentar replicar qualquer item. (Passivo – baseado em Preservação)
-Nível 16: Fluxo Espelhado
-Réplicas não desaparecem no fim da duração se o conjurador passar um teste de Preservação (Dificuldade 12). (Passivo)
-Nível 20: Reflexo Agressivo
-Réplicas causam +1d6 de dano adicional se o alvo já tiver sido atingido naquele turno. (Passivo – usa Brutalidade ou Agilidade)
-Nível 22: Ressonância de Metal
-Cada vez que uma réplica desaparece, o conjurador regenera +2 de especial. (Passivo – relacionado à Conexão)
-Nível 25: Réplica Lendária
-Cria uma réplica perfeita com 100% das propriedades do original que dura 2 turnos e ignora efeitos de destruição mágica. (Custo: 5 de especial – ativação com Conexão ou Libertação)
+      // =============================== -->
+      // 🌀 COPIADOR DO METAL -->
+      // =============================== -->
+      bonustitulo_3: `<p>🌀 <strong>Copiador do Metal</strong></p>`,
 
-
-
-
-`
-      
-      ,
-      "movimento_pass": 3.5
-    },
+      bonusTexto3N1: `<strong>Duplicador Ágil</strong> — Pode usar <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p33">Réplica Imperfeita</a></strong> como ação bônus sem custo 1x por combate.`,
+      bonusTexto3N3: `<strong>Duplo Fantasma</strong> — Pode manter 2 réplicas ativas ao mesmo tempo (custo: 3 de Especial).`,
+      bonusTexto3N5: `<strong>Refino da Réplica</strong> — Réplicas causam +1d8 de dano extra se atingirem mesmo inimigo que original no turno anterior.`,
+      bonusTexto3N9: `<strong>Eco de Precisão</strong> — +1 em testes de acerto ao usar réplicas (Agilidade).`,
+      bonusTexto3N13: `<strong>Especialista em Cópias</strong> — +2 em Ofício ao replicar qualquer item (Preservação).`,
+      bonusTexto3N16: `<strong>Fluxo Espelhado</strong> — Réplicas não desaparecem se passar teste de Preservação (Dificuldade 12).`,
+      bonusTexto3N20: `<strong>Reflexo Agressivo</strong> — Réplicas causam +1d6 de dano adicional se alvo já tiver sido atingido no turno.`,
+      bonusTexto3N22: `<strong>Ressonância de Metal</strong> — Cada vez que réplica desaparece, conjurador regenera +2 de Especial.`,
+      bonusTexto3N25: `<strong>Réplica Lendária</strong> — Cria réplica perfeita com 100% das propriedades do original, dura 2 turnos e ignora destruição mágica (custo: 5 de Especial).`
+    }
+,
     "Forasteiro": { 
       "vidaPorNivel": 6,
       "sanidadePorNivel": 2,
@@ -5914,6 +5906,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -2130,6 +2130,230 @@ Desbloqueia uma magia de nível 1.    </button>
 </div>
 
 
+<!-- ========================= -->
+<!--  SLOTS DE EQUIPAMENTOS   -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!--  SLOTS DE EQUIPAMENTOS   -->
+<!-- ========================= -->
+<div id="equipmentSlots">
+
+  <!-- Cabeça -->
+  <div id="slot-cabeca" class="equip-slot" data-slot="cabeca">
+    <span class="slot-label">Cabeça</span>
+    <img class="slot-img" src="" alt="">
+    <div class="item-tooltip">
+      <h3 class="tooltip-name"></h3>
+      <p class="tooltip-desc"></p>
+      <ul class="tooltip-stats"></ul>
+    </div>
+  </div>
+
+  <!-- Peitoral -->
+  <div id="slot-peito" class="equip-slot" data-slot="peitoral">
+    <span class="slot-label">Peitoral</span>
+    <img class="slot-img" src="" alt="">
+    <div class="item-tooltip">
+      <h3 class="tooltip-name"></h3>
+      <p class="tooltip-desc"></p>
+      <ul class="tooltip-stats"></ul>
+    </div>
+  </div>
+
+  <!-- Mãos -->
+  <div id="slot-maos" class="equip-slot" data-slot="maos">
+    <span class="slot-label">Mãos</span>
+    <img class="slot-img" src="" alt="">
+    <div class="item-tooltip">
+      <h3 class="tooltip-name"></h3>
+      <p class="tooltip-desc"></p>
+      <ul class="tooltip-stats"></ul>
+    </div>
+  </div>
+
+  <!-- Pernas -->
+  <div id="slot-pernas" class="equip-slot" data-slot="pernas">
+    <span class="slot-label">Pernas</span>
+    <img class="slot-img" src="" alt="">
+    <div class="item-tooltip">
+      <h3 class="tooltip-name"></h3>
+      <p class="tooltip-desc"></p>
+      <ul class="tooltip-stats"></ul>
+    </div>
+  </div>
+
+  <!-- Acessório -->
+  <div id="slot-acessorio" class="equip-slot" data-slot="acessorio">
+    <span class="slot-label">Acessório</span>
+    <img class="slot-img" src="" alt="">
+    <div class="item-tooltip">
+      <h3 class="tooltip-name"></h3>
+      <p class="tooltip-desc"></p>
+      <ul class="tooltip-stats"></ul>
+    </div>
+  </div>
+
+  <!-- Arma -->
+
+
+</div>
+
+<style>
+
+/* =========================== */
+/*   GRID DE SLOTS             */
+/* =========================== */
+
+#equipmentSlots {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* =========================== */
+/*   SLOT VISUAL               */
+/* =========================== */
+
+.equip-slot {
+  position: relative;
+  padding: 10px;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.equip-slot:hover {
+  border-color: #ff4800;
+  box-shadow: 0 0 12px rgba(255, 72, 0, 0.7);
+}
+
+/* =========================== */
+/*   TEXTO QUANDO VAZIO        */
+/* =========================== */
+
+.slot-label {
+  display: block;
+  font-size: 12px;
+  color: #ff4800;
+  margin-bottom: 5px;
+}
+
+/* =========================== */
+/*   IMAGEM DO ITEM            */
+/* =========================== */
+
+.slot-img {
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; /* mantém 1:1 perfeito */
+  display: none;
+  margin: 4px auto;
+  border-radius: 6px; /* opcional */
+  background: #111;   /* evita fundo transparente feio */
+}
+
+
+/* =========================== */
+/*   INFO VISÍVEL NO SLOT      */
+/* =========================== */
+
+.item-info {
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-info div {
+  font-size: 12px;
+  color: #ddd;
+  line-height: 1.2;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================== */
+/*   TOOLTIP (HOVER)           */
+/* =========================== */
+
+.item-tooltip {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+
+  background: #0c0c0c;
+  border: 1px solid #ff4800;
+  border-radius: 8px;
+
+  padding: 12px;
+  color: #eee;
+  font-size: 13px;
+  line-height: 1.3;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  z-index: 999;
+}
+
+/* Tooltip aparece somente quando a classe é ativada pelo JS */
+.equip-slot:hover .active-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 5px);
+}
+
+/* Nome do item */
+.tooltip-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff4800;
+  margin-bottom: 4px;
+}
+
+/* Descrição */
+.tooltip-desc {
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+/* Lista de atributos */
+.tooltip-stats {
+  margin: 0;
+  padding-left: 0; /* opcional */
+  list-style: none; /* opcional */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;   /* espaçamento entre linhas */
+}
+
+.tooltip-stats li {
+  display: block;
+  margin: 0;
+}
+/* =========================== */
+/*   MOBILE FIX – TOOLTIP      */
+/* =========================== */
+/* =========================== */
+/*   MOBILE FIX – TOOLTIP      */
+/* =========================== */
+
+
+
+
+
+</style>
 
 <style>
 /* =========================== */

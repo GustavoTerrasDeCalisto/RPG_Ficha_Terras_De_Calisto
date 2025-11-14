@@ -2649,10 +2649,78 @@ function alternarTextoBonus(numero) {
 // Abrir ou fechar a seção de bônus
 // Abrir ou fechar a seção de bônus
 let equippedItemId = null;
+let equippedSlots = {
+  cabeca: null,
+  peito: null,
+  pernas: null,
+  botas: null,
+  maos: null,
+  acessorio: null
+};
+
+
 
 const items = [
-  
-  {
+ {
+  id: "thorville_olho_ressecado",
+  name: "Thorvilles Tørre Øye",
+  desc: "O Olho Ressecado de Thorville, um amuleto sagrado dito ser uma relíquia da Grande Guerra. Quem o carrega pode invocar a magia Conexão Santa sem custo uma vez ao dia.",
+  img: "imagens/Armas/olho.png",
+  slot: "acessorio",
+  armor: 0,
+  tipo: "Sagrado",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+
+{
+  id: "gyllen_ravnhjelm",
+  name: "Gyllen Ravnhjelm",
+  desc: "Capacete dourado do Corvo Negro. Dizem que suas sombras ainda sussurram. Concede a magia Sombra Animal ao usuário.",
+  img: "imagens/Armas/capacete corvo negro.png",
+  slot: "cabeca",
+  armor: 1,
+  tipo: "Pesado",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+
+{
+  id: "gylden_pectoral",
+  name: "Gylden Pectoral",
+  desc: "Peitoral dourado do Corvo Negro. Seu brilho vivo pulsa como asas. Desbloqueia a passiva Metamorfose.",
+  img: "imagens/Armas/peito corvo negro.png",
+  slot: "peito",
+  armor: 1,
+  tipo: "Pesado",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+
+{
+  id: "gylden_glove",
+  name: "Gylden Glove",
+  desc: "Luva dourada do Corvo Negro, imbuída com magia antiga. Aumenta o dano crítico de todas as magias em 4x.",
+  img: "imagens/Armas/luva corvo negro.png",
+  slot: "maos",
+  armor: 0,
+  tipo: "Arcano",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+
+{
+  id: "gylden_of_crov",
+  name: "Gylden of Crov",
+  desc: "Botas douradas do Corvo Negro, leves e rápidas como sombras voando. Dobra sua distância de movimento.",
+  img: "imagens/Armas/bota corvo negro.png",
+  slot: "pernas",
+  armor: 1,
+  tipo: "Leve",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
     "id": "adaga",
     "name": "Adaga",
     "desc": "Arma leve e cortante, ideal para ataques rápidos e furtivos.",
@@ -4439,7 +4507,60 @@ function showItemDesc(item) {
   const rangeElem = document.getElementById('itemDescRange');
   const criticalElem = document.getElementById('itemDescCritical');
   const equipBonusElem = document.getElementById('itemDescEquipBonus');
-  
+
+  // ---------------------------------
+  // 🔥 É EQUIPAMENTO?
+  // ---------------------------------
+  const isEquipment =
+    item.slot ||
+    item.armor !== undefined ||
+    item.tipo !== undefined ||
+    item.TipoItem?.toLowerCase() === "equipamento";
+
+  if (isEquipment) {
+
+    // Mostra apenas dados relevantes de equipamento
+    damageTypeElem.textContent = `Armadura: ${item.armor ?? "—"}`;
+    elementalDamageElem.textContent = `Tipo: ${item.tipo || item.TipoItem || "—"}`;
+    damageDiceElem.textContent = `Slot: ${item.slot?.toUpperCase() || "—"}`;
+    rangeElem.textContent = "";     // limpa campo desnecessário
+    criticalElem.textContent = "";  // limpa campo desnecessário
+    equipBonusElem.textContent = `Bônus: ${item.equipBonus || "Nenhum"}`;
+
+    // Configura botão Equipar/Remover
+
+    const slot = item.slot;
+    equipBtn.textContent =
+      equippedSlots[slot]?.id === item.id ? "Remover" : "Equipar";
+
+    equipBtn.onclick = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      // alterna estado
+      if (equippedSlots[slot]?.id === item.id) {
+        equippedSlots[slot] = null;
+      } else {
+        equippedSlots[slot] = item;
+      }
+
+      saveEquippedSlots();
+      updateSlotsUI();
+
+      equipBtn.textContent =
+        equippedSlots[slot]?.id === item.id ? "Remover" : "Equipar";
+
+      descPopup.classList.add("hidden");
+    };
+
+    descPopup.classList.remove("hidden");
+    return;
+  }
+
+  // ---------------------------------
+  // 🔥 SE CHEGOU AQUI → É ARMA
+  // ---------------------------------
+
   damageTypeElem.textContent = `Dano Físico: ${item.damageType || 'N/A'}`;
   elementalDamageElem.textContent = `Dano Elemental: ${item.elementalDamage || 'N/A'}`;
   damageDiceElem.textContent = `Tipo de Dano: ${item.damageDice || 'N/A'}`;
@@ -4447,6 +4568,7 @@ function showItemDesc(item) {
   criticalElem.textContent = `Crítico: ${item.critical || 'N/A'}`;
   equipBonusElem.textContent = `Bônus ao Equipar: ${item.equipBonus || 'Nenhum'}`;
 
+  // SISTEMA DE ARMAS
   equipBtn.textContent = item.id === equippedItemId ? "Remover" : "Equipar";
 
   equipBtn.onclick = (event) => {
@@ -4454,40 +4576,39 @@ function showItemDesc(item) {
     event.stopPropagation();
 
     if (equippedItemId === item.id) {
-  // Remover equipamento
-  equippedItemId = null;
-  equippedSlot.innerHTML = "";
-} else {
-  // Equipar item com detalhes visuais e hover
-  equippedItemId = item.id;
-  equippedSlot.innerHTML = `
-    <div class="equipped-item-container">
-      <div class="equipped-visible">
-        <img src="${item.img}" alt="${item.name}">
-        <div class="item-info">
-          <div>${item.name}</div>
-          <div>${item.damageType || 'Dano N/A'}</div>
-        </div>
-      </div>
-      <div class="equipped-hover-info">
-        <div>Dano Físico: ${item.damageType || 'N/A'}</div>
-        <div>Dano Elemental: ${item.elementalDamage || 'N/A'}</div>
-        <div>Tipo de Dano: ${item.damageDice || 'N/A'}</div>
-        <div>Alcance: ${item.range || 'N/A'}</div>
-        <div>Crítico: ${item.critical || 'N/A'}</div>
-        <div>Bônus ao Equipar: ${item.equipBonus || 'Nenhum'}</div>
-      </div>
-    </div>
-  `;
-}
-descPopup.classList.add('hidden');
-equipBtn.textContent = item.id === equippedItemId ? "Remover" : "Equipar";
+      equippedItemId = null;
+      equippedSlot.innerHTML = "";
+    } else {
+      equippedItemId = item.id;
 
+      equippedSlot.innerHTML = `
+        <div class="equipped-item-container">
+          <div class="equipped-visible">
+            <img src="${item.img}" alt="${item.name}">
+            <div class="item-info">
+              <div>${item.name}</div>
+              <div>${item.damageType || 'Dano N/A'}</div>
+            </div>
+          </div>
+          <div class="equipped-hover-info">
+            <div>Dano Físico: ${item.damageType || 'N/A'}</div>
+            <div>Dano Elemental: ${item.elementalDamage || 'N/A'}</div>
+            <div>Tipo de Dano: ${item.damageDice || 'N/A'}</div>
+            <div>Alcance: ${item.range || 'N/A'}</div>
+            <div>Crítico: ${item.critical || 'N/A'}</div>
+            <div>Bônus ao Equipar: ${item.equipBonus || 'Nenhum'}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    equipBtn.textContent = item.id === equippedItemId ? "Remover" : "Equipar";
     descPopup.classList.add('hidden');
   };
 
   descPopup.classList.remove('hidden');
 }
+
 
 // Função para carregar o item equipado do armazenamento localStorage
 function loadEquippedItem() {
@@ -4515,10 +4636,10 @@ function loadEquippedItem() {
   }
 }
 
-// Carregar o personagem ao abrir a página
 document.addEventListener('DOMContentLoaded', () => {
-  loadEquippedItem();
+  loadEquippedItem(); // ok manter
 });
+
 
 
 // Extrai todos os tipos únicos
@@ -4554,6 +4675,73 @@ itemFilter.addEventListener('change', () => {
 
 // Renderiza inicialmente
 renderItems();
+function updateSlotsUI() {
+  Object.entries(equippedSlots).forEach(([slot, item]) => {
+    const elem = document.getElementById(`slot-${slot}`);
+    if (!elem) return;
+
+    const img = elem.querySelector(".slot-img");
+    const label = elem.querySelector(".slot-label");
+    const tooltip = elem.querySelector(".item-tooltip");
+
+    const tName = tooltip.querySelector(".tooltip-name");
+    const tDesc = tooltip.querySelector(".tooltip-desc");
+    const tStats = tooltip.querySelector(".tooltip-stats");
+
+    // Se não tem item
+    if (!item) {
+      img.style.display = "none";
+      label.style.display = "block";
+      tooltip.classList.remove("active-tooltip");
+
+      tName.textContent = "";
+      tDesc.textContent = "";
+      tStats.innerHTML = "";
+      return;
+    }
+
+    // Mostrar imagem
+    img.src = item.img;
+    img.style.display = "block";
+    label.style.display = "none";
+
+    // Tooltip ativo
+    tooltip.classList.add("active-tooltip");
+
+    // Nome e descrição
+    tName.textContent = item.name || "Item";
+    tDesc.textContent = item.desc || "Sem descrição.";
+
+    // ============================
+    // Detecta se é equipamento
+    // ============================
+   const isEquipamento = item.slot !== undefined || item.TipoItem === "Equipamento";
+
+
+    // ============================
+    // Preenche as informações
+    // ============================
+if (isEquipamento) {
+  tStats.innerHTML = `
+    <li><strong>Tipo:</strong> ${item.tipo || "—"}</li>
+    <li><strong>Armadura:</strong> ${item.armor ?? "—"}</li>
+    <li><strong>Slot:</strong> ${item.slot?.toUpperCase() || "—"}</li>
+  `;
+} else {
+  // ARMA CORRETAMENTE EXIBIDA
+  tStats.innerHTML = `
+    <li><strong>Dano Físico:</strong> ${item.damageType || 'N/A'}</li>
+    <li><strong>Dano Elemental:</strong> ${item.elementalDamage || 'N/A'}</li>
+    <li><strong>Tipo de Dano:</strong> ${item.damageDice || 'N/A'}</li>
+    <li><strong>Alcance:</strong> ${item.range || 'N/A'}</li>
+    <li><strong>Crítico:</strong> ${item.critical || 'N/A'}</li>
+    <li><strong>Bônus ao Equipar:</strong> ${item.equipBonus || 'Nenhum'}</li>
+  `;
+}
+
+  });
+}
+
 
 
 // Mostrar/esconder os popups
@@ -4594,6 +4782,66 @@ window.addEventListener('click', (event) => {
     descPopup.classList.add('hidden');
   }
 });
+function saveEquippedSlots() {
+  const savedCharacter = JSON.parse(localStorage.getItem('savedCharacter')) || {};
+  savedCharacter.equippedSlots = equippedSlots;
+  localStorage.setItem('savedCharacter', JSON.stringify(savedCharacter));
+}
+// Carrega os slots
+function loadEquippedSlots() {
+  const savedCharacter = JSON.parse(localStorage.getItem('savedCharacter'));
+
+  if (savedCharacter && savedCharacter.equippedSlots) {
+    equippedSlots = savedCharacter.equippedSlots;
+    updateSlotsUI();
+  }
+}
+
+
+function updateSlotTooltip(slotElement, item) {
+    const tooltip = slotElement.querySelector(".item-tooltip");
+    const nameElem = tooltip.querySelector(".tooltip-name");
+    const descElem = tooltip.querySelector(".tooltip-desc");
+    const statsElem = tooltip.querySelector(".tooltip-stats");
+
+    nameElem.textContent = item.name;
+    descElem.textContent = item.desc;
+    statsElem.innerHTML = "";
+
+    if (item.TipoItem === "Equipamento") {
+        if (item.armor !== undefined) statsElem.innerHTML += `<li>Armadura: ${item.armor}</li>`;
+        if (item.tipo) statsElem.innerHTML += `<li>Tipo: ${item.tipo}</li>`;
+        if (item.slot) statsElem.innerHTML += `<li>Slot: ${item.slot}</li>`;
+    }
+
+    if (item.TipoItem === "Arma") {
+        if (item.damageType) statsElem.innerHTML += `<li>Dano Físico: ${item.damageType}</li>`;
+        if (item.elementalDamage) statsElem.innerHTML += `<li>Dano Elemental: ${item.elementalDamage}</li>`;
+        if (item.damageDice) statsElem.innerHTML += `<li>Tipo de Dano: ${item.damageDice}</li>`;
+        if (item.range) statsElem.innerHTML += `<li>Alcance: ${item.range}</li>`;
+        if (item.critical) statsElem.innerHTML += `<li>Crítico: ${item.critical}</li>`;
+        if (item.equipBonus) statsElem.innerHTML += `<li>Bônus: ${item.equipBonus}</li>`;
+    }
+}
+function equipItem(item) {
+    const slotName = item.slot;
+
+    // Slot DOM
+    const slot = document.querySelector(`[data-slot="${slotName}"]`);
+    const img = slot.querySelector(".slot-img");
+
+    // Coloca imagem
+    img.src = item.img;
+    img.style.display = "block";
+
+    // Salva no sistema
+    equippedSlots[slotName] = item.id;
+
+    // Atualiza tooltip
+    updateSlotTooltip(slot, item);
+
+    console.log(`Item equipado no slot: ${slotName}`);
+}
 
 
 // Função para calcular os atributos base
@@ -5402,6 +5650,7 @@ document.addEventListener('DOMContentLoaded', () => {
       life: 100, sanity: 100, special: 0, armor: 0, movement: 0,   level: parseInt(document.getElementById('level-view').textContent, 10) || 1, // ✅ pega valor atual
 
       equippedItemId: equippedItemId,
+  equippedSlots: equippedSlots,
       notes: currentNotes, // 🧾 <--- adiciona o texto do bloco de notas
       chosenBonuses: chosenBonuses // ✅ <<<<< AQUI
 
@@ -5516,6 +5765,10 @@ if (saveAlert) {
 
   atualizarBonusDoPassado(characterData.past);
   loadEquippedItem(characterData);
+ if (characterData.equippedSlots) {
+  equippedSlots = characterData.equippedSlots;
+  updateSlotsUI();
+}
   equippedItemId = characterData.equippedItemId || null;
 
   // ============================

@@ -2069,7 +2069,8 @@ Desbloqueia uma magia de nível 1.    </button>
                 <div class="popup-content scrollable-grid">
                   <button id="closeItemPopup">Fechar</button>
                   <h2>Escolha um Item</h2>
-                  
+                  <button onclick="abrirCreateItem()">Criar Item</button>
+
                   <select id="itemFilter">
                     <option value="Todos">Todos os Tipos</option>
                   </select>
@@ -2088,7 +2089,385 @@ Desbloqueia uma magia de nível 1.    </button>
           </div>
 
     
-          
+          <div id="cie-overlay">
+  <div id="cie-popup">
+
+    <div class="cie-title">Criar Item</div>
+
+    <!-- TIPO DE ITEM -->
+    <div class="cie-input-block">
+      <label>Tipo de Item</label>
+      <select id="cie-tipo-item" onchange="cieTrocarTipoItem()">
+        <option value="equip">Equipamento</option>
+        <option value="arma">Arma</option>
+      </select>
+    </div>
+
+    <!-- CAMPOS COMUNS -->
+    <div class="cie-input-block">
+      <label>Nome</label>
+      <input id="cie-nome" type="text">
+    </div>
+
+    <div class="cie-input-block">
+      <label>Descrição</label>
+      <textarea id="cie-desc" rows="3"></textarea>
+    </div>
+
+    <div class="cie-input-block">
+      <label>Imagem</label>
+      <input id="cie-img" type="file" accept="image/*">
+      <div class="cie-img-preview" id="cie-preview">
+        <span style="color:#666">Nenhuma imagem</span>
+      </div>
+    </div>
+
+    <!-- EQUIPAMENTO -->
+    <div id="cie-equip-block">
+
+      <div class="cie-input-block">
+        <label>Slot</label>
+        <select id="cie-slot">
+          <option value="cabeca">Cabeça</option>
+          <option value="peito">Peito</option>
+          <option value="pernas">Pernas</option>
+          <option value="botas">Botas</option>
+          <option value="maos">Mãos</option>
+          <option value="acessorio">Acessório</option>
+        </select>
+      </div>
+
+      <div class="cie-input-block">
+        <label>Armadura</label>
+        <input id="cie-armor" type="number" value="0">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Tipo</label>
+        <input id="cie-tipo" type="text" placeholder="Ex: Pesado, Sagrado, Leve...">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Bônus ao Equipar</label>
+        <input id="cie-bonus" type="text" placeholder="Ex: +1 Armadura, +2 Destreza...">
+      </div>
+
+    </div>
+
+    <!-- ARMA -->
+    <div id="cie-arma-block" style="display:none">
+
+      <div class="cie-input-block">
+        <label>Dano Físico</label>
+        <input id="cie-damageType" type="text">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Dano Elemental</label>
+        <input id="cie-elementalDamage" type="text">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Tipo de Dano</label>
+        <input id="cie-damageDice" type="text">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Alcance</label>
+        <input id="cie-range" type="text">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Crítico</label>
+        <input id="cie-critical" type="text">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Bônus ao Equipar</label>
+        <input id="cie-equipBonus" type="text">
+      </div>
+
+      <div class="cie-input-block">
+        <label>Tipo da Arma</label>
+        <input id="cie-tipoArma" type="text">
+      </div>
+
+    </div>
+
+    <div class="cie-btn" onclick="cieCriarItem()">Criar</div>
+    <div class="cie-close" onclick="cieFechar()">Fechar</div>
+
+  </div>
+</div>
+
+
+<style>
+button[onclick="abrirCreateItem()"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #0077ff, #00ccff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: filter 0.2s;
+}
+
+button[onclick="abrirCreateItem()"]:hover {
+    filter: brightness(1.15);
+}
+
+/* ========================================= */
+/* POPUP CRIAR EQUIPAMENTO — CSS EXCLUSIVO   */
+/* Totalmente isolado pelo prefixo cie-      */
+/* ========================================= */
+/* ========================================= */
+/* POPUP CRIAR EQUIPAMENTO — CSS EXCLUSIVO   */
+/* ========================================= */
+
+#cie-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999 !important;
+
+  /* evita que o popup encoste nas bordas ou saia da tela */
+  padding: 20px;
+}
+
+#cie-popup {
+  background: #141414;
+  width: 100%;
+  max-width: 380px;
+
+  /* ⚠️ AQUI ESTÁ A CORREÇÃO PRINCIPAL */
+  max-height: 90vh;        /* nunca maior que a tela */
+  overflow-y: auto;        /* rolagem interna */
+  overflow-x: hidden;
+
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid #00ccff;
+  box-shadow: 0 0 25px rgba(0, 55, 255, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* TÍTULO */
+.cie-title {
+  font-size: 18px;
+  color: #00ccff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* INPUTS */
+.cie-input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cie-input-block label {
+  font-size: 13px;
+  color: #00ccff;
+}
+
+.cie-input-block input,
+.cie-input-block textarea,
+.cie-input-block select {
+  background: #0d0d0d;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* PREVIEW IMAGEM */
+.cie-img-preview {
+  width: 100%;
+  height: 150px;
+  border: 1px dashed #555;
+  border-radius: 8px;
+  background: #000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.cie-img-preview img {
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+
+/* BOTÃO CRIAR */
+.cie-btn {
+  padding: 10px;
+  text-align: center;
+  background: #00ccff;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.cie-btn:hover {
+  background:#00ccff;
+}
+
+/* FECHAR */
+.cie-close {
+  text-align:center;
+  color:#ccc;
+  cursor:pointer;
+  margin-top:4px;
+}
+
+/* MOBILE — garante que nunca estoura */
+@media (max-width: 600px) {
+  #cie-overlay {
+    padding: 10px;
+  }
+
+  #cie-popup {
+    max-height: 92vh; /* um pouquinho maior no mobile */
+  }
+}
+
+</style>
+
+<script>
+function abrirCreateItem() {
+  document.getElementById("cie-overlay").style.display = "flex";
+}
+
+function cieFechar() {
+  document.getElementById("cie-overlay").style.display = "none";
+}
+
+function cieTrocarTipoItem() {
+  const tipo = document.getElementById("cie-tipo-item").value;
+
+  document.getElementById("cie-equip-block").style.display =
+    tipo === "equip" ? "block" : "none";
+
+  document.getElementById("cie-arma-block").style.display =
+    tipo === "arma" ? "block" : "none";
+}
+
+document.getElementById("cie-img").addEventListener("change", function () {
+  const file = this.files[0];
+  const preview = document.getElementById("cie-preview");
+
+  if (!file) {
+    preview.innerHTML = "<span style='color:#666'>Nenhuma imagem</span>";
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = () => preview.innerHTML = `<img src="${reader.result}">`;
+  reader.readAsDataURL(file);
+});
+
+// função utilitária
+function cie(id) { return document.getElementById("cie-" + id).value; }
+
+
+function cieCriarItem() {
+
+  const nome = cie("nome");
+  const desc = cie("desc");
+  const tipoItem = document.getElementById("cie-tipo-item").value;
+  const imgFile = document.getElementById("cie-img").files[0];
+
+  if (!nome || !imgFile) {
+    alert("Nome e imagem são obrigatórios.");
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = () => {
+
+    if (tipoItem === "equip") {
+      criarEquipamento(nome, desc, reader.result);
+    } else {
+      criarArma(nome, desc, reader.result);
+    }
+
+    cieFechar();
+  };
+
+  reader.readAsDataURL(imgFile);
+}
+
+
+function criarEquipamento(nome, desc, imgBase64) {
+
+  const item = {
+    id: "custom_" + Date.now(),
+    name: nome,
+    desc: desc,
+    img: imgBase64,
+    slot: cie("slot"),
+    armor: Number(cie("armor")),
+    tipo: cie("tipo"),
+    equipBonus: cie("bonus"),
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  };
+
+  salvarItem(item);
+}
+
+
+function criarArma(nome, desc, imgBase64) {
+
+  const item = {
+    id: "custom_" + Date.now(),
+    name: nome,
+    desc: desc,
+    img: imgBase64,
+    damageType: cie("damageType"),
+    elementalDamage: cie("elementalDamage"),
+    damageDice: cie("damageDice"),
+    range: cie("range"),
+    critical: cie("critical"),
+    equipBonus: cie("equipBonus"),
+    TipoItem: cie("tipoArma") || "Arma"
+  };
+
+  salvarItem(item);
+}
+
+
+
+function salvarItem(item) {
+
+  let save = JSON.parse(localStorage.getItem("playerData")) || {};
+
+  if (!save.customItems) save.customItems = [];
+
+  save.customItems.push(item);
+  localStorage.setItem("playerData", JSON.stringify(save));
+
+  items.push(item);
+
+  // atualiza UI se existir
+  if (typeof updateSlotsUI === "function") {
+    updateSlotsUI();
+  }
+}
+
+</script>
             
             
 
@@ -8488,6 +8867,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

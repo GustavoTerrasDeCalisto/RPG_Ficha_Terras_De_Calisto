@@ -4260,6 +4260,18 @@ const items = [
   //em andamento
 ];
 
+// ==============================================
+// CARREGAR CUSTOM ITEMS DO LOCALSTORAGE
+// ==============================================
+let savedData = JSON.parse(localStorage.getItem("playerData")) || {};
+
+if (savedData.customItems && Array.isArray(savedData.customItems)) {
+  savedData.customItems.forEach(ci => items.push(ci));
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // TODO SEU CÓDIGO ORIGINAL AQUI DENTRO
 (function () {
@@ -6159,6 +6171,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

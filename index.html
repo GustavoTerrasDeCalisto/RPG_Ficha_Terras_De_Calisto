@@ -681,7 +681,116 @@
           </p>
         </div>
                   <img src="/imagens/Aula.png" alt="Distribuição de atributos do personagem" style="width:100%; border-radius:10px;">
+<section class="rule-card" aria-labelledby="rc-title" role="region">
+  <h2 id="rc-title">Vantagem e Desvantagem em Testes</h2>
 
+  <ol class="mini-list">
+   <p><strong>Vantagem:</strong> Quando um personagem tem vantagem em um teste, ele rola dois D20 e escolhe o resultado mais alto.</p>
+   <p></p><strong>Desvantagem:</strong> Quando um personagem tem desvantagem em um teste, ele rola dois D20 e escolhe o resultado mais baixo.</p>
+  </ol>
+
+ 
+</section>
+          
+<style>
+  :root{
+    --bg: #ffffff;
+    --card-border: #e6eef8;
+    --title: #082f4b;
+    --muted: #5b6670;
+    --radius: 10px;
+    --pad: 10px;
+    --gap:10px;
+  }
+
+  .rule-card{
+    background: var(--bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 10px;
+    max-width: 640px;
+    margin: 10px auto;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    color: #0f172a;
+    font-size: 13px;
+    box-shadow: 0 6px 18px rgba(10,20,30,0.04);
+  }
+
+  .rule-card h2{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: var(--title);
+    letter-spacing: 0.2px;
+  }
+
+  .mini-list{
+    margin: 6px 0 8px 20px;
+    padding: 0;
+    color: var(--muted);
+  }
+  .mini-list li{ margin-bottom:6px; }
+
+  .mt{ margin-top:10px; }
+
+  .lead{
+    margin: 6px 0 10px 0;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  .rule-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: var(--gap);
+    align-items: start;
+  }
+
+  .rule-item{
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    min-height: 64px;
+    color: #0d1b1f;
+    box-shadow: 0 4px 10px rgba(10,20,30,0.03);
+    border: 1px solid rgba(0,0,0,0.03);
+  }
+
+  /* cores específicas */
+  .rule-item.resist{
+    background: linear-gradient(180deg, #eefdf4, #f6fff9);
+    border: 1px solid rgba(34,197,94,0.12);
+    box-shadow: 0 6px 18px rgba(34,197,94,0.06);
+  }
+  .rule-item.vuln{
+    background: linear-gradient(180deg, #fff5f6, #fffafc);
+    border: 1px solid rgba(239,68,68,0.12);
+    box-shadow: 0 6px 18px rgba(239,68,68,0.04);
+  }
+  .rule-item.immune{
+    background: linear-gradient(180deg, #eef6ff, #fbfdff);
+    border: 1px solid rgba(59,130,246,0.12);
+    box-shadow: 0 6px 18px rgba(59,130,246,0.04);
+  }
+
+  .rule-item h4{
+    margin: 0 0 6px 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .rule-item p{
+    margin: 0;
+    line-height: 1.35;
+    color: #0b1720;
+    font-size: 12.5px;
+  }
+
+  /* responsivo: empilha em telas pequenas */
+  @media (max-width:640px){
+    .rule-grid{ grid-template-columns: repeat(1, 1fr); }
+    .rule-card{ padding:8px; max-width: 92%; }
+  }
+</style>
        </div>
       </div>
 
@@ -696,6 +805,25 @@
         <p>
           A rolagem de ações usa 1D20 + modificador de atributo contra uma <strong>Dificuldade Temporária (DT)</strong>, gerada por uma rolagem do oponente.
         </p>
+          <h3 class="mt">Condições</h3>
+  <p class="lead">Entenda como funcionam as Condições em <strong>Terras de Calisto</strong> e como elas impactam sua jogabilidade!</p>
+
+  <div class="rule-grid">
+    <div class="rule-item resist">
+      <h4>Resistência</h4>
+      <p>Quando você possui resistência a um tipo de dano, você sofrerá <strong>metade</strong> do dano que seria normalmente causado.</p>
+    </div>
+
+    <div class="rule-item vuln">
+      <h4>Vulnerabilidade</h4>
+      <p>Ter vulnerabilidade a um tipo de dano faz com que você sofra o <strong>dobro</strong> do dano sempre que sofrer dano desse tipo.</p>
+    </div>
+
+    <div class="rule-item immune">
+      <h4>Imunidade</h4>
+      <p>Quando você é imune a um tipo de dano, todo e qualquer dano desse tipo é reduzido a <strong>0</strong>.</p>
+    </div>
+  </div>
         <h3>Exemplo de ataque</h3>
 <p>
   Para atacar, o jogador rola <strong>1D20 + bônus de teste</strong> de ataque.  
@@ -8902,6 +9030,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

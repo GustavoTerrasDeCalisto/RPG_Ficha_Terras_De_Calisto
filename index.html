@@ -572,6 +572,44 @@
         <p>
           Os jogadores tomam decisões que afetam diretamente a narrativa, enquanto o Mestre de Jogo (GM) conduz os eventos, descreve os cenários e interpreta NPCs.
         </p>
+                <!-- PLAYER DE ÁUDIO EM FUNDO BRANCO -->
+
+  <audio id="player" controls src="imagens/meu-audio.mp3"></audio>
+
+
+<style>
+  /* Caixa que deixa o player visível no fundo branco */
+  .audio-wrapper {
+    background: #f0f0f0;           /* Cinza claro suave */
+    padding: 15px;
+    border: 1px solid #ccc;        /* Borda leve */
+    border-radius: 12px;
+    display: inline-block;
+  }
+
+  /* Player em si */
+  #player {
+    width: 260px;
+  }
+
+  /* Painel interno */
+  #player::-webkit-media-controls-panel {
+    background-color: #ffffff;     /* Controles brancos */
+    border-radius: 10px;
+  }
+
+  /* Botões visíveis em fundo claro */
+  #player::-webkit-media-controls-play-button,
+  #player::-webkit-media-controls-pause-button {
+    filter: invert(0);             /* Mantém aparência padrão */
+  }
+
+  #player::-webkit-media-controls-volume-slider,
+  #player::-webkit-media-controls-timeline {
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+</style>
         <img src="/imagens/mundo_calisto.png" alt="Mapa sombrio de Calisto com ícones dos quatro elementos" style="width:100%; border-radius:10px;">
       <a href="https://mapa-terras-de-calisto.netlify.app/"
    target="_blank" rel="noopener noreferrer"
@@ -8864,6 +8902,7 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

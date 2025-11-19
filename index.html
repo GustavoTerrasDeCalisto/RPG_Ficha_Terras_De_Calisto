@@ -2195,25 +2195,10 @@ Desbloqueia uma magia de nível 1.    </button>
 
     <div class="cie-btn" onclick="cieCriarItem()">Criar</div>
     <div class="cie-close" onclick="cieFechar()">Fechar</div>
-<button class="cie-btn" onclick="abrirCompartilharItens()">Compartilhar Itens</button>
 
   </div>
 </div>
 
-<div id="share-overlay">
-  <div id="share-popup">
-
-    <div class="share-title">Compartilhar Itens Criados</div>
-
-    <div id="share-list" class="share-list">
-      Carregando...
-    </div>
-
-    <button class="share-btn" onclick="gerarLinkCompartilhamento()">Gerar Link</button>
-    <div class="share-close" onclick="fecharShare()">Fechar</div>
-
-  </div>
-</div>
 
 <style>
 button[onclick="abrirCreateItem()"] {
@@ -2356,75 +2341,6 @@ button[onclick="abrirCreateItem()"]:hover {
     max-height: 92vh; /* um pouquinho maior no mobile */
   }
 }
-#share-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 999999;
-}
-
-#share-popup {
-  background: #141414;
-  width: 100%;
-  max-width: 380px;
-  max-height: 90vh;
-  overflow-y: auto;
-  padding: 18px;
-  border-radius: 12px;
-  border: 2px solid #00ffcc;
-  box-shadow: 0 0 25px rgba(0,255,180,0.4);
-}
-
-.share-title {
-  font-size: 18px;
-  color: #00ffcc;
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.share-list {
-  max-height: 250px;
-  overflow-y: auto;
-  border: 1px solid #333;
-  padding: 10px;
-  border-radius: 8px;
-  background: #0b0b0b;
-  color: #fff;
-}
-
-.share-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
-}
-
-.share-item label {
-  color: #fff;
-  font-size: 13px;
-}
-
-.share-btn {
-  margin-top: 10px;
-  padding: 10px;
-  width: 100%;
-  background: #00ffcc;
-  color: #000;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.share-close {
-  margin-top: 10px;
-  text-align: center;
-  color: #ccc;
-  cursor: pointer;
-}
 
 </style>
 
@@ -2549,97 +2465,7 @@ function salvarItem(item) {
     updateSlotsUI();
   }
 }
-// ----------------------------
-// ABRIR POPUP DE COMPARTILHAR
-// ----------------------------
-function abrirCompartilharItens() {
-  const overlay = document.getElementById("share-overlay");
-  const list = document.getElementById("share-list");
 
-  overlay.style.display = "flex";
-
-  let save = JSON.parse(localStorage.getItem("playerData")) || {};
-
-  if (!save.customItems || save.customItems.length === 0) {
-    list.innerHTML = "<p style='color:#aaa'>Nenhum item criado.</p>";
-    return;
-  }
-
-  list.innerHTML = save.customItems
-    .map(item => `
-      <div class="share-item">
-        <input type="checkbox" class="share-check" value="${item.id}">
-        <label>${item.name}</label>
-      </div>
-    `)
-    .join("");
-}
-
-function fecharShare() {
-  document.getElementById("share-overlay").style.display = "none";
-}
-
-
-
-// ----------------------------
-// GERAR LINK DE COMPARTILHAMENTO
-// ----------------------------
-function gerarLinkCompartilhamento() {
-  const checks = [...document.querySelectorAll(".share-check:checked")];
-  if (checks.length === 0) {
-    alert("Selecione ao menos 1 item.");
-    return;
-  }
-
-  let save = JSON.parse(localStorage.getItem("playerData"));
-  let selected = save.customItems.filter(i => checks.some(c => c.value === i.id));
-
-  const json = JSON.stringify(selected);
-  const base64 = btoa(json);
-
-  const url = `${location.origin}${location.pathname}?importItems=${base64}`;
-
-  navigator.clipboard.writeText(url);
-  alert("Link copiado! Envie para seu amigo.");
-}
-
-
-
-// ----------------------------
-// IMPORTAR ITENS VIA URL
-// ----------------------------
-function importarItensURL() {
-  const params = new URLSearchParams(window.location.search);
-  const encoded = params.get("importItems");
-
-  if (!encoded) return;
-
-  try {
-    const json = atob(encoded);
-    const itensImportados = JSON.parse(json);
-
-    let save = JSON.parse(localStorage.getItem("playerData")) || {};
-    if (!save.customItems) save.customItems = [];
-
-    itensImportados.forEach(item => {
-      // evita duplicados
-      if (!save.customItems.some(i => i.id === item.id)) {
-        save.customItems.push(item);
-      }
-    });
-
-    localStorage.setItem("playerData", JSON.stringify(save));
-
-    alert("✔ Itens importados com sucesso!");
-
-  } catch (e) {
-    console.error(e);
-    alert("Erro ao importar itens.");
-  }
-}
-
-// roda automaticamente ao abrir a página
-importarItensURL();
 </script>
             
             
@@ -8631,8 +8457,8 @@ if (subEl) {
 
 
 <style>
-  .-btn {
-    background-image: url('imagens/Botao.png'); /* nome da sua imagem PNG */
+  .mochila-btn {
+    background-image: url('imagens/BotaoMochila.png'); /* nome da sua imagem PNG */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -8649,12 +8475,12 @@ if (subEl) {
     background-color: transparent;
   }
 
-  .-btn:hover {
+  .mochila-btn:hover {
     filter: brightness(1.1);
     transform: scale(1.02);
   }
 
-  .-btn:active {
+  .mochila-btn:active {
     filter: brightness(0.9);
     transform: scale(0.98);
   }
@@ -9040,7 +8866,6 @@ if (subEl) {
   <script src="script.js"></script>
 </body>
 </html>
-
 
 
 

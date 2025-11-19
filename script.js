@@ -2662,6 +2662,61 @@ let equippedSlots = {
 
 const items = [
  {
+    id: "capacete_guardiao",
+    name: "Capacete do Guardião",
+    desc: "Capacete de ferro com viseira simples, usado por guardas da cidade.",
+    img: "imagens/Armadura/capacete.png",
+    slot: "cabeca",
+    armor: 1,
+    tipo: "Comum",
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  },
+  {
+    id: "luvas_simples_couro",
+    name: "Luvas Simples de Couro",
+    desc: "Luvas modestas feitas de couro curtido, oferecem proteção básica contra o frio e arranhões.",
+    img: "imagens/Armadura/luvas.png",
+    slot: "maos",
+    armor: 0,
+    tipo: "Comum",
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  }, 
+  {
+    id: "peitoral_funcional",
+    name: "Peitoral Funcional",
+    desc: "Peitoral de couro reforçado com placas metálicas, oferece boa proteção sem sacrificar mobilidade.",
+    img: "imagens/Armadura/peitoral.png",
+    slot: "peito",
+    armor: 1,
+    tipo: "Comum",
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  },
+  {
+    id: "capa_verde_folha",
+    name: "Capa Verde Folha",
+    desc: "Uma capa simples com cintos de couro, usada por viajantes para se proteger do clima.",
+    img: "imagens/Armadura/capa.png",
+    slot: "acessorio",
+    armor: 0,
+    tipo: "Comum",
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  },
+ 
+  {
+    id: "botas_explorador",
+    name: "Botas do Explorador",
+    desc: "Botas resistentes com sola reforçada, ideais para longas caminhadas e terrenos irregulares.",
+    img: "imagens/Armadura/botas.png",
+    slot: "botas",
+    armor: 0,
+    tipo: "Comum",
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  },{
   id: "thorville_olho_ressecado",
   name: "Thorvilles Tørre Øye",
   desc: "O Olho Ressecado de Thorville, um amuleto sagrado dito ser uma relíquia da Grande Guerra. Quem o carrega pode invocar a magia Conexão Santa sem custo uma vez ao dia.",
@@ -6171,6 +6226,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

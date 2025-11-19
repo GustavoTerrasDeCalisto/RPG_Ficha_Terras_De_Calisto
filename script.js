@@ -2667,7 +2667,8 @@ const items = [
     desc: "Uma capa simples com cintos de couro, usada por viajantes para se proteger do clima.",
     img: "imagens/Armas/capa.png",
     slot: "acessorio",
-    armor: 0,
+  damageDice: "Acessório",
+   armor: 0,
     tipo: "Comum",
     damageType: "N/A",
     TipoItem: "Equipamento"
@@ -2677,6 +2678,7 @@ const items = [
     desc: "Capacete de ferro com viseira simples, usado por guardas da cidade.",
     img: "imagens/Armas/capacete.png",
     slot: "cabeca",
+    damageDice: "Cabeça",
     armor: 1,
     tipo: "Comum",
     damageType: "N/A",
@@ -2688,6 +2690,7 @@ const items = [
     desc: "Peitoral de couro reforçado com placas metálicas, oferece boa proteção sem sacrificar mobilidade.",
     img: "imagens/Armas/peitoral.png",
     slot: "peito",
+    damageDice: "Peito",
     armor: 1,
     tipo: "Comum",
     damageType: "N/A",
@@ -2700,6 +2703,7 @@ const items = [
     desc: "Luvas modestas feitas de couro curtido, oferecem proteção básica contra o frio e arranhões.",
     img: "imagens/Armas/luvas.png",
     slot: "maos",
+    damageDice: "Mãos",
     armor: 0,
     tipo: "Comum",
     damageType: "N/A",
@@ -2711,7 +2715,8 @@ const items = [
     name: "Botas do Explorador",
     desc: "Botas resistentes com sola reforçada, ideais para longas caminhadas e terrenos irregulares.",
     img: "imagens/Armas/botas.png",
-    slot: "botas",
+    slot: "pernas",
+    damageDice: "Pernas",
     armor: 0,
     tipo: "Comum",
     damageType: "N/A",
@@ -2722,7 +2727,8 @@ const items = [
   desc: "O Olho Ressecado de Thorville, um amuleto sagrado dito ser uma relíquia da Grande Guerra. Quem o carrega pode invocar a magia Conexão Santa sem custo uma vez ao dia.",
   img: "imagens/Armas/olho.png",
   slot: "acessorio",
-  armor: 0,
+  damageDice: "Acessório",
+armor: 0,
   tipo: "Sagrado",
   damageType: "N/A",
   TipoItem: "Equipamento"
@@ -2734,6 +2740,8 @@ const items = [
   desc: "Capacete dourado do Corvo Negro. Dizem que suas sombras ainda sussurram. Concede a magia Sombra Animal ao usuário.",
   img: "imagens/Armas/capacete corvo negro.png",
   slot: "cabeca",
+      damageDice: "Cabeça",
+
   armor: 1,
   tipo: "Pesado",
   damageType: "N/A",
@@ -2746,6 +2754,8 @@ const items = [
   desc: "Peitoral dourado do Corvo Negro. Seu brilho vivo pulsa como asas. Desbloqueia a passiva Metamorfose.",
   img: "imagens/Armas/peito corvo negro.png",
   slot: "peito",
+      damageDice: "Peito",
+
   armor: 1,
   tipo: "Pesado",
   damageType: "N/A",
@@ -2758,6 +2768,8 @@ const items = [
   desc: "Luva dourada do Corvo Negro, imbuída com magia antiga. Aumenta o dano crítico de todas as magias em 4x.",
   img: "imagens/Armas/luva corvo negro.png",
   slot: "maos",
+      damageDice: "Mãos",
+
   armor: 0,
   tipo: "Arcano",
   damageType: "N/A",
@@ -2770,6 +2782,8 @@ const items = [
   desc: "Botas douradas do Corvo Negro, leves e rápidas como sombras voando. Dobra sua distância de movimento.",
   img: "imagens/Armas/bota corvo negro.png",
   slot: "pernas",
+      damageDice: "Pernas",
+
   armor: 1,
   tipo: "Leve",
   damageType: "N/A",
@@ -6226,6 +6240,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

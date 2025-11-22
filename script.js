@@ -1018,7 +1018,7 @@ const pastData = {
   // ===============================
   bonustitulo_3: `<p>🩸 <strong>Sanguinário</strong></p>`,
 
-  bonusTexto3N1: `<strong>Guerreiro de Ossos</strong> — Cada órgão coletado dá +1 em ataques corpo a corpo. Passiva: <a href=https://terrasdecalistoficha.wordpress.com/ainda-em-criacao-passivas/#:~:text=Dilacera%20e%20atacar><strong>Dilacera e Atacar</strong></a>.`,
+  bonusTexto3N1: `<strong>Guerreiro de Ossos</strong> — Cada órgão coletado dá +1 em ataques corpo a corpo. Passiva: <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p24"><strong>Dilacera e Atacar</strong></a>.`,
   bonusTexto3N3: `<strong>Punhos Macabros</strong> — +1 em Preservação e +1d4 de dano com partes do corpo.`,
   bonusTexto3N5: `<strong>Mestre dos Ossos</strong> — Magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m6"><strong>Órgãos Sombrios</strong></a>. Aumenta dano físico em +2 (1x por combate, 3 de sanidade).`,
   bonusTexto3N9: `<strong>Destruidor de Corpos</strong> — +2 de dano e +1 em resistência a cada ataque com partes corporais.`,
@@ -6240,6 +6240,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

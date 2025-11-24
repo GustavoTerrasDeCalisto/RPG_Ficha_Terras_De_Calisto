@@ -90,55 +90,55 @@ const raceData = {
     "especialBase": 2,
     "armaduraBase": 1,
     "movimentoBase": 5,
-    "bonusRace": `<details class="raca-detail">
-  <summary class="raca-nome">Zhilak</summary>
-  <div class="raca-conteudo">
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Zhilak (Humanos)</summary>
+  <div class="race-content">
+
     <p>
-      Os <strong>Zhilak</strong> são uma raça de humanos conhecidos por sua notável adaptabilidade aos mais diversos ambientes. Possuem uma capacidade singular de se ajustar e prosperar em qualquer território ou condição, expressando sua natureza resiliente, versátil e profundamente integrada com o meio ao seu redor.
+      Os <strong>Zhilak</strong> são uma raça de humanos conhecidos por sua notável adaptabilidade aos diversos ambientes em que habitam. Eles possuem uma capacidade única de se ajustar e prosperar em uma ampla variedade de territórios e condições, refletindo sua natureza resiliente, versátil e profundamente comunitária.
     </p>
 
-    <h3>Características Distintas:</h3>
+    <p><strong>Características Distintas:</strong></p>
 
     <p>
-      <strong>Altura Variável:</strong> Os Zhilak apresentam uma altura que varia de 1,50m a 2,20m, adequando-se naturalmente às necessidades e condições de suas comunidades, sejam elas nômades, rurais ou urbanas.
-    </p>
-
-    <p>
-      <strong>Flexibilidade Cultural:</strong> Mestres na arte da assimilação cultural, os Zhilak são capazes de adotar costumes, tradições e modos de vida variados com rapidez e naturalidade. Sua habilidade de integrar-se em diferentes sociedades os torna mediadores, artesãos, viajantes e colaboradores valiosos em praticamente qualquer lugar onde estejam.
+      <strong>Altura Variável:</strong> Os Zhilak têm uma altura que varia de 1,50 metros a 2,20 metros, adaptando-se às condições ambientais e às necessidades de suas comunidades. Essa variação permite que diferentes grupos se ajustem a seus respectivos ecossistemas.
     </p>
 
     <p>
-      <strong>Resistência Ambiental:</strong> Fisicamente preparados para lidar com uma grande variedade de climas e terrenos, os Zhilak conseguem prosperar em desertos escaldantes, florestas densas, montanhas geladas ou grandes planícies. Eles utilizam com eficiência os recursos naturais disponíveis e moldam suas práticas de sobrevivência conforme o ambiente exige.
+      <strong>Flexibilidade Cultural:</strong> Os Zhilak são mestres na arte da adaptação cultural, sendo capazes de assimilar e adotar costumes, tradições e modos de vida diversos. Eles se integram facilmente em outras sociedades, aprendendo práticas locais e contribuindo com suas habilidades para o bem-estar coletivo.
     </p>
 
     <p>
-      <strong>Mentalidade Comunitária:</strong> A coesão social é o pilar central dos Zhilak. Eles valorizam a cooperação, a solidariedade e o apoio mútuo, formando comunidades onde o equilíbrio entre o individual e o coletivo é cuidadosamente preservado. Cada membro contribui para o bem-estar geral e encontra segurança na unidade do grupo.
+      <strong>Resistência Ambiental:</strong> Sua adaptabilidade também se manifesta em sua resistência física. Os Zhilak podem sobreviver e prosperar em climas áridos, florestas densas, planícies amplas ou montanhas geladas, encontrando formas eficientes de utilizar os recursos naturais ao seu redor.
     </p>
 
     <p>
-      <strong>Inovação e Criatividade:</strong> A adaptabilidade dos Zhilak é impulsionada por uma mentalidade inventiva e curiosa. Eles buscam soluções práticas e originais para desafios cotidianos, desenvolvendo tecnologias, métodos e abordagens que elevam a qualidade de vida e impulsionam o progresso de suas sociedades.
-    </p>
-
-    <h3>Origem do Nome:</h3>
-
-    <p>
-      <strong>“Zh-”</strong> remete ao suave farfalhar de pessoas movendo-se juntas, como páginas viradas em um livro, representando a fluidez e o dinamismo dos Zhilak em diferentes contextos.
+      <strong>Mentalidade Comunitária:</strong> Os Zhilak valorizam profundamente a cooperação, a solidariedade e o trabalho conjunto. Suas comunidades são unidas e estruturadas, com cada indivíduo desempenhando um papel crucial para a sobrevivência e prosperidade do grupo.
     </p>
 
     <p>
-      <strong>“-ee-”</strong> adiciona movimento e energia, evocando a imagem de indivíduos fluindo em direção a um objetivo comum. Embora escrito <em>Zhilak</em>, a pronúncia correta é <strong>Zh-ee-lak</strong>.
+      <strong>Inovação e Criatividade:</strong> A capacidade de adaptação dos Zhilak é impulsionada por sua criatividade. Eles são inventores, artesãos e solucionadores natos de problemas, desenvolvendo novas tecnologias, ferramentas e práticas para enfrentar desafios complexos.
     </p>
 
-    <p>
-      <strong>“-lak”</strong> finaliza a onomatopeia com um senso de união e força coletiva — o elemento que mantém as comunidades Zhilak coesas, resilientes e harmonicamente conectadas.
-    </p>
+    <p><em>
+      “Zh-” remete ao suave farfalhar de pessoas se movendo juntas, como páginas virando, evocando a fluidez e a adaptabilidade que definem os Zhilak.
+    </em></p>
 
-    <h3>Citação:</h3>
-    <blockquote>
-      “Quando o festival começou, um zhilak na multidão ficou mais alto, enchendo o ar de excitação.”
-    </blockquote>
+    <p><em>
+      “-ee-” adiciona sensação de movimento e energia, representando o fluxo constante de indivíduos trabalhando juntos rumo a um objetivo comum. Embora se escreva “Zhilak”, a pronúncia é “Zh-ee-lak”.
+    </em></p>
+
+    <p><em>
+      “-lak” dá à onomatopeia uma sensação de união e força coletiva, simbolizando a coesão e a resiliência das comunidades Zhilak.
+    </em></p>
+
+    <p><em>
+      “Quando o festival começou, um Zhilak na multidão ficou mais alto, enchendo o ar de excitação.”
+    </em></p>
+
   </div>
 </details>
+
 `,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p19">Controle adestrado</a></strong> sem custo uma vez por dia e tem vantagem.`,
     "MagiaDisponivel": "-",
@@ -383,55 +383,55 @@ const raceData = {
     "especialBase": 6,
     "armaduraBase": 0,
     "movimentoBase": 6,
-    "bonusRace": `<details class="raca-detail">
-  <summary class="raca-nome">Skywalkers (Flumplux)</summary>
-  <div class="raca-conteudo">
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Flumplux (Skywalkers)</summary>
+  <div class="race-content">
+
     <p>
-      Os <strong>Skywalkers</strong>, ou <strong>Flumplux</strong>, são uma raça misteriosa que habita as ilhas flutuantes nos céus, distantes dos olhares da maioria dos habitantes da terra. Eles vivem em harmonia com os elementos do ar e do céu, utilizando tecnologias avançadas e habilidades naturais para explorar e proteger seu lar celestial.
+      Os <strong>Skywalkers</strong>, também conhecidos como <strong>Flumplux</strong>, são uma raça misteriosa que habita as ilhas flutuantes dos céus, vivendo isolados do resto do mundo. Em harmonia com os ventos e com o firmamento, eles combinam habilidades naturais únicas com tecnologias avançadas que lhes permitem explorar, proteger e construir suas comunidades nas alturas celestiais.
     </p>
 
-    <h3>Características Distintas:</h3>
+    <p><strong>Características Distintas:</strong></p>
 
     <p>
-      <strong>Altura Variável:</strong> Os Skywalkers têm uma altura que varia de 1,65m a 2,40m, adaptando-se às diferentes condições e necessidades de suas comunidades nas ilhas flutuantes.
-    </p>
-
-    <p>
-      <strong>Asas Contráteis:</strong> Os Skywalkers têm a habilidade única de contrair suas asas, transformando-as em asas vestigiais quando não estão em uso. Essas asas vestigiais são pequenas e não permitem o voo, mas ainda são parte integral de sua anatomia. Quando um Skywalker opta por contrair suas asas, ele inicia um processo de <em>autotomia</em>, no qual as asas se encolhem gradualmente. Para que voltem a crescer e se tornem funcionais novamente, o Skywalker deve reverter o processo, o que leva cerca de sete dias.
+      <strong>Altura Variável:</strong> Os Skywalkers possuem altura que varia entre 1,65 metros e 2,40 metros, refletindo a diversidade ambiental e as necessidades das diferentes ilhas flutuantes onde vivem.
     </p>
 
     <p>
-      <strong>Pelos nas Costas:</strong> Muitos Skywalkers possuem pelos nas costas, característica que reflete sua conexão com o vento e o ar. Esses pelos variam em cor e textura, fornecem isolamento contra o frio das grandes altitudes e contribuem para sua aerodinâmica durante o voo.
+      <strong>Asas Contráteis:</strong> Uma das características mais marcantes dos Flumplux é sua habilidade de contrair parcialmente suas asas. Quando desejam, eles iniciam um processo de <em>autotomia</em>, fazendo com que as asas se encolham até se tornarem vestigiais. Essas asas reduzidas não permitem voo, mas permanecem como parte de sua anatomia. Para recuperar asas plenamente funcionais, eles precisam reverter o processo — um período que leva cerca de sete dias.
     </p>
 
     <p>
-      <strong>Habilidades de Voo:</strong> Quando equipados com asas funcionais, os Skywalkers navegam pelos céus com graça e destreza, voando em velocidades impressionantes e realizando acrobacias aéreas incríveis. São conhecidos por competições de voo e exibições que celebram sua profunda ligação com os domínios celestiais.
+      <strong>Pelos nas Costas:</strong> Muitos Skywalkers apresentam uma camada de pelos nas costas, variando em textura e coloração. Além de fornecer isolamento contra o frio das grandes altitudes, esses pelos ajudam na aerodinâmica durante o voo.
     </p>
 
     <p>
-      <strong>Tecnologia Avançada:</strong> Os Skywalkers desenvolveram tecnologias únicas para a vida nas ilhas flutuantes — veículos voadores, dispositivos de navegação e comunicação, estruturas de suporte e mecanismos para transporte aéreo. São exímios em aproveitar recursos naturais e criar soluções engenhosas para os desafios de viver acima das nuvens.
+      <strong>Habilidades de Voo:</strong> Quando estão com suas asas totalmente desenvolvidas, os Flumplux são navegadores formidáveis dos céus, capazes de atingir altas velocidades e realizar acrobacias aéreas complexas. Eles se destacam em competições de voo, festivais e exibições que celebram sua ancestral ligação com os ventos.
     </p>
 
     <p>
-      <strong>Guardiões dos Céus:</strong> Os Skywalkers são os protetores naturais das ilhas flutuantes, defendendo seu território contra ameaças externas e desastres atmosféricos. São defensores da ordem e da paz, dedicados a preservar a integridade e a beleza de seu lar celestial.
-    </p>
-
-    <h3>Origem do Nome:</h3>
-
-    <p>
-      <strong>“Flum-”</strong> sugere a ideia de flutuar ou voar pelos céus, evocando a sensação de liberdade e aventura.
+      <strong>Tecnologia Avançada:</strong> Vivendo em um ambiente desafiador, os Skywalkers criaram tecnologias avançadas para locomoção, comunicação e navegação aérea. Veículos voadores, estruturas suspensas, pontes energéticas e instrumentos sensoriais fazem parte de seu cotidiano.
     </p>
 
     <p>
-      <strong>“-plux”</strong> adiciona um toque misterioso e celestial, refletindo sua ligação com as estrelas e com os elementos do céu.
+      <strong>Guardiões dos Céus:</strong> Os Flumplux são vistos como os protetores naturais do firmamento. Eles patrulham as ilhas flutuantes e mantêm a ordem, preservando a paz e a estabilidade de seu lar celestial contra invasores ou catástrofes naturais.
     </p>
 
-    <h3>Citação:</h3>
-    <blockquote>
-      “Enquanto eu olhava para o horizonte, avistei uma silhueta graciosa cortando os céus, um Flumplux voando em direção à próxima ilha flutuante.”
-    </blockquote>
+    <p><em>
+      “Flum-” evoca a sensação de flutuar ou deslizar pelos ares, transmitindo leveza, liberdade e movimento.
+    </em></p>
+
+    <p><em>
+      “-plux” acrescenta um tom místico e celestial, remetendo ao brilho das estrelas e à profundidade silenciosa do céu.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu olhava para o horizonte, avistei uma silhueta graciosa cortando os céus — um Flumplux voando em direção à próxima ilha flutuante.”
+    </em></p>
+
   </div>
 </details>
+
 
     Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>Luz</strong>.
     <details>
@@ -744,7 +744,59 @@ const raceData = {
     "especialBase": 0,
     "armaduraBase": 1,
     "movimentoBase": 6,
-    "bonusRace": "-",
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Shlurp (Umbrowalkers)</summary>
+  <div class="race-content">
+
+    <p>
+      Os <strong>Umbrowalker</strong> são uma raça misteriosa que habita as sombras e as profundezas das cavernas subterrâneas, evitando a luz do sol e os olhares indiscretos da superfície. Eles desenvolveram habilidades especiais para se mover silenciosamente e se adaptar a ambientes escuros, tornando-se mestres na arte da furtividade e do sigilo.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Umbrowalker têm uma altura que varia de 1,55 metros a 1,85 metros, adaptando-se às condições de suas comunidades nas cavernas profundas.
+    </p>
+
+    <p>
+      <strong>Adaptação às Sombras:</strong> Eles possuem pele áspera e uma constituição esguia, refletindo sua vida em ambientes escuros. Seus olhos são grandes e luminosos, permitindo-lhes enxergar perfeitamente na escuridão. Contudo, sua sensibilidade à luz torna a exposição ao sol extremamente desconfortável e até perigosa.
+    </p>
+
+    <p>
+      <strong>Habilidades Furtivas:</strong> Mestres em furtividade, os Umbrowalker movem-se com precisão silenciosa, escapando de ameaças e passando despercebidos mesmo em situações hostis. Sua agilidade e astúcia são essenciais para sua sobrevivência nas trevas.
+    </p>
+
+    <p>
+      <strong>Conhecimento das Cavernas:</strong> Há gerações explorando labirintos subterrâneos, os Umbrowalker desenvolveram um profundo conhecimento das cavernas e seus segredos. Eles utilizam um sistema de comunicação baseado em sons sutis e gestos, ideal para longas distâncias em ambientes reverberantes.
+    </p>
+
+    <p>
+      <strong>Tecnologia Adaptada:</strong> Sua tecnologia é criada exclusivamente com recursos subterrâneos. Pedra, metal bruto e cristais são habilmente trabalhados para construir abrigos, ferramentas e armas que atendem às adversidades do subsolo.
+    </p>
+
+    <p>
+      <strong>Mitos e Lendas:</strong> Para os povos da superfície, os Umbrowalker são criaturas de contos e pesadelos. Muitos acreditam que eles sejam meras lendas, mas poucos se arriscam a descer às profundezas para comprovar sua existência.
+    </p>
+
+    <p><em>
+      “Sh” representa o movimento suave e cuidadoso dos passos dos Umbrowalker enquanto atravessam as sombras, evitando qualquer sinal de sua presença.
+    </em></p>
+
+    <p><em>
+      “Lu” sugere a hesitação sutil ao explorar territórios desconhecidos, refletindo a prudência natural dessa raça.
+    </em></p>
+
+    <p><em>
+      “Rp” imita o som abafado e discreto de seus passos sobre pedra úmida e terreno irregular, reforçando o mistério que envolve sua existência.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu avançava pelas profundezas da caverna, o som dos meus próprios passos ressoava ao meu redor, ecoando nas paredes rochosas e se perdendo nas sombras que me cercavam.”
+    </em></p>
+
+  </div>
+</details>
+`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p18">Furtividade sombria</a></strong> uma vez no dia sem custo.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Fundas e Estilingues.",  
@@ -6705,6 +6757,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -9,7 +9,57 @@ const raceData = {
     "especialBase": 0,
     "armaduraBase": 1,
     "movimentoBase": 5,
-    "bonusRace": `Pode usar <strong>Mirar</strong> e no mesmo turno atacar uma vez por combate sem custo.  <details>
+    "bonusRace": `
+    <details class="race-detail">
+  <summary>Detalhes dos Lyrithil (Elfos)</summary>
+  <div class="race-content">
+
+    <p>
+      Os Lyrithil são uma raça de elfos altos, com uma estatura impressionante de 2,10 metros a 2,30 metros, destacando-se por sua elegância e graça. Eles possuem corpos esbeltos e esguios, com proporções harmoniosas que refletem sua conexão com a natureza. Suas feições são delicadas e etéreas, com olhos profundos e brilhantes que capturam a luz do entardecer. Seus cabelos longos e sedosos caem em ondas suaves até seus ombros, em tons que variam do preto azulado ao castanho claro, muitas vezes adornados com flores silvestres ou folhas entrelaçadas.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Olhos:</strong> Os olhos dos Lyrithil são grandes e expressivos, com tons de verde, azul ou prateado, irradiando uma serenidade e uma sabedoria que são típicas da sua raça.
+    </p>
+
+    <p>
+      <strong>Rostos:</strong> Seus rostos são esculpidos como obras de arte, com maçãs do rosto altas, lábios finos e queixo delicado. Eles possuem orelhas pontiagudas que se erguem elegantemente acima de suas cabeças, captando os sons da floresta com uma precisão incomparável.
+    </p>
+
+    <p>
+      <strong>Vestimenta:</strong> Os Lyrithil preferem roupas leves e fluidas, feitas de tecidos naturais como seda ou linho, adornadas com padrões delicados inspirados na flora e fauna da floresta. Eles usam pouca ou nenhuma armadura, confiando em sua agilidade e habilidades mágicas para se protegerem.
+    </p>
+
+    <p>
+      <strong>Postura e Movimento:</strong> Sua postura é ereta e graciosa, com movimentos suaves e fluidos que parecem quase etéreos. Eles se movem pela floresta com uma elegância incomparável, como se estivessem dançando ao ritmo da própria natureza.
+    </p>
+
+    <p><em>
+      “Ly” representa a leveza e a fluidez dos movimentos dos Lyrithil, enquanto eles deslizam graciosamente pela floresta.
+    </em></p>
+
+    <p><em>
+      “Ri” sugere a elegância e a harmonia com o ambiente natural, refletindo sua conexão profunda com a flora e fauna ao seu redor.
+    </em></p>
+
+    <p><em>
+      “Th” imita o sussurro quase imperceptível dos passos sobre a vegetação, como se fossem parte integrante da floresta.
+    </em></p>
+
+    <p><em>
+      “il” é um som atribuído à sonoridade regional da qual foi criada a palavra, muito usado no final de alguns nomes, muitas vezes “il” ou “el”.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu caminhava pela floresta à noite, mal podia ouvir o som dos meus próprios passos suaves sobre o musgo.”
+    </em></p>
+
+  </div>
+</details>
+
+    Pode usar <strong>Mirar</strong> e no mesmo turno atacar uma vez por combate sem custo.  <details>
     <summary><strong>Mirar</strong></summary>
     <p>
       O personagem se concentra para garantir vantagem em seu disparo.<br>
@@ -40,7 +90,56 @@ const raceData = {
     "especialBase": 2,
     "armaduraBase": 1,
     "movimentoBase": 5,
-    "bonusRace": "-",
+    "bonusRace": `<details class="raca-detail">
+  <summary class="raca-nome">Zhilak</summary>
+  <div class="raca-conteudo">
+    <p>
+      Os <strong>Zhilak</strong> são uma raça de humanos conhecidos por sua notável adaptabilidade aos mais diversos ambientes. Possuem uma capacidade singular de se ajustar e prosperar em qualquer território ou condição, expressando sua natureza resiliente, versátil e profundamente integrada com o meio ao seu redor.
+    </p>
+
+    <h3>Características Distintas:</h3>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Zhilak apresentam uma altura que varia de 1,50m a 2,20m, adequando-se naturalmente às necessidades e condições de suas comunidades, sejam elas nômades, rurais ou urbanas.
+    </p>
+
+    <p>
+      <strong>Flexibilidade Cultural:</strong> Mestres na arte da assimilação cultural, os Zhilak são capazes de adotar costumes, tradições e modos de vida variados com rapidez e naturalidade. Sua habilidade de integrar-se em diferentes sociedades os torna mediadores, artesãos, viajantes e colaboradores valiosos em praticamente qualquer lugar onde estejam.
+    </p>
+
+    <p>
+      <strong>Resistência Ambiental:</strong> Fisicamente preparados para lidar com uma grande variedade de climas e terrenos, os Zhilak conseguem prosperar em desertos escaldantes, florestas densas, montanhas geladas ou grandes planícies. Eles utilizam com eficiência os recursos naturais disponíveis e moldam suas práticas de sobrevivência conforme o ambiente exige.
+    </p>
+
+    <p>
+      <strong>Mentalidade Comunitária:</strong> A coesão social é o pilar central dos Zhilak. Eles valorizam a cooperação, a solidariedade e o apoio mútuo, formando comunidades onde o equilíbrio entre o individual e o coletivo é cuidadosamente preservado. Cada membro contribui para o bem-estar geral e encontra segurança na unidade do grupo.
+    </p>
+
+    <p>
+      <strong>Inovação e Criatividade:</strong> A adaptabilidade dos Zhilak é impulsionada por uma mentalidade inventiva e curiosa. Eles buscam soluções práticas e originais para desafios cotidianos, desenvolvendo tecnologias, métodos e abordagens que elevam a qualidade de vida e impulsionam o progresso de suas sociedades.
+    </p>
+
+    <h3>Origem do Nome:</h3>
+
+    <p>
+      <strong>“Zh-”</strong> remete ao suave farfalhar de pessoas movendo-se juntas, como páginas viradas em um livro, representando a fluidez e o dinamismo dos Zhilak em diferentes contextos.
+    </p>
+
+    <p>
+      <strong>“-ee-”</strong> adiciona movimento e energia, evocando a imagem de indivíduos fluindo em direção a um objetivo comum. Embora escrito <em>Zhilak</em>, a pronúncia correta é <strong>Zh-ee-lak</strong>.
+    </p>
+
+    <p>
+      <strong>“-lak”</strong> finaliza a onomatopeia com um senso de união e força coletiva — o elemento que mantém as comunidades Zhilak coesas, resilientes e harmonicamente conectadas.
+    </p>
+
+    <h3>Citação:</h3>
+    <blockquote>
+      “Quando o festival começou, um zhilak na multidão ficou mais alto, enchendo o ar de excitação.”
+    </blockquote>
+  </div>
+</details>
+`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p19">Controle adestrado</a></strong> sem custo uma vez por dia e tem vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "<strong>1 talento extra</strong> à sua escolha livre.",
@@ -64,7 +163,61 @@ const raceData = {
     "especialBase": 10,
     "armaduraBase": 1,
     "movimentoBase": 6,
-    "bonusRace": `Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>fogo</strong>.
+    "bonusRace": `
+    <details class="race-detail">
+  <summary>Detalhes dos Krah-zhik (IgnisAlatus)</summary>
+  <div class="race-content">
+
+    <p>
+      Os Krah-zhik são uma raça misteriosa que habita as ilhas flutuantes de Terras de Calisto, rivalizando com os Skywalkers. Eles vivem em harmonia com os elementos do ar e do céu, utilizando tecnologias avançadas e habilidades naturais para explorar e proteger seu lar celestial.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Tom de Pele Avermelhado:</strong> Os Krah-zhik possuem uma pele avermelhada, refletindo sua conexão com o fogo e a paixão. Seus olhos brilham com uma intensidade ardente, e suas feições são marcadas por traços angulares e expressivos.
+    </p>
+
+    <p>
+      <strong>Asas Brancas ou Pretas:</strong> As asas dos Krah-zhik podem ser brancas como as nuvens ou pretas como a noite. Elas são símbolos de liberdade e poder, permitindo que os Krah-zhik naveguem pelos céus com destreza e realizem manobras impressionantes.
+    </p>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Krah-zhik têm uma altura que varia de 1,80 metros a 2,50 metros, adaptando-se às diferentes condições e necessidades de suas comunidades nas ilhas flutuantes.
+    </p>
+
+    <p>
+      <strong>Asas Contráteis:</strong> Os Krah-zhik têm a habilidade única de contrair suas asas, transformando-as em asas vestigiais quando não estão em uso. Essas asas vestigiais são pequenas e não permitem o voo, mas ainda são uma parte integral da anatomia do Krah-zhik. Quando um Krah-zhik opta por contrair suas asas, ele inicia um processo de autotomia, no qual as asas se encolhem gradualmente até se tornarem asas vestigiais. Para que as asas voltem a crescer e se tornem funcionais novamente, o Krah-zhik deve reverter o processo de autotomia, o que leva cerca de sete dias.
+    </p>
+
+    <p>
+      <strong>Habilidades de Voo e Combate:</strong> Quando equipados com suas asas funcionais, os Krah-zhik são hábeis em voar e em combate aéreo. Eles utilizam suas asas para mergulhar em picadas velozes ou para planar silenciosamente, surpreendendo seus adversários.
+    </p>
+
+    <p>
+      <strong>Katanas Forjadas com Fogo:</strong> Os Krah-zhik dominam a arte da forja, criando katanas imbuidas de chamas. Essas armas ardentes são temidas em batalha, e alguns consideram os Krah-zhik como verdadeiros deuses da forja.
+    </p>
+
+    <p>
+      <strong>Narizes Pontiagudos e Máscaras Antigas:</strong> Os Krah-zhik possuem narizes pontiagudos, semelhantes a máscaras de folclores antigos. Esses traços distintivos adicionam um ar enigmático e ancestral à sua aparência.
+    </p>
+
+    <p><em>
+      “Krah-” evoca a sensação de um rugido ardente, como o crepitar das chamas em uma fogueira.
+    </em></p>
+
+    <p><em>
+      “-zhik” adiciona uma qualidade misteriosa e enigmática à onomatopeia, refletindo a natureza intrigante e desafiadora dos Krah-zhik.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu observava o horizonte, avistei uma silhueta graciosa cortando os céus, um Krah-zhik com asas flamejantes, mergulhando em direção à próxima ilha flutuante, suas penas incandescentes irradiando calor e mistério.”
+    </em></p>
+
+  </div>
+</details>
+
+    Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>fogo</strong>.
     <details>
   <summary><strong>Voar</strong></summary>
   <p>
@@ -156,7 +309,56 @@ const raceData = {
     "especialBase": 7,
     "armaduraBase": 1,
     "movimentoBase": 3,
-    "bonusRace": "Crítico <strong>Corpo a Corpo:</strong> +1 no multiplicador de dano crítico.",
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Thudrok (Gigantes)</summary>
+  <div class="race-content">
+
+    <p>
+      Os Thudrok são gigantes imponentes, com uma altura média que varia entre 2,50 metros a 3,50 metros, destacando-se por sua presença dominante e imponente. Seus corpos são massivos e musculosos, com membros poderosos que refletem sua força e resistência. Sua pele é robusta e áspera, como a própria pedra das montanhas, e pode variar em tons de cinza, marrom ou até mesmo verde musgo. Cada traço de seu rosto é esculpido com uma expressão austera, com olhos profundos e penetrantes que emanam uma aura de autoridade.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Olhos:</strong> Os olhos dos Thudrok são de cores intensas, como o âmbar, o aço ou o cinza escuro, irradiando uma sabedoria ancestral que é típica de sua raça. Seus olhares são penetrantes e capazes de transmitir uma gama de emoções, desde a calma até a fúria.
+    </p>
+
+    <p>
+      <strong>Rostos:</strong> Seus rostos são angulares e marcantes, com narizes largos e queixos proeminentes que acrescentam uma aura de majestade. Eles possuem sobrancelhas espessas e rugas profundas, como marcas da passagem do tempo e das experiências vividas.
+    </p>
+
+    <p>
+      <strong>Cabelos:</strong> Os Thudrok possuem cabelos grossos e revoltos, que muitas vezes caem em cascata sobre seus ombros em tons de marrom escuro ou negro. Alguns optam por adornar suas cabeças com ornamentos feitos de ossos, pedras preciosas ou metais preciosos, como símbolos de sua posição de liderança ou conquistas.
+    </p>
+
+    <p>
+      <strong>Vestimenta:</strong> Vestem-se com roupas simples e funcionais, feitas de tecidos resistentes como lã ou peles de animais. Em batalha, usam armaduras maciças feitas de metal forjado, que oferecem proteção adicional contra ataques inimigos.
+    </p>
+
+    <p>
+      <strong>Postura e Movimento:</strong> Sua postura é ereta e imponente, com passos poderosos que ressoam como trovões nas terras altas. Eles se movem com uma determinação implacável, como guardiões das montanhas e dos vales abaixo.
+    </p>
+
+    <p><em>
+      “Thud” representa o som profundo e retumbante dos passos dos Thudrok, ecoando pelas terras altas como trovões distantes.
+    </em></p>
+
+    <p><em>
+      “Ro” sugere a ressonância que se propaga pelo ambiente ao redor, como se cada passo dos gigantes deixasse uma marca indelével na paisagem.
+    </em></p>
+
+    <p><em>
+      “K” imita o impacto forte e contundente dos pés enormes dos Thudrok no solo rochoso, destacando sua presença dominante e poderosa.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu caminhava pelos picos escarpados, o som dos meus próprios passos reverberava através dos vales abaixo.”
+    </em></p>
+
+  </div>
+</details>
+
+    Crítico <strong>Corpo a Corpo:</strong> +1 no multiplicador de dano crítico.`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3">Bêbado</a></strong> ou <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p2">Alegria</a></strong> duas vezes por dia <strong>sem custo com vantagem.</strong>`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Machados e martelos.",  
@@ -181,7 +383,57 @@ const raceData = {
     "especialBase": 6,
     "armaduraBase": 0,
     "movimentoBase": 6,
-    "bonusRace": `Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>Luz</strong>.
+    "bonusRace": `<details class="raca-detail">
+  <summary class="raca-nome">Skywalkers (Flumplux)</summary>
+  <div class="raca-conteudo">
+    <p>
+      Os <strong>Skywalkers</strong>, ou <strong>Flumplux</strong>, são uma raça misteriosa que habita as ilhas flutuantes nos céus, distantes dos olhares da maioria dos habitantes da terra. Eles vivem em harmonia com os elementos do ar e do céu, utilizando tecnologias avançadas e habilidades naturais para explorar e proteger seu lar celestial.
+    </p>
+
+    <h3>Características Distintas:</h3>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Skywalkers têm uma altura que varia de 1,65m a 2,40m, adaptando-se às diferentes condições e necessidades de suas comunidades nas ilhas flutuantes.
+    </p>
+
+    <p>
+      <strong>Asas Contráteis:</strong> Os Skywalkers têm a habilidade única de contrair suas asas, transformando-as em asas vestigiais quando não estão em uso. Essas asas vestigiais são pequenas e não permitem o voo, mas ainda são parte integral de sua anatomia. Quando um Skywalker opta por contrair suas asas, ele inicia um processo de <em>autotomia</em>, no qual as asas se encolhem gradualmente. Para que voltem a crescer e se tornem funcionais novamente, o Skywalker deve reverter o processo, o que leva cerca de sete dias.
+    </p>
+
+    <p>
+      <strong>Pelos nas Costas:</strong> Muitos Skywalkers possuem pelos nas costas, característica que reflete sua conexão com o vento e o ar. Esses pelos variam em cor e textura, fornecem isolamento contra o frio das grandes altitudes e contribuem para sua aerodinâmica durante o voo.
+    </p>
+
+    <p>
+      <strong>Habilidades de Voo:</strong> Quando equipados com asas funcionais, os Skywalkers navegam pelos céus com graça e destreza, voando em velocidades impressionantes e realizando acrobacias aéreas incríveis. São conhecidos por competições de voo e exibições que celebram sua profunda ligação com os domínios celestiais.
+    </p>
+
+    <p>
+      <strong>Tecnologia Avançada:</strong> Os Skywalkers desenvolveram tecnologias únicas para a vida nas ilhas flutuantes — veículos voadores, dispositivos de navegação e comunicação, estruturas de suporte e mecanismos para transporte aéreo. São exímios em aproveitar recursos naturais e criar soluções engenhosas para os desafios de viver acima das nuvens.
+    </p>
+
+    <p>
+      <strong>Guardiões dos Céus:</strong> Os Skywalkers são os protetores naturais das ilhas flutuantes, defendendo seu território contra ameaças externas e desastres atmosféricos. São defensores da ordem e da paz, dedicados a preservar a integridade e a beleza de seu lar celestial.
+    </p>
+
+    <h3>Origem do Nome:</h3>
+
+    <p>
+      <strong>“Flum-”</strong> sugere a ideia de flutuar ou voar pelos céus, evocando a sensação de liberdade e aventura.
+    </p>
+
+    <p>
+      <strong>“-plux”</strong> adiciona um toque misterioso e celestial, refletindo sua ligação com as estrelas e com os elementos do céu.
+    </p>
+
+    <h3>Citação:</h3>
+    <blockquote>
+      “Enquanto eu olhava para o horizonte, avistei uma silhueta graciosa cortando os céus, um Flumplux voando em direção à próxima ilha flutuante.”
+    </blockquote>
+  </div>
+</details>
+
+    Eles podem <strong>Voar</strong>, manter o voo requer concentração, sofre -8 em danos de <strong>Luz</strong>.
     <details>
   <summary><strong>Voar</strong></summary>
   <p>
@@ -268,7 +520,60 @@ const raceData = {
     "especialBase": 4,
     "armaduraBase": 0,
     "movimentoBase": 4.5,
-    "bonusRace": "Conseguem respirar embaixo de água e nadar o dobro do seu movimento.",
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Glubrust (Tritões)</summary>
+  <div class="race-content">
+
+    <p>
+      Os Tritões das Profundezas são criaturas aquáticas graciosas e ágeis, que habitam as profundezas marinhas com uma destreza natural. Sua forma híbrida combina características humanas com características de peixes, apresentando corpos esbeltos e musculosos, cobertos por escamas reluzentes em tons de azul, verde ou prata. Suas cabeças lembram as de seres humanos, porém com olhos grandes e penetrantes, narinas aquáticas e barbatanas que se estendem pelas laterais de seus rostos. Suas longas nadadeiras caudais e membros superiores são poderosos propulsores na água, permitindo-lhes mover-se com agilidade e rapidez mesmo nas profundezas mais escuras e remotas.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Tritões têm uma altura que varia de 1,60 metros a 1,90 metros, adaptando-se às diferentes condições e necessidades de suas comunidades.
+    </p>
+
+    <p>
+      <strong>Olhos e Visão Subaquática:</strong> Os Tritões das Profundezas possuem olhos grandes e luminosos, adaptados para enxergar na escuridão das profundezas marinhas. Sua visão subaquática é excepcional, permitindo-lhes detectar movimentos e formas mesmo em ambientes de baixa luminosidade.
+    </p>
+
+    <p>
+      <strong>Escamas e Barbatanas:</strong> Suas escamas reluzentes são resistentes e flexíveis, proporcionando proteção contra os perigos do oceano profundo. Suas barbatanas, especialmente as nadadeiras caudais, são fortes e eficientes, impulsionando-os com facilidade através das correntes e turbulências.
+    </p>
+
+    <p>
+      <strong>Bioluminescência:</strong> Alguns Tritões das Profundezas possuem a capacidade de produzir sua própria luz bioluminescente, que emana de suas escamas e barbatanas, servindo como uma forma de comunicação e camuflagem nas profundezas escuras do mar.
+    </p>
+
+    <p>
+      <strong>Vestimenta e Adornos:</strong> Eles tendem a usar trajes leves feitos de algas marinhas e tecidos especialmente elaborados para não limitar seus movimentos na água. Adornam-se com joias feitas de conchas, pérolas e corais, refletindo sua conexão com o reino marinho e sua estima pela beleza natural das profundezas.
+    </p>
+
+    <p>
+      <strong>Magia Aquática:</strong> Muitos Tritões das Profundezas são proficientes em magia aquática, sendo capazes de controlar correntes, comunicar-se telepaticamente com outras criaturas marinhas e até mesmo manipular a luz e a escuridão sob as ondas.
+    </p>
+
+    <p><em>
+      “Glub” representa o som suave e constante do movimento das nadadeiras dos Tritões das Profundezas, como o murmúrio das correntes oceânicas.
+    </em></p>
+
+    <p><em>
+      “Ru” sugere a leve hesitação ou incerteza do Tritão ao navegar pelas profundezas, evocando a sensação de cautela e vigilância em um ambiente desconhecido.
+    </em></p>
+
+    <p><em>
+      “St” imita o som baixo e amortecido dos movimentos em um ambiente aquático escuro, como se cada impulso fosse medido com precisão para evitar atrair a atenção de predadores ou perturbar o equilíbrio frágil das profundezas.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu nadava pelas águas sombrias do oceano, ouvi o som abafado das minhas nadadeiras cortando o silêncio ao meu redor.”
+    </em></p>
+
+  </div>
+</details>
+
+    Conseguem respirar embaixo de água e nadar o dobro do seu movimento.`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p21">Afogar</a></strong> uma vez por combate sem custo e tem vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Lanças e Armas com Haste.",  
@@ -293,7 +598,55 @@ const raceData = {
     "especialBase": 0,
     "armaduraBase": 2,
     "movimentoBase": 6.5,
-    "bonusRace": "-",
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Shrivvel (Pele Pálida)</summary>
+  <div class="race-content">
+
+    <p>
+      Os Shrivvel, também conhecidos como Pele Pálida, são criaturas que evocam uma sensação de mistério e apreensão com sua aparência pálida e fantasmagórica. Eles possuem uma pele translúcida e opalescente, que parece brilhar de forma etérea sob a luz fraca. Seus olhos são profundos e penetrantes, brilhando com uma luz sombria que parece atravessar a alma de quem os encara. Sua estatura é esguia e elegante, com movimentos suaves e graciosos que lembram os de uma figura etérea.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Shrivvel têm uma altura que varia de 1,70 metros a 2,05 metros, adaptando-se às diferentes condições e necessidades de suas comunidades.
+    </p>
+
+    <p>
+      <strong>Pele Pálida e Translúcida:</strong> A pele dos Shrivvel é pálida e translúcida, conferindo-lhes uma aparência etérea e sobrenatural. Ela parece quase brilhar em meio à escuridão, emitindo uma aura de mistério e intriga.
+    </p>
+
+    <p>
+      <strong>Olhos Profundos e Penetrantes:</strong> Seus olhos são suas características mais marcantes, profundos e penetrantes, que parecem sondar a alma de quem os encara. Eles emitem uma luz sombria que parece hipnotizar e intrigar aqueles que os observam.
+    </p>
+
+    <p>
+      <strong>Estatura Esguia e Elegante:</strong> Os Shrivvel têm uma estatura esguia e elegante, com movimentos suaves e graciosos que lembram os de uma figura etérea. Eles parecem flutuar silenciosamente sobre o chão, como se estivessem deslizando entre as sombras.
+    </p>
+
+    <p>
+      <strong>Presença Enigmática:</strong> Sua presença é enigmática e intrigante, evocando uma sensação de mistério e apreensão em quem os encontra. Eles parecem estar sempre à beira do mundo dos vivos e dos mortos, habitando um espaço entre as sombras e a luz.
+    </p>
+
+    <p>
+      <strong>Aura de Mistério:</strong> Os Shrivvel exalam uma aura de mistério e intriga, deixando aqueles que os encontram com uma sensação de inquietação e curiosidade sobre sua verdadeira natureza e propósito.
+    </p>
+
+    <p><em>
+      “Shriv-“ é inspirado na palavra “tremor”, transmitindo uma sensação de desconforto e arrepio, refletindo a aura inquietante e sobrenatural dos Shrivvel.
+    </em></p>
+
+    <p><em>
+      “-vel” lembra “veludo”, sugerindo uma qualidade suave, misteriosa e silenciosa, adicionando uma camada de elegância obscura à sua presença.
+    </em></p>
+
+    <p><em>
+      “Enquanto eu caminhava pelo asilo abandonado, ouvi um murmúrio, como se o espírito pálido de Valak estivesse me observando das sombras.”
+    </em></p>
+
+  </div>
+</details>
+`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p6">Medo oculto</a></strong> uma vez no dia sem custo por combate.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas e Intimidação.",  
@@ -318,7 +671,55 @@ const raceData = {
     "especialBase": 0,
     "armaduraBase": 3,
     "movimentoBase": 4,
-    "bonusRace": "-",
+    "bonusRace": `<details class="race-detail">
+  <summary>Detalhes dos Gronklech (Durock)</summary>
+  <div class="race-content">
+
+    <p>
+      Os Gronklech são criaturas robustas e de aparência peculiar, lembrando os porcos da raça Yonkis. Eles possuem corpos volumosos e musculosos, cobertos por uma pele espessa e resistente que varia em tons de marrom, vermelho e até mesmo cinza. Seus focinhos são curtos e largos, terminando em poderosos dentes que são sua principal ferramenta para lidar com seu ambiente. Suas orelhas são pequenas e arredondadas, muitas vezes se movendo para frente e para trás enquanto exploram o ambiente ao seu redor. Suas patas são fortes e resistentes, adaptadas para caminhar sobre terrenos rochosos e suportar o peso de seu corpo robusto.
+    </p>
+
+    <p><strong>Características Distintas:</strong></p>
+
+    <p>
+      <strong>Altura Variável:</strong> Os Gronklech têm uma altura que varia de 2,10 metros a 2,70 metros, adaptando-se às diferentes condições e necessidades de suas comunidades.
+    </p>
+
+    <p>
+      <strong>Corpo Musculoso:</strong> Os Gronklech possuem corpos massivos e musculosos, refletindo sua força e resistência física. Eles são criaturas poderosas, capazes de lidar com terrenos acidentados e desafios físicos com facilidade.
+    </p>
+
+    <p>
+      <strong>Focinho e Dentes:</strong> Seus focinhos curtos abrigam uma fileira de dentes afiados e fortes, que são usados para quebrar e triturar materiais duros, como rochas e pedras. Seus dentes são uma característica proeminente de sua aparência, destacando sua habilidade única de se alimentar de recursos inusitados.
+    </p>
+
+    <p>
+      <strong>Pelagem Espessa:</strong> Sua pele é coberta por uma pelagem espessa e áspera, que oferece proteção contra os elementos e os perigos do ambiente áspero em que habitam. A textura da pelagem pode variar, desde o áspero até o mais macio, dependendo das condições climáticas e ambientais.
+    </p>
+
+    <p>
+      <strong>Movimentos Ponderados:</strong> Os Gronklech se movem com uma certa lentidão e ponderação, refletindo sua natureza tranquila e contemplativa. Eles apreciam os prazeres simples da vida, como comer e descansar, e tendem a se mover com calma e deliberadamente.
+    </p>
+
+    <p>
+      <strong>Adaptação ao Ambiente:</strong> Sua estrutura corporal e seus dentes adaptados os tornam perfeitamente adequados para viver em ambientes rochosos e montanhosos, onde podem encontrar alimento nas formações geológicas que os cercam.
+    </p>
+
+    <p><em>
+      “Gron” vem da ideia de algo rangendo ou triturando, evocando o som de dentes raspando contra uma rocha dura, semelhante ao ruído presente em “gron” ou “gronk”.
+    </em></p>
+
+    <p><em>
+      “Klech” é inspirado na palavra alemã “Klecks”, que significa respingo, sugerindo a imagem do impacto dos dentes do Gronklech contra a pedra, produzindo um som característico e marcante.
+    </em></p>
+
+    <p><em>
+      “Enquanto o porco tentava comer pedras, ele fez um barulho alto de gronklech que ecoou pela fazenda.”
+    </em></p>
+
+  </div>
+</details>
+`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p20">Selvageria</a></strong> duas vezes ao dia sem custo e tem vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Sobrevivência.",  
@@ -6304,6 +6705,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

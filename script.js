@@ -371,7 +371,36 @@ const raceData = {
     "especialBase": 5,
     "armaduraBase": 0,
     "movimentoBase": 5,
-    "bonusRace": "Conseguem respirar embaixo de água e nadar o dobro do seu movimento.",
+    "bonusRace": `<details class="race-detail">
+  <summary>Elfos Aquáticos das Profundezas</summary>
+  <div class="race-content">
+
+    <p>Os <strong>Elfos Aquáticos das Profundezas</strong> são seres majestosos que habitam os abismos oceânicos, com uma estatura que varia entre <strong>2m e 2,30m</strong>. Suas formas elegantes e ágeis são adaptadas para a vida nas águas escuras e misteriosas, com corpos esguios e membros longos que se movem com graça sob as ondas. Sua pele é pálida e brilhante, refletindo a luz das profundezas marinhas, e seus olhos possuem uma luminosidade cativante, brilhando como estrelas sob as águas escuras.</p>
+
+    <p><strong>Características distintas:</strong></p>
+
+    <p><strong>Olhos e Bioluminescência:</strong> Os Elfos Aquáticos das Profundezas possuem olhos grandes e luminosos, que brilham com uma luz etérea nas profundezas do oceano. Essa bioluminescência não só os ajuda a enxergar na escuridão, mas também é usada para comunicação e camuflagem.</p>
+
+    <p><strong>Fendas Branquiais:</strong> Para respirar debaixo d’água, eles possuem fendas branquiais nas laterais de seus pescoços, que se abrem e se fecham para extrair oxigênio da água.</p>
+
+    <p><strong>Barbatanas:</strong> Suas extremidades são alongadas e terminam em delicadas barbatanas, que lhes proporcionam uma propulsão ágil e silenciosa na água.</p>
+
+    <p><strong>Vestimenta:</strong> Os Elfos Aquáticos das Profundezas muitas vezes adornam seus corpos com joias e ornamentos feitos de pérolas, corais e conchas preciosas, refletindo sua conexão com o reino marinho. Eles também podem usar túnicas leves feitas de tecidos especiais que não absorvem água, mas permitem a movimentação livre sob as ondas.</p>
+
+    <p><strong>Magia Aquática:</strong> Além de sua habilidade natural de se movimentar graciosamente na água, os Elfos Aquáticos das Profundezas também são proficientes em magia aquática, capazes de controlar correntes, criar ilusões aquáticas e até mesmo se comunicar telepaticamente com outras criaturas marinhas.</p>
+
+    <p><strong>Significado do Nome:</strong></p>
+
+    <p><strong>“Glub”</strong> captura o som do movimento da água ao redor dos Elfos Aquáticos, semelhante ao som de “glub glub” quando se está mergulhando ou nadando.</p>
+
+    <p><strong>“Lorp”</strong> evoca a sensação de mistério e escuridão que envolve essas criaturas misteriosas, sugerindo a presença de algo estranho e desconhecido espreitando nas profundezas do oceano.</p>
+
+    <p><em>“Enquanto o elfo deslizava pelo oceano escuro, a água fez um som de glublorp, como se estivesse sendo separada magicamente.”</em></p>
+
+  </div>
+</details>
+
+    Conseguem respirar embaixo de água e nadar o dobro do seu movimento.`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p29">Salvaguarda</a></strong> uma vez ao dia sem custo e com vantagem.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas.",  
@@ -6431,6 +6460,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -101,7 +101,7 @@ const raceData = {
 
   .race-detail {
 
-    margin: 20px 0 !important;
+    margin: 2px 0 !important;
 
     border-radius: 12px !important;
 
@@ -262,57 +262,32 @@ const raceData = {
 <!-- RAÇA GRUNTHROK EXEMPLO -->
 
 <details class="race-detail">
-
   <summary>Detalhes dos Grunthrok (Anões)</summary>
-
   <div class="race-content">
 
-    <p>Os <strong>Grunthrok</strong> são uma raça robusta e de estatura baixa, variando entre <strong>1,20m a 1,40m</strong>, com corpos musculosos e compactos que refletem sua força e resistência...</p>
-
-
+    <p>Os <strong>Grunthrok</strong> são uma raça robusta e de estatura baixa, variando entre <strong>1,20m e 1,40m</strong> de altura, com corpos musculosos e compactos que refletem sua força e resistência. Suas peles variam em tons de terra — como marrom profundo, cinza pedregoso e bronzeado dourado — com texturas que frequentemente lembram rocha ou granito. Sua aparência é notavelmente semelhante à dos anões tradicionais, exibindo traços fortes e marcantes que simbolizam sua ligação íntima com a terra e com as montanhas.</p>
 
     <p><strong>Características distintas:</strong></p>
 
+    <p><strong>Olhos:</strong> Os olhos dos Grunthrok apresentam cores escuras e profundas, como ônix ou âmbar, com um brilho interno que lembra brasas em uma forja. Esses olhos atentos revelam uma sabedoria antiga e uma percepção naturalmente aguçada.</p>
 
+    <p><strong>Rostos:</strong> Seus rostos são fortes e angulosos, com mandíbulas marcantes e sobrancelhas grossas, o que lhes confere uma expressão constante de determinação. Narizes largos e proeminentes são comuns, reforçando sua aparência robusta e imponente.</p>
 
-    <p><strong>Olhos:</strong> Escuros e profundos, como ônix ou âmbar, com brilho interno semelhante a brasas.</p>
+    <p><strong>Barbas e Cabelos:</strong> Os Grunthrok geralmente possuem barbas longas e espessas, que representam orgulho e status dentro da cultura deles. Seus cabelos, igualmente densos, variam do preto carvão ao castanho escuro, frequentemente trançados ou adornados com contas, anéis de metal e até pedras preciosas. Manter a barba bem cuidada e ornamentada é uma parte fundamental de sua tradição.</p>
 
+    <p><strong>Mãos e Pés:</strong> Suas mãos e pés são grandes, calosos e incrivelmente fortes, feitos para manusear ferramentas pesadas e caminhar por terrenos rochosos com segurança. Muitas mãos mostram sinais claros de trabalho árduo, com cicatrizes e calos profundos.</p>
 
-
-    <p><strong>Rostos:</strong> Fortes, angulosos e expressivos, marcados pela determinação.</p>
-
-
-
-    <p><strong>Barbas e Cabelos:</strong> Longos, espessos, adornados com contas, anéis e pedras.</p>
-
-
-
-    <p><strong>Mãos e Pés:</strong> Grandes, calosos e resistentes.</p>
-
-
-
-    <p><strong>Trajes:</strong> Couro reforçado e armaduras com runas antigas.</p>
-
-
+    <p><strong>Trajes:</strong> Costumam vestir roupas de couro resistente e armaduras de metal reforçadas, adequadas para protegê-los dos perigos das minas e das batalhas. Embora práticas, suas vestes são frequentemente decoradas com runas e símbolos antigos que representam sua herança e suas habilidades em forja e mineração. Materiais como ferro, aço e, ocasionalmente, mithril são comuns, refletindo sua maestria na metalurgia.</p>
 
     <p><strong>Significado do Nome:</strong></p>
 
-   
+    <p><strong>Grun</strong>: representa o som profundo e reverberante dos passos pesados de um Grunthrok, ecoando pelos túneis e cavernas.</p>
+    <p><strong>Thro</strong>: sugere a força e firmeza presentes em cada movimento, refletindo sua natureza determinada e resiliente.</p>
+    <p><strong>K</strong>: imita o som abrupto e sólido do impacto de seus pés no chão rochoso, destacando a ligação profunda que possuem com as montanhas e com as profundezas da terra.</p>
 
-      <p><strong>Grun</strong>: som profundo dos passos.</p>
-
-      <p><strong>Thro</strong>: força e firmeza.</p>
-
-      <p><strong>K</strong>: impacto sólido no chão rochoso.</p>
-
-   
-
-
-
-    <p><em>“Enquanto eu atravessava os corredores sombrios da montanha, meus passos ecoavam como tambores antigos.”</em></p>
+    <p><em>“Enquanto eu atravessava os corredores sombrios da montanha, o som dos meus próprios passos ecoava em um ritmo constante.”</em></p>
 
   </div>
-
 </details>`,
     "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p27">Metamorfose</a></strong> duas vezes ao dia <strong>sem custo.</strong>`,
     "MagiaDisponivel": "-",
@@ -6456,6 +6431,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

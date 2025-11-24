@@ -97,169 +97,13 @@ const raceData = {
     "especialBase": 0,
     "armaduraBase": 2,
     "movimentoBase": 4,
-    "bonusRace": `<style>
+    "bonusRace": `
 
-  .race-detail {
 
-    margin: 2px 0 !important;
 
-    border-radius: 12px !important;
 
-    background: #faf8f4 !important; /* Tom claro e suave */
 
-    border: 1px solid #d8d1c4 !important;
 
-    transition: all 0.25s ease !important;
-
-    font-family: "Georgia", "Spectral", serif !important; /* MUITO mais legível para texto longo */
-
-  }
-
-
-
-  .race-detail:hover {
-
-    border-color: #c8bba7 !important;
-
-  }
-
-
-
-  .race-detail summary {
-
-    padding: 2px 2px !important;
-
-    font-size: 0.8rem !important;
-
-    font-weight: 700 !important;
-
-    cursor: pointer !important;
-
-    list-style: none !important;
-
-    color: #4a3f32 !important;
-
-    background: #f1ede6 !important;
-
-    border-bottom: 1px solid #e3dbcf !important;
-
-    user-select: none !important;
-
-    letter-spacing: 0.3px !important;
-
-    border-radius: 12px 12px 0 0 !important;
-
-    position: relative !important;
-
-  }
-
-
-
-  .race-detail summary::-webkit-details-marker {
-
-    display: none !important;
-
-  }
-
-
-
-  /* Ícone minimalista, estilizado e super limpo */
-
-  .race-detail summary::after {
-
-    content: "▾" !important;
-
-    position: absolute !important;
-
-    right: 20px !important;
-
-    top: 50% !important;
-
-    transform: translateY(-50%) rotate(0deg) !important;
-
-    transition: transform 0.25s ease !important;
-
-    opacity: 0.8 !important;
-
-    font-size: 1.2rem !important;
-
-    color: #7d6a54 !important;
-
-  }
-
-
-
-  .race-detail[open] summary::after {
-
-    transform: translateY(-50%) rotate(180deg) !important;
-
-    opacity: 1 !important;
-
-  }
-
-
-
-  .race-content {
-
-    padding: 20px 22px !important;
-
-    font-size: 1.05rem !important;
-
-    color: #4f4536 !important;
-
-    line-height: 1.7 !important;
-
-    background: #fffdfa !important;
-
-    border-radius: 0 0 12px 12px !important;
-
-  }
-
-
-
-  .race-content p {
-
-    margin: 14px 0 !important;
-
-    text-align: justify !important;
-
-  }
-
-
-
-  .race-content strong {
-
-    color: #3b3428 !important;
-
-    font-weight: 700 !important;
-
-  }
-
-
-
-  .race-content ul {
-
-    margin: 12px 0 16px 24px !important;
-
-    line-height: 1.65 !important;
-
-  }
-
-
-
-  .race-content em {
-
-    color: #766a58 !important;
-
-  }
-
-</style>
-
-
-
-
-
-<!-- RAÇA GRUNTHROK EXEMPLO -->
 
 <details class="race-detail">
   <summary>Detalhes dos Grunthrok (Anões)</summary>
@@ -6460,6 +6304,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -216,7 +216,7 @@ const raceData = {
     "armaduraBase": 0,
     "movimentoBase": 5,
     "bonusRace": `<details class="race-detail">
-  <summary>Elfos Aquáticos das Profundezas</summary>
+  <summary>Detalhes dos Elfos das Profundezas</summary>
   <div class="race-content">
 
     <p>Os <strong>Elfos Aquáticos das Profundezas</strong> são seres majestosos que habitam os abismos oceânicos, com uma estatura que varia entre <strong>2m e 2,30m</strong>. Suas formas elegantes e ágeis são adaptadas para a vida nas águas escuras e misteriosas, com corpos esguios e membros longos que se movem com graça sob as ondas. Sua pele é pálida e brilhante, refletindo a luz das profundezas marinhas, e seus olhos possuem uma luminosidade cativante, brilhando como estrelas sob as águas escuras.</p>
@@ -6304,6 +6304,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -3433,30 +3433,7 @@ armor: 0,
   damageType: "Tremor",
   TipoItem: "Equipamento"
 },
-{
-  id: "skyggenes_hjelm",
-  name: "skyggenes hjelm",
-  desc: "Capacete coberto por sombras que cobrem o seu rosto, usar esse item permite negar 4 de dano de Escuridão",
-  img: "imagens/Armas/skyggenes_hjelm.png",
-  slot: "cabeca",
-  damageDice: "Cabeça",
-  armor: 2,
-  tipo: "Raro",
-  damageType: "Escuridão",
-  TipoItem: "Equipamento"
-},
-{
-  id: "hertuginne_valfing_III_ring",
-  name: "Hertuginne Valfing IIIs ring",
-  desc: "Anel usado pela Duquesa III do reino de Valfing, permite o usuário carregar o Golpe por 2 turno para causar 3x o dano",
-  img: "imagens/Armas/valfing_ring.png",
-  slot: "acessorio",
-  damageDice: "Acessório",
-  armor: 0,
-  tipo: "Raro",
-  damageType: "N/A",
-  TipoItem: "Equipamento"
-},
+
 
 
 {
@@ -3517,6 +3494,29 @@ armor: 0,
   armor: 0,
   tipo: "Lendário",
   damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "hertuginne_valfing_III_ring",
+  name: "Hertuginne Valfing IIIs ring",
+  desc: "Anel usado pela Duquesa III do reino de Valfing, permite o usuário carregar o Golpe por 2 turno para causar 3x o dano",
+  img: "imagens/Armas/valfing_ring.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},{
+  id: "skyggenes_hjelm",
+  name: "skyggenes hjelm",
+  desc: "Capacete coberto por sombras que cobrem o seu rosto, usar esse item permite negar 4 de dano de Escuridão",
+  img: "imagens/Armas/skyggenes_hjelm.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 2,
+  tipo: "Raro",
+  damageType: "Escuridão",
   TipoItem: "Equipamento"
 },
 {
@@ -7109,6 +7109,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

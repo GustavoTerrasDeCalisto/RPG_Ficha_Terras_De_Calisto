@@ -3424,7 +3424,7 @@ armor: 0,
   {
   id: "beinhalskjede_med_steiner",
   name: "Beinhalskjede med steiner",
-  desc: "Colar de ossos com pedras brilhosas, usar esse item permite negar 4 de dano de TREMOR",
+  desc: "Capacete com colar de ossos com pedras brilhosas, usar esse item permite negar 4 de dano de TREMOR",
   img: "imagens/Armas/beinhalskjede.png",
   slot: "cabeca",
   damageDice: "Cabeça",
@@ -3462,7 +3462,7 @@ armor: 0,
 {
   id: "odrins_jernhjelm",
   name: "Odrins jernhjelm",
-  desc: "Capacete de ferro de Odrin, permite vantagem em teste de defender",
+  desc: "Capacete de ferro de Odrin, Ganha + 8 quando defender",
   img: "imagens/Armas/odrin_jernhjelm.png",
   slot: "cabeca",
   damageDice: "Cabeça",
@@ -3474,7 +3474,7 @@ armor: 0,
 {
   id: "odrins_klaer",
   name: "Odrins klær",
-  desc: "Vestes de Odrin — quem vê o usuário usando faz um teste de Sabedoria ou Constituição para resistir, caso falhe irá focar o usuário",
+  desc: "Vestes de Odrin — quem vê o usuário usando faz um teste de Libertação ou Determinação para resistir, caso falhe irá focar o usuário",
   img: "imagens/Armas/odrin_klaer.png",
   slot: "peito",
   damageDice: "Peito",
@@ -3498,7 +3498,7 @@ armor: 0,
 {
   id: "odrins_toffel",
   name: "Odrins tøffel",
-  desc: "Chinelos lendários de Odrin: +10 em testes de carisma e +4 em golpes com os pés e acrobacias",
+  desc: "Chinelos lendários de Odrin: +10 em testes de Conexão e +4 em golpes com os pés e acrobacias",
   img: "imagens/Armas/odrin_toffel.png",
   slot: "pernas",
   damageDice: "Pernas",
@@ -3534,7 +3534,7 @@ armor: 0,
 {
   id: "grafenrustning",
   name: "Grafenrustning",
-  desc: "Armadura de grafeno: ganha defesa natural, quando defendendo ganha vantagem",
+  desc: "Armadura de grafeno: ganha defesa natural, quando defendendo ganha +5 de armadura",
   img: "imagens/Armas/grafenrustning.png",
   slot: "peito",
   damageDice: "Peito",
@@ -3641,7 +3641,21 @@ armor: 0,
 }
 
   
-  ,
+  ,{
+  id: "Mascara_da_Morte",
+  name: "Máscara da Morte",
+  desc: "A Máscara da Morte é um artefato ancestral, forjado a partir de um crânio ressecado encontrado após uma guerra antiga no Reino de Drønnjern. Moldada por um ferreiro gigante, ela carrega um efeito macabro que corrompe qualquer um que a utilize.",
+  img: "imagens/Armas/mascara_da_morte.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 0,
+  tipo: "Morte",
+  "damageDice": "Morte",
+  equipBonus: "Libera a magia Ira da Morte. Ganha 10 de vida para cada alvo morto. Se for desequipada, o usuário morre instantaneamente.",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+}
+,
 
   
 {
@@ -7095,6 +7109,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

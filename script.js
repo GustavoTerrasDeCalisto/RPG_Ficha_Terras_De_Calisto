@@ -3178,18 +3178,7 @@ let equippedSlots = {
 
 
 const items = [
- {
-    id: "capa_verde_folha",
-    name: "Capa Verde Folha",
-    desc: "Uma capa simples com cintos de couro, usada por viajantes para se proteger do clima.",
-    img: "imagens/Armas/capa.png",
-    slot: "acessorio",
-  damageDice: "Acessório",
-   armor: 0,
-    tipo: "Comum",
-    damageType: "N/A",
-    TipoItem: "Equipamento"
-  },{
+{
     id: "capacete_guardiao",
     name: "Capacete do Guardião",
     desc: "Capacete de ferro com viseira simples, usado por guardas da cidade.",
@@ -3238,19 +3227,19 @@ const items = [
     tipo: "Comum",
     damageType: "N/A",
     TipoItem: "Equipamento"
-  },{
-  id: "thorville_olho_ressecado",
-  name: "Thorvilles Tørre Øye",
-  desc: "O Olho Ressecado de Thorville, um amuleto sagrado dito ser uma relíquia da Grande Guerra. Quem o carrega pode invocar a magia Conexão Santa sem custo uma vez ao dia.",
-  img: "imagens/Armas/olho.png",
-  slot: "acessorio",
+  },
+ {
+    id: "capa_verde_folha",
+    name: "Capa Verde Folha",
+    desc: "Uma capa simples com cintos de couro, usada por viajantes para se proteger do clima.",
+    img: "imagens/Armas/capa.png",
+    slot: "acessorio",
   damageDice: "Acessório",
-armor: 0,
-  tipo: "Sagrado",
-  damageType: "N/A",
-  TipoItem: "Equipamento"
-},
-
+   armor: 0,
+    tipo: "Comum",
+    damageType: "N/A",
+    TipoItem: "Equipamento"
+  },
 {
   id: "gyllen_ravnhjelm",
   name: "Gyllen Ravnhjelm",
@@ -3306,6 +3295,355 @@ armor: 0,
   damageType: "N/A",
   TipoItem: "Equipamento"
 },
+  
+
+
+
+{
+  id: "gylden_crow_straff",
+  name: "Gylden Crow Straff",
+  desc: "Pena dourada de corvo, permite atacar com duas armas de duas mãos ao mesmo tempo",
+  img: "imagens/Armas/gylden_straff.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Épico",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "thorvilles_krone",
+  name: "Thorvilles krone",
+  desc: "Coroa de Thorville, dizem que o próprio Thorville usava na grande guerra, magia extra como ação livre",
+  img: "imagens/Armas/thorvilles_krone.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},{
+  id: "thorville_stalnett",
+  name: "Thorville stålnett",
+  desc: "Malha de um aço não mais produzido pelas terras de calisto, dizem que o próprio Thorville usava na grande guerra, reduz dano cortante em 3",
+  img: "imagens/Armas/thorville_stalnett.png",
+  slot: "peitoral",
+  damageDice: "Peitoral",
+  armor: 2,
+  tipo: "Raro",
+  damageType: "Cortante",
+  TipoItem: "Equipamento"
+},
+
+{
+  id: "thorville_hansker",
+  name: "Thorville-hansker",
+  desc: "Luvas compostas por eletricidade, dizem que o próprio Thorville usava na grande guerra, aumenta o dano com armas de Eletricidade (+1d6 dano Eletricidade)",
+  img: "imagens/Armas/thorville_hansker.png",
+  slot: "luva",
+  damageDice: "Luva",
+  armor: 1,
+  tipo: "Raro",
+  damageType: "Eletricidade",
+  TipoItem: "Equipamento"
+},
+{
+  id: "thorville_leggings",
+  name: "Thorville-leggings",
+  desc: "As perneiras de Thorville são um símbolo de luxo, muito dizem que nem mesmo ele chegou usar, pois morreu antes que ficassem prontas, metade dano se recebido nas pernas",
+  img: "imagens/Armas/thorville_leggings.png",
+  slot: "botas",
+  damageDice: "Botas",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+  {
+  id: "thorville_olho_ressecado",
+  name: "Thorvilles Tørre Øye",
+  desc: "O Olho Ressecado de Thorville, um amuleto sagrado dito ser uma relíquia da Grande Guerra. Quem o carrega pode invocar a magia Conexão Santa sem custo uma vez ao dia.",
+  img: "imagens/Armas/olho.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+armor: 0,
+  tipo: "Sagrado",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+  {
+  id: "thorville_rodthelm",
+  name: "Rødthelm de Thorville",
+  desc: "Capacete vermelho adornado com metal escurecido. Forjado para guerra. Concede +1 em testes de Brutalidade.",
+  img: "imagens/Armas/thorville_rodthelm.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 1,
+  tipo: "Incomum",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "thorville_rodt_malha",
+  name: "Rødt Stålnett",
+  desc: "Malha reforçada em aço vermelho. Usada em batalhas prolongadas. Concede resistência a danos Cortantes.",
+  img: "imagens/Armas/thorville_rodt_malha.png",
+  slot: "peitoral",
+  damageDice: "Peitoral",
+  armor: 1,
+  tipo: "Incomum",
+  damageType: "Cortante",
+  TipoItem: "Equipamento"
+},
+{
+  id: "thorville_rode_hansker",
+  name: "Røde Hansker",
+  desc: "Luvas carmesim reforçadas com placas rígidas. Aumenta o dano corpo a corpo em +5. Permite usar a magia Toque Elétrico 1 vez por combate.",
+  img: "imagens/Armas/thorville_rode_hansker.png",
+  slot: "luva",
+  damageDice: "Luva",
+  armor: 0,
+  tipo: "Incomum",
+  damageType: "Eletricidade",
+  TipoItem: "Equipamento"
+},
+{
+  id: "thorville_rode_leggings",
+  name: "Røde Leggings",
+  desc: "Perneiras reforçadas em couro vermelho espesso, usadas em batalhas de cerco. Reduz em 5 todos os danos esmagantes recebidos.",
+  img: "imagens/Armas/thorville_rode_leggings.png",
+  slot: "botas",
+  damageDice: "Botas",
+  armor: 0,
+  tipo: "Incomum",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+}
+,
+  
+  {
+  id: "beinhalskjede_med_steiner",
+  name: "Beinhalskjede med steiner",
+  desc: "Colar de ossos com pedras brilhosas, usar esse item permite negar 4 de dano de TREMOR",
+  img: "imagens/Armas/beinhalskjede.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "Tremor",
+  TipoItem: "Equipamento"
+},
+{
+  id: "skyggenes_hjelm",
+  name: "skyggenes hjelm",
+  desc: "Capacete coberto por sombras que cobrem o seu rosto, usar esse item permite negar 4 de dano de Escuridão",
+  img: "imagens/Armas/skyggenes_hjelm.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 2,
+  tipo: "Raro",
+  damageType: "Escuridão",
+  TipoItem: "Equipamento"
+},
+{
+  id: "hertuginne_valfing_III_ring",
+  name: "Hertuginne Valfing IIIs ring",
+  desc: "Anel usado pela Duquesa III do reino de Valfing, permite o usuário carregar o Golpe por 2 turno para causar 3x o dano",
+  img: "imagens/Armas/valfing_ring.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+
+
+{
+  id: "odrins_jernhjelm",
+  name: "Odrins jernhjelm",
+  desc: "Capacete de ferro de Odrin, permite vantagem em teste de defender",
+  img: "imagens/Armas/odrin_jernhjelm.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 2,
+  tipo: "Lendário",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "odrins_klaer",
+  name: "Odrins klær",
+  desc: "Vestes de Odrin — quem vê o usuário usando faz um teste de Sabedoria ou Constituição para resistir, caso falhe irá focar o usuário",
+  img: "imagens/Armas/odrin_klaer.png",
+  slot: "peitoral",
+  damageDice: "Peitoral",
+  armor: 1,
+  tipo: "Lendário",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "odrins_hansker",
+  name: "Odrins hansker",
+  desc: "Manoplas de Odrin, permite atacar duas vezes na mesma rodada",
+  img: "imagens/Armas/odrin_hansker.png",
+  slot: "luva",
+  damageDice: "Luva",
+  armor: 1,
+  tipo: "Lendário",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "odrins_toffel",
+  name: "Odrins tøffel",
+  desc: "Chinelos lendários de Odrin: +10 em testes de carisma e +4 em golpes com os pés e acrobacias",
+  img: "imagens/Armas/odrin_toffel.png",
+  slot: "botas",
+  damageDice: "Botas",
+  armor: 2,
+  tipo: "Lendário",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "odrins_horn",
+  name: "Odrins horn",
+  desc: "Com o Chifre de Odrin o personagem ganha um ataque desarmado extra",
+  img: "imagens/Armas/odrin_horn.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Lendário",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "grafenhjelm",
+  name: "Grafenhjelm",
+  desc: "Ganha ataque extra com a cabeça, conta como ataque desarmado e causa +2 no teste",
+  img: "imagens/Armas/grafenhjelm.png",
+  slot: "cabeca",
+  damageDice: "Cabeça",
+  armor: 1,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "grafenrustning",
+  name: "Grafenrustning",
+  desc: "Armadura de grafeno: ganha defesa natural, quando defendendo ganha vantagem",
+  img: "imagens/Armas/grafenrustning.png",
+  slot: "peitoral",
+  damageDice: "Peitoral",
+  armor: 2,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "grafengrep",
+  name: "Grafengrep",
+  desc: "Manoplas de grafeno: caso esquive pode contra-atacar com ataque desarmado",
+  img: "imagens/Armas/grafengrep.png",
+  slot: "luva",
+  damageDice: "Luva",
+  armor: 1,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "grafenstovler",
+  name: "Grafenstøvler",
+  desc: "Botas de grafeno: permite desarmar armadilhas pisando nelas, +4 ao desarmar",
+  img: "imagens/Armas/grafenstovler.png",
+  slot: "botas",
+  damageDice: "Botas",
+  armor: 1,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "grafen_amulett",
+  name: "Grafen-amulett",
+  desc: "Amuleto de grafeno: projéteis defendidos são ricocheteados causando metade do dano",
+  img: "imagens/Armas/grafen_amulett.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 1,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+},
+{
+  id: "callistos_hellige_bok",
+  name: "Callistos hellige bok",
+  desc: "Requer 22 de Sabedoria ou Inteligência — concede a passiva Dilacerar e Atacar, +2 em testes com magias e passivas de sangue",
+  img: "imagens/Armas/callisto_book.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "Sangue",
+  TipoItem: "Equipamento"
+},
+{
+  id: "mork_blodskalle",
+  name: "Mørk blodskalle",
+  desc: "Crânio negro todo despedaçado — permite lançar uma magia extra no turno",
+  img: "imagens/Armas/mork_blodskalle.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Épico",
+  damageType: "Sangue",
+  TipoItem: "Equipamento"
+},
+{
+  id: "mork_blodfabel",
+  name: "mørk blodfabel",
+  desc: "Uma fábula negra quebrada — caso esquive pode reagir com uma magia",
+  img: "imagens/Armas/mork_blodfabel.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Épico",
+  damageType: "Sangue",
+  TipoItem: "Equipamento"
+},
+{
+  id: "morkblodig_tibia",
+  name: "Mørkblodig tibia",
+  desc: "Tíbia negra lascada — reduz pela metade todo dano elemental recebido",
+  img: "imagens/Armas/morkblodig_tibia.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Épico",
+  damageType: "Elemental",
+  TipoItem: "Equipamento"
+},
+{
+  id: "obsidian_halskjede",
+  name: "Obsidian halskjede",
+  desc: "Ganha a habilidade de ricochetear projéteis — projéteis defendidos são ricocheteados causando metade do dano",
+  img: "imagens/Armas/obsidian_halskjede.png",
+  slot: "acessorio",
+  damageDice: "Acessório",
+  armor: 0,
+  tipo: "Raro",
+  damageType: "N/A",
+  TipoItem: "Equipamento"
+}
+
+  
+  ,
+
+  
 {
     "id": "adaga",
     "name": "Adaga",
@@ -6757,6 +7095,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

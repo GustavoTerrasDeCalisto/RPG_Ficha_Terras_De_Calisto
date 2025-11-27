@@ -2583,48 +2583,54 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
         "armaduraPorNivel": 1,
         "resistencia": "Cortante",
         "bonusPass": `
-+1d8 de dano com <strong>Katanas</strong> e desembainhar no contra-ataque gasta ação livre e ganha +1d8 de dano (armas corpo a corpo).</p>
+Nível 0:+1d8 de dano com <strong>Katanas</strong> e desembainhar no contra-ataque gasta ação livre e ganha +1d8 de dano (armas corpo a corpo).</p>
 `,
 
-"bonustitulo_1": "<p>🗡️ <strong>Desonrado</strong></p>",
-"bonusTexto_1": `
-<p>Nível 1: <strong>Marca da Traição</strong> — +2 em testes de <strong>Furtividade</strong> e <strong>Intimidação</strong> ao usar katanas.</p>
-<p>Nível 2: <strong>Corte pelas Costas</strong> — Ataques de surpresa ou pelas costas com katana causam +2d8 de dano adicional e têm +1 em chance de acerto.</p>
-<p>Nível 3: <strong>Emboscada Veloz</strong> — Desembainhar no contra-ataque concede +3d6 de dano e ignora a armadura do alvo (1 vez por rodada).</p>
-<p>Nível 4: <strong>Assassinato sem Honra</strong> — Críticos contra inimigos desprevenidos causam sangramento (1d8 por 2 turnos) e aplicam a passiva <strong>Pavor</strong> no alvo.</p>
-<p>Nível 5: <strong>Amedrontador</strong> — Inimigos que presenciarem uma morte causada por você recebem -2 em ataques e sofrem <strong>Pavor</strong> por 1 turno.</p>
-<p>Nível 6: <strong>Golpe Corrupto</strong> — Pode sacrificar 2 de <strong>Sanidade</strong> para aplicar +3d10 de dano em um ataque furtivo.</p>
-<p>Nível 7: <strong>Sombras Cortantes</strong> — Enquanto estiver escondido, pode realizar um ataque com vantagem total e +4d6 de dano (uma vez por combate).</p>
-<p>Nível 8: <strong>Caminho do Exílio</strong> — +3 em testes de <strong>Furtividade</strong> ao portar katanas. Inimigos sofrem -2 em <strong>Percepção</strong> para detectá-lo.</p>
-<p>Nível 9: <strong>Execução Infame</strong> — Contra inimigos com menos da metade da vida, ataque furtivo com katana causa +6d10, ignora qualquer armadura ou defesa especial e aplica <strong>Pavor</strong> (custo: 5 especial).</p>
-`,
+// ===============================
+// 🗡️ DESONRADO
+// ===============================
+bonustitulo_1: `<p>🗡️ <strong>Desonrado</strong></p>`,
 
-"bonustitulo_2": "<p>🛡️ <strong>Bushido</strong></p>",
-"bonusTexto_2": `
-<p>Nível 1: <strong>Código do Guerreiro</strong> — +2 em testes de <strong>Resistência</strong> e +1 em ataque ao enfrentar um único inimigo.</p>
-<p>Nível 2: <strong>Desafio Formal</strong> — Pode declarar duelo com um inimigo (1 vez por combate). Ambos ganham +2 em ataque contra o outro, mas -1 contra terceiros.</p>
-<p>Nível 3: <strong>Retaliação Justa</strong> — Contra-ataques com katana causam +3d6 de dano e recuperam 2 de <strong>Especial</strong>.</p>
-<p>Nível 4: <strong>Espírito de Aço</strong> — +3 em testes de resistência contra efeitos de <strong>Pavor</strong> e <strong>Confusão</strong>.</p>
-<p>Nível 5: <strong>Perfeição do Golpe</strong> — Crítico com katana permite um segundo ataque gratuito com +1 de acerto e +2d6 de dano (uma vez por rodada).</p>
-<p>Nível 6: <strong>Domínio da Postura</strong> — +2 em <strong>Armadura</strong> e +2 em <strong>Esquiva</strong> enquanto estiver em duelo direto.</p>
-<p>Nível 7: <strong>Juízo de Lâmina</strong> — Pode declarar um <strong>Corte de Justiça</strong>: se o inimigo violar regras acordadas, seu próximo ataque com katana tem dano triplicado (1 vez por combate).</p>
-<p>Nível 8: <strong>Aura da Honra</strong> — Todos os aliados em até 5 metros ganham +2 em <strong>Resistência</strong> contra <strong>Pavor</strong> e +2 em <strong>Armadura</strong> enquanto você estiver de pé.</p>
-<p>Nível 9: <strong>Corte do Destino</strong> — Um único golpe de katana, concentrando toda sua disciplina: +8d10 de dano, ignora qualquer escudo, barreira ou magia defensiva (custo: 5 especial, uma vez por combate).</p>
-`,
+bonusTexto1N1: `<strong>Marca da Traição</strong> — +2 em Furtividade e Intimidação ao usar katanas.`,
+bonusTexto1N3: `<strong>Corte pelas Costas</strong> — Ataques de surpresa causam +2d8 e +1 de acerto.`,
+bonusTexto1N5: `<strong>Emboscada Veloz</strong> — Desembainhar no contra-ataque: +3d6 e ignora armadura (1x/rodada).`,
+bonusTexto1N9: `<strong>Assassinato sem Honra</strong> — Críticos em inimigos desprevenidos causam sangramento 1d8 por 2 turnos e aplicam Pavor.`,
+bonusTexto1N13: `<strong>Sombras Profanas</strong> — Ataques furtivos ignoram 3 de armadura e causam +2d6 extras.`,
+bonusTexto1N16: `<strong>Predador Noturno</strong> — Enquanto escondido, ganha +3 em Furtividade e +3d6 de dano no primeiro ataque do turno.`,
+bonusTexto1N20: `<strong>Execução Profana</strong> — Contra inimigos com menos da metade da vida: +6d10 ignorando qualquer defesa (custo: 5 especial).`,
+bonusTexto1N22: `<strong>Sombra do Desonrado</strong> — A cada morte causada por você, ganha +1 de acerto cumulativo (máx. +5) até o fim do combate.`,
+bonusTexto1N25: `<strong>Assassino Espectral</strong> — Pode realizar um ataque perfeito: crítico automático, +8d12 de dano e aplica Pavor em todos a 6 m (1x por combate).`,
+// ===============================
+// 🛡️ BUSHIDO
+// ===============================
+bonustitulo_2: `<p>🛡️ <strong>Bushido</strong></p>`,
 
-"bonustitulo_3": "<p>☯️ <strong>Sepukku</strong></p>",
-"bonusTexto_3": `
-<p>Nível 1: <strong>Marca Espiritual</strong> — +2 em ataques com katana contra inimigos amaldiçoados ou afetados por magias.</p>
-<p>Nível 2: <strong>Sopro do Além</strong> — Pode usar 1 de <strong>Sanidade</strong> para aumentar o alcance do corte da katana em +2 metros por 1 turno.</p>
-<p>Nível 3: <strong>Contra-Ataque Espectral</strong> — Desembainhar em contra-ataque conjura uma cópia etérea que causa +3d6 de dano mágico.</p>
-<p>Nível 4: <strong>Lâmina da Alma</strong> — Katana causa +3d6 de dano do tipo <strong>Alma</strong> em inimigos com menos da metade da vida e reduz 1 de <strong>Sanidade</strong>.</p>
-<p>Nível 5: <strong>Oferta Dolorosa</strong> — Pode perder 3 de vida para causar +3d10 de dano em um ataque com katana. Se for um crítico, regenera a vida gasta.</p>
-<p>Nível 6: <strong>Presença Fantasmal</strong> — Inimigos têm -2 em testes para te atingir por 1 turno após sofrerem um ataque seu.</p>
-<p>Nível 7: <strong>Pacto das Sombras</strong> — Em combate, pode convocar uma sombra samurai que repete seu último ataque com metade do dano (uma vez por combate). A sombra dura 1 turno.</p>
-<p>Nível 8: <strong>Lâmina do Vazio</strong> — Ataques com katana ignoram 4 de <strong>Armadura</strong> e causam dano direto à <strong>Sanidade</strong>. Se o alvo estiver com menos da metade da vida, aplica <strong>Pavor</strong>.</p>
-<p>Nível 9: <strong>Sepukku Final</strong> — Ao cair a 0 de vida, pode realizar um último golpe antes de morrer: +8d10 de dano em um inimigo adjacente, aplica <strong>Pavor</strong> em todos os inimigos em até 10 metros, e explode em energia espiritual, restaurando 5 de <strong>Sanidade</strong> a todos os aliados próximos. (Usuário morre em seguida.)</p>
-`
-,
+bonusTexto2N1: `<strong>Código do Guerreiro</strong> — +2 em Resistência e +1 em ataque ao enfrentar 1 inimigo.`,
+bonusTexto2N3: `<strong>Desafio Formal</strong> — Pode declarar duelo (1x/combate). Ambos têm +2 ataque um contra o outro.`,
+bonusTexto2N5: `<strong>Retaliação Justa</strong> — Contra-ataques causam +3d6 e recuperam 2 de especial.`,
+bonusTexto2N9: `<strong>Espírito de Aço</strong> — +3 contra Pavor e Confusão.`,
+bonusTexto2N13: `<strong>Perfeição do Golpe</strong> — Crítico concede ataque extra com +1 acerto e +2d6 de dano (1x/rodada).`,
+bonusTexto2N16: `<strong>Disciplina Inquebrável</strong> — +3 Armadura e +2 Esquiva enquanto em duelo direto.`,
+bonusTexto2N20: `<strong>Corte do Destino</strong> — Golpe final: +8d10 ignorando escudos e magias (custo: 5 especial).`,
+bonusTexto2N22: `<strong>Aura da Honra</strong> — Aliados a 6 m ganham +2 Resistência e +2 Armadura enquanto você estiver de pé.`,
+bonusTexto2N25: `<strong>Espada Perfeita</strong> — Um ataque por combate tem dano triplicado, acerto +5 e ignora qualquer proteção existente.`,
+
+
+// ===============================
+// ☯️ SEPUKKU
+// ===============================
+bonustitulo_3: `<p>☯️ <strong>Sepukku</strong></p>`,
+
+bonusTexto3N1: `<strong>Marca Espiritual</strong> — +2 ataque com katana contra inimigos amaldiçoados ou afetados.`,
+bonusTexto3N3: `<strong>Sopro do Além</strong> — Gasta 1 Sanidade para +2 m de alcance por 1 turno.`,
+bonusTexto3N5: `<strong>Contra-Ataque Espectral</strong> — Uma cópia etérea causando +3d6 no contra-ataque.`,
+bonusTexto3N9: `<strong>Lâmina da Alma</strong> — +3d6 de dano Alma e -1 Sanidade do alvo se estiver abaixo de 50%.`,
+bonusTexto3N13: `<strong>Oferta Dolorosa</strong> — Pode perder 3 de vida para +3d10 de dano. Crítico devolve a vida.`,
+bonusTexto3N16: `<strong>Presença Fantasmal</strong> — -2 para inimigos te atingirem por 1 turno após atacá-los.`,
+bonusTexto3N20: `<strong>Lâmina do Vazio</strong> — Ignora 4 Armadura, causa dano direto à Sanidade e aplica Pavor.`,
+bonusTexto3N22: `<strong>Pacto das Sombras</strong> — Shadow samurai replica seu último ataque com 50% do dano (1x combate).`,
+bonusTexto3N25: `<strong>Sepukku Final</strong> — Ao cair a 0, realiza ataque final +8d10, aplica Pavor em 10 m e restaura 5 Sanidade a aliados. (Você morre.)`,
+
         "movimento_pass": 4.5
       
       },
@@ -7109,6 +7115,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -647,7 +647,7 @@ const raceData = {
   </div>
 </details>
 `,
-    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p6">Medo oculto</a></strong> uma vez no dia sem custo por combate.`,
+    "PassivaDisponivel": `<strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p9">Medo oculto</a></strong> uma vez no dia sem custo por combate.`,
     "MagiaDisponivel": "-",
     "TalentoDisponivel": "Armas Exóticas e Intimidação.",  
     "vidaPorNivel": {
@@ -7115,6 +7115,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

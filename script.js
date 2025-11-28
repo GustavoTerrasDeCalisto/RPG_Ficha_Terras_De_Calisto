@@ -2566,7 +2566,55 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 2,
         "resistencia": "Esmagante",
-        "bonusPass": "+1d12 desarmado, +1d8 com manoplas e tem a passiva Salvaguarda sem custo uma vez por dia.",
+bonusPass: `
+  <p>Nível 0: +1d12 <strong>desarmado</strong>, +1d8 com <strong>manoplas</strong> e pode usar <strong>Salvaguarda</strong> sem custo 1x por dia.</p>
+`,
+
+// ===============================
+// 🥊 BOXEADOR
+// ===============================
+bonustitulo_1: `<p>🥊 <strong>Boxeador</strong></p>`,
+
+bonusTexto1N1: `<strong>Golpes Lineares</strong> — +1d4 em socos diretos (jab, direto, cruzado) e Consegue usar a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m133">Punho Platônico</a> 1x por combate.`,
+bonusTexto1N3: `<strong>Jogo de Pernas</strong> — +1 em esquiva ao se mover antes de atacar.`,
+bonusTexto1N5: `<strong>Queixo de Ferro</strong> — +1 em resistência contra atordoamento e Libera a magia <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m201">Força Gélida</a></strong> (1x por combate).`,
+bonusTexto1N9: `<strong>Combo Retalhador</strong> — +1d6 de dano em ataques consecutivos no mesmo alvo.`,
+bonusTexto1N13: `<strong>Uppercut Demolidor</strong> — +1d8 extra ao usar uppercut. (Custo: 2 especial)`,
+bonusTexto1N16: `<strong>Guarda Avançada</strong> — Reduz dano físico recebido em -1 ao estar desarmado.`,
+bonusTexto1N20: `<strong>Instinto de Ringue</strong> — +2 em testes de esquiva contra ataques corpo a corpo.`,
+bonusTexto1N22: `<strong>Soco Sísmico</strong> — Cria impacto que reduz a movimentação do alvo em -2 por 1 turno.`,
+bonusTexto1N25: `<strong>Lenda do Ringue</strong> — +2 ataques desarmados extras (1x por combate), cada um causando +2d8.`,
+
+// ===============================
+// 🥋 KARATECA
+// ===============================
+bonustitulo_2: `<p>🥋 <strong>Karateca</strong></p>`,
+
+bonusTexto2N1: `<strong>Disciplina Marcial</strong> — +1 em precisão com golpes desarmados.`,
+bonusTexto2N3: `<strong>Chute Giratório</strong> — +1d6 de dano ao usar chutes amplos.`,
+bonusTexto2N5: `<strong>Respiração Controlada</strong> — +1 em resistência contra medo.`,
+bonusTexto2N9: `<strong>Kiai</strong> — Impõe -1 na defesa do alvo por 1 turno. (Custo: 2 especial)`,
+bonusTexto2N13: `<strong>Mão da Lâmina</strong> — +1d8 de dano em ataques precisos nas articulações.`,
+bonusTexto2N16: `<strong>Postura de Ferro</strong> — Recebe -1 de dano físico ao ficar parado no turno.`,
+bonusTexto2N20: `<strong>Golpe Relâmpago</strong> — +2 em iniciativa no início de combate.`,
+bonusTexto2N22: `<strong>Quebra-Defesa</strong> — Reduz armadura do alvo em -2 por 2 turnos. (Custo: 3 especial)`,
+bonusTexto2N25: `<strong>Grande Mestre</strong> — 1 ataque extra por combate com +3d8 e ignora armadura.`,
+
+// ===============================
+// 🌀 CAPOEIRISTA
+// ===============================
+bonustitulo_3: `<p>🌀 <strong>Capoeirista</strong></p>`,
+
+bonusTexto3N1: `<strong>Ginga</strong> — +1 em esquiva enquanto estiver em movimento.`,
+bonusTexto3N3: `<strong>Meia-Lua Veloz</strong> — +1d6 de dano em chutes giratórios.`,
+bonusTexto3N5: `<strong>Mandinga</strong> — +1 em resistir efeitos mentais ou enganos.`,
+bonusTexto3N9: `<strong>Rasteira Técnica</strong> — Derruba alvo falhando em teste físico. (Custo: 2 especial)`,
+bonusTexto3N13: `<strong>Armada Brilhante</strong> — +1d8 de dano ao atacar após rotação completa.`,
+bonusTexto3N16: `<strong>Fluxo da Luta</strong> — Ao esquivar, ganha +1d4 de dano no próximo ataque.`,
+bonusTexto3N20: `<strong>Vento da Roda</strong> — +2 em deslocamento durante combate.`,
+bonusTexto3N22: `<strong>Queda do Céu</strong> — Salto acrobático causa +2d6 e -1 em iniciativa do alvo. (Custo: 3 especial)`,
+bonusTexto3N25: `<strong>Mestre da Roda</strong> — 1 ataque em área giratório, +2d10 em todos os inimigos próximos. (Custo: 5 especial, 1x por combate)`
+,
         "movimento_pass": 4
       },
       "Revivido": {
@@ -7115,6 +7163,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -2566,55 +2566,102 @@ Se estiver <strong>Sangrando</strong>, recupera também <strong>+1d12 de Vida</s
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 2,
         "resistencia": "Esmagante",
+// PASSIVA GERAL
 bonusPass: `
-  <p>Nível 0: +1d12 <strong>desarmado</strong>, +1d8 com <strong>manoplas</strong> e pode usar <strong>Salvaguarda</strong> sem custo 1x por dia.</p>
-`,
+  <p><strong>Nível 0:</strong> +1d12 <strong>desarmado</strong>, +1d8 com <strong>manoplas</strong> e pode usar <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p29">Salvaguarda</a></strong> sem custo 1x por dia.</p>
+ `,
 
 // ===============================
 // 🥊 BOXEADOR
 // ===============================
 bonustitulo_1: `<p>🥊 <strong>Boxeador</strong></p>`,
 
-bonusTexto1N1: `<strong>Golpes Lineares</strong> — +1d4 em socos diretos (jab, direto, cruzado) e Consegue usar a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m133">Punho Platônico</a> 1x por combate.`,
-bonusTexto1N3: `<strong>Jogo de Pernas</strong> — +1 em esquiva ao se mover antes de atacar.`,
-bonusTexto1N5: `<strong>Queixo de Ferro</strong> — +1 em resistência contra atordoamento e Libera a magia <strong><a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m201">Força Gélida</a></strong> (1x por combate).`,
-bonusTexto1N9: `<strong>Combo Retalhador</strong> — +1d6 de dano em ataques consecutivos no mesmo alvo.`,
-bonusTexto1N13: `<strong>Uppercut Demolidor</strong> — +1d8 extra ao usar uppercut. (Custo: 2 especial)`,
-bonusTexto1N16: `<strong>Guarda Avançada</strong> — Reduz dano físico recebido em -1 ao estar desarmado.`,
-bonusTexto1N20: `<strong>Instinto de Ringue</strong> — +2 em testes de esquiva contra ataques corpo a corpo.`,
-bonusTexto1N22: `<strong>Soco Sísmico</strong> — Cria impacto que reduz a movimentação do alvo em -2 por 1 turno.`,
-bonusTexto1N25: `<strong>Lenda do Ringue</strong> — +2 ataques desarmados extras (1x por combate), cada um causando +2d8.`,
+bonusTexto1N1: `
+  <details>
+    <summary><strong>Mecânica — Ritmo</strong></summary>
+    <p>Acúmulos de <strong>Ritmo</strong> fortalecem seus ataques. Máximo de 3 acúmulos.</p>
+  </details>
+  <p><strong>Golpes Lineares:</strong> +1d6 em jabs e diretos.</p>
+  <p><strong>Geração de Ritmo:</strong> ao acertar <strong>o mesmo alvo em golpes seguidos</strong>, ganha 1 acúmulo de <strong>Ritmo</strong> (máx 3).</p>
+  <p>Ganha a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m133">Punho Platônico</a>.</p>
+`,bonusTexto1N3: `
+  <p><strong>Jogo de Pernas:</strong> Enquanto possuir <strong>Ritmo</strong>, ao se mover no turno recebe <strong>+2 em esquiva</strong> até o início do próximo turno.</p>
+`,bonusTexto1N5: `
+  <p><strong>Queixo de Ferro:</strong> Testes contra atordoamento têm vantagem.<br>
+  Desbloqueia a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m201">Força Gélida</a>.</p>
+`,bonusTexto1N9: `
+  <p><strong>Combo Retalhador:</strong> Gastando <strong>2 Ritmos</strong>, seus próximos <strong>2 ataques até o fim do próximo turno</strong> ganham <strong>+1d8</strong> cada.</p>
+`,bonusTexto1N13: `
+  <p><strong>Uppercut Demolidor:</strong> Gastando <strong>3 Ritmos</strong>, seu próximo Uppercut causa <strong>+1d10</strong> e empurra o alvo 1 metro.</p>
+`,bonusTexto1N16: `
+  <p><strong>Guarda Avançada:</strong> Se terminar o turno com Ritmo, reduz o <strong>próximo dano físico</strong> recebido em <strong>5</strong>.</p>
+`,bonusTexto1N20: `
+  <p><strong>Instinto de Ringue:</strong> 1x por rodada, quando um ataque corpo a corpo errar você, pode realizar <strong>1 ataque desarmado como reação</strong> com <strong>+1d8</strong>.</p>
+`,bonusTexto1N22: `
+  <p><strong>Soco Sísmico:</strong> Gastando <strong>3 Ritmos</strong>, seu próximo soco reduz o <strong>movimento do alvo em 3m</strong> e causa <strong>+2d8</strong>.</p>
+`,bonusTexto1N25: `
+  <p><strong>Lenda do Ringue:</strong> 1x por combate, ativa <strong>Ritmo Máximo</strong>: começa com 3 Ritmos e seus próximos <strong>3 ataques até o fim da rodada</strong> ganham <strong>+2d10</strong>.</p>
+`,
 
 // ===============================
 // 🥋 KARATECA
 // ===============================
 bonustitulo_2: `<p>🥋 <strong>Karateca</strong></p>`,
 
-bonusTexto2N1: `<strong>Disciplina Marcial</strong> — +1 em precisão com golpes desarmados.`,
-bonusTexto2N3: `<strong>Chute Giratório</strong> — +1d6 de dano ao usar chutes amplos.`,
-bonusTexto2N5: `<strong>Respiração Controlada</strong> — +1 em resistência contra medo.`,
-bonusTexto2N9: `<strong>Kiai</strong> — Impõe -1 na defesa do alvo por 1 turno. (Custo: 2 especial)`,
-bonusTexto2N13: `<strong>Mão da Lâmina</strong> — +1d8 de dano em ataques precisos nas articulações.`,
-bonusTexto2N16: `<strong>Postura de Ferro</strong> — Recebe -1 de dano físico ao ficar parado no turno.`,
-bonusTexto2N20: `<strong>Golpe Relâmpago</strong> — +2 em iniciativa no início de combate.`,
-bonusTexto2N22: `<strong>Quebra-Defesa</strong> — Reduz armadura do alvo em -2 por 2 turnos. (Custo: 3 especial)`,
-bonusTexto2N25: `<strong>Grande Mestre</strong> — 1 ataque extra por combate com +3d8 e ignora armadura.`,
+bonusTexto2N1: `
+  <details>
+    <summary><strong>Mecânica — Posturas</strong></summary>
+    <p>Trocar de postura concede bônus diferentes. Algumas técnicas dependem da postura ativa.</p>
+  </details>
+  <p><strong>Disciplina Marcial:</strong> +1 em precisão com ataques desarmados.<br>
+  Ao mudar de Postura, recebe <strong>+2 em esquiva</strong> até o início do próximo turno.</p>
+`,bonusTexto2N3: `
+  <p><strong>Chute Giratório:</strong> Na <strong>Postura do Punho Fechado</strong>, chutes recebem <strong>+1d8</strong>.</p>
+`,bonusTexto2N5: `
+  <p><strong>Respiração Controlada:</strong> Ao manter a <strong>Postura da Lótus</strong> por 2 turnos seguidos, ganha <strong>resistência a medo</strong> por 1 rodada e cura <strong>1d4</strong>.</p>
+`,bonusTexto2N9: `
+  <p><strong>Kiai:</strong> Ao trocar de postura, impõe <strong>-2 na defesa</strong> de um alvo próximo até o início do seu próximo turno.</p>
+`,bonusTexto2N13: `
+  <p><strong>Mão da Lâmina:</strong> Na <strong>Postura da Mão Aberta</strong>, ataques precisos recebem <strong>+1d10</strong>.</p>
+`,bonusTexto2N16: `
+  <p><strong>Postura de Ferro:</strong> Se não se mover no turno, reduz o <strong>próximo dano físico</strong> recebido em <strong>4</strong>.</p>
+`,bonusTexto2N20: `
+  <p><strong>Golpe Relâmpago:</strong> No início do combate, pode começar em <strong>duas posturas simultaneamente</strong> por 1 turno, e recebe <strong>+1 ataque desarmado</strong> nesse turno.</p>
+`,bonusTexto2N22: `
+  <p><strong>Quebra-Defesa:</strong> Após manter a mesma postura por 3 turnos, seu próximo ataque reduz a <strong>armadura do alvo em 3</strong> por 2 turnos.</p>
+`,bonusTexto2N25: `
+  <p><strong>Grande Mestre:</strong> 1x por combate, ao trocar de postura, realiza <strong>1 ataque extra que ignora armadura</strong> e causa <strong>+3d12</strong>.</p>
+`,
 
 // ===============================
 // 🌀 CAPOEIRISTA
 // ===============================
 bonustitulo_3: `<p>🌀 <strong>Capoeirista</strong></p>`,
 
-bonusTexto3N1: `<strong>Ginga</strong> — +1 em esquiva enquanto estiver em movimento.`,
-bonusTexto3N3: `<strong>Meia-Lua Veloz</strong> — +1d6 de dano em chutes giratórios.`,
-bonusTexto3N5: `<strong>Mandinga</strong> — +1 em resistir efeitos mentais ou enganos.`,
-bonusTexto3N9: `<strong>Rasteira Técnica</strong> — Derruba alvo falhando em teste físico. (Custo: 2 especial)`,
-bonusTexto3N13: `<strong>Armada Brilhante</strong> — +1d8 de dano ao atacar após rotação completa.`,
-bonusTexto3N16: `<strong>Fluxo da Luta</strong> — Ao esquivar, ganha +1d4 de dano no próximo ataque.`,
-bonusTexto3N20: `<strong>Vento da Roda</strong> — +2 em deslocamento durante combate.`,
-bonusTexto3N22: `<strong>Queda do Céu</strong> — Salto acrobático causa +2d6 e -1 em iniciativa do alvo. (Custo: 3 especial)`,
-bonusTexto3N25: `<strong>Mestre da Roda</strong> — 1 ataque em área giratório, +2d10 em todos os inimigos próximos. (Custo: 5 especial, 1x por combate)`
-,
+bonusTexto3N1: `
+  <details>
+    <summary><strong>Mecânica — Movimento Fluido (MF)</strong></summary>
+    <p>Ao se mover, você gera <strong>MF</strong>, que fortalece golpes, esquivas e técnicas especiais.</p>
+  </details>
+  <p><strong>Ginga:</strong> Ao se mover ao menos 2m, ganha <strong>1 acúmulo de MF</strong> (máx 3).<br>
+  Enquanto possuir MF, recebe <strong>+2 em esquiva</strong> até o início do próximo turno.</p>
+`,bonusTexto3N3: `
+  <p><strong>Meia-Lua Veloz:</strong> Gastando <strong>1 MF</strong>, chutes giratórios recebem <strong>+1d8</strong>.</p>
+`,bonusTexto3N5: `
+  <p><strong>Mandinga:</strong> Enquanto possuir MF, tem <strong>vantagem contra efeitos mentais</strong> e recebe <strong>+1 de armadura</strong>.</p>
+`,bonusTexto3N9: `
+  <p><strong>Rasteira Técnica:</strong> Gastando <strong>2 MF</strong>, pode <strong>derrubar um alvo</strong> em alcance corpo a corpo e causar <strong>+1d6</strong>.</p>
+`,bonusTexto3N13: `
+  <p><strong>Armada Brilhante:</strong> Se se mover antes de atacar, chutes rotacionais recebem <strong>+1d10</strong>.</p>
+`,bonusTexto3N16: `
+  <p><strong>Fluxo da Luta:</strong> Ao esquivar de um ataque, ganha <strong>1 MF</strong> e seu próximo ataque até o fim do próximo turno recebe <strong>+1d8</strong>.</p>
+`,bonusTexto3N20: `
+  <p><strong>Vento da Roda:</strong> Ganha <strong>+4m de movimento</strong> durante combates.</p>
+`,bonusTexto3N22: `
+  <p><strong>Queda do Céu:</strong> Gastando <strong>3 MF</strong>, salta e aterrissa causando <strong>+2d10</strong> e reduz a <strong>iniciativa do alvo em 2</strong>.</p>
+`,bonusTexto3N25: `
+  <p><strong>Mestre da Roda:</strong> 1x por combate, realiza um <strong>ataque giratório em área</strong>, causando <strong>+3d10</strong> a todos os inimigos próximos.</p>
+`,
         "movimento_pass": 4
       },
       "Revivido": {
@@ -7163,6 +7210,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

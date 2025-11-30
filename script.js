@@ -2302,7 +2302,80 @@ bonusTexto_3: `
         "sanidadePorNivel": 1,
         "armaduraPorNivel": 1,
         "resistencia": "Laser",
-        "bonusPass": "+4 em furtividade, +2 roubar, tem vantagem em testes de ladinagem e agilidade.",
+        bonusPass: `
+  <p><strong>Nível 0:</strong> +4 em <strong>Furtividade</strong>, +2 em <strong>Roubar</strong>, e vantagem em testes de <strong>Ladinagem</strong> e <strong>Agilidade</strong>.</p>
+  <p><strong>Sombra Natural:</strong> Enquanto estiver em furtividade, recebe <strong>+2 de contra testes de Percepção</strong> e causa <strong>+1d6</strong> no primeiro ataque vindo das sombras.</p>
+`,
+bonustitulo_1: `<p>🗡️ <strong>Ladrão Invejoso</strong></p>`,
+
+bonusTexto1N1: `
+  <p>Aprende a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p16"><strong>Inveja</strong></a> e pode usar <strong>1x por dia sem custo</strong>.</p>
+  <p><strong>Olhos da Cobiça:</strong> +2 em testes para identificar habilidades, magias ou itens inimigos.</p>
+`,bonusTexto1N3: `
+  <p><strong>Aproveitar Aberturas:</strong> Quando um aliado acerta um ataque crítico, você recebe <strong>+2 de Precisão</strong> e <strong>+1d6 de dano</strong> no seu próximo ataque.</p>
+`,bonusTexto1N5: `
+  <p>Aprende a passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23"><strong>Teleporte Repentino</strong></a>, pode usar <strong>1x por combate sem custo</strong>.</p>
+`,bonusTexto1N9: `
+  <p><strong>Roubo de Técnica:</strong> Após usar Inveja, seus ataques ganham <strong>+1d8</strong> por 2 turnos.</p>
+`,bonusTexto1N13: `
+  <p><strong>Instinto de Sobrevivência:</strong> Quando reduzido a 30% da vida, ganha <strong>+3 de Armadura</strong> por 2 turnos.</p>
+`,bonusTexto1N16: `
+  <p><strong>Reversão:</strong> 1x por combate, quando for acertado por uma habilidade, reduz o dano em <strong>5</strong> e copia o próximo ataque básico do inimigo.</p>
+`,bonusTexto1N20: `
+  <p><strong>Roubos Refinados:</strong> Usar Inveja também concede <strong>+2 de Precisão</strong> no turno em que for usada.</p>
+`,bonusTexto1N22: `
+  <p><strong>Inveja Suprema:</strong> A magia Inveja pode ser usada <strong>2x por dia</strong>, sendo a <strong>primeira sem custo</strong>.</p>
+`,bonusTexto1N25: `
+  <p><strong>Herança Roubada:</strong> 1x por combate, copie <strong>qualquer passiva ou magia</strong> usada no turno anterior (exceto ultimates únicas) e use ela <strong>sem custo</strong>.</p>
+`,
+bonustitulo_2: `<p>🎭 <strong>Falsificador</strong></p>`,
+
+bonusTexto2N1: `
+  <p>Aprende a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m128"><strong>Duplicação Efêmera</strong></a> e pode usar <strong>1x por dia sem custo</strong>.</p>
+  <p><strong>Mãos do Artesão:</strong> +3 em testes de ladinagem envolvendo itens, fechaduras e mecanismos.</p>
+`,bonusTexto2N3: `
+  <p><strong>Extensão Efêmera:</strong> Suas cópias criadas pela magia duram <strong>+1 turno</strong>.</p>
+`,bonusTexto2N5: `
+  <p><strong>Forja Fraudulenta:</strong> Itens criados pela duplicação podem ser usados <strong>2 vezes</strong> antes de desaparecerem.</p>
+`,bonusTexto2N9: `
+  <p><strong>Fator Surpresa:</strong> Ataques usando armas copiadas recebem <strong>+1d8</strong>.</p>
+`,bonusTexto2N13: `
+  <p>Aprende a passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23"><strong>Teleporte Repentino</strong></a>, pode usar <strong>1x por combate sem custo</strong>.</p>
+`,bonusTexto2N16: `
+  <p><strong>Mimetismo Perfeito:</strong> Itens copiados agora só somem se você <strong>errar um ataque</strong> com eles.</p>
+`,bonusTexto2N20: `
+  <p><strong>Arsenal Falso:</strong> 1x por combate, cria <strong>3 armas falsas</strong> instantâneas, permitindo realizar 3 ataques com <strong>+1d10</strong> cada.</p>
+`,bonusTexto2N22: `
+  <p><strong>Duplicação Suprema:</strong> Pode usar a magia <strong>2x por combate</strong>, sendo a primeira sem custo. Suas cópias ganham <strong>+1 de Armadura</strong>.</p>
+`,bonusTexto2N25: `
+  <p><strong>Mentira Perfeita:</strong> 1x por combate, cria uma <strong>cópia de si mesmo</strong> que dura 2 turnos e replica seus ataques com <strong>50% do dano</strong>.</p>
+`,
+
+bonustitulo_3: `<p>🌀 <strong>Político das Sombras</strong></p>`,
+
+bonusTexto3N1: `
+  <p>Aprende a magia <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m151"><strong>Corrente das Brumas</strong></a> e pode usar <strong>1x por dia sem custo</strong>.</p>
+  <p><strong>Linguagem da Conspiração:</strong> +2 em todos os testes sociais envolvendo persuasão, manipulação, chantagem ou política.</p>
+`,bonusTexto3N3: `
+  <p><strong>Ofuscação Argumentativa:</strong> Sempre que conjurar <strong>Corrente das Brumas</strong>, o alvo preso pela magia recebe <strong>-1 Defesa</strong> por 1 turno, devido à desorientação causada pela névoa.</p>
+`,bonusTexto3N5: `
+  <p><strong>Retirada Diplomática:</strong> Ao conjurar <strong>Corrente das Brumas</strong>, você recebe <strong>+3m de movimento</strong> por 1 turno.</p>
+`,bonusTexto3N9: `
+  <p><strong>Pressão Social:</strong> Você tem vantagem em qualquer teste social contra alvos atualmente <strong>presos</strong> ou <strong>desorientados</strong> pela Corrente das Brumas.</p>
+`,bonusTexto3N13: `
+  <p>Aprende a passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p23"><strong>Teleporte Repentino</strong></a>, podendo usar <strong>1x por combate sem custo</strong>.</p>
+`,bonusTexto3N16: `
+  <p><strong>Retórica Afiada:</strong> Seus ataques contra qualquer alvo <strong>preso</strong> por Corrente das Brumas recebem <strong>+1d10</strong>.</p>
+`,bonusTexto3N20: `
+  <p><strong>Influência Sombria:</strong> Sempre que você entrar ou sair de uma área de bruma, ganha <strong>+2 de Armadura</strong> até o próximo turno.</p>
+`,bonusTexto3N22: `
+  <p><strong>Coerção Nebulosa:</strong> Alvos presos por <strong>Corrente das Brumas</strong> sofrem <strong>-2 em ataques</strong>, atormentados pela sensação de sufocamento político e mental.</p>
+`,bonusTexto3N25: `
+  <p><strong>Senador das Sombras:</strong> 1x por combate, cria uma <strong>Grande Nuvem Política</strong> por 2 turnos:</p>
+  <p>• Aliados ganham <strong>+3 de Armadura</strong><br>
+     • Inimigos sofrem <strong>-3 Precisão</strong><br>
+     • Seus ataques recebem <strong>+2d12</strong> enquanto você estiver dentro da névoa.</p>
+`,
         "movimento_pass": 4.5
       },
       "Louco": {
@@ -7210,6 +7283,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

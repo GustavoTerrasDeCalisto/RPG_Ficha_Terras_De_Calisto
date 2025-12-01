@@ -1133,7 +1133,7 @@ const pastData = {
   // ===============================
   bonustitulo_3: `<p>🕊️ <strong>Espiritualista da Ordem</strong></p>`,
 
-  bonusTexto3N1: `<strong>Iniciado Espiritual</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 1</a> e +1 em testes de resistência contra efeitos espirituais.`,
+  bonusTexto3N1: `<strong>Iniciado Espiritual</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 1 de Alma</a> e +1 em testes de resistência contra efeitos espirituais.`,
   bonusTexto3N3: `<strong>Espírito Reforçado</strong> — Reduz o custo de sanidade ao usar <strong>magias de Alma</strong> em 1.`,
   bonusTexto3N5: `<strong>Protetor da Essência</strong> — Ganha uma <a href="javascript:TC && TC.open && TC.open()">magia de nível 2 de Alma</a> e +1 de dano em ataques com <strong>magias de Alma</strong>.`,
   bonusTexto3N9: `<strong>Escudo Espiritual</strong> — Recebe uma vez por combate um escudo espiritual que absorve até 1d8 de dano.`,
@@ -1367,15 +1367,15 @@ const pastData = {
   // ===============================
   bonustitulo_3: `<p>💤 <strong>Apanhador de Sonhos</strong></p>`,
 
-  bonusTexto3N1: `<strong>Aspirante dos Sonhos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()"><strong>magia</strong></a> (nível 1–2) e +1d4 com bestas.`,
-  bonusTexto3N3: `<strong>Tecelão de Devaneios</strong> — Libera 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–2) e -1 de custo de sanidade ao afetar mentes.`,
-  bonusTexto3N5: `<strong>Guardião dos Subconscientes</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–3) e aliados próximos ganham +1 em resistência mental.`,
-  bonusTexto3N9: `<strong>Senhor do Sono Eterno</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–4) e cria névoa de sonolência. (1x por combate)`,
-  bonusTexto3N13: `<strong>Profeta das Visões Oníricas</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–4), +1 em esquiva e pode prever ataques iminentes.`,
-  bonusTexto3N16: `<strong>Apanhador dos Pesadelos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–4), drena 1d6 de sanidade e converte em energia especial.`,
-  bonusTexto3N20: `<strong>Guardião do Mundo Onírico</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–5) e +2 em percepção contra ilusões e invisibilidade.`,
-  bonusTexto3N22: `<strong>Mestre dos Devaneios</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 1–5) e reduz pela metade o custo de magias de sonho/pesadelo.`,
-  bonusTexto3N25: `<strong>Guardião Eterno dos Sonhos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia</a> (nível 6) e pode realizar uma ação completa extra. (Custo: 7 de especial, 1x por combate)`
+  bonusTexto3N1: `<strong>Aspirante dos Sonhos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()"><strong>magia de Sono</strong></a> (nível 1–2) e +1d4 com bestas.`,
+  bonusTexto3N3: `<strong>Tecelão de Devaneios</strong> — Libera 1 <a href="javascript:TC && TC.open && TC.open()">magia de Son</a> (nível 1–2) e -1 de custo de sanidade ao afetar mentes.`,
+  bonusTexto3N5: `<strong>Guardião dos Subconscientes</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–3) e aliados próximos ganham +1 em resistência mental.`,
+  bonusTexto3N9: `<strong>Senhor do Sono Eterno</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–4) e cria névoa de sonolência. (1x por combate)`,
+  bonusTexto3N13: `<strong>Profeta das Visões Oníricas</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–4), +1 em esquiva e pode prever ataques iminentes.`,
+  bonusTexto3N16: `<strong>Apanhador dos Pesadelos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–4), drena 1d6 de sanidade e converte em energia especial.`,
+  bonusTexto3N20: `<strong>Guardião do Mundo Onírico</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–5) e +2 em percepção contra ilusões e invisibilidade.`,
+  bonusTexto3N22: `<strong>Mestre dos Devaneios</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–5) e reduz pela metade o custo de magias de sonho/pesadelo.`,
+  bonusTexto3N25: `<strong>Guardião Eterno dos Sonhos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 6) e pode realizar uma ação completa extra. (Custo: 7 de especial, 1x por combate)`
 }
 ,
     "Bruxo": { 
@@ -1410,7 +1410,7 @@ const pastData = {
   bonustitulo_2: `<p>💀 <strong>Maldizente</strong></p>`,
 
   bonusTexto2N1: `<strong>Aprendiz da Maldição</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia</a> de nível 1 e passiva <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p25"><strong>Amaldiçoar</strong></a>.`,
-  bonusTexto2N3: `<strong>Portador dos Presságios</strong> — Magia de nível 1 e +1 em dano com Maldição.`,
+  bonusTexto2N3: `<strong>Portador dos Presságios</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia</a> de nível 1 e +1 em dano com Maldição.`,
   bonusTexto2N5: `<strong>Mestre dos Anátemas</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 2 e +1 em testes de Conexão.`,
   bonusTexto2N9: `<strong>Profeta da Ruína</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 3 e <strong>Libertação da Maldição</strong>: metade do custo de sanidade (1x por combate).`,
   bonusTexto2N13: `<strong>Arauto dos Destinos Sombrios</strong> — <a href="javascript:TC && TC.open && TC.open()">Magia de Maldição</a> de nível 3 e +2 de dano em Maldição.`,
@@ -1910,7 +1910,7 @@ const pastData = {
   // =============================== -->
   bonustitulo_1: `<p>🧩 <strong>Mestre das Passivas</strong></p>`,
 
-  bonusTexto1N1: `<strong>Passiva Inicial</strong> — Ganha uma passiva aleatória relacionada ao estilo de combate. Além disso, +1 em todos os testes de <strong>Resistência</strong>.`,
+  bonusTexto1N1: `<strong>Passiva Inicial</strong> — Ganha uma passiva aleatória relacionada ao estilo de combate (fale com o mestre, ele dirá o nível da passiva para escolher). Além disso, +1 em todos os testes de <strong>Resistência</strong>.`,
   bonusTexto1N3: `<strong>Passiva Desbloqueada 1</strong> — Desbloqueia uma passiva adicional. A cada dois turnos, ganha +1 de <strong>Armadura Temporária</strong>.`,
   bonusTexto1N5: `<strong>Passiva Desbloqueada 2</strong> — Ganha mais uma passiva. Além disso, ganha uma <strong>Ação Extra de Movimento</strong> por combate.`,
   bonusTexto1N9: `<strong>Passiva Desbloqueada 3 e 4</strong> — Ganha duas passivas adicionais. Além disso, +2 em <strong>Resistência</strong> contra <strong>Dano Mental</strong>.`,
@@ -1925,7 +1925,7 @@ const pastData = {
   //<!-- =============================== -->
   bonustitulo_2: `<p>🌪️ <strong>Especialista do Caos</strong></p>`,
 
-  bonusTexto2N1: `<strong>+2 em Testes de Preservação</strong> — Aumenta a resistência ao <strong>Caos</strong>.`,
+  bonusTexto2N1: `<strong>+2 em Testes de Preservação</strong> — Aumenta em +3 a resistência ao <strong>Caos</strong>.`,
   bonusTexto2N3: `<strong>+1d8 de dano</strong> em magias de <a href="javascript:TC && TC.open && TC.open()">Caos</a> de nível 1 e 2 — Libera uma magia de <strong>Caos</strong> de nível 1 ou 2.`,
   bonusTexto2N5: `Ganha uma magia de <strong>Ordem do Caos</strong> (nível 1 a 3) ou escolha uma magia do elemento <a href="javascript:TC && TC.open && TC.open()">Caos</a> para aprender.`,
   bonusTexto2N9: `Pode usar magias de <strong><a href="javascript:TC && TC.open && TC.open()">Caos</a></strong> de níveis 1–3 sem consumir sanidade uma vez por dia.`,
@@ -7283,6 +7283,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

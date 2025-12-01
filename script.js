@@ -1368,7 +1368,7 @@ const pastData = {
   bonustitulo_3: `<p>💤 <strong>Apanhador de Sonhos</strong></p>`,
 
   bonusTexto3N1: `<strong>Aspirante dos Sonhos</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()"><strong>magia de Sono</strong></a> (nível 1–2) e +1d4 com bestas.`,
-  bonusTexto3N3: `<strong>Tecelão de Devaneios</strong> — Libera 1 <a href="javascript:TC && TC.open && TC.open()">magia de Son</a> (nível 1–2) e -1 de custo de sanidade ao afetar mentes.`,
+  bonusTexto3N3: `<strong>Tecelão de Devaneios</strong> — Libera 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–2) e -1 de custo de sanidade ao afetar mentes.`,
   bonusTexto3N5: `<strong>Guardião dos Subconscientes</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–3) e aliados próximos ganham +1 em resistência mental.`,
   bonusTexto3N9: `<strong>Senhor do Sono Eterno</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–4) e cria névoa de sonolência. (1x por combate)`,
   bonusTexto3N13: `<strong>Profeta das Visões Oníricas</strong> — Ganha 1 <a href="javascript:TC && TC.open && TC.open()">magia de Sono</a> (nível 1–4), +1 em esquiva e pode prever ataques iminentes.`,
@@ -7283,6 +7283,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

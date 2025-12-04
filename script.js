@@ -3804,7 +3804,7 @@ armor: 0,
 {
   id: "obsidian_halskjede",
   name: "Obsidian halskjede",
-  desc: "Ganha a habilidade de ricochetear projéteis — projéteis defendidos são ricocheteados causando metade do dano",
+  desc: "Ganha a habilidade de Pele Obsidiana — ao sofrer um golpe crítico, reduz o dano crítico pela metade uma vez por combate.",
   img: "imagens/Armas/obsidian_halskjede.png",
   slot: "acessorio",
   damageDice: "Acessório",
@@ -7347,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

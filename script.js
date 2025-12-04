@@ -4193,7 +4193,7 @@ armor: 0,
   "damageDice": "Cortante",
   "range": "2m",
   "critical": "19-20 - Dano(x2)",
-  "equipBonus": "<p><strong>Lâmina Desperta:</strong> Após desembanhar a katana, o primeiro ataque causa +1d6 de Escuridão.</p>",
+  "equipBonus": "Lâmina Desperta Após desembanhar a katana, o primeiro ataque causa +1d6 de Escuridão.",
   "TipoItem": "Corpo a Corpo,Medieval"
 },{
     "id": "katana-seiryushard",
@@ -4205,7 +4205,7 @@ armor: 0,
     "damageDice": "Cortante",
     "range": "2m",
     "critical": "19–20 - Dano(x2)",
-    "equipBonus": "<p><strong>Luz Enjaulada:</strong> Ao acertar o primeiro golpe em combate, a lâmina libera uma explosão curta que causa +2d8 de Laser adicional.</p>",
+    "equipBonus": "Luz Enjaulada: Ao acertar o primeiro golpe em combate, a lâmina libera uma explosão curta que causa +2d8 de Laser adicional.",
     "TipoItem": "Lendário,Corpo a Corpo"
   },
   {
@@ -4218,7 +4218,7 @@ armor: 0,
     "damageDice": "Cortante",
     "range": "2m",
     "critical": "19–20 - Dano(x2)",
-    "equipBonus": "<p><strong>Fúria do Leão:</strong> Após desembainhar, seu próximo ataque recebe +4d4 de dano adicional.</p>",
+    "equipBonus": "Fúria do Leão: Após desembainhar, seu próximo ataque recebe +4d4 de dano adicional.",
     "TipoItem": "Lendário,Corpo a Corpo"
   },
   {
@@ -4231,7 +4231,7 @@ armor: 0,
     "damageDice": "Cortante",
     "range": "0.5m",
     "critical": "20 - Dano(x2)",
-    "equipBonus": "<p><strong>Corte Retardado:</strong> Alvos cortados por você sofrem +3d6 de dano cortante no início do próximo turno.</p>",
+    "equipBonus": "Corte Retardado: Alvos cortados por você sofrem +3d6 de dano cortante no início do próximo turno.",
     "TipoItem": "Lendário,Corpo a Corpo"
   },
   {
@@ -4244,7 +4244,7 @@ armor: 0,
     "damageDice": "Cortante", 
     "range": "0.5m",
     "critical": "18 - Dano(x3)",
-    "equipBonus": "<p><strong>Estilhaço Prismático:</strong> Quando você acerta um crítico, libera uma onda de fragmentos que causa +3d6 de dano cortante a todos os inimigos adjacentes.</p>",
+    "equipBonus": "Estilhaço Prismático: Quando você acerta um crítico, libera uma onda de fragmentos que causa +3d6 de dano cortante a todos os inimigos adjacentes.",
     "TipoItem": "Lendário,Corpo a Corpo"
   }
 
@@ -7347,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -4199,7 +4199,7 @@ armor: 0,
     "id": "katana-seiryushard",
     "name": "Katana Seiryūshard de Esmorath",
     "desc": "Forjada inteiramente do Crystal de Esmorath, sua lâmina azulada brilha intensamente quando empunhada. Uma alma antiga habita o cristal, manifestando-se em rajadas de luz concentrada.",
-    "img": "imagens/Armas/Lendarias/katana-seiryushard.png",
+    "img": "imagens/Armas/Armas/katana-seiryushard.png",
     "damageType": "1d10 + 1d12 + 2d6",
     "elementalDamage": "Laser",
     "damageDice": "Cortante",
@@ -4212,7 +4212,7 @@ armor: 0,
     "id": "katana-leonflare",
     "name": "Katana Leonflare de Esmorath",
     "desc": "Uma katana de Crystal de Esmorath com cabo ornamentado em detalhes flamejantes. Um símbolo de leão é gravado na própria lâmina cristalina, irradiando uma aura feroz ao ser desembainhada.",
-    "img": "imagens/Armas/Lendarias/katana-leonflare.png",
+    "img": "imagens/Armas/Armas/katana-leonflare.png",
     "damageType": "1d10 + 1d12 + 2d4",
     "elementalDamage": "–",
     "damageDice": "Cortante",
@@ -4225,7 +4225,7 @@ armor: 0,
     "id": "adaga-splitshard",
     "name": "Adaga Splitshard de Esmorath",
     "desc": "Uma adaga de Crystal de Esmorath tão afiada que o corte parece não acontecer imediatamente. O cristal vibra e rompe a carne segundos depois do impacto.",
-    "img": "imagens/Armas/Lendarias/adaga-splitshard.png",
+    "img": "imagens/Armas/Armas/adaga-splitshard.png",
     "damageType": "1d6 + 1d8",
     "elementalDamage": "–",
     "damageDice": "Cortante",
@@ -4238,7 +4238,7 @@ armor: 0,
     "id": "manopla-prismbrand",
     "name": "Manopla Prismbrand de Esmorath",
     "desc": "Manoplas inteiramente moldadas em Crystal de Esmorath, refratando a luz a cada movimento. O material amplifica impacto e vibração com brutal eficiência.",
-    "img": "imagens/Armas/Lendarias/manopla-prismbrand.png",
+    "img": "imagens/Armas/Armas/manopla-prismbrand.png",
     "damageType": "1d8 + 1d10",
     "elementalDamage": "–",
     "damageDice": "Cortante", 
@@ -7347,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

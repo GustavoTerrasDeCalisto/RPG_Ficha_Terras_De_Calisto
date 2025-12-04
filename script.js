@@ -4182,6 +4182,70 @@ armor: 0,
     "critical": "20 - Dano(x2)",
     "equipBonus": "-",
     "TipoItem": "Corpo a Corpo,Medieval"
+  },
+{
+  "id": "obakari-noir",
+  "name": "Katana Obakari Noir",
+  "desc": "Forjada em metal branco puro, revela sua cor verdadeira ao toque do portador: um negro profundo que absorve a luz. Sua escuridão desperta no ato de desembanhar.",
+  "img": "imagens/Armas/Simples/obakari-noir.png",
+  "damageType": "1d10 + 1d12 + 3d4",
+  "elementalDamage": "Escuridão",
+  "damageDice": "Cortante",
+  "range": "2m",
+  "critical": "19-20 - Dano(x2)",
+  "equipBonus": "<p><strong>Lâmina Desperta:</strong> Após desembanhar a katana, o primeiro ataque causa +1d6 de Escuridão.</p>",
+  "TipoItem": "Corpo a Corpo,Medieval"
+},{
+    "id": "katana-seiryushard",
+    "name": "Katana Seiryūshard de Esmorath",
+    "desc": "Forjada inteiramente do Crystal de Esmorath, sua lâmina azulada brilha intensamente quando empunhada. Uma alma antiga habita o cristal, manifestando-se em rajadas de luz concentrada.",
+    "img": "imagens/Armas/Lendarias/katana-seiryushard.png",
+    "damageType": "1d10 + 1d12 + 2d6",
+    "elementalDamage": "Laser",
+    "damageDice": "Cortante",
+    "range": "2m",
+    "critical": "19–20 - Dano(x2)",
+    "equipBonus": "<p><strong>Luz Enjaulada:</strong> Ao acertar o primeiro golpe em combate, a lâmina libera uma explosão curta que causa +2d8 de Laser adicional.</p>",
+    "TipoItem": "Lendário,Corpo a Corpo"
+  },
+  {
+    "id": "katana-leonflare",
+    "name": "Katana Leonflare de Esmorath",
+    "desc": "Uma katana de Crystal de Esmorath com cabo ornamentado em detalhes flamejantes. Um símbolo de leão é gravado na própria lâmina cristalina, irradiando uma aura feroz ao ser desembainhada.",
+    "img": "imagens/Armas/Lendarias/katana-leonflare.png",
+    "damageType": "1d10 + 1d12 + 2d4",
+    "elementalDamage": "–",
+    "damageDice": "Cortante",
+    "range": "2m",
+    "critical": "19–20 - Dano(x2)",
+    "equipBonus": "<p><strong>Fúria do Leão:</strong> Após desembainhar, seu próximo ataque recebe +4d4 de dano adicional.</p>",
+    "TipoItem": "Lendário,Corpo a Corpo"
+  },
+  {
+    "id": "adaga-splitshard",
+    "name": "Adaga Splitshard de Esmorath",
+    "desc": "Uma adaga de Crystal de Esmorath tão afiada que o corte parece não acontecer imediatamente. O cristal vibra e rompe a carne segundos depois do impacto.",
+    "img": "imagens/Armas/Lendarias/adaga-splitshard.png",
+    "damageType": "1d6 + 1d8",
+    "elementalDamage": "–",
+    "damageDice": "Cortante",
+    "range": "0.5m",
+    "critical": "20 - Dano(x2)",
+    "equipBonus": "<p><strong>Corte Retardado:</strong> Alvos cortados por você sofrem +3d6 de dano cortante no início do próximo turno.</p>",
+    "TipoItem": "Lendário,Corpo a Corpo"
+  },
+  {
+    "id": "manopla-prismbrand",
+    "name": "Manopla Prismbrand de Esmorath",
+    "desc": "Manoplas inteiramente moldadas em Crystal de Esmorath, refratando a luz a cada movimento. O material amplifica impacto e vibração com brutal eficiência.",
+    "img": "imagens/Armas/Lendarias/manopla-prismbrand.png",
+    "damageType": "1d8 + 1d10",
+    "elementalDamage": "–",
+    "damageDice": "Cortante", 
+    "range": "0.5m",
+    "critical": "18 - Dano(x3)",
+    "equipBonus": "<p><strong>Estilhaço Prismático:</strong> Quando você acerta um crítico, libera uma onda de fragmentos que causa +3d6 de dano cortante a todos os inimigos adjacentes.</p>",
+    "TipoItem": "Lendário,Corpo a Corpo"
   }
 
   ,{ 
@@ -7283,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

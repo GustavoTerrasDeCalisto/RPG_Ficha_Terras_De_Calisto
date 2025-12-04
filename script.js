@@ -3779,8 +3779,8 @@ armor: 0,
 },
 {
   id: "mork_blodfabel",
-  name: "mørk blodfabel",
-  desc: "Uma fábula negra quebrada — caso esquive pode reagir com uma magia",
+  name: "mørk blodfibula",
+  desc: "Uma fíbula negra quebrada — caso esquive pode reagir com uma magia",
   img: "imagens/Armas/mork_blodfabel.png",
   slot: "acessorio",
   damageDice: "Acessório",
@@ -7347,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

@@ -3756,7 +3756,7 @@ armor: 0,
 {
   id: "callistos_hellige_bok",
   name: "Callistos hellige bok",
-  desc: "Requer 22 de Sabedoria ou Inteligência — concede a passiva Dilacerar e Atacar, +2 em testes com magias e passivas de sangue",
+  desc: "Requer 22 de Libertação ou Determinação — concede a passiva Dilacerar e Atacar, +2 em testes com magias e passivas de sangue",
   img: "imagens/Armas/callisto_book.png",
   slot: "acessorio",
   damageDice: "Acessório",
@@ -7347,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 

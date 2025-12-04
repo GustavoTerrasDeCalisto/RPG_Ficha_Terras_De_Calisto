@@ -4226,11 +4226,11 @@ armor: 0,
     "name": "Adaga Splitshard de Esmorath",
     "desc": "Uma adaga de Crystal de Esmorath tão afiada que o corte parece não acontecer imediatamente. O cristal vibra e rompe a carne segundos depois do impacto.",
     "img": "imagens/Armas/Armas/adaga-splitshard.png",
-    "damageType": "1d6 + 1d8",
+    "damageType": "2d6 + 1d8",
     "elementalDamage": "–",
     "damageDice": "Cortante",
     "range": "0.5m",
-    "critical": "20 - Dano(x2)",
+    "critical": "20 - Dano(x3)",
     "equipBonus": "Corte Retardado: Alvos cortados por você sofrem +3d6 de dano cortante no início do próximo turno.",
     "TipoItem": "Lendário,Corpo a Corpo"
   },
@@ -4239,11 +4239,11 @@ armor: 0,
     "name": "Manopla Prismbrand de Esmorath",
     "desc": "Manoplas inteiramente moldadas em Crystal de Esmorath, refratando a luz a cada movimento. O material amplifica impacto e vibração com brutal eficiência.",
     "img": "imagens/Armas/Armas/manopla-prismbrand.png",
-    "damageType": "1d8 + 1d10",
+    "damageType": "2d8 + 1d10",
     "elementalDamage": "–",
     "damageDice": "Cortante", 
     "range": "0.5m",
-    "critical": "18 - Dano(x3)",
+    "critical": "19 - Dano(x3)",
     "equipBonus": "Estilhaço Prismático: Quando você acerta um crítico, libera uma onda de fragmentos que causa +3d6 de dano cortante a todos os inimigos adjacentes.",
     "TipoItem": "Lendário,Corpo a Corpo"
   }
@@ -7347,6 +7347,7 @@ blurry, cropped, extra limbs, disfigured, low quality, watermark, signature, tex
 
 
       
+
 
 
 
